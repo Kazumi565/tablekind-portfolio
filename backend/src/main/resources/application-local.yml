@@ -1,0 +1,5 @@
+tablekind:
+  test-webhook-secret: ${TEST_WEBHOOK_SECRET:local-only-test-webhook-key-not-for-real-payments-123456789}
+  jwt-secret: ${JWT_SECRET:local-only-signing-key-change-before-any-network-use-123456789}
+  bootstrap-email: ${BOOTSTRAP_EMAIL:manager@tablekind.test}
+  bootstrap-password: ${BOOTSTRAP_PASSWORD:Local-Review-2026!}

@@ -1,0 +1,14 @@
+{
+  "status": "passed",
+  "checks": [
+    "Manager connects TEST POS without replaying old sessions",
+    "Accepted order is delivered and exact bill matches the TEST POS",
+    "One-ban POS discrepancy is visible without changing the customer bill",
+    "Kitchen status imports through staff controls",
+    "Catalog imports price and availability without repricing accepted food",
+    "Pause and resume retain queued work",
+    "Lost payment write-back reply retries safely and reconciliation matches",
+    "Integration dashboard fits desktop and mobile screens",
+    "No uncaught browser errors"
+  ]
+}

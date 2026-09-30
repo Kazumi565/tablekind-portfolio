@@ -1,0 +1,123 @@
+{
+  "version": "0.9.0",
+  "date": "2026-09-22",
+  "database": "PGlite PostgreSQL WASM 18.3; not native PostgreSQL 16",
+  "flyway": "disabled; V1-V7 SQL applied in order by harness",
+  "jdbc": "simple query mode; one connection per application context; socket multiplexer",
+  "totals": {
+    "tests": 140,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 5,
+    "passed": 135
+  },
+  "suites": [
+    {
+      "suite": "md.tablekind.AccountsTest",
+      "tests": 20,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 1
+    },
+    {
+      "suite": "md.tablekind.DemoBoundaryTest",
+      "tests": 1,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    {
+      "suite": "md.tablekind.DemoConfigurationTest",
+      "tests": 2,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    {
+      "suite": "md.tablekind.EmailSettingsTest",
+      "tests": 3,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    {
+      "suite": "md.tablekind.EmailTest",
+      "tests": 13,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 1
+    },
+    {
+      "suite": "md.tablekind.HardenedSettingsTest",
+      "tests": 2,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    {
+      "suite": "md.tablekind.MoneyTest",
+      "tests": 4,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    {
+      "suite": "md.tablekind.OperationsTest",
+      "tests": 5,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    {
+      "suite": "md.tablekind.PaymentBoundaryTest",
+      "tests": 6,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    {
+      "suite": "md.tablekind.PaymentsTest",
+      "tests": 21,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 1
+    },
+    {
+      "suite": "md.tablekind.Phase7Test",
+      "tests": 13,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    {
+      "suite": "md.tablekind.PosTest",
+      "tests": 25,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 1
+    },
+    {
+      "suite": "md.tablekind.SecurityPrimitivesTest",
+      "tests": 2,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    {
+      "suite": "md.tablekind.WorkflowTest",
+      "tests": 22,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 1
+    },
+    {
+      "suite": "md.tablekind.common.DatabaseErrorTest",
+      "tests": 1,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    }
+  ],
+  "nativeConcurrency": "not run; five explicit skips",
+  "delivery": "mocked for backend email tests; separately tested with Mailpit in browser"
+}

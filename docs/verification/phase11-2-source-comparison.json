@@ -1,0 +1,22 @@
+{
+  "baseline": "Tablekind_0.11.1_source.zip",
+  "baselineSha256": "abdf85a86763d1a4006bc85b56776de3eb5a46a9312fa201c5179c84862e1f8b",
+  "baselineFiles": 280,
+  "unchangedBaselineFiles": 268,
+  "modifiedBaselineFiles": [
+    "START_PHASE11.md",
+    "website/README.md",
+    "website/package-lock.json",
+    "website/package.json",
+    "website/scripts/build.mjs",
+    "website/scripts/preview.mjs",
+    "website/src/assets/motion.js",
+    "website/src/assets/site.js",
+    "website/src/index.html",
+    "website/src/layout.html",
+    "website/src/nav.html",
+    "website/tests/browser.mjs"
+  ],
+  "deletedBaselineFiles": [],
+  "backendFrontendMigrationsComposeAndDemoScripts": "identical to baseline"
+}

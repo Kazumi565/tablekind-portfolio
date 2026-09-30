@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="{{LANG}}">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#f6f5ef" />
+    <meta
+      name="description"
+      content="{{DESCRIPTION}}"
+    />
+    <meta name="robots" content="{{ROBOTS}}" />
+    <meta property="og:title" content="{{TITLE}}" />
+    <meta
+      property="og:description"
+      content="{{DESCRIPTION}}"
+    />
+    <meta property="og:type" content="website" />
+    <title>{{TITLE}}</title>
+    {{CANONICAL}}
+    {{ALTERNATES}}
+    <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="/assets/site.css" />
+    <link rel="stylesheet" href="/assets/motion.css" />
+    <link rel="stylesheet" href="/assets/experience.css" />
+    <script type="module" src="/assets/site.js"></script>
+  </head>
+  <body data-page="{{PAGE}}">
+    <a class="skip-link" href="#main">{{SKIP}}</a>
+    {{PREVIEW}} {{NAV}}
+    <main id="main">{{CONTENT}}</main>
+    {{FOOTER}}
+  </body>
+</html>

@@ -1,0 +1,93 @@
+# Standalone project: never combine this with compose.yaml using multiple -f flags.
+name: tablekind-demo
+services:
+  mailpit:
+    image: axllent/mailpit:v1.27.4
+    ports:
+      - '127.0.0.1:8026:8025'
+    environment:
+      MP_MAX_MESSAGES: 200
+    restart: unless-stopped
+    # Desktop-only inbox, never proxied through Tailscale. SMTP remains internal.
+  postgres:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_DB: tablekind_demo
+      POSTGRES_USER: tablekind_demo
+      POSTGRES_PASSWORD: ${DEMO_DB_PASSWORD:?Run scripts/demo/Start-Demo.ps1 first}
+    volumes:
+      - demo-postgres:/var/lib/postgresql/data
+    healthcheck:
+      test: [CMD-SHELL, 'pg_isready -U tablekind_demo -d tablekind_demo']
+      interval: 5s
+      timeout: 3s
+      retries: 20
+    restart: unless-stopped
+  backend:
+    stop_grace_period: 30s
+    logging:
+      driver: json-file
+      options: {max-size: "10m", max-file: "3"}
+    build:
+      context: ./backend
+      target: runtime
+    environment:
+      SPRING_PROFILES_ACTIVE: demo
+      SERVER_ADDRESS: 0.0.0.0
+      DB_URL: jdbc:postgresql://postgres:5432/tablekind_demo
+      DB_USER: tablekind_demo
+      DB_PASSWORD: ${DEMO_DB_PASSWORD:?Missing demo database password}
+      DEMO_JWT_SECRET: ${DEMO_JWT_SECRET:?Missing demo signing secret}
+      DEMO_WEBHOOK_SECRET: ${DEMO_WEBHOOK_SECRET:?Missing demo webhook secret}
+      DEMO_STAFF_EMAIL: ${DEMO_STAFF_EMAIL:?Missing demo email}
+      DEMO_STAFF_PASSWORD: ${DEMO_STAFF_PASSWORD:?Missing demo password}
+      EMAIL_MODE: LOCAL_SMTP
+      EMAIL_SMTP_HOST: mailpit
+    depends_on:
+      mailpit:
+        condition: service_started
+      postgres:
+        condition: service_healthy
+    healthcheck:
+      test: [CMD-SHELL, 'wget -q -O /dev/null http://127.0.0.1:8080/actuator/health/readiness || exit 1']
+      interval: 5s
+      timeout: 3s
+      retries: 40
+      start_period: 30s
+    restart: unless-stopped
+  frontend:
+    build:
+      context: ./frontend
+      target: demo
+    ports:
+      - '127.0.0.1:5180:8080'
+    healthcheck:
+      test: [CMD, wget, -q, --spider, 'http://127.0.0.1:8080/']
+      interval: 5s
+      timeout: 3s
+      retries: 20
+    depends_on:
+      backend:
+        condition: service_healthy
+    restart: unless-stopped
+  tailscale:
+    image: tailscale/tailscale:stable
+    profiles: [private]
+    # Only this container joins Tailscale; the desktop is not shared.
+    network_mode: service:frontend
+    entrypoint: [tailscaled]
+    command: ['--tun=userspace-networking', '--state=/var/lib/tailscale/tailscaled.state', '--socket=/var/run/tailscale/tailscaled.sock']
+    volumes:
+      - demo-tailscale:/var/lib/tailscale
+    healthcheck:
+      test: [CMD-SHELL, 'test -S /var/run/tailscale/tailscaled.sock']
+      interval: 2s
+      timeout: 2s
+      retries: 30
+    depends_on:
+      frontend:
+        condition: service_started
+    restart: unless-stopped
+volumes:
+  demo-postgres:
+  demo-tailscale:

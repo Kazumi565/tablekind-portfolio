@@ -1,0 +1,13 @@
+{
+  "status": "passed",
+  "browser": "153.0.8010.0",
+  "checks": [
+    "Desktop story reveals three cards sequentially, settles them vertically clear of the phone and reverses on upward scrolling.",
+    "Pointer response resets on exit; the experience link skips the scroll sequence with native anchor navigation.",
+    "Keyboard-operated 2/3/4-person examples retain exact fictional totals in the receipt; all three role previews retain focus and a single pressed state.",
+    "Responsive resizing and a live reduced-motion change remove pinning; reduced motion exposes every card with no running animations.",
+    "Phones and tablets use vertically stacked cards with ordinary scrolling; touch-only devices never enable the pinned story.",
+    "Eighteen additional accessibility scans cover every group-size and role combination at 320 and 1440 pixels with zero automated violations.",
+    "Static content remains complete without JavaScript; no script/CSP errors, external requests, cookies, browser storage or data submission occurred."
+  ]
+}

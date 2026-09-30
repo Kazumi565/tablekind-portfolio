@@ -1,0 +1,93 @@
+name: tablekind-local
+services:
+  mailpit:
+    image: axllent/mailpit:v1.27.4
+    ports:
+      - "127.0.0.1:${MAILPIT_PORT:-8025}:8025"
+    environment:
+      MP_MAX_MESSAGES: 200
+    # SMTP stays on the Docker network. No forwarding or relay is configured.
+  postgres:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_DB: tablekind
+      POSTGRES_USER: tablekind
+      POSTGRES_PASSWORD: ${DB_PASSWORD:-tablekind-local}
+    ports:
+      - "127.0.0.1:${POSTGRES_PORT:-54329}:5432"
+    volumes:
+      - tablekind-postgres:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U tablekind -d tablekind"]
+      interval: 3s
+      timeout: 3s
+      retries: 30
+  backend:
+    stop_grace_period: 30s
+    logging:
+      driver: json-file
+      options: {max-size: "10m", max-file: "3"}
+    build:
+      context: ./backend
+      target: runtime
+    environment:
+      SPRING_PROFILES_ACTIVE: local
+      SERVER_ADDRESS: 0.0.0.0
+      DB_URL: jdbc:postgresql://postgres:5432/tablekind
+      DB_USER: tablekind
+      DB_PASSWORD: ${DB_PASSWORD:-tablekind-local}
+      JWT_SECRET: ${JWT_SECRET:-local-only-signing-key-change-before-any-network-use-123456789}
+      BOOTSTRAP_EMAIL: ${BOOTSTRAP_EMAIL:-manager@tablekind.test}
+      BOOTSTRAP_PASSWORD: ${BOOTSTRAP_PASSWORD:-Local-Review-2026!}
+      EMAIL_MODE: LOCAL_SMTP
+      EMAIL_SMTP_HOST: mailpit
+    ports:
+      - "127.0.0.1:${BACKEND_PORT:-8080}:8080"
+    depends_on:
+      mailpit:
+        condition: service_started
+      postgres:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD", "wget", "-q", "--spider", "http://127.0.0.1:8080/actuator/health/readiness"]
+      interval: 5s
+      timeout: 3s
+      start_period: 30s
+      retries: 30
+  frontend:
+    build: ./frontend
+    ports:
+      - "127.0.0.1:${FRONTEND_PORT:-5173}:8080"
+    depends_on:
+      backend:
+        condition: service_healthy
+  test-postgres:
+    image: postgres:16-alpine
+    profiles: [test]
+    environment:
+      POSTGRES_DB: tablekind_test
+      POSTGRES_USER: test
+      POSTGRES_PASSWORD: test-local-only
+    tmpfs:
+      - /var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U test -d tablekind_test"]
+      interval: 2s
+      timeout: 3s
+      retries: 30
+  tests:
+    profiles: [test]
+    build:
+      context: ./backend
+      target: tests
+    environment:
+      TEST_DB_URL: jdbc:postgresql://test-postgres:5432/tablekind_test
+      TEST_DB_USER: test
+      TEST_DB_PASSWORD: test-local-only
+    volumes:
+      - ./test-results/backend:/workspace/target/surefire-reports
+    depends_on:
+      test-postgres:
+        condition: service_healthy
+volumes:
+  tablekind-postgres:

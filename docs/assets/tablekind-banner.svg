@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="350" viewBox="0 0 1280 350" role="img" aria-labelledby="title desc">
+  <title id="title">Tablekind</title>
+  <desc id="desc">Restaurant ordering and shared bills. One table, individual orders, exact shares. A Java and React portfolio prototype with TEST payment and POS adapters.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#122e29"/><stop offset="1" stop-color="#1d4b3f"/></linearGradient>
+    <pattern id="grid" width="36" height="36" patternUnits="userSpaceOnUse"><path d="M36 0H0V36" fill="none" stroke="#c9e3cf" stroke-opacity=".06"/></pattern>
+  </defs>
+  <rect width="1280" height="350" rx="22" fill="url(#bg)"/>
+  <rect width="1280" height="350" rx="22" fill="url(#grid)"/>
+  <circle cx="1190" cy="-40" r="205" fill="#d8efb3" opacity=".05"/>
+  <g font-family="Arial, Helvetica, sans-serif">
+    <text x="64" y="66" fill="#c2dda5" font-size="14" font-weight="700" letter-spacing="3">FULL-STACK ENGINEERING PORTFOLIO</text>
+    <text x="60" y="148" fill="#fcf9ee" font-size="76" font-weight="700" letter-spacing="-3">Tablekind</text>
+    <text x="64" y="197" fill="#e2ebdf" font-size="25">One table. Individual orders. Exact shares.</text>
+    <text x="64" y="239" fill="#b1cbc0" font-size="18">Restaurant ordering and shared-bill coordination</text>
+    <rect x="64" y="274" width="119" height="31" rx="15" fill="#36594b"/>
+    <text x="123" y="295" fill="#f4f6ee" font-size="13" text-anchor="middle">JAVA + REACT</text>
+    <rect x="195" y="274" width="124" height="31" rx="15" fill="#36594b"/>
+    <text x="257" y="295" fill="#f4f6ee" font-size="13" text-anchor="middle">POSTGRESQL</text>
+    <rect x="331" y="274" width="157" height="31" rx="15" fill="#36594b"/>
+    <text x="409" y="295" fill="#f4f6ee" font-size="13" text-anchor="middle">TEST ADAPTERS</text>
+    <rect x="837" y="45" width="369" height="263" rx="17" fill="#f8f6ec"/>
+    <text x="865" y="82" fill="#486155" font-size="12" font-weight="700" letter-spacing="2">SHARED DISH · FICTIONAL EXAMPLE</text>
+    <text x="865" y="129" fill="#183b30" font-size="35" font-weight="700">181.01 <tspan font-size="17" font-weight="400">MDL</tspan></text>
+    <path d="M865 151H1178" stroke="#d6ddd0"/>
+    <text x="865" y="184" fill="#4d6459" font-size="16">Guest 1</text><text x="1178" y="184" fill="#183b30" font-size="19" font-weight="700" text-anchor="end">90.50</text>
+    <text x="865" y="221" fill="#4d6459" font-size="16">Guest 2</text><text x="1178" y="221" fill="#183b30" font-size="19" font-weight="700" text-anchor="end">90.51</text>
+    <rect x="861" y="245" width="320" height="39" rx="8" fill="#e3ecd9"/>
+    <text x="1021" y="270" fill="#234c35" font-size="14" font-weight="700" text-anchor="middle">Integer bani. Exact total.</text>
+  </g>
+</svg>

@@ -1,0 +1,11 @@
+# The standalone demo compose file supplies all credentials. No local defaults.
+tablekind:
+  jwt-secret: ${DEMO_JWT_SECRET}
+  test-webhook-secret: ${DEMO_WEBHOOK_SECRET}
+  bootstrap-email: ${DEMO_STAFF_EMAIL}
+  bootstrap-password: ${DEMO_STAFF_PASSWORD}
+springdoc:
+  api-docs:
+    enabled: false
+  swagger-ui:
+    enabled: false

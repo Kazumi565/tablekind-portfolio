@@ -1,0 +1,42 @@
+{
+  "name": "tablekind-frontend",
+  "version": "0.10.2",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview --host 127.0.0.1",
+    "test:browser": "node tests/browser-smoke.mjs",
+    "test:pos": "node tests/pos-smoke.mjs",
+    "test:demo": "node tests/demo-smoke.mjs",
+    "test:phase7": "node tests/phase7-smoke.mjs",
+    "test:operations": "node tests/operations-smoke.mjs",
+    "test:recovery": "node --test tests/pending-command.test.mjs",
+    "test:accounts": "node tests/accounts-smoke.mjs",
+    "format": "prettier --write src tests vite.config.ts",
+    "test:email": "node tests/email-smoke.mjs",
+    "test:pilot": "node tests/pilot-mobile-smoke.mjs",
+    "test:qr-code": "node --experimental-strip-types --test tests/table-code.test.mjs",
+    "test:qr-camera": "node tests/qr-scanner-smoke.mjs"
+  },
+  "dependencies": {
+    "lucide-react": "1.31.0",
+    "qrcode": "1.5.4",
+    "react": "19.2.6",
+    "react-dom": "19.2.6"
+  },
+  "devDependencies": {
+    "@types/qrcode": "1.5.6",
+    "@types/react": "19.2.14",
+    "@types/react-dom": "19.2.3",
+    "@vitejs/plugin-react": "6.0.2",
+    "playwright": "1.62.1",
+    "prettier": "3.8.3",
+    "typescript": "5.9.3",
+    "vite": "8.3.0"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "status": "passed",
+  "browser": "153.0.8010.0",
+  "checks": [
+    "Five pages and three walkthrough states fit seven widths from 320 to 1440 pixels.",
+    "Skip link, visible keyboard focus, walkthrough selection and native FAQ disclosure work.",
+    "Scroll reveal works and changing to reduced motion disables animations and reveals all content.",
+    "Axe accessibility checks report zero violations across five pages at mobile and desktop sizes (not a manual accessibility certification).",
+    "Draft form validates, tolerates double clicks, renders input as text, handles clipboard success/denial, invalidates edits and clears without storage or submission.",
+    "A configured fictional mailbox produces an encoded mailto draft; no email was sent or delivery claimed.",
+    "Without JavaScript, content and navigation remain available and the unsendable form is disabled.",
+    "No uncaught page errors, CSP violations, third-party requests or outgoing form submissions observed."
+  ],
+  "viewports": [
+    320,
+    360,
+    390,
+    430,
+    768,
+    1024,
+    1440
+  ],
+  "accessibility": {
+    "pages": 5,
+    "widths": [
+      390,
+      1440
+    ],
+    "violations": 0,
+    "manualReviewStillRequired": true
+  }
+}

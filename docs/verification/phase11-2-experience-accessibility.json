@@ -1,0 +1,195 @@
+[
+  {
+    "label": "Bill and manager workspace 320",
+    "violations": [],
+    "incomplete": [
+      {
+        "id": "color-contrast",
+        "targets": [
+          [
+            ".hero-actions > a[href$=\"#how-it-works\"] > span[aria-hidden=\"true\"]"
+          ],
+          [
+            ".dish-info > span"
+          ],
+          [
+            ".phone-end > span[aria-hidden=\"true\"]"
+          ],
+          [
+            ".note-joined > .note-icon[aria-hidden=\"true\"]"
+          ],
+          [
+            ".split-mark"
+          ],
+          [
+            ".bill-insight > span[aria-hidden=\"true\"]"
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "label": "Vegetables for four without a drink 320",
+    "violations": [],
+    "incomplete": [
+      {
+        "id": "color-contrast",
+        "targets": [
+          [
+            ".hero-actions > a[href$=\"#how-it-works\"] > span[aria-hidden=\"true\"]"
+          ],
+          [
+            ".dish-info > span"
+          ],
+          [
+            ".phone-end > span[aria-hidden=\"true\"]"
+          ],
+          [
+            ".note-joined > .note-icon[aria-hidden=\"true\"]"
+          ],
+          [
+            ".split-mark"
+          ],
+          [
+            "button[data-dish=\"vegetables\"] > .dish-check[aria-hidden=\"true\"]"
+          ],
+          [
+            "b[data-dish-price=\"\"]"
+          ],
+          [
+            ".share-disc > span"
+          ],
+          [
+            "button[data-next=\"bill\"] > span[aria-hidden=\"true\"]"
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "label": "Bill and manager workspace 1440",
+    "violations": [],
+    "incomplete": [
+      {
+        "id": "color-contrast",
+        "targets": [
+          [
+            ".hero-actions > a[href$=\"#how-it-works\"] > span[aria-hidden=\"true\"]"
+          ],
+          [
+            ".scene-label"
+          ],
+          [
+            ".dish-info > span"
+          ],
+          [
+            ".phone-end > span[aria-hidden=\"true\"]"
+          ],
+          [
+            ".note-joined > .note-icon[aria-hidden=\"true\"]"
+          ],
+          [
+            ".split-mark"
+          ],
+          [
+            ".bill-insight > span[aria-hidden=\"true\"]"
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "label": "Vegetables for four without a drink 1440",
+    "violations": [],
+    "incomplete": [
+      {
+        "id": "color-contrast",
+        "targets": [
+          [
+            ".hero-actions > a[href$=\"#how-it-works\"] > span[aria-hidden=\"true\"]"
+          ],
+          [
+            ".scene-label"
+          ],
+          [
+            ".dish-info > span"
+          ],
+          [
+            ".phone-end > span[aria-hidden=\"true\"]"
+          ],
+          [
+            ".note-joined > .note-icon[aria-hidden=\"true\"]"
+          ],
+          [
+            ".split-mark"
+          ],
+          [
+            "button[data-dish=\"vegetables\"] > .dish-check[aria-hidden=\"true\"]"
+          ],
+          [
+            "b[data-dish-price=\"\"]"
+          ],
+          [
+            ".share-disc > span"
+          ],
+          [
+            "button[data-next=\"bill\"] > span[aria-hidden=\"true\"]"
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "label": "Open mobile menu 390",
+    "violations": [],
+    "incomplete": [
+      {
+        "id": "color-contrast",
+        "targets": [
+          [
+            ".brand-symbol"
+          ],
+          [
+            ".brand-symbol > span"
+          ],
+          [
+            ".hero-copy > .eyebrow"
+          ],
+          [
+            "#hero-title"
+          ],
+          [
+            "#hero-title > em"
+          ],
+          [
+            ".hero-actions > a[href$=\"#how-it-works\"] > span[aria-hidden=\"true\"]"
+          ],
+          [
+            ".dish-info > span"
+          ],
+          [
+            ".phone-end > span[aria-hidden=\"true\"]"
+          ],
+          [
+            ".note-joined > .note-icon[aria-hidden=\"true\"]"
+          ],
+          [
+            ".split-mark"
+          ],
+          [
+            ".mini-confirm > span[aria-hidden=\"true\"]"
+          ],
+          [
+            ".example-next[data-next=\"share\"][data-enhancement=\"\"] > span[aria-hidden=\"true\"]"
+          ],
+          [
+            ".closing > p:nth-child(4)"
+          ],
+          [
+            ".closing-note"
+          ]
+        ]
+      }
+    ]
+  }
+]

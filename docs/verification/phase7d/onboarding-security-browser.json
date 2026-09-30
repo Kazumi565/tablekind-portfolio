@@ -1,0 +1,11 @@
+{
+  "status": "passed",
+  "checks": [
+    "Restaurant, branch, pilot table, service mode and language configured through forms",
+    "Printed QR rejects a closed table, confirms an active table and respects pay-at-table mode",
+    "Staff can enter orders in pay-at-table mode; guest sees their personal bill with advanced checkout collapsed",
+    "Waiter UI hides manager tools; authenticator enrollment and recovery sign-in work on a phone",
+    "Login throttling returns HTTP 429 and a retry hint",
+    "No uncaught browser errors or phone/desktop page overflow"
+  ]
+}

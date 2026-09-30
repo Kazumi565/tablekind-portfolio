@@ -1,0 +1,62 @@
+server:
+  shutdown: graceful
+  address: ${SERVER_ADDRESS:127.0.0.1}
+  port: ${PORT:8080}
+  error:
+    include-message: never
+spring:
+  lifecycle:
+    timeout-per-shutdown-phase: 20s
+  application:
+    name: tablekind
+  datasource:
+    url: ${DB_URL:jdbc:postgresql://localhost:5432/tablekind}
+    username: ${DB_USER:tablekind}
+    password: ${DB_PASSWORD:tablekind-local}
+    hikari:
+      maximum-pool-size: 12
+      connection-timeout: 3000
+      validation-timeout: 2000
+      data-source-properties:
+        connectTimeout: 3
+        socketTimeout: 20
+      connection-init-sql: SET statement_timeout = '15s'
+  jpa:
+    open-in-view: false
+    hibernate:
+      ddl-auto: validate
+  jackson:
+    deserialization:
+      fail-on-unknown-properties: true
+  mvc:
+    async:
+      request-timeout: 65000
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info
+  endpoint:
+    health:
+      show-details: never
+      show-components: never
+      probes:
+        enabled: true
+      group:
+        liveness:
+          include: livenessState
+        readiness:
+          include: readinessState,db
+tablekind:
+  jwt-secret: ${JWT_SECRET:}
+  bootstrap-email: ${BOOTSTRAP_EMAIL:}
+  bootstrap-password: ${BOOTSTRAP_PASSWORD:}
+  checkout-hold-seconds: 300
+  email:
+    mode: ${EMAIL_MODE:OFF}
+    host: ${EMAIL_SMTP_HOST:mailpit}
+    port: ${EMAIL_SMTP_PORT:1025}
+    worker-enabled: ${EMAIL_WORKER_ENABLED:true}
+springdoc:
+  swagger-ui:
+    path: /swagger-ui.html

@@ -1,0 +1,17 @@
+# Never combine with another compose file. No network ports or application are exposed.
+services:
+  postgres:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_DB: tablekind_restore
+      POSTGRES_USER: tablekind_restore
+      POSTGRES_PASSWORD: ${RESTORE_PASSWORD:?Use scripts/ops/restore_check.py}
+    healthcheck:
+      test: [CMD-SHELL, 'pg_isready -U tablekind_restore -d tablekind_restore']
+      interval: 2s
+      timeout: 2s
+      retries: 30
+    volumes:
+      - restore-db:/var/lib/postgresql/data
+volumes:
+  restore-db:

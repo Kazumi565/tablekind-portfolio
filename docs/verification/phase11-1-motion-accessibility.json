@@ -1,0 +1,668 @@
+[
+  {
+    "width": 320,
+    "guests": 2,
+    "role": "guest",
+    "violations": [],
+    "incomplete": [
+      {
+        "id": "color-contrast",
+        "targets": [
+          [
+            ".button-small"
+          ],
+          [
+            "a[href$=\"#how-it-works\"] > span[aria-hidden=\"true\"]"
+          ],
+          [
+            ".dish-info > span"
+          ],
+          [
+            ".phone-end > span[aria-hidden=\"true\"]"
+          ],
+          [
+            ".note-joined > .note-icon[aria-hidden=\"true\"]"
+          ],
+          [
+            ".split-mark"
+          ],
+          [
+            ".share-disc"
+          ],
+          [
+            ".share-disc > span"
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "width": 320,
+    "guests": 2,
+    "role": "waiter",
+    "violations": [],
+    "incomplete": [
+      {
+        "id": "color-contrast",
+        "targets": [
+          [
+            ".button-small"
+          ],
+          [
+            "a[href$=\"#how-it-works\"] > span[aria-hidden=\"true\"]"
+          ],
+          [
+            ".dish-info > span"
+          ],
+          [
+            ".phone-end > span[aria-hidden=\"true\"]"
+          ],
+          [
+            ".note-joined > .note-icon[aria-hidden=\"true\"]"
+          ],
+          [
+            ".split-mark"
+          ],
+          [
+            ".share-disc"
+          ],
+          [
+            ".share-disc > span"
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "width": 320,
+    "guests": 2,
+    "role": "manager",
+    "violations": [],
+    "incomplete": [
+      {
+        "id": "color-contrast",
+        "targets": [
+          [
+            ".button-small"
+          ],
+          [
+            "a[href$=\"#how-it-works\"] > span[aria-hidden=\"true\"]"
+          ],
+          [
+            ".dish-info > span"
+          ],
+          [
+            ".phone-end > span[aria-hidden=\"true\"]"
+          ],
+          [
+            ".note-joined > .note-icon[aria-hidden=\"true\"]"
+          ],
+          [
+            ".split-mark"
+          ],
+          [
+            ".share-disc"
+          ],
+          [
+            ".share-disc > span"
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "width": 320,
+    "guests": 3,
+    "role": "guest",
+    "violations": [],
+    "incomplete": [
+      {
+        "id": "color-contrast",
+        "targets": [
+          [
+            ".button-small"
+          ],
+          [
+            "a[href$=\"#how-it-works\"] > span[aria-hidden=\"true\"]"
+          ],
+          [
+            ".dish-info > span"
+          ],
+          [
+            ".phone-end > span[aria-hidden=\"true\"]"
+          ],
+          [
+            ".note-joined > .note-icon[aria-hidden=\"true\"]"
+          ],
+          [
+            ".split-mark"
+          ],
+          [
+            ".share-disc"
+          ],
+          [
+            ".share-disc > span"
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "width": 320,
+    "guests": 3,
+    "role": "waiter",
+    "violations": [],
+    "incomplete": [
+      {
+        "id": "color-contrast",
+        "targets": [
+          [
+            ".button-small"
+          ],
+          [
+            "a[href$=\"#how-it-works\"] > span[aria-hidden=\"true\"]"
+          ],
+          [
+            ".dish-info > span"
+          ],
+          [
+            ".phone-end > span[aria-hidden=\"true\"]"
+          ],
+          [
+            ".note-joined > .note-icon[aria-hidden=\"true\"]"
+          ],
+          [
+            ".split-mark"
+          ],
+          [
+            ".share-disc"
+          ],
+          [
+            ".share-disc > span"
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "width": 320,
+    "guests": 3,
+    "role": "manager",
+    "violations": [],
+    "incomplete": [
+      {
+        "id": "color-contrast",
+        "targets": [
+          [
+            ".button-small"
+          ],
+          [
+            "a[href$=\"#how-it-works\"] > span[aria-hidden=\"true\"]"
+          ],
+          [
+            ".dish-info > span"
+          ],
+          [
+            ".phone-end > span[aria-hidden=\"true\"]"
+          ],
+          [
+            ".note-joined > .note-icon[aria-hidden=\"true\"]"
+          ],
+          [
+            ".split-mark"
+          ],
+          [
+            ".share-disc"
+          ],
+          [
+            ".share-disc > span"
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "width": 320,
+    "guests": 4,
+    "role": "guest",
+    "violations": [],
+    "incomplete": [
+      {
+        "id": "color-contrast",
+        "targets": [
+          [
+            ".button-small"
+          ],
+          [
+            "a[href$=\"#how-it-works\"] > span[aria-hidden=\"true\"]"
+          ],
+          [
+            ".dish-info > span"
+          ],
+          [
+            ".phone-end > span[aria-hidden=\"true\"]"
+          ],
+          [
+            ".note-joined > .note-icon[aria-hidden=\"true\"]"
+          ],
+          [
+            ".split-mark"
+          ],
+          [
+            ".share-disc"
+          ],
+          [
+            ".share-disc > span"
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "width": 320,
+    "guests": 4,
+    "role": "waiter",
+    "violations": [],
+    "incomplete": [
+      {
+        "id": "color-contrast",
+        "targets": [
+          [
+            ".button-small"
+          ],
+          [
+            "a[href$=\"#how-it-works\"] > span[aria-hidden=\"true\"]"
+          ],
+          [
+            ".dish-info > span"
+          ],
+          [
+            ".phone-end > span[aria-hidden=\"true\"]"
+          ],
+          [
+            ".note-joined > .note-icon[aria-hidden=\"true\"]"
+          ],
+          [
+            ".split-mark"
+          ],
+          [
+            ".share-disc"
+          ],
+          [
+            ".share-disc > span"
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "width": 320,
+    "guests": 4,
+    "role": "manager",
+    "violations": [],
+    "incomplete": [
+      {
+        "id": "color-contrast",
+        "targets": [
+          [
+            ".button-small"
+          ],
+          [
+            "a[href$=\"#how-it-works\"] > span[aria-hidden=\"true\"]"
+          ],
+          [
+            ".dish-info > span"
+          ],
+          [
+            ".phone-end > span[aria-hidden=\"true\"]"
+          ],
+          [
+            ".note-joined > .note-icon[aria-hidden=\"true\"]"
+          ],
+          [
+            ".split-mark"
+          ],
+          [
+            ".share-disc"
+          ],
+          [
+            ".share-disc > span"
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "width": 1440,
+    "guests": 2,
+    "role": "guest",
+    "violations": [],
+    "incomplete": [
+      {
+        "id": "color-contrast",
+        "targets": [
+          [
+            "a[href$=\"#how-it-works\"] > span[aria-hidden=\"true\"]"
+          ],
+          [
+            ".scene-label"
+          ],
+          [
+            ".dish-info > span"
+          ],
+          [
+            ".phone-end > span[aria-hidden=\"true\"]"
+          ],
+          [
+            ".note-joined > .note-icon[aria-hidden=\"true\"]"
+          ],
+          [
+            ".split-mark"
+          ],
+          [
+            ".share-disc"
+          ],
+          [
+            ".share-disc > span"
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "width": 1440,
+    "guests": 2,
+    "role": "waiter",
+    "violations": [],
+    "incomplete": [
+      {
+        "id": "color-contrast",
+        "targets": [
+          [
+            "a[href$=\"#how-it-works\"] > span[aria-hidden=\"true\"]"
+          ],
+          [
+            ".scene-label"
+          ],
+          [
+            ".dish-info > span"
+          ],
+          [
+            ".phone-end > span[aria-hidden=\"true\"]"
+          ],
+          [
+            ".note-joined > .note-icon[aria-hidden=\"true\"]"
+          ],
+          [
+            ".split-mark"
+          ],
+          [
+            ".share-disc"
+          ],
+          [
+            ".share-disc > span"
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "width": 1440,
+    "guests": 2,
+    "role": "manager",
+    "violations": [],
+    "incomplete": [
+      {
+        "id": "color-contrast",
+        "targets": [
+          [
+            "a[href$=\"#how-it-works\"] > span[aria-hidden=\"true\"]"
+          ],
+          [
+            ".scene-label"
+          ],
+          [
+            ".dish-info > span"
+          ],
+          [
+            ".phone-end > span[aria-hidden=\"true\"]"
+          ],
+          [
+            ".note-joined > .note-icon[aria-hidden=\"true\"]"
+          ],
+          [
+            ".split-mark"
+          ],
+          [
+            ".share-disc"
+          ],
+          [
+            ".share-disc > span"
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "width": 1440,
+    "guests": 3,
+    "role": "guest",
+    "violations": [],
+    "incomplete": [
+      {
+        "id": "color-contrast",
+        "targets": [
+          [
+            "a[href$=\"#how-it-works\"] > span[aria-hidden=\"true\"]"
+          ],
+          [
+            ".scene-label"
+          ],
+          [
+            ".dish-info > span"
+          ],
+          [
+            ".phone-end > span[aria-hidden=\"true\"]"
+          ],
+          [
+            ".note-joined > .note-icon[aria-hidden=\"true\"]"
+          ],
+          [
+            ".split-mark"
+          ],
+          [
+            ".share-disc"
+          ],
+          [
+            ".share-disc > span"
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "width": 1440,
+    "guests": 3,
+    "role": "waiter",
+    "violations": [],
+    "incomplete": [
+      {
+        "id": "color-contrast",
+        "targets": [
+          [
+            "a[href$=\"#how-it-works\"] > span[aria-hidden=\"true\"]"
+          ],
+          [
+            ".scene-label"
+          ],
+          [
+            ".dish-info > span"
+          ],
+          [
+            ".phone-end > span[aria-hidden=\"true\"]"
+          ],
+          [
+            ".note-joined > .note-icon[aria-hidden=\"true\"]"
+          ],
+          [
+            ".split-mark"
+          ],
+          [
+            ".share-disc"
+          ],
+          [
+            ".share-disc > span"
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "width": 1440,
+    "guests": 3,
+    "role": "manager",
+    "violations": [],
+    "incomplete": [
+      {
+        "id": "color-contrast",
+        "targets": [
+          [
+            "a[href$=\"#how-it-works\"] > span[aria-hidden=\"true\"]"
+          ],
+          [
+            ".scene-label"
+          ],
+          [
+            ".dish-info > span"
+          ],
+          [
+            ".phone-end > span[aria-hidden=\"true\"]"
+          ],
+          [
+            ".note-joined > .note-icon[aria-hidden=\"true\"]"
+          ],
+          [
+            ".split-mark"
+          ],
+          [
+            ".share-disc"
+          ],
+          [
+            ".share-disc > span"
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "width": 1440,
+    "guests": 4,
+    "role": "guest",
+    "violations": [],
+    "incomplete": [
+      {
+        "id": "color-contrast",
+        "targets": [
+          [
+            "a[href$=\"#how-it-works\"] > span[aria-hidden=\"true\"]"
+          ],
+          [
+            ".scene-label"
+          ],
+          [
+            ".dish-info > span"
+          ],
+          [
+            ".phone-end > span[aria-hidden=\"true\"]"
+          ],
+          [
+            ".note-joined > .note-icon[aria-hidden=\"true\"]"
+          ],
+          [
+            ".split-mark"
+          ],
+          [
+            ".share-disc"
+          ],
+          [
+            ".share-disc > span"
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "width": 1440,
+    "guests": 4,
+    "role": "waiter",
+    "violations": [],
+    "incomplete": [
+      {
+        "id": "color-contrast",
+        "targets": [
+          [
+            "a[href$=\"#how-it-works\"] > span[aria-hidden=\"true\"]"
+          ],
+          [
+            ".scene-label"
+          ],
+          [
+            ".dish-info > span"
+          ],
+          [
+            ".phone-end > span[aria-hidden=\"true\"]"
+          ],
+          [
+            ".note-joined > .note-icon[aria-hidden=\"true\"]"
+          ],
+          [
+            ".split-mark"
+          ],
+          [
+            ".share-disc"
+          ],
+          [
+            ".share-disc > span"
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "width": 1440,
+    "guests": 4,
+    "role": "manager",
+    "violations": [],
+    "incomplete": [
+      {
+        "id": "color-contrast",
+        "targets": [
+          [
+            "a[href$=\"#how-it-works\"] > span[aria-hidden=\"true\"]"
+          ],
+          [
+            ".scene-label"
+          ],
+          [
+            ".dish-info > span"
+          ],
+          [
+            ".phone-end > span[aria-hidden=\"true\"]"
+          ],
+          [
+            ".note-joined > .note-icon[aria-hidden=\"true\"]"
+          ],
+          [
+            ".split-mark"
+          ],
+          [
+            ".share-disc"
+          ],
+          [
+            ".share-disc > span"
+          ]
+        ]
+      }
+    ]
+  }
+]

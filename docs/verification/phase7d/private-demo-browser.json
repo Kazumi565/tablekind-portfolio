@@ -1,0 +1,12 @@
+{
+  "status": "passed",
+  "checks": [
+    "Demo manager creates one practice table despite lost response and reload; guests cannot create scenarios",
+    "One phone switches between two guests and staff for ordering, approval and exact shared-food consent",
+    "Reload retains the practice scenario, selected guest and walkthrough progress",
+    "Guided card and staff-confirmed cash payments settle exactly, including cash change",
+    "The practice table is tracked from creation and reconciles with the TEST POS",
+    "Starting over creates a fresh table and preserves the previous settled table",
+    "Sign-out removes all demo roles; mobile screens fit without uncaught browser errors"
+  ]
+}

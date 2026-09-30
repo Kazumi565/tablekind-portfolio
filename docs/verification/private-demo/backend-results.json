@@ -1,0 +1,47 @@
+{
+  "environment": "PGlite PostgreSQL 18.3 supplementary single-connection harness",
+  "suites": [
+    {
+      "name": "md.tablekind.DemoBoundaryTest",
+      "tests": "1",
+      "failures": "0",
+      "errors": "0",
+      "skipped": "0"
+    },
+    {
+      "name": "md.tablekind.DemoConfigurationTest",
+      "tests": "2",
+      "failures": "0",
+      "errors": "0",
+      "skipped": "0"
+    },
+    {
+      "name": "md.tablekind.MoneyTest",
+      "tests": "4",
+      "failures": "0",
+      "errors": "0",
+      "skipped": "0"
+    },
+    {
+      "name": "md.tablekind.PaymentsTest",
+      "tests": "21",
+      "failures": "0",
+      "errors": "0",
+      "skipped": "1"
+    },
+    {
+      "name": "md.tablekind.PosTest",
+      "tests": "25",
+      "failures": "0",
+      "errors": "0",
+      "skipped": "1"
+    },
+    {
+      "name": "md.tablekind.WorkflowTest",
+      "tests": "22",
+      "failures": "0",
+      "errors": "0",
+      "skipped": "1"
+    }
+  ]
+}

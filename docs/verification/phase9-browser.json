@@ -1,0 +1,96 @@
+{
+  "version": "0.9.0",
+  "date": "2026-09-22",
+  "runtime": "Chromium 153 with the actual Java backend, PGlite and Mailpit 1.27.4; not Docker/Windows",
+  "loginThrottling": "onboarding/security rerun with rate limiting enabled",
+  "platformAuthenticatedBrowser": "not_run; platform dashboard rendering reviewed separately with mocked API fixtures",
+  "scenarios": {
+    "payments": {
+      "status": "passed",
+      "checks": [
+        "Staff sign-in",
+        "Lost join response survives reload and retries the original guest identity",
+        "Two independent guests join and update staff live",
+        "Lost order response survives reload with identical key/body and no duplicate order",
+        "Ordering, staff acceptance and shared-food consent with exact odd-ban rounding",
+        "Pending payment prevents competing item takeover",
+        "Reload preserves pending payment; confirmed cancellation permits takeover",
+        "Lost payment-start response survives reload, retries the same key and creates one attempt",
+        "Delayed signed notification recovers via provider lookup without duplicate settlement",
+        "Mixed card/cash collection records agreed tip and correct cash change",
+        "Manager refund preserves allocation and reconciliation matches the reduced bill",
+        "Guest receives a clearly labelled test confirmation, not a fiscal receipt",
+        "Desktop and mobile pages fit their viewport",
+        "Manager configures opening hours and product options through normal forms",
+        "No uncaught browser JavaScript errors"
+      ]
+    },
+    "pos": {
+      "status": "passed",
+      "checks": [
+        "Manager connects TEST POS without replaying old sessions",
+        "Accepted order is delivered and exact bill matches the TEST POS",
+        "One-ban POS discrepancy is visible without changing the customer bill",
+        "Kitchen status imports through staff controls",
+        "Catalog imports price and availability without repricing accepted food",
+        "Pause and resume retain queued work",
+        "Lost payment write-back reply retries safely and reconciliation matches",
+        "Integration dashboard fits desktop and mobile screens",
+        "No uncaught browser errors"
+      ]
+    },
+    "onboarding_security": {
+      "status": "passed",
+      "checks": [
+        "Restaurant, branch, pilot table, service mode and language configured through forms",
+        "Printed QR rejects a closed table, confirms an active table and respects pay-at-table mode",
+        "Staff can enter orders in pay-at-table mode; guest sees their personal bill with advanced checkout collapsed",
+        "Waiter UI hides manager tools; authenticator enrollment and recovery sign-in work on a phone",
+        "Login throttling returns HTTP 429 and a retry hint",
+        "No uncaught browser errors or phone/desktop page overflow"
+      ]
+    },
+    "operations": {
+      "status": "passed",
+      "checks": [
+        "Manager sees current operational counts and no false alerts for an unconfigured restaurant",
+        "An unavailable status endpoint clears stale healthy data and presents an explicit error",
+        "Status refresh recovers; phone layout fits without uncaught browser errors",
+        "Paused TEST POS raises a visible alert; resuming clears it without changing orders or payments"
+      ]
+    },
+    "accounts": {
+      "status": "passed",
+      "checks": [
+        "Owner management overview and separate individual staff accounts",
+        "Waiter interface omits management and API rejects elevated actions",
+        "Manager sees advanced settings while owner-only controls remain unavailable",
+        "Anonymous QR join remains available and optional account links without changing the guest",
+        "Independent browser resumes the same guest, with no duplicate and no account-token table authority",
+        "Separate platform sign-in renders on mobile; privileged administrator workflow requires private provisioning"
+      ],
+      "platformAuthenticatedBrowser": "not_run_use_private_manual_gate"
+    },
+    "email": {
+      "status": "passed",
+      "checks": [
+        "Account configuration failures have a visible retry and recover",
+        "Real local SMTP delivery reaches Mailpit; wrong code fails and correct code verifies",
+        "Email reset signs in with the new password and rejects the old account session"
+      ]
+    },
+    "demo": {
+      "status": "passed",
+      "checks": [
+        "Demo manager creates one practice table despite lost response and reload; guests cannot create scenarios",
+        "One phone switches between two guests and staff for ordering, approval and exact shared-food consent",
+        "Reload retains the practice scenario, selected guest and walkthrough progress",
+        "Guided card and staff-confirmed cash payments settle exactly, including cash change",
+        "The practice table is tracked from creation and reconciles with the TEST POS",
+        "Steps 9 and 10 open management and verify an optional guest account through local Mailpit",
+        "Starting over creates a fresh table and preserves the previous settled table",
+        "Sign-out removes all demo roles; mobile screens fit without uncaught browser errors"
+      ]
+    }
+  }
+}

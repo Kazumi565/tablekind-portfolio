@@ -1,0 +1,24 @@
+{
+  "status": "passed",
+  "nativeChaos": false,
+  "checks": [
+    "Fictional groups retain exact accepted shares while TEST POS is offline",
+    "Concurrent guest snapshots return exact balances within the selected latency budget",
+    "Concurrent TEST payment starts and repeated receipts create one attempt per guest; missing notification keeps its hold",
+    "Provider lookup settles once, all original payments reconcile, and offline POS queue catches up exactly"
+  ],
+  "configuration": {
+    "tables": 2,
+    "guestsPerTable": 2,
+    "readsPerGuest": 2
+  },
+  "load": {
+    "requests": 8,
+    "concurrentClients": 4,
+    "p50Ms": 42.6,
+    "p95Ms": 54.81,
+    "maxMs": 54.81,
+    "p95BudgetMs": 30000,
+    "unexpectedErrors": 0
+  }
+}

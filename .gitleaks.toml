@@ -1,0 +1,13 @@
+title = "Tablekind public source checks"
+
+[extend]
+useDefault = true
+
+# RFC 6238 Appendix B uses the ASCII seed 12345678901234567890.
+# Only this exact Base32 vector in this exact test file is excluded.
+[[allowlists]]
+description = "Published RFC 6238 test vector, never an account credential"
+condition = "AND"
+paths = ['''(^|/)backend/src/test/java/md/tablekind/SecurityPrimitivesTest\.java$''']
+regexTarget = "secret"
+regexes = ['''^GEZDGNBVGY3TQOJQGEZDGNBVGY3TQOJQ$''']

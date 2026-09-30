@@ -1,0 +1,12 @@
+{
+  "status": "passed",
+  "browser": "153.0.8010.0",
+  "checks": [
+    "All 18 dish/group-size/personal-drink combinations produce exact fictional shares and matching receipts, with personal drinks excluded from everyone else's share.",
+    "Keyboard dish selection, personal-drink toggle, repeated clicks, next-step focus and reset work without duplicate items or stale totals.",
+    "Expanded examples, receipts and all workspace previews fit 320, 390, 768, 1024 and 1440 pixels; mobile step controls keep the walkthrough directly below them.",
+    "Mobile menus work on all five pages at three widths, close on Escape/outside click/focus exit, follow section links and reset when resizing to desktop.",
+    "Five additional accessibility audits report zero violations; reduced motion stops animations, and native mobile navigation works without JavaScript.",
+    "No script/CSP errors, external requests, submissions, cookies or browser storage occurred; the example never contacts a restaurant service."
+  ]
+}

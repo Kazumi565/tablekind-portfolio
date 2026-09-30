@@ -1,0 +1,310 @@
+[
+  {
+    "width": 390,
+    "route": "/",
+    "state": "join",
+    "violations": [],
+    "incomplete": [
+      {
+        "id": "color-contrast",
+        "count": 10,
+        "targets": [
+          [
+            ".hero-actions > a[href$=\"#how-it-works\"] > span[aria-hidden=\"true\"]"
+          ],
+          [
+            ".dish-info > span"
+          ],
+          [
+            ".phone-end > span[aria-hidden=\"true\"]"
+          ],
+          [
+            ".note-joined > .note-icon[aria-hidden=\"true\"]"
+          ],
+          [
+            ".split-mark"
+          ],
+          [
+            ".mini-confirm > span[aria-hidden=\"true\"]"
+          ],
+          [
+            ".example-next[data-next=\"share\"][data-enhancement=\"\"] > span[aria-hidden=\"true\"]"
+          ],
+          [
+            ".closing > p:nth-child(4)"
+          ],
+          [
+            ".closing-note"
+          ],
+          [
+            ".footer-top > p"
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "width": 390,
+    "route": "/",
+    "state": "share",
+    "violations": [],
+    "incomplete": [
+      {
+        "id": "color-contrast",
+        "count": 12,
+        "targets": [
+          [
+            ".hero-actions > a[href$=\"#how-it-works\"] > span[aria-hidden=\"true\"]"
+          ],
+          [
+            ".dish-info > span"
+          ],
+          [
+            ".phone-end > span[aria-hidden=\"true\"]"
+          ],
+          [
+            ".note-joined > .note-icon[aria-hidden=\"true\"]"
+          ],
+          [
+            ".split-mark"
+          ],
+          [
+            "button[data-dish=\"pizza\"] > .dish-check[aria-hidden=\"true\"]"
+          ],
+          [
+            "b[data-dish-price=\"\"]"
+          ],
+          [
+            ".share-disc > span"
+          ],
+          [
+            "button[data-next=\"bill\"] > span[aria-hidden=\"true\"]"
+          ],
+          [
+            ".closing > p:nth-child(4)"
+          ],
+          [
+            ".closing-note"
+          ],
+          [
+            ".footer-top > p"
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "width": 390,
+    "route": "/",
+    "state": "bill",
+    "violations": [],
+    "incomplete": [
+      {
+        "id": "color-contrast",
+        "count": 9,
+        "targets": [
+          [
+            ".hero-actions > a[href$=\"#how-it-works\"] > span[aria-hidden=\"true\"]"
+          ],
+          [
+            ".dish-info > span"
+          ],
+          [
+            ".phone-end > span[aria-hidden=\"true\"]"
+          ],
+          [
+            ".note-joined > .note-icon[aria-hidden=\"true\"]"
+          ],
+          [
+            ".split-mark"
+          ],
+          [
+            ".bill-insight > span[aria-hidden=\"true\"]"
+          ],
+          [
+            ".closing > p:nth-child(4)"
+          ],
+          [
+            ".closing-note"
+          ],
+          [
+            ".footer-top > p"
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "width": 390,
+    "route": "/contact.html",
+    "state": null,
+    "violations": [],
+    "incomplete": []
+  },
+  {
+    "width": 390,
+    "route": "/privacy.html",
+    "state": null,
+    "violations": [],
+    "incomplete": []
+  },
+  {
+    "width": 390,
+    "route": "/pilot.html",
+    "state": null,
+    "violations": [],
+    "incomplete": []
+  },
+  {
+    "width": 390,
+    "route": "/404.html",
+    "state": null,
+    "violations": [],
+    "incomplete": []
+  },
+  {
+    "width": 1440,
+    "route": "/",
+    "state": "join",
+    "violations": [],
+    "incomplete": [
+      {
+        "id": "color-contrast",
+        "count": 8,
+        "targets": [
+          [
+            ".hero-actions > a[href$=\"#how-it-works\"] > span[aria-hidden=\"true\"]"
+          ],
+          [
+            ".scene-label"
+          ],
+          [
+            ".dish-info > span"
+          ],
+          [
+            ".phone-end > span[aria-hidden=\"true\"]"
+          ],
+          [
+            ".note-joined > .note-icon[aria-hidden=\"true\"]"
+          ],
+          [
+            ".split-mark"
+          ],
+          [
+            ".mini-confirm > span[aria-hidden=\"true\"]"
+          ],
+          [
+            ".example-next[data-next=\"share\"][data-enhancement=\"\"] > span[aria-hidden=\"true\"]"
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "width": 1440,
+    "route": "/",
+    "state": "share",
+    "violations": [],
+    "incomplete": [
+      {
+        "id": "color-contrast",
+        "count": 10,
+        "targets": [
+          [
+            ".hero-actions > a[href$=\"#how-it-works\"] > span[aria-hidden=\"true\"]"
+          ],
+          [
+            ".scene-label"
+          ],
+          [
+            ".dish-info > span"
+          ],
+          [
+            ".phone-end > span[aria-hidden=\"true\"]"
+          ],
+          [
+            ".note-joined > .note-icon[aria-hidden=\"true\"]"
+          ],
+          [
+            ".split-mark"
+          ],
+          [
+            "button[data-dish=\"pizza\"] > .dish-check[aria-hidden=\"true\"]"
+          ],
+          [
+            "b[data-dish-price=\"\"]"
+          ],
+          [
+            ".share-disc > span"
+          ],
+          [
+            "button[data-next=\"bill\"] > span[aria-hidden=\"true\"]"
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "width": 1440,
+    "route": "/",
+    "state": "bill",
+    "violations": [],
+    "incomplete": [
+      {
+        "id": "color-contrast",
+        "count": 7,
+        "targets": [
+          [
+            ".hero-actions > a[href$=\"#how-it-works\"] > span[aria-hidden=\"true\"]"
+          ],
+          [
+            ".scene-label"
+          ],
+          [
+            ".dish-info > span"
+          ],
+          [
+            ".phone-end > span[aria-hidden=\"true\"]"
+          ],
+          [
+            ".note-joined > .note-icon[aria-hidden=\"true\"]"
+          ],
+          [
+            ".split-mark"
+          ],
+          [
+            ".bill-insight > span[aria-hidden=\"true\"]"
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "width": 1440,
+    "route": "/contact.html",
+    "state": null,
+    "violations": [],
+    "incomplete": []
+  },
+  {
+    "width": 1440,
+    "route": "/privacy.html",
+    "state": null,
+    "violations": [],
+    "incomplete": []
+  },
+  {
+    "width": 1440,
+    "route": "/pilot.html",
+    "state": null,
+    "violations": [],
+    "incomplete": []
+  },
+  {
+    "width": 1440,
+    "route": "/404.html",
+    "state": null,
+    "violations": [],
+    "incomplete": []
+  }
+]

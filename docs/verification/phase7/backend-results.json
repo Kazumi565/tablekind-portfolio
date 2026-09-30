@@ -1,0 +1,432 @@
+{
+  "recordedAt": "2026-09-18T12:05:59.976189+00:00",
+  "environment": "Supplementary PGlite; Java 21; native PostgreSQL concurrency not verified",
+  "status": "passed-with-skips",
+  "tests": 87,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 3,
+  "passed": 84,
+  "suites": [
+    {
+      "name": "md.tablekind.DemoBoundaryTest",
+      "tests": 1,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "cases": [
+        {
+          "name": "practiceSetupIsUnavailableInOrdinaryLocalProfile",
+          "result": "passed"
+        }
+      ]
+    },
+    {
+      "name": "md.tablekind.DemoConfigurationTest",
+      "tests": 2,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "cases": [
+        {
+          "name": "requiresSeparateSecrets",
+          "result": "passed"
+        },
+        {
+          "name": "refusesLocalProfileAlongsideDemo",
+          "result": "passed"
+        }
+      ]
+    },
+    {
+      "name": "md.tablekind.MoneyTest",
+      "tests": 4,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "cases": [
+        {
+          "name": "equalSplitsConserveEveryBanAcrossTwoToTwentyGuests",
+          "result": "passed"
+        },
+        {
+          "name": "zeroWeightDoesNotReceiveARoundingBan",
+          "result": "passed"
+        },
+        {
+          "name": "validatesInputsAndRoundsPercentagesHalfUp",
+          "result": "passed"
+        },
+        {
+          "name": "weightedSplitsConserveTotalsAndAreIndependentOfInputOrder",
+          "result": "passed"
+        }
+      ]
+    },
+    {
+      "name": "md.tablekind.PaymentsTest",
+      "tests": 21,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 1,
+      "cases": [
+        {
+          "name": "signedWebhooksAreDeduplicatedAndOutOfOrderIsHarmless",
+          "result": "passed"
+        },
+        {
+          "name": "guestsCannotManipulateAnotherPayerOrForgeStaffConfirmation",
+          "result": "passed"
+        },
+        {
+          "name": "onlineSuccessSettlesOnlyBillAndTracksTipSeparately(String)[1]",
+          "result": "passed"
+        },
+        {
+          "name": "onlineSuccessSettlesOnlyBillAndTracksTipSeparately(String)[2]",
+          "result": "passed"
+        },
+        {
+          "name": "missingNotificationAndElapsedHoldCannotCauseDoubleCollection",
+          "result": "passed"
+        },
+        {
+          "name": "concurrentAttemptsCannotReserveSameSharesTwice",
+          "result": "skipped"
+        },
+        {
+          "name": "refundCapacityIncludesPendingAndFailedRefundCanBeRetried",
+          "result": "passed"
+        },
+        {
+          "name": "tipOnlyRefundDoesNotChangeTheBill",
+          "result": "passed"
+        },
+        {
+          "name": "invalidSignaturesStaleTimestampsAndWrongMerchantAmountsDoNotSettle",
+          "result": "passed"
+        },
+        {
+          "name": "refundRequiresManagerAndActualReturnConfirmation",
+          "result": "passed"
+        },
+        {
+          "name": "mixedCashTerminalAndOnlinePartialPaymentsReconcile",
+          "result": "passed"
+        },
+        {
+          "name": "paymentRequestReplayIsIdempotentAndBodyMismatchConflicts",
+          "result": "passed"
+        },
+        {
+          "name": "sharedItemRefundPreservesExactOriginalPortions",
+          "result": "passed"
+        },
+        {
+          "name": "payingForSomeoneElseKeepsOriginalItemOwnership",
+          "result": "passed"
+        },
+        {
+          "name": "truePendingCancellationReleasesWithoutSettlement",
+          "result": "passed"
+        },
+        {
+          "name": "returnedPaymentReopensAmountDueButChargeReductionDoesNot",
+          "result": "passed"
+        },
+        {
+          "name": "cancelChecksProviderSuccessBeforeReleasingAnything",
+          "result": "passed"
+        },
+        {
+          "name": "fullySettledServedTableClosesAndCanReceiveChargeReducingRefund",
+          "result": "passed"
+        },
+        {
+          "name": "providerFailureReleasesExactSharesAndAllowsNewAttempt(String)[1]",
+          "result": "passed"
+        },
+        {
+          "name": "providerFailureReleasesExactSharesAndAllowsNewAttempt(String)[2]",
+          "result": "passed"
+        },
+        {
+          "name": "providerFailureReleasesExactSharesAndAllowsNewAttempt(String)[3]",
+          "result": "passed"
+        }
+      ]
+    },
+    {
+      "name": "md.tablekind.Phase7Test",
+      "tests": 10,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "cases": [
+        {
+          "name": "payAtTableBlocksGuestOrderingButKeepsExistingBillAndStaffOrdering",
+          "result": "passed"
+        },
+        {
+          "name": "closedPrintedLinkNeverOpensANewGroupAndRejectsTampering",
+          "result": "passed"
+        },
+        {
+          "name": "waiterAndCrossRestaurantCannotUseManagerSetupOrReports",
+          "result": "passed"
+        },
+        {
+          "name": "printedLinkRequiresAnActiveEnabledSessionAndRotationRevokesIt",
+          "result": "passed"
+        },
+        {
+          "name": "requestLimitsPersistAndResetWithoutStoringRawIdentity",
+          "result": "passed"
+        },
+        {
+          "name": "managerDemotionBlocksConfigurationAndCancellationReceiptReplay",
+          "result": "passed"
+        },
+        {
+          "name": "revokedJoinCannotBeReplayedFromAnOldReceipt",
+          "result": "passed"
+        },
+        {
+          "name": "checklistReflectsRestaurantEvidenceWithoutClaimingLiveReadiness",
+          "result": "passed"
+        },
+        {
+          "name": "mfaEnrollmentRecoveryReplayAndPasswordRevocation",
+          "result": "passed"
+        },
+        {
+          "name": "expiredEnrollmentCannotEnableAndPasswordsAreRequired",
+          "result": "passed"
+        }
+      ]
+    },
+    {
+      "name": "md.tablekind.PosTest",
+      "tests": 25,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 1,
+      "cases": [
+        {
+          "name": "exhaustedAutomaticRetriesNeedManagerAction",
+          "result": "passed"
+        },
+        {
+          "name": "mismatchedAcknowledgmentCannotMarkDelivered",
+          "result": "passed"
+        },
+        {
+          "name": "mismatchIsReportedWithoutRewritingMoney",
+          "result": "passed"
+        },
+        {
+          "name": "rollbackDoesNotLeakOutboxWork",
+          "result": "passed"
+        },
+        {
+          "name": "connectionRequiresClosedTablesAndIsIdempotent",
+          "result": "passed"
+        },
+        {
+          "name": "permanentRejectionBlocksOnlyItsTableAndExplicitRetryRecovers",
+          "result": "passed"
+        },
+        {
+          "name": "offlineQueueSurvivesAndReplaysInOrder",
+          "result": "passed"
+        },
+        {
+          "name": "lostReplyRetriesSameIdentityWithoutDuplicateKitchenOrPayment",
+          "result": "passed"
+        },
+        {
+          "name": "importReplayDoesNotNeedThePosOnlineAfterSuccess",
+          "result": "passed"
+        },
+        {
+          "name": "concurrentWorkersClaimOnlyOneHeadPerTable",
+          "result": "skipped"
+        },
+        {
+          "name": "kitchenStatusesOnlyMoveForwardAndNeverChangeMoney",
+          "result": "passed"
+        },
+        {
+          "name": "demotedManagerCannotReplayAnAuthorizedCommand",
+          "result": "passed"
+        },
+        {
+          "name": "catalogSyncChangesPriceAndAvailabilityWithoutRepricingAcceptedItems",
+          "result": "passed"
+        },
+        {
+          "name": "guestCannotReadOrControlPosAndCrossRestaurantLookupFails",
+          "result": "passed"
+        },
+        {
+          "name": "oneBlockedTableDoesNotStopAnother",
+          "result": "passed"
+        },
+        {
+          "name": "rejectedStaleAcceptanceDoesNotEnqueueOrCharge",
+          "result": "passed"
+        },
+        {
+          "name": "changedCatalogPreservesOptionMappingsAndHistoricalOrderSnapshot",
+          "result": "passed"
+        },
+        {
+          "name": "unconfiguredRestaurantsContinueWithoutOutbox",
+          "result": "passed"
+        },
+        {
+          "name": "crashAfterRemoteCommitRecoversByExpiredLeaseAndFencesOldWorker",
+          "result": "passed"
+        },
+        {
+          "name": "acceptedOrderCreatesOneKitchenTicketAndExactBill",
+          "result": "passed"
+        },
+        {
+          "name": "pauseQueuesNewWorkAndResumePreservesIt",
+          "result": "passed"
+        },
+        {
+          "name": "mixedPaymentsRefundAndClosedSessionStayReconciled",
+          "result": "passed"
+        },
+        {
+          "name": "immutablePayloadAndIdempotencyConflictAreRejected",
+          "result": "passed"
+        },
+        {
+          "name": "malformedCatalogRollsBackAndNewProductsImportWithStableMappings",
+          "result": "passed"
+        },
+        {
+          "name": "expiredLastLeaseStopsWithVisibleFailure",
+          "result": "passed"
+        }
+      ]
+    },
+    {
+      "name": "md.tablekind.SecurityPrimitivesTest",
+      "tests": 2,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "cases": [
+        {
+          "name": "rfc6238Sha1VectorsAndReplayWindow",
+          "result": "passed"
+        },
+        {
+          "name": "seedsAreRandomizedEncryptedAndBoundToTheirOwner",
+          "result": "passed"
+        }
+      ]
+    },
+    {
+      "name": "md.tablekind.WorkflowTest",
+      "tests": 22,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 1,
+      "cases": [
+        {
+          "name": "databaseRejectsHistoryEditsAndUnbalancedEntries",
+          "result": "passed"
+        },
+        {
+          "name": "settlementExtensionProtectsPaidItems",
+          "result": "passed"
+        },
+        {
+          "name": "modifierRequirementsAndPricesComeFromTheMenu",
+          "result": "passed"
+        },
+        {
+          "name": "joiningIsIdempotentQrRevokesAndGroupCapsAtTwenty",
+          "result": "passed"
+        },
+        {
+          "name": "cancellingAppendsReversalsAndAllowsClosure",
+          "result": "passed"
+        },
+        {
+          "name": "waiterPermissionsAndRevokedIdempotentReplay",
+          "result": "passed"
+        },
+        {
+          "name": "sharedDebtNeedsConsentAndConservesTotals(String)[1]",
+          "result": "passed"
+        },
+        {
+          "name": "sharedDebtNeedsConsentAndConservesTotals(String)[2]",
+          "result": "passed"
+        },
+        {
+          "name": "sharedDebtNeedsConsentAndConservesTotals(String)[3]",
+          "result": "passed"
+        },
+        {
+          "name": "sharedDebtNeedsConsentAndConservesTotals(String)[4]",
+          "result": "passed"
+        },
+        {
+          "name": "unavailableAndUnknownOptionsAreRejected",
+          "result": "passed"
+        },
+        {
+          "name": "branchPauseAndAutomaticApprovalWork",
+          "result": "passed"
+        },
+        {
+          "name": "transferRequiresRecipientAndPreservesOriginalOrderer",
+          "result": "passed"
+        },
+        {
+          "name": "staleRevisionIsRejectedWithoutChangingBill",
+          "result": "passed"
+        },
+        {
+          "name": "declinedProposalCanBeReplacedAndWithdrawn",
+          "result": "passed"
+        },
+        {
+          "name": "quotesHoldsRetriesAndExpiryNeverCollectMoney",
+          "result": "passed"
+        },
+        {
+          "name": "authenticationTenantIsolationAndRevocation",
+          "result": "passed"
+        },
+        {
+          "name": "assistanceRequiresStaffCompletion",
+          "result": "passed"
+        },
+        {
+          "name": "requestValidationAndOpenApiRemainAvailable",
+          "result": "passed"
+        },
+        {
+          "name": "serverControlsPricesAttributionAndStatus",
+          "result": "passed"
+        },
+        {
+          "name": "wholeBillSplitAndAdjustmentsKeepEveryBan",
+          "result": "passed"
+        },
+        {
+          "name": "simultaneousCheckoutCannotReserveTheSameRemainderTwice",
+          "result": "skipped"
+        }
+      ]
+    }
+  ]
+}

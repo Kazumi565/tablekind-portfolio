@@ -1,0 +1,21 @@
+{
+  "status": "passed",
+  "checks": [
+    "All five Romanian pages fit seven viewport sizes, retain their matching English page when switching languages and expose lang=ro with translated metadata.",
+    "The Romanian guest example and all interactive role labels update in Romanian while keeping exact fictional bani arithmetic.",
+    "The Romanian enquiry composes a local draft, handles a double click and clears without sending anything.",
+    "Language switching works with JavaScript disabled; the unsendable form remains disabled.",
+    "Romanian pages passed eleven automated accessibility scans; no browser exceptions, external requests, POSTs, cookies or browser storage were observed."
+  ],
+  "accessibilityAudits": 11,
+  "viewportWidths": [
+    320,
+    360,
+    390,
+    430,
+    768,
+    1024,
+    1440
+  ],
+  "browser": "153.0.8010.0"
+}

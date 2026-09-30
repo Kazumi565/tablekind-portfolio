@@ -1,0 +1,23 @@
+{
+  "name": "tablekind-public-website",
+  "version": "0.11.3",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "devDependencies": {
+    "@axe-core/playwright": "4.13.0",
+    "playwright": "1.62.1"
+  },
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "build:release": "node scripts/build.mjs --release",
+    "preview": "node scripts/preview.mjs",
+    "test": "node --test tests/build.test.mjs",
+    "test:browser": "node tests/browser.mjs",
+    "test:motion": "node tests/motion.mjs",
+    "test:experience": "node tests/experience.mjs",
+    "test:bilingual": "node tests/bilingual.mjs"
+  }
+}

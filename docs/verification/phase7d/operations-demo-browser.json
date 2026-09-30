@@ -1,0 +1,9 @@
+{
+  "status": "passed",
+  "checks": [
+    "Manager sees current operational counts and no false alerts for an unconfigured restaurant",
+    "An unavailable status endpoint clears stale healthy data and presents an explicit error",
+    "Status refresh recovers; phone layout fits without uncaught browser errors",
+    "Paused TEST POS raises a visible alert; resuming clears it without changing orders or payments"
+  ]
+}

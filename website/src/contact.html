@@ -1,0 +1,106 @@
+<section class="wrap subpage">
+  <p class="eyebrow">For restaurant owners and teams</p>
+  <h1>Let’s start with<br /><em>your table.</em></h1>
+  <p class="intro">
+    Tell us a little about your restaurant. We can explore the prototype
+    together and discuss what a useful pilot would look like.
+  </p>
+</section>
+<div class="wrap contact-grid">
+  <section class="contact-context" aria-labelledby="conversation-title">
+    <h2 id="conversation-title">A conversation, not a commitment.</h2>
+    <ol>
+      <li>Tell us how service works at your restaurant.</li>
+      <li>We walk through a fictional table together.</li>
+      <li>If there’s a fit, we agree the scope of a supervised pilot.</li>
+    </ol>
+    <p>
+      No subscription, no payment details and no automatic restaurant
+      registration.
+    </p>
+    {{CONTACT_DIRECT}}
+    <p class="small">
+      Please don’t include customer information, passwords or financial records.
+      <a href="/pilot.html">Read the pilot information</a>.
+    </p>
+  </section>
+  <div class="form-panel">
+    <p id="composer-unavailable" class="small">
+      The optional draft composer needs JavaScript. You can contact us directly
+      when the published contact address is available. No form data will be
+      submitted here.
+    </p>
+    <form id="demo-request" autocomplete="off">
+      <fieldset id="composer-fields" disabled>
+        <legend>Prepare a demo enquiry</legend>
+        <div class="form-grid">
+          <label class="field" for="request-name"
+            >Your name
+            <input
+              id="request-name"
+              name="name"
+              required
+              maxlength="80"
+              autocomplete="name"
+          /></label>
+          <label class="field" for="request-restaurant"
+            >Restaurant
+            <input
+              id="request-restaurant"
+              name="restaurant"
+              required
+              maxlength="120"
+              autocomplete="organization"
+          /></label>
+          <label class="field field-full" for="request-city"
+            >City
+            <input
+              id="request-city"
+              name="city"
+              required
+              maxlength="80"
+              autocomplete="address-level2"
+          /></label>
+          <label class="field field-full" for="request-message"
+            >What would you like to explore?
+            <small>Optional · Up to 600 characters</small
+            ><textarea
+              id="request-message"
+              name="message"
+              maxlength="600"
+              rows="4"
+              placeholder="For example: handling shared dishes at a busy table."
+            ></textarea>
+          </label>
+        </div>
+        <p class="form-note">
+          This prepares a draft on your device. It does not submit a request.
+          You choose whether to send it from your own email app.
+          <a href="/privacy.html">How your information is used</a>.
+        </p>
+        <button class="button" type="submit">
+          Prepare my enquiry <span aria-hidden="true">↗</span>
+        </button>
+      </fieldset>
+      <p id="form-feedback" role="status" class="feedback"></p>
+    </form>
+    <section id="draft" class="draft" hidden aria-labelledby="draft-title">
+      <h2 id="draft-title" tabindex="-1">Your draft is ready. Not sent.</h2>
+      <p class="small">
+        Review the text below. If you change the form, prepare a new draft.
+      </p>
+      <label class="field" for="draft-text">Email draft</label
+      ><textarea id="draft-text" readonly rows="10"></textarea>
+      <div class="draft-actions">
+        <a id="open-email" class="button" hidden
+          >Open my email app <span aria-hidden="true">↗</span></a
+        ><button class="button button-outline" id="copy-draft" type="button">
+          Copy draft</button
+        ><button class="button button-outline" id="clear-draft" type="button">
+          Clear form
+        </button>
+      </div>
+      <p id="draft-feedback" role="status" class="feedback"></p>
+    </section>
+  </div>
+</div>

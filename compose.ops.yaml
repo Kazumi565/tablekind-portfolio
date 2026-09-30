@@ -1,0 +1,48 @@
+# Disposable native review only. Scripts supply a unique project name and credentials.
+services:
+  postgres:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_DB: tablekind_ops
+      POSTGRES_USER: tablekind_ops
+      POSTGRES_PASSWORD: ${OPS_DB_PASSWORD:?Use scripts/ops/review.py}
+    volumes:
+      - ops-db:/var/lib/postgresql/data
+    healthcheck:
+      test: [CMD-SHELL, 'pg_isready -U tablekind_ops -d tablekind_ops']
+      interval: 2s
+      timeout: 2s
+      retries: 30
+  backend:
+    build:
+      context: ./backend
+      target: runtime
+    environment:
+      SPRING_PROFILES_ACTIVE: local
+      SERVER_ADDRESS: 0.0.0.0
+      DB_URL: jdbc:postgresql://postgres:5432/tablekind_ops
+      DB_USER: tablekind_ops
+      DB_PASSWORD: ${OPS_DB_PASSWORD:?Use scripts/ops/review.py}
+      JWT_SECRET: ${OPS_JWT_SECRET:?Use scripts/ops/review.py}
+      TEST_WEBHOOK_SECRET: ${OPS_WEBHOOK_SECRET:?Use scripts/ops/review.py}
+      BOOTSTRAP_EMAIL: ops@tablekind.local
+      BOOTSTRAP_PASSWORD: ${OPS_STAFF_PASSWORD:?Use scripts/ops/review.py}
+    ports:
+      - '127.0.0.1:${OPS_PORT:-5281}:8080'
+    depends_on:
+      postgres:
+        condition: service_healthy
+    stop_grace_period: 30s
+    healthcheck:
+      test: [CMD, wget, -q, --spider, 'http://127.0.0.1:8080/actuator/health/readiness']
+      interval: 3s
+      timeout: 4s
+      retries: 40
+      start_period: 20s
+    logging:
+      driver: json-file
+      options:
+        max-size: 10m
+        max-file: '3'
+volumes:
+  ops-db:

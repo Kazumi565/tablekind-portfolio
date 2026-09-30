@@ -1,0 +1,72 @@
+{
+  "reviewDate": "2026-10-01",
+  "baselineArchive": "tablekind-source-20260929-171658.zip",
+  "baselineSha256": "a5d304b1773aba3616bcddb7986e5c3c94fedac610d8616cb43a5ba3ea00a199",
+  "applicationVersion": "0.10.2",
+  "websiteVersion": "0.11.3",
+  "publicationRoute": "new repository; original history remains private",
+  "gitleaks": {
+    "version": "8.30.1",
+    "sourceFindingsAfterReview": 0,
+    "reviewedException": "Exact RFC 6238 vector in SecurityPrimitivesTest.java only",
+    "exceptionScopeRegression": "passed"
+  },
+  "sourcePolicy": {
+    "automaticFindings": 0,
+    "binaryAssetsVisuallyReviewed": [
+      "docs/assets/presentation-preview.png"
+    ],
+    "regressionTests": 6
+  },
+  "migrationComparison": {
+    "unchanged": [
+      "V1",
+      "V2",
+      "V3",
+      "V4",
+      "V5",
+      "V6",
+      "V7",
+      "V8",
+      "V9"
+    ]
+  },
+  "executed": {
+    "frontendBuild": "passed",
+    "frontendRecoveryTests": 7,
+    "qrParserTests": 4,
+    "operationalHelperTests": 7,
+    "websiteBuildTests": 8,
+    "websiteBuild": "passed",
+    "websiteBrowserSuites": {
+      "browser": "passed",
+      "motion": "passed",
+      "experience": "passed",
+      "bilingual": "passed",
+      "engine": "Chromium Headless Shell 134.0.6998.35"
+    },
+    "npmAudit": {
+      "frontendVulnerabilities": 0,
+      "websiteVulnerabilities": 0
+    },
+    "workflowSyntax": {
+      "tool": "actionlint 1.7.12",
+      "result": "passed",
+      "shellcheck": "not run"
+    }
+  },
+  "notExecuted": [
+    "Native Docker/PostgreSQL backend suite",
+    "Native outage/restore exercise",
+    "Authenticated application browser suite",
+    "Physical phone camera and Tailscale",
+    "Windows PowerShell publication commands",
+    "GitHub Actions on GitHub"
+  ],
+  "limitations": [
+    "Not a guarantee of absence of all sensitive data",
+    "No original Git history or hosted metadata was available",
+    "Not a penetration test or production-readiness certification",
+    "Payments and POS remain TEST simulators"
+  ]
+}

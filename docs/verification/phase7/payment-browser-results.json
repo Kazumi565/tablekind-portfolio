@@ -1,0 +1,19 @@
+{
+  "status": "passed",
+  "checks": [
+    "Staff sign-in",
+    "Lost join response restores the original guest on retry",
+    "Two independent guests join and update staff live",
+    "Ordering, staff acceptance and shared-food consent with exact odd-ban rounding",
+    "Pending payment prevents competing item takeover",
+    "Reload preserves pending payment; confirmed cancellation permits takeover",
+    "Lost payment-start response retries the same key and creates one attempt",
+    "Delayed signed notification recovers via provider lookup without duplicate settlement",
+    "Mixed card/cash collection records agreed tip and correct cash change",
+    "Manager refund preserves allocation and reconciliation matches the reduced bill",
+    "Guest receives a clearly labelled test confirmation, not a fiscal receipt",
+    "Desktop and mobile pages fit their viewport",
+    "Manager configures opening hours and product options through normal forms",
+    "No uncaught browser JavaScript errors"
+  ]
+}
