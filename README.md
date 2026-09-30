@@ -12,7 +12,7 @@ Java 21 · Spring Boot 3.5 · PostgreSQL 16 · React 19 · TypeScript · Docker
 
 Tablekind models a group meal from scanning a table QR code to settling each guest's share. Guests can order individually, agree to share an item, cover someone else's portion, and leave after their own balance is settled. Restaurant staff and managers work in separate interfaces.
 
-Built around a Moldova use case, the application uses **integer bani** for MDL amounts and supports translated menu content. It is maintained here as an engineering portfolio project. Commercial rollout is no longer being pursued.
+Built around a Moldova use case, the application uses **integer bani** for MDL amounts and supports translated menu content. It is maintained here as an engineering portfolio project.
 
 > **Status:** runnable local prototype. Payments and POS connections are **TEST simulators**. Tablekind does not collect card details, move real money, send orders to a real kitchen, issue fiscal receipts, or confirm real reservations. The presentation website is separate from the operational application.
 
