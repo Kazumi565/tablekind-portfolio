@@ -11,7 +11,8 @@ tablekind:
   ai:
     enabled: ${AI_CALLS_ENABLED:false}
     api-key: ${OPENAI_API_KEY:}
-    model: ${AI_MODEL:gpt-4.1-mini-2025-04-14}
+    model: ${AI_MODEL:gpt-6.1-sol}
+    reasoning-effort: ${AI_REASONING_EFFORT:low}
     max-calls: ${AI_MAX_CALLS:0}
 springdoc:
   api-docs:

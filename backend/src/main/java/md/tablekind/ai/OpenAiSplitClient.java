@@ -35,6 +35,8 @@ public class OpenAiSplitClient implements SplitAiClient {
               settings.model(),
               "store",
               false,
+              "reasoning",
+              Map.of("effort", settings.reasoningEffort()),
               "max_output_tokens",
               4000,
               "instructions",

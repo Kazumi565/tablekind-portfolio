@@ -20,7 +20,8 @@ $lines = @(
   'PAYPAL_MERCHANT_ID='
   'AI_CALLS_ENABLED=false'
   'OPENAI_API_KEY='
-  'AI_MODEL=gpt-4.1-mini-2025-04-14'
+  'AI_MODEL=gpt-6.1-sol'
+  'AI_REASONING_EFFORT=low'
   'AI_MAX_CALLS=0'
 )
 [IO.File]::WriteAllLines($configPath, $lines, (New-Object Text.UTF8Encoding $false))

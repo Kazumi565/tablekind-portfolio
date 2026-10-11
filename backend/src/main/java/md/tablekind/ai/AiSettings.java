@@ -7,7 +7,8 @@ import org.springframework.stereotype.Component;
 public record AiSettings(
     @Value("${tablekind.ai.enabled:false}") boolean enabled,
     @Value("${tablekind.ai.api-key:}") String apiKey,
-    @Value("${tablekind.ai.model:gpt-4.1-mini-2025-04-14}") String model,
+    @Value("${tablekind.ai.model:gpt-6.1-sol}") String model,
+    @Value("${tablekind.ai.reasoning-effort:low}") String reasoningEffort,
     @Value("${tablekind.ai.max-calls:0}") int maxCalls) {
   public boolean configured() {
     return enabled && !apiKey.isBlank() && maxCalls > 0;

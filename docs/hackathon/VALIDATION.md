@@ -96,7 +96,9 @@ Private screenshots and provider identifiers are retained under ignored `test-re
 
 ## Model evaluation gate
 
-Provisional choice: `gpt-4.1-mini-2025-04-14`, using Responses strict JSON output. A fixed snapshot aids repeatability; the provider boundary permits replacement. Actual task reliability, latency and token cost are **unmeasured**. Do not treat the model choice as validated yet.
+Selected on 12 October: `gpt-6.1-sol`, using Responses strict JSON output with explicit low reasoning effort. The provider boundary permits replacement. Actual task reliability, latency and token cost are **unmeasured**. Do not treat the model choice as validated yet. The 4,000-token output cap also includes reasoning tokens; incomplete responses are rejected without creating a preview or automatically retrying.
+
+After this configuration change, the backend compiled and all 17 `AiSplitTest` checks passed against a disposable PostgreSQL 16 container with the AI provider mocked. Java formatting, Compose configuration validation and `git diff --check` passed. These checks made no paid OpenAI calls and do not establish live model quality. The ignored local configuration retains `AI_CALLS_ENABLED=false` and `AI_MAX_CALLS=0`.
 
 After budget approval and secure configuration, this opt-in runner makes six real preview requests and never confirms a proposal or starts a payment:
 

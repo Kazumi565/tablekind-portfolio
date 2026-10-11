@@ -27,11 +27,19 @@ The PayPal secret stays on the backend. This implementation uses PayPal's offici
 
 ## AI setup and spending gate
 
-Paid calls are **not authorized** as of 11 October. The supplied configuration has `AI_CALLS_ENABLED=false` and `AI_MAX_CALLS=0`; keep these settings until a budget is explicitly agreed.
+Paid calls are **not authorized** as of 12 October. The supplied configuration has `AI_CALLS_ENABLED=false` and `AI_MAX_CALLS=0`; keep these settings until a budget is explicitly agreed.
 
-After authorization, use a dedicated OpenAI API project key in `OPENAI_API_KEY`, enable `AI_CALLS_ENABLED=true`, choose a positive cumulative `AI_MAX_CALLS`, and recreate the backend. Calls are counted durably before dispatch; failed/uncertain calls also count. The cap covers the entire hackathon database and survives restarts. It is a request limit, not a dollar limit. Set provider project controls and monitor actual token charges as well. One request is limited to 2,000 instruction characters, 40 accepted item rows, 20 diners and 4,000 output tokens. No automatic retry of a paid interpretation occurs.
+Create a dedicated project named **TableKind Hackathon** in the [OpenAI Platform](https://platform.openai.com/), then create a project API key. Put it in `OPENAI_API_KEY` in the ignored `.env.hackathon` file using your local editor. Keep the key out of chat, frontend configuration and Git. See the [official quickstart](https://developers.openai.com/api/docs/quickstart).
 
-The provisional model is `gpt-4.1-mini-2025-04-14`, configurable through `AI_MODEL`. It supports [structured output](https://developers.openai.com/api/docs/guides/structured-outputs?api-mode=responses); the [model documentation](https://developers.openai.com/api/docs/models/gpt-4.1-mini) describes its capabilities. Reliability, measured latency and actual cost must be evaluated before final model selection. The application sends fictional guest names, item names/IDs, quantities and instructions; do not enter personal or payment credentials into the prompt.
+The selected model is `gpt-6.1-sol`, with `AI_REASONING_EFFORT=low`. The request uses Responses strict JSON output and explicitly sets `reasoning.effort`; Sol defaults to medium if omitted. See the [model documentation](https://developers.openai.com/api/docs/models/gpt-6.1-sol). Actual task reliability, latency and token cost remain unmeasured. The application sends fictional guest names, item names/IDs, quantities and instructions; do not enter personal or payment credentials into the prompt.
+
+After a test budget is explicitly authorized and API billing/model access is available, enable `AI_CALLS_ENABLED=true`, choose a positive cumulative `AI_MAX_CALLS`, and recreate the backend:
+
+```powershell
+docker compose --env-file .env.hackathon -f compose.hackathon.yaml up --build -d backend
+```
+
+Calls are counted durably before dispatch; failed/uncertain calls also count. The cap covers the entire hackathon database and survives restarts. It is a request limit, not a dollar limit. Set provider project controls and monitor actual token charges as well. One request is limited to 2,000 instruction characters, 40 accepted item rows, 20 diners and 4,000 output tokens, including reasoning tokens. An incomplete response cannot create a preview; no automatic retry of a paid interpretation occurs. The first paid checks must measure both task success and reasoning/output usage before increasing limits.
 
 ## The complete scenario
 
