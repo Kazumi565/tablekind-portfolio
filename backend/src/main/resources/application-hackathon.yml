@@ -1,0 +1,20 @@
+tablekind:
+  jwt-secret: ${HACKATHON_JWT_SECRET}
+  bootstrap-email: ${HACKATHON_STAFF_EMAIL:manager@tablekind.test}
+  bootstrap-password: ${HACKATHON_STAFF_PASSWORD}
+  paypal:
+    enabled: true
+    client-id: ${PAYPAL_CLIENT_ID:}
+    client-secret: ${PAYPAL_CLIENT_SECRET:}
+    merchant-id: ${PAYPAL_MERCHANT_ID:}
+    app-url: ${HACKATHON_APP_URL:http://localhost:5195}
+  ai:
+    enabled: ${AI_CALLS_ENABLED:false}
+    api-key: ${OPENAI_API_KEY:}
+    model: ${AI_MODEL:gpt-4.1-mini-2025-04-14}
+    max-calls: ${AI_MAX_CALLS:0}
+springdoc:
+  api-docs:
+    enabled: false
+  swagger-ui:
+    enabled: false

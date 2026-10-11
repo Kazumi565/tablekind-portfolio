@@ -207,6 +207,27 @@ public class Allocations {
     return Map.of("proposalId", pid);
   }
 
+  /** A server-validated AI draft enters exactly the same consent machinery as manual splits. */
+  public Object batch(
+      Actor a, UUID sid, long revision, Map<UUID, Map<UUID, Long>> matrix, String reason) {
+    var session = sessions.lock(a, sid, revision);
+    access.guest(a, sid);
+    if (matrix.isEmpty() || matrix.size() > 40)
+      throw Problem.bad("Select one to forty changed items.");
+    for (var e : matrix.entrySet()) {
+      var item = acceptedItem(sid, e.getKey());
+      ledger.editable(sid, e.getKey());
+      validateGuests(sid, new ArrayList<>(e.getValue().keySet()));
+      if (!ledger.shares(sid, e.getKey()).containsKey(a.id())
+          && !a.id().equals(Db.id(item, "ordered_by"))) throw Problem.forbidden();
+      if (e.getValue().values().stream().anyMatch(n -> n < 0)
+          || e.getValue().values().stream().mapToLong(Long::longValue).sum()
+              != ledger.total(sid, e.getKey()))
+        throw Problem.bad("Shares must equal the accepted item total.");
+    }
+    return propose(a, session, "AI_SPLIT", matrix, null, reason);
+  }
+
   public Object vote(Actor a, UUID sid, UUID pid, BillingController.Vote r) {
     var s = sessions.lock(a, sid, r.revision());
     access.guest(a, sid);

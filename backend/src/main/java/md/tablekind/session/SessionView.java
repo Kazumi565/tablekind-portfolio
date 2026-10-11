@@ -16,14 +16,21 @@ public class SessionView {
   private final Ledger ledger;
   private final CatalogService catalog;
   private final Payments payments;
+  private final md.tablekind.paypal.PayPalPayments paypal;
 
   public SessionView(
-      Db db, Access access, Ledger ledger, CatalogService catalog, Payments payments) {
+      Db db,
+      Access access,
+      Ledger ledger,
+      CatalogService catalog,
+      Payments payments,
+      md.tablekind.paypal.PayPalPayments paypal) {
     this.db = db;
     this.access = access;
     this.ledger = ledger;
     this.catalog = catalog;
     this.payments = payments;
+    this.paypal = paypal;
   }
 
   @Transactional(readOnly = true, isolation = Isolation.REPEATABLE_READ)
@@ -100,7 +107,12 @@ public class SessionView {
     result.put("proposals", proposals);
     result.put("reservations", reservations);
     result.put("testPayments", payments.testMode());
-    result.put("paymentsEnabled", payments.testMode());
+    String currency =
+        Db.text(db.one("SELECT currency FROM restaurant WHERE id=?", rid), "currency");
+    result.put("currency", currency);
+    result.put("paypalEnabled", paypal.available(rid));
+    result.put("paypalClientId", paypal.available(rid) ? paypal.clientId() : "");
+    result.put("paymentsEnabled", payments.testMode() || paypal.available(rid));
     var paymentRows =
         db.list(
             "SELECT"

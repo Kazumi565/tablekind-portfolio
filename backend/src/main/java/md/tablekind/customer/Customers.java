@@ -73,7 +73,7 @@ public class Customers {
         "emailSettings",emailSettings.publicConfig(),
         "emailDelivery",db.list("SELECT purpose,delivery_status,expires_at,created_at FROM customer_email_challenge WHERE customer_id=? AND consumed_at IS NULL ORDER BY created_at DESC",a.id()),
         "visits", db.list("SELECT g.id AS guest_id,g.session_id,g.nickname,g.active,s.status,r.name AS restaurant_name,"
-            + "t.label,g.joined_at,coalesce((SELECT sum(amount_bani) FROM allocation_entry WHERE guest_id=g.id),0) AS allocated_bani,"
+            + "r.currency,t.label,g.joined_at,coalesce((SELECT sum(amount_bani) FROM allocation_entry WHERE guest_id=g.id),0) AS allocated_bani,"
             + "coalesce((SELECT sum(amount_bani) FROM settlement_entry WHERE guest_id=g.id),0) AS settled_bani"
             + " FROM guest g JOIN table_session s ON s.id=g.session_id JOIN restaurant r ON r.id=g.restaurant_id"
             + " JOIN dining_table t ON t.id=s.table_id WHERE g.customer_id=? ORDER BY g.joined_at DESC,g.id LIMIT 100", a.id()));

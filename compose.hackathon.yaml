@@ -1,0 +1,54 @@
+name: tablekind-hackathon
+services:
+  postgres:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_DB: tablekind_hackathon
+      POSTGRES_USER: tablekind
+      POSTGRES_PASSWORD: ${HACKATHON_DB_PASSWORD:?Run scripts/hackathon/Initialize-Hackathon.ps1}
+    volumes:
+      - hackathon-postgres:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U tablekind -d tablekind_hackathon"]
+      interval: 3s
+      timeout: 3s
+      retries: 30
+  backend:
+    build:
+      context: ./backend
+      target: runtime
+    environment:
+      SPRING_PROFILES_ACTIVE: hackathon
+      SERVER_ADDRESS: 0.0.0.0
+      DB_URL: jdbc:postgresql://postgres:5432/tablekind_hackathon
+      DB_USER: tablekind
+      DB_PASSWORD: ${HACKATHON_DB_PASSWORD:?Initialize hackathon configuration}
+      HACKATHON_JWT_SECRET: ${HACKATHON_JWT_SECRET:?Initialize hackathon configuration}
+      HACKATHON_STAFF_EMAIL: ${HACKATHON_STAFF_EMAIL:-manager@tablekind.test}
+      HACKATHON_STAFF_PASSWORD: ${HACKATHON_STAFF_PASSWORD:?Initialize hackathon configuration}
+      PAYPAL_CLIENT_ID: ${PAYPAL_CLIENT_ID:-}
+      PAYPAL_CLIENT_SECRET: ${PAYPAL_CLIENT_SECRET:-}
+      PAYPAL_MERCHANT_ID: ${PAYPAL_MERCHANT_ID:-}
+      HACKATHON_APP_URL: ${HACKATHON_APP_URL:-http://localhost:5195}
+      AI_CALLS_ENABLED: ${AI_CALLS_ENABLED:-false}
+      OPENAI_API_KEY: ${OPENAI_API_KEY:-}
+      AI_MODEL: ${AI_MODEL:-gpt-4.1-mini-2025-04-14}
+      AI_MAX_CALLS: ${AI_MAX_CALLS:-0}
+    depends_on:
+      postgres:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD", "wget", "-q", "--spider", "http://127.0.0.1:8080/actuator/health/readiness"]
+      interval: 5s
+      timeout: 3s
+      start_period: 30s
+      retries: 30
+  frontend:
+    build: ./frontend
+    ports:
+      - "127.0.0.1:${HACKATHON_PORT:-5195}:8080"
+    depends_on:
+      backend:
+        condition: service_healthy
+volumes:
+  hackathon-postgres:

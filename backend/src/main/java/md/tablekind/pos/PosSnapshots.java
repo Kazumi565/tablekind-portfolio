@@ -121,7 +121,7 @@ public class PosSnapshots {
         sid,
         mapping(rid, "TABLE", Db.id(s, "table_id")),
         Db.text(s, "label"),
-        "MDL",
+        Db.text(db.one("SELECT currency FROM restaurant WHERE id=?", rid), "currency"),
         Db.text(s, "status"),
         lines,
         tenders,

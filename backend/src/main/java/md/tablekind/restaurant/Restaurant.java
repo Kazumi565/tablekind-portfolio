@@ -21,9 +21,15 @@ public class Restaurant {
   protected Restaurant() {}
 
   public Restaurant(UUID id, String name) {
+    this(id, name, "MDL");
+  }
+
+  public Restaurant(UUID id, String name, String currency) {
     this.id = id;
     this.name = name;
-    this.currency = "MDL";
+    if (!java.util.Set.of("MDL", "EUR").contains(currency))
+      throw new IllegalArgumentException("Unsupported currency");
+    this.currency = currency;
     this.createdAt = Instant.now();
   }
 

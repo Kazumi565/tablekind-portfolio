@@ -90,6 +90,9 @@ public class Payments {
     requireTestPayments();
     var s = lock(a, sid, r.revision(), false);
     UUID rid = Db.id(s, "restaurant_id"), payer = a.guest() ? a.id() : r.payerId();
+    if (!"MDL"
+        .equals(Db.text(db.one("SELECT currency FROM restaurant WHERE id=?", rid), "currency")))
+      throw Problem.bad("Simulator payments are available only for the original MDL scenario.");
     if (a.guest() && r.payerId() != null && !r.payerId().equals(a.id())) throw Problem.forbidden();
     activeGuest(sid, payer);
     boolean digital = Set.of("CARD", "MIA").contains(r.method());
@@ -168,6 +171,7 @@ public class Payments {
     var s = lock(a, sid, r.revision(), false);
     access.staff(a, Db.id(s, "restaurant_id"));
     var p = payment(sid, id);
+    requireLegacy(p);
     if (online(p))
       throw Problem.bad("Only a verified provider outcome can confirm online payment.");
     if (!pending(p)) throw Problem.conflict("This payment already has a final outcome.");
@@ -198,6 +202,7 @@ public class Payments {
     requireTestPayments();
     var s = lock(a, sid, revision, false);
     var p = payment(sid, id);
+    requireLegacy(p);
     owner(a, p);
     if (!pending(p)) throw Problem.conflict("This payment already has a final outcome.");
     // Once staff may have started collecting cash or using a terminal, only staff may cancel.
@@ -212,6 +217,7 @@ public class Payments {
     requireTestPayments();
     var s = lock(a, sid, revision, true);
     var p = payment(sid, id);
+    requireLegacy(p);
     owner(a, p);
     if (!online(p))
       throw Problem.bad(
@@ -254,6 +260,20 @@ public class Payments {
     sessions.event(a, s, "PAYMENT_" + status, Map.of("paymentId", id));
   }
 
+  /** Invoked only after PayPal verification or a server-fenced pre-capture cancellation. */
+  public void settlePayPal(Map<String, Object> s, UUID id, String status) {
+    var p = payment(Db.id(s, "id"), id);
+    if (!"PAYPAL_SANDBOX".equals(p.get("provider"))
+        || !"PAYPAL".equals(p.get("method"))
+        || !Set.of("SUCCEEDED", "FAILED", "CANCELLED").contains(status)) throw Problem.forbidden();
+    settle(new Actor(id, "PROVIDER", 0), s, p, status);
+  }
+
+  private void requireLegacy(Map<String, Object> p) {
+    if ("PAYPAL".equals(p.get("method")))
+      throw Problem.bad("Use the PayPal checkout workflow. PayPal refunds are not implemented.");
+  }
+
   private void settlement(
       UUID rid, UUID sid, UUID item, UUID guest, long amount, UUID payment, UUID refund) {
     db.update(
@@ -277,6 +297,7 @@ public class Payments {
     UUID rid = Db.id(s, "restaurant_id");
     access.manager(a, rid);
     var p = payment(sid, paymentId);
+    requireLegacy(p);
     if (!"SUCCEEDED".equals(Db.text(p, "status")))
       throw Problem.conflict("Only a confirmed payment can be refunded.");
     if (r.amountBani() + r.tipBani() < 1)

@@ -30,9 +30,13 @@ public class CatalogService {
   }
 
   public Object create(Actor a, String name) {
+    return create(a, name, "MDL");
+  }
+
+  public Object create(Actor a, String name, String currency) {
     authorizeCreate(a);
     UUID id = UUID.randomUUID();
-    restaurants.saveAndFlush(new Restaurant(id, name.trim()));
+    restaurants.saveAndFlush(new Restaurant(id, name.trim(), currency));
     db.update(
         "INSERT INTO membership(restaurant_id,staff_id,role) VALUES(?,?,'OWNER')", id, a.id());
     audit(a, id, "RESTAURANT_CREATED", Map.of("name", name));

@@ -27,7 +27,9 @@ abstract class WorkflowSupport {
   @DynamicPropertySource
   static void database(DynamicPropertyRegistry r) {
     r.add("tablekind.pos.worker-enabled", () -> false);
-    r.add("tablekind.security.rate-limits", () -> false); // Explicit limiter tests exercise limits separately.
+    r.add(
+        "tablekind.security.rate-limits",
+        () -> false); // Explicit limiter tests exercise limits separately.
     String external = System.getenv("TEST_DB_URL");
     if (external == null) {
       postgres = new PostgreSQLContainer<>("postgres:16-alpine");
@@ -152,7 +154,7 @@ abstract class WorkflowSupport {
                 map("email", "manager@tablekind.test", "password", "Local-Review-2026!"))
             .path("accessToken")
             .asText();
-    rid = post(staff, "/restaurants", map("name", "Test " + UUID.randomUUID())).path("id").asText();
+    rid = createFixtureRestaurant();
     bid =
         post(
                 staff,
@@ -214,5 +216,11 @@ abstract class WorkflowSupport {
     var gb = post(null, "/join", map("token", join, "nickname", "Diego"));
     b = gb.path("actorId").asText();
     bt = gb.path("accessToken").asText();
+  }
+
+  String createFixtureRestaurant() {
+    return post(staff, "/restaurants", map("name", "Test " + UUID.randomUUID()))
+        .path("id")
+        .asText();
   }
 }
