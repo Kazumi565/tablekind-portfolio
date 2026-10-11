@@ -89,6 +89,10 @@ for (const [name, instruction, expected, check] of cases) {
     instruction,
   });
   let passed = p.status === expected;
+  const serviceFailed =
+    p.question?.startsWith("The AI service could not complete") ||
+    p.question?.startsWith("That interpretation could not be safely applied");
+  passed &&= !serviceFailed;
   if (passed && check) {
     const starter = p.items?.find((i) => i.name === "Shared starter");
     const parts = starter?.shares ?? [];
@@ -102,20 +106,46 @@ for (const [name, instruction, expected, check] of cases) {
     if (check === "weighted")
       passed &&=
         parts.length === 3 &&
-        parts.find((s) => s.name === "Mihai")?.amountMinor === 351;
+        parts.find((s) => s.name === "Mihai")?.amountMinor === 351 &&
+        parts.find((s) => s.name === "Diego")?.amountMinor === 175 &&
+        parts.find((s) => s.name === "Ana")?.amountMinor === 175;
     if (check === "assigned")
       passed &&=
         parts.length === 1 &&
         parts[0].name === "Ana" &&
         parts[0].amountMinor === 701;
+    const baseAmounts = { Mihai: 1200, Diego: 1000, Ana: 900 };
+    passed &&=
+      p.currency === "EUR" &&
+      p.totals?.length === 3 &&
+      p.totals.reduce((n, t) => n + t.amountMinor, 0) === 3801 &&
+      p.totals.every(
+        (t) =>
+          t.amountMinor ===
+          baseAmounts[t.name] +
+            (parts.find((s) => s.name === t.name)?.amountMinor ?? 0),
+      ) &&
+      p.items.every((i) => {
+        if (i.name === "Shared starter") return true;
+        const owner = { Burger: "Mihai", Pasta: "Diego", Salad: "Ana" }[i.name];
+        return (
+          owner &&
+          i.shares.length === 1 &&
+          i.shares[0].name === owner &&
+          i.shares[0].amountMinor === baseAmounts[owner]
+        );
+      });
   }
+  if (expected === "CLARIFY") passed &&= !!p.question?.trim();
   results.push({
     name,
     expected,
     observed: p.status,
     passed,
+    preview: p,
     latencyMs: Math.round(performance.now() - start),
   });
+  if (serviceFailed) break; // Stop paid checks on a provider/contract failure.
 }
 const after = await api(prefix, token);
 assert.equal(
@@ -128,8 +158,8 @@ mkdirSync(output, { recursive: true });
 const result = {
   recordedAt: new Date().toISOString(),
   model: config.AI_MODEL,
-  calls: cases.length,
-  passed: results.every((r) => r.passed),
+  calls: results.length,
+  passed: results.length === cases.length && results.every((r) => r.passed),
   results,
   cost: "Record actual provider usage separately",
   proposalsConfirmed: 0,

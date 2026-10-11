@@ -5,11 +5,14 @@ import java.net.URI;
 import java.net.http.*;
 import java.time.Duration;
 import java.util.*;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Component;
 import org.springframework.transaction.support.TransactionSynchronizationManager;
 
 @Component
 public class OpenAiSplitClient implements SplitAiClient {
+  private static final Logger log = LoggerFactory.getLogger(OpenAiSplitClient.class);
   private final AiSettings settings;
   private final ObjectMapper json;
   private final JsonNode schema;
@@ -68,17 +71,36 @@ public class OpenAiSplitClient implements SplitAiClient {
                       true,
                       "schema",
                       schema)));
+      String encodedBody = json.writeValueAsString(body);
+      if (encodedBody.getBytes(java.nio.charset.StandardCharsets.UTF_8).length > 32_000)
+        throw new IllegalStateException("AI request exceeds the input allowance");
       var request =
           HttpRequest.newBuilder(URI.create("https://api.openai.com/v1/responses"))
               .timeout(Duration.ofSeconds(40))
               .header("Authorization", "Bearer " + settings.apiKey())
               .header("Content-Type", "application/json")
-              .POST(HttpRequest.BodyPublishers.ofString(json.writeValueAsString(body)))
+              .POST(HttpRequest.BodyPublishers.ofString(encodedBody))
               .build();
+      long started = System.nanoTime();
       var response = http.send(request, HttpResponse.BodyHandlers.ofString());
-      if (response.statusCode() != 200 || response.body().length() > 200_000)
+      if (response.statusCode() != 200 || response.body().length() > 200_000) {
+        log.warn(
+            "AI request unavailable: model={} httpStatus={}",
+            settings.model(),
+            response.statusCode());
         throw new IllegalStateException("AI request unavailable");
+      }
       var root = json.readTree(response.body());
+      var usage = root.path("usage");
+      log.info(
+          "AI usage: model={} status={} inputTokens={} outputTokens={} reasoningTokens={}"
+              + " latencyMs={}",
+          settings.model(),
+          root.path("status").asText(),
+          usage.path("input_tokens").asLong(-1),
+          usage.path("output_tokens").asLong(-1),
+          usage.path("output_tokens_details").path("reasoning_tokens").asLong(-1),
+          (System.nanoTime() - started) / 1_000_000);
       if (!"completed".equals(root.path("status").asText()))
         throw new IllegalStateException("AI response incomplete");
       for (var output : root.path("output"))

@@ -30,7 +30,7 @@ A useful AI payment experience needs clear limits: natural language helps expres
 
 ## Next steps
 
-Complete measured model evaluation and the combined AI-to-payment demonstration, then refine judge access. Actual sandbox checks already verified three individual payments, separate tips, completed-payment replay and recovery after approval with the backend stopped. PayPal refunds, live payments, fiscal receipts and real POS integration are outside this entry's scope.
+Finalize judge access and record the working demonstration. Six real GPT-6.1 Sol evaluation cases passed, and the combined AI preview, all-diner consent and three PayPal sandbox payments settled EUR 38.01 with zero outstanding. Earlier sandbox checks verified separate tips, completed-payment replay and recovery after approval with the backend stopped. PayPal refunds, live payments, fiscal receipts and real POS integration are outside this entry's scope.
 
 ## Fields to finalize before submitting
 
@@ -38,4 +38,4 @@ Complete measured model evaluation and the combined AI-to-payment demonstration,
 - Demo/setup: link the final [setup guide](SETUP.md); add an approved hosted HTTPS URL if one is deployed.
 - Video: add the publicly visible YouTube link after recording and manual publication.
 - Testing access: provide controlled demo-manager and sandbox buyer access through the agreed judge channel; never publish API secrets.
-- Validation: replace this draft's future-work wording only after the real gates in [VALIDATION](VALIDATION.md) pass. As of 12 October, actual sandbox payments, tips, replay and restart recovery are verified. Hosted AI evaluation and the complete AI-to-payment demonstration remain unverified.
+- Validation: as of 12 October, the small real GPT-6.1 Sol evaluation and complete local AI-to-payment journey pass, alongside actual sandbox tips, replay and restart recovery. Seven AI calls used an estimated USD 0.0221 in tokens. Judging access, published source/video links and final submission review remain pending; see [VALIDATION](VALIDATION.md).

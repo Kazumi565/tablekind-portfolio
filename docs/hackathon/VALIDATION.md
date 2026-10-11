@@ -1,6 +1,6 @@
 # Validation record — updated 12 October 2026
 
-**Local implementation and actual sandbox payments are verified; the entry is not finished.** A US sandbox merchant and buyer successfully settled the three unchanged diner shares: EUR 38.01 paid, zero outstanding, and EUR 1.00 tip kept separate. Completed-payment replay and restart recovery after approval passed against actual PayPal. The original German merchant failed before approval; its exact KYC reason remains unknown. No real AI call has been performed; Mihai explicitly selected **“No paid calls yet.”** Judge access and the complete AI-to-payment demonstration remain unfinished. No hosting costs were incurred.
+**The local real AI-to-payment journey is verified; the entry is not finished.** Real GPT-6.1 Sol interpretation, reviewed preview, all three diners' consent and three actual PayPal sandbox captures completed: EUR 38.01 paid and zero outstanding. All six real AI evaluation cases passed. Seven provider calls used an estimated USD 0.022098 in tokens within Mihai's explicitly authorized USD 1 test allowance; paid calls were disabled afterward. Earlier actual PayPal checks verified separate tips, completed-payment replay and restart recovery. The original German merchant failed before approval; its exact KYC reason remains unknown. Judge access, video and manual publication remain unfinished. No hosting costs were incurred.
 
 ## Completed checks
 
@@ -14,6 +14,9 @@
 | Actual PayPal sandbox, three unchanged diner shares | Three completed captures, EUR 38.01 bill paid, EUR 1.00 tip separate, zero outstanding |
 | Actual PayPal recovery after approval | Backend stopped before approval, checkout tab closed, worker captured and settled the original attempt after restart |
 | Actual completed-payment replay | Same-key and fresh-key approve requests returned success without extra captures or item settlements |
+| Actual GPT-6.1 Sol evaluation, low reasoning | Six of six cases passed; exact totals, unchanged unspecified dishes and safe clarification verified |
+| Actual AI preview replay | Saved READY result returned with no extra provider call, revision or bill mutation |
+| Actual combined AI-to-payment journey | All affected diners agreed; three completed captures settled EUR 38.01, zero outstanding |
 | Frontend TypeScript and production build | Passed locally and in Docker |
 | Browser command recovery / QR parsing | 7 / 4 passed |
 | Source-review / operations tool unit tests | 6 / 7 passed |
@@ -90,15 +93,25 @@ Private screenshots and provider identifiers are retained under ignored `test-re
 - [x] On a new dinner, pay one unchanged diner share first. Inspect the actual Orders create response/approval link, capture representation, merchant, currency and gross. Confirm the local paid amount excludes tip. Verified EUR 19.01 with zero tip and EUR 11.00 gross with EUR 1.00 tip.
 - [x] Reload and replay the **Finish approved payment** endpoint; verify one external capture and settlement of each original item portion once. Private provider IDs and redacted public results retained. After settlement the UI removes the finish button; replay was exercised through the authenticated endpoint.
 - [x] Approve on PayPal, close the checkout tab, restart the backend, and confirm the worker settles the original attempt. Buyer cancellation before capture and a provider decline were verified on the earlier attempt. A genuine pending capture was not observed; pending-capture, network-loss and race tests remain mocks.
-- [ ] Authorize an explicit AI budget and configure a project key. Run the evaluation below and inspect the real strict-schema response. Do not claim model reliability or cost measurements from mocked tests.
-- [ ] Run the actual sample instruction, review the exact split, obtain Diego and Ana's votes, and pay all three sandbox shares. Verify **38.01 EUR paid, 0.00 EUR remaining**, with tips separate.
+- [x] Authorize an explicit AI budget and configure a project key. Run the evaluation below and inspect the real strict-schema response. Verified within a USD 1 allowance; six real cases passed and usage measured.
+- [x] Run the actual sample instruction, review the exact split, obtain Diego and Ana's votes, and pay all three sandbox shares. Verified **38.01 EUR paid, 0.00 EUR remaining**; these three payments had zero tips, with tip separation verified earlier.
 - [ ] Test the exact judge setup or hosted HTTPS origin with a fresh browser and available sandbox buyer access. Keep it usable through judging. Record a real working demo for the video.
 
 ## Model evaluation gate
 
-Selected on 12 October: `gpt-6.1-sol`, using Responses strict JSON output with explicit low reasoning effort. The provider boundary permits replacement. Actual task reliability, latency and token cost are **unmeasured**. Do not treat the model choice as validated yet. The 4,000-token output cap also includes reasoning tokens; incomplete responses are rejected without creating a preview or automatically retrying.
+Selected on 12 October: `gpt-6.1-sol`, using Responses strict JSON output with explicit low reasoning effort. The provider boundary permits replacement. The six representative cases below passed once each, plus a second representative request used in the browser journey. This is a small initial evaluation, not a broad reliability benchmark. The 4,000-token output cap also includes reasoning tokens; incomplete responses are rejected without creating a preview or automatically retrying. Serialized requests are limited to 32,000 UTF-8 bytes before dispatch. Safe usage logs include model, status, token counters and latency, without prompts, guest credentials, API keys or response bodies.
 
-After this configuration change, the backend compiled and all 17 `AiSplitTest` checks passed against a disposable PostgreSQL 16 container with the AI provider mocked. Java formatting, Compose configuration validation and `git diff --check` passed. These checks made no paid OpenAI calls and do not establish live model quality. The ignored local configuration retains `AI_CALLS_ENABLED=false` and `AI_MAX_CALLS=0`.
+After the model configuration, input allowance and usage logging changes, the backend compiled and all 17 `AiSplitTest` checks passed against a disposable PostgreSQL 16 container with the AI provider mocked. Java formatting, Compose configuration validation and `git diff --check` passed. Those checks made no paid OpenAI calls. Separate real checks are recorded below. The defaults disable paid calls; the current private installation is disabled with seven calls already recorded and a cumulative cap of seven.
+
+### Real AI evaluation and full journey — 12 October 2026
+
+- Six opt-in evaluation cases returned the expected READY/CLARIFY status and passed monetary/reference checks. Full summaries, questions and previews were inspected. Median preview latency was **3,336 ms**, worst **6,467 ms**, including local API validation. The browser journey's separate representative request took **8,080 ms** at the provider boundary.
+- Seven completed provider responses reported **5,409 input tokens, 1,128 output tokens and zero reasoning tokens**. Estimated token cost at standard uncached USD 2/10 per million rates is **USD 0.022098**. This is calculated from response usage, not an independently verified invoice; cached pricing, tax and other account activity are not included. The eight-call test cap and input/output limits bounded the run below the approved USD 1 allowance.
+- In a separate fresh dinner, the real preview allocated the starter **Mihai 2.34 / Ana 2.34 / Diego 2.33 EUR**, leaving individual dishes unchanged. Resulting totals were **Mihai 14.34 / Diego 12.33 / Ana 11.34 EUR**. The bill stayed unchanged after confirmation and Diego's vote, then changed atomically after Ana's final vote.
+- Replayed the original preview with its original key, revision and instruction. It returned the saved READY draft with no additional model call, revision or bill mutation.
+- All three distinct TableKind diners reserved and paid their agreed amounts through actual hosted checkout, reusing one US PayPal sandbox buyer. Orders lookups confirmed **COMPLETED**, the expected merchant/currency/reference/gross and exactly one completed capture per order. Six settlement entries total **3,801 minor units**; three successful payments total **3,801 bill / 0 tip minor units**.
+- All three authenticated guest views, management reconciliation and the database agreed: **EUR 38.01 paid, zero outstanding/reserved, Ledger matches**. After verification, disabled AI calls and recreated the backend. A fresh preview returned **503 / AI_DISABLED** with the cumulative usage still seven. Services remained healthy.
+- Redacted evidence: [real AI and payment journey](evidence/real-ai-results.json). Private previews, credentials and screenshots remain ignored. The final UI screenshot was visually inspected. Judge-access verification, video and publication still require completion.
 
 After budget approval and secure configuration, this opt-in runner makes six real preview requests and never confirms a proposal or starts a payment:
 

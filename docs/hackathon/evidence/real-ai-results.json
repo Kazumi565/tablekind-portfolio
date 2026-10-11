@@ -1,0 +1,236 @@
+{
+  "recordedAtUtc": "2026-10-11T21:57:39.426Z",
+  "localDate": "2026-10-12",
+  "timeZone": "Europe/Chisinau",
+  "model": "gpt-6.1-sol",
+  "reasoningEffort": "low",
+  "approvedTestBudgetUsd": 1,
+  "usage": {
+    "providerCalls": 7,
+    "inputTokens": 5409,
+    "outputTokens": 1128,
+    "reasoningTokens": 0,
+    "estimatedUsd": 0.022098,
+    "costBasis": "Reported tokens at standard uncached rates; invoice not independently verified",
+    "requests": [
+      {
+        "model": "gpt-6.1-sol",
+        "status": "completed",
+        "inputTokens": 754,
+        "outputTokens": 305,
+        "reasoningTokens": 0,
+        "latencyMs": 8080
+      },
+      {
+        "model": "gpt-6.1-sol",
+        "status": "completed",
+        "inputTokens": 783,
+        "outputTokens": 323,
+        "reasoningTokens": 0,
+        "latencyMs": 6443
+      },
+      {
+        "model": "gpt-6.1-sol",
+        "status": "completed",
+        "inputTokens": 785,
+        "outputTokens": 188,
+        "reasoningTokens": 0,
+        "latencyMs": 4201
+      },
+      {
+        "model": "gpt-6.1-sol",
+        "status": "completed",
+        "inputTokens": 777,
+        "outputTokens": 109,
+        "reasoningTokens": 0,
+        "latencyMs": 3082
+      },
+      {
+        "model": "gpt-6.1-sol",
+        "status": "completed",
+        "inputTokens": 769,
+        "outputTokens": 67,
+        "reasoningTokens": 0,
+        "latencyMs": 2785
+      },
+      {
+        "model": "gpt-6.1-sol",
+        "status": "completed",
+        "inputTokens": 772,
+        "outputTokens": 64,
+        "reasoningTokens": 0,
+        "latencyMs": 3544
+      },
+      {
+        "model": "gpt-6.1-sol",
+        "status": "completed",
+        "inputTokens": 769,
+        "outputTokens": 72,
+        "reasoningTokens": 0,
+        "latencyMs": 2594
+      }
+    ]
+  },
+  "evaluation": {
+    "caseCount": 6,
+    "passed": true,
+    "medianLatencyMs": 3336,
+    "worstLatencyMs": 6467,
+    "results": [
+      {
+        "name": "representative dinner",
+        "expected": "READY",
+        "observed": "READY",
+        "passed": true,
+        "latencyMs": 6467,
+        "summary": "Assign the burger to Mihai and the pasta to Diego; split the starter equally among all three guests. Leave the salad unchanged.",
+        "question": null
+      },
+      {
+        "name": "relative weights",
+        "expected": "READY",
+        "observed": "READY",
+        "passed": true,
+        "latencyMs": 4223,
+        "summary": "Split the shared starter with Mihai, Diego, and Ana in a 2:1:1 ratio. Leave other dishes unchanged.",
+        "question": null
+      },
+      {
+        "name": "single recipient",
+        "expected": "READY",
+        "observed": "READY",
+        "passed": true,
+        "latencyMs": 3103,
+        "summary": "Assign the shared starter to Ana; leave all other dishes unchanged.",
+        "question": null
+      },
+      {
+        "name": "invented dish",
+        "expected": "CLARIFY",
+        "observed": "CLARIFY",
+        "passed": true,
+        "latencyMs": 2806,
+        "summary": null,
+        "question": "There is no lobster in the supplied items. Which item should Diego (G3) pay for: Pasta (I1), Burger (I2), Shared starter (I3), or Salad (I4)?"
+      },
+      {
+        "name": "unsupported refund",
+        "expected": "CLARIFY",
+        "observed": "CLARIFY",
+        "passed": true,
+        "latencyMs": 3569,
+        "summary": null,
+        "question": "I can only allocate bill items among guests, not refund payments or convert currencies. Would you like to specify how to split the items using G1–G3 and I1–I4?"
+      },
+      {
+        "name": "unclear referent",
+        "expected": "CLARIFY",
+        "observed": "CLARIFY",
+        "passed": true,
+        "latencyMs": 2624,
+        "summary": null,
+        "question": "Which item (I1 Pasta, I2 Burger, I3 Shared starter, or I4 Salad) and which two guests (G1 Mihai, G2 Ana, or G3 Diego) should I split it equally between?"
+      }
+    ]
+  },
+  "journey": {
+    "sessionId": "7d38519e-d3f2-44f0-b059-fb3949805e78",
+    "instruction": "Mihai pays for the burger, Diego pays for the pasta, and everyone shares the starter equally.",
+    "reviewedBeforeConfirmation": true,
+    "allAffectedDinersConsented": true,
+    "billUnchangedUntilFinalConsent": true,
+    "proposalStatus": "ACCEPTED",
+    "sharesMinor": {
+      "Mihai": 1434,
+      "Diego": 1233,
+      "Ana": 1134
+    },
+    "tablePaidMinor": 3801,
+    "tableRemainingMinor": 0,
+    "tableReservedMinor": 0,
+    "tipMinor": 0,
+    "settlementEntries": 6,
+    "settlementTotalMinor": 3801,
+    "allAuthenticatedGuestViewsSettled": true,
+    "providerOrders": [
+      {
+        "gross": "11.34",
+        "reference": "9bb86ea6-f768-4885-83d2-bf73d88a8e46",
+        "captureCount": 1,
+        "merchantMatches": true,
+        "status": "COMPLETED",
+        "orderId": "6RH69188DS956920R",
+        "currency": "EUR",
+        "captures": [
+          {
+            "id": "2H975452614790510",
+            "gross": "11.34",
+            "status": "COMPLETED",
+            "currency": "EUR"
+          }
+        ],
+        "observedAtUtc": "2026-10-11T21:54:52.3020135Z"
+      },
+      {
+        "gross": "14.34",
+        "reference": "7dd64021-7a71-4697-addd-fbc1a0f75040",
+        "captureCount": 1,
+        "merchantMatches": true,
+        "status": "COMPLETED",
+        "orderId": "54S07184LE2099945",
+        "currency": "EUR",
+        "captures": [
+          {
+            "id": "3B4874599C3214835",
+            "gross": "14.34",
+            "status": "COMPLETED",
+            "currency": "EUR"
+          }
+        ],
+        "observedAtUtc": "2026-10-11T21:54:52.7526229Z"
+      },
+      {
+        "gross": "12.33",
+        "reference": "d406ed82-5532-4070-bdbc-36f80522d4ea",
+        "captureCount": 1,
+        "merchantMatches": true,
+        "status": "COMPLETED",
+        "orderId": "5TF74431T1709434L",
+        "currency": "EUR",
+        "captures": [
+          {
+            "id": "2HW93748L6664723L",
+            "gross": "12.33",
+            "status": "COMPLETED",
+            "currency": "EUR"
+          }
+        ],
+        "observedAtUtc": "2026-10-11T21:54:53.1875649Z"
+      }
+    ],
+    "previewReplay": {
+      "status": "READY",
+      "draftId": "67d6d181-bd81-477f-8382-4fd87efa9339",
+      "revisionUnchanged": true,
+      "billUnchanged": true
+    },
+    "distinctTableKindDiners": 3,
+    "paypalSandboxBuyerAccountsUsed": 1
+  },
+  "afterTesting": {
+    "paidCallsEnabled": false,
+    "cumulativeCallCount": 7,
+    "cumulativeCallCap": 7,
+    "disabledGate": {
+      "httpStatus": 503,
+      "code": "AI_DISABLED"
+    },
+    "servicesHealthy": true
+  },
+  "limitations": [
+    "Six representative AI cases evaluated once each; not a broad reliability benchmark.",
+    "Cost estimated from response token usage at standard uncached rates; invoice, tax and unrelated account usage not verified.",
+    "Original German merchant KYC failure remains unexplained; this journey used the verified US sandbox merchant.",
+    "Judge access, video and manual publication remain unfinished."
+  ]
+}
