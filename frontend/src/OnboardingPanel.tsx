@@ -1,3 +1,4 @@
+import { useMoney } from "./Currency";
 import { useEffect, useRef, useState, type FormEvent } from "react";
 import { createPortal } from "react-dom";
 import QRCode from "qrcode";
@@ -16,6 +17,7 @@ export function OnboardingPanel({
   onSection: (s: string) => void;
   mutate: Mutation;
 }) {
+  const { money, currency } = useMoney();
   const [result, setResult] = useState<{
     checks: Record<string, boolean>;
     note: string;
@@ -133,7 +135,7 @@ export function OnboardingPanel({
               />
             </label>
             <label className="field">
-              Price in MDL
+              Price in {currency}
               <input
                 name="price"
                 inputMode="decimal"

@@ -75,6 +75,9 @@ export type Reservation = {
   expires_at: string;
 };
 export type State = {
+  currency: string;
+  paypalEnabled: boolean;
+  paypalClientId: string;
   pos?: {
     delivered_revision: number;
     paused: boolean;
@@ -123,7 +126,7 @@ export type Branch = {
 export type Dashboard = {
   posManaged: boolean;
   recentSessions: { id: string; label: string; closed_at: string }[];
-  restaurant: { id: string; name: string };
+  restaurant: { id: string; name: string; currency: string };
   role: string;
   branches: Branch[];
   tables: {

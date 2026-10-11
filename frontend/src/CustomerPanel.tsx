@@ -22,6 +22,7 @@ type Profile = {
     session_id: string;
     nickname: string;
     restaurant_name: string;
+    currency: string;
     label: string;
     joined_at: string;
     status: string;
@@ -421,8 +422,8 @@ export function CustomerPanel({
                   {v.status.toLowerCase()}
                 </p>
                 <p>
-                  My share {money(v.allocated_bani)} · Settled{" "}
-                  {money(v.settled_bani)}
+                  My share {money(v.allocated_bani, v.currency)} · Settled{" "}
+                  {money(v.settled_bani, v.currency)}
                 </p>
                 {v.status === "OPEN" && v.active && (
                   <button

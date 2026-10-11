@@ -121,6 +121,8 @@ export function keepPending(
   error: { status?: number; code?: string },
   op: PendingCommand,
 ): boolean {
+  // These allowances are checked before reserving or dispatching an AI request.
+  if (["AI_BUDGET", "AI_LIMIT"].includes(error.code ?? "")) return false;
   return (
     error.status === undefined ||
     error.code === "INVALID_RESPONSE" ||
@@ -129,6 +131,11 @@ export function keepPending(
     error.status === 429 ||
     (op.needsPassword === true && error.code === "CONFLICT") ||
     (error.status >= 500 &&
-      !["POS_UNAVAILABLE", "PAYMENTS_UNCONFIGURED"].includes(error.code ?? ""))
+      ![
+        "POS_UNAVAILABLE",
+        "PAYMENTS_UNCONFIGURED",
+        "PAYPAL_UNCONFIGURED",
+        "AI_DISABLED",
+      ].includes(error.code ?? ""))
   );
 }

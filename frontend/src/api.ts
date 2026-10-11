@@ -109,4 +109,5 @@ export function bani(input: string): number {
     throw new Error("Amount is too large.");
   return negative ? -value : value;
 }
-export const money = (n: number) => `${(n / 100).toFixed(2)} MDL`;
+export const money = (n: number, currency = "MDL") =>
+  `${(n / 100).toFixed(2)} ${currency}`;

@@ -1,3 +1,8 @@
+import { money as formatMoney } from "./api";
+import { PayPalCheckout } from "./PayPalCheckout";
+import { SplitAssistant } from "./SplitAssistant";
+import { HackathonGuide } from "./HackathonGuide";
+import { useMoney, CurrencyContext } from "./Currency";
 import { BranchEditor, ModifiersEditor } from "./AdminEditors";
 import { CustomerPanel } from "./CustomerPanel";
 import { ManagementHome } from "./ManagementHome";
@@ -49,7 +54,7 @@ import {
   Users,
   X,
 } from "lucide-react";
-import { ApiError, bani, live, money, request } from "./api";
+import { ApiError, bani, live, request } from "./api";
 import {
   clearPending,
   keepPending,
@@ -158,14 +163,18 @@ export default function App() {
     }
   });
   const [demoEnabled, setDemoEnabled] = useState(false);
+  const [hackathon, setHackathon] = useState(false);
   const [demoScenario, setDemoScenario] = useState<DemoScenario | null>(
     stored<DemoScenario>("demoScenario"),
   );
   useEffect(() => {
     let active = true;
-    void request<{ enabled: boolean }>("/demo/config")
+    void request<{ enabled: boolean; hackathon?: boolean }>("/demo/config")
       .then((value) => {
-        if (active) setDemoEnabled(value.enabled === true);
+        if (active) {
+          setDemoEnabled(value.enabled === true);
+          setHackathon(value.hackathon === true);
+        }
       })
       .catch(() => {});
     return () => {
@@ -210,11 +219,13 @@ export default function App() {
   const [dash, setDash] = useState<Dashboard | null>(null),
     [state, setState] = useState<State | null>(null);
   const [tab, setTab] = useState(
-      location.pathname === "/guest/account"
-        ? "account"
-        : mode === "staff" && workspace === "manage"
-          ? "overview"
-          : "table",
+      new URLSearchParams(location.search).has("paypal")
+        ? "bill"
+        : location.pathname === "/guest/account"
+          ? "account"
+          : mode === "staff" && workspace === "manage"
+            ? "overview"
+            : "table",
     ),
     [lang, setLang] = useState("en");
   const [error, setError] = useState(""),
@@ -285,7 +296,9 @@ export default function App() {
     try {
       if (joinToken.trim()) token = parseTableCode(joinToken, location.origin);
     } catch {
-      setJoinProblem("Use a table link for this Tablekind address, or scan the QR again.");
+      setJoinProblem(
+        "Use a table link for this Tablekind address, or scan the QR again.",
+      );
       return;
     }
     if (token)
@@ -550,7 +563,9 @@ export default function App() {
       return;
     }
     if (!joinInfo || previewedInput !== joinToken) {
-      setJoinProblem("Wait for the restaurant and table preview before joining.");
+      setJoinProblem(
+        "Wait for the restaurant and table preview before joining.",
+      );
       return;
     }
     const a = await mutate(
@@ -562,13 +577,17 @@ export default function App() {
       },
     );
     if (a) {
-      setNotice(`Joined ${joinInfo.table.label} at ${joinInfo.table.restaurant_name}.`);
+      setNotice(
+        `Joined ${joinInfo.table.label} at ${joinInfo.table.restaurant_name}.`,
+      );
       sessionStorage.setItem("guest", JSON.stringify(a));
       setGuest(a);
       setJoinToken("");
       history.replaceState({}, "", location.pathname);
       setTab("menu");
-      requestAnimationFrame(() => window.scrollTo({ top: 0, behavior: "smooth" }));
+      requestAnimationFrame(() =>
+        window.scrollTo({ top: 0, behavior: "smooth" }),
+      );
     }
   };
   const signOut = () => {
@@ -638,7 +657,8 @@ export default function App() {
       setMode("staff");
       setWorkspace(view === "manager" ? "manage" : "staff");
     } else {
-      const selected = scenario.guests[view === "mihai" ? 0 : 1];
+      const selected =
+        scenario.guests[view === "mihai" ? 0 : view === "diego" ? 1 : 2];
       sessionStorage.setItem("guest", JSON.stringify(selected));
       setGuest(selected);
       setMode("guest");
@@ -663,7 +683,7 @@ export default function App() {
       sessionStorage.setItem("demoScenario", JSON.stringify(scenario));
       sessionStorage.removeItem("demoStartKey");
       setDemoScenario(scenario);
-      demoView("mihai", "menu", scenario);
+      demoView("mihai", hackathon ? "bill" : "menu", scenario);
     } catch (e) {
       if (e instanceof ApiError && e.status < 500)
         sessionStorage.removeItem("demoStartKey");
@@ -674,14 +694,19 @@ export default function App() {
       setBusy(false);
     }
   };
+  const currency =
+    mode === "staff"
+      ? (dash?.restaurant.currency ?? "MDL")
+      : (state?.currency ?? "MDL");
+  const money = (n: number) => formatMoney(n, currency);
   return (
     <FormErrorContext.Provider value={error}>
-      <>
+      <CurrencyContext.Provider value={currency}>
         <header>
           <a className="brand" href="/" aria-label="Tablekind home">
             <span className="mark">t</span>tablekind
             <span className="local-label">
-              {demoEnabled ? "demo" : "local"}
+              {hackathon ? "EUR sandbox" : demoEnabled ? "demo" : "local"}
             </span>
           </a>
           {!(mode === "guest" && (guest || incoming) && !demoEnabled) && (
@@ -740,9 +765,11 @@ export default function App() {
           </div>
         </header>
         <div className="phase-note">
-          {demoEnabled
-            ? "Private demo · TEST payments only · No real charges"
-            : "Local preview · TEST payments only · No real charges"}
+          {hackathon
+            ? "EUR dinner · PayPal sandbox · No real charges"
+            : demoEnabled
+              ? "Private demo · TEST payments only · No real charges"
+              : "Local preview · TEST payments only · No real charges"}
         </div>
         <main
           aria-busy={busy}
@@ -786,7 +813,7 @@ export default function App() {
                 </button>
               </div>
             )}
-          {mode === "guest" && (
+          {mode === "guest" && !(hackathon && guest) && (
             <TableQrScanner
               disabled={busy || !!pending || !!recovery.error}
               onContinue={continueToJoin}
@@ -809,26 +836,35 @@ export default function App() {
               }}
             />
           )}
-          {demoEnabled && (
-            <DemoGuide
-              scenario={demoScenario}
-              staff={staff}
-              canStart={members.some((m) => managesRestaurant(m.role))}
-              state={state}
-              currentView={
-                mode === "staff"
-                  ? workspace === "manage"
-                    ? "manager"
-                    : "staff"
-                  : guest?.actorId === demoScenario?.guests[1].actorId
-                    ? "diego"
-                    : "mihai"
-              }
-              blocked={busy || !!pending}
-              onCreate={() => void createDemo()}
-              onView={demoView}
-            />
-          )}
+          {demoEnabled &&
+            (hackathon ? (
+              <HackathonGuide
+                scenario={demoScenario}
+                staff={staff}
+                onCreate={() => void createDemo()}
+                onView={demoView}
+                blocked={busy || !!pending}
+              />
+            ) : (
+              <DemoGuide
+                scenario={demoScenario}
+                staff={staff}
+                canStart={members.some((m) => managesRestaurant(m.role))}
+                state={state}
+                currentView={
+                  mode === "staff"
+                    ? workspace === "manage"
+                      ? "manager"
+                      : "staff"
+                    : guest?.actorId === demoScenario?.guests[1].actorId
+                      ? "diego"
+                      : "mihai"
+                }
+                blocked={busy || !!pending}
+                onCreate={() => void createDemo()}
+                onView={demoView}
+              />
+            ))}
           {(error || pending || recovery.error) && (
             <div className="alert" role="alert">
               {recovery.error ||
@@ -907,7 +943,11 @@ export default function App() {
                     : "Orders and bills in one place"}
                 </div>
                 {mode === "staff" && (
-                  <button type="button" className="text-button" onClick={() => changeArea("guest")}>
+                  <button
+                    type="button"
+                    className="text-button"
+                    onClick={() => changeArea("guest")}
+                  >
                     Dining here? Scan a table QR without signing in
                   </button>
                 )}
@@ -931,7 +971,7 @@ export default function App() {
                         type="email"
                         name="email"
                         defaultValue={
-                          demoEnabled
+                          demoEnabled && !hackathon
                             ? "demo@tablekind.local"
                             : "manager@tablekind.test"
                         }
@@ -974,7 +1014,9 @@ export default function App() {
                       </p>
                     )}
                     {joinProblem && <p role="alert">{joinProblem}</p>}
-                    {!joinInfo && !joinProblem && joinToken && <p role="status">Checking table link…</p>}
+                    {!joinInfo && !joinProblem && joinToken && (
+                      <p role="status">Checking table link…</p>
+                    )}
                     <Field label="Your nickname">
                       <input
                         name="nickname"
@@ -993,7 +1035,11 @@ export default function App() {
                 )}
                 <button
                   className="primary"
-                  disabled={busy || (mode === "guest" && (!joinInfo || previewedInput !== joinToken))}
+                  disabled={
+                    busy ||
+                    (mode === "guest" &&
+                      (!joinInfo || previewedInput !== joinToken))
+                  }
                 >
                   {mode === "staff" ? "Sign in" : "Join table"}
                   <ArrowRight size={18} />
@@ -1379,15 +1425,17 @@ export default function App() {
           )}
         </main>
         <footer>
-          {demoEnabled
-            ? "Tablekind · Practice only · No real charges"
-            : "Tablekind · Test environment · No real charges"}
+          {hackathon
+            ? "Tablekind · PayPal sandbox · No real charges"
+            : demoEnabled
+              ? "Tablekind · Practice only · No real charges"
+              : "Tablekind · Test environment · No real charges"}
         </footer>
         {qr && <QrModal token={qr} onClose={() => setQr("")} />}
         <div className="sr-only" aria-live="polite">
           {busy ? "Saving change" : ""}
         </div>
-      </>
+      </CurrencyContext.Provider>
     </FormErrorContext.Provider>
   );
 }
@@ -1470,6 +1518,7 @@ function MenuView({
   action: Mutation;
   busy: boolean;
 }) {
+  const { money, currency } = useMoney();
   const [query, setQuery] = useState(""),
     [category, setCategory] = useState(""),
     [selected, setSelected] = useState<Product | null>(null);
@@ -1574,6 +1623,7 @@ function OrderModal({
   action: Mutation;
   onClose: () => void;
 }) {
+  const { money, currency } = useMoney();
   const [options, setOptions] = useState<string[]>([]),
     [count, setCount] = useState(1),
     [waiting, setWaiting] = useState(false);
@@ -1697,6 +1747,7 @@ function TableView({
   setTab: (t: string) => void;
   busy: boolean;
 }) {
+  const { money, currency } = useMoney();
   const name = (id: string) =>
     state.guests.find((g) => g.id === id)?.nickname ?? "Guest";
   const [all, setAll] = useState(false);
@@ -1934,6 +1985,7 @@ function BillView({
   action: Mutation;
   busy: boolean;
 }) {
+  const { money, currency } = useMoney();
   const [split, setSplit] = useState<Item | null>(null),
     [adjust, setAdjust] = useState(false),
     [whole, setWhole] = useState(false);
@@ -1983,8 +2035,18 @@ function BillView({
           </div>
         </div>
       </details>
-      <div className={`workspace-grid ${personal ? "guest-bill-grid" : ""}`}>
+      <div
+        className={`workspace-grid ${personal ? "guest-bill-grid" : ""} ${state.currency === "EUR" ? "eur-bill-grid" : ""}`}
+      >
         <section>
+          {personal && state.currency === "EUR" && (
+            <SplitAssistant
+              key={state.actor.id}
+              state={state}
+              action={action}
+              busy={busy}
+            />
+          )}
           <div className="section-heading">
             <h2>Who covers what</h2>
             <div className="row">
@@ -2237,6 +2299,7 @@ function SplitModal({
   action: Mutation;
   onClose: () => void;
 }) {
+  const { money, currency } = useMoney();
   const [mode, setMode] = useState("EQUAL"),
     [selected, setSelected] = useState<string[]>(
       item.shares.map((s) => s.guestId),
@@ -2294,7 +2357,7 @@ function SplitModal({
               <option value="EQUAL">Equal shares</option>
               <option value="PROPORTION">Percentages</option>
               <option value="QUANTITY">Portions or pieces</option>
-              <option value="AMOUNTS">Exact MDL amounts</option>
+              <option value="AMOUNTS">Exact {currency} amounts</option>
               <option value="TRANSFER">Transfer dish and responsibility</option>
             </select>
           </Field>
@@ -2330,13 +2393,13 @@ function SplitModal({
                 {mode !== "EQUAL" && selected.includes(g.id) && (
                   <input
                     name={g.id}
-                    aria-label={`${g.nickname} ${mode === "PROPORTION" ? "percentage" : mode === "QUANTITY" ? "pieces" : "MDL amount"}`}
+                    aria-label={`${g.nickname} ${mode === "PROPORTION" ? "percentage" : mode === "QUANTITY" ? "pieces" : `${currency} amount`}`}
                     placeholder={
                       mode === "PROPORTION"
                         ? "%"
                         : mode === "QUANTITY"
                           ? "pieces"
-                          : "MDL"
+                          : currency
                     }
                     inputMode="decimal"
                     required
@@ -2421,6 +2484,7 @@ function AdjustmentModal({
   action: Mutation;
   onClose: () => void;
 }) {
+  const { money, currency } = useMoney();
   const [error, setError] = useState("");
   return (
     <Modal title="Record a bill adjustment" onClose={onClose}>
@@ -2471,7 +2535,7 @@ function AdjustmentModal({
           </Field>
           <Field label="Unit">
             <select name="unit">
-              <option value="mdl">MDL</option>
+              <option value="mdl">{currency}</option>
               <option value="percent">Percent</option>
             </select>
           </Field>
@@ -2498,6 +2562,7 @@ function Checkout({
   action: Mutation;
   busy: boolean;
 }) {
+  const { money, currency } = useMoney();
   const [target, setTarget] = useState("SELF"),
     [amount, setAmount] = useState(""),
     [selected, setSelected] = useState<string[]>([]),
@@ -2530,6 +2595,8 @@ function Checkout({
       setError((e as Error).message);
     }
   };
+  if (state.currency === "EUR")
+    return <PayPalCheckout state={state} action={action} busy={busy} />;
   if (state.paymentsEnabled === false)
     return (
       <div className="card checkout">
@@ -2589,7 +2656,7 @@ function Checkout({
                 {g.nickname}
               </label>
             ))}
-        <Field label="Custom amount in MDL (optional)">
+        <Field label={"Custom amount in " + currency + " (optional)"}>
           <input
             value={amount}
             onChange={(e) => setAmount(e.target.value)}
@@ -2617,7 +2684,7 @@ function Checkout({
           )}
         </select>
       </Field>
-      <Field label="Optional tip in MDL">
+      <Field label={"Optional tip in " + currency + ""}>
         <input
           inputMode="decimal"
           value={tip}
@@ -2638,7 +2705,8 @@ function Checkout({
           </strong>
           <small>{money(quote.amountBani)} toward the bill</small>
           <p>
-            Tip: {tip || "0"} MDL. Requesting payment does not mark it as paid.
+            Tip: {tip || "0"} {currency}. Requesting payment does not mark it as
+            paid.
           </p>
         </div>
       )}
@@ -2680,6 +2748,7 @@ function Setup({
   token: string;
   onSection: (section: string) => void;
 }) {
+  const { money, currency } = useMoney();
   const [panel, setPanel] = useState(
       dash?.role === "WAITER" ? "menu" : "start",
     ),
@@ -3088,6 +3157,7 @@ function ProductEditor({
   mutate: Mutation;
   onClose: () => void;
 }) {
+  const { money, currency } = useMoney();
   const [error, setError] = useState("");
   return (
     <Modal title={p ? "Edit product" : "Add product"} onClose={onClose}>
@@ -3148,7 +3218,7 @@ function ProductEditor({
               />
             </Field>
           ))}
-          <Field label="Price in MDL">
+          <Field label={"Price in " + currency + ""}>
             <input
               name="price"
               defaultValue={p ? (p.price_bani / 100).toFixed(2) : ""}

@@ -1,5 +1,6 @@
+import { useMoney } from "./Currency";
 import { useCallback, useEffect, useState } from "react";
-import { bani, money, request } from "./api";
+import { bani, request } from "./api";
 import { managesRestaurant } from "./interfaces";
 import type { Dashboard } from "./types";
 
@@ -61,6 +62,7 @@ export function PosPanel({
   mutate: Mutation;
   busy: boolean;
 }) {
+  const { money, currency } = useMoney();
   const [data, setData] = useState<PosState | null>(null);
   const [error, setError] = useState("");
   const [sessionId, setSessionId] = useState("");
@@ -370,7 +372,7 @@ export function PosPanel({
                   </select>
                 </label>
                 <label className="field">
-                  <span>Source price in MDL</span>
+                  <span>Source price in {currency}</span>
                   <input
                     value={price}
                     onChange={(e) => setPrice(e.target.value)}
@@ -436,7 +438,7 @@ export function PosPanel({
                   </select>
                 </label>
                 <label className="field">
-                  <span>TEST bill difference in MDL</span>
+                  <span>TEST bill difference in {currency}</span>
                   <input
                     value={offset}
                     onChange={(e) => setOffset(e.target.value)}

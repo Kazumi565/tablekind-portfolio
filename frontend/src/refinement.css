@@ -771,3 +771,54 @@ footer {
     scroll-behavior: auto !important;
   }
 }
+.split-assistant {
+  border-top: 4px solid #126c66;
+  margin-bottom: 1.25rem;
+}
+.split-assistant > small {
+  display: block;
+  margin-top: 0.7rem;
+  color: #526560;
+}
+.split-assistant textarea {
+  width: 100%;
+  min-height: 6rem;
+  resize: vertical;
+}
+.split-assistant details {
+  margin: 1rem 0;
+}
+.split-preview {
+  margin-top: 1.25rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid #cbded8;
+}
+.split-preview article {
+  margin: 1rem 0;
+  padding: 0.8rem;
+  border-radius: 0.75rem;
+  background: #f1f8f5;
+}
+.split-preview .summary-row {
+  gap: 1rem;
+}
+.paypal-checkout small {
+  display: block;
+  margin-top: 0.8rem;
+}
+.checkout-actions {
+  display: grid;
+  gap: 0.7rem;
+  margin: 1rem 0;
+}
+.hackathon-guide {
+  margin-bottom: 1.5rem;
+}
+.hackathon-guide details {
+  margin-top: 0.75rem;
+}
+@media (max-width: 760px) {
+  .eur-bill-grid > aside {
+    order: 0;
+  }
+}

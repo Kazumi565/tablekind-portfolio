@@ -4,9 +4,9 @@ import type { Auth, State } from "./types";
 export type DemoScenario = {
   restaurantId: string;
   sessionId: string;
-  guests: [Auth, Auth];
+  guests: Auth[];
 };
-export type DemoView = "mihai" | "diego" | "staff" | "manager";
+export type DemoView = "mihai" | "diego" | "ana" | "staff" | "manager";
 
 const steps: { title: string; view: DemoView; tab: string; text: string }[] = [
   {

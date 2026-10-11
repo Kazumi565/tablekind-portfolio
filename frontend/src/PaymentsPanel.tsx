@@ -1,5 +1,6 @@
+import { useMoney } from "./Currency";
 import { useEffect, useState, type ReactNode } from "react";
-import { bani, money } from "./api";
+import { bani } from "./api";
 import type { Payment, Refund, State } from "./types";
 
 type Mutation = (path: string, body?: unknown, method?: string) => Promise<any>;
@@ -20,6 +21,7 @@ export function PaymentsPanel({
   action: Mutation;
   busy: boolean;
 }) {
+  const { money, currency } = useMoney();
   const [error, setError] = useState("");
   const [confirmation, setConfirmation] = useState<any>(null);
   const [report, setReport] = useState<any>(null);
@@ -104,7 +106,11 @@ export function PaymentsPanel({
                 <strong>{money(p.amount_bani + p.tip_bani)}</strong>
               </p>
               <small>
-                {p.is_test ? "TEST · " : ""}
+                {p.method === "PAYPAL"
+                  ? "PayPal sandbox · "
+                  : p.is_test
+                    ? "TEST · "
+                    : ""}
                 {new Date(p.created_at).toLocaleString()} · {p.id.slice(0, 8)}
               </small>
               <details>
@@ -121,7 +127,7 @@ export function PaymentsPanel({
                   </p>
                 ))}
               </details>
-              {p.status === "PENDING" && (
+              {p.status === "PENDING" && p.method !== "PAYPAL" && (
                 <>
                   <p className="muted">
                     Not paid yet. These shares remain reserved until the outcome
@@ -211,7 +217,7 @@ export function PaymentsPanel({
                         View confirmation
                       </button>
                     )}
-                    {manager && (
+                    {manager && p.method !== "PAYPAL" && (
                       <button disabled={busy} onClick={() => setRefund(p)}>
                         Request refund
                       </button>
@@ -470,6 +476,7 @@ function Collection({
   action: Mutation;
   busy: boolean;
 }) {
+  const { money, currency } = useMoney();
   const [received, setReceived] = useState(
       ((p.amount_bani + p.tip_bani) / 100).toFixed(2),
     ),
@@ -499,7 +506,7 @@ function Collection({
     >
       {cash ? (
         <>
-          <Field label="Cash received in MDL">
+          <Field label={"Cash received in " + currency + ""}>
             <input
               inputMode="decimal"
               value={received}
@@ -554,6 +561,7 @@ function RefundCollection({
   action: Mutation;
   busy: boolean;
 }) {
+  const { money, currency } = useMoney();
   const [reference, setReference] = useState(""),
     [returned, setReturned] = useState(false);
   return (
@@ -601,6 +609,7 @@ function RefundForm({
   busy: boolean;
   onClose: () => void;
 }) {
+  const { money, currency } = useMoney();
   const used = p.refunds.filter((r) =>
     ["PENDING", "SUCCEEDED"].includes(r.status),
   );
@@ -642,7 +651,7 @@ function RefundForm({
           }
         }}
       >
-        <Field label="Bill refund in MDL">
+        <Field label={"Bill refund in " + currency + ""}>
           <input
             inputMode="decimal"
             value={amount}
@@ -650,7 +659,7 @@ function RefundForm({
             required
           />
         </Field>
-        <Field label="Tip refund in MDL">
+        <Field label={"Tip refund in " + currency + ""}>
           <input
             inputMode="decimal"
             value={tip}

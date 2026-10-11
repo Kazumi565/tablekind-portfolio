@@ -128,6 +128,10 @@ test("uncertain and temporarily rejected retries keep their identity until a def
     { status: 400 },
     { status: 403 },
     { status: 503, code: "PAYMENTS_UNCONFIGURED" },
+    { status: 503, code: "PAYPAL_UNCONFIGURED" },
+    { status: 503, code: "AI_DISABLED" },
+    { status: 429, code: "AI_BUDGET" },
+    { status: 429, code: "AI_LIMIT" },
   ])
     assert(!keepPending(failure, op));
   assert(

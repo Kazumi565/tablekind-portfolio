@@ -1,3 +1,4 @@
+import { useMoney } from "./Currency";
 import {
   useId,
   cloneElement,
@@ -287,6 +288,7 @@ export function ModifiersEditor({
   mutate: Mutation;
   onClose: () => void;
 }) {
+  const { money, currency } = useMoney();
   const ref = useRef<HTMLDialogElement>(null);
   useEffect(() => {
     const d = ref.current;
@@ -428,7 +430,7 @@ export function ModifiersEditor({
                       />
                     </Field>
                   ))}
-                  <Field name="Extra price in MDL">
+                  <Field name={"Extra price in " + currency + ""}>
                     <input
                       inputMode="decimal"
                       value={o.price}
