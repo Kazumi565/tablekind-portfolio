@@ -14,7 +14,7 @@ Tablekind models a group meal from scanning a table QR code to settling each gue
 
 Built around a Moldova use case, the original application uses **integer bani** for MDL amounts and supports translated menu content. It is maintained here as an engineering portfolio project. The hackathon branch adds an isolated fictional **EUR** restaurant; historical MDL amounts remain unchanged.
 
-> **Hackathon status (11 October 2026):** local implementation and automated checks pass. The EUR flow includes hosted AI interpretation, exact previews, diner consent, and PayPal Orders v2 sandbox checkout. **Actual PayPal sandbox payments and paid AI evaluation are still unverified:** credentials are absent and paid calls are not authorized. The entry is not submission-ready. Original MDL payments and POS connections remain TEST simulators; no live money is moved.
+> **Hackathon status (12 October 2026):** local implementation and automated checks pass. Actual PayPal sandbox checks settled all three unchanged diner shares: **38.01 EUR paid, zero outstanding, and 1.00 EUR tip kept separate**. Completed-payment replay and recovery after approval with the backend stopped also passed. Hosted AI interpretation, preview and consent are implemented and tested with mocks; **real AI evaluation remains unverified and paid calls are not authorized**. Judge access and the complete AI-to-payment demonstration remain unfinished. Original MDL payments and POS connections remain TEST simulators; no live money is moved.
 
 ## PayPal AI Hackathon
 

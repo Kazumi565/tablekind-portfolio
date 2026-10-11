@@ -30,7 +30,7 @@ A useful AI payment experience needs clear limits: natural language helps expres
 
 ## Next steps
 
-Complete measured model evaluation and real sandbox evidence, then refine accessibility and judge access. PayPal refunds, live payments, fiscal receipts and real POS integration are outside this entry's scope.
+Complete measured model evaluation and the combined AI-to-payment demonstration, then refine judge access. Actual sandbox checks already verified three individual payments, separate tips, completed-payment replay and recovery after approval with the backend stopped. PayPal refunds, live payments, fiscal receipts and real POS integration are outside this entry's scope.
 
 ## Fields to finalize before submitting
 
@@ -38,4 +38,4 @@ Complete measured model evaluation and real sandbox evidence, then refine access
 - Demo/setup: link the final [setup guide](SETUP.md); add an approved hosted HTTPS URL if one is deployed.
 - Video: add the publicly visible YouTube link after recording and manual publication.
 - Testing access: provide controlled demo-manager and sandbox buyer access through the agreed judge channel; never publish API secrets.
-- Validation: replace this draft's future-work wording only after the real gates in [VALIDATION](VALIDATION.md) pass. As of 11 October, hosted AI and actual sandbox payment behavior remain unverified.
+- Validation: replace this draft's future-work wording only after the real gates in [VALIDATION](VALIDATION.md) pass. As of 12 October, actual sandbox payments, tips, replay and restart recovery are verified. Hosted AI evaluation and the complete AI-to-payment demonstration remain unverified.
