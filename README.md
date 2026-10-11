@@ -12,9 +12,24 @@ Java 21 · Spring Boot 3.5 · PostgreSQL 16 · React 19 · TypeScript · Docker
 
 Tablekind models a group meal from scanning a table QR code to settling each guest's share. Guests can order individually, agree to share an item, cover someone else's portion, and leave after their own balance is settled. Restaurant staff and managers work in separate interfaces.
 
-Built around a Moldova use case, the application uses **integer bani** for MDL amounts and supports translated menu content. It is maintained here as an engineering portfolio project.
+Built around a Moldova use case, the original application uses **integer bani** for MDL amounts and supports translated menu content. It is maintained here as an engineering portfolio project. The hackathon branch adds an isolated fictional **EUR** restaurant; historical MDL amounts remain unchanged.
 
-> **Status:** runnable local prototype. Payments and POS connections are **TEST simulators**. Tablekind does not collect card details, move real money, send orders to a real kitchen, issue fiscal receipts, or confirm real reservations. The presentation website is separate from the operational application.
+> **Hackathon status (11 October 2026):** local implementation and automated checks pass. The EUR flow includes hosted AI interpretation, exact previews, diner consent, and PayPal Orders v2 sandbox checkout. **Actual PayPal sandbox payments and paid AI evaluation are still unverified:** credentials are absent and paid calls are not authorized. The entry is not submission-ready. Original MDL payments and POS connections remain TEST simulators; no live money is moved.
+
+## PayPal AI Hackathon
+
+**Describe the split → review every cent → obtain consent → pay individual sandbox shares.** Built by Mihai Bargan as a solo entry with AI coding assistance, extending baseline `81dbdcf0e3517b8f917203ff69269f5530a26935`.
+
+```powershell
+.\scripts\hackathon\Initialize-Hackathon.ps1
+docker compose --env-file .env.hackathon -f compose.hackathon.yaml up --build -d
+```
+
+Open [the local manager view](http://localhost:5195/manage), sign in using the locally generated credentials in `.env.hackathon`, then select **Start EUR dinner**. The seeded meal is 38.01 EUR for Mihai, Diego and Ana. Setup is usable without provider access; completing AI and payment steps requires the access described in [the hackathon setup guide](docs/hackathon/SETUP.md). Keep secret values in that ignored file, never in Git or chat.
+
+[New work versus baseline](docs/hackathon/BASELINE.md) · [Architecture and recovery](docs/hackathon/IMPLEMENTATION.md) · [Validation and remaining gates](docs/hackathon/VALIDATION.md) · [Submission draft](docs/hackathon/DEVPOST.md) · [2:40 video script](docs/hackathon/VIDEO.md) · [Submission checklist](docs/hackathon/CHECKLIST.md)
+
+The original portfolio setup below remains available separately. Original code is licensed under [MIT](LICENSE); dependencies retain their own licenses.
 
 ## At a glance
 
@@ -22,7 +37,7 @@ Built around a Moldova use case, the application uses **integer bani** for MDL a
 | --- | --- | --- |
 | Restaurant application | **0.10.2** | Guest, waiter, manager and platform administrator workflows |
 | Presentation website | **0.11.3** | English/Romanian explanation and interactive fictional example |
-| Database | **Flyway V1–V9** | Restaurant isolation, orders, accounting, identity and practice workflows |
+| Database | **Flyway V1–V12** | Original V1–V9 plus isolated currency, PayPal recovery and AI draft records |
 
 ### Engineering highlights
 

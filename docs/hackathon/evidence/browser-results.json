@@ -1,0 +1,12 @@
+{
+  "passed": true,
+  "checks": [
+    "Fresh isolated hackathon setup, authenticated EUR scenario, 38.01 EUR exact total, three diners, no simulator",
+    "Disabled AI fails safely without a paid call or ledger change",
+    "UI fixture renders item shares and totals; real concurrent revision change disables stale confirmation",
+    "Three diner switches, reload persistence, 390px mobile and 1440px desktop layout"
+  ],
+  "realAiCalls": 0,
+  "realPayPalCalls": 0,
+  "recordedAt": "2026-10-11T14:39:09.868730+00:00"
+}
