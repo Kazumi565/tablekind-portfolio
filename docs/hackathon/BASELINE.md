@@ -1,8 +1,8 @@
 # Baseline and hackathon work
 
-Author: Mihai Bargan. Solo portfolio entry, developed with AI coding assistance. Work recorded on 11 October 2026.
+Author: Mihai Bargan. Solo portfolio entry. Work recorded on 11 October 2026.
 
-The original portfolio baseline is `81dbdcf0e3517b8f917203ff69269f5530a26935`, preserved by local tag `portfolio-before-paypal-ai`. Hackathon development is on `codex/paypal-ai-hackathon`. No history was rewritten and no remote branch or release was published by the implementation agent.
+The original portfolio baseline is `81dbdcf0e3517b8f917203ff69269f5530a26935`, preserved by local tag `portfolio-before-paypal-ai`. Hackathon development is on `hackathon/paypal-bill-splitting`. No history was rewritten and no remote branch or release was published.
 
 | Already in the baseline | Added for this entry |
 | --- | --- |
@@ -21,4 +21,4 @@ The separate presentation website and existing MDL values were retained. The leg
 
 To inspect the original portfolio without touching the new database, use a separate checkout at the baseline commit and the original README's Compose instructions. Never start old application code against a database migrated by the hackathon branch.
 
-Compare the work with `git diff portfolio-before-paypal-ai...codex/paypal-ai-hackathon`. Attribution describes actual reused work; the hackathon organizers determine whether an update qualifies as significant.
+Compare the work with `git diff portfolio-before-paypal-ai...hackathon/paypal-bill-splitting`. Attribution describes actual reused work; the hackathon organizers determine whether an update qualifies as significant.

@@ -3,7 +3,7 @@
 Use Git and Docker Desktop with Linux containers. PowerShell instructions run from the repository root. Node 24 is needed only for frontend development/browser checks; Docker builds the application with Java 21 and PostgreSQL 16.
 
 ```powershell
-git switch codex/paypal-ai-hackathon
+git switch hackathon/paypal-bill-splitting
 .\scripts\hackathon\Initialize-Hackathon.ps1
 docker compose --env-file .env.hackathon -f compose.hackathon.yaml up --build -d
 docker compose --env-file .env.hackathon -f compose.hackathon.yaml ps

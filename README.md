@@ -18,7 +18,7 @@ Built around a Moldova use case, the original application uses **integer bani** 
 
 ## PayPal AI Hackathon
 
-**Describe the split → review every cent → obtain consent → pay individual sandbox shares.** Built by Mihai Bargan as a solo entry with AI coding assistance, extending baseline `81dbdcf0e3517b8f917203ff69269f5530a26935`.
+**Describe the split → review every cent → obtain consent → pay individual sandbox shares.** Built by Mihai Bargan as a solo entry, extending baseline `81dbdcf0e3517b8f917203ff69269f5530a26935`.
 
 ```powershell
 .\scripts\hackathon\Initialize-Hackathon.ps1

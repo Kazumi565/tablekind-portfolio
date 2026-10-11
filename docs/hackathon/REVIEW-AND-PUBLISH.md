@@ -1,12 +1,12 @@
 # Manual review and publication
 
-The implementation agent is authorized to commit locally only. No push, remote merge, release, deployment or submission has been executed. The intended branch is `codex/paypal-ai-hackathon`; its original baseline is `81dbdcf0e3517b8f917203ff69269f5530a26935` (`portfolio-before-paypal-ai`). Completed work is committed locally; do not create duplicate commits for those changes.
+Changes are committed locally only. No push, remote merge, release, deployment or submission has been executed. The intended branch is `hackathon/paypal-bill-splitting`; its original baseline is `81dbdcf0e3517b8f917203ff69269f5530a26935` (`portfolio-before-paypal-ai`). Completed work is committed locally; do not create duplicate commits for those changes.
 
 Run these commands from PowerShell. First review the branch, local commits, all changes since the baseline and any later uncommitted edits:
 
 ```powershell
 Set-Location 'C:\Projects\Tablekind\Tablekind_Portfolio_20261001-011644\tablekind-spring'
-git switch codex/paypal-ai-hackathon
+git switch hackathon/paypal-bill-splitting
 git status --short --branch
 git log --oneline portfolio-before-paypal-ai..HEAD
 git diff --stat portfolio-before-paypal-ai..HEAD
@@ -34,7 +34,7 @@ Only when ready to publish, **you** can run:
 
 ```powershell
 git remote get-url origin
-git push --set-upstream origin codex/paypal-ai-hackathon
+git push --set-upstream origin hackathon/paypal-bill-splitting
 ```
 
 The first command should show `https://github.com/Kazumi565/tablekind-portfolio.git`. The push uploads the existing local commits and any additional commit you made, and sets upstream tracking for this branch. It does not merge into `main`, publish a release, upload the local baseline tag or submit to Devpost. No force push is needed. If Git reports remote changes, stop and inspect them before reconciling locally.
