@@ -1,6 +1,6 @@
 # Validation record — 11 October 2026
 
-**Local implementation is verified; the entry is not finished.** No actual PayPal sandbox payment or real AI call has been performed. PayPal app credentials, merchant/buyer accounts and an AI project key are absent. Mihai explicitly selected **“No paid calls yet.”** No hosting costs were incurred.
+**Local implementation is verified; the entry is not finished.** PayPal sandbox credentials and four test accounts are configured locally. A real sandbox order was created, but PayPal declined the buyer checkout with `COMPLIANCE_VIOLATION` before approval. No capture or settlement occurred. No real AI call has been performed; Mihai explicitly selected **“No paid calls yet.”** No hosting costs were incurred.
 
 ## Completed checks
 
@@ -48,6 +48,17 @@ Pop-Location
 Browser smoke expects the hackathon stack running and `.env.hackathon` with AI disabled. It creates one new fictional dinner per run. Do not run it against a public judging database. The existing portfolio website is unchanged; its complete separate browser suite was not rerun for these application changes.
 
 ## Required real-integration gates
+
+### First real sandbox attempt — 11 October 2026
+
+- Created a new EUR dinner through the local browser UI, then reserved Mihai's unchanged **19.01 EUR** share with zero tip.
+- Actual PayPal authentication and Orders creation succeeded. The hosted approval page accepted the fictional buyer login and displayed **19.01 EUR**, then redirected to a `COMPLIANCE_VIOLATION` error before payment approval.
+- A read-only Orders lookup confirmed `PAYER_ACTION_REQUIRED`, EUR 19.01, the configured merchant and local payment reference, and **zero captures**.
+- Returned to TableKind and explicitly cancelled. Database verification found `CANCELLED` / `RESOLVED`, reservation `RELEASED`, no capture dispatch, and **zero settlement entries**. Reload preserved cancellation and restored **19.01 EUR** available to Mihai. Whole-table totals remained **0.00 EUR paid / 38.01 EUR outstanding / 0.00 EUR reserved**.
+- The sandbox merchant dashboard was accessible, displayed EUR funds and no visible setup warning. The specific cause of the provider decline is unknown. [PayPal's error documentation](https://developer.paypal.com/api/payments/v2/errors/compliance_violation/) identifies the decline but does not diagnose this account.
+- Capture, successful-payment replay, tip settlement and restart-after-approval checks remain **unverified against actual PayPal**. No paid AI calls were made.
+
+Private screenshots and provider identifiers are retained under ignored `test-results/paypal-sandbox/`. Redacted results are in [sandbox attempt evidence](evidence/paypal-sandbox-results.json). Resolve the sandbox account/provider issue before retrying the successful-payment gates; do not bypass it by marking a payment successful locally.
 
 - [ ] Configure the sandbox app, matching business merchant, EUR acceptance and three buyer accounts; keep credentials local.
 - [ ] On a new dinner, pay one unchanged diner share first. Inspect the actual Orders create response/approval link, capture representation, merchant, currency and gross. Confirm the local paid amount excludes tip.
