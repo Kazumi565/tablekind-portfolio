@@ -1,5 +1,13 @@
 # Financial and AI boundaries
 
+## Guest interface
+
+The menu combines warm cream and forest colors, serif headings, a large food photograph, category controls and photo cards. It uses the same 228-entry, 17-category catalog, localized dish names, availability flags, prices and real ordering actions. Photos remain illustrative; the existing allergens and dietary information remain visible in dish details.
+
+The EUR guest dinner uses a compact demo toolbar, receipt photos, the current diner's share, everyone else's current balances and an Order → Review split → Agree → Pay progress indicator. Current and proposed amounts appear together in the AI preview; agreement badges reflect actual required voters. A mobile navigation bar provides Menu, My order, Pay & split and More. Switching demo diners selects the guest route, and section navigation scrolls to the top. Other workspaces retain their existing navigation. The hackathon profile hides practice-reservation links because their endpoint is available only in the local/demo profiles; those profiles retain the links.
+
+These views read the existing session and proposal state. Editing an interpreted instruction or changing the table invalidates confirmation. A proposed allocation does not replace current balances before all required votes, and checkout continues to use the existing server reservation and PayPal verification flow. The redesign introduces no backend or financial contract changes.
+
 ## PayPal state machine
 
 `POST /api/sessions/{sid}/paypal` calculates the payer's eligible portions on the server under the session lock. It persists a PROCESSING reservation, a PAYPAL_SANDBOX attempt, immutable merchant/currency/amount, and distinct create/capture UUID request IDs in the same idempotent command transaction.

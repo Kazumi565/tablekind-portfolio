@@ -1,6 +1,6 @@
 # Run the hackathon build
 
-The full app is also deployed at [tablekind-hackathon.onrender.com](https://tablekind-hackathon.onrender.com/). See [Render status and setup](RENDER-SETUP.md) for the hosted installation. Obtain demo-manager and sandbox buyer access privately. Paid AI calls are currently disabled after the completed hosted tests; ongoing judge access is still being arranged. The instructions below run a separate local installation.
+The full app is also deployed at [tablekind-hackathon.onrender.com](https://tablekind-hackathon.onrender.com/). See [Render status and setup](RENDER-SETUP.md) for the hosted installation. The latest menu and dinner redesign is verified locally; Render still serves `b4bd14c` until Mihai pushes and manually deploys the update. See [publication commands](REVIEW-AND-PUBLISH.md). Obtain demo-manager and sandbox buyer access privately. Paid AI calls are currently disabled after the completed hosted tests; ongoing judge access is still being arranged. The instructions below run a separate local installation.
 
 Use Git and Docker Desktop with Linux containers. PowerShell instructions run from the repository root. Node 24 is needed only for frontend development/browser checks; Docker builds the application with Java 21 and PostgreSQL 16.
 
@@ -66,6 +66,6 @@ An unknown capture holds its portions. Do not simulate success, manually edit le
 
 ## Judge access and hosting
 
-A hosted HTTPS demo would reduce setup and account friction and improve reproducibility on judges' devices. No hosting was purchased or deployed. Before publication, choose a host with persistent PostgreSQL, secure backend environment variables, HTTPS return origin, restart recovery and bounded AI access. Preserve the database through judging and test the exact public origin.
+Mihai activated the full Render HTTPS demo with persistent PostgreSQL 16 and the web service in Frankfurt, at the dashboard's estimated USD 13.30/month. Hosted menu ordering, consent, real AI interpretation and sandbox captures were verified before the latest interface redesign. Preserve the database through judging. Render auto-deploys are off; after publishing the local interface commits, manually deploy the latest commit and check the public origin again.
 
-Local Docker is reproducible, but **AI and payment steps are not usable without integration access**. Arrange a free-to-judges access path: preferably operator-funded hosted AI plus isolated sandbox buyer credentials, or clearly documented controlled access to necessary resources. Never put an API secret in the public repository. This access decision and any costs require Mihai's approval; see the remaining gates in [VALIDATION](VALIDATION.md).
+Local Docker is reproducible, but **AI and payment steps are not usable without integration access**. Paid AI is currently disabled locally and on Render after the approved test runs. Arrange a free-to-judges access path through approved operator-funded AI and privately delivered sandbox buyer credentials, or clearly documented controlled access to those resources. Never put an API secret in the public repository. Ongoing judge usage and its budget still require Mihai's approval; see the remaining gates in [VALIDATION](VALIDATION.md).

@@ -1,5 +1,7 @@
 import type { Auth } from "./types";
 import type { DemoScenario, DemoView } from "./DemoGuide";
+import { BookOpen, UsersRound } from "lucide-react";
+import "./dinnerPanels.css";
 
 export function HackathonGuide({
   scenario,
@@ -7,32 +9,33 @@ export function HackathonGuide({
   onCreate,
   onView,
   blocked,
+  currentActorId,
 }: {
   scenario: DemoScenario | null;
   staff: Auth | null;
   onCreate: () => void;
   onView: (view: DemoView, tab: string) => void;
   blocked: boolean;
+  currentActorId?: string;
 }) {
   return (
     <section
-      className="card hackathon-guide"
+      className="card hackathon-guide dinner-demo-toolbar"
       aria-label="Hackathon walkthrough"
     >
-      <div>
-        <span className="eyebrow">Tablekind · PayPal AI Hackathon</span>
-        <h2>One meal. A split everyone agrees to.</h2>
-        <p>
-          Describe your split, review every cent, agree together, then pay your
-          own share.
-        </p>
-      </div>
       {!scenario ? (
         <>
-          <p>
-            A fictional EUR meal for Mihai, Diego and Ana. The prepared bill
-            includes a burger, pasta, salad and a shared starter.
-          </p>
+          <div className="dinner-demo-intro">
+            <UsersRound size={21} aria-hidden="true" />
+            <div>
+              <span className="eyebrow">Sandbox dinner · test money only</span>
+              <h2>One meal. A split everyone agrees to.</h2>
+              <p>
+                A prepared EUR meal for Mihai, Diego and Ana. Describe, review,
+                agree, then pay your share.
+              </p>
+            </div>
+          </div>
           {staff ? (
             <button className="primary" disabled={blocked} onClick={onCreate}>
               Start EUR dinner
@@ -46,13 +49,25 @@ export function HackathonGuide({
         </>
       ) : (
         <>
-          <div className="row wrap">
-            <button disabled={blocked} onClick={() => onView("mihai", "menu")}>
+          <div className="dinner-demo-controls">
+            <span className="dinner-demo-label">
+              <UsersRound size={16} aria-hidden="true" /> Try each perspective
+            </span>
+            <button
+              className="dinner-browse-menu"
+              disabled={blocked}
+              onClick={() => onView("mihai", "menu")}
+            >
               Browse menu
             </button>
-            {(["mihai", "diego", "ana"] as const).map((view) => (
+            {(["mihai", "diego", "ana"] as const).map((view, index) => (
               <button
                 key={view}
+                aria-pressed={Boolean(
+                  currentActorId &&
+                  currentActorId === scenario.guests[index]?.actorId,
+                )}
+                className="dinner-demo-diner"
                 disabled={blocked}
                 onClick={() => onView(view, "bill")}
               >
@@ -60,14 +75,19 @@ export function HackathonGuide({
               </button>
             ))}
             <button
+              aria-pressed={Boolean(
+                currentActorId && currentActorId === staff?.actorId,
+              )}
               disabled={blocked}
               onClick={() => onView("manager", "bill")}
             >
               Manager
             </button>
           </div>
-          <details>
-            <summary>How to try the full journey</summary>
+          <details className="dinner-demo-help">
+            <summary aria-label="How to try the full journey">
+              <BookOpen size={14} aria-hidden="true" /> Demo guide
+            </summary>
             <ol>
               <li>
                 As Mihai, describe who pays for each dish and share the starter
@@ -83,8 +103,8 @@ export function HackathonGuide({
               </li>
             </ol>
           </details>
-          <details>
-            <summary>Start another dinner</summary>
+          <details className="dinner-demo-reset">
+            <summary aria-label="Start another dinner">New dinner</summary>
             <p>
               Creates a new table; existing payment attempts keep their recovery
               records.

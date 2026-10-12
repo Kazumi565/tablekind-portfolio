@@ -1,0 +1,700 @@
+.dining-app-header {
+  max-width: 1160px;
+  padding: 20px 32px;
+  margin: auto;
+  border-color: #e5e5db;
+  background: #faf9f5;
+}
+.dining-app-header .brand {
+  font-family: Georgia, serif;
+  font-size: 28px;
+  font-weight: 400;
+  letter-spacing: -1px;
+}
+.dining-app-header .mark {
+  border-radius: 50%;
+  font-size: 27px;
+}
+.dining-app-header .local-label {
+  font-family: inherit;
+  font-size: 11px;
+  letter-spacing: 0;
+}
+.dining-app-header .workspace-switcher select,
+.dining-app-header .header-right select {
+  background: transparent;
+}
+.dinner-workspace {
+  max-width: 1160px;
+  padding: 24px 32px 60px;
+}
+.dinner-workspace .page-title {
+  margin: 24px 0 18px;
+}
+.dinner-workspace .page-title h1 {
+  font:
+    400 clamp(32px, 3.5vw, 43px)/1.14 Georgia,
+    serif;
+  letter-spacing: -1.3px;
+}
+.dinner-workspace .page-title .eyebrow {
+  font-size: 11px;
+  color: #53644e;
+}
+.dinner-workspace .page-title p {
+  margin: 7px 0 0;
+  font-size: 12px;
+}
+.dinner-help {
+  position: relative;
+}
+.dinner-help > summary {
+  display: flex;
+  gap: 7px;
+  align-items: center;
+  font-size: 12px;
+  padding: 10px 0;
+  list-style: none;
+}
+.dinner-help > summary::-webkit-details-marker {
+  display: none;
+}
+.dinner-help > .row {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  z-index: 40;
+  width: 295px;
+  padding: 15px;
+  display: grid;
+  gap: 10px;
+  background: #fffefa;
+  border: 1px solid #dfe4d6;
+  border-radius: 12px;
+  box-shadow: 0 12px 36px #173d321c;
+}
+.dinner-help select {
+  min-width: 0;
+  width: 100%;
+}
+.dinner-workspace .workspace-nav {
+  margin: 0 0 18px;
+  padding: 0;
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid #dfe3d5;
+  border-radius: 0;
+}
+.dinner-workspace .nav-primary {
+  width: auto;
+  gap: 25px;
+}
+.dinner-workspace .workspace-nav .nav-primary button {
+  min-height: 48px;
+  padding: 10px 0;
+  border-radius: 0;
+  border-bottom: 2px solid transparent;
+  font-size: 13px;
+  flex: 0 1 auto;
+}
+.dinner-workspace .workspace-nav .nav-primary button.active {
+  background: none;
+  border-bottom-color: #234b39;
+  box-shadow: none;
+  color: #234b39;
+}
+.dinner-workspace .nav-share {
+  display: none;
+}
+.dinner-workspace .session-bar {
+  padding: 0 0 16px;
+  border: 0;
+  background: none;
+  margin-bottom: 12px;
+}
+.dinner-workspace .session-bar:not(.closed-session) > .row:first-child {
+  display: none;
+}
+.dinner-workspace .session-bar .row:last-child {
+  margin-left: auto;
+}
+.dinner-workspace .session-bar button {
+  font-size: 12px;
+  padding: 7px 11px;
+}
+.dinner-experience .dinner-journey {
+  display: flex;
+  list-style: none;
+  margin: 0 0 25px;
+  padding: 14px 20px;
+  border: 1px solid #e2e6d9;
+  background: #eef1e7;
+  border-radius: 12px;
+  gap: 15px;
+}
+.dinner-journey li {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  gap: 9px;
+  font-size: 12px;
+  color: #68745f;
+}
+.dinner-journey li::after {
+  content: "";
+  height: 1px;
+  flex: 1;
+  background: #d7ddcf;
+  margin-left: 5px;
+}
+.dinner-journey li:last-child {
+  flex: 0.6;
+}
+.dinner-journey li:last-child::after {
+  display: none;
+}
+.dinner-journey li > span {
+  width: 25px;
+  height: 25px;
+  flex: 0 0 25px;
+  border: 1px solid #cfd8c6;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-size: 11px;
+}
+.dinner-journey .current {
+  color: #234b39;
+  font-weight: 650;
+}
+.dinner-journey .current > span {
+  background: #234b39;
+  color: white;
+  border-color: #234b39;
+}
+.dinner-journey .complete > span {
+  color: #234b39;
+  background: #e0e9d9;
+}
+.dinner-experience .dinner-bill-overview {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 12px;
+}
+.dinner-bill-overview h2 {
+  font:
+    400 31px/1.2 Georgia,
+    serif;
+  margin: 5px 0;
+  letter-spacing: -0.7px;
+}
+.dinner-bill-overview p {
+  margin: 0;
+  color: #5e6b58;
+  font-size: 12px;
+}
+.dinner-bill-overview > div:last-child {
+  display: grid;
+  text-align: right;
+}
+.dinner-bill-overview strong {
+  font:
+    400 29px/1.3 Georgia,
+    serif;
+}
+.dinner-bill-overview span:not(.eyebrow) {
+  color: #5e6b58;
+  font-size: 12px;
+}
+.dinner-experience .bill-totals {
+  margin: 0 0 22px;
+}
+.dinner-experience .bill-totals summary {
+  font-size: 12px;
+  color: #52624c;
+  padding: 6px 0;
+}
+.dinner-experience .bill-totals .metrics {
+  margin-top: 10px;
+}
+.dinner-experience .bill-totals .card {
+  padding: 15px;
+}
+.dinner-experience .eur-bill-grid {
+  grid-template-columns: minmax(0, 1.65fr) minmax(290px, 1fr);
+  gap: 28px;
+  align-items: start;
+}
+.dinner-experience .eur-bill-grid > section,
+.dinner-experience .eur-bill-grid > aside {
+  min-width: 0;
+}
+.dinner-experience .section-heading {
+  margin-bottom: 12px;
+  align-items: center;
+}
+.dinner-experience .section-heading h2 {
+  font-size: 16px;
+  letter-spacing: -0.3px;
+}
+.dinner-experience .section-heading button {
+  padding: 8px 11px;
+  font-size: 12px;
+}
+.dinner-experience .chips {
+  margin: 0 0 12px;
+}
+.dinner-experience .chips button {
+  padding: 7px 12px;
+  font-size: 12px;
+}
+.dinner-experience .dinner-receipt-row {
+  display: grid;
+  grid-template-columns: 72px minmax(0, 1fr);
+  gap: 14px;
+  padding: 16px;
+  border-radius: 12px;
+  margin-bottom: 10px;
+  background: #fffefa;
+}
+.dinner-receipt-row .receipt-photo {
+  width: 72px;
+  height: 72px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+.dinner-receipt-row .receipt-row-content {
+  min-width: 0;
+}
+.dinner-receipt-row h3 {
+  font-size: 14px;
+  font-weight: 600;
+  margin: 0;
+  line-height: 1.5;
+}
+.dinner-receipt-row .spread {
+  align-items: start;
+  gap: 12px;
+  margin-bottom: 7px;
+}
+.dinner-receipt-row .spread > strong {
+  font-size: 14px;
+  white-space: nowrap;
+}
+.dinner-receipt-row .summary-row {
+  border: none;
+  font-size: 12px;
+  padding: 2px 0;
+  color: #596752;
+}
+.dinner-receipt-row .item-actions {
+  margin-top: 8px;
+  gap: 10px;
+}
+.dinner-receipt-row .item-actions button {
+  background: none;
+  border: none;
+  padding: 3px 0;
+  min-height: 28px;
+  color: #355e46;
+  font-size: 12px;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.dinner-experience .dinner-share {
+  display: block;
+  background: #234b39;
+  color: #fffef3;
+  padding: 23px;
+  border: 0;
+  border-radius: 16px;
+  margin-bottom: 16px;
+}
+.dinner-share-person {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 24px;
+}
+.dinner-share-person .avatar {
+  background: #e3ebd5;
+  color: #234b39;
+}
+.dinner-share-person > div {
+  flex: 1;
+  display: grid;
+}
+.dinner-share-person strong {
+  font-size: 13px;
+}
+.dinner-share-person > div > span {
+  color: #d2ddc8;
+  font-size: 11px;
+}
+.dinner-share-label {
+  font-size: 12px;
+  color: #d2ddc8;
+}
+.dinner-share h2 {
+  font:
+    400 44px/1.2 Georgia,
+    serif;
+  color: inherit;
+  margin: 7px 0;
+  letter-spacing: -1px;
+}
+.dinner-share p {
+  font-size: 12px;
+  color: #d2ddc8;
+  margin: 0 0 22px;
+}
+.dinner-share .button.primary {
+  color: #234b39;
+  background: #ece6cb;
+  border-color: #ece6cb;
+  min-height: 44px;
+  font-size: 13px;
+}
+.dinner-share small {
+  display: flex;
+  gap: 7px;
+  color: #d2ddc8;
+  font-size: 11px;
+  margin-top: 14px;
+  line-height: 1.5;
+}
+.dinner-share small svg {
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+.dinner-experience .dinner-balances {
+  padding: 18px;
+  border-radius: 14px;
+  background: #fffefa;
+}
+.dinner-balances h3 {
+  font-size: 14px;
+  margin: 0;
+}
+.dinner-balances .spread > span {
+  font-size: 11px;
+  color: #5e6b58;
+}
+.dinner-balances .balance {
+  padding: 12px 0;
+  border-bottom: 1px solid #ececdf;
+  font-size: 12px;
+}
+.dinner-balances .balance:last-child {
+  border-bottom: 0;
+  padding-bottom: 0;
+}
+.dinner-balances .balance small {
+  display: block;
+  font-size: 11px;
+  color: #596752;
+}
+.dinner-balances .balance .avatar {
+  width: 29px;
+  height: 29px;
+  margin-right: 0;
+  font-size: 12px;
+}
+.dinner-balances .balance > span {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+}
+.dinner-balances .balance > span:last-child {
+  display: grid;
+  justify-items: end;
+  gap: 0;
+}
+.dinner-votes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 16px 0;
+}
+.dinner-votes > span {
+  display: grid;
+  grid-template-columns: 25px 1fr;
+  column-gap: 7px;
+  font-size: 12px;
+  flex: 1 1 125px;
+  padding: 9px;
+  border-radius: 8px;
+  background: #f0f0e7;
+}
+.dinner-votes .avatar {
+  grid-row: span 2;
+  width: 25px;
+  height: 25px;
+  font-size: 11px;
+  margin: 0;
+}
+.dinner-votes small {
+  font-size: 11px;
+  color: #5b6a51;
+}
+.dinner-votes .agreed {
+  background: #e6efdc;
+}
+.dinner-experience .proposal {
+  border-left: 3px solid #b4955a;
+  background: #fffdf5;
+}
+.dinner-experience .paypal-checkout {
+  border-radius: 14px;
+  background: #fffefa;
+  padding: 20px;
+}
+.dinner-experience .paypal-checkout h2 {
+  font:
+    400 25px/1.2 Georgia,
+    serif;
+  letter-spacing: -0.5px;
+}
+.dinner-experience .paypal-checkout p,
+.dinner-experience .paypal-checkout small {
+  font-size: 12px;
+}
+.dinner-experience .paypal-checkout .eyebrow {
+  font-size: 11px;
+}
+.dinner-experience .dinner-payment-history {
+  border-top: 1px solid #e0e4d6;
+  margin-top: 25px;
+}
+.dinner-payment-history > summary {
+  font-size: 13px;
+  padding: 16px 0;
+}
+@media (max-width: 760px) {
+  .dining-app-header {
+    padding: 17px 18px;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+  .dining-app-header .brand {
+    font-size: 25px;
+  }
+  .dining-app-header .local-label {
+    display: none;
+  }
+  .dining-app-header .workspace-switcher {
+    margin-left: auto;
+    order: 0;
+    flex-basis: auto;
+    max-width: 80px;
+  }
+  .dining-app-header .workspace-switcher select {
+    min-width: 0;
+    padding: 8px 3px;
+  }
+  .dining-app-header .account-shortcut {
+    display: none;
+  }
+  .dining-app-header .header-right {
+    margin-left: auto;
+  }
+  .dinner-workspace {
+    padding: 18px 18px 150px;
+  }
+  .dinner-workspace .page-title {
+    margin: 20px 0 12px;
+    position: relative;
+    display: block;
+  }
+  .dinner-workspace .page-title h1 {
+    padding-right: 70px;
+    font-size: 30px;
+  }
+  .dinner-workspace .page-title > .row {
+    position: absolute;
+    top: 25px;
+    right: 0;
+    margin: 0;
+    gap: 3px;
+    flex-wrap: nowrap;
+  }
+  .dinner-workspace .page-title p {
+    max-width: calc(100% - 65px);
+  }
+  .dinner-workspace .page-title .connection {
+    display: none;
+  }
+  .dinner-workspace .dinner-help > summary {
+    font-size: 0;
+  }
+  .dinner-workspace .dinner-help > summary svg {
+    width: 20px;
+    height: 20px;
+  }
+  .dinner-workspace .session-bar {
+    margin: 0 0 14px;
+    padding: 0;
+  }
+  .dinner-workspace .session-bar .row {
+    flex-wrap: wrap;
+  }
+  .dinner-workspace .guest-nav {
+    position: fixed;
+    top: auto;
+    z-index: 35;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0;
+    padding: 0 16px env(safe-area-inset-bottom);
+    background: #fffef8f5;
+    backdrop-filter: blur(12px);
+    border: 0;
+    border-top: 1px solid #d8dfce;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 55px;
+    gap: 0 4px;
+    box-shadow: 0 -5px 30px #233d3110;
+  }
+  .dinner-workspace .nav-share {
+    display: flex;
+    justify-content: space-between;
+    grid-column: 1 / -1;
+    align-items: center;
+    padding: 9px 2px 6px;
+    font-size: 11px;
+    border-bottom: 1px solid #ecece0;
+  }
+  .dinner-workspace .nav-share strong {
+    font-size: 15px;
+  }
+  .dinner-workspace .guest-nav .nav-primary {
+    width: 100%;
+    gap: 0;
+    overflow: visible;
+  }
+  .dinner-workspace .guest-nav .nav-primary button {
+    min-height: 59px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    font-size: 11px;
+    border-bottom: 0;
+  }
+  .dinner-workspace .workspace-more {
+    align-self: center;
+  }
+  .dinner-workspace .workspace-more summary {
+    flex-direction: column;
+    gap: 4px;
+    font-size: 11px;
+    padding: 0;
+    min-height: 59px;
+  }
+  .dinner-workspace .workspace-more summary span {
+    display: block;
+  }
+  .dinner-workspace .more-menu {
+    bottom: calc(100% + 12px);
+    top: auto;
+    right: 0;
+  }
+  .dinner-workspace .more-menu button {
+    font-size: 13px;
+    min-height: 44px;
+  }
+  .dinner-experience .dinner-journey {
+    gap: 9px;
+    padding: 12px 10px;
+    margin-bottom: 20px;
+  }
+  .dinner-journey li {
+    font-size: 11px;
+    gap: 5px;
+    flex-direction: column;
+    flex: 1;
+    white-space: nowrap;
+  }
+  .dinner-journey li:last-child {
+    flex: 1;
+  }
+  .dinner-journey li::after {
+    display: none;
+  }
+  .dinner-experience .eur-bill-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+  }
+  .dinner-experience .eur-bill-grid > section,
+  .dinner-experience .eur-bill-grid > aside {
+    width: 100%;
+  }
+  .dinner-experience .eur-bill-grid > aside {
+    display: contents;
+  }
+  .dinner-experience .dinner-share {
+    order: -2;
+    margin: 0;
+    width: 100%;
+    padding: 20px;
+  }
+  .dinner-share-person {
+    margin-bottom: 17px;
+  }
+  .dinner-experience .dinner-balances {
+    order: -1;
+    margin: 0;
+    width: 100%;
+  }
+  .dinner-experience .eur-bill-grid > section {
+    order: 0;
+  }
+  .dinner-experience .paypal-checkout {
+    order: 1;
+    width: 100%;
+    margin: 0;
+    scroll-margin-bottom: 135px;
+  }
+  .dinner-experience .section-heading {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .dinner-experience .dinner-receipt-row {
+    grid-template-columns: 55px minmax(0, 1fr);
+    padding: 13px;
+    gap: 10px;
+  }
+  .dinner-receipt-row .receipt-photo {
+    width: 55px;
+    height: 55px;
+  }
+  .dinner-receipt-row h3 {
+    font-size: 13px;
+  }
+  .dinner-receipt-row .item-actions button {
+    min-height: 44px;
+    padding: 5px 0;
+  }
+  .dinner-bill-overview h2 {
+    font-size: 28px;
+  }
+  .dinner-bill-overview strong {
+    font-size: 25px;
+  }
+  .dinner-workspace input,
+  .dinner-workspace select,
+  .dinner-workspace textarea {
+    font-size: 16px;
+  }
+  .dinner-workspace .card,
+  .dinner-workspace button {
+    overflow-wrap: anywhere;
+  }
+  .dinner-workspace ~ footer {
+    padding-bottom: 120px;
+  }
+}

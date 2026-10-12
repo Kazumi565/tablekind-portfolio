@@ -21,24 +21,32 @@ export function WorkspaceNav({
   tab,
   onTab,
   disabled,
+  balance,
+  practiceReservations = true,
 }: {
   guest: boolean;
   manager: boolean;
   tab: string;
   onTab: (id: string) => void;
   disabled: boolean;
+  balance?: string;
+  practiceReservations?: boolean;
 }) {
   const primary: Entry[] = guest
     ? [
         { id: "menu", name: "Menu", icon: Menu },
         { id: "table", name: "My order", icon: Users },
         { id: "bill", name: "Pay & split", icon: Receipt },
-        {
-          id: "practice-reservations",
-          name: "Try reservations",
-          icon: CalendarDays,
-        },
-        { id: "account", name: "My account", icon: UserRound },
+        ...(balance === undefined
+          ? [
+              {
+                id: "practice-reservations",
+                name: "Try reservations",
+                icon: CalendarDays,
+              },
+              { id: "account", name: "My account", icon: UserRound },
+            ]
+          : []),
       ]
     : [
         ...(manager
@@ -52,7 +60,16 @@ export function WorkspaceNav({
           : [{ id: "availability", name: "Availability", icon: Menu }]),
       ];
   const extra: Entry[] = guest
-    ? []
+    ? balance === undefined
+      ? []
+      : [
+          {
+            id: "practice-reservations",
+            name: "Try reservations",
+            icon: CalendarDays,
+          },
+          { id: "account", name: "My account", icon: UserRound },
+        ]
     : [
         ...(manager
           ? [
@@ -67,6 +84,10 @@ export function WorkspaceNav({
           : []),
         { id: "security", name: "My account", icon: UserRound },
       ];
+  const visible = (entry: Entry) =>
+    practiceReservations || entry.id !== "practice-reservations";
+  const availablePrimary = primary.filter(visible);
+  const availableExtra = extra.filter(visible);
   const button = (entry: Entry) => (
     <button
       key={entry.id}
@@ -84,14 +105,30 @@ export function WorkspaceNav({
       className={`tabs workspace-nav ${guest ? "guest-nav" : ""}`}
       aria-label="Workspace sections"
     >
-      <div className="nav-primary">{primary.map(button)}</div>
-      {!!extra.length && (
+      {guest && balance && (
+        <div className="nav-share">
+          <span>Your unpaid share</span>
+          <strong>{balance}</strong>
+        </div>
+      )}
+      <div className="nav-primary">{availablePrimary.map(button)}</div>
+      {!!availableExtra.length && (
         <details className="workspace-more" key={tab}>
-          <summary>
+          <summary
+            aria-label={
+              guest
+                ? "More"
+                : (availableExtra.find((e) => e.id === tab)?.name ?? "More")
+            }
+          >
             <MoreHorizontal size={20} />
-            <span>{extra.find((e) => e.id === tab)?.name ?? "More"}</span>
+            <span>
+              {guest
+                ? "More"
+                : (availableExtra.find((e) => e.id === tab)?.name ?? "More")}
+            </span>
           </summary>
-          <div className="more-menu">{extra.map(button)}</div>
+          <div className="more-menu">{availableExtra.map(button)}</div>
         </details>
       )}
     </nav>

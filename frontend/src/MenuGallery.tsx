@@ -1,14 +1,8 @@
 import { useEffect, useState } from "react";
-import {
-  ArrowRight,
-  ChefHat,
-  Leaf,
-  Plus,
-  Search,
-  UtensilsCrossed,
-} from "lucide-react";
+import { ArrowRight, Leaf, Plus, Search, UtensilsCrossed } from "lucide-react";
 import type { Menu, Names, Product } from "./types";
 import { useMoney } from "./Currency";
+import "./menuExperience.css";
 
 const label = (names: Names, lang: string) =>
   names[lang as keyof Names] || names.en;
@@ -39,6 +33,7 @@ export function DishPhoto({
 }) {
   const [failed, setFailed] = useState(false);
   const path = product.image_path;
+  useEffect(() => setFailed(false), [path]);
   return path && /^\/menu\/[a-z0-9-]+\.webp$/.test(path) && !failed ? (
     <img
       className={`dish-photo ${className}`}
@@ -82,16 +77,31 @@ export function MenuGallery({
   const categories = [...menu.categories].sort(
     (a, b) => a.sort_order - b.sort_order,
   );
-  const activeCategory = categories.find((c) => c.id === category);
-  const products = menu.products.filter(
-    (p) =>
-      (!activeCategory || p.category_id === activeCategory.id) &&
-      (!vegetarian ||
-        p.dietary_labels.some((d) => /^(vegetarian|vegan)$/i.test(d))) &&
-      `${label(p.names, lang)} ${label(p.descriptions, lang)}`
-        .toLowerCase()
-        .includes(query.trim().toLowerCase()),
+  const categoryOrder = new Map(
+    categories.map((c) => [c.id, c.sort_order]),
   );
+  const dishNames = new Intl.Collator(lang === "ro" || lang === "ru" ? lang : "en", {
+    numeric: true,
+    sensitivity: "base",
+  });
+  const activeCategory = categories.find((c) => c.id === category);
+  const products = menu.products
+    .filter(
+      (p) =>
+        (!activeCategory || p.category_id === activeCategory.id) &&
+        (!vegetarian ||
+          p.dietary_labels.some((d) => /^(vegetarian|vegan)$/i.test(d))) &&
+        `${label(p.names, lang)} ${label(p.descriptions, lang)}`
+          .toLowerCase()
+          .includes(query.trim().toLowerCase()),
+    )
+    .sort(
+      (a, b) =>
+        (categoryOrder.get(a.category_id) ?? Number.MAX_SAFE_INTEGER) -
+          (categoryOrder.get(b.category_id) ?? Number.MAX_SAFE_INTEGER) ||
+        dishNames.compare(label(a.names, lang), label(b.names, lang)) ||
+        a.id.localeCompare(b.id),
+    );
   const photographed = menu.products.filter(
     (p) =>
       p.available &&
@@ -100,25 +110,38 @@ export function MenuGallery({
   );
   const hero =
     photographed.find((p) => p.names.en === "Margherita") ?? photographed[0];
+  const freshDish = photographed.find(
+    (p) => p.image_path !== hero?.image_path && /salad/i.test(p.names.en),
+  );
+  const categoryCounts = new Map(
+    categories.map((c) => [
+      c.id,
+      menu.products.filter((p) => p.category_id === c.id).length,
+    ]),
+  );
   return (
-    <section className="restaurant-menu" aria-label="Restaurant menu">
+    <section
+      className="restaurant-menu menu-experience"
+      aria-label="Restaurant menu"
+    >
       <div className={`dining-hero ${hero ? "with-photo" : ""}`}>
         <div className="dining-hero-copy">
-          <span className="menu-kicker">
-            <span /> THE GOOD PART OF GETTING TOGETHER
-          </span>
+          <span className="menu-kicker">A LITTLE MORE TOGETHER</span>
           <h2>
             Good food.
             <br />
-            <em>Better together.</em>
+            Better <em>company.</em>
           </h2>
           <p>
-            One more slice. Something to share. Find your favourites and make a
-            meal of it.
+            Find your favourite. Try something new.
+            <br /> Make a little room for sharing.
           </p>
-          <a href="#menu-dishes" className="button hero-menu-link">
-            Explore the menu <ArrowRight size={17} />
-          </a>
+          <div className="hero-menu-actions">
+            <a href="#menu-dishes" className="button hero-menu-link">
+              Find your next favourite <ArrowRight size={18} />
+            </a>
+            <span>{menu.products.length} dishes. Plenty to love.</span>
+          </div>
           <div className="hero-footnote">
             <UtensilsCrossed size={15} /> Made for your kind of table
           </div>
@@ -126,20 +149,44 @@ export function MenuGallery({
         {hero && (
           <div className="dining-hero-visual">
             <DishPhoto key={hero.image_path} product={hero} priority />
-            <span className="hero-food-caption">
-              <ChefHat size={18} />
+            <div className="hero-food-caption">
               <span>
-                A little something from our menu
-                <strong>{label(hero.names, lang)}</strong>
+                The simple things, done well
+                <strong>
+                  {dishHeading(label(hero.names, lang))} · {money(hero.price_bani)}
+                </strong>
               </span>
-            </span>
+              <button
+                aria-label={`View featured ${label(hero.names, lang)}`}
+                disabled={disabled || !hero.available}
+                onClick={() => onSelect(hero)}
+              >
+                <ArrowRight size={21} />
+              </button>
+            </div>
+            {freshDish && (
+              <div className="hero-fresh-postcard">
+                <DishPhoto key={freshDish.image_path} product={freshDish} />
+                <span>
+                  A little fresh.
+                  <br />A little indulgent.
+                </span>
+              </div>
+            )}
+            <div className="hero-table-seal" aria-hidden="true">
+              <Leaf size={22} />
+              <span>
+                Pull up
+                <br />a chair
+              </span>
+            </div>
           </div>
         )}
       </div>
       <div className="menu-intro" id="menu-dishes">
         <div>
           <span className="menu-kicker">FIND YOUR NEXT FAVOURITE</span>
-          <h2>A menu for every mood.</h2>
+          <h2>Something for every appetite.</h2>
         </div>
         <p>
           Pick a classic or try something new.
@@ -148,10 +195,29 @@ export function MenuGallery({
         </p>
       </div>
       <div className="menu-layout">
-        <aside className="menu-rail" aria-label="Menu categories">
-          <span className="menu-kicker">ON THE MENU</span>
+        <div className="menu-tools">
+          <label className="menu-search">
+            <Search size={18} />
+            <input
+              type="search"
+              aria-label="Search menu"
+              placeholder="Find a dish, an ingredient, a little inspiration…"
+              value={query}
+              onChange={(e) => setQuery(e.target.value)}
+            />
+          </label>
+          <button
+            className="vegetarian-filter"
+            aria-pressed={vegetarian}
+            onClick={() => setVegetarian(!vegetarian)}
+          >
+            <Leaf size={17} /> Vegetarian
+            <span className="menu-filter-check" aria-hidden="true">
+              {vegetarian ? "✓" : ""}
+            </span>
+          </button>
           <label className="mobile-menu-category">
-            <span>Browse a category</span>
+            <span className="sr-only">Browse a category</span>
             <select
               aria-label="Menu category"
               value={activeCategory?.id ?? ""}
@@ -160,12 +226,13 @@ export function MenuGallery({
               <option value="">All dishes ({menu.products.length})</option>
               {categories.map((c) => (
                 <option key={c.id} value={c.id}>
-                  {label(c.names, lang)} (
-                  {menu.products.filter((p) => p.category_id === c.id).length})
+                  {label(c.names, lang)} ({categoryCounts.get(c.id)})
                 </option>
               ))}
             </select>
           </label>
+        </div>
+        <nav className="menu-rail" aria-label="Menu categories">
           <div className="menu-category-buttons">
             <button
               aria-pressed={!activeCategory}
@@ -182,40 +249,13 @@ export function MenuGallery({
               >
                 <span>{label(c.names, lang)}</span>
                 <span>
-                  {menu.products
-                    .filter((p) => p.category_id === c.id)
-                    .length.toString()
-                    .padStart(2, "0")}
+                  {(categoryCounts.get(c.id) ?? 0).toString().padStart(2, "0")}
                 </span>
               </button>
             ))}
           </div>
-          <div className="menu-sharing-note">
-            <UtensilsCrossed size={22} />
-            <strong>Sharing tastes better.</strong>
-            <p>Order for the table, then decide together who covers what.</p>
-          </div>
-        </aside>
+        </nav>
         <div className="menu-content">
-          <div className="menu-tools">
-            <label className="menu-search">
-              <Search size={18} />
-              <input
-                type="search"
-                aria-label="Search menu"
-                placeholder="What are you craving?"
-                value={query}
-                onChange={(e) => setQuery(e.target.value)}
-              />
-            </label>
-            <button
-              className="vegetarian-filter"
-              aria-pressed={vegetarian}
-              onClick={() => setVegetarian(!vegetarian)}
-            >
-              <Leaf size={17} /> Vegetarian
-            </button>
-          </div>
           <p className="menu-result-count" role="status">
             {products.length} {products.length === 1 ? "dish" : "dishes"}
             {activeCategory

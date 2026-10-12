@@ -3,9 +3,11 @@ import type { Dashboard } from "./types";
 export function ManagementHome({
   dash,
   onSection,
+  practiceReservations = true,
 }: {
   dash: Dashboard;
   onSection: (section: string) => void;
+  practiceReservations?: boolean;
 }) {
   const total = (
     field: "pending_orders" | "help_requests" | "collection_requests",
@@ -40,13 +42,15 @@ export function ManagementHome({
         </button>
       </div>
       <div className="workspace-actions">
-        <button
-          className="card"
-          onClick={() => onSection("practice-reservations")}
-        >
-          <h3>Practice reservations</h3>
-          <p>Review fictional requests without holding a real table.</p>
-        </button>
+        {practiceReservations && (
+          <button
+            className="card"
+            onClick={() => onSection("practice-reservations")}
+          >
+            <h3>Practice reservations</h3>
+            <p>Review fictional requests without holding a real table.</p>
+          </button>
+        )}
         <button className="card" onClick={() => onSection("setup")}>
           <h3>Get ready for a pilot</h3>
           <p>First table, menu, staff and printed QR codes.</p>

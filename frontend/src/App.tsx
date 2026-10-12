@@ -3,6 +3,12 @@ import { MenuGallery, DishPhoto } from "./MenuGallery";
 import { PayPalCheckout } from "./PayPalCheckout";
 import { SplitAssistant } from "./SplitAssistant";
 import { HackathonGuide } from "./HackathonGuide";
+import {
+  DinnerJourney,
+  DinnerShare,
+  DinnerBalances,
+  ReceiptPhoto,
+} from "./DinnerExperience";
 import { useMoney, CurrencyContext } from "./Currency";
 import { BranchEditor, ModifiersEditor } from "./AdminEditors";
 import { CustomerPanel } from "./CustomerPanel";
@@ -665,6 +671,12 @@ export default function App() {
       setMode("guest");
     }
     setTab(targetTab);
+    history.replaceState(
+      {},
+      "",
+      view === "manager" ? "/manage" : view === "staff" ? "/staff" : "/guest",
+    );
+    window.scrollTo({ top: 0, behavior: "instant" });
   };
   const createDemo = async () => {
     if (!staff || busy || pending || !demoEnabled) return;
@@ -703,7 +715,13 @@ export default function App() {
   return (
     <FormErrorContext.Provider value={error}>
       <CurrencyContext.Provider value={currency}>
-        <header>
+        <header
+          className={
+            mode === "guest" && currency === "EUR"
+              ? "dining-app-header"
+              : undefined
+          }
+        >
           <a className="brand" href="/" aria-label="Tablekind home">
             <span className="mark">t</span>tablekind
             <span className="local-label">
@@ -774,7 +792,7 @@ export default function App() {
         </div>
         <main
           aria-busy={busy}
-          className={`workspace-${mode === "guest" ? "guest" : workspace}`}
+          className={`workspace-${mode === "guest" ? "guest" : workspace} ${mode === "guest" && currency === "EUR" ? "dinner-workspace" : ""}`}
         >
           {notice && (
             <div className="notice" role="status" aria-live="polite">
@@ -845,6 +863,9 @@ export default function App() {
                 onCreate={() => void createDemo()}
                 onView={demoView}
                 blocked={busy || !!pending}
+                currentActorId={
+                  mode === "guest" ? guest?.actorId : staff?.actorId
+                }
               />
             ) : (
               <DemoGuide
@@ -1070,12 +1091,18 @@ export default function App() {
                       ? workspace === "manage"
                         ? "Restaurant management"
                         : "Waiter workspace"
-                      : "Welcome to the table"}
+                      : state?.currency === "EUR"
+                        ? state.table.restaurant_name
+                        : "Welcome to the table"}
                   </span>
                   <h1>
                     {mode === "staff"
                       ? (dash?.restaurant.name ?? "Your restaurants")
-                      : (state?.table.restaurant_name ?? "Your table")}
+                      : state?.currency === "EUR" && tab === "bill"
+                        ? "Dinner, together."
+                        : state?.currency === "EUR" && tab === "menu"
+                          ? "At the table."
+                          : (state?.table.restaurant_name ?? "Your table")}
                   </h1>
                   <p>
                     {mode === "staff"
@@ -1096,6 +1123,14 @@ export default function App() {
                   >
                     <RefreshCw size={18} />
                   </button>
+                  {mode === "guest" && state?.currency === "EUR" && (
+                    <details className="dinner-help">
+                      <summary>
+                        <Bell size={15} /> Need a hand?
+                      </summary>
+                      <Help action={action} />
+                    </details>
+                  )}
                   {mode === "staff" && members.length > 0 && (
                     <select
                       aria-label="Restaurant"
@@ -1222,14 +1257,31 @@ export default function App() {
                   </details>
                 )}
               <WorkspaceNav
+                practiceReservations={!hackathon}
                 guest={mode === "guest"}
                 manager={manager}
                 tab={tab}
-                onTab={setTab}
+                onTab={(next) => {
+                  setTab(next);
+                  if (mode === "guest")
+                    window.scrollTo({ top: 0, behavior: "instant" });
+                }}
                 disabled={busy}
+                balance={
+                  mode === "guest" && state?.currency === "EUR"
+                    ? money(
+                        state.bill.guests.find((g) => g.id === state.actor.id)
+                          ?.remaining_bani ?? 0,
+                      )
+                    : undefined
+                }
               />
               {tab === "overview" && manager && dash ? (
-                <ManagementHome dash={dash} onSection={setTab} />
+                <ManagementHome
+                  dash={dash}
+                  onSection={setTab}
+                  practiceReservations={!hackathon}
+                />
               ) : tab === "security" && mode === "staff" && staff ? (
                 <SecurityPanel token={staff.accessToken} onSignOut={signOut} />
               ) : tab === "operations" && manager && rid && staff ? (
@@ -1282,36 +1334,48 @@ export default function App() {
                 />
               ) : state ? (
                 <>
-                  <div className="session-bar">
-                    <div className="row">
-                      <Pill>{state.table.label}</Pill>
-                      <span>
-                        {state.guests.filter((g) => g.active).length} guests
-                      </span>
-                      {state.session.status === "CLOSED" && <Pill>Closed</Pill>}
+                  {(mode === "staff" ||
+                    state.currency !== "EUR" ||
+                    state.session.status === "CLOSED") && (
+                    <div
+                      className={`session-bar ${state.session.status === "CLOSED" ? "closed-session" : ""}`}
+                    >
+                      <div className="row">
+                        <Pill>{state.table.label}</Pill>
+                        <span>
+                          {state.guests.filter((g) => g.active).length} guests
+                        </span>
+                        {state.session.status === "CLOSED" && (
+                          <Pill>Closed</Pill>
+                        )}
+                      </div>
+                      <div className="row">
+                        {mode === "staff" ? (
+                          <>
+                            <button
+                              disabled={
+                                busy || state.session.status === "CLOSED"
+                              }
+                              onClick={() => void showQr()}
+                            >
+                              <QrCode size={16} />
+                              New QR link
+                            </button>
+                            <button
+                              disabled={
+                                busy || state.session.status === "CLOSED"
+                              }
+                              onClick={() => void action("/close")}
+                            >
+                              Close session
+                            </button>
+                          </>
+                        ) : (
+                          <Help action={action} />
+                        )}
+                      </div>
                     </div>
-                    <div className="row">
-                      {mode === "staff" ? (
-                        <>
-                          <button
-                            disabled={busy || state.session.status === "CLOSED"}
-                            onClick={() => void showQr()}
-                          >
-                            <QrCode size={16} />
-                            New QR link
-                          </button>
-                          <button
-                            disabled={busy || state.session.status === "CLOSED"}
-                            onClick={() => void action("/close")}
-                          >
-                            Close session
-                          </button>
-                        </>
-                      ) : (
-                        <Help action={action} />
-                      )}
-                    </div>
-                  </div>
+                  )}
                   {mode === "staff" &&
                     state.pos &&
                     (state.pos.failed > 0 ||
@@ -1928,15 +1992,20 @@ function BillView({
   const [split, setSplit] = useState<Item | null>(null),
     [adjust, setAdjust] = useState(false),
     [whole, setWhole] = useState(false);
-  const [showAll, setShowAll] = useState(false);
+  const [showAll, setShowAll] = useState(
+    state.actor.kind === "GUEST" && state.currency === "EUR",
+  );
+  const [previewReady, setPreviewReady] = useState(false);
   const personal = state.actor.kind === "GUEST";
+  const dinner = personal && state.currency === "EUR";
   const own = state.bill.guests.find((g) => g.id === state.actor.id);
   const guests = state.guests.filter((g) => g.active);
   const name = (id: string) =>
     state.guests.find((g) => g.id === id)?.nickname ?? "Guest";
   return (
-    <>
-      {personal && (
+    <div className={dinner ? "dinner-experience" : undefined}>
+      {dinner && <DinnerJourney state={state} previewReady={previewReady} />}
+      {personal && !dinner && (
         <div className="card personal-bill">
           <div>
             <span>My unpaid share</span>
@@ -1951,6 +2020,29 @@ function BillView({
           <a className="button primary" href="#checkout">
             Pay my share
           </a>
+        </div>
+      )}
+      {dinner && (
+        <div className="dinner-bill-overview">
+          <div>
+            <span className="eyebrow">The whole table</span>
+            <h2>Our bill</h2>
+            <p>
+              {guests.length} diners ·{" "}
+              {
+                state.items.filter((i) =>
+                  ["ACCEPTED", "PREPARING", "READY", "SERVED"].includes(
+                    i.status,
+                  ),
+                ).length
+              }{" "}
+              accepted dishes
+            </p>
+          </div>
+          <div>
+            <strong>{money(state.bill.totalBani)}</strong>
+            <span>{money(state.bill.remainingBani)} outstanding</span>
+          </div>
         </div>
       )}
       <details className="bill-totals" open={!personal}>
@@ -1978,14 +2070,6 @@ function BillView({
         className={`workspace-grid ${personal ? "guest-bill-grid" : ""} ${state.currency === "EUR" ? "eur-bill-grid" : ""}`}
       >
         <section>
-          {personal && state.currency === "EUR" && (
-            <SplitAssistant
-              key={state.actor.id}
-              state={state}
-              action={action}
-              busy={busy}
-            />
-          )}
           <div className="section-heading">
             <h2>Who covers what</h2>
             <div className="row">
@@ -2007,26 +2091,28 @@ function BillView({
               </button>
             </div>
           )}
-          <details open={!personal} className="card">
-            <summary>Everyone's shares</summary>
-            <div className="guest-balances">
-              {state.bill.guests.map((g) => (
-                <div className="balance" key={g.id}>
-                  <span>
-                    <span className="avatar">{g.nickname[0]}</span>
-                    {g.nickname}
-                    {g.id === state.actor.id && <small>you</small>}
-                  </span>
-                  <span>
-                    <strong>{money(g.remaining_bani)}</strong>
-                    {g.reserved_bani > 0 && (
-                      <small>{money(g.reserved_bani)} reserved</small>
-                    )}
-                  </span>
-                </div>
-              ))}
-            </div>
-          </details>
+          {!dinner && (
+            <details open={!personal} className="card">
+              <summary>Everyone's shares</summary>
+              <div className="guest-balances">
+                {state.bill.guests.map((g) => (
+                  <div className="balance" key={g.id}>
+                    <span>
+                      <span className="avatar">{g.nickname[0]}</span>
+                      {g.nickname}
+                      {g.id === state.actor.id && <small>you</small>}
+                    </span>
+                    <span>
+                      <strong>{money(g.remaining_bani)}</strong>
+                      {g.reserved_bani > 0 && (
+                        <small>{money(g.reserved_bani)} reserved</small>
+                      )}
+                    </span>
+                  </div>
+                ))}
+              </div>
+            </details>
+          )}
           {state.proposals
             .filter((p) => p.status === "PENDING")
             .map((p) => (
@@ -2036,6 +2122,29 @@ function BillView({
                   <Pill>{p.kind.replaceAll("_", " ").toLowerCase()}</Pill>
                 </div>
                 <p>{p.reason}</p>
+                {dinner && (
+                  <div
+                    className="dinner-votes"
+                    aria-label="Diner agreement status"
+                  >
+                    {p.votes.map((v) => (
+                      <span
+                        key={v.guest_id}
+                        className={v.accepted === true ? "agreed" : ""}
+                      >
+                        <span className="avatar">{name(v.guest_id)[0]}</span>
+                        {name(v.guest_id)}
+                        <small>
+                          {v.accepted === true
+                            ? "Agreed"
+                            : v.accepted === false
+                              ? "Declined"
+                              : "Awaiting agreement"}
+                        </small>
+                      </span>
+                    ))}
+                  </div>
+                )}
                 {p.shares.map((s, i) => (
                   <div className="summary-row" key={i}>
                     <span>
@@ -2108,50 +2217,67 @@ function BillView({
               (i) => !["SUBMITTED", "CANCELLED", "REJECTED"].includes(i.status),
             )
             .map((i) => (
-              <article className="card order-card" key={i.id}>
-                <div className="spread">
-                  <h3>
-                    {i.quantity} × {label(i.snapshot.names, lang)}
-                  </h3>
-                  <strong>{money(i.total_bani)}</strong>
-                </div>
-                {i.shares.map((s) => (
-                  <div className="summary-row" key={s.guestId}>
-                    <span>{name(s.guestId)}</span>
-                    <span>{money(s.amountBani)}</span>
+              <article
+                className={`card order-card ${dinner ? "dinner-receipt-row" : ""}`}
+                key={i.id}
+              >
+                {dinner && <ReceiptPhoto item={i} menu={state.menu} />}
+                <div className={dinner ? "receipt-row-content" : undefined}>
+                  <div className="spread">
+                    <h3>
+                      {i.quantity} × {label(i.snapshot.names, lang)}
+                    </h3>
+                    <strong>{money(i.total_bani)}</strong>
                   </div>
-                ))}
-                {i.adjustments.length > 1 && (
-                  <details>
-                    <summary>Charges & adjustments</summary>
-                    {i.adjustments.map((a, n) => (
-                      <div className="summary-row" key={n}>
-                        <small>
-                          {a.kind}: {a.reason}
-                        </small>
-                        <span>{money(a.amount_bani)}</span>
-                      </div>
-                    ))}
-                  </details>
-                )}
-                <div className="row wrap item-actions">
-                  <button disabled={busy} onClick={() => setSplit(i)}>
-                    Share or transfer
-                  </button>
-                  {state.actor.kind === "GUEST" &&
-                    i.shares.some((s) => s.guestId !== state.actor.id) && (
-                      <button
-                        disabled={busy}
-                        onClick={() => void action(`/items/${i.id}/takeover`)}
-                      >
-                        I'll cover this
-                      </button>
-                    )}
+                  {i.shares.map((s) => (
+                    <div className="summary-row" key={s.guestId}>
+                      <span>{name(s.guestId)}</span>
+                      <span>{money(s.amountBani)}</span>
+                    </div>
+                  ))}
+                  {i.adjustments.length > 1 && (
+                    <details>
+                      <summary>Charges & adjustments</summary>
+                      {i.adjustments.map((a, n) => (
+                        <div className="summary-row" key={n}>
+                          <small>
+                            {a.kind}: {a.reason}
+                          </small>
+                          <span>{money(a.amount_bani)}</span>
+                        </div>
+                      ))}
+                    </details>
+                  )}
+                  <div className="row wrap item-actions">
+                    <button disabled={busy} onClick={() => setSplit(i)}>
+                      Share or transfer
+                    </button>
+                    {state.actor.kind === "GUEST" &&
+                      i.shares.some((s) => s.guestId !== state.actor.id) && (
+                        <button
+                          disabled={busy}
+                          onClick={() => void action(`/items/${i.id}/takeover`)}
+                        >
+                          I'll cover this
+                        </button>
+                      )}
+                  </div>
                 </div>
               </article>
             ))}
+          {dinner && (
+            <SplitAssistant
+              key={state.actor.id}
+              state={state}
+              action={action}
+              busy={busy}
+              onPreviewChange={setPreviewReady}
+            />
+          )}
         </section>
         <aside>
+          {dinner && <DinnerShare state={state} />}
+          {dinner && <DinnerBalances state={state} />}
           <Checkout state={state} action={action} busy={busy} />
           {state.reservations.some(
             (r) => !state.payments.some((p) => p.reservation_id === r.id),
@@ -2201,7 +2327,14 @@ function BillView({
           )}
         </aside>
       </div>
-      <PaymentsPanel state={state} action={action} busy={busy} />
+      {dinner ? (
+        <details className="dinner-payment-history">
+          <summary>Payment history & receipts</summary>
+          <PaymentsPanel state={state} action={action} busy={busy} />
+        </details>
+      ) : (
+        <PaymentsPanel state={state} action={action} busy={busy} />
+      )}
       {split && (
         <SplitModal
           item={split}
@@ -2224,7 +2357,7 @@ function BillView({
           onClose={() => setAdjust(false)}
         />
       )}
-    </>
+    </div>
   );
 }
 function SplitModal({
