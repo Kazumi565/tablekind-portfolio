@@ -30,6 +30,7 @@ public class HackathonDemo implements ApplicationRunner {
   private final PasswordEncoder passwords;
   private final PayPalSettings paypal;
   private final String email, password;
+  private final DemoMenu menu;
 
   public HackathonDemo(
       Db db,
@@ -40,6 +41,7 @@ public class HackathonDemo implements ApplicationRunner {
       Orders orders,
       PasswordEncoder passwords,
       PayPalSettings paypal,
+      DemoMenu menu,
       @Value("${tablekind.bootstrap-email}") String email,
       @Value("${tablekind.bootstrap-password}") String password) {
     this.db = db;
@@ -50,6 +52,7 @@ public class HackathonDemo implements ApplicationRunner {
     this.orders = orders;
     this.passwords = passwords;
     this.paypal = paypal;
+    this.menu = menu;
     this.email = email;
     this.password = password;
   }
@@ -120,19 +123,21 @@ public class HackathonDemo implements ApplicationRunner {
         id(
             catalog.table(
                 a, rid, bid, new CatalogController.TableRequest("Three friends", true, 20)));
-    UUID category =
-        id(
-            catalog.category(
-                a, rid, new CatalogController.CategoryRequest(Map.of("en", "Dinner"), 0)));
+    Map<String, UUID> categories = new LinkedHashMap<>();
+    for (String name : menu.categories())
+      categories.put(
+          name,
+          id(
+              catalog.category(
+                  a,
+                  rid,
+                  new CatalogController.CategoryRequest(Map.of("en", name), categories.size()))));
     var opened = object(sessions.open(a, rid, tid));
     UUID sid = Db.id(opened, "sessionId");
     List<Map<String, Object>> guests = new ArrayList<>();
     for (String name : List.of("Mihai", "Diego", "Ana"))
       guests.add(object(sessions.join(opened.get("joinToken").toString(), name)));
-    String[] names = {"Burger", "Pasta", "Salad", "Shared starter"};
-    long[] prices = {1200, 1000, 900, 701};
-    int[] owners = {0, 1, 2, 0};
-    for (int n = 0; n < names.length; n++) {
+    for (DemoMenu.Dish dish : menu.dishes()) {
       UUID product =
           id(
               catalog.product(
@@ -140,14 +145,16 @@ public class HackathonDemo implements ApplicationRunner {
                   rid,
                   null,
                   new CatalogController.ProductRequest(
-                      category,
-                      Map.of("en", names[n]),
-                      Map.of("en", "Fictional EUR menu item"),
-                      List.of(),
-                      List.of(),
-                      prices[n],
-                      true)));
-      UUID guest = Db.id(guests.get(owners[n]), "actorId");
+                      categories.get(dish.category()),
+                      Map.of("en", dish.name()),
+                      Map.of("en", dish.description()),
+                      dish.allergens(),
+                      dish.dietaryLabels(),
+                      dish.price(),
+                      true,
+                      "/menu/" + dish.image() + ".webp")));
+      if (dish.owner() < 0) continue;
+      UUID guest = Db.id(guests.get(dish.owner()), "actorId");
       long revision = db.number("SELECT revision FROM table_session WHERE id=?", sid);
       orders.submit(
           a,

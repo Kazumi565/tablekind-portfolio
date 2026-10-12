@@ -17,6 +17,7 @@ export type Product = {
   category_id: string;
   names: Names;
   descriptions: Names;
+  image_path?: string | null;
   price_bani: number;
   version: number;
   available: boolean;

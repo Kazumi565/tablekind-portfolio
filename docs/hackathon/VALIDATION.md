@@ -4,6 +4,19 @@
 
 ## Completed checks
 
+### Menu expansion and preview — 12 October 2026
+
+- The shared fixture contains **228 entries in 17 categories**: 216 source selections plus the original 12. Automated checks enforce at least 70% of each included source category independently, unique identifiers and source variants, complete image references, and the original four-item **EUR 38.01** dinner. All three catalog checks passed. See [coverage](MENU-COVERAGE.md).
+- Focused backend integration tests (`CatalogMenuTest,HackathonMenuTest,EurJourneyTest`): **4 passed, zero failures/errors/skips**. These verify optional image validation and projection, accepted-price preservation, complete menu seeding and idempotent replay, and the existing EUR journey. The full regression count below predates this UI change; it was not rerun for the menu expansion.
+- Frontend TypeScript, ordinary production build and standalone menu build passed. Docker rebuild and startup passed with Flyway V13. The generated menu is Prettier-compatible and its synchronization check passes after formatting.
+- Browser checks: all 228 entries are discoverable; the first 24 expand to 48; Pizza contains 13 entries and its vegetarian filter returns 2 verified originals; empty search resets; dish details show listed allergens; two Margheritas total EUR 19.00 in the temporary meal plan. A 390px phone viewport showed no horizontal overflow, including long sharing-platter names and portions.
+- Full local app browser: signed in, started a fresh EUR dinner, opened the 228-entry menu and ordered House breakfast at EUR 7.50. The order was accepted for Mihai; his unpaid share became EUR 26.51 and the table total became EUR 45.51. This was fictional local ordering and made no AI or PayPal calls.
+- The static menu preview was published **owner-private** at [TableKind menu preview](https://tablekind-at-the-table.workspace-326781.chatgpt.site). Sites returned successful deployment; the published page opened in the browser with 228 entries and its hero image loaded. It contains menu browsing and a temporary meal plan; the Spring/PostgreSQL ordering, AI and PayPal app still runs locally. This publication does not complete judge access.
+- The complete staged-source checker inspected 396 files with no automatic findings. A separate comparison of local credential values against all staged blobs passed. This supplements the earlier Gitleaks run recorded below; Gitleaks itself was not rerun for this change.
+- Browser screenshots remain in ignored `ops-private/menu-review/`. No project API spending, GitHub push, remote merge or release was performed for this change.
+
+### Earlier integration verification
+
 | Check | Result |
 | --- | --- |
 | Original baseline backend, Java 21 / PostgreSQL 16 | 151 passed, no failures/skips |

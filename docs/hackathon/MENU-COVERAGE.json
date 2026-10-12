@@ -1,0 +1,1511 @@
+{
+  "source": "https://andys.md/",
+  "observed": "2026-10-12",
+  "status": "Integrated into backend/src/main/resources/demo/menu.json; application and visual validation documented separately.",
+  "rule": "Select at least ceil(0.7 × observed rows) independently within each relevant category. Portions and variants are distinct rows; repeated items across categories remain category-specific selections. The original 12 TableKind dishes do not count toward these selections.",
+  "aggregateExcluded": {
+    "sourceIndex": 0,
+    "observedRows": 389,
+    "reason": "Nested aggregate repeats the actual categories and is not a separate category."
+  },
+  "totals": {
+    "relevantCategories": 17,
+    "observedRows": 297,
+    "selectedRows": 216,
+    "additionalOriginalDishes": 12,
+    "integratedMenuItems": 228
+  },
+  "categories": [
+    {
+      "sourceName": "Breakfasts",
+      "name": "Breakfast",
+      "sourceCount": 7,
+      "minimumRequired": 5,
+      "selectedCount": 5,
+      "coveragePercent": 71.43,
+      "selectedItems": [
+        {
+          "sourceName": "Andy’s Breakfast",
+          "sourcePortion": "",
+          "displayName": "House breakfast",
+          "sourceCategory": "Breakfasts"
+        },
+        {
+          "sourceName": "Classic omelet",
+          "sourcePortion": "",
+          "displayName": "Classic omelet",
+          "sourceCategory": "Breakfasts"
+        },
+        {
+          "sourceName": "Cottage cheese pancakes",
+          "sourcePortion": "",
+          "displayName": "Cottage cheese pancakes",
+          "sourceCategory": "Breakfasts"
+        },
+        {
+          "sourceName": "Pancakes with Chicken & Mushroom Sauce",
+          "sourcePortion": "380 g",
+          "displayName": "Pancakes with Chicken & Mushroom Sauce · 380 g — Breakfast",
+          "sourceCategory": "Breakfasts"
+        },
+        {
+          "sourceName": "Crepes with salted salmon",
+          "sourcePortion": "230/25 g",
+          "displayName": "Crepes with salted salmon · 230/25 g — Breakfast",
+          "sourceCategory": "Breakfasts"
+        }
+      ]
+    },
+    {
+      "sourceName": "Appetizers",
+      "name": "Starters",
+      "sourceCount": 12,
+      "minimumRequired": 9,
+      "selectedCount": 9,
+      "coveragePercent": 75.0,
+      "selectedItems": [
+        {
+          "sourceName": "Roasted Pepper Bruschetta",
+          "sourcePortion": "200 g",
+          "displayName": "Roasted Pepper Bruschetta · 200 g",
+          "sourceCategory": "Appetizers"
+        },
+        {
+          "sourceName": "Salmon Bruschetta",
+          "sourcePortion": "180 g",
+          "displayName": "Salmon Bruschetta · 180 g",
+          "sourceCategory": "Appetizers"
+        },
+        {
+          "sourceName": "Bruschettas with shrimp",
+          "sourcePortion": "240 g",
+          "displayName": "Bruschettas with shrimp · 240 g",
+          "sourceCategory": "Appetizers"
+        },
+        {
+          "sourceName": "Garlic toast",
+          "sourcePortion": "120 g",
+          "displayName": "Garlic toast · 120 g — Starters",
+          "sourceCategory": "Appetizers"
+        },
+        {
+          "sourceName": "Cheese Platter",
+          "sourcePortion": "50/40/40/40/40/20/20g",
+          "displayName": "Cheese Platter · 50/40/40/40/40/20/20g",
+          "sourceCategory": "Appetizers"
+        },
+        {
+          "sourceName": "Nachos",
+          "sourcePortion": "400/50/50/50g",
+          "displayName": "Nachos · 400/50/50/50g",
+          "sourceCategory": "Appetizers"
+        },
+        {
+          "sourceName": "Guacamole",
+          "sourcePortion": "100/30 g",
+          "displayName": "Guacamole · 100/30 g",
+          "sourceCategory": "Appetizers"
+        },
+        {
+          "sourceName": "Eggplant Appetizer",
+          "sourcePortion": "100 / 20 g",
+          "displayName": "Eggplant Appetizer · 100 / 20 g",
+          "sourceCategory": "Appetizers"
+        },
+        {
+          "sourceName": "Romanian Appetizer",
+          "sourcePortion": "100 / 20 g",
+          "displayName": "Romanian Appetizer · 100 / 20 g",
+          "sourceCategory": "Appetizers"
+        }
+      ]
+    },
+    {
+      "sourceName": "Salads",
+      "name": "Salads",
+      "sourceCount": 8,
+      "minimumRequired": 6,
+      "selectedCount": 6,
+      "coveragePercent": 75.0,
+      "selectedItems": [
+        {
+          "sourceName": "Warm Beef Salad",
+          "sourcePortion": "320 g",
+          "displayName": "Warm Beef Salad · 320 g",
+          "sourceCategory": "Salads"
+        },
+        {
+          "sourceName": "Caesar Salad with Chicken",
+          "sourcePortion": "300 g",
+          "displayName": "Caesar Salad with Chicken · 300 g",
+          "sourceCategory": "Salads"
+        },
+        {
+          "sourceName": "Caesar Salad with Shrimp",
+          "sourcePortion": "290 g",
+          "displayName": "Caesar Salad with Shrimp · 290 g",
+          "sourceCategory": "Salads"
+        },
+        {
+          "sourceName": "Caesar Salad with baked salmon",
+          "sourcePortion": "290 g",
+          "displayName": "Caesar Salad with baked salmon · 290 g",
+          "sourceCategory": "Salads"
+        },
+        {
+          "sourceName": "Caesar Salad with lightly salted salmon",
+          "sourcePortion": "280 g",
+          "displayName": "Caesar Salad with lightly salted salmon · 280 g",
+          "sourceCategory": "Salads"
+        },
+        {
+          "sourceName": "Tuna Salad",
+          "sourcePortion": "350 g",
+          "displayName": "Tuna Salad · 350 g",
+          "sourceCategory": "Salads"
+        }
+      ]
+    },
+    {
+      "sourceName": "Soups",
+      "name": "Soups",
+      "sourceCount": 6,
+      "minimumRequired": 5,
+      "selectedCount": 5,
+      "coveragePercent": 83.33,
+      "selectedItems": [
+        {
+          "sourceName": "Red Borscht",
+          "sourcePortion": "370/50/30/30/15 g",
+          "displayName": "Red Borscht · 370/50/30/30/15 g",
+          "sourceCategory": "Soups"
+        },
+        {
+          "sourceName": "Zama (Traditional Chicken Soup)",
+          "sourcePortion": "350 / 30 / 50 / 10 g",
+          "displayName": "Zama (Traditional Chicken Soup) · 350 / 30 / 50 / 10 g",
+          "sourceCategory": "Soups"
+        },
+        {
+          "sourceName": "Chicken Cream Soup",
+          "sourcePortion": "300/130 g",
+          "displayName": "Chicken Cream Soup · 300/130 g",
+          "sourceCategory": "Soups"
+        },
+        {
+          "sourceName": "Spinach Cream Soup",
+          "sourcePortion": "340 / 25 g",
+          "displayName": "Spinach Cream Soup · 340 / 25 g",
+          "sourceCategory": "Soups"
+        },
+        {
+          "sourceName": "Mexican Soup",
+          "sourcePortion": "350 / 40 / 10 g",
+          "displayName": "Mexican Soup · 350 / 40 / 10 g",
+          "sourceCategory": "Soups"
+        }
+      ]
+    },
+    {
+      "sourceName": "Pizza",
+      "name": "Pizza",
+      "sourceCount": 13,
+      "minimumRequired": 10,
+      "selectedCount": 10,
+      "coveragePercent": 76.92,
+      "selectedItems": [
+        {
+          "sourceName": "Pizza Mortadella&Pistachio",
+          "sourcePortion": "480 g",
+          "displayName": "Mortadella and pistachio pizza · 480 g",
+          "sourceCategory": "Pizza"
+        },
+        {
+          "sourceName": "Pizza Funghi",
+          "sourcePortion": "580 g",
+          "displayName": "Chicken and mushroom pizza · 580 g",
+          "sourceCategory": "Pizza"
+        },
+        {
+          "sourceName": "Pizza Salsicia",
+          "sourcePortion": "470 g",
+          "displayName": "Sausage and mushroom pizza · 470 g",
+          "sourceCategory": "Pizza"
+        },
+        {
+          "sourceName": "BARBEQUE Pizza",
+          "sourcePortion": "560 g",
+          "displayName": "Barbecue pizza · 560 g",
+          "sourceCategory": "Pizza"
+        },
+        {
+          "sourceName": "Bianca Pizza",
+          "sourcePortion": "550 g",
+          "displayName": "Bianca Pizza · 550 g",
+          "sourceCategory": "Pizza"
+        },
+        {
+          "sourceName": "Margherita Pizza",
+          "sourcePortion": "380 g",
+          "displayName": "Margherita Pizza · 380 g",
+          "sourceCategory": "Pizza"
+        },
+        {
+          "sourceName": "Neapolitana Pizza",
+          "sourcePortion": "510 g",
+          "displayName": "Neapolitana Pizza · 510 g",
+          "sourceCategory": "Pizza"
+        },
+        {
+          "sourceName": "Pepperoni Pizza",
+          "sourcePortion": "475 g",
+          "displayName": "Pepperoni Pizza · 475 g",
+          "sourceCategory": "Pizza"
+        },
+        {
+          "sourceName": "Pizza 5 Cheeses",
+          "sourcePortion": "420 g",
+          "displayName": "Five cheese pizza · 420 g",
+          "sourceCategory": "Pizza"
+        },
+        {
+          "sourceName": "Pizza Capricioasa",
+          "sourcePortion": "600 g",
+          "displayName": "Pizza Capricioasa · 600 g",
+          "sourceCategory": "Pizza"
+        }
+      ]
+    },
+    {
+      "sourceName": "Pasta",
+      "name": "Pasta",
+      "sourceCount": 5,
+      "minimumRequired": 4,
+      "selectedCount": 4,
+      "coveragePercent": 80.0,
+      "selectedItems": [
+        {
+          "sourceName": "Pasta Carbonara",
+          "sourcePortion": "270 g",
+          "displayName": "Pasta Carbonara · 270 g",
+          "sourceCategory": "Pasta"
+        },
+        {
+          "sourceName": "Pasta Pollo",
+          "sourcePortion": "350 g",
+          "displayName": "Pasta Pollo · 350 g",
+          "sourceCategory": "Pasta"
+        },
+        {
+          "sourceName": "Shrimp Pasta",
+          "sourcePortion": "320 g",
+          "displayName": "Shrimp Pasta · 320 g",
+          "sourceCategory": "Pasta"
+        },
+        {
+          "sourceName": "Chicken Lasagna",
+          "sourcePortion": "450 g",
+          "displayName": "Chicken Lasagna · 450 g",
+          "sourceCategory": "Pasta"
+        }
+      ]
+    },
+    {
+      "sourceName": "Main Dishes",
+      "name": "Mains",
+      "sourceCount": 33,
+      "minimumRequired": 24,
+      "selectedCount": 24,
+      "coveragePercent": 72.73,
+      "selectedItems": [
+        {
+          "sourceName": "Fritto misto",
+          "sourcePortion": "290/50/40 g",
+          "displayName": "Fritto misto · 290/50/40 g",
+          "sourceCategory": "Main Dishes"
+        },
+        {
+          "sourceName": "Salmon steak with mashed potatoes",
+          "sourcePortion": "140/200/60/50/40/30 g",
+          "displayName": "Salmon steak with mashed potatoes · 140/200/60/50/40/30 g",
+          "sourceCategory": "Main Dishes"
+        },
+        {
+          "sourceName": "Chicken breast with potato gratin",
+          "sourcePortion": "160/140/80/50 g",
+          "displayName": "Chicken breast with potato gratin · 160/140/80/50 g",
+          "sourceCategory": "Main Dishes"
+        },
+        {
+          "sourceName": "Pork in chili sauce with rice",
+          "sourcePortion": "250/160 g",
+          "displayName": "Pork in chili sauce with rice · 250/160 g",
+          "sourceCategory": "Main Dishes"
+        },
+        {
+          "sourceName": "CHICKEN SKEWER",
+          "sourcePortion": "200/80/80/50/50 g",
+          "displayName": "Chicken skewers · 200/80/80/50/50 g",
+          "sourceCategory": "Main Dishes"
+        },
+        {
+          "sourceName": "French-style meat",
+          "sourcePortion": "",
+          "displayName": "French-style meat",
+          "sourceCategory": "Main Dishes"
+        },
+        {
+          "sourceName": "Chicken Gyros",
+          "sourcePortion": "140/100/100/80/50 g",
+          "displayName": "Chicken Gyros · 140/100/100/80/50 g",
+          "sourceCategory": "Main Dishes"
+        },
+        {
+          "sourceName": "Chicken Meatballs with Mashed Potatoes",
+          "sourcePortion": "250/220g",
+          "displayName": "Chicken Meatballs with Mashed Potatoes · 250/220g",
+          "sourceCategory": "Main Dishes"
+        },
+        {
+          "sourceName": "Beef Stroganoff",
+          "sourcePortion": "",
+          "displayName": "Beef Stroganoff",
+          "sourceCategory": "Main Dishes"
+        },
+        {
+          "sourceName": "Chicken Fricassee",
+          "sourcePortion": "360/70/50 g",
+          "displayName": "Chicken Fricassee · 360/70/50 g",
+          "sourceCategory": "Main Dishes"
+        },
+        {
+          "sourceName": "Shrimp in Cream Sauce",
+          "sourcePortion": "200/50",
+          "displayName": "Shrimp in Cream Sauce · 200/50",
+          "sourceCategory": "Main Dishes"
+        },
+        {
+          "sourceName": "Crepes with ham and cheese",
+          "sourcePortion": "320 g",
+          "displayName": "Crepes with ham and cheese · 320 g",
+          "sourceCategory": "Main Dishes"
+        },
+        {
+          "sourceName": "Pancakes with Chicken & Mushroom Sauce",
+          "sourcePortion": "380 g",
+          "displayName": "Pancakes with Chicken & Mushroom Sauce · 380 g — Mains",
+          "sourceCategory": "Main Dishes"
+        },
+        {
+          "sourceName": "Crepes with salted salmon",
+          "sourcePortion": "230/25 g",
+          "displayName": "Crepes with salted salmon · 230/25 g — Mains",
+          "sourceCategory": "Main Dishes"
+        },
+        {
+          "sourceName": "Pancakes with sweet cheese and sauce",
+          "sourcePortion": "220 g",
+          "displayName": "Pancakes with sweet cheese and sauce · 220 g",
+          "sourceCategory": "Main Dishes"
+        },
+        {
+          "sourceName": "Chicken Wrap",
+          "sourcePortion": "400/80/50 g",
+          "displayName": "Chicken Wrap · 400/80/50 g",
+          "sourceCategory": "Main Dishes"
+        },
+        {
+          "sourceName": "Beef Wrap",
+          "sourcePortion": "350/80/50 g",
+          "displayName": "Beef Wrap · 350/80/50 g",
+          "sourceCategory": "Main Dishes"
+        },
+        {
+          "sourceName": "Wrap Veggie falafel",
+          "sourcePortion": "380/80/100 g",
+          "displayName": "Falafel wrap · 380/80/100 g",
+          "sourceCategory": "Main Dishes"
+        },
+        {
+          "sourceName": "Crispy chicken schnitzel",
+          "sourcePortion": "250/80/65/50/40 g",
+          "displayName": "Crispy chicken schnitzel · 250/80/65/50/40 g",
+          "sourceCategory": "Main Dishes"
+        },
+        {
+          "sourceName": "Beef Burger",
+          "sourcePortion": "300 / 100 / 50 g",
+          "displayName": "Beef Burger · 300 / 100 / 50 g",
+          "sourceCategory": "Main Dishes"
+        },
+        {
+          "sourceName": "Chicken Burger",
+          "sourcePortion": "260 / 100 / 50 g",
+          "displayName": "Chicken Burger · 260 / 100 / 50 g",
+          "sourceCategory": "Main Dishes"
+        },
+        {
+          "sourceName": "Cheeseburger",
+          "sourcePortion": "330/100/50 g",
+          "displayName": "Cheeseburger · 330/100/50 g",
+          "sourceCategory": "Main Dishes"
+        },
+        {
+          "sourceName": "Breaded Chicken Breast",
+          "sourcePortion": "160 / 130 / 50 g",
+          "displayName": "Breaded Chicken Breast · 160 / 130 / 50 g",
+          "sourceCategory": "Main Dishes"
+        },
+        {
+          "sourceName": "Glazed Chicken Wings",
+          "sourcePortion": "220 / 130 / 50 g",
+          "displayName": "Glazed Chicken Wings · 220 / 130 / 50 g",
+          "sourceCategory": "Main Dishes"
+        }
+      ]
+    },
+    {
+      "sourceName": "Kids Menu",
+      "name": "Kids",
+      "sourceCount": 11,
+      "minimumRequired": 8,
+      "selectedCount": 8,
+      "coveragePercent": 72.73,
+      "selectedItems": [
+        {
+          "sourceName": "Soup with Meatballs",
+          "sourcePortion": "250 g",
+          "displayName": "Soup with Meatballs · 250 g",
+          "sourceCategory": "Kids Menu"
+        },
+        {
+          "sourceName": "Cheesy pasta nuggets",
+          "sourcePortion": "230 g",
+          "displayName": "Cheesy pasta with nuggets · 230 g",
+          "sourceCategory": "Kids Menu"
+        },
+        {
+          "sourceName": "Mashed Potatoes with Meatballs",
+          "sourcePortion": "150 / 80 / 25 g",
+          "displayName": "Mashed Potatoes with Meatballs · 150 / 80 / 25 g",
+          "sourceCategory": "Kids Menu"
+        },
+        {
+          "sourceName": "Chicken shashlik",
+          "sourcePortion": "120/70/40 g",
+          "displayName": "Chicken skewers · 120/70/40 g",
+          "sourceCategory": "Kids Menu"
+        },
+        {
+          "sourceName": "Smiley Potatoes",
+          "sourcePortion": "90 / 50 g",
+          "displayName": "Smiley Potatoes · 90 / 50 g",
+          "sourceCategory": "Kids Menu"
+        },
+        {
+          "sourceName": "Mini nuggets with potato emoticons",
+          "sourcePortion": "100/90/50 g",
+          "displayName": "Mini nuggets with potato smiles · 100/90/50 g",
+          "sourceCategory": "Kids Menu"
+        },
+        {
+          "sourceName": "Mini Burger",
+          "sourcePortion": "120 / 65 / 50 g",
+          "displayName": "Mini Burger · 120 / 65 / 50 g",
+          "sourceCategory": "Kids Menu"
+        },
+        {
+          "sourceName": "Mini pizza",
+          "sourcePortion": "300 g",
+          "displayName": "Mini pizza · 300 g",
+          "sourceCategory": "Kids Menu"
+        }
+      ]
+    },
+    {
+      "sourceName": "Lunch-Box",
+      "name": "Lunch",
+      "sourceCount": 7,
+      "minimumRequired": 5,
+      "selectedCount": 5,
+      "coveragePercent": 71.43,
+      "selectedItems": [
+        {
+          "sourceName": "Baked Chicken Steak with Buckwheat and Mushrooms",
+          "sourcePortion": "",
+          "displayName": "Baked Chicken Steak with Buckwheat and Mushrooms",
+          "sourceCategory": "Lunch-Box"
+        },
+        {
+          "sourceName": "Chicken Meatballs in Curry Sauce with Rice",
+          "sourcePortion": "",
+          "displayName": "Chicken Meatballs in Curry Sauce with Rice",
+          "sourceCategory": "Lunch-Box"
+        },
+        {
+          "sourceName": "Chicken Schnitzel with Mashed Potatoes",
+          "sourcePortion": "",
+          "displayName": "Chicken Schnitzel with Mashed Potatoes",
+          "sourceCategory": "Lunch-Box"
+        },
+        {
+          "sourceName": "Ravioli with Ricotta and Shrimp",
+          "sourcePortion": "",
+          "displayName": "Ravioli with Ricotta and Shrimp",
+          "sourceCategory": "Lunch-Box"
+        },
+        {
+          "sourceName": "Sea Bream Fillet with Bulgur and Quinoa",
+          "sourcePortion": "",
+          "displayName": "Sea Bream Fillet with Bulgur and Quinoa",
+          "sourceCategory": "Lunch-Box"
+        }
+      ]
+    },
+    {
+      "sourceName": "Banquet menu",
+      "name": "Sharing platters",
+      "sourceCount": 18,
+      "minimumRequired": 13,
+      "selectedCount": 13,
+      "coveragePercent": 72.22,
+      "selectedItems": [
+        {
+          "sourceName": "Crispy schnitzel for sharing",
+          "sourcePortion": "440/100/60/60/50/50 g",
+          "displayName": "Crispy schnitzel for sharing · 440/100/60/60/50/50 g",
+          "sourceCategory": "Banquet menu"
+        },
+        {
+          "sourceName": "French-style meat for sharing",
+          "sourcePortion": "1000/340/100/80/80 g",
+          "displayName": "French-style meat for sharing · 1000/340/100/80/80 g",
+          "sourceCategory": "Banquet menu"
+        },
+        {
+          "sourceName": "Mixed skewers for sharing",
+          "sourcePortion": "420/100/90/80/80/80/50/50 g",
+          "displayName": "Mixed skewers for sharing · 420/100/90/80/80/80/50/50 g",
+          "sourceCategory": "Banquet menu"
+        },
+        {
+          "sourceName": "Cold Cuts Appetizer",
+          "sourcePortion": "120/80/80/60/50/50/50/20/15/15/10g",
+          "displayName": "Cold Cuts Appetizer · 120/80/80/60/50/50/50/20/15/15/10g",
+          "sourceCategory": "Banquet menu"
+        },
+        {
+          "sourceName": "Meat Platter",
+          "sourcePortion": "320/170/140/100/70/70/60/60/50/50/50 g",
+          "displayName": "Meat Platter · 320/170/140/100/70/70/60/60/50/50/50 g",
+          "sourceCategory": "Banquet menu"
+        },
+        {
+          "sourceName": "Plato with pork fat",
+          "sourcePortion": "170 g",
+          "displayName": "Traditional lard plate · 170 g",
+          "sourceCategory": "Banquet menu"
+        },
+        {
+          "sourceName": "Cheese Platter",
+          "sourcePortion": "140/120/100/70/50/50/40/40 g",
+          "displayName": "Cheese Platter · 140/120/100/70/50/50/40/40 g",
+          "sourceCategory": "Banquet menu"
+        },
+        {
+          "sourceName": "Fresh Vegetable Platter",
+          "sourcePortion": "400 / 90 / 40 / 50 g",
+          "displayName": "Fresh Vegetable Platter · 400 / 90 / 40 / 50 g",
+          "sourceCategory": "Banquet menu"
+        },
+        {
+          "sourceName": "Bruschetta selection",
+          "sourcePortion": "240/200/180 g",
+          "displayName": "Bruschetta selection · 240/200/180 g",
+          "sourceCategory": "Banquet menu"
+        },
+        {
+          "sourceName": "Caesar Salad with Chicken (Banquet)",
+          "sourcePortion": "560 g",
+          "displayName": "Chicken Caesar for sharing · 560 g",
+          "sourceCategory": "Banquet menu"
+        },
+        {
+          "sourceName": "Veggie salad for sharing",
+          "sourcePortion": "480 g",
+          "displayName": "Veggie salad for sharing · 480 g",
+          "sourceCategory": "Banquet menu"
+        },
+        {
+          "sourceName": "Caesar Salad with Shrimp (Banquet)",
+          "sourcePortion": "",
+          "displayName": "Shrimp Caesar for sharing",
+          "sourceCategory": "Banquet menu"
+        },
+        {
+          "sourceName": "XXL chicken fillet",
+          "sourcePortion": "480/50/50 g",
+          "displayName": "XXL chicken fillet · 480/50/50 g",
+          "sourceCategory": "Banquet menu"
+        }
+      ]
+    },
+    {
+      "sourceName": "Dessert",
+      "name": "Desserts",
+      "sourceCount": 12,
+      "minimumRequired": 9,
+      "selectedCount": 9,
+      "coveragePercent": 75.0,
+      "selectedItems": [
+        {
+          "sourceName": "Tort Profiterol",
+          "sourcePortion": "190 g",
+          "displayName": "Chocolate profiterole cake · 190 g",
+          "sourceCategory": "Dessert"
+        },
+        {
+          "sourceName": "Chocolate Napoleon",
+          "sourcePortion": "180 g",
+          "displayName": "Chocolate Napoleon · 180 g",
+          "sourceCategory": "Dessert"
+        },
+        {
+          "sourceName": "Berry Cheesecake",
+          "sourcePortion": "175 g",
+          "displayName": "Berry Cheesecake · 175 g",
+          "sourceCategory": "Dessert"
+        },
+        {
+          "sourceName": "Tiramisu",
+          "sourcePortion": "200 g",
+          "displayName": "Tiramisu · 200 g",
+          "sourceCategory": "Dessert"
+        },
+        {
+          "sourceName": "Chocolate Fondant",
+          "sourcePortion": "170 g",
+          "displayName": "Chocolate Fondant · 170 g",
+          "sourceCategory": "Dessert"
+        },
+        {
+          "sourceName": "Fondant Dubai",
+          "sourcePortion": "160 g",
+          "displayName": "Pistachio kataifi fondant · 160 g",
+          "sourceCategory": "Dessert"
+        },
+        {
+          "sourceName": "Berry soufflé",
+          "sourcePortion": "160 g",
+          "displayName": "Berry soufflé · 160 g",
+          "sourceCategory": "Dessert"
+        },
+        {
+          "sourceName": "Snikers Pop Ice Cream",
+          "sourcePortion": "230 g",
+          "displayName": "Peanut caramel sundae · 230 g",
+          "sourceCategory": "Dessert"
+        },
+        {
+          "sourceName": "Berry Boom Ice Cream",
+          "sourcePortion": "340 g",
+          "displayName": "Berry Boom Ice Cream · 340 g",
+          "sourceCategory": "Dessert"
+        }
+      ]
+    },
+    {
+      "sourceName": "Ice Cream",
+      "name": "Ice cream",
+      "sourceCount": 25,
+      "minimumRequired": 18,
+      "selectedCount": 18,
+      "coveragePercent": 72.0,
+      "selectedItems": [
+        {
+          "sourceName": "Assorted Ice Cream – 3 Scoops",
+          "sourcePortion": "175 g",
+          "displayName": "Assorted Ice Cream – 3 Scoops · 175 g",
+          "sourceCategory": "Ice Cream"
+        },
+        {
+          "sourceName": "Banana-Pineapple Ice Cream",
+          "sourcePortion": "700 g",
+          "displayName": "Banana-Pineapple Ice Cream · 700 g",
+          "sourceCategory": "Ice Cream"
+        },
+        {
+          "sourceName": "Chocolate Ice Cream",
+          "sourcePortion": "700 g",
+          "displayName": "Chocolate Ice Cream · 700 g",
+          "sourceCategory": "Ice Cream"
+        },
+        {
+          "sourceName": "Ice Cream Assortment",
+          "sourcePortion": "700 g",
+          "displayName": "Ice Cream Assortment · 700 g",
+          "sourceCategory": "Ice Cream"
+        },
+        {
+          "sourceName": "Ice Cream Assortment",
+          "sourcePortion": "350 g",
+          "displayName": "Ice Cream Assortment · 350 g",
+          "sourceCategory": "Ice Cream"
+        },
+        {
+          "sourceName": "Mango & Passion Fruit Ice Cream",
+          "sourcePortion": "700 g",
+          "displayName": "Mango & Passion Fruit Ice Cream · 700 g",
+          "sourceCategory": "Ice Cream"
+        },
+        {
+          "sourceName": "Strawberry Ice Cream",
+          "sourcePortion": "700 g",
+          "displayName": "Strawberry Ice Cream · 700 g",
+          "sourceCategory": "Ice Cream"
+        },
+        {
+          "sourceName": "Whipped Cream Ice Cream",
+          "sourcePortion": "700 g",
+          "displayName": "Whipped Cream Ice Cream · 700 g",
+          "sourceCategory": "Ice Cream"
+        },
+        {
+          "sourceName": "Caramelium Ice Cream",
+          "sourcePortion": "300 g",
+          "displayName": "Caramel cocoa ice cream · 300 g",
+          "sourceCategory": "Ice Cream"
+        },
+        {
+          "sourceName": "Chocolate Plombir Ice Cream",
+          "sourcePortion": "300 g",
+          "displayName": "Chocolate Plombir Ice Cream · 300 g",
+          "sourceCategory": "Ice Cream"
+        },
+        {
+          "sourceName": "Classic Plombir Ice Cream",
+          "sourcePortion": "300 g",
+          "displayName": "Classic Plombir Ice Cream · 300 g",
+          "sourceCategory": "Ice Cream"
+        },
+        {
+          "sourceName": "Forest Berry Ice Cream",
+          "sourcePortion": "300 g",
+          "displayName": "Forest Berry Ice Cream · 300 g",
+          "sourceCategory": "Ice Cream"
+        },
+        {
+          "sourceName": "Hazelnut Ice Cream",
+          "sourcePortion": "300 g",
+          "displayName": "Hazelnut Ice Cream · 300 g",
+          "sourceCategory": "Ice Cream"
+        },
+        {
+          "sourceName": "Huba Buba Ice Cream",
+          "sourcePortion": "300 g",
+          "displayName": "Bubblegum ice cream · 300 g",
+          "sourceCategory": "Ice Cream"
+        },
+        {
+          "sourceName": "Înghetata Snickerrss",
+          "sourcePortion": "300 g",
+          "displayName": "Peanut chocolate ice cream · 300 g",
+          "sourceCategory": "Ice Cream"
+        },
+        {
+          "sourceName": "Passion Fashion Ice Cream",
+          "sourcePortion": "700 g",
+          "displayName": "Mango passion fruit ice cream · 700 g",
+          "sourceCategory": "Ice Cream"
+        },
+        {
+          "sourceName": "Passion Fashion Ice Cream",
+          "sourcePortion": "300 g",
+          "displayName": "Mango passion fruit ice cream · 300 g",
+          "sourceCategory": "Ice Cream"
+        },
+        {
+          "sourceName": "Pistachio Ice Cream",
+          "sourcePortion": "300 g",
+          "displayName": "Pistachio Ice Cream · 300 g",
+          "sourceCategory": "Ice Cream"
+        }
+      ]
+    },
+    {
+      "sourceName": "Cocktails",
+      "name": "Cocktails",
+      "sourceCount": 22,
+      "minimumRequired": 16,
+      "selectedCount": 16,
+      "coveragePercent": 72.73,
+      "selectedItems": [
+        {
+          "sourceName": "Aperol Spritz Cocktail",
+          "sourcePortion": "330 ml",
+          "displayName": "Aperol Spritz Cocktail · 330 ml — Cocktails",
+          "sourceCategory": "Cocktails"
+        },
+        {
+          "sourceName": "Mojito Cocktail",
+          "sourcePortion": "330 ml",
+          "displayName": "Mojito Cocktail · 330 ml — Cocktails",
+          "sourceCategory": "Cocktails"
+        },
+        {
+          "sourceName": "Mojito Cocktail N/A",
+          "sourcePortion": "330 ml",
+          "displayName": "Virgin mojito · 330 ml — Cocktails",
+          "sourceCategory": "Cocktails"
+        },
+        {
+          "sourceName": "Pina Coco",
+          "sourcePortion": "330 ml",
+          "displayName": "Pineapple coconut rum cooler · 330 ml — Cocktails",
+          "sourceCategory": "Cocktails"
+        },
+        {
+          "sourceName": "Pina Coco N/A",
+          "sourcePortion": "330 ml",
+          "displayName": "Virgin pineapple coconut cooler · 330 ml — Cocktails",
+          "sourceCategory": "Cocktails"
+        },
+        {
+          "sourceName": "Pink berry tonic",
+          "sourcePortion": "400 ml",
+          "displayName": "Pink berry tonic · 400 ml — Cocktails",
+          "sourceCategory": "Cocktails"
+        },
+        {
+          "sourceName": "Sex on the Beach",
+          "sourcePortion": "400 ml",
+          "displayName": "Sex on the Beach · 400 ml — Cocktails",
+          "sourceCategory": "Cocktails"
+        },
+        {
+          "sourceName": "Cosmopolitan",
+          "sourcePortion": "180 ml",
+          "displayName": "Cosmopolitan · 180 ml — Cocktails",
+          "sourceCategory": "Cocktails"
+        },
+        {
+          "sourceName": "Rosé Sangria Cocktail",
+          "sourcePortion": "350 ml",
+          "displayName": "Rosé Sangria Cocktail · 350 ml — Cocktails",
+          "sourceCategory": "Cocktails"
+        },
+        {
+          "sourceName": "Rosé Sangria Cocktail – 1L",
+          "sourcePortion": "1000 ml",
+          "displayName": "Rose sangria jug · 1000 ml — Cocktails",
+          "sourceCategory": "Cocktails"
+        },
+        {
+          "sourceName": "Tropical Cocktail",
+          "sourcePortion": "330 ml",
+          "displayName": "Tropical Cocktail · 330 ml — Cocktails",
+          "sourceCategory": "Cocktails"
+        },
+        {
+          "sourceName": "Blackcurrant Lemonade",
+          "sourcePortion": "330 ml",
+          "displayName": "Blackcurrant Lemonade · 330 ml — Cocktails",
+          "sourceCategory": "Cocktails"
+        },
+        {
+          "sourceName": "Lemonade",
+          "sourcePortion": "330 ml",
+          "displayName": "Lemonade · 330 ml — Cocktails",
+          "sourceCategory": "Cocktails"
+        },
+        {
+          "sourceName": "Passion Fruit Lemonade",
+          "sourcePortion": "330 ml",
+          "displayName": "Passion Fruit Lemonade · 330 ml — Cocktails",
+          "sourceCategory": "Cocktails"
+        },
+        {
+          "sourceName": "Chocolate Freakshake",
+          "sourcePortion": "300 ml",
+          "displayName": "Chocolate Freakshake · 300 ml — Cocktails",
+          "sourceCategory": "Cocktails"
+        },
+        {
+          "sourceName": "Banana-Mango Milkshake",
+          "sourcePortion": "300 ml",
+          "displayName": "Banana-Mango Milkshake · 300 ml — Cocktails",
+          "sourceCategory": "Cocktails"
+        }
+      ]
+    },
+    {
+      "sourceName": "Beverages",
+      "name": "Cold drinks",
+      "sourceCount": 40,
+      "minimumRequired": 28,
+      "selectedCount": 28,
+      "coveragePercent": 70.0,
+      "selectedItems": [
+        {
+          "sourceName": "Chocolate Freakshake",
+          "sourcePortion": "300 ml",
+          "displayName": "Chocolate Freakshake · 300 ml — Cold drinks",
+          "sourceCategory": "Beverages"
+        },
+        {
+          "sourceName": "Salted Caramel Milkshake",
+          "sourcePortion": "",
+          "displayName": "Salted Caramel Milkshake",
+          "sourceCategory": "Beverages"
+        },
+        {
+          "sourceName": "Banana-Mango Milkshake",
+          "sourcePortion": "300 ml",
+          "displayName": "Banana-Mango Milkshake · 300 ml — Cold drinks",
+          "sourceCategory": "Beverages"
+        },
+        {
+          "sourceName": "Chocolate Milkshake",
+          "sourcePortion": "300 ml",
+          "displayName": "Chocolate Milkshake · 300 ml",
+          "sourceCategory": "Beverages"
+        },
+        {
+          "sourceName": "Strawberry Milkshake",
+          "sourcePortion": "300 ml",
+          "displayName": "Strawberry Milkshake · 300 ml",
+          "sourceCategory": "Beverages"
+        },
+        {
+          "sourceName": "Vanilla Milkshake",
+          "sourcePortion": "300 ml",
+          "displayName": "Vanilla Milkshake · 300 ml",
+          "sourceCategory": "Beverages"
+        },
+        {
+          "sourceName": "Almond Ice Latte",
+          "sourcePortion": "350 ml",
+          "displayName": "Iced almond latte · 350 ml",
+          "sourceCategory": "Beverages"
+        },
+        {
+          "sourceName": "Espresso Tonic",
+          "sourcePortion": "330 ml",
+          "displayName": "Espresso Tonic · 330 ml",
+          "sourceCategory": "Beverages"
+        },
+        {
+          "sourceName": "Ice Latte",
+          "sourcePortion": "350 ml",
+          "displayName": "Iced latte · 350 ml",
+          "sourceCategory": "Beverages"
+        },
+        {
+          "sourceName": "Mojito Cocktail N/A",
+          "sourcePortion": "330 ml",
+          "displayName": "Virgin mojito · 330 ml — Cold drinks",
+          "sourceCategory": "Beverages"
+        },
+        {
+          "sourceName": "Blackcurrant Lemonade",
+          "sourcePortion": "330 ml",
+          "displayName": "Blackcurrant Lemonade · 330 ml — Cold drinks",
+          "sourceCategory": "Beverages"
+        },
+        {
+          "sourceName": "Cherry Cola Cocktail",
+          "sourcePortion": "330 ml",
+          "displayName": "Cherry Cola Cocktail · 330 ml",
+          "sourceCategory": "Beverages"
+        },
+        {
+          "sourceName": "Lemonade",
+          "sourcePortion": "330 ml",
+          "displayName": "Lemonade · 330 ml — Cold drinks",
+          "sourceCategory": "Beverages"
+        },
+        {
+          "sourceName": "Lemonade 1 L",
+          "sourcePortion": "1000 ml",
+          "displayName": "Lemonade jug · 1000 ml",
+          "sourceCategory": "Beverages"
+        },
+        {
+          "sourceName": "Orangeade",
+          "sourcePortion": "330 ml",
+          "displayName": "Orangeade · 330 ml",
+          "sourceCategory": "Beverages"
+        },
+        {
+          "sourceName": "Orangeade 1 L",
+          "sourcePortion": "1000 ml",
+          "displayName": "Orangeade jug · 1000 ml",
+          "sourceCategory": "Beverages"
+        },
+        {
+          "sourceName": "Passion Fruit Lemonade",
+          "sourcePortion": "330 ml",
+          "displayName": "Passion Fruit Lemonade · 330 ml — Cold drinks",
+          "sourceCategory": "Beverages"
+        },
+        {
+          "sourceName": "Pina Coco N/A",
+          "sourcePortion": "330 ml",
+          "displayName": "Virgin pineapple coconut cooler · 330 ml — Cold drinks",
+          "sourceCategory": "Beverages"
+        },
+        {
+          "sourceName": "Raspberry Fizz Lemonade",
+          "sourcePortion": "330 ml",
+          "displayName": "Raspberry Fizz Lemonade · 330 ml",
+          "sourceCategory": "Beverages"
+        },
+        {
+          "sourceName": "Tropical Cocktail",
+          "sourcePortion": "330 ml",
+          "displayName": "Tropical Cocktail · 330 ml — Cold drinks",
+          "sourceCategory": "Beverages"
+        },
+        {
+          "sourceName": "Fresh Grapefruit Juice 200 ml",
+          "sourcePortion": "200 ml",
+          "displayName": "Fresh Grapefruit Juice 200 ml",
+          "sourceCategory": "Beverages"
+        },
+        {
+          "sourceName": "Fresh Orange Juice 200 ml",
+          "sourcePortion": "200 ml",
+          "displayName": "Fresh Orange Juice 200 ml",
+          "sourceCategory": "Beverages"
+        },
+        {
+          "sourceName": "Apple Juice",
+          "sourcePortion": "950 ml",
+          "displayName": "Apple Juice · 950 ml",
+          "sourceCategory": "Beverages"
+        },
+        {
+          "sourceName": "Mango Juice",
+          "sourcePortion": "950 ml",
+          "displayName": "Mango Juice · 950 ml",
+          "sourceCategory": "Beverages"
+        },
+        {
+          "sourceName": "Coca-Cola 0,5",
+          "sourcePortion": "500 ml",
+          "displayName": "Coca-Cola 0,5 · 500 ml",
+          "sourceCategory": "Beverages"
+        },
+        {
+          "sourceName": "Sprite 0,5",
+          "sourcePortion": "500 ml",
+          "displayName": "Sprite 0,5 · 500 ml",
+          "sourceCategory": "Beverages"
+        },
+        {
+          "sourceName": "Dorna carbo 0,5",
+          "sourcePortion": "500 ml",
+          "displayName": "Dorna sparkling water · 500 ml",
+          "sourceCategory": "Beverages"
+        },
+        {
+          "sourceName": "Dorna plată 0,5",
+          "sourcePortion": "500 ml",
+          "displayName": "Dorna still water · 500 ml",
+          "sourceCategory": "Beverages"
+        }
+      ]
+    },
+    {
+      "sourceName": "Hot Beverages",
+      "name": "Hot drinks",
+      "sourceCount": 15,
+      "minimumRequired": 11,
+      "selectedCount": 11,
+      "coveragePercent": 73.33,
+      "selectedItems": [
+        {
+          "sourceName": "Glühwein",
+          "sourcePortion": "220 ml",
+          "displayName": "Glühwein · 220 ml — Hot drinks",
+          "sourceCategory": "Hot Beverages"
+        },
+        {
+          "sourceName": "Blackcurrant Tea",
+          "sourcePortion": "400 ml",
+          "displayName": "Blackcurrant Tea · 400 ml",
+          "sourceCategory": "Hot Beverages"
+        },
+        {
+          "sourceName": "Sea Buckthorn Tea",
+          "sourcePortion": "400 ml",
+          "displayName": "Sea Buckthorn Tea · 400 ml",
+          "sourceCategory": "Hot Beverages"
+        },
+        {
+          "sourceName": "Signature Mint Tea",
+          "sourcePortion": "400 ml",
+          "displayName": "Signature Mint Tea · 400 ml",
+          "sourceCategory": "Hot Beverages"
+        },
+        {
+          "sourceName": "Almond Hot Cocoa",
+          "sourcePortion": "250 ml",
+          "displayName": "Almond Hot Cocoa · 250 ml",
+          "sourceCategory": "Hot Beverages"
+        },
+        {
+          "sourceName": "Almond Latte",
+          "sourcePortion": "250 ml",
+          "displayName": "Almond Latte · 250 ml",
+          "sourceCategory": "Hot Beverages"
+        },
+        {
+          "sourceName": "Coffee Latte",
+          "sourcePortion": "250 ml",
+          "displayName": "Latte · 250 ml",
+          "sourceCategory": "Hot Beverages"
+        },
+        {
+          "sourceName": "Espresso",
+          "sourcePortion": "30 ml",
+          "displayName": "Espresso · 30 ml",
+          "sourceCategory": "Hot Beverages"
+        },
+        {
+          "sourceName": "Hot Cocoa",
+          "sourcePortion": "250 ml",
+          "displayName": "Hot Cocoa · 250 ml",
+          "sourceCategory": "Hot Beverages"
+        },
+        {
+          "sourceName": "Americano",
+          "sourcePortion": "100 ml",
+          "displayName": "Americano · 100 ml",
+          "sourceCategory": "Hot Beverages"
+        },
+        {
+          "sourceName": "Cappuccino",
+          "sourcePortion": "150 ml",
+          "displayName": "Cappuccino · 150 ml",
+          "sourceCategory": "Hot Beverages"
+        }
+      ]
+    },
+    {
+      "sourceName": "Alcohol",
+      "name": "Bar",
+      "sourceCount": 47,
+      "minimumRequired": 33,
+      "selectedCount": 33,
+      "coveragePercent": 70.21,
+      "selectedItems": [
+        {
+          "sourceName": "Glühwein",
+          "sourcePortion": "220 ml",
+          "displayName": "Glühwein · 220 ml — Bar",
+          "sourceCategory": "Alcohol"
+        },
+        {
+          "sourceName": "Aperol Spritz Cocktail",
+          "sourcePortion": "330 ml",
+          "displayName": "Aperol Spritz Cocktail · 330 ml — Bar",
+          "sourceCategory": "Alcohol"
+        },
+        {
+          "sourceName": "Mojito Cocktail",
+          "sourcePortion": "330 ml",
+          "displayName": "Mojito Cocktail · 330 ml — Bar",
+          "sourceCategory": "Alcohol"
+        },
+        {
+          "sourceName": "Mojito Cocktail N/A",
+          "sourcePortion": "330 ml",
+          "displayName": "Virgin mojito · 330 ml — Bar",
+          "sourceCategory": "Alcohol"
+        },
+        {
+          "sourceName": "Pina Coco",
+          "sourcePortion": "330 ml",
+          "displayName": "Pineapple coconut rum cooler · 330 ml — Bar",
+          "sourceCategory": "Alcohol"
+        },
+        {
+          "sourceName": "Pink berry tonic",
+          "sourcePortion": "400 ml",
+          "displayName": "Pink berry tonic · 400 ml — Bar",
+          "sourceCategory": "Alcohol"
+        },
+        {
+          "sourceName": "Sex on the Beach",
+          "sourcePortion": "400 ml",
+          "displayName": "Sex on the Beach · 400 ml — Bar",
+          "sourceCategory": "Alcohol"
+        },
+        {
+          "sourceName": "Cosmopolitan",
+          "sourcePortion": "180 ml",
+          "displayName": "Cosmopolitan · 180 ml — Bar",
+          "sourceCategory": "Alcohol"
+        },
+        {
+          "sourceName": "Rosé Sangria Cocktail",
+          "sourcePortion": "350 ml",
+          "displayName": "Rosé Sangria Cocktail · 350 ml — Bar",
+          "sourceCategory": "Alcohol"
+        },
+        {
+          "sourceName": "Rosé Sangria Cocktail – 1L",
+          "sourcePortion": "1000 ml",
+          "displayName": "Rose sangria jug · 1000 ml — Bar",
+          "sourceCategory": "Alcohol"
+        },
+        {
+          "sourceName": "Red Wine",
+          "sourcePortion": "1000 ml",
+          "displayName": "Red Wine · 1000 ml",
+          "sourceCategory": "Alcohol"
+        },
+        {
+          "sourceName": "Rosé Wine",
+          "sourcePortion": "1000 ml",
+          "displayName": "Rosé Wine · 1000 ml",
+          "sourceCategory": "Alcohol"
+        },
+        {
+          "sourceName": "White Wine",
+          "sourcePortion": "1000 ml",
+          "displayName": "White Wine · 1000 ml",
+          "sourceCategory": "Alcohol"
+        },
+        {
+          "sourceName": "Chişinău Draft Beer",
+          "sourcePortion": "1000 ml",
+          "displayName": "Chişinău Draft Beer · 1000 ml",
+          "sourceCategory": "Alcohol"
+        },
+        {
+          "sourceName": "Chișinău Light Beer",
+          "sourcePortion": "500 ml",
+          "displayName": "Chișinău Light Beer · 500 ml",
+          "sourceCategory": "Alcohol"
+        },
+        {
+          "sourceName": "Chișinău Light Beer",
+          "sourcePortion": "2250 ml",
+          "displayName": "Chișinău Light Beer · 2250 ml",
+          "sourceCategory": "Alcohol"
+        },
+        {
+          "sourceName": "Corona Extra",
+          "sourcePortion": "355 ml",
+          "displayName": "Corona Extra · 355 ml",
+          "sourceCategory": "Alcohol"
+        },
+        {
+          "sourceName": "Efes Non-Alcoholic",
+          "sourcePortion": "500 ml",
+          "displayName": "Efes Non-Alcoholic · 500 ml",
+          "sourceCategory": "Alcohol"
+        },
+        {
+          "sourceName": "Efes Pilsner Beer",
+          "sourcePortion": "500 ml",
+          "displayName": "Efes Pilsner Beer · 500 ml",
+          "sourceCategory": "Alcohol"
+        },
+        {
+          "sourceName": "Finch Beer",
+          "sourcePortion": "500 ml",
+          "displayName": "Finch Beer · 500 ml",
+          "sourceCategory": "Alcohol"
+        },
+        {
+          "sourceName": "Franziskaner Weissbier",
+          "sourcePortion": "500 ml",
+          "displayName": "Franziskaner Weissbier · 500 ml",
+          "sourceCategory": "Alcohol"
+        },
+        {
+          "sourceName": "Kozel Černý Beer",
+          "sourcePortion": "500 ml",
+          "displayName": "Kozel Černý Beer · 500 ml",
+          "sourceCategory": "Alcohol"
+        },
+        {
+          "sourceName": "Kozel Svetly",
+          "sourcePortion": "500 ml",
+          "displayName": "Kozel Svetly · 500 ml",
+          "sourceCategory": "Alcohol"
+        },
+        {
+          "sourceName": "Timișoreana",
+          "sourcePortion": "500 ml",
+          "displayName": "Timișoreana · 500 ml",
+          "sourceCategory": "Alcohol"
+        },
+        {
+          "sourceName": "Bostavan Chardonnay White Dry Wine",
+          "sourcePortion": "750 ml",
+          "displayName": "Bostavan Chardonnay White Dry Wine · 750 ml",
+          "sourceCategory": "Alcohol"
+        },
+        {
+          "sourceName": "Bostavan Merlot Red Dry Wine",
+          "sourcePortion": "750 ml",
+          "displayName": "Bostavan Merlot Red Dry Wine · 750 ml",
+          "sourceCategory": "Alcohol"
+        },
+        {
+          "sourceName": "Bostavan Muscat Rosé",
+          "sourcePortion": "750 ml",
+          "displayName": "Bostavan Muscat Rosé · 750 ml",
+          "sourceCategory": "Alcohol"
+        },
+        {
+          "sourceName": "PURCARI Nocturne Cabernet Sauvignon Red Sec",
+          "sourcePortion": "750 ml",
+          "displayName": "PURCARI Nocturne Cabernet Sauvignon Red Sec · 750 ml",
+          "sourceCategory": "Alcohol"
+        },
+        {
+          "sourceName": "Purcari Nocturne Pinot Grigio Dry Wine",
+          "sourcePortion": "750 ml",
+          "displayName": "Purcari Nocturne Pinot Grigio Dry Wine · 750 ml",
+          "sourceCategory": "Alcohol"
+        },
+        {
+          "sourceName": "Purcari Nocturne Rose sec",
+          "sourcePortion": "750 ml",
+          "displayName": "Purcari Nocturne Rose sec · 750 ml",
+          "sourceCategory": "Alcohol"
+        },
+        {
+          "sourceName": "Purcari Nocturne Sauvignon Blanc Dry Wine",
+          "sourcePortion": "750 ml",
+          "displayName": "Purcari Nocturne Sauvignon Blanc Dry Wine · 750 ml",
+          "sourceCategory": "Alcohol"
+        },
+        {
+          "sourceName": "Cricova Crisecco Brut",
+          "sourcePortion": "750 ml",
+          "displayName": "Cricova Crisecco Brut · 750 ml",
+          "sourceCategory": "Alcohol"
+        },
+        {
+          "sourceName": "Cricova Lacrima Dulce",
+          "sourcePortion": "750 ml",
+          "displayName": "Cricova Lacrima Dulce · 750 ml",
+          "sourceCategory": "Alcohol"
+        }
+      ]
+    },
+    {
+      "sourceName": "Supplements",
+      "name": "Extras",
+      "sourceCount": 16,
+      "minimumRequired": 12,
+      "selectedCount": 12,
+      "coveragePercent": 75.0,
+      "selectedItems": [
+        {
+          "sourceName": "Garlic toast",
+          "sourcePortion": "120 g",
+          "displayName": "Garlic toast · 120 g — Extras",
+          "sourceCategory": "Supplements"
+        },
+        {
+          "sourceName": "Flatbread with Butter and Garlic Sheep Cheese",
+          "sourcePortion": "60 g (1 pc)",
+          "displayName": "Flatbread with Butter and Garlic Sheep Cheese · 60 g (1 pc)",
+          "sourceCategory": "Supplements"
+        },
+        {
+          "sourceName": "Flatbread with Butter and Sheep Cheese",
+          "sourcePortion": "60 g (1 pc)",
+          "displayName": "Flatbread with Butter and Sheep Cheese · 60 g (1 pc)",
+          "sourceCategory": "Supplements"
+        },
+        {
+          "sourceName": "Bread Rusks",
+          "sourcePortion": "50 g",
+          "displayName": "Bread Rusks · 50 g",
+          "sourceCategory": "Supplements"
+        },
+        {
+          "sourceName": "Hot Bread",
+          "sourcePortion": "150 g",
+          "displayName": "Hot Bread · 150 g",
+          "sourceCategory": "Supplements"
+        },
+        {
+          "sourceName": "Ciabatta",
+          "sourcePortion": "100 g",
+          "displayName": "Ciabatta · 100 g",
+          "sourceCategory": "Supplements"
+        },
+        {
+          "sourceName": "Focaccia",
+          "sourcePortion": "220 g",
+          "displayName": "Focaccia · 220 g",
+          "sourceCategory": "Supplements"
+        },
+        {
+          "sourceName": "Mayonnaise",
+          "sourcePortion": "50 g",
+          "displayName": "Mayonnaise · 50 g",
+          "sourceCategory": "Supplements"
+        },
+        {
+          "sourceName": "Tartar Sauce",
+          "sourcePortion": "50g",
+          "displayName": "Tartar Sauce · 50g",
+          "sourceCategory": "Supplements"
+        },
+        {
+          "sourceName": "Sour Cream",
+          "sourcePortion": "50 g",
+          "displayName": "Sour Cream · 50 g",
+          "sourceCategory": "Supplements"
+        },
+        {
+          "sourceName": "Ketchup",
+          "sourcePortion": "50 g",
+          "displayName": "Ketchup · 50 g",
+          "sourceCategory": "Supplements"
+        },
+        {
+          "sourceName": "Zesty sauce",
+          "sourcePortion": "50 g",
+          "displayName": "Zesty sauce · 50 g",
+          "sourceCategory": "Supplements"
+        }
+      ]
+    }
+  ],
+  "excludedCategories": [
+    {
+      "sourceName": "Delivery promotions",
+      "sourceCount": 3,
+      "reason": "Delivery-only promotional bundles."
+    },
+    {
+      "sourceName": "Cutlery",
+      "sourceCount": 6,
+      "reason": "Dining supplies rather than food or drink."
+    },
+    {
+      "sourceName": "Gift card",
+      "sourceCount": 2,
+      "reason": "Financial vouchers rather than table dining."
+    },
+    {
+      "sourceName": "Shop",
+      "sourceCount": 81,
+      "reason": "Frozen retail and grocery products rather than prepared table dining."
+    }
+  ],
+  "pricePolicy": "Fictional EUR minor units: max(100, floor((observed MDL × 5) / 50 + 0.5) × 50). This is demo price design, not currency conversion or current restaurant pricing.",
+  "allergenPolicy": "Conservative ingredient-based hints only; no complete ingredient or cross-contact verification. Empty lists do not establish absence. No vegetarian, vegan or other dietary claims are assigned to these selected items.",
+  "imagePolicy": "Only original illustrative category photographs from TableKind assets. Shared category images do not depict each exact recipe or portion. No source photography is downloaded or embedded."
+}

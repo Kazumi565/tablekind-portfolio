@@ -1,4 +1,5 @@
 import { money as formatMoney } from "./api";
+import { MenuGallery, DishPhoto } from "./MenuGallery";
 import { PayPalCheckout } from "./PayPalCheckout";
 import { SplitAssistant } from "./SplitAssistant";
 import { HackathonGuide } from "./HackathonGuide";
@@ -1518,86 +1519,16 @@ function MenuView({
   action: Mutation;
   busy: boolean;
 }) {
-  const { money, currency } = useMoney();
-  const [query, setQuery] = useState(""),
-    [category, setCategory] = useState(""),
-    [selected, setSelected] = useState<Product | null>(null);
-  const products = state.menu.products.filter(
-    (p) =>
-      (!category || p.category_id === category) &&
-      `${label(p.names, lang)} ${label(p.descriptions, lang)}`
-        .toLowerCase()
-        .includes(query.toLowerCase()),
-  );
+  const [selected, setSelected] = useState<Product | null>(null);
   return (
     <>
-      <div className="section-heading">
-        <div>
-          <h2>Something for everyone</h2>
-          <p>Find your next favourite. Ask your waiter about allergens.</p>
-        </div>
-        <input
-          type="search"
-          aria-label="Search menu"
-          placeholder="Find a dish…"
-          value={query}
-          onChange={(e) => setQuery(e.target.value)}
-        />
-      </div>
-      <div className="chips">
-        <button
-          className={!category ? "active" : ""}
-          onClick={() => setCategory("")}
-        >
-          All
-        </button>
-        {state.menu.categories.map((c) => (
-          <button
-            key={c.id}
-            className={category === c.id ? "active" : ""}
-            onClick={() => setCategory(c.id)}
-          >
-            {label(c.names, lang)}
-          </button>
-        ))}
-      </div>
-      <div className="menu-grid">
-        {products.map((p) => (
-          <article className="card menu-card" key={p.id}>
-            <div className="dish-icon">
-              {p.dietary_labels.includes("vegan") ? "◌" : "◒"}
-            </div>
-            <div>
-              <h3>{label(p.names, lang)}</h3>
-              <p>{label(p.descriptions, lang)}</p>
-              <small>
-                {p.allergens.length
-                  ? `Allergens: ${p.allergens.join(", ")}`
-                  : "No allergens listed in this test menu"}
-              </small>
-            </div>
-            <div className="spread">
-              <strong>{money(p.price_bani)}</strong>
-              <button
-                className="primary"
-                disabled={
-                  busy || !p.available || state.session.status === "CLOSED"
-                }
-                onClick={() => setSelected(p)}
-              >
-                {p.available ? (
-                  <>
-                    <Plus size={16} />
-                    Order
-                  </>
-                ) : (
-                  "Unavailable"
-                )}
-              </button>
-            </div>
-          </article>
-        ))}
-      </div>
+      <MenuGallery
+        key={state.session.id}
+        menu={state.menu}
+        lang={lang}
+        disabled={busy || state.session.status === "CLOSED"}
+        onSelect={setSelected}
+      />
       {selected && (
         <OrderModal
           product={selected}
@@ -1654,6 +1585,14 @@ function OrderModal({
   };
   return (
     <Modal title={label(p.names, lang)} onClose={onClose}>
+      <div className="order-dish-summary">
+        {p.image_path && <DishPhoto product={p} />}
+        <p>{label(p.descriptions, lang)}</p>
+        <small>
+          Allergens: {p.allergens.join(", ") || "None listed"}. Ask your waiter
+          about ingredients and cross-contact.
+        </small>
+      </div>
       <form onSubmit={submit}>
         {state.actor.kind === "STAFF" && (
           <Field label="Guest placing the order">
@@ -3181,6 +3120,7 @@ function ProductEditor({
                   ru: text(f, "descriptionRu"),
                 },
                 priceBani: bani(text(f, "price")),
+                imagePath: p?.image_path ?? null,
                 allergens: text(f, "allergens")
                   .split(",")
                   .map((s) => s.trim())

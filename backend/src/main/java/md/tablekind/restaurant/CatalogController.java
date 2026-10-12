@@ -51,7 +51,20 @@ public class CatalogController {
       @NotNull @Size(max = 30) List<@Size(max = 60) String> allergens,
       @NotNull @Size(max = 20) List<@Size(max = 60) String> dietaryLabels,
       @Min(0) @Max(10000000) long priceBani,
-      boolean available) {}
+      boolean available,
+      @Size(max = 100) @Pattern(regexp = "/menu/[a-z0-9]+(?:-[a-z0-9]+)*\\.webp")
+          String imagePath) {
+    public ProductRequest(
+        UUID categoryId,
+        Map<String, String> names,
+        Map<String, String> descriptions,
+        List<String> allergens,
+        List<String> dietaryLabels,
+        long priceBani,
+        boolean available) {
+      this(categoryId, names, descriptions, allergens, dietaryLabels, priceBani, available, null);
+    }
+  }
 
   public record OptionRequest(
       @NotNull Map<String, String> names,

@@ -47,6 +47,9 @@ export function HackathonGuide({
       ) : (
         <>
           <div className="row wrap">
+            <button disabled={blocked} onClick={() => onView("mihai", "menu")}>
+              Browse menu
+            </button>
             {(["mihai", "diego", "ana"] as const).map((view) => (
               <button
                 key={view}

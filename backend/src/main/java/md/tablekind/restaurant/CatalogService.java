@@ -214,13 +214,17 @@ public class CatalogService {
     pos.requireLocal(rid);
     names(r.names());
     namesOptional(r.descriptions());
+    if (r.imagePath() != null
+        && (r.imagePath().length() > 100
+            || !r.imagePath().matches("/menu/[a-z0-9]+(?:-[a-z0-9]+)*\\.webp")))
+      throw Problem.bad("Choose a local menu image in /menu with a .webp extension.");
     db.one("SELECT id FROM category WHERE restaurant_id=? AND id=?", rid, r.categoryId());
     UUID id = pid == null ? UUID.randomUUID() : pid;
     if (pid == null)
       db.update(
           "INSERT INTO"
-              + " product(id,restaurant_id,category_id,names,descriptions,allergens,dietary_labels,price_bani,available)"
-              + " VALUES(?,?,?,?::jsonb,?::jsonb,?::jsonb,?::jsonb,?,?)",
+              + " product(id,restaurant_id,category_id,names,descriptions,allergens,dietary_labels,price_bani,available,image_path)"
+              + " VALUES(?,?,?,?::jsonb,?::jsonb,?::jsonb,?::jsonb,?,?,?)",
           id,
           rid,
           r.categoryId(),
@@ -229,10 +233,11 @@ public class CatalogService {
           db.json(r.allergens()),
           db.json(r.dietaryLabels()),
           r.priceBani(),
-          r.available());
+          r.available(),
+          r.imagePath());
     else if (db.update(
             "UPDATE product SET"
-                + " category_id=?,names=?::jsonb,descriptions=?::jsonb,allergens=?::jsonb,dietary_labels=?::jsonb,price_bani=?,available=?,version=version+1"
+                + " category_id=?,names=?::jsonb,descriptions=?::jsonb,allergens=?::jsonb,dietary_labels=?::jsonb,price_bani=?,available=?,image_path=?,version=version+1"
                 + " WHERE restaurant_id=? AND id=?",
             r.categoryId(),
             db.json(r.names()),
@@ -241,6 +246,7 @@ public class CatalogService {
             db.json(r.dietaryLabels()),
             r.priceBani(),
             r.available(),
+            r.imagePath(),
             rid,
             id)
         != 1) throw Problem.missing();

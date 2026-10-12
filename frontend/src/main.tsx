@@ -4,15 +4,18 @@ import App from "./App";
 import { lazy, Suspense } from "react";
 import "./style.css";
 import "./refinement.css";
+import "./dining.css";
 
 const PlatformApp = lazy(() => import("./PlatformApp"));
+const MenuPreview = lazy(() => import("./MenuPreview"));
+const isMenuPreview = import.meta.env.VITE_MENU_PREVIEW === "true";
 const isPlatform =
   location.pathname === "/admin" || location.pathname.startsWith("/admin/");
 
 createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
     <Suspense fallback={<main>Loading workspace…</main>}>
-      {isPlatform ? <PlatformApp /> : <App />}
+      {isMenuPreview ? <MenuPreview /> : isPlatform ? <PlatformApp /> : <App />}
     </Suspense>
   </React.StrictMode>,
 );

@@ -27,6 +27,8 @@ docker compose --env-file .env.hackathon -f compose.hackathon.yaml up --build -d
 
 Open [the local manager view](http://localhost:5195/manage), sign in using the locally generated credentials in `.env.hackathon`, then select **Start EUR dinner**. The seeded meal is 38.01 EUR for Mihai, Diego and Ana. Setup is usable without provider access; completing AI and payment steps requires the access described in [the hackathon setup guide](docs/hackathon/SETUP.md). Keep secret values in that ignored file, never in Git or chat.
 
+New EUR dinners include a photo menu with **228 entries across 17 categories**, search, category selection and a vegetarian filter. The expanded catalog covers at least 70% of each relevant category in a dated Andy’s Pizza Moldova menu snapshot, with original descriptions, fictional EUR prices and 27 illustrative photos reused across related dishes. The initial €38.01 meal is preserved. [Menu coverage](docs/hackathon/MENU-COVERAGE.md) records the source selections; [the menu preview guide](docs/hackathon/MENU-PREVIEW.md) explains the shared fixture and local standalone build. The [hosted menu preview](https://tablekind-at-the-table.workspace-326781.chatgpt.site) is owner-private; judge access remains unfinished and the full functional app runs locally. Catalog and focused backend tests, both frontend builds and desktop/mobile browser checks passed; see [validation](docs/hackathon/VALIDATION.md).
+
 [New work versus baseline](docs/hackathon/BASELINE.md) · [Architecture and recovery](docs/hackathon/IMPLEMENTATION.md) · [Validation and remaining gates](docs/hackathon/VALIDATION.md) · [Submission draft](docs/hackathon/DEVPOST.md) · [2:40 video script](docs/hackathon/VIDEO.md) · [Submission checklist](docs/hackathon/CHECKLIST.md)
 
 The original portfolio setup below remains available separately. Original code is licensed under [MIT](LICENSE); dependencies retain their own licenses.
@@ -37,7 +39,7 @@ The original portfolio setup below remains available separately. Original code i
 | --- | --- | --- |
 | Restaurant application | **0.10.2** | Guest, waiter, manager and platform administrator workflows |
 | Presentation website | **0.11.3** | English/Romanian explanation and interactive fictional example |
-| Database | **Flyway V1–V12** | Original V1–V9 plus isolated currency, PayPal recovery and AI draft records |
+| Database | **Flyway V1–V13** | Original V1–V9 plus isolated currency, PayPal recovery, AI draft records and optional menu images |
 
 ### Engineering highlights
 
@@ -239,6 +241,8 @@ Tests use a separate disposable PostgreSQL service. Surefire reports appear in `
 ```powershell
 npm.cmd --prefix frontend ci
 npm.cmd --prefix frontend run build
+npm.cmd --prefix frontend run test:menu
+npm.cmd --prefix frontend run build:menu
 npm.cmd --prefix frontend run test:recovery
 npm.cmd --prefix frontend run test:qr-code
 
@@ -337,7 +341,7 @@ See [SECURITY.md](SECURITY.md) for supported use and reporting. No penetration t
 | Reservations | Fictional request/approval exercise. No real capacity hold or confirmed booking |
 | Email / SMS | Local Mailpit only. No production delivery provider or SMS workflow |
 | Localization | Presentation site: English/Romanian. Menu content: English/Romanian/Russian. Operational UI controls: English |
-| Hosting | Local/private operation. Domain, public deployment and ongoing service are not configured |
+| Hosting | Full application runs locally. The static menu preview is deployed on Sites with owner-private access; judge access, domain and ongoing backend service are not configured |
 | Customer validation | No claim of paying restaurants, a live restaurant pilot or demonstrated business results |
 | Operations | No sustained capacity qualification, managed offsite backup service or staffed incident response |
 
@@ -352,6 +356,7 @@ See [SECURITY.md](SECURITY.md) for supported use and reporting. No penetration t
 | Monitoring, backup, restoration and incidents | [Operations](docs/OPERATIONS.md) |
 | Camera behavior and fallback | [QR scanning](docs/PHASE10_QR_SCANNER.md) |
 | Presentation site | [Website README](website/README.md) |
+| Hackathon photo menu | [Preview and catalog workflow](docs/hackathon/MENU-PREVIEW.md) · [Category coverage](docs/hackathon/MENU-COVERAGE.md) |
 | Public portfolio preparation | [Publication guide](docs/PUBLICATION.md) · [Review evidence](docs/PUBLIC_RELEASE_REVIEW.md) |
 | Historical milestones | [Phase record](docs/PHASES.md) |
 

@@ -15,9 +15,12 @@ Local release gates:
 
 - [ ] All real-integration gates in [VALIDATION](VALIDATION.md) pass; remove unverified claims from final materials.
 - [x] Authorize the initial AI integration budget and run real checks. USD 1 approved; seven calls completed at an estimated USD 0.0221 token cost, then disabled.
-- [ ] Confirm ongoing AI access and judge-access arrangements. No hosting has been approved or purchased.
+- [x] Implement the expanded menu fixture: 228 entries across 17 categories, meeting at least 70% of each relevant source category, with 27 illustrative photos. See [coverage](MENU-COVERAGE.md) and [menu preview](MENU-PREVIEW.md).
+- [x] Validate the menu: three catalog tests, four focused backend tests, both frontend builds, Docker/V13 and desktop/mobile browser checks passed. See [VALIDATION](VALIDATION.md).
+- [x] Publish the authorized free [menu preview](https://tablekind-at-the-table.workspace-326781.chatgpt.site) on Sites. Access is owner-private; this does not complete judge access.
+- [ ] Confirm ongoing AI access and full judge-access arrangements. A static preview does not host Spring Boot or PostgreSQL. Paid hosting, a domain and ongoing AI spending are not approved.
 - [ ] Review local commits and secret scans; manually push the intended branch using [REVIEW-AND-PUBLISH](REVIEW-AND-PUBLISH.md).
 - [ ] Verify the exact public branch/commit, MIT license display and fresh-checkout setup.
 - [ ] Add final demo and video links to Devpost, inspect the completed form and submit manually.
 
-No remote push, merge, release, deployment, video publication or submission has been performed.
+No GitHub push, remote merge, release, video publication or submission has been performed. The static menu preview is deployed with owner-private access; the full functional application remains local.

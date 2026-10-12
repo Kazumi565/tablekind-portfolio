@@ -1,0 +1,3876 @@
+{
+  "source": "https://andys.md/",
+  "observed": "2026-10-12",
+  "categories": [
+    "Pizza",
+    "Breakfast",
+    "Starters",
+    "Salads",
+    "Soups",
+    "Pasta",
+    "Mains",
+    "Kids",
+    "Lunch",
+    "Sharing platters",
+    "Desserts",
+    "Ice cream",
+    "Cocktails",
+    "Cold drinks",
+    "Hot drinks",
+    "Bar",
+    "Extras"
+  ],
+  "coverage": [
+    {
+      "sourceName": "Breakfasts",
+      "name": "Breakfast",
+      "sourceCount": 7,
+      "selectedCount": 5
+    },
+    {
+      "sourceName": "Appetizers",
+      "name": "Starters",
+      "sourceCount": 12,
+      "selectedCount": 9
+    },
+    {
+      "sourceName": "Salads",
+      "name": "Salads",
+      "sourceCount": 8,
+      "selectedCount": 6
+    },
+    {
+      "sourceName": "Soups",
+      "name": "Soups",
+      "sourceCount": 6,
+      "selectedCount": 5
+    },
+    {
+      "sourceName": "Pizza",
+      "name": "Pizza",
+      "sourceCount": 13,
+      "selectedCount": 10
+    },
+    {
+      "sourceName": "Pasta",
+      "name": "Pasta",
+      "sourceCount": 5,
+      "selectedCount": 4
+    },
+    {
+      "sourceName": "Main Dishes",
+      "name": "Mains",
+      "sourceCount": 33,
+      "selectedCount": 24
+    },
+    {
+      "sourceName": "Kids Menu",
+      "name": "Kids",
+      "sourceCount": 11,
+      "selectedCount": 8
+    },
+    {
+      "sourceName": "Lunch-Box",
+      "name": "Lunch",
+      "sourceCount": 7,
+      "selectedCount": 5
+    },
+    {
+      "sourceName": "Banquet menu",
+      "name": "Sharing platters",
+      "sourceCount": 18,
+      "selectedCount": 13
+    },
+    {
+      "sourceName": "Dessert",
+      "name": "Desserts",
+      "sourceCount": 12,
+      "selectedCount": 9
+    },
+    {
+      "sourceName": "Ice Cream",
+      "name": "Ice cream",
+      "sourceCount": 25,
+      "selectedCount": 18
+    },
+    {
+      "sourceName": "Cocktails",
+      "name": "Cocktails",
+      "sourceCount": 22,
+      "selectedCount": 16
+    },
+    {
+      "sourceName": "Beverages",
+      "name": "Cold drinks",
+      "sourceCount": 40,
+      "selectedCount": 28
+    },
+    {
+      "sourceName": "Hot Beverages",
+      "name": "Hot drinks",
+      "sourceCount": 15,
+      "selectedCount": 11
+    },
+    {
+      "sourceName": "Alcohol",
+      "name": "Bar",
+      "sourceCount": 47,
+      "selectedCount": 33
+    },
+    {
+      "sourceName": "Supplements",
+      "name": "Extras",
+      "sourceCount": 16,
+      "selectedCount": 12
+    }
+  ],
+  "items": [
+    {
+      "id": "garden-pizza",
+      "name": "Garden pizza",
+      "category": "Pizza",
+      "description": "Roasted peppers, mushrooms, olives and red onion over tomato sauce and mozzarella.",
+      "allergens": [
+        "wheat",
+        "milk"
+      ],
+      "dietaryLabels": [
+        "vegetarian"
+      ],
+      "price": 1050,
+      "image": "garden-pizza",
+      "owner": -1
+    },
+    {
+      "id": "margherita",
+      "name": "Margherita",
+      "category": "Pizza",
+      "description": "Tomato sauce, creamy mozzarella and fresh basil on a crisp, hand-stretched base.",
+      "allergens": [
+        "wheat",
+        "milk"
+      ],
+      "dietaryLabels": [
+        "vegetarian"
+      ],
+      "price": 950,
+      "image": "margherita",
+      "owner": -1
+    },
+    {
+      "id": "pepperoni",
+      "name": "Pepperoni",
+      "category": "Pizza",
+      "description": "Spicy pepperoni, melted mozzarella and tomato sauce with a golden, crisp crust.",
+      "allergens": [
+        "wheat",
+        "milk"
+      ],
+      "dietaryLabels": [],
+      "price": 1150,
+      "image": "pepperoni",
+      "owner": -1
+    },
+    {
+      "id": "burger",
+      "name": "Burger",
+      "category": "Mains",
+      "description": "Grilled beef, melted cheddar, lettuce, tomato and house sauce in a toasted brioche bun.",
+      "allergens": [
+        "wheat",
+        "milk",
+        "egg",
+        "mustard",
+        "sesame"
+      ],
+      "dietaryLabels": [],
+      "price": 1200,
+      "image": "burger",
+      "owner": 0
+    },
+    {
+      "id": "crispy-chicken",
+      "name": "Crispy chicken",
+      "category": "Mains",
+      "description": "Tender chicken in a golden crumb coating, served with fries and a creamy house dip.",
+      "allergens": [
+        "wheat",
+        "milk",
+        "egg",
+        "mustard"
+      ],
+      "dietaryLabels": [],
+      "price": 1100,
+      "image": "crispy-chicken",
+      "owner": -1
+    },
+    {
+      "id": "pasta",
+      "name": "Pasta",
+      "category": "Mains",
+      "description": "Tagliatelle with golden mushrooms, a creamy Parmesan sauce and fresh parsley.",
+      "allergens": [
+        "wheat",
+        "milk",
+        "egg"
+      ],
+      "dietaryLabels": [],
+      "price": 1000,
+      "image": "pasta",
+      "owner": 1
+    },
+    {
+      "id": "starter",
+      "name": "Shared starter",
+      "category": "Starters",
+      "description": "Golden mozzarella sticks with a crisp crumb coating and a tangy tomato dipping sauce.",
+      "allergens": [
+        "wheat",
+        "milk",
+        "egg"
+      ],
+      "dietaryLabels": [
+        "vegetarian"
+      ],
+      "price": 701,
+      "image": "starter",
+      "owner": 0
+    },
+    {
+      "id": "bruschetta",
+      "name": "Tomato bruschetta",
+      "category": "Starters",
+      "description": "Toasted bread topped with ripe tomatoes, fresh basil, garlic and extra virgin olive oil.",
+      "allergens": [
+        "wheat"
+      ],
+      "dietaryLabels": [
+        "vegan"
+      ],
+      "price": 650,
+      "image": "bruschetta",
+      "owner": -1
+    },
+    {
+      "id": "salad",
+      "name": "Salad",
+      "category": "Salads",
+      "description": "Crisp cucumber, juicy tomatoes, olives and feta with an oregano and olive oil dressing.",
+      "allergens": [
+        "milk"
+      ],
+      "dietaryLabels": [
+        "vegetarian"
+      ],
+      "price": 900,
+      "image": "salad",
+      "owner": 2
+    },
+    {
+      "id": "cheesecake",
+      "name": "Berry cheesecake",
+      "category": "Desserts",
+      "description": "Creamy baked cheesecake on a buttery biscuit base, finished with mixed berries.",
+      "allergens": [
+        "wheat",
+        "milk",
+        "egg"
+      ],
+      "dietaryLabels": [
+        "vegetarian"
+      ],
+      "price": 550,
+      "image": "cheesecake",
+      "owner": -1
+    },
+    {
+      "id": "tiramisu",
+      "name": "Tiramisu",
+      "category": "Desserts",
+      "description": "Coffee-soaked sponge, airy mascarpone cream and a generous dusting of cocoa.",
+      "allergens": [
+        "wheat",
+        "milk",
+        "egg"
+      ],
+      "dietaryLabels": [
+        "vegetarian"
+      ],
+      "price": 550,
+      "image": "tiramisu",
+      "owner": -1
+    },
+    {
+      "id": "lemonade",
+      "name": "Citrus lemonade",
+      "category": "Cold drinks",
+      "description": "Fresh lemon and orange, sparkling water and mint, poured over plenty of ice.",
+      "allergens": [],
+      "dietaryLabels": [
+        "vegan"
+      ],
+      "price": 350,
+      "image": "lemonade",
+      "owner": -1
+    },
+    {
+      "id": "breakfast-andys-breakfast-de1b3807",
+      "name": "House breakfast",
+      "category": "Breakfast",
+      "description": "A full breakfast plate with eggs, bacon, sausages and beans, plus toast and hash browns.",
+      "allergens": [
+        "wheat",
+        "milk",
+        "egg"
+      ],
+      "dietaryLabels": [],
+      "price": 750,
+      "image": "breakfast",
+      "owner": -1,
+      "sourceCategory": "Breakfasts",
+      "sourceName": "Andy’s Breakfast",
+      "sourcePortion": ""
+    },
+    {
+      "id": "breakfast-classic-omelet-68aa5f61",
+      "name": "Classic omelet",
+      "category": "Breakfast",
+      "description": "A cheese omelet with fresh vegetables, salad leaves and a little honey dressing.",
+      "allergens": [
+        "milk",
+        "egg"
+      ],
+      "dietaryLabels": [],
+      "price": 450,
+      "image": "breakfast",
+      "owner": -1,
+      "sourceCategory": "Breakfasts",
+      "sourceName": "Classic omelet",
+      "sourcePortion": ""
+    },
+    {
+      "id": "breakfast-cottage-cheese-pancakes-40498d55",
+      "name": "Cottage cheese pancakes",
+      "category": "Breakfast",
+      "description": "Soft cheese pancakes with berry sauce, sour cream and flaked almonds.",
+      "allergens": [
+        "wheat",
+        "milk",
+        "egg",
+        "tree nuts"
+      ],
+      "dietaryLabels": [],
+      "price": 500,
+      "image": "crepes",
+      "owner": -1,
+      "sourceCategory": "Breakfasts",
+      "sourceName": "Cottage cheese pancakes",
+      "sourcePortion": ""
+    },
+    {
+      "id": "breakfast-pancakes-with-chicken-mushroom-sauce-e125cf41",
+      "name": "Pancakes with Chicken & Mushroom Sauce · 380 g — Breakfast",
+      "category": "Breakfast",
+      "description": "Savoury pancakes filled with chicken, finished with creamy mushrooms and Edam.",
+      "allergens": [
+        "wheat",
+        "milk",
+        "egg"
+      ],
+      "dietaryLabels": [],
+      "price": 650,
+      "image": "crepes",
+      "owner": -1,
+      "sourceCategory": "Breakfasts",
+      "sourceName": "Pancakes with Chicken & Mushroom Sauce",
+      "sourcePortion": "380 g"
+    },
+    {
+      "id": "breakfast-crepes-with-salted-salmon-79d172b8",
+      "name": "Crepes with salted salmon · 230/25 g — Breakfast",
+      "category": "Breakfast",
+      "description": "Light crepes with salmon, cucumber cheese filling and lemon.",
+      "allergens": [
+        "wheat",
+        "milk",
+        "egg",
+        "fish"
+      ],
+      "dietaryLabels": [],
+      "price": 700,
+      "image": "crepes",
+      "owner": -1,
+      "sourceCategory": "Breakfasts",
+      "sourceName": "Crepes with salted salmon",
+      "sourcePortion": "230/25 g"
+    },
+    {
+      "id": "starters-roasted-pepper-bruschetta-400f3d4c",
+      "name": "Roasted Pepper Bruschetta · 200 g",
+      "category": "Starters",
+      "description": "Toasted ciabatta with roasted peppers, Parmesan cream and walnuts.",
+      "allergens": [
+        "wheat",
+        "milk",
+        "tree nuts"
+      ],
+      "dietaryLabels": [],
+      "price": 450,
+      "image": "bruschetta",
+      "owner": -1,
+      "sourceCategory": "Appetizers",
+      "sourceName": "Roasted Pepper Bruschetta",
+      "sourcePortion": "200 g"
+    },
+    {
+      "id": "starters-salmon-bruschetta-72f90a77",
+      "name": "Salmon Bruschetta · 180 g",
+      "category": "Starters",
+      "description": "Salmon and cucumber over Parmesan cream on ciabatta toast.",
+      "allergens": [
+        "wheat",
+        "milk",
+        "fish"
+      ],
+      "dietaryLabels": [],
+      "price": 500,
+      "image": "bruschetta",
+      "owner": -1,
+      "sourceCategory": "Appetizers",
+      "sourceName": "Salmon Bruschetta",
+      "sourcePortion": "180 g"
+    },
+    {
+      "id": "starters-bruschettas-with-shrimp-1fb5df21",
+      "name": "Bruschettas with shrimp · 240 g",
+      "category": "Starters",
+      "description": "Shrimp and guacamole toast with tomato, cream cheese and rocket.",
+      "allergens": [
+        "wheat",
+        "milk",
+        "crustaceans"
+      ],
+      "dietaryLabels": [],
+      "price": 500,
+      "image": "bruschetta",
+      "owner": -1,
+      "sourceCategory": "Appetizers",
+      "sourceName": "Bruschettas with shrimp",
+      "sourcePortion": "240 g"
+    },
+    {
+      "id": "starters-garlic-toast-01d2ee79",
+      "name": "Garlic toast · 120 g — Starters",
+      "category": "Starters",
+      "description": "Crisp ciabatta with garlic butter, Parmesan and parsley.",
+      "allergens": [
+        "wheat",
+        "milk"
+      ],
+      "dietaryLabels": [],
+      "price": 200,
+      "image": "bread",
+      "owner": -1,
+      "sourceCategory": "Appetizers",
+      "sourceName": "Garlic toast",
+      "sourcePortion": "120 g"
+    },
+    {
+      "id": "starters-cheese-platter-1094c085",
+      "name": "Cheese Platter · 50/40/40/40/40/20/20g",
+      "category": "Starters",
+      "description": "A selection of cheeses with olives, walnuts and crisp crackers.",
+      "allergens": [
+        "milk",
+        "tree nuts",
+        "wheat"
+      ],
+      "dietaryLabels": [],
+      "price": 750,
+      "image": "starter",
+      "owner": -1,
+      "sourceCategory": "Appetizers",
+      "sourceName": "Cheese Platter",
+      "sourcePortion": "50/40/40/40/40/20/20g"
+    },
+    {
+      "id": "starters-nachos-e001feb4",
+      "name": "Nachos · 400/50/50/50g",
+      "category": "Starters",
+      "description": "Crunchy nachos with beef, beans, melted cheese and a selection of lively sauces.",
+      "allergens": [
+        "milk"
+      ],
+      "dietaryLabels": [],
+      "price": 700,
+      "image": "starter",
+      "owner": -1,
+      "sourceCategory": "Appetizers",
+      "sourceName": "Nachos",
+      "sourcePortion": "400/50/50/50g"
+    },
+    {
+      "id": "starters-guacamole-d00b6805",
+      "name": "Guacamole · 100/30 g",
+      "category": "Starters",
+      "description": "Avocado dip with tomato and onion, served alongside crunchy nachos.",
+      "allergens": [],
+      "dietaryLabels": [],
+      "price": 350,
+      "image": "starter",
+      "owner": -1,
+      "sourceCategory": "Appetizers",
+      "sourceName": "Guacamole",
+      "sourcePortion": "100/30 g"
+    },
+    {
+      "id": "starters-eggplant-appetizer-40dae8c2",
+      "name": "Eggplant Appetizer · 100 / 20 g",
+      "category": "Starters",
+      "description": "An aubergine spread with tahini, mayonnaise and red onion, served with ciabatta.",
+      "allergens": [
+        "wheat",
+        "egg",
+        "sesame",
+        "mustard"
+      ],
+      "dietaryLabels": [],
+      "price": 300,
+      "image": "starter",
+      "owner": -1,
+      "sourceCategory": "Appetizers",
+      "sourceName": "Eggplant Appetizer",
+      "sourcePortion": "100 / 20 g"
+    },
+    {
+      "id": "starters-romanian-appetizer-7a466f44",
+      "name": "Romanian Appetizer · 100 / 20 g",
+      "category": "Starters",
+      "description": "A rustic aubergine and pepper spread with tomato, garlic and parsley.",
+      "allergens": [],
+      "dietaryLabels": [],
+      "price": 300,
+      "image": "starter",
+      "owner": -1,
+      "sourceCategory": "Appetizers",
+      "sourceName": "Romanian Appetizer",
+      "sourcePortion": "100 / 20 g"
+    },
+    {
+      "id": "salads-warm-beef-salad-3d001a6b",
+      "name": "Warm Beef Salad · 320 g",
+      "category": "Salads",
+      "description": "Warm beef and mushrooms over crisp leaves with broccoli, peppers and a sesame dressing.",
+      "allergens": [
+        "egg",
+        "sesame",
+        "mustard"
+      ],
+      "dietaryLabels": [],
+      "price": 800,
+      "image": "salad",
+      "owner": -1,
+      "sourceCategory": "Salads",
+      "sourceName": "Warm Beef Salad",
+      "sourcePortion": "320 g"
+    },
+    {
+      "id": "salads-caesar-salad-with-chicken-c1926cbd",
+      "name": "Caesar Salad with Chicken · 300 g",
+      "category": "Salads",
+      "description": "Chicken and crunchy leaves with Parmesan, egg, croutons and Caesar dressing.",
+      "allergens": [
+        "wheat",
+        "milk",
+        "egg",
+        "fish",
+        "mustard"
+      ],
+      "dietaryLabels": [],
+      "price": 600,
+      "image": "salad",
+      "owner": -1,
+      "sourceCategory": "Salads",
+      "sourceName": "Caesar Salad with Chicken",
+      "sourcePortion": "300 g"
+    },
+    {
+      "id": "salads-caesar-salad-with-shrimp-32294e79",
+      "name": "Caesar Salad with Shrimp · 290 g",
+      "category": "Salads",
+      "description": "Shrimp Caesar with crisp lettuce, croutons, Parmesan and egg.",
+      "allergens": [
+        "wheat",
+        "milk",
+        "egg",
+        "fish",
+        "crustaceans",
+        "mustard"
+      ],
+      "dietaryLabels": [],
+      "price": 700,
+      "image": "salad",
+      "owner": -1,
+      "sourceCategory": "Salads",
+      "sourceName": "Caesar Salad with Shrimp",
+      "sourcePortion": "290 g"
+    },
+    {
+      "id": "salads-caesar-salad-with-baked-salmon-e8dd9765",
+      "name": "Caesar Salad with baked salmon · 290 g",
+      "category": "Salads",
+      "description": "Baked salmon on Caesar leaves with quail eggs and Parmesan croutons.",
+      "allergens": [
+        "wheat",
+        "milk",
+        "egg",
+        "fish",
+        "mustard"
+      ],
+      "dietaryLabels": [],
+      "price": 750,
+      "image": "salad",
+      "owner": -1,
+      "sourceCategory": "Salads",
+      "sourceName": "Caesar Salad with baked salmon",
+      "sourcePortion": "290 g"
+    },
+    {
+      "id": "salads-caesar-salad-with-lightly-salted-salmon-ef3784df",
+      "name": "Caesar Salad with lightly salted salmon · 280 g",
+      "category": "Salads",
+      "description": "Lightly salted salmon with Caesar leaves, quail eggs and crunchy croutons.",
+      "allergens": [
+        "wheat",
+        "milk",
+        "egg",
+        "fish",
+        "mustard"
+      ],
+      "dietaryLabels": [],
+      "price": 750,
+      "image": "salad",
+      "owner": -1,
+      "sourceCategory": "Salads",
+      "sourceName": "Caesar Salad with lightly salted salmon",
+      "sourcePortion": "280 g"
+    },
+    {
+      "id": "salads-tuna-salad-792876f4",
+      "name": "Tuna Salad · 350 g",
+      "category": "Salads",
+      "description": "Tuna, potatoes, broccoli and egg with olives and a lemon dressing.",
+      "allergens": [
+        "egg",
+        "fish"
+      ],
+      "dietaryLabels": [],
+      "price": 750,
+      "image": "salad",
+      "owner": -1,
+      "sourceCategory": "Salads",
+      "sourceName": "Tuna Salad",
+      "sourcePortion": "350 g"
+    },
+    {
+      "id": "soups-red-borscht-7e302632",
+      "name": "Red Borscht · 370/50/30/30/15 g",
+      "category": "Soups",
+      "description": "Beetroot and vegetable broth with pork ribs, sour cream and bread.",
+      "allergens": [
+        "wheat",
+        "milk"
+      ],
+      "dietaryLabels": [],
+      "price": 400,
+      "image": "soup",
+      "owner": -1,
+      "sourceCategory": "Soups",
+      "sourceName": "Red Borscht",
+      "sourcePortion": "370/50/30/30/15 g"
+    },
+    {
+      "id": "soups-zama-traditional-chicken-soup-28a9ec0d",
+      "name": "Zama (Traditional Chicken Soup) · 350 / 30 / 50 / 10 g",
+      "category": "Soups",
+      "description": "A traditional chicken and noodle broth with herbs, a little sourness and bread.",
+      "allergens": [
+        "wheat",
+        "milk"
+      ],
+      "dietaryLabels": [],
+      "price": 400,
+      "image": "soup",
+      "owner": -1,
+      "sourceCategory": "Soups",
+      "sourceName": "Zama (Traditional Chicken Soup)",
+      "sourcePortion": "350 / 30 / 50 / 10 g"
+    },
+    {
+      "id": "soups-chicken-cream-soup-f7ff88a5",
+      "name": "Chicken Cream Soup · 300/130 g",
+      "category": "Soups",
+      "description": "Creamy chicken and mushroom soup, served with a bread roll.",
+      "allergens": [
+        "wheat",
+        "milk"
+      ],
+      "dietaryLabels": [],
+      "price": 400,
+      "image": "soup",
+      "owner": -1,
+      "sourceCategory": "Soups",
+      "sourceName": "Chicken Cream Soup",
+      "sourcePortion": "300/130 g"
+    },
+    {
+      "id": "soups-spinach-cream-soup-5101d347",
+      "name": "Spinach Cream Soup · 340 / 25 g",
+      "category": "Soups",
+      "description": "Smooth spinach soup with cream, Parmesan and crunchy croutons.",
+      "allergens": [
+        "wheat",
+        "milk",
+        "celery"
+      ],
+      "dietaryLabels": [],
+      "price": 400,
+      "image": "soup",
+      "owner": -1,
+      "sourceCategory": "Soups",
+      "sourceName": "Spinach Cream Soup",
+      "sourcePortion": "340 / 25 g"
+    },
+    {
+      "id": "soups-mexican-soup-320e2f53",
+      "name": "Mexican Soup · 350 / 40 / 10 g",
+      "category": "Soups",
+      "description": "A warming beef, bean and corn soup with chilli and nachos.",
+      "allergens": [],
+      "dietaryLabels": [],
+      "price": 450,
+      "image": "soup",
+      "owner": -1,
+      "sourceCategory": "Soups",
+      "sourceName": "Mexican Soup",
+      "sourcePortion": "350 / 40 / 10 g"
+    },
+    {
+      "id": "pizza-pizza-mortadella-pistachio-b97da062",
+      "name": "Mortadella and pistachio pizza · 480 g",
+      "category": "Pizza",
+      "description": "A creamy pizza with mortadella, pistachios, Parmesan and a touch of truffle.",
+      "allergens": [
+        "wheat",
+        "milk",
+        "tree nuts"
+      ],
+      "dietaryLabels": [],
+      "price": 750,
+      "image": "garden-pizza",
+      "owner": -1,
+      "sourceCategory": "Pizza",
+      "sourceName": "Pizza Mortadella&Pistachio",
+      "sourcePortion": "480 g"
+    },
+    {
+      "id": "pizza-pizza-funghi-efbb448c",
+      "name": "Chicken and mushroom pizza · 580 g",
+      "category": "Pizza",
+      "description": "Chicken and mushrooms on a creamy pizza base with Parmesan and truffle salsa.",
+      "allergens": [
+        "wheat",
+        "milk"
+      ],
+      "dietaryLabels": [],
+      "price": 750,
+      "image": "garden-pizza",
+      "owner": -1,
+      "sourceCategory": "Pizza",
+      "sourceName": "Pizza Funghi",
+      "sourcePortion": "580 g"
+    },
+    {
+      "id": "pizza-pizza-salsicia-c573e890",
+      "name": "Sausage and mushroom pizza · 470 g",
+      "category": "Pizza",
+      "description": "Pork and chicken sausage pizza with mushrooms, pancetta and creamy truffle sauce.",
+      "allergens": [
+        "wheat",
+        "milk"
+      ],
+      "dietaryLabels": [],
+      "price": 750,
+      "image": "pepperoni",
+      "owner": -1,
+      "sourceCategory": "Pizza",
+      "sourceName": "Pizza Salsicia",
+      "sourcePortion": "470 g"
+    },
+    {
+      "id": "pizza-barbeque-pizza-635857c5",
+      "name": "Barbecue pizza · 560 g",
+      "category": "Pizza",
+      "description": "A smoky pizza with chicken, bacon, salami and sweet peppers.",
+      "allergens": [
+        "wheat",
+        "milk"
+      ],
+      "dietaryLabels": [],
+      "price": 750,
+      "image": "pepperoni",
+      "owner": -1,
+      "sourceCategory": "Pizza",
+      "sourceName": "BARBEQUE Pizza",
+      "sourcePortion": "560 g"
+    },
+    {
+      "id": "pizza-bianca-pizza-5592d640",
+      "name": "Bianca Pizza · 550 g",
+      "category": "Pizza",
+      "description": "White pizza with ham, mushrooms, mozzarella and Parmesan.",
+      "allergens": [
+        "wheat",
+        "milk"
+      ],
+      "dietaryLabels": [],
+      "price": 750,
+      "image": "garden-pizza",
+      "owner": -1,
+      "sourceCategory": "Pizza",
+      "sourceName": "Bianca Pizza",
+      "sourcePortion": "550 g"
+    },
+    {
+      "id": "pizza-margherita-pizza-1ca9766d",
+      "name": "Margherita Pizza · 380 g",
+      "category": "Pizza",
+      "description": "A classic tomato pizza with mozzarella, basil and olive oil.",
+      "allergens": [
+        "wheat",
+        "milk"
+      ],
+      "dietaryLabels": [],
+      "price": 500,
+      "image": "margherita",
+      "owner": -1,
+      "sourceCategory": "Pizza",
+      "sourceName": "Margherita Pizza",
+      "sourcePortion": "380 g"
+    },
+    {
+      "id": "pizza-neapolitana-pizza-965840eb",
+      "name": "Neapolitana Pizza · 510 g",
+      "category": "Pizza",
+      "description": "Tomato pizza topped with ham, mushrooms, olives and cheese.",
+      "allergens": [
+        "wheat",
+        "milk"
+      ],
+      "dietaryLabels": [],
+      "price": 700,
+      "image": "pepperoni",
+      "owner": -1,
+      "sourceCategory": "Pizza",
+      "sourceName": "Neapolitana Pizza",
+      "sourcePortion": "510 g"
+    },
+    {
+      "id": "pizza-pepperoni-pizza-340abc3e",
+      "name": "Pepperoni Pizza · 475 g",
+      "category": "Pizza",
+      "description": "A tomato and cheese pizza with slices of seasoned salami.",
+      "allergens": [
+        "wheat",
+        "milk"
+      ],
+      "dietaryLabels": [],
+      "price": 700,
+      "image": "pepperoni",
+      "owner": -1,
+      "sourceCategory": "Pizza",
+      "sourceName": "Pepperoni Pizza",
+      "sourcePortion": "475 g"
+    },
+    {
+      "id": "pizza-pizza-5-cheeses-8ff5b227",
+      "name": "Five cheese pizza · 420 g",
+      "category": "Pizza",
+      "description": "A rich cheese pizza with mozzarella, Brie, blue cheese and Parmesan.",
+      "allergens": [
+        "wheat",
+        "milk"
+      ],
+      "dietaryLabels": [],
+      "price": 700,
+      "image": "garden-pizza",
+      "owner": -1,
+      "sourceCategory": "Pizza",
+      "sourceName": "Pizza 5 Cheeses",
+      "sourcePortion": "420 g"
+    },
+    {
+      "id": "pizza-pizza-capricioasa-88b04b83",
+      "name": "Pizza Capricioasa · 600 g",
+      "category": "Pizza",
+      "description": "Ham, aubergine and mushroom pizza with feta and a creamy garlic finish.",
+      "allergens": [
+        "wheat",
+        "milk",
+        "egg",
+        "mustard"
+      ],
+      "dietaryLabels": [],
+      "price": 700,
+      "image": "pepperoni",
+      "owner": -1,
+      "sourceCategory": "Pizza",
+      "sourceName": "Pizza Capricioasa",
+      "sourcePortion": "600 g"
+    },
+    {
+      "id": "pasta-pasta-carbonara-cd0018f7",
+      "name": "Pasta Carbonara · 270 g",
+      "category": "Pasta",
+      "description": "Spaghetti with bacon, Parmesan and an egg sauce.",
+      "allergens": [
+        "wheat",
+        "milk",
+        "egg"
+      ],
+      "dietaryLabels": [],
+      "price": 650,
+      "image": "pasta",
+      "owner": -1,
+      "sourceCategory": "Pasta",
+      "sourceName": "Pasta Carbonara",
+      "sourcePortion": "270 g"
+    },
+    {
+      "id": "pasta-pasta-pollo-5089b013",
+      "name": "Pasta Pollo · 350 g",
+      "category": "Pasta",
+      "description": "Chicken and mushroom tagliatelle with cream, Parmesan and truffle.",
+      "allergens": [
+        "wheat",
+        "milk",
+        "egg"
+      ],
+      "dietaryLabels": [],
+      "price": 650,
+      "image": "pasta",
+      "owner": -1,
+      "sourceCategory": "Pasta",
+      "sourceName": "Pasta Pollo",
+      "sourcePortion": "350 g"
+    },
+    {
+      "id": "pasta-shrimp-pasta-5ff5e410",
+      "name": "Shrimp Pasta · 320 g",
+      "category": "Pasta",
+      "description": "Spaghetti with shrimp, vegetables and a creamy Parmesan sauce.",
+      "allergens": [
+        "wheat",
+        "milk",
+        "crustaceans"
+      ],
+      "dietaryLabels": [],
+      "price": 700,
+      "image": "pasta",
+      "owner": -1,
+      "sourceCategory": "Pasta",
+      "sourceName": "Shrimp Pasta",
+      "sourcePortion": "320 g"
+    },
+    {
+      "id": "pasta-chicken-lasagna-d4945211",
+      "name": "Chicken Lasagna · 450 g",
+      "category": "Pasta",
+      "description": "Layers of pasta, chicken and mushrooms with bechamel and melted cheese.",
+      "allergens": [
+        "wheat",
+        "milk",
+        "egg",
+        "celery"
+      ],
+      "dietaryLabels": [],
+      "price": 750,
+      "image": "pasta",
+      "owner": -1,
+      "sourceCategory": "Pasta",
+      "sourceName": "Chicken Lasagna",
+      "sourcePortion": "450 g"
+    },
+    {
+      "id": "mains-fritto-misto-8a26e05b",
+      "name": "Fritto misto · 290/50/40 g",
+      "category": "Mains",
+      "description": "A crisp seafood selection with shrimp, calamari, mussels and vegetables.",
+      "allergens": [
+        "wheat",
+        "egg",
+        "crustaceans",
+        "molluscs",
+        "soy",
+        "mustard"
+      ],
+      "dietaryLabels": [],
+      "price": 900,
+      "image": "grilled-fish",
+      "owner": -1,
+      "sourceCategory": "Main Dishes",
+      "sourceName": "Fritto misto",
+      "sourcePortion": "290/50/40 g"
+    },
+    {
+      "id": "mains-salmon-steak-with-mashed-potatoes-3c0a9c54",
+      "name": "Salmon steak with mashed potatoes · 140/200/60/50/40/30 g",
+      "category": "Mains",
+      "description": "Salmon steak with buttery mash, broccoli and lemon sauce.",
+      "allergens": [
+        "milk",
+        "egg",
+        "fish",
+        "mustard"
+      ],
+      "dietaryLabels": [],
+      "price": 1350,
+      "image": "grilled-fish",
+      "owner": -1,
+      "sourceCategory": "Main Dishes",
+      "sourceName": "Salmon steak with mashed potatoes",
+      "sourcePortion": "140/200/60/50/40/30 g"
+    },
+    {
+      "id": "mains-chicken-breast-with-potato-gratin-4b7f9bb3",
+      "name": "Chicken breast with potato gratin · 160/140/80/50 g",
+      "category": "Mains",
+      "description": "Chicken steak, creamy potato gratin and fresh salad with tartar sauce.",
+      "allergens": [
+        "milk",
+        "egg",
+        "celery",
+        "mustard"
+      ],
+      "dietaryLabels": [],
+      "price": 800,
+      "image": "roast-chicken",
+      "owner": -1,
+      "sourceCategory": "Main Dishes",
+      "sourceName": "Chicken breast with potato gratin",
+      "sourcePortion": "160/140/80/50 g"
+    },
+    {
+      "id": "mains-pork-in-chili-sauce-with-rice-a171b3b1",
+      "name": "Pork in chili sauce with rice · 250/160 g",
+      "category": "Mains",
+      "description": "Sweet chilli pork with colourful vegetables, egg and rice.",
+      "allergens": [
+        "egg",
+        "soy"
+      ],
+      "dietaryLabels": [],
+      "price": 750,
+      "image": "meat-platter",
+      "owner": -1,
+      "sourceCategory": "Main Dishes",
+      "sourceName": "Pork in chili sauce with rice",
+      "sourcePortion": "250/160 g"
+    },
+    {
+      "id": "mains-chicken-skewer-aef47c9d",
+      "name": "Chicken skewers · 200/80/80/50/50 g",
+      "category": "Mains",
+      "description": "Chicken thigh skewers with peppers, flatbread, pickled onion and dipping sauces.",
+      "allergens": [
+        "wheat",
+        "egg",
+        "celery",
+        "mustard"
+      ],
+      "dietaryLabels": [],
+      "price": 750,
+      "image": "roast-chicken",
+      "owner": -1,
+      "sourceCategory": "Main Dishes",
+      "sourceName": "CHICKEN SKEWER",
+      "sourcePortion": "200/80/80/50/50 g"
+    },
+    {
+      "id": "mains-french-style-meat-1637fc25",
+      "name": "French-style meat",
+      "category": "Mains",
+      "description": "A pork chop topped with mushrooms, bacon and cheese, served with fresh salad.",
+      "allergens": [
+        "milk",
+        "egg",
+        "celery",
+        "mustard"
+      ],
+      "dietaryLabels": [],
+      "price": 850,
+      "image": "meat-platter",
+      "owner": -1,
+      "sourceCategory": "Main Dishes",
+      "sourceName": "French-style meat",
+      "sourcePortion": ""
+    },
+    {
+      "id": "mains-chicken-gyros-3254de57",
+      "name": "Chicken Gyros · 140/100/100/80/50 g",
+      "category": "Mains",
+      "description": "Seasoned chicken with pita, fries, salad and sheep cheese.",
+      "allergens": [
+        "wheat",
+        "milk",
+        "egg",
+        "mustard"
+      ],
+      "dietaryLabels": [],
+      "price": 750,
+      "image": "roast-chicken",
+      "owner": -1,
+      "sourceCategory": "Main Dishes",
+      "sourceName": "Chicken Gyros",
+      "sourcePortion": "140/100/100/80/50 g"
+    },
+    {
+      "id": "mains-chicken-meatballs-with-mashed-potatoes-5378dab0",
+      "name": "Chicken Meatballs with Mashed Potatoes · 250/220g",
+      "category": "Mains",
+      "description": "Chicken meatballs in a tomato cream sauce beside buttery mashed potatoes.",
+      "allergens": [
+        "milk"
+      ],
+      "dietaryLabels": [],
+      "price": 600,
+      "image": "roast-chicken",
+      "owner": -1,
+      "sourceCategory": "Main Dishes",
+      "sourceName": "Chicken Meatballs with Mashed Potatoes",
+      "sourcePortion": "250/220g"
+    },
+    {
+      "id": "mains-beef-stroganoff-99b0a5ef",
+      "name": "Beef Stroganoff",
+      "category": "Mains",
+      "description": "Tender beef and mushrooms in a creamy sauce, served with mash and pickles.",
+      "allergens": [
+        "wheat",
+        "milk",
+        "soy",
+        "sulphites"
+      ],
+      "dietaryLabels": [],
+      "price": 900,
+      "image": "meat-platter",
+      "owner": -1,
+      "sourceCategory": "Main Dishes",
+      "sourceName": "Beef Stroganoff",
+      "sourcePortion": ""
+    },
+    {
+      "id": "mains-chicken-fricassee-fa6d7a3c",
+      "name": "Chicken Fricassee · 360/70/50 g",
+      "category": "Mains",
+      "description": "Chicken thigh in mushroom cream, with pickled cucumber on the side.",
+      "allergens": [
+        "milk"
+      ],
+      "dietaryLabels": [],
+      "price": 750,
+      "image": "roast-chicken",
+      "owner": -1,
+      "sourceCategory": "Main Dishes",
+      "sourceName": "Chicken Fricassee",
+      "sourcePortion": "360/70/50 g"
+    },
+    {
+      "id": "mains-shrimp-in-cream-sauce-f4af542c",
+      "name": "Shrimp in Cream Sauce · 200/50",
+      "category": "Mains",
+      "description": "Garlic shrimp in wine cream with warm ciabatta and lemon.",
+      "allergens": [
+        "wheat",
+        "milk",
+        "crustaceans",
+        "sulphites"
+      ],
+      "dietaryLabels": [],
+      "price": 900,
+      "image": "grilled-fish",
+      "owner": -1,
+      "sourceCategory": "Main Dishes",
+      "sourceName": "Shrimp in Cream Sauce",
+      "sourcePortion": "200/50"
+    },
+    {
+      "id": "mains-crepes-with-ham-and-cheese-f1862aa8",
+      "name": "Crepes with ham and cheese · 320 g",
+      "category": "Mains",
+      "description": "Warm crepes with ham, cheese sauce and a spoonful of pesto.",
+      "allergens": [
+        "wheat",
+        "milk",
+        "egg",
+        "tree nuts"
+      ],
+      "dietaryLabels": [],
+      "price": 650,
+      "image": "crepes",
+      "owner": -1,
+      "sourceCategory": "Main Dishes",
+      "sourceName": "Crepes with ham and cheese",
+      "sourcePortion": "320 g"
+    },
+    {
+      "id": "mains-pancakes-with-chicken-mushroom-sauce-cb73c3ee",
+      "name": "Pancakes with Chicken & Mushroom Sauce · 380 g — Mains",
+      "category": "Mains",
+      "description": "Savoury pancakes filled with chicken, finished with creamy mushrooms and Edam.",
+      "allergens": [
+        "wheat",
+        "milk",
+        "egg"
+      ],
+      "dietaryLabels": [],
+      "price": 650,
+      "image": "crepes",
+      "owner": -1,
+      "sourceCategory": "Main Dishes",
+      "sourceName": "Pancakes with Chicken & Mushroom Sauce",
+      "sourcePortion": "380 g"
+    },
+    {
+      "id": "mains-crepes-with-salted-salmon-98ed0790",
+      "name": "Crepes with salted salmon · 230/25 g — Mains",
+      "category": "Mains",
+      "description": "Light crepes with salmon, cucumber cheese filling and lemon.",
+      "allergens": [
+        "wheat",
+        "milk",
+        "egg",
+        "fish"
+      ],
+      "dietaryLabels": [],
+      "price": 700,
+      "image": "crepes",
+      "owner": -1,
+      "sourceCategory": "Main Dishes",
+      "sourceName": "Crepes with salted salmon",
+      "sourcePortion": "230/25 g"
+    },
+    {
+      "id": "mains-pancakes-with-sweet-cheese-and-sauce-a11b007d",
+      "name": "Pancakes with sweet cheese and sauce · 220 g",
+      "category": "Mains",
+      "description": "Sweet cheese crepes with raisins, berries and whipped cream.",
+      "allergens": [
+        "wheat",
+        "milk",
+        "egg"
+      ],
+      "dietaryLabels": [],
+      "price": 500,
+      "image": "crepes",
+      "owner": -1,
+      "sourceCategory": "Main Dishes",
+      "sourceName": "Pancakes with sweet cheese and sauce",
+      "sourcePortion": "220 g"
+    },
+    {
+      "id": "mains-chicken-wrap-06990921",
+      "name": "Chicken Wrap · 400/80/50 g",
+      "category": "Mains",
+      "description": "A chicken and cheddar wrap with fresh salad, fries and Greek-style sauce.",
+      "allergens": [
+        "wheat",
+        "milk"
+      ],
+      "dietaryLabels": [],
+      "price": 650,
+      "image": "roast-chicken",
+      "owner": -1,
+      "sourceCategory": "Main Dishes",
+      "sourceName": "Chicken Wrap",
+      "sourcePortion": "400/80/50 g"
+    },
+    {
+      "id": "mains-beef-wrap-55348398",
+      "name": "Beef Wrap · 350/80/50 g",
+      "category": "Mains",
+      "description": "A beef and cheddar wrap with beans, corn, peppers and fries.",
+      "allergens": [
+        "wheat",
+        "milk"
+      ],
+      "dietaryLabels": [],
+      "price": 700,
+      "image": "meat-platter",
+      "owner": -1,
+      "sourceCategory": "Main Dishes",
+      "sourceName": "Beef Wrap",
+      "sourcePortion": "350/80/50 g"
+    },
+    {
+      "id": "mains-wrap-veggie-falafel-fc5931db",
+      "name": "Falafel wrap · 380/80/100 g",
+      "category": "Mains",
+      "description": "Falafel and salad in a tortilla, with guacamole, creamy sauce and fries.",
+      "allergens": [
+        "wheat",
+        "egg",
+        "mustard"
+      ],
+      "dietaryLabels": [],
+      "price": 600,
+      "image": "meat-platter",
+      "owner": -1,
+      "sourceCategory": "Main Dishes",
+      "sourceName": "Wrap Veggie falafel",
+      "sourcePortion": "380/80/100 g"
+    },
+    {
+      "id": "mains-crispy-chicken-schnitzel-1ebbdfc0",
+      "name": "Crispy chicken schnitzel · 250/80/65/50/40 g",
+      "category": "Mains",
+      "description": "Breaded chicken schnitzel with fries, fresh salad and a squeeze of lemon.",
+      "allergens": [
+        "wheat",
+        "egg"
+      ],
+      "dietaryLabels": [],
+      "price": 700,
+      "image": "crispy-chicken",
+      "owner": -1,
+      "sourceCategory": "Main Dishes",
+      "sourceName": "Crispy chicken schnitzel",
+      "sourcePortion": "250/80/65/50/40 g"
+    },
+    {
+      "id": "mains-beef-burger-bd86eb96",
+      "name": "Beef Burger · 300 / 100 / 50 g",
+      "category": "Mains",
+      "description": "A beef burger with cheese, pickles and onion, served with a potato side.",
+      "allergens": [
+        "wheat",
+        "milk"
+      ],
+      "dietaryLabels": [],
+      "price": 700,
+      "image": "burger",
+      "owner": -1,
+      "sourceCategory": "Main Dishes",
+      "sourceName": "Beef Burger",
+      "sourcePortion": "300 / 100 / 50 g"
+    },
+    {
+      "id": "mains-chicken-burger-bde61e8f",
+      "name": "Chicken Burger · 260 / 100 / 50 g",
+      "category": "Mains",
+      "description": "A crisp chicken burger with tomato, pickles and a potato side.",
+      "allergens": [
+        "wheat",
+        "milk",
+        "egg"
+      ],
+      "dietaryLabels": [],
+      "price": 650,
+      "image": "burger",
+      "owner": -1,
+      "sourceCategory": "Main Dishes",
+      "sourceName": "Chicken Burger",
+      "sourcePortion": "260 / 100 / 50 g"
+    },
+    {
+      "id": "mains-cheeseburger-1444371f",
+      "name": "Cheeseburger · 330/100/50 g",
+      "category": "Mains",
+      "description": "A beef burger with bacon, cheese sauce and caramelised onion, plus fries.",
+      "allergens": [
+        "wheat",
+        "milk"
+      ],
+      "dietaryLabels": [],
+      "price": 800,
+      "image": "burger",
+      "owner": -1,
+      "sourceCategory": "Main Dishes",
+      "sourceName": "Cheeseburger",
+      "sourcePortion": "330/100/50 g"
+    },
+    {
+      "id": "mains-breaded-chicken-breast-82bcb0da",
+      "name": "Breaded Chicken Breast · 160 / 130 / 50 g",
+      "category": "Mains",
+      "description": "Crisp chicken breast with fries and a choice of ketchup or spicy sauce.",
+      "allergens": [
+        "wheat",
+        "egg"
+      ],
+      "dietaryLabels": [],
+      "price": 600,
+      "image": "crispy-chicken",
+      "owner": -1,
+      "sourceCategory": "Main Dishes",
+      "sourceName": "Breaded Chicken Breast",
+      "sourcePortion": "160 / 130 / 50 g"
+    },
+    {
+      "id": "mains-glazed-chicken-wings-401c3889",
+      "name": "Glazed Chicken Wings · 220 / 130 / 50 g",
+      "category": "Mains",
+      "description": "Glazed chicken wings served with golden fries.",
+      "allergens": [],
+      "dietaryLabels": [],
+      "price": 600,
+      "image": "roast-chicken",
+      "owner": -1,
+      "sourceCategory": "Main Dishes",
+      "sourceName": "Glazed Chicken Wings",
+      "sourcePortion": "220 / 130 / 50 g"
+    },
+    {
+      "id": "kids-soup-with-meatballs-7bbc5b5f",
+      "name": "Soup with Meatballs · 250 g",
+      "category": "Kids",
+      "description": "A smaller bowl of vegetable broth with chicken meatballs and herbs.",
+      "allergens": [
+        "milk"
+      ],
+      "dietaryLabels": [],
+      "price": 250,
+      "image": "soup",
+      "owner": -1,
+      "sourceCategory": "Kids Menu",
+      "sourceName": "Soup with Meatballs",
+      "sourcePortion": "250 g"
+    },
+    {
+      "id": "kids-cheesy-pasta-nuggets-a8214333",
+      "name": "Cheesy pasta with nuggets · 230 g",
+      "category": "Kids",
+      "description": "Creamy cheese pasta with little chicken nuggets and parsley.",
+      "allergens": [
+        "wheat",
+        "milk",
+        "egg"
+      ],
+      "dietaryLabels": [],
+      "price": 350,
+      "image": "pasta",
+      "owner": -1,
+      "sourceCategory": "Kids Menu",
+      "sourceName": "Cheesy pasta nuggets",
+      "sourcePortion": "230 g"
+    },
+    {
+      "id": "kids-mashed-potatoes-with-meatballs-f4de4cc3",
+      "name": "Mashed Potatoes with Meatballs · 150 / 80 / 25 g",
+      "category": "Kids",
+      "description": "A child-sized helping of chicken meatballs and mash with cucumber.",
+      "allergens": [
+        "milk"
+      ],
+      "dietaryLabels": [],
+      "price": 350,
+      "image": "meat-platter",
+      "owner": -1,
+      "sourceCategory": "Kids Menu",
+      "sourceName": "Mashed Potatoes with Meatballs",
+      "sourcePortion": "150 / 80 / 25 g"
+    },
+    {
+      "id": "kids-chicken-shashlik-600ba8cc",
+      "name": "Chicken skewers · 120/70/40 g",
+      "category": "Kids",
+      "description": "Chicken skewers with mashed potatoes, pepper and cucumber.",
+      "allergens": [
+        "milk"
+      ],
+      "dietaryLabels": [],
+      "price": 350,
+      "image": "roast-chicken",
+      "owner": -1,
+      "sourceCategory": "Kids Menu",
+      "sourceName": "Chicken shashlik",
+      "sourcePortion": "120/70/40 g"
+    },
+    {
+      "id": "kids-smiley-potatoes-6c30768f",
+      "name": "Smiley Potatoes · 90 / 50 g",
+      "category": "Kids",
+      "description": "Crisp smile-shaped potatoes with a pot of ketchup.",
+      "allergens": [],
+      "dietaryLabels": [],
+      "price": 200,
+      "image": "meat-platter",
+      "owner": -1,
+      "sourceCategory": "Kids Menu",
+      "sourceName": "Smiley Potatoes",
+      "sourcePortion": "90 / 50 g"
+    },
+    {
+      "id": "kids-mini-nuggets-with-potato-emoticons-58706a55",
+      "name": "Mini nuggets with potato smiles · 100/90/50 g",
+      "category": "Kids",
+      "description": "Little chicken nuggets with smile-shaped potatoes and ketchup.",
+      "allergens": [
+        "wheat",
+        "egg"
+      ],
+      "dietaryLabels": [],
+      "price": 350,
+      "image": "crispy-chicken",
+      "owner": -1,
+      "sourceCategory": "Kids Menu",
+      "sourceName": "Mini nuggets with potato emoticons",
+      "sourcePortion": "100/90/50 g"
+    },
+    {
+      "id": "kids-mini-burger-a87e1b8c",
+      "name": "Mini Burger · 120 / 65 / 50 g",
+      "category": "Kids",
+      "description": "A small chicken cheeseburger with cucumber and smile-shaped potatoes.",
+      "allergens": [
+        "wheat",
+        "milk"
+      ],
+      "dietaryLabels": [],
+      "price": 350,
+      "image": "burger",
+      "owner": -1,
+      "sourceCategory": "Kids Menu",
+      "sourceName": "Mini Burger",
+      "sourcePortion": "120 / 65 / 50 g"
+    },
+    {
+      "id": "kids-mini-pizza-33123db7",
+      "name": "Mini pizza · 300 g",
+      "category": "Kids",
+      "description": "A little pizza with ham, cheese, tomato, peppers and corn.",
+      "allergens": [
+        "wheat",
+        "milk"
+      ],
+      "dietaryLabels": [],
+      "price": 350,
+      "image": "margherita",
+      "owner": -1,
+      "sourceCategory": "Kids Menu",
+      "sourceName": "Mini pizza",
+      "sourcePortion": "300 g"
+    },
+    {
+      "id": "lunch-baked-chicken-steak-with-buckwheat-and-mushrooms-fc3e8ba8",
+      "name": "Baked Chicken Steak with Buckwheat and Mushrooms",
+      "category": "Lunch",
+      "description": "Baked chicken with mozzarella and pesto, served with mushroom buckwheat.",
+      "allergens": [
+        "wheat",
+        "milk",
+        "tree nuts"
+      ],
+      "dietaryLabels": [],
+      "price": 750,
+      "image": "roast-chicken",
+      "owner": -1,
+      "sourceCategory": "Lunch-Box",
+      "sourceName": "Baked Chicken Steak with Buckwheat and Mushrooms",
+      "sourcePortion": ""
+    },
+    {
+      "id": "lunch-chicken-meatballs-in-curry-sauce-with-rice-6464d308",
+      "name": "Chicken Meatballs in Curry Sauce with Rice",
+      "category": "Lunch",
+      "description": "Chicken meatballs in a gentle curry sauce, served over rice.",
+      "allergens": [
+        "milk"
+      ],
+      "dietaryLabels": [],
+      "price": 750,
+      "image": "roast-chicken",
+      "owner": -1,
+      "sourceCategory": "Lunch-Box",
+      "sourceName": "Chicken Meatballs in Curry Sauce with Rice",
+      "sourcePortion": ""
+    },
+    {
+      "id": "lunch-chicken-schnitzel-with-mashed-potatoes-0dc0302e",
+      "name": "Chicken Schnitzel with Mashed Potatoes",
+      "category": "Lunch",
+      "description": "Crisp chicken with creamy mash, salad leaves and cherry tomatoes.",
+      "allergens": [
+        "wheat",
+        "egg",
+        "milk"
+      ],
+      "dietaryLabels": [],
+      "price": 750,
+      "image": "crispy-chicken",
+      "owner": -1,
+      "sourceCategory": "Lunch-Box",
+      "sourceName": "Chicken Schnitzel with Mashed Potatoes",
+      "sourcePortion": ""
+    },
+    {
+      "id": "lunch-ravioli-with-ricotta-and-shrimp-569112c2",
+      "name": "Ravioli with Ricotta and Shrimp",
+      "category": "Lunch",
+      "description": "Ricotta ravioli with shrimp, pesto and a Parmesan cream sauce.",
+      "allergens": [
+        "wheat",
+        "milk",
+        "egg",
+        "crustaceans",
+        "tree nuts"
+      ],
+      "dietaryLabels": [],
+      "price": 950,
+      "image": "pasta",
+      "owner": -1,
+      "sourceCategory": "Lunch-Box",
+      "sourceName": "Ravioli with Ricotta and Shrimp",
+      "sourcePortion": ""
+    },
+    {
+      "id": "lunch-sea-bream-fillet-with-bulgur-and-quinoa-aa5ec283",
+      "name": "Sea Bream Fillet with Bulgur and Quinoa",
+      "category": "Lunch",
+      "description": "Sea bream fillet with mixed grains and a fresh vegetable salsa.",
+      "allergens": [
+        "wheat",
+        "fish"
+      ],
+      "dietaryLabels": [],
+      "price": 1050,
+      "image": "grilled-fish",
+      "owner": -1,
+      "sourceCategory": "Lunch-Box",
+      "sourceName": "Sea Bream Fillet with Bulgur and Quinoa",
+      "sourcePortion": ""
+    },
+    {
+      "id": "sharing-platters-crispy-schnitzel-for-sharing-a4b83419",
+      "name": "Crispy schnitzel for sharing · 440/100/60/60/50/50 g",
+      "category": "Sharing platters",
+      "description": "A generous chicken schnitzel platter with sheep cheese, vegetables and tartar sauce.",
+      "allergens": [
+        "wheat",
+        "milk",
+        "egg",
+        "mustard"
+      ],
+      "dietaryLabels": [],
+      "price": 1200,
+      "image": "crispy-chicken",
+      "owner": -1,
+      "sourceCategory": "Banquet menu",
+      "sourceName": "Crispy schnitzel for sharing",
+      "sourcePortion": "440/100/60/60/50/50 g"
+    },
+    {
+      "id": "sharing-platters-french-style-meat-for-sharing-1d613c38",
+      "name": "French-style meat for sharing · 1000/340/100/80/80 g",
+      "category": "Sharing platters",
+      "description": "A sharing platter of pork, mushrooms and cheese with garlic potatoes and pickles.",
+      "allergens": [
+        "milk",
+        "egg",
+        "mustard"
+      ],
+      "dietaryLabels": [],
+      "price": 2450,
+      "image": "meat-platter",
+      "owner": -1,
+      "sourceCategory": "Banquet menu",
+      "sourceName": "French-style meat for sharing",
+      "sourcePortion": "1000/340/100/80/80 g"
+    },
+    {
+      "id": "sharing-platters-mixed-skewers-for-sharing-9060cec6",
+      "name": "Mixed skewers for sharing · 420/100/90/80/80/80/50/50 g",
+      "category": "Sharing platters",
+      "description": "Chicken skewers for the table, with flatbread, olives, vegetables and sauces.",
+      "allergens": [
+        "wheat",
+        "egg",
+        "mustard"
+      ],
+      "dietaryLabels": [],
+      "price": 1450,
+      "image": "meat-platter",
+      "owner": -1,
+      "sourceCategory": "Banquet menu",
+      "sourceName": "Mixed skewers for sharing",
+      "sourcePortion": "420/100/90/80/80/80/50/50 g"
+    },
+    {
+      "id": "sharing-platters-cold-cuts-appetizer-b609decc",
+      "name": "Cold Cuts Appetizer · 120/80/80/60/50/50/50/20/15/15/10g",
+      "category": "Sharing platters",
+      "description": "Roast pork, ham and bacon with dark bread, olives and mustard.",
+      "allergens": [
+        "wheat",
+        "mustard"
+      ],
+      "dietaryLabels": [],
+      "price": 1350,
+      "image": "meat-platter",
+      "owner": -1,
+      "sourceCategory": "Banquet menu",
+      "sourceName": "Cold Cuts Appetizer",
+      "sourcePortion": "120/80/80/60/50/50/50/20/15/15/10g"
+    },
+    {
+      "id": "sharing-platters-meat-platter-486dba84",
+      "name": "Meat Platter · 320/170/140/100/70/70/60/60/50/50/50 g",
+      "category": "Sharing platters",
+      "description": "A hearty selection of pork, steak and sausages with bread and sharp condiments.",
+      "allergens": [
+        "wheat",
+        "mustard"
+      ],
+      "dietaryLabels": [],
+      "price": 2550,
+      "image": "meat-platter",
+      "owner": -1,
+      "sourceCategory": "Banquet menu",
+      "sourceName": "Meat Platter",
+      "sourcePortion": "320/170/140/100/70/70/60/60/50/50/50 g"
+    },
+    {
+      "id": "sharing-platters-plato-with-pork-fat-8de2e95d",
+      "name": "Traditional lard plate · 170 g",
+      "category": "Sharing platters",
+      "description": "A traditional lard plate with garlic bread, pickles and spring onion.",
+      "allergens": [
+        "wheat"
+      ],
+      "dietaryLabels": [],
+      "price": 500,
+      "image": "meat-platter",
+      "owner": -1,
+      "sourceCategory": "Banquet menu",
+      "sourceName": "Plato with pork fat",
+      "sourcePortion": "170 g"
+    },
+    {
+      "id": "sharing-platters-cheese-platter-20721abc",
+      "name": "Cheese Platter · 140/120/100/70/50/50/40/40 g",
+      "category": "Sharing platters",
+      "description": "A selection of cheeses with olives, walnuts and crisp crackers.",
+      "allergens": [
+        "milk",
+        "tree nuts",
+        "wheat"
+      ],
+      "dietaryLabels": [],
+      "price": 1550,
+      "image": "meat-platter",
+      "owner": -1,
+      "sourceCategory": "Banquet menu",
+      "sourceName": "Cheese Platter",
+      "sourcePortion": "140/120/100/70/50/50/40/40 g"
+    },
+    {
+      "id": "sharing-platters-fresh-vegetable-platter-e7686d24",
+      "name": "Fresh Vegetable Platter · 400 / 90 / 40 / 50 g",
+      "category": "Sharing platters",
+      "description": "Fresh vegetables, olives and flatbread with tartar sauce for dipping.",
+      "allergens": [
+        "wheat",
+        "egg",
+        "mustard"
+      ],
+      "dietaryLabels": [],
+      "price": 650,
+      "image": "salad",
+      "owner": -1,
+      "sourceCategory": "Banquet menu",
+      "sourceName": "Fresh Vegetable Platter",
+      "sourcePortion": "400 / 90 / 40 / 50 g"
+    },
+    {
+      "id": "sharing-platters-bruschetta-selection-1b8e80ac",
+      "name": "Bruschetta selection · 240/200/180 g",
+      "category": "Sharing platters",
+      "description": "A sharing selection of shrimp, salmon and pepper toasts with creamy cheese.",
+      "allergens": [
+        "wheat",
+        "milk",
+        "fish",
+        "crustaceans",
+        "tree nuts"
+      ],
+      "dietaryLabels": [],
+      "price": 1300,
+      "image": "bruschetta",
+      "owner": -1,
+      "sourceCategory": "Banquet menu",
+      "sourceName": "Bruschetta selection",
+      "sourcePortion": "240/200/180 g"
+    },
+    {
+      "id": "sharing-platters-caesar-salad-with-chicken-banquet-d6a15062",
+      "name": "Chicken Caesar for sharing · 560 g",
+      "category": "Sharing platters",
+      "description": "A table-sized chicken Caesar with Parmesan, egg and croutons.",
+      "allergens": [
+        "wheat",
+        "milk",
+        "egg",
+        "fish",
+        "mustard"
+      ],
+      "dietaryLabels": [],
+      "price": 1200,
+      "image": "salad",
+      "owner": -1,
+      "sourceCategory": "Banquet menu",
+      "sourceName": "Caesar Salad with Chicken (Banquet)",
+      "sourcePortion": "560 g"
+    },
+    {
+      "id": "sharing-platters-veggie-salad-for-sharing-e4841edd",
+      "name": "Veggie salad for sharing · 480 g",
+      "category": "Sharing platters",
+      "description": "A generous crisp salad with cabbage, apple, celery and toasted seeds.",
+      "allergens": [
+        "celery"
+      ],
+      "dietaryLabels": [],
+      "price": 650,
+      "image": "salad",
+      "owner": -1,
+      "sourceCategory": "Banquet menu",
+      "sourceName": "Veggie salad for sharing",
+      "sourcePortion": "480 g"
+    },
+    {
+      "id": "sharing-platters-caesar-salad-with-shrimp-banquet-1d11ce96",
+      "name": "Shrimp Caesar for sharing",
+      "category": "Sharing platters",
+      "description": "A generous shrimp Caesar with egg, croutons and Parmesan.",
+      "allergens": [
+        "wheat",
+        "milk",
+        "egg",
+        "fish",
+        "crustaceans",
+        "mustard"
+      ],
+      "dietaryLabels": [],
+      "price": 1350,
+      "image": "salad",
+      "owner": -1,
+      "sourceCategory": "Banquet menu",
+      "sourceName": "Caesar Salad with Shrimp (Banquet)",
+      "sourcePortion": ""
+    },
+    {
+      "id": "sharing-platters-xxl-chicken-fillet-c86c139d",
+      "name": "XXL chicken fillet · 480/50/50 g",
+      "category": "Sharing platters",
+      "description": "A large platter of breaded chicken fillet with ketchup and spicy dip.",
+      "allergens": [
+        "wheat",
+        "egg"
+      ],
+      "dietaryLabels": [],
+      "price": 1050,
+      "image": "crispy-chicken",
+      "owner": -1,
+      "sourceCategory": "Banquet menu",
+      "sourceName": "XXL chicken fillet",
+      "sourcePortion": "480/50/50 g"
+    },
+    {
+      "id": "desserts-tort-profiterol-c68361f5",
+      "name": "Chocolate profiterole cake · 190 g",
+      "category": "Desserts",
+      "description": "A chocolate and cream profiterole cake with a berry finish.",
+      "allergens": [
+        "wheat",
+        "milk",
+        "egg",
+        "tree nuts"
+      ],
+      "dietaryLabels": [],
+      "price": 450,
+      "image": "cheesecake",
+      "owner": -1,
+      "sourceCategory": "Dessert",
+      "sourceName": "Tort Profiterol",
+      "sourcePortion": "190 g"
+    },
+    {
+      "id": "desserts-chocolate-napoleon-72f2fd43",
+      "name": "Chocolate Napoleon · 180 g",
+      "category": "Desserts",
+      "description": "Layers of chocolate pastry and cream with a raspberry accent.",
+      "allergens": [
+        "wheat",
+        "milk",
+        "egg"
+      ],
+      "dietaryLabels": [],
+      "price": 450,
+      "image": "cheesecake",
+      "owner": -1,
+      "sourceCategory": "Dessert",
+      "sourceName": "Chocolate Napoleon",
+      "sourcePortion": "180 g"
+    },
+    {
+      "id": "desserts-berry-cheesecake-44c56d82",
+      "name": "Berry Cheesecake · 175 g",
+      "category": "Desserts",
+      "description": "Cream cheese cake with an almond-enriched base and berry sauce.",
+      "allergens": [
+        "wheat",
+        "milk",
+        "egg",
+        "tree nuts"
+      ],
+      "dietaryLabels": [],
+      "price": 400,
+      "image": "cheesecake",
+      "owner": -1,
+      "sourceCategory": "Dessert",
+      "sourceName": "Berry Cheesecake",
+      "sourcePortion": "175 g"
+    },
+    {
+      "id": "desserts-tiramisu-41614a33",
+      "name": "Tiramisu · 200 g",
+      "category": "Desserts",
+      "description": "Coffee-soaked biscuits with mascarpone cream, cocoa and a little Amaretto.",
+      "allergens": [
+        "wheat",
+        "milk",
+        "egg"
+      ],
+      "dietaryLabels": [],
+      "price": 500,
+      "image": "tiramisu",
+      "owner": -1,
+      "sourceCategory": "Dessert",
+      "sourceName": "Tiramisu",
+      "sourcePortion": "200 g"
+    },
+    {
+      "id": "desserts-chocolate-fondant-c88a6956",
+      "name": "Chocolate Fondant · 170 g",
+      "category": "Desserts",
+      "description": "A warm chocolate centre with vanilla ice cream and berry sauce.",
+      "allergens": [
+        "wheat",
+        "milk",
+        "egg"
+      ],
+      "dietaryLabels": [],
+      "price": 400,
+      "image": "cheesecake",
+      "owner": -1,
+      "sourceCategory": "Dessert",
+      "sourceName": "Chocolate Fondant",
+      "sourcePortion": "170 g"
+    },
+    {
+      "id": "desserts-fondant-dubai-e8fd7b3d",
+      "name": "Pistachio kataifi fondant · 160 g",
+      "category": "Desserts",
+      "description": "A warm white chocolate and pistachio cake with crisp kataifi and vanilla ice cream.",
+      "allergens": [
+        "wheat",
+        "milk",
+        "egg",
+        "tree nuts"
+      ],
+      "dietaryLabels": [],
+      "price": 550,
+      "image": "cheesecake",
+      "owner": -1,
+      "sourceCategory": "Dessert",
+      "sourceName": "Fondant Dubai",
+      "sourcePortion": "160 g"
+    },
+    {
+      "id": "desserts-berry-souffle-1e2d7848",
+      "name": "Berry soufflé · 160 g",
+      "category": "Desserts",
+      "description": "A light yogurt and berry dessert with white chocolate and almonds.",
+      "allergens": [
+        "wheat",
+        "milk",
+        "egg",
+        "tree nuts"
+      ],
+      "dietaryLabels": [],
+      "price": 500,
+      "image": "cheesecake",
+      "owner": -1,
+      "sourceCategory": "Dessert",
+      "sourceName": "Berry soufflé",
+      "sourcePortion": "160 g"
+    },
+    {
+      "id": "desserts-snikers-pop-ice-cream-e9248a60",
+      "name": "Peanut caramel sundae · 230 g",
+      "category": "Desserts",
+      "description": "Chocolate and salted caramel scoops with peanuts, wafers and popcorn.",
+      "allergens": [
+        "wheat",
+        "milk",
+        "egg",
+        "tree nuts",
+        "peanuts"
+      ],
+      "dietaryLabels": [],
+      "price": 400,
+      "image": "ice-cream",
+      "owner": -1,
+      "sourceCategory": "Dessert",
+      "sourceName": "Snikers Pop Ice Cream",
+      "sourcePortion": "230 g"
+    },
+    {
+      "id": "desserts-berry-boom-ice-cream-13e55890",
+      "name": "Berry Boom Ice Cream · 340 g",
+      "category": "Desserts",
+      "description": "A playful sundae of vanilla and tropical scoops with berries and chocolate sauce.",
+      "allergens": [
+        "milk"
+      ],
+      "dietaryLabels": [],
+      "price": 400,
+      "image": "ice-cream",
+      "owner": -1,
+      "sourceCategory": "Dessert",
+      "sourceName": "Berry Boom Ice Cream",
+      "sourcePortion": "340 g"
+    },
+    {
+      "id": "ice-cream-assorted-ice-cream-3-scoops-49f7d3c7",
+      "name": "Assorted Ice Cream – 3 Scoops · 175 g",
+      "category": "Ice cream",
+      "description": "A three-scoop selection for a little of everything.",
+      "allergens": [
+        "milk"
+      ],
+      "dietaryLabels": [],
+      "price": 350,
+      "image": "ice-cream",
+      "owner": -1,
+      "sourceCategory": "Ice Cream",
+      "sourceName": "Assorted Ice Cream – 3 Scoops",
+      "sourcePortion": "175 g"
+    },
+    {
+      "id": "ice-cream-banana-pineapple-ice-cream-fddf018c",
+      "name": "Banana-Pineapple Ice Cream · 700 g",
+      "category": "Ice cream",
+      "description": "A creamy banana and pineapple flavoured ice cream.",
+      "allergens": [
+        "milk"
+      ],
+      "dietaryLabels": [],
+      "price": 850,
+      "image": "ice-cream",
+      "owner": -1,
+      "sourceCategory": "Ice Cream",
+      "sourceName": "Banana-Pineapple Ice Cream",
+      "sourcePortion": "700 g"
+    },
+    {
+      "id": "ice-cream-chocolate-ice-cream-85a83bea",
+      "name": "Chocolate Ice Cream · 700 g",
+      "category": "Ice cream",
+      "description": "A smooth cocoa ice cream made with milk and cream butter.",
+      "allergens": [
+        "milk"
+      ],
+      "dietaryLabels": [],
+      "price": 850,
+      "image": "ice-cream",
+      "owner": -1,
+      "sourceCategory": "Ice Cream",
+      "sourceName": "Chocolate Ice Cream",
+      "sourcePortion": "700 g"
+    },
+    {
+      "id": "ice-cream-ice-cream-assortment-b71e2cb8",
+      "name": "Ice Cream Assortment · 700 g",
+      "category": "Ice cream",
+      "description": "A larger selection of assorted ice cream scoops.",
+      "allergens": [
+        "milk"
+      ],
+      "dietaryLabels": [],
+      "price": 850,
+      "image": "ice-cream",
+      "owner": -1,
+      "sourceCategory": "Ice Cream",
+      "sourceName": "Ice Cream Assortment",
+      "sourcePortion": "700 g"
+    },
+    {
+      "id": "ice-cream-ice-cream-assortment-ba34815d",
+      "name": "Ice Cream Assortment · 350 g",
+      "category": "Ice cream",
+      "description": "A larger selection of assorted ice cream scoops.",
+      "allergens": [
+        "milk"
+      ],
+      "dietaryLabels": [],
+      "price": 500,
+      "image": "ice-cream",
+      "owner": -1,
+      "sourceCategory": "Ice Cream",
+      "sourceName": "Ice Cream Assortment",
+      "sourcePortion": "350 g"
+    },
+    {
+      "id": "ice-cream-mango-passion-fruit-ice-cream-55e25d82",
+      "name": "Mango & Passion Fruit Ice Cream · 700 g",
+      "category": "Ice cream",
+      "description": "Milk ice cream with mango and passion fruit flavours.",
+      "allergens": [
+        "milk"
+      ],
+      "dietaryLabels": [],
+      "price": 850,
+      "image": "ice-cream",
+      "owner": -1,
+      "sourceCategory": "Ice Cream",
+      "sourceName": "Mango & Passion Fruit Ice Cream",
+      "sourcePortion": "700 g"
+    },
+    {
+      "id": "ice-cream-strawberry-ice-cream-ac45a1dd",
+      "name": "Strawberry Ice Cream · 700 g",
+      "category": "Ice cream",
+      "description": "A creamy strawberry ice cream with a yogurt note.",
+      "allergens": [
+        "milk"
+      ],
+      "dietaryLabels": [],
+      "price": 850,
+      "image": "ice-cream",
+      "owner": -1,
+      "sourceCategory": "Ice Cream",
+      "sourceName": "Strawberry Ice Cream",
+      "sourcePortion": "700 g"
+    },
+    {
+      "id": "ice-cream-whipped-cream-ice-cream-8c87fcd3",
+      "name": "Whipped Cream Ice Cream · 700 g",
+      "category": "Ice cream",
+      "description": "A classic milk ice cream with a soft vanilla finish.",
+      "allergens": [
+        "milk"
+      ],
+      "dietaryLabels": [],
+      "price": 850,
+      "image": "ice-cream",
+      "owner": -1,
+      "sourceCategory": "Ice Cream",
+      "sourceName": "Whipped Cream Ice Cream",
+      "sourcePortion": "700 g"
+    },
+    {
+      "id": "ice-cream-caramelium-ice-cream-7c4938b6",
+      "name": "Caramel cocoa ice cream · 300 g",
+      "category": "Ice cream",
+      "description": "A rich caramel and cocoa ice cream with a pinch of sea salt.",
+      "allergens": [
+        "milk"
+      ],
+      "dietaryLabels": [],
+      "price": 350,
+      "image": "ice-cream",
+      "owner": -1,
+      "sourceCategory": "Ice Cream",
+      "sourceName": "Caramelium Ice Cream",
+      "sourcePortion": "300 g"
+    },
+    {
+      "id": "ice-cream-chocolate-plombir-ice-cream-51539acf",
+      "name": "Chocolate Plombir Ice Cream · 300 g",
+      "category": "Ice cream",
+      "description": "A rich chocolate version of traditional milk ice cream.",
+      "allergens": [
+        "milk"
+      ],
+      "dietaryLabels": [],
+      "price": 300,
+      "image": "ice-cream",
+      "owner": -1,
+      "sourceCategory": "Ice Cream",
+      "sourceName": "Chocolate Plombir Ice Cream",
+      "sourcePortion": "300 g"
+    },
+    {
+      "id": "ice-cream-classic-plombir-ice-cream-fb73450b",
+      "name": "Classic Plombir Ice Cream · 300 g",
+      "category": "Ice cream",
+      "description": "Traditional creamy milk ice cream with a vanilla finish.",
+      "allergens": [
+        "milk"
+      ],
+      "dietaryLabels": [],
+      "price": 300,
+      "image": "ice-cream",
+      "owner": -1,
+      "sourceCategory": "Ice Cream",
+      "sourceName": "Classic Plombir Ice Cream",
+      "sourcePortion": "300 g"
+    },
+    {
+      "id": "ice-cream-forest-berry-ice-cream-898d1858",
+      "name": "Forest Berry Ice Cream · 300 g",
+      "category": "Ice cream",
+      "description": "Creamy ice cream swirled with forest berry flavours.",
+      "allergens": [
+        "milk"
+      ],
+      "dietaryLabels": [],
+      "price": 350,
+      "image": "ice-cream",
+      "owner": -1,
+      "sourceCategory": "Ice Cream",
+      "sourceName": "Forest Berry Ice Cream",
+      "sourcePortion": "300 g"
+    },
+    {
+      "id": "ice-cream-hazelnut-ice-cream-167f40a4",
+      "name": "Hazelnut Ice Cream · 300 g",
+      "category": "Ice cream",
+      "description": "A creamy hazelnut ice cream with a cocoa note.",
+      "allergens": [
+        "milk",
+        "tree nuts",
+        "soy"
+      ],
+      "dietaryLabels": [],
+      "price": 400,
+      "image": "ice-cream",
+      "owner": -1,
+      "sourceCategory": "Ice Cream",
+      "sourceName": "Hazelnut Ice Cream",
+      "sourcePortion": "300 g"
+    },
+    {
+      "id": "ice-cream-huba-buba-ice-cream-3225071d",
+      "name": "Bubblegum ice cream · 300 g",
+      "category": "Ice cream",
+      "description": "A playful bubblegum-flavoured milk ice cream.",
+      "allergens": [
+        "milk"
+      ],
+      "dietaryLabels": [],
+      "price": 400,
+      "image": "ice-cream",
+      "owner": -1,
+      "sourceCategory": "Ice Cream",
+      "sourceName": "Huba Buba Ice Cream",
+      "sourcePortion": "300 g"
+    },
+    {
+      "id": "ice-cream-inghetata-snickerrss-4b1d5e3c",
+      "name": "Peanut chocolate ice cream · 300 g",
+      "category": "Ice cream",
+      "description": "Peanut and chocolate ice cream with chopped peanuts.",
+      "allergens": [
+        "milk",
+        "peanuts"
+      ],
+      "dietaryLabels": [],
+      "price": 400,
+      "image": "ice-cream",
+      "owner": -1,
+      "sourceCategory": "Ice Cream",
+      "sourceName": "Înghetata Snickerrss",
+      "sourcePortion": "300 g"
+    },
+    {
+      "id": "ice-cream-passion-fashion-ice-cream-dec3c059",
+      "name": "Mango passion fruit ice cream · 700 g",
+      "category": "Ice cream",
+      "description": "A creamy tropical ice cream with mango and passion fruit.",
+      "allergens": [
+        "milk"
+      ],
+      "dietaryLabels": [],
+      "price": 650,
+      "image": "ice-cream",
+      "owner": -1,
+      "sourceCategory": "Ice Cream",
+      "sourceName": "Passion Fashion Ice Cream",
+      "sourcePortion": "700 g"
+    },
+    {
+      "id": "ice-cream-passion-fashion-ice-cream-cee00ada",
+      "name": "Mango passion fruit ice cream · 300 g",
+      "category": "Ice cream",
+      "description": "A creamy tropical ice cream with mango and passion fruit.",
+      "allergens": [
+        "milk"
+      ],
+      "dietaryLabels": [],
+      "price": 350,
+      "image": "ice-cream",
+      "owner": -1,
+      "sourceCategory": "Ice Cream",
+      "sourceName": "Passion Fashion Ice Cream",
+      "sourcePortion": "300 g"
+    },
+    {
+      "id": "ice-cream-pistachio-ice-cream-85b17e51",
+      "name": "Pistachio Ice Cream · 300 g",
+      "category": "Ice cream",
+      "description": "Milk ice cream enriched with pistachio paste.",
+      "allergens": [
+        "milk",
+        "tree nuts"
+      ],
+      "dietaryLabels": [],
+      "price": 400,
+      "image": "ice-cream",
+      "owner": -1,
+      "sourceCategory": "Ice Cream",
+      "sourceName": "Pistachio Ice Cream",
+      "sourcePortion": "300 g"
+    },
+    {
+      "id": "cocktails-aperol-spritz-cocktail-71ee062b",
+      "name": "Aperol Spritz Cocktail · 330 ml — Cocktails",
+      "category": "Cocktails",
+      "description": "Aperol and sparkling wine over ice with orange. Contains alcohol.",
+      "allergens": [
+        "sulphites"
+      ],
+      "dietaryLabels": [],
+      "price": 400,
+      "image": "cocktail",
+      "owner": -1,
+      "sourceCategory": "Cocktails",
+      "sourceName": "Aperol Spritz Cocktail",
+      "sourcePortion": "330 ml"
+    },
+    {
+      "id": "cocktails-mojito-cocktail-11329ec5",
+      "name": "Mojito Cocktail · 330 ml — Cocktails",
+      "category": "Cocktails",
+      "description": "White rum with lime, mint and soda over ice. Contains alcohol.",
+      "allergens": [],
+      "dietaryLabels": [],
+      "price": 400,
+      "image": "cocktail",
+      "owner": -1,
+      "sourceCategory": "Cocktails",
+      "sourceName": "Mojito Cocktail",
+      "sourcePortion": "330 ml"
+    },
+    {
+      "id": "cocktails-mojito-cocktail-n-a-512bb650",
+      "name": "Virgin mojito · 330 ml — Cocktails",
+      "category": "Cocktails",
+      "description": "A sparkling lime and mint cooler without added alcohol.",
+      "allergens": [],
+      "dietaryLabels": [],
+      "price": 350,
+      "image": "cocktail",
+      "owner": -1,
+      "sourceCategory": "Cocktails",
+      "sourceName": "Mojito Cocktail N/A",
+      "sourcePortion": "330 ml"
+    },
+    {
+      "id": "cocktails-pina-coco-07895ea8",
+      "name": "Pineapple coconut rum cooler · 330 ml — Cocktails",
+      "category": "Cocktails",
+      "description": "A rum, pineapple and coconut cooler with a citrus lift. Contains alcohol.",
+      "allergens": [],
+      "dietaryLabels": [],
+      "price": 400,
+      "image": "cocktail",
+      "owner": -1,
+      "sourceCategory": "Cocktails",
+      "sourceName": "Pina Coco",
+      "sourcePortion": "330 ml"
+    },
+    {
+      "id": "cocktails-pina-coco-n-a-b4247329",
+      "name": "Virgin pineapple coconut cooler · 330 ml — Cocktails",
+      "category": "Cocktails",
+      "description": "Pineapple and coconut with condensed milk, poured over ice without added alcohol.",
+      "allergens": [
+        "milk"
+      ],
+      "dietaryLabels": [],
+      "price": 350,
+      "image": "cocktail",
+      "owner": -1,
+      "sourceCategory": "Cocktails",
+      "sourceName": "Pina Coco N/A",
+      "sourcePortion": "330 ml"
+    },
+    {
+      "id": "cocktails-pink-berry-tonic-6e3bf7e4",
+      "name": "Pink berry tonic · 400 ml — Cocktails",
+      "category": "Cocktails",
+      "description": "Gin and tonic with red currants, lemon and thyme. Contains alcohol.",
+      "allergens": [],
+      "dietaryLabels": [],
+      "price": 400,
+      "image": "cocktail",
+      "owner": -1,
+      "sourceCategory": "Cocktails",
+      "sourceName": "Pink berry tonic",
+      "sourcePortion": "400 ml"
+    },
+    {
+      "id": "cocktails-sex-on-the-beach-91d8a9ae",
+      "name": "Sex on the Beach · 400 ml — Cocktails",
+      "category": "Cocktails",
+      "description": "A vodka cooler with peach, pomegranate and elderflower. Contains alcohol.",
+      "allergens": [],
+      "dietaryLabels": [],
+      "price": 400,
+      "image": "cocktail",
+      "owner": -1,
+      "sourceCategory": "Cocktails",
+      "sourceName": "Sex on the Beach",
+      "sourcePortion": "400 ml"
+    },
+    {
+      "id": "cocktails-cosmopolitan-bda44df8",
+      "name": "Cosmopolitan · 180 ml — Cocktails",
+      "category": "Cocktails",
+      "description": "Vodka and orange liqueur with cranberry and citrus. Contains alcohol.",
+      "allergens": [],
+      "dietaryLabels": [],
+      "price": 400,
+      "image": "cocktail",
+      "owner": -1,
+      "sourceCategory": "Cocktails",
+      "sourceName": "Cosmopolitan",
+      "sourcePortion": "180 ml"
+    },
+    {
+      "id": "cocktails-rose-sangria-cocktail-ddd4d70e",
+      "name": "Rosé Sangria Cocktail · 350 ml — Cocktails",
+      "category": "Cocktails",
+      "description": "Rosé wine with cherry and orange, lengthened with sparkling water. Contains alcohol.",
+      "allergens": [
+        "sulphites"
+      ],
+      "dietaryLabels": [],
+      "price": 350,
+      "image": "cocktail",
+      "owner": -1,
+      "sourceCategory": "Cocktails",
+      "sourceName": "Rosé Sangria Cocktail",
+      "sourcePortion": "350 ml"
+    },
+    {
+      "id": "cocktails-rose-sangria-cocktail-1l-9af7ffa3",
+      "name": "Rose sangria jug · 1000 ml — Cocktails",
+      "category": "Cocktails",
+      "description": "A sharing jug of rose sangria with cherry and citrus. Contains alcohol.",
+      "allergens": [
+        "sulphites"
+      ],
+      "dietaryLabels": [],
+      "price": 750,
+      "image": "cocktail",
+      "owner": -1,
+      "sourceCategory": "Cocktails",
+      "sourceName": "Rosé Sangria Cocktail – 1L",
+      "sourcePortion": "1000 ml"
+    },
+    {
+      "id": "cocktails-tropical-cocktail-572a7df7",
+      "name": "Tropical Cocktail · 330 ml — Cocktails",
+      "category": "Cocktails",
+      "description": "A mango cooler with chocolate, lemon and a fresh mint finish.",
+      "allergens": [],
+      "dietaryLabels": [],
+      "price": 300,
+      "image": "cocktail",
+      "owner": -1,
+      "sourceCategory": "Cocktails",
+      "sourceName": "Tropical Cocktail",
+      "sourcePortion": "330 ml"
+    },
+    {
+      "id": "cocktails-blackcurrant-lemonade-821b3890",
+      "name": "Blackcurrant Lemonade · 330 ml — Cocktails",
+      "category": "Cocktails",
+      "description": "Blackcurrant and lime fizz with a little hibiscus and cinnamon.",
+      "allergens": [],
+      "dietaryLabels": [],
+      "price": 300,
+      "image": "cocktail",
+      "owner": -1,
+      "sourceCategory": "Cocktails",
+      "sourceName": "Blackcurrant Lemonade",
+      "sourcePortion": "330 ml"
+    },
+    {
+      "id": "cocktails-lemonade-dd5adb8b",
+      "name": "Lemonade · 330 ml — Cocktails",
+      "category": "Cocktails",
+      "description": "A sparkling lemon cooler with fresh mint and ice.",
+      "allergens": [],
+      "dietaryLabels": [],
+      "price": 250,
+      "image": "cocktail",
+      "owner": -1,
+      "sourceCategory": "Cocktails",
+      "sourceName": "Lemonade",
+      "sourcePortion": "330 ml"
+    },
+    {
+      "id": "cocktails-passion-fruit-lemonade-79dc212c",
+      "name": "Passion Fruit Lemonade · 330 ml — Cocktails",
+      "category": "Cocktails",
+      "description": "Passion fruit and orange fizz with lime and mint.",
+      "allergens": [],
+      "dietaryLabels": [],
+      "price": 300,
+      "image": "cocktail",
+      "owner": -1,
+      "sourceCategory": "Cocktails",
+      "sourceName": "Passion Fruit Lemonade",
+      "sourcePortion": "330 ml"
+    },
+    {
+      "id": "cocktails-chocolate-freakshake-266b07e2",
+      "name": "Chocolate Freakshake · 300 ml — Cocktails",
+      "category": "Cocktails",
+      "description": "An indulgent chocolate ice cream shake with cream and chocolate pieces.",
+      "allergens": [
+        "milk"
+      ],
+      "dietaryLabels": [],
+      "price": 500,
+      "image": "milkshake",
+      "owner": -1,
+      "sourceCategory": "Cocktails",
+      "sourceName": "Chocolate Freakshake",
+      "sourcePortion": "300 ml"
+    },
+    {
+      "id": "cocktails-banana-mango-milkshake-8246654f",
+      "name": "Banana-Mango Milkshake · 300 ml — Cocktails",
+      "category": "Cocktails",
+      "description": "Vanilla ice cream blended with banana and mango.",
+      "allergens": [
+        "milk"
+      ],
+      "dietaryLabels": [],
+      "price": 300,
+      "image": "milkshake",
+      "owner": -1,
+      "sourceCategory": "Cocktails",
+      "sourceName": "Banana-Mango Milkshake",
+      "sourcePortion": "300 ml"
+    },
+    {
+      "id": "cold-drinks-chocolate-freakshake-d2284cf6",
+      "name": "Chocolate Freakshake · 300 ml — Cold drinks",
+      "category": "Cold drinks",
+      "description": "An indulgent chocolate ice cream shake with cream and chocolate pieces.",
+      "allergens": [
+        "milk"
+      ],
+      "dietaryLabels": [],
+      "price": 500,
+      "image": "milkshake",
+      "owner": -1,
+      "sourceCategory": "Beverages",
+      "sourceName": "Chocolate Freakshake",
+      "sourcePortion": "300 ml"
+    },
+    {
+      "id": "cold-drinks-salted-caramel-milkshake-b0476673",
+      "name": "Salted Caramel Milkshake",
+      "category": "Cold drinks",
+      "description": "Vanilla and caramel ice cream blended with milk and caramelised nuts.",
+      "allergens": [
+        "milk",
+        "tree nuts"
+      ],
+      "dietaryLabels": [],
+      "price": 300,
+      "image": "milkshake",
+      "owner": -1,
+      "sourceCategory": "Beverages",
+      "sourceName": "Salted Caramel Milkshake",
+      "sourcePortion": ""
+    },
+    {
+      "id": "cold-drinks-banana-mango-milkshake-8d6cac8c",
+      "name": "Banana-Mango Milkshake · 300 ml — Cold drinks",
+      "category": "Cold drinks",
+      "description": "Vanilla ice cream blended with banana and mango.",
+      "allergens": [
+        "milk"
+      ],
+      "dietaryLabels": [],
+      "price": 300,
+      "image": "milkshake",
+      "owner": -1,
+      "sourceCategory": "Beverages",
+      "sourceName": "Banana-Mango Milkshake",
+      "sourcePortion": "300 ml"
+    },
+    {
+      "id": "cold-drinks-chocolate-milkshake-8a133edd",
+      "name": "Chocolate Milkshake · 300 ml",
+      "category": "Cold drinks",
+      "description": "A creamy chocolate shake finished with chocolate shavings.",
+      "allergens": [
+        "milk"
+      ],
+      "dietaryLabels": [],
+      "price": 300,
+      "image": "milkshake",
+      "owner": -1,
+      "sourceCategory": "Beverages",
+      "sourceName": "Chocolate Milkshake",
+      "sourcePortion": "300 ml"
+    },
+    {
+      "id": "cold-drinks-strawberry-milkshake-76291c66",
+      "name": "Strawberry Milkshake · 300 ml",
+      "category": "Cold drinks",
+      "description": "Strawberry ice cream and milk with a bright berry finish.",
+      "allergens": [
+        "milk"
+      ],
+      "dietaryLabels": [],
+      "price": 300,
+      "image": "milkshake",
+      "owner": -1,
+      "sourceCategory": "Beverages",
+      "sourceName": "Strawberry Milkshake",
+      "sourcePortion": "300 ml"
+    },
+    {
+      "id": "cold-drinks-vanilla-milkshake-98b94460",
+      "name": "Vanilla Milkshake · 300 ml",
+      "category": "Cold drinks",
+      "description": "A creamy vanilla shake with a little cherry syrup.",
+      "allergens": [
+        "milk"
+      ],
+      "dietaryLabels": [],
+      "price": 300,
+      "image": "milkshake",
+      "owner": -1,
+      "sourceCategory": "Beverages",
+      "sourceName": "Vanilla Milkshake",
+      "sourcePortion": "300 ml"
+    },
+    {
+      "id": "cold-drinks-almond-ice-latte-bfad03c7",
+      "name": "Iced almond latte · 350 ml",
+      "category": "Cold drinks",
+      "description": "Espresso and almond drink over ice with caramel syrup.",
+      "allergens": [
+        "tree nuts"
+      ],
+      "dietaryLabels": [],
+      "price": 300,
+      "image": "coffee",
+      "owner": -1,
+      "sourceCategory": "Beverages",
+      "sourceName": "Almond Ice Latte",
+      "sourcePortion": "350 ml"
+    },
+    {
+      "id": "cold-drinks-espresso-tonic-0939d8a2",
+      "name": "Espresso Tonic · 330 ml",
+      "category": "Cold drinks",
+      "description": "Chilled espresso with tonic, lemon and ice.",
+      "allergens": [],
+      "dietaryLabels": [],
+      "price": 250,
+      "image": "coffee",
+      "owner": -1,
+      "sourceCategory": "Beverages",
+      "sourceName": "Espresso Tonic",
+      "sourcePortion": "330 ml"
+    },
+    {
+      "id": "cold-drinks-ice-latte-15e2ed9d",
+      "name": "Iced latte · 350 ml",
+      "category": "Cold drinks",
+      "description": "Iced espresso and milk with a choice of chocolate or caramel syrup.",
+      "allergens": [
+        "milk"
+      ],
+      "dietaryLabels": [],
+      "price": 250,
+      "image": "coffee",
+      "owner": -1,
+      "sourceCategory": "Beverages",
+      "sourceName": "Ice Latte",
+      "sourcePortion": "350 ml"
+    },
+    {
+      "id": "cold-drinks-mojito-cocktail-n-a-98d39c40",
+      "name": "Virgin mojito · 330 ml — Cold drinks",
+      "category": "Cold drinks",
+      "description": "A sparkling lime and mint cooler without added alcohol.",
+      "allergens": [],
+      "dietaryLabels": [],
+      "price": 350,
+      "image": "lemonade",
+      "owner": -1,
+      "sourceCategory": "Beverages",
+      "sourceName": "Mojito Cocktail N/A",
+      "sourcePortion": "330 ml"
+    },
+    {
+      "id": "cold-drinks-blackcurrant-lemonade-ff072eb2",
+      "name": "Blackcurrant Lemonade · 330 ml — Cold drinks",
+      "category": "Cold drinks",
+      "description": "Blackcurrant and lime fizz with a little hibiscus and cinnamon.",
+      "allergens": [],
+      "dietaryLabels": [],
+      "price": 300,
+      "image": "lemonade",
+      "owner": -1,
+      "sourceCategory": "Beverages",
+      "sourceName": "Blackcurrant Lemonade",
+      "sourcePortion": "330 ml"
+    },
+    {
+      "id": "cold-drinks-cherry-cola-cocktail-268895b6",
+      "name": "Cherry Cola Cocktail · 330 ml",
+      "category": "Cold drinks",
+      "description": "Cola brightened with cherry syrup and mint, served over ice.",
+      "allergens": [],
+      "dietaryLabels": [],
+      "price": 200,
+      "image": "lemonade",
+      "owner": -1,
+      "sourceCategory": "Beverages",
+      "sourceName": "Cherry Cola Cocktail",
+      "sourcePortion": "330 ml"
+    },
+    {
+      "id": "cold-drinks-lemonade-82be9f65",
+      "name": "Lemonade · 330 ml — Cold drinks",
+      "category": "Cold drinks",
+      "description": "A sparkling lemon cooler with fresh mint and ice.",
+      "allergens": [],
+      "dietaryLabels": [],
+      "price": 250,
+      "image": "lemonade",
+      "owner": -1,
+      "sourceCategory": "Beverages",
+      "sourceName": "Lemonade",
+      "sourcePortion": "330 ml"
+    },
+    {
+      "id": "cold-drinks-lemonade-1-l-d24c1135",
+      "name": "Lemonade jug · 1000 ml",
+      "category": "Cold drinks",
+      "description": "A sharing jug of sparkling lemon and mint lemonade.",
+      "allergens": [],
+      "dietaryLabels": [],
+      "price": 550,
+      "image": "lemonade",
+      "owner": -1,
+      "sourceCategory": "Beverages",
+      "sourceName": "Lemonade 1 L",
+      "sourcePortion": "1000 ml"
+    },
+    {
+      "id": "cold-drinks-orangeade-a199b94d",
+      "name": "Orangeade · 330 ml",
+      "category": "Cold drinks",
+      "description": "Fresh orange fizz with mint, served over ice.",
+      "allergens": [],
+      "dietaryLabels": [],
+      "price": 250,
+      "image": "lemonade",
+      "owner": -1,
+      "sourceCategory": "Beverages",
+      "sourceName": "Orangeade",
+      "sourcePortion": "330 ml"
+    },
+    {
+      "id": "cold-drinks-orangeade-1-l-8a7b7b3d",
+      "name": "Orangeade jug · 1000 ml",
+      "category": "Cold drinks",
+      "description": "A sharing jug of orange fizz with fresh mint.",
+      "allergens": [],
+      "dietaryLabels": [],
+      "price": 550,
+      "image": "lemonade",
+      "owner": -1,
+      "sourceCategory": "Beverages",
+      "sourceName": "Orangeade 1 L",
+      "sourcePortion": "1000 ml"
+    },
+    {
+      "id": "cold-drinks-passion-fruit-lemonade-5bace38d",
+      "name": "Passion Fruit Lemonade · 330 ml — Cold drinks",
+      "category": "Cold drinks",
+      "description": "Passion fruit and orange fizz with lime and mint.",
+      "allergens": [],
+      "dietaryLabels": [],
+      "price": 300,
+      "image": "lemonade",
+      "owner": -1,
+      "sourceCategory": "Beverages",
+      "sourceName": "Passion Fruit Lemonade",
+      "sourcePortion": "330 ml"
+    },
+    {
+      "id": "cold-drinks-pina-coco-n-a-2374d962",
+      "name": "Virgin pineapple coconut cooler · 330 ml — Cold drinks",
+      "category": "Cold drinks",
+      "description": "Pineapple and coconut with condensed milk, poured over ice without added alcohol.",
+      "allergens": [
+        "milk"
+      ],
+      "dietaryLabels": [],
+      "price": 350,
+      "image": "lemonade",
+      "owner": -1,
+      "sourceCategory": "Beverages",
+      "sourceName": "Pina Coco N/A",
+      "sourcePortion": "330 ml"
+    },
+    {
+      "id": "cold-drinks-raspberry-fizz-lemonade-30b24db5",
+      "name": "Raspberry Fizz Lemonade · 330 ml",
+      "category": "Cold drinks",
+      "description": "Raspberry and strawberry fizz with lime and mint.",
+      "allergens": [],
+      "dietaryLabels": [],
+      "price": 300,
+      "image": "lemonade",
+      "owner": -1,
+      "sourceCategory": "Beverages",
+      "sourceName": "Raspberry Fizz Lemonade",
+      "sourcePortion": "330 ml"
+    },
+    {
+      "id": "cold-drinks-tropical-cocktail-897adade",
+      "name": "Tropical Cocktail · 330 ml — Cold drinks",
+      "category": "Cold drinks",
+      "description": "A mango cooler with chocolate, lemon and a fresh mint finish.",
+      "allergens": [],
+      "dietaryLabels": [],
+      "price": 300,
+      "image": "lemonade",
+      "owner": -1,
+      "sourceCategory": "Beverages",
+      "sourceName": "Tropical Cocktail",
+      "sourcePortion": "330 ml"
+    },
+    {
+      "id": "cold-drinks-fresh-grapefruit-juice-200-ml-5ff318a7",
+      "name": "Fresh Grapefruit Juice 200 ml",
+      "category": "Cold drinks",
+      "description": "Fresh grapefruit juice, served chilled.",
+      "allergens": [],
+      "dietaryLabels": [],
+      "price": 300,
+      "image": "lemonade",
+      "owner": -1,
+      "sourceCategory": "Beverages",
+      "sourceName": "Fresh Grapefruit Juice 200 ml",
+      "sourcePortion": "200 ml"
+    },
+    {
+      "id": "cold-drinks-fresh-orange-juice-200-ml-896fc7dc",
+      "name": "Fresh Orange Juice 200 ml",
+      "category": "Cold drinks",
+      "description": "Fresh orange juice, served chilled.",
+      "allergens": [],
+      "dietaryLabels": [],
+      "price": 300,
+      "image": "lemonade",
+      "owner": -1,
+      "sourceCategory": "Beverages",
+      "sourceName": "Fresh Orange Juice 200 ml",
+      "sourcePortion": "200 ml"
+    },
+    {
+      "id": "cold-drinks-apple-juice-a0454dbf",
+      "name": "Apple Juice · 950 ml",
+      "category": "Cold drinks",
+      "description": "A chilled serving of apple juice.",
+      "allergens": [],
+      "dietaryLabels": [],
+      "price": 450,
+      "image": "lemonade",
+      "owner": -1,
+      "sourceCategory": "Beverages",
+      "sourceName": "Apple Juice",
+      "sourcePortion": "950 ml"
+    },
+    {
+      "id": "cold-drinks-mango-juice-a77085e0",
+      "name": "Mango Juice · 950 ml",
+      "category": "Cold drinks",
+      "description": "A chilled serving of mango juice.",
+      "allergens": [],
+      "dietaryLabels": [],
+      "price": 450,
+      "image": "lemonade",
+      "owner": -1,
+      "sourceCategory": "Beverages",
+      "sourceName": "Mango Juice",
+      "sourcePortion": "950 ml"
+    },
+    {
+      "id": "cold-drinks-coca-cola-0-5-2e10c375",
+      "name": "Coca-Cola 0,5 · 500 ml",
+      "category": "Cold drinks",
+      "description": "Chilled Coca-Cola, served in the listed bottle size.",
+      "allergens": [],
+      "dietaryLabels": [],
+      "price": 150,
+      "image": "lemonade",
+      "owner": -1,
+      "sourceCategory": "Beverages",
+      "sourceName": "Coca-Cola 0,5",
+      "sourcePortion": "500 ml"
+    },
+    {
+      "id": "cold-drinks-sprite-0-5-a6caa8cb",
+      "name": "Sprite 0,5 · 500 ml",
+      "category": "Cold drinks",
+      "description": "Chilled Sprite, served in the listed bottle size.",
+      "allergens": [],
+      "dietaryLabels": [],
+      "price": 150,
+      "image": "lemonade",
+      "owner": -1,
+      "sourceCategory": "Beverages",
+      "sourceName": "Sprite 0,5",
+      "sourcePortion": "500 ml"
+    },
+    {
+      "id": "cold-drinks-dorna-carbo-0-5-32579912",
+      "name": "Dorna sparkling water · 500 ml",
+      "category": "Cold drinks",
+      "description": "Chilled Dorna sparkling water.",
+      "allergens": [],
+      "dietaryLabels": [],
+      "price": 150,
+      "image": "lemonade",
+      "owner": -1,
+      "sourceCategory": "Beverages",
+      "sourceName": "Dorna carbo 0,5",
+      "sourcePortion": "500 ml"
+    },
+    {
+      "id": "cold-drinks-dorna-plata-0-5-17c9721f",
+      "name": "Dorna still water · 500 ml",
+      "category": "Cold drinks",
+      "description": "Chilled Dorna still water.",
+      "allergens": [],
+      "dietaryLabels": [],
+      "price": 150,
+      "image": "lemonade",
+      "owner": -1,
+      "sourceCategory": "Beverages",
+      "sourceName": "Dorna plată 0,5",
+      "sourcePortion": "500 ml"
+    },
+    {
+      "id": "hot-drinks-gluhwein-0a3f340e",
+      "name": "Glühwein · 220 ml — Hot drinks",
+      "category": "Hot drinks",
+      "description": "Red wine warmed with cherry, apple, citrus and spices. Contains alcohol.",
+      "allergens": [
+        "sulphites"
+      ],
+      "dietaryLabels": [],
+      "price": 250,
+      "image": "wine",
+      "owner": -1,
+      "sourceCategory": "Hot Beverages",
+      "sourceName": "Glühwein",
+      "sourcePortion": "220 ml"
+    },
+    {
+      "id": "hot-drinks-blackcurrant-tea-80565e74",
+      "name": "Blackcurrant Tea · 400 ml",
+      "category": "Hot drinks",
+      "description": "A warm blackcurrant infusion with orange and mint.",
+      "allergens": [],
+      "dietaryLabels": [],
+      "price": 350,
+      "image": "tea",
+      "owner": -1,
+      "sourceCategory": "Hot Beverages",
+      "sourceName": "Blackcurrant Tea",
+      "sourcePortion": "400 ml"
+    },
+    {
+      "id": "hot-drinks-sea-buckthorn-tea-3bfbaf88",
+      "name": "Sea Buckthorn Tea · 400 ml",
+      "category": "Hot drinks",
+      "description": "A warm sea buckthorn and peach infusion with citrus and anise.",
+      "allergens": [],
+      "dietaryLabels": [],
+      "price": 350,
+      "image": "tea",
+      "owner": -1,
+      "sourceCategory": "Hot Beverages",
+      "sourceName": "Sea Buckthorn Tea",
+      "sourcePortion": "400 ml"
+    },
+    {
+      "id": "hot-drinks-signature-mint-tea-dbcd4d90",
+      "name": "Signature Mint Tea · 400 ml",
+      "category": "Hot drinks",
+      "description": "An aromatic herbal infusion with honey, currants, lime and warm spices.",
+      "allergens": [],
+      "dietaryLabels": [],
+      "price": 350,
+      "image": "tea",
+      "owner": -1,
+      "sourceCategory": "Hot Beverages",
+      "sourceName": "Signature Mint Tea",
+      "sourcePortion": "400 ml"
+    },
+    {
+      "id": "hot-drinks-almond-hot-cocoa-b6b2979e",
+      "name": "Almond Hot Cocoa · 250 ml",
+      "category": "Hot drinks",
+      "description": "Warm cocoa made with almond drink and a chocolate finish.",
+      "allergens": [
+        "tree nuts"
+      ],
+      "dietaryLabels": [],
+      "price": 250,
+      "image": "coffee",
+      "owner": -1,
+      "sourceCategory": "Hot Beverages",
+      "sourceName": "Almond Hot Cocoa",
+      "sourcePortion": "250 ml"
+    },
+    {
+      "id": "hot-drinks-almond-latte-5ec845b5",
+      "name": "Almond Latte · 250 ml",
+      "category": "Hot drinks",
+      "description": "Espresso softened with steamed almond drink.",
+      "allergens": [
+        "tree nuts"
+      ],
+      "dietaryLabels": [],
+      "price": 250,
+      "image": "coffee",
+      "owner": -1,
+      "sourceCategory": "Hot Beverages",
+      "sourceName": "Almond Latte",
+      "sourcePortion": "250 ml"
+    },
+    {
+      "id": "hot-drinks-coffee-latte-05442f89",
+      "name": "Latte · 250 ml",
+      "category": "Hot drinks",
+      "description": "Espresso with plenty of steamed milk.",
+      "allergens": [
+        "milk"
+      ],
+      "dietaryLabels": [],
+      "price": 200,
+      "image": "coffee",
+      "owner": -1,
+      "sourceCategory": "Hot Beverages",
+      "sourceName": "Coffee Latte",
+      "sourcePortion": "250 ml"
+    },
+    {
+      "id": "hot-drinks-espresso-1b1d4d3e",
+      "name": "Espresso · 30 ml",
+      "category": "Hot drinks",
+      "description": "A short, freshly brewed coffee.",
+      "allergens": [],
+      "dietaryLabels": [],
+      "price": 150,
+      "image": "coffee",
+      "owner": -1,
+      "sourceCategory": "Hot Beverages",
+      "sourceName": "Espresso",
+      "sourcePortion": "30 ml"
+    },
+    {
+      "id": "hot-drinks-hot-cocoa-b6c25a49",
+      "name": "Hot Cocoa · 250 ml",
+      "category": "Hot drinks",
+      "description": "A warm milk and cocoa drink with a chocolate finish.",
+      "allergens": [
+        "milk"
+      ],
+      "dietaryLabels": [],
+      "price": 200,
+      "image": "coffee",
+      "owner": -1,
+      "sourceCategory": "Hot Beverages",
+      "sourceName": "Hot Cocoa",
+      "sourcePortion": "250 ml"
+    },
+    {
+      "id": "hot-drinks-americano-e7f2f10e",
+      "name": "Americano · 100 ml",
+      "category": "Hot drinks",
+      "description": "Espresso lengthened with hot water.",
+      "allergens": [],
+      "dietaryLabels": [],
+      "price": 150,
+      "image": "coffee",
+      "owner": -1,
+      "sourceCategory": "Hot Beverages",
+      "sourceName": "Americano",
+      "sourcePortion": "100 ml"
+    },
+    {
+      "id": "hot-drinks-cappuccino-04e2c412",
+      "name": "Cappuccino · 150 ml",
+      "category": "Hot drinks",
+      "description": "Espresso topped with steamed milk and light foam.",
+      "allergens": [
+        "milk"
+      ],
+      "dietaryLabels": [],
+      "price": 200,
+      "image": "coffee",
+      "owner": -1,
+      "sourceCategory": "Hot Beverages",
+      "sourceName": "Cappuccino",
+      "sourcePortion": "150 ml"
+    },
+    {
+      "id": "bar-gluhwein-8301a976",
+      "name": "Glühwein · 220 ml — Bar",
+      "category": "Bar",
+      "description": "Red wine warmed with cherry, apple, citrus and spices. Contains alcohol.",
+      "allergens": [
+        "sulphites"
+      ],
+      "dietaryLabels": [],
+      "price": 250,
+      "image": "wine",
+      "owner": -1,
+      "sourceCategory": "Alcohol",
+      "sourceName": "Glühwein",
+      "sourcePortion": "220 ml"
+    },
+    {
+      "id": "bar-aperol-spritz-cocktail-3277d20a",
+      "name": "Aperol Spritz Cocktail · 330 ml — Bar",
+      "category": "Bar",
+      "description": "Aperol and sparkling wine over ice with orange. Contains alcohol.",
+      "allergens": [
+        "sulphites"
+      ],
+      "dietaryLabels": [],
+      "price": 400,
+      "image": "cocktail",
+      "owner": -1,
+      "sourceCategory": "Alcohol",
+      "sourceName": "Aperol Spritz Cocktail",
+      "sourcePortion": "330 ml"
+    },
+    {
+      "id": "bar-mojito-cocktail-1eaa1b91",
+      "name": "Mojito Cocktail · 330 ml — Bar",
+      "category": "Bar",
+      "description": "White rum with lime, mint and soda over ice. Contains alcohol.",
+      "allergens": [],
+      "dietaryLabels": [],
+      "price": 400,
+      "image": "cocktail",
+      "owner": -1,
+      "sourceCategory": "Alcohol",
+      "sourceName": "Mojito Cocktail",
+      "sourcePortion": "330 ml"
+    },
+    {
+      "id": "bar-mojito-cocktail-n-a-c00f7def",
+      "name": "Virgin mojito · 330 ml — Bar",
+      "category": "Bar",
+      "description": "A sparkling lime and mint cooler without added alcohol.",
+      "allergens": [],
+      "dietaryLabels": [],
+      "price": 350,
+      "image": "cocktail",
+      "owner": -1,
+      "sourceCategory": "Alcohol",
+      "sourceName": "Mojito Cocktail N/A",
+      "sourcePortion": "330 ml"
+    },
+    {
+      "id": "bar-pina-coco-3f069060",
+      "name": "Pineapple coconut rum cooler · 330 ml — Bar",
+      "category": "Bar",
+      "description": "A rum, pineapple and coconut cooler with a citrus lift. Contains alcohol.",
+      "allergens": [],
+      "dietaryLabels": [],
+      "price": 400,
+      "image": "cocktail",
+      "owner": -1,
+      "sourceCategory": "Alcohol",
+      "sourceName": "Pina Coco",
+      "sourcePortion": "330 ml"
+    },
+    {
+      "id": "bar-pink-berry-tonic-a3c46c5d",
+      "name": "Pink berry tonic · 400 ml — Bar",
+      "category": "Bar",
+      "description": "Gin and tonic with red currants, lemon and thyme. Contains alcohol.",
+      "allergens": [],
+      "dietaryLabels": [],
+      "price": 400,
+      "image": "cocktail",
+      "owner": -1,
+      "sourceCategory": "Alcohol",
+      "sourceName": "Pink berry tonic",
+      "sourcePortion": "400 ml"
+    },
+    {
+      "id": "bar-sex-on-the-beach-98bd3b4c",
+      "name": "Sex on the Beach · 400 ml — Bar",
+      "category": "Bar",
+      "description": "A vodka cooler with peach, pomegranate and elderflower. Contains alcohol.",
+      "allergens": [],
+      "dietaryLabels": [],
+      "price": 400,
+      "image": "cocktail",
+      "owner": -1,
+      "sourceCategory": "Alcohol",
+      "sourceName": "Sex on the Beach",
+      "sourcePortion": "400 ml"
+    },
+    {
+      "id": "bar-cosmopolitan-b08d629f",
+      "name": "Cosmopolitan · 180 ml — Bar",
+      "category": "Bar",
+      "description": "Vodka and orange liqueur with cranberry and citrus. Contains alcohol.",
+      "allergens": [],
+      "dietaryLabels": [],
+      "price": 400,
+      "image": "cocktail",
+      "owner": -1,
+      "sourceCategory": "Alcohol",
+      "sourceName": "Cosmopolitan",
+      "sourcePortion": "180 ml"
+    },
+    {
+      "id": "bar-rose-sangria-cocktail-47ecb201",
+      "name": "Rosé Sangria Cocktail · 350 ml — Bar",
+      "category": "Bar",
+      "description": "Rosé wine with cherry and orange, lengthened with sparkling water. Contains alcohol.",
+      "allergens": [
+        "sulphites"
+      ],
+      "dietaryLabels": [],
+      "price": 350,
+      "image": "cocktail",
+      "owner": -1,
+      "sourceCategory": "Alcohol",
+      "sourceName": "Rosé Sangria Cocktail",
+      "sourcePortion": "350 ml"
+    },
+    {
+      "id": "bar-rose-sangria-cocktail-1l-29db5fdd",
+      "name": "Rose sangria jug · 1000 ml — Bar",
+      "category": "Bar",
+      "description": "A sharing jug of rose sangria with cherry and citrus. Contains alcohol.",
+      "allergens": [
+        "sulphites"
+      ],
+      "dietaryLabels": [],
+      "price": 750,
+      "image": "cocktail",
+      "owner": -1,
+      "sourceCategory": "Alcohol",
+      "sourceName": "Rosé Sangria Cocktail – 1L",
+      "sourcePortion": "1000 ml"
+    },
+    {
+      "id": "bar-red-wine-3498598a",
+      "name": "Red Wine · 1000 ml",
+      "category": "Bar",
+      "description": "A serving of red table wine. Contains alcohol.",
+      "allergens": [
+        "sulphites"
+      ],
+      "dietaryLabels": [],
+      "price": 650,
+      "image": "wine",
+      "owner": -1,
+      "sourceCategory": "Alcohol",
+      "sourceName": "Red Wine",
+      "sourcePortion": "1000 ml"
+    },
+    {
+      "id": "bar-rose-wine-ad72f9de",
+      "name": "Rosé Wine · 1000 ml",
+      "category": "Bar",
+      "description": "A serving of rose table wine. Contains alcohol.",
+      "allergens": [
+        "sulphites"
+      ],
+      "dietaryLabels": [],
+      "price": 650,
+      "image": "wine",
+      "owner": -1,
+      "sourceCategory": "Alcohol",
+      "sourceName": "Rosé Wine",
+      "sourcePortion": "1000 ml"
+    },
+    {
+      "id": "bar-white-wine-eed435b2",
+      "name": "White Wine · 1000 ml",
+      "category": "Bar",
+      "description": "A serving of white table wine. Contains alcohol.",
+      "allergens": [
+        "sulphites"
+      ],
+      "dietaryLabels": [],
+      "price": 650,
+      "image": "wine",
+      "owner": -1,
+      "sourceCategory": "Alcohol",
+      "sourceName": "White Wine",
+      "sourcePortion": "1000 ml"
+    },
+    {
+      "id": "bar-chisinau-draft-beer-cd959243",
+      "name": "Chişinău Draft Beer · 1000 ml",
+      "category": "Bar",
+      "description": "A sharing serving of Chisinau draft beer. Contains alcohol.",
+      "allergens": [
+        "barley"
+      ],
+      "dietaryLabels": [],
+      "price": 350,
+      "image": "beer",
+      "owner": -1,
+      "sourceCategory": "Alcohol",
+      "sourceName": "Chişinău Draft Beer",
+      "sourcePortion": "1000 ml"
+    },
+    {
+      "id": "bar-chisinau-light-beer-cd1a8d7f",
+      "name": "Chișinău Light Beer · 500 ml",
+      "category": "Bar",
+      "description": "A chilled Chisinau light beer. Contains alcohol.",
+      "allergens": [
+        "barley"
+      ],
+      "dietaryLabels": [],
+      "price": 250,
+      "image": "beer",
+      "owner": -1,
+      "sourceCategory": "Alcohol",
+      "sourceName": "Chișinău Light Beer",
+      "sourcePortion": "500 ml"
+    },
+    {
+      "id": "bar-chisinau-light-beer-dfc48e3a",
+      "name": "Chișinău Light Beer · 2250 ml",
+      "category": "Bar",
+      "description": "A chilled Chisinau light beer. Contains alcohol.",
+      "allergens": [
+        "barley"
+      ],
+      "dietaryLabels": [],
+      "price": 400,
+      "image": "beer",
+      "owner": -1,
+      "sourceCategory": "Alcohol",
+      "sourceName": "Chișinău Light Beer",
+      "sourcePortion": "2250 ml"
+    },
+    {
+      "id": "bar-corona-extra-e8d4b9d6",
+      "name": "Corona Extra · 355 ml",
+      "category": "Bar",
+      "description": "A chilled Corona Extra beer. Contains alcohol.",
+      "allergens": [
+        "barley"
+      ],
+      "dietaryLabels": [],
+      "price": 400,
+      "image": "beer",
+      "owner": -1,
+      "sourceCategory": "Alcohol",
+      "sourceName": "Corona Extra",
+      "sourcePortion": "355 ml"
+    },
+    {
+      "id": "bar-efes-non-alcoholic-f9c605fc",
+      "name": "Efes Non-Alcoholic · 500 ml",
+      "category": "Bar",
+      "description": "A chilled Efes beer marketed as non-alcoholic; check the bottle for alcohol content.",
+      "allergens": [
+        "barley"
+      ],
+      "dietaryLabels": [],
+      "price": 250,
+      "image": "beer",
+      "owner": -1,
+      "sourceCategory": "Alcohol",
+      "sourceName": "Efes Non-Alcoholic",
+      "sourcePortion": "500 ml"
+    },
+    {
+      "id": "bar-efes-pilsner-beer-473f5326",
+      "name": "Efes Pilsner Beer · 500 ml",
+      "category": "Bar",
+      "description": "A chilled Efes pilsner. Contains alcohol.",
+      "allergens": [
+        "barley"
+      ],
+      "dietaryLabels": [],
+      "price": 250,
+      "image": "beer",
+      "owner": -1,
+      "sourceCategory": "Alcohol",
+      "sourceName": "Efes Pilsner Beer",
+      "sourcePortion": "500 ml"
+    },
+    {
+      "id": "bar-finch-beer-854e60bb",
+      "name": "Finch Beer · 500 ml",
+      "category": "Bar",
+      "description": "A chilled Finch beer. Contains alcohol.",
+      "allergens": [
+        "barley"
+      ],
+      "dietaryLabels": [],
+      "price": 250,
+      "image": "beer",
+      "owner": -1,
+      "sourceCategory": "Alcohol",
+      "sourceName": "Finch Beer",
+      "sourcePortion": "500 ml"
+    },
+    {
+      "id": "bar-franziskaner-weissbier-ffe6c361",
+      "name": "Franziskaner Weissbier · 500 ml",
+      "category": "Bar",
+      "description": "A chilled Franziskaner wheat beer. Contains alcohol.",
+      "allergens": [
+        "barley",
+        "wheat"
+      ],
+      "dietaryLabels": [],
+      "price": 450,
+      "image": "beer",
+      "owner": -1,
+      "sourceCategory": "Alcohol",
+      "sourceName": "Franziskaner Weissbier",
+      "sourcePortion": "500 ml"
+    },
+    {
+      "id": "bar-kozel-cerny-beer-bbcf2cdd",
+      "name": "Kozel Černý Beer · 500 ml",
+      "category": "Bar",
+      "description": "A chilled Kozel dark beer. Contains alcohol.",
+      "allergens": [
+        "barley"
+      ],
+      "dietaryLabels": [],
+      "price": 250,
+      "image": "beer",
+      "owner": -1,
+      "sourceCategory": "Alcohol",
+      "sourceName": "Kozel Černý Beer",
+      "sourcePortion": "500 ml"
+    },
+    {
+      "id": "bar-kozel-svetly-1b70491e",
+      "name": "Kozel Svetly · 500 ml",
+      "category": "Bar",
+      "description": "A chilled Kozel light lager. Contains alcohol.",
+      "allergens": [
+        "barley"
+      ],
+      "dietaryLabels": [],
+      "price": 250,
+      "image": "beer",
+      "owner": -1,
+      "sourceCategory": "Alcohol",
+      "sourceName": "Kozel Svetly",
+      "sourcePortion": "500 ml"
+    },
+    {
+      "id": "bar-timisoreana-c44467fd",
+      "name": "Timișoreana · 500 ml",
+      "category": "Bar",
+      "description": "A chilled Timisoreana beer. Contains alcohol.",
+      "allergens": [
+        "barley"
+      ],
+      "dietaryLabels": [],
+      "price": 250,
+      "image": "beer",
+      "owner": -1,
+      "sourceCategory": "Alcohol",
+      "sourceName": "Timișoreana",
+      "sourcePortion": "500 ml"
+    },
+    {
+      "id": "bar-bostavan-chardonnay-white-dry-wine-528afa2f",
+      "name": "Bostavan Chardonnay White Dry Wine · 750 ml",
+      "category": "Bar",
+      "description": "A bottle of dry Bostavan Chardonnay. Contains alcohol.",
+      "allergens": [
+        "sulphites"
+      ],
+      "dietaryLabels": [],
+      "price": 850,
+      "image": "wine",
+      "owner": -1,
+      "sourceCategory": "Alcohol",
+      "sourceName": "Bostavan Chardonnay White Dry Wine",
+      "sourcePortion": "750 ml"
+    },
+    {
+      "id": "bar-bostavan-merlot-red-dry-wine-a4770d22",
+      "name": "Bostavan Merlot Red Dry Wine · 750 ml",
+      "category": "Bar",
+      "description": "A bottle of dry Bostavan Merlot. Contains alcohol.",
+      "allergens": [
+        "sulphites"
+      ],
+      "dietaryLabels": [],
+      "price": 850,
+      "image": "wine",
+      "owner": -1,
+      "sourceCategory": "Alcohol",
+      "sourceName": "Bostavan Merlot Red Dry Wine",
+      "sourcePortion": "750 ml"
+    },
+    {
+      "id": "bar-bostavan-muscat-rose-3447f158",
+      "name": "Bostavan Muscat Rosé · 750 ml",
+      "category": "Bar",
+      "description": "A bottle of Bostavan Muscat rose. Contains alcohol.",
+      "allergens": [
+        "sulphites"
+      ],
+      "dietaryLabels": [],
+      "price": 850,
+      "image": "wine",
+      "owner": -1,
+      "sourceCategory": "Alcohol",
+      "sourceName": "Bostavan Muscat Rosé",
+      "sourcePortion": "750 ml"
+    },
+    {
+      "id": "bar-purcari-nocturne-cabernet-sauvignon-red-sec-532ea603",
+      "name": "PURCARI Nocturne Cabernet Sauvignon Red Sec · 750 ml",
+      "category": "Bar",
+      "description": "A bottle of dry Purcari Cabernet Sauvignon. Contains alcohol.",
+      "allergens": [
+        "sulphites"
+      ],
+      "dietaryLabels": [],
+      "price": 1350,
+      "image": "wine",
+      "owner": -1,
+      "sourceCategory": "Alcohol",
+      "sourceName": "PURCARI Nocturne Cabernet Sauvignon Red Sec",
+      "sourcePortion": "750 ml"
+    },
+    {
+      "id": "bar-purcari-nocturne-pinot-grigio-dry-wine-1564eec2",
+      "name": "Purcari Nocturne Pinot Grigio Dry Wine · 750 ml",
+      "category": "Bar",
+      "description": "A bottle of dry Purcari Pinot Grigio. Contains alcohol.",
+      "allergens": [
+        "sulphites"
+      ],
+      "dietaryLabels": [],
+      "price": 1350,
+      "image": "wine",
+      "owner": -1,
+      "sourceCategory": "Alcohol",
+      "sourceName": "Purcari Nocturne Pinot Grigio Dry Wine",
+      "sourcePortion": "750 ml"
+    },
+    {
+      "id": "bar-purcari-nocturne-rose-sec-96e443a9",
+      "name": "Purcari Nocturne Rose sec · 750 ml",
+      "category": "Bar",
+      "description": "A bottle of dry Purcari rose. Contains alcohol.",
+      "allergens": [
+        "sulphites"
+      ],
+      "dietaryLabels": [],
+      "price": 1350,
+      "image": "wine",
+      "owner": -1,
+      "sourceCategory": "Alcohol",
+      "sourceName": "Purcari Nocturne Rose sec",
+      "sourcePortion": "750 ml"
+    },
+    {
+      "id": "bar-purcari-nocturne-sauvignon-blanc-dry-wine-797bbaf4",
+      "name": "Purcari Nocturne Sauvignon Blanc Dry Wine · 750 ml",
+      "category": "Bar",
+      "description": "A bottle of dry Purcari Sauvignon Blanc. Contains alcohol.",
+      "allergens": [
+        "sulphites"
+      ],
+      "dietaryLabels": [],
+      "price": 1350,
+      "image": "wine",
+      "owner": -1,
+      "sourceCategory": "Alcohol",
+      "sourceName": "Purcari Nocturne Sauvignon Blanc Dry Wine",
+      "sourcePortion": "750 ml"
+    },
+    {
+      "id": "bar-cricova-crisecco-brut-9f2fa050",
+      "name": "Cricova Crisecco Brut · 750 ml",
+      "category": "Bar",
+      "description": "A bottle of Cricova brut sparkling wine. Contains alcohol.",
+      "allergens": [
+        "sulphites"
+      ],
+      "dietaryLabels": [],
+      "price": 950,
+      "image": "wine",
+      "owner": -1,
+      "sourceCategory": "Alcohol",
+      "sourceName": "Cricova Crisecco Brut",
+      "sourcePortion": "750 ml"
+    },
+    {
+      "id": "bar-cricova-lacrima-dulce-d907b30b",
+      "name": "Cricova Lacrima Dulce · 750 ml",
+      "category": "Bar",
+      "description": "A bottle of Cricova Lacrima Dulce wine. Contains alcohol.",
+      "allergens": [
+        "sulphites"
+      ],
+      "dietaryLabels": [],
+      "price": 950,
+      "image": "wine",
+      "owner": -1,
+      "sourceCategory": "Alcohol",
+      "sourceName": "Cricova Lacrima Dulce",
+      "sourcePortion": "750 ml"
+    },
+    {
+      "id": "extras-garlic-toast-7111b569",
+      "name": "Garlic toast · 120 g — Extras",
+      "category": "Extras",
+      "description": "Crisp ciabatta with garlic butter, Parmesan and parsley.",
+      "allergens": [
+        "wheat",
+        "milk"
+      ],
+      "dietaryLabels": [],
+      "price": 200,
+      "image": "bread",
+      "owner": -1,
+      "sourceCategory": "Supplements",
+      "sourceName": "Garlic toast",
+      "sourcePortion": "120 g"
+    },
+    {
+      "id": "extras-flatbread-with-butter-and-garlic-sheep-cheese-73035471",
+      "name": "Flatbread with Butter and Garlic Sheep Cheese · 60 g (1 pc)",
+      "category": "Extras",
+      "description": "Warm flatbread with sheep cheese and garlic butter.",
+      "allergens": [
+        "wheat",
+        "milk"
+      ],
+      "dietaryLabels": [],
+      "price": 100,
+      "image": "bread",
+      "owner": -1,
+      "sourceCategory": "Supplements",
+      "sourceName": "Flatbread with Butter and Garlic Sheep Cheese",
+      "sourcePortion": "60 g (1 pc)"
+    },
+    {
+      "id": "extras-flatbread-with-butter-and-sheep-cheese-1ec3fe93",
+      "name": "Flatbread with Butter and Sheep Cheese · 60 g (1 pc)",
+      "category": "Extras",
+      "description": "Warm flatbread with butter and sheep cheese.",
+      "allergens": [
+        "wheat",
+        "milk"
+      ],
+      "dietaryLabels": [],
+      "price": 100,
+      "image": "bread",
+      "owner": -1,
+      "sourceCategory": "Supplements",
+      "sourceName": "Flatbread with Butter and Sheep Cheese",
+      "sourcePortion": "60 g (1 pc)"
+    },
+    {
+      "id": "extras-bread-rusks-0cdcf301",
+      "name": "Bread Rusks · 50 g",
+      "category": "Extras",
+      "description": "Crisp wheat bread bites for the table.",
+      "allergens": [
+        "wheat"
+      ],
+      "dietaryLabels": [],
+      "price": 100,
+      "image": "bread",
+      "owner": -1,
+      "sourceCategory": "Supplements",
+      "sourceName": "Bread Rusks",
+      "sourcePortion": "50 g"
+    },
+    {
+      "id": "extras-hot-bread-f5def675",
+      "name": "Hot Bread · 150 g",
+      "category": "Extras",
+      "description": "Warm mixed-grain bread with seeds and olive oil.",
+      "allergens": [
+        "wheat",
+        "sesame"
+      ],
+      "dietaryLabels": [],
+      "price": 100,
+      "image": "bread",
+      "owner": -1,
+      "sourceCategory": "Supplements",
+      "sourceName": "Hot Bread",
+      "sourcePortion": "150 g"
+    },
+    {
+      "id": "extras-ciabatta-c40814d6",
+      "name": "Ciabatta · 100 g",
+      "category": "Extras",
+      "description": "A portion of rustic wheat ciabatta.",
+      "allergens": [
+        "wheat"
+      ],
+      "dietaryLabels": [],
+      "price": 100,
+      "image": "bread",
+      "owner": -1,
+      "sourceCategory": "Supplements",
+      "sourceName": "Ciabatta",
+      "sourcePortion": "100 g"
+    },
+    {
+      "id": "extras-focaccia-98c8e1d2",
+      "name": "Focaccia · 220 g",
+      "category": "Extras",
+      "description": "Soft olive oil bread for sharing.",
+      "allergens": [
+        "wheat"
+      ],
+      "dietaryLabels": [],
+      "price": 150,
+      "image": "bread",
+      "owner": -1,
+      "sourceCategory": "Supplements",
+      "sourceName": "Focaccia",
+      "sourcePortion": "220 g"
+    },
+    {
+      "id": "extras-mayonnaise-2e89eef6",
+      "name": "Mayonnaise · 50 g",
+      "category": "Extras",
+      "description": "A small pot of creamy mayonnaise.",
+      "allergens": [
+        "egg",
+        "mustard"
+      ],
+      "dietaryLabels": [],
+      "price": 100,
+      "image": "sauces",
+      "owner": -1,
+      "sourceCategory": "Supplements",
+      "sourceName": "Mayonnaise",
+      "sourcePortion": "50 g"
+    },
+    {
+      "id": "extras-tartar-sauce-c0743904",
+      "name": "Tartar Sauce · 50g",
+      "category": "Extras",
+      "description": "A creamy pickle and caper dip with herbs and mustard.",
+      "allergens": [
+        "egg",
+        "mustard"
+      ],
+      "dietaryLabels": [],
+      "price": 100,
+      "image": "sauces",
+      "owner": -1,
+      "sourceCategory": "Supplements",
+      "sourceName": "Tartar Sauce",
+      "sourcePortion": "50g"
+    },
+    {
+      "id": "extras-sour-cream-92fdae08",
+      "name": "Sour Cream · 50 g",
+      "category": "Extras",
+      "description": "A little sour cream to serve alongside your dish.",
+      "allergens": [
+        "milk"
+      ],
+      "dietaryLabels": [],
+      "price": 100,
+      "image": "sauces",
+      "owner": -1,
+      "sourceCategory": "Supplements",
+      "sourceName": "Sour Cream",
+      "sourcePortion": "50 g"
+    },
+    {
+      "id": "extras-ketchup-4c8f1d85",
+      "name": "Ketchup · 50 g",
+      "category": "Extras",
+      "description": "A small pot of tomato ketchup.",
+      "allergens": [
+        "celery"
+      ],
+      "dietaryLabels": [],
+      "price": 100,
+      "image": "sauces",
+      "owner": -1,
+      "sourceCategory": "Supplements",
+      "sourceName": "Ketchup",
+      "sourcePortion": "50 g"
+    },
+    {
+      "id": "extras-zesty-sauce-8c03b3cf",
+      "name": "Zesty sauce · 50 g",
+      "category": "Extras",
+      "description": "A creamy tomato and pickle dip with onion.",
+      "allergens": [
+        "egg",
+        "mustard"
+      ],
+      "dietaryLabels": [],
+      "price": 100,
+      "image": "sauces",
+      "owner": -1,
+      "sourceCategory": "Supplements",
+      "sourceName": "Zesty sauce",
+      "sourcePortion": "50 g"
+    }
+  ]
+}
