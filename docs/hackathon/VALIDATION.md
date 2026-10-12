@@ -4,6 +4,13 @@
 
 ## Completed checks
 
+### Render deployment preparation — 12 October 2026
+
+- Added `Dockerfile.render`, a restricted root build context, `render.yaml`, and the optional `render` profile. The full frontend is packaged inside the Java application; known UI routes serve the app while API authentication remains in place. Render credentials are not included in source.
+- `HostedFrontendTest` and `HackathonMenuTest`: **2 passed, zero failures/errors/skips**. Public UI routes and their security headers were tested alongside unauthenticated API/mutation rejection and the preserved menu fixture.
+- The combined image built successfully. A disposable local app limited to **512 MB and 0.5 CPU**, with a separate **256 MB PostgreSQL 16** container, reached readiness. Five UI routes, the compiled JavaScript and a menu photo loaded; manager login and fresh dinner creation returned 228 menu entries, 17 categories and EUR 38.01. Observed memory after that check was approximately **255 MB app / 48 MB database**, not a sustained capacity benchmark. No provider credentials or calls were used.
+- YAML syntax/format checking passed. Native Render Blueprint validation, resource activation, generated HTTPS-origin verification and hosted provider checks remain pending. See [the full setup guide](RENDER-SETUP.md). No Render account purchase or GitHub push was performed.
+
 ### Menu expansion and preview — 12 October 2026
 
 - The shared fixture contains **228 entries in 17 categories**: 216 source selections plus the original 12. Automated checks enforce at least 70% of each included source category independently, unique identifiers and source variants, complete image references, and the original four-item **EUR 38.01** dinner. All three catalog checks passed. See [coverage](MENU-COVERAGE.md).

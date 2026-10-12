@@ -14,6 +14,7 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.oauth2.jose.jws.MacAlgorithm;
 import org.springframework.security.oauth2.jwt.*;
 import org.springframework.security.web.SecurityFilterChain;
+import org.springframework.security.web.header.writers.ReferrerPolicyHeaderWriter.ReferrerPolicy;
 
 @Configuration
 public class SecurityConfig {
@@ -43,12 +44,38 @@ public class SecurityConfig {
   }
 
   @Bean
-  SecurityFilterChain security(HttpSecurity http) throws Exception {
+  SecurityFilterChain security(
+      HttpSecurity http, @Value("${tablekind.web.enabled:false}") boolean serveFrontend)
+      throws Exception {
+    if (serveFrontend)
+      http.headers(
+          h ->
+              h.contentSecurityPolicy(
+                      c ->
+                          c.policyDirectives(
+                              "default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline';"
+                                  + " img-src 'self' data:; connect-src 'self'; frame-ancestors 'none';"
+                                  + " base-uri 'self'; form-action 'self'"))
+                  .referrerPolicy(r -> r.policy(ReferrerPolicy.NO_REFERRER)));
     return http.csrf(c -> c.disable()) // Bearer-only API: no ambient authentication cookies.
         .sessionManagement(s -> s.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
         .authorizeHttpRequests(
-            a ->
+            a -> {
+              if (serveFrontend)
                 a.requestMatchers(
+                        HttpMethod.GET,
+                        "/",
+                        "/index.html",
+                        "/manage",
+                        "/guest",
+                        "/waiter",
+                        "/admin",
+                        "/admin/**",
+                        "/assets/**",
+                        "/menu/**",
+                        "/favicon.ico")
+                    .permitAll();
+              a.requestMatchers(
                         "/error",
                         "/actuator/health",
                         "/actuator/health/liveness",
@@ -74,7 +101,8 @@ public class SecurityConfig {
                         HttpMethod.GET, "/api/join/**", "/api/table-links/**", "/api/demo/config", "/api/customer/email/config")
                     .permitAll()
                     .anyRequest()
-                    .authenticated())
+                    .authenticated();
+            })
         .oauth2ResourceServer(
             o ->
                 o.jwt(j -> {})

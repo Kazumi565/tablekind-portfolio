@@ -1,0 +1,14 @@
+server:
+  address: 0.0.0.0
+  forward-headers-strategy: framework
+spring:
+  datasource:
+    url: jdbc:postgresql://${RENDER_DB_HOST}:5432/${RENDER_DB_NAME}
+    hikari:
+      maximum-pool-size: 4
+      minimum-idle: 1
+tablekind:
+  web:
+    enabled: true
+  paypal:
+    app-url: ${HACKATHON_APP_URL:${RENDER_EXTERNAL_URL:http://localhost:5197}}

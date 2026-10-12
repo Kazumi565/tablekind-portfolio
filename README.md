@@ -18,6 +18,8 @@ Built around a Moldova use case, the original application uses **integer bani** 
 
 ## PayPal AI Hackathon
 
+For the complete hosted demo, use the [Render setup guide](docs/hackathon/RENDER-SETUP.md). The one-service Docker image and managed database Blueprint are prepared locally; Render activation and hosted integration checks are pending.
+
 **Describe the split → review every cent → obtain consent → pay individual sandbox shares.** Built by Mihai Bargan as a solo entry, extending baseline `81dbdcf0e3517b8f917203ff69269f5530a26935`.
 
 ```powershell

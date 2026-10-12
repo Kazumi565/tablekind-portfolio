@@ -1,0 +1,60 @@
+services:
+  - type: web
+    name: tablekind-hackathon
+    runtime: docker
+    branch: hackathon/paypal-bill-splitting
+    region: frankfurt
+    plan: 0.5c-512mb
+    dockerfilePath: ./Dockerfile.render
+    dockerContext: .
+    autoDeployTrigger: off
+    healthCheckPath: /actuator/health/readiness
+    envVars:
+      - key: SPRING_PROFILES_ACTIVE
+        value: hackathon,render
+      - key: RENDER_DB_HOST
+        fromDatabase:
+          name: tablekind-hackathon-db
+          property: host
+      - key: RENDER_DB_NAME
+        fromDatabase:
+          name: tablekind-hackathon-db
+          property: database
+      - key: DB_USER
+        fromDatabase:
+          name: tablekind-hackathon-db
+          property: user
+      - key: DB_PASSWORD
+        fromDatabase:
+          name: tablekind-hackathon-db
+          property: password
+      - key: HACKATHON_JWT_SECRET
+        generateValue: true
+      - key: HACKATHON_STAFF_EMAIL
+        value: manager@tablekind.test
+      - key: HACKATHON_STAFF_PASSWORD
+        generateValue: true
+      - key: PAYPAL_CLIENT_ID
+        sync: false
+      - key: PAYPAL_CLIENT_SECRET
+        sync: false
+      - key: PAYPAL_MERCHANT_ID
+        sync: false
+      - key: AI_CALLS_ENABLED
+        value: "false"
+      - key: AI_MAX_CALLS
+        value: "0"
+      - key: AI_MODEL
+        value: gpt-6.1-sol
+      - key: AI_REASONING_EFFORT
+        value: low
+databases:
+  - name: tablekind-hackathon-db
+    region: frankfurt
+    plan: 0.1c-256mb
+    postgresMajorVersion: "16"
+    databaseName: tablekind_hackathon
+    user: tablekind
+    diskSizeGB: 1
+    storageAutoscalingEnabled: false
+    ipAllowList: []

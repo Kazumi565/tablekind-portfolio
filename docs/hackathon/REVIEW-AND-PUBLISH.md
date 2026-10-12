@@ -23,7 +23,7 @@ git diff --cached
 If reviewed changes remain, stage the intended menu source, assets, tests and documents. This explicit path list includes the new photos and build scripts. Review the staged patch and scan its contents before committing:
 
 ```powershell
-git add -- .gitignore README.md backend/src frontend/src frontend/tests frontend/scripts frontend/public/menu frontend/package.json frontend/package-lock.json frontend/.dockerignore frontend/index.html docs/hackathon
+git add -- .gitignore .dockerignore Dockerfile.render render.yaml README.md backend/src frontend/src frontend/tests frontend/scripts frontend/public/menu frontend/package.json frontend/package-lock.json frontend/.dockerignore frontend/index.html docs/hackathon
 git diff --cached --check
 git diff --cached
 python scripts/security/review_source.py --staged
