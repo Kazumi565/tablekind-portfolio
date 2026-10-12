@@ -6,6 +6,8 @@ The menu uses **27 original illustrative photos**. Related dishes can reuse a ca
 
 ## Full local application
 
+The same full application is now deployed at [TableKind on Render](https://tablekind-hackathon.onrender.com/), with a persistent database. Hosted split, consent and sandbox payment checks passed. AI calls are disabled after the approved test run; ongoing judge usage still needs an allowance. See [Render setup](RENDER-SETUP.md).
+
 Run the isolated stack using [SETUP](SETUP.md), then open [the manager view](http://localhost:5195/manage) and choose **Start EUR dinner**. Newly created dinners receive the expanded menu. Existing dinners retain their earlier catalog and accepted orders; their history is not rewritten.
 
 The initial accepted meal remains **€38.01**, with the same four items allocated to Mihai, Diego and Ana. Browsing additional items does not change that bill. Placing and accepting more orders uses the existing application workflow. The shared menu view adds photos, search, categories, a vegetarian filter and batches of 24 cards, with a category selector on small screens.
@@ -46,6 +48,6 @@ Validation on 12 October 2026 passed all three catalog tests and four focused ba
 
 The authorized menu preview is deployed on ChatGPT Sites: [TableKind — Good food, shared well](https://tablekind-at-the-table.workspace-326781.chatgpt.site). It is **owner-private**. This URL is suitable for the owner's review; it does not yet provide judge access.
 
-ChatGPT Sites and GitHub Pages can serve this static menu preview. They cannot directly run the existing Java/Spring Boot and PostgreSQL application. The full application remains local. A complete hosted split → preview → consent → PayPal journey needs a backend host and persistent database, or judges can follow the local Docker setup. Paid hosting, a domain and ongoing judge AI usage remain undecided.
+ChatGPT Sites and GitHub Pages can serve this static menu preview. They cannot directly run the existing Java/Spring Boot and PostgreSQL application. The full app is now hosted on Render with managed PostgreSQL in Frankfurt. Mihai manually activated the two resources at a dashboard estimate of USD 13.30/month and manually pushed the source branch. A custom domain is optional and has not been purchased. Ongoing judge AI usage and controlled access arrangements remain unfinished.
 
 GitHub publication remains manual. Follow [REVIEW-AND-PUBLISH](REVIEW-AND-PUBLISH.md); authorization to host a preview does not authorize pushing this branch, merging remotely or publishing a release.

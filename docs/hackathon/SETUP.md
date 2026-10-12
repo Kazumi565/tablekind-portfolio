@@ -1,5 +1,7 @@
 # Run the hackathon build
 
+The full app is also deployed at [tablekind-hackathon.onrender.com](https://tablekind-hackathon.onrender.com/). See [Render status and setup](RENDER-SETUP.md) for the hosted installation. Obtain demo-manager and sandbox buyer access privately. Paid AI calls are currently disabled after the completed hosted tests; ongoing judge access is still being arranged. The instructions below run a separate local installation.
+
 Use Git and Docker Desktop with Linux containers. PowerShell instructions run from the repository root. Node 24 is needed only for frontend development/browser checks; Docker builds the application with Java 21 and PostgreSQL 16.
 
 ```powershell

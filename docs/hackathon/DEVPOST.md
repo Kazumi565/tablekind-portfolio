@@ -34,8 +34,8 @@ Finalize judge access and record the working demonstration. Six real GPT-6.1 Sol
 
 ## Fields to finalize before submitting
 
-- Public source URL: `https://github.com/Kazumi565/tablekind-portfolio` with the intended reviewed branch/commit accessible.
-- Demo/setup: link the final [setup guide](SETUP.md); add an approved hosted HTTPS URL if one is deployed.
+- Public source: [hackathon/paypal-bill-splitting](https://github.com/Kazumi565/tablekind-portfolio/tree/hackathon/paypal-bill-splitting). Deployed app commit `b4bd14cb9c31c80264accd18f506f7911613177b` and MIT license verified; push the later verification documents manually before submission.
+- Demo: [TableKind full app](https://tablekind-hackathon.onrender.com/), with [setup](SETUP.md) and [Render status](RENDER-SETUP.md). Ongoing AI access is still being arranged; paid calls are disabled after testing.
 - Video: add the publicly visible YouTube link after recording and manual publication.
 - Testing access: provide controlled demo-manager and sandbox buyer access through the agreed judge channel; never publish API secrets.
-- Validation: as of 12 October, the small real GPT-6.1 Sol evaluation and complete local AI-to-payment journey pass, alongside actual sandbox tips, replay and restart recovery. Seven AI calls used an estimated USD 0.0221 in tokens. Judging access, published source/video links and final submission review remain pending; see [VALIDATION](VALIDATION.md).
+- Validation: as of 12 October, six real GPT-6.1 Sol evaluation cases and the complete AI-to-payment journey pass locally and on hosted HTTPS. Each journey settled EUR 38.01 with zero outstanding. Seven hosted AI calls used an estimated USD 0.0216, separately from the seven earlier local calls at USD 0.0221. Tips, replay and restart recovery were additionally verified locally. Judging access, video and final submission review remain pending; see [VALIDATION](VALIDATION.md).

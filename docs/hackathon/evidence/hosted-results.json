@@ -1,0 +1,188 @@
+{
+  "recordedAt": "2026-10-12T13:00:32.500Z",
+  "origin": "https://tablekind-hackathon.onrender.com",
+  "deployedCommit": "b4bd14cb9c31c80264accd18f506f7911613177b",
+  "browser": "Chrome extension",
+  "deployment": {
+    "region": "Frankfurt",
+    "database": "PostgreSQL 16",
+    "dashboardEstimatedMonthlyUsd": 13.3,
+    "activation": "Manually performed by the owner"
+  },
+  "access": {
+    "readiness": "UP",
+    "publicUiAndAssetsLoaded": true,
+    "unauthenticatedRestaurantsStatus": 401,
+    "freshTabManagerLogin": true
+  },
+  "menu": {
+    "items": 228,
+    "categories": 17,
+    "mobileViewportPx": 390,
+    "mobileClientWidthPx": 390,
+    "mobileScrollWidthPx": 390,
+    "mobileCheck": "Chrome emulation"
+  },
+  "menuOrder": {
+    "freshDinner": true,
+    "dish": "Margherita",
+    "quantity": 1,
+    "unitPriceEur": "9.50",
+    "allergenHintsReviewed": true,
+    "status": "accepted",
+    "acceptedBillEur": "47.51",
+    "ordererBalanceEur": "28.51",
+    "aiCalls": 0
+  },
+  "manualSplitJourney": {
+    "proposalWaitedForRequiredVotes": true,
+    "payments": [
+      {
+        "status": "COMPLETED",
+        "captureCount": 1,
+        "captureStatus": "COMPLETED",
+        "currency": "EUR",
+        "amount": "12.67",
+        "merchantMatches": true
+      },
+      {
+        "status": "COMPLETED",
+        "captureCount": 1,
+        "captureStatus": "COMPLETED",
+        "currency": "EUR",
+        "amount": "12.67",
+        "merchantMatches": true
+      },
+      {
+        "status": "COMPLETED",
+        "captureCount": 1,
+        "captureStatus": "COMPLETED",
+        "currency": "EUR",
+        "amount": "12.67",
+        "merchantMatches": true
+      }
+    ],
+    "paidBillEur": "38.01",
+    "outstandingEur": "0.00",
+    "reservedEur": "0.00",
+    "reloadPreservedSettlement": true
+  },
+  "aiEvaluation": {
+    "model": "gpt-6.1-sol",
+    "cases": [
+      {
+        "name": "representative dinner",
+        "expected": "READY",
+        "observed": "READY",
+        "passed": true,
+        "latencyMs": 9297
+      },
+      {
+        "name": "relative weights",
+        "expected": "READY",
+        "observed": "READY",
+        "passed": true,
+        "latencyMs": 8157
+      },
+      {
+        "name": "single recipient",
+        "expected": "READY",
+        "observed": "READY",
+        "passed": true,
+        "latencyMs": 6631
+      },
+      {
+        "name": "invented dish",
+        "expected": "CLARIFY",
+        "observed": "CLARIFY",
+        "passed": true,
+        "latencyMs": 5315
+      },
+      {
+        "name": "unsupported refund",
+        "expected": "CLARIFY",
+        "observed": "CLARIFY",
+        "passed": true,
+        "latencyMs": 5856
+      },
+      {
+        "name": "unclear referent",
+        "expected": "CLARIFY",
+        "observed": "CLARIFY",
+        "passed": true,
+        "latencyMs": 5284
+      }
+    ],
+    "passed": true,
+    "medianLatencyMs": 6243.5,
+    "worstLatencyMs": 9297,
+    "previewOnly": true,
+    "tableRevisionUnchanged": true
+  },
+  "aiJourney": {
+    "reviewedPreview": true,
+    "billUnchangedUntilFinalConsent": true,
+    "allAffectedDinersAgreed": true,
+    "payments": [
+      {
+        "diner": "Ana",
+        "status": "COMPLETED",
+        "captureCount": 1,
+        "captureStatus": "COMPLETED",
+        "currency": "EUR",
+        "amount": "11.34",
+        "merchantMatches": true,
+        "referenceMatches": true
+      },
+      {
+        "diner": "Diego",
+        "status": "COMPLETED",
+        "captureCount": 1,
+        "captureStatus": "COMPLETED",
+        "currency": "EUR",
+        "amount": "12.33",
+        "merchantMatches": true,
+        "referenceMatches": true
+      },
+      {
+        "diner": "Mihai",
+        "status": "COMPLETED",
+        "captureCount": 1,
+        "captureStatus": "COMPLETED",
+        "currency": "EUR",
+        "amount": "14.34",
+        "merchantMatches": true,
+        "referenceMatches": true
+      }
+    ],
+    "paidBillEur": "38.01",
+    "outstandingEur": "0.00",
+    "reservedEur": "0.00",
+    "tipsEur": "0.00",
+    "reloadPreservedSettlement": true,
+    "managementReconciliation": "Ledger matches",
+    "unlinkedEntriesEur": "0.00"
+  },
+  "aiUsage": {
+    "hostedProviderCalls": 7,
+    "inputTokens": 5286,
+    "outputTokens": 1104,
+    "reasoningTokens": 0,
+    "estimatedUsd": 0.021612,
+    "approvedHostedTestingLimitUsd": 1,
+    "measurement": "Render provider usage logs; standard uncached token-rate estimate, not an invoice"
+  },
+  "finalAiConfiguration": {
+    "callsEnabled": false,
+    "maxCalls": 0,
+    "freshRequestDisabledMessageVerified": true,
+    "keyStoredInRenderWithPermission": true
+  },
+  "limits": [
+    "One fictional US sandbox buyer reused across the three TableKind diner identities.",
+    "Small initial AI evaluation; no broad reliability claim.",
+    "Mobile check used Chrome emulation, not a physical device.",
+    "Ongoing judge AI access, credential delivery, final judge walkthrough, video and submission remain pending.",
+    "No live payments or real POS integration."
+  ]
+}

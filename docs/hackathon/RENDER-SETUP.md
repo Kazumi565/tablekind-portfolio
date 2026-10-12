@@ -2,6 +2,8 @@
 
 This setup hosts the React interface and Spring backend together, with a separate managed PostgreSQL database. It uses the isolated `hackathon,render` profiles, sandbox PayPal only, and disabled AI calls initially. The private ChatGPT Sites menu preview remains a separate design preview.
 
+**Current deployment (12 October 2026):** [TableKind full app](https://tablekind-hackathon.onrender.com/) is live on commit `b4bd14cb9c31c80264accd18f506f7911613177b`, manually pushed by Mihai. Both resources are in Frankfurt. The dashboard estimate is **USD 13.30/month**: USD 7 web compute plus USD 6.30 database compute/storage. Mihai activated these resources manually. The instructions below describe the existing setup; do not create a duplicate Blueprint.
+
 The supplied `render.yaml` provisions paid resources. Review the final monthly estimate in Render before applying it. The selected initial sizes are a 512 MB web service and a 256 MB PostgreSQL instance with 1 GB storage in Frankfurt. Database storage autoscaling and automatic source deploys are disabled. Database access is internal-only. Neither these files nor local testing creates a Render subscription.
 
 ## 1. Create the account
@@ -54,9 +56,13 @@ For deployment failures, use Render's Logs tab. Share a redacted error message r
 
 ## 5. Enable bounded AI access separately
 
-After an explicit ongoing budget is chosen, add `OPENAI_API_KEY` directly to Render's secret environment, set an approved positive `AI_MAX_CALLS`, and change `AI_CALLS_ENABLED` to `true`. Use `AI_MODEL=gpt-6.1-sol` and `AI_REASONING_EFFORT=low`. Save and redeploy. This cumulative call allowance counts requests in this hosted database and persists across restarts; the new database does not share the local test count. A request-count cap is not a dollar-denominated billing cap.
+The API key is now stored in Render's secret environment with Mihai's permission. Temporary hosted tests used a separately approved USD 1 allowance and seven provider calls, then `AI_CALLS_ENABLED=false` and `AI_MAX_CALLS=0` were deployed again. A fresh request confirmed that AI access is disabled. Ongoing judge usage still needs an approved allowance.
 
-Review a real AI split, ask all affected diners to consent, then complete sandbox PayPal payments with a Personal sandbox buyer. Check that the bill reaches EUR 38.01 paid with zero outstanding and no duplicate captures after reload. These hosted provider checks remain pending until deployment and spending are approved.
+After that ongoing budget is chosen, set an approved positive `AI_MAX_CALLS` and change `AI_CALLS_ENABLED` to `true`. Use `AI_MODEL=gpt-6.1-sol` and `AI_REASONING_EFFORT=low`. Save and redeploy. This cumulative call allowance counts requests in this hosted database and persists across restarts; **seven calls are already recorded**, independently of the seven earlier local calls. A request-count cap is not a dollar-denominated billing cap.
+
+Review a real AI split, ask all affected diners to consent, then complete sandbox PayPal payments with a Personal sandbox buyer. Check that the bill reaches EUR 38.01 paid with zero outstanding and no duplicate captures after reload. See [hosted verification](VALIDATION.md#hosted-https-verification--12-october-2026) for the completed checks and their limits.
+
+Render initially masks environment values behind placeholder fields. When changing an existing value, choose **Show secret**, wait for its actual editable value to load, edit it, then **Save and deploy**. Verify the resulting deployment is Live and the application's behavior changed. Keep secret values hidden before screenshots; do not export the complete environment.
 
 ## 6. Prepare judges and maintain the demo
 
