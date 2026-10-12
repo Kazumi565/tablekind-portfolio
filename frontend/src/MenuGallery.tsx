@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { ArrowRight, Leaf, Plus, Search, UtensilsCrossed } from "lucide-react";
 import type { Menu, Names, Product } from "./types";
 import { useMoney } from "./Currency";
+import { menuEntries } from "./menuCatalog";
 import "./menuExperience.css";
 
 const label = (names: Names, lang: string) =>
@@ -77,18 +78,24 @@ export function MenuGallery({
   const categories = [...menu.categories].sort(
     (a, b) => a.sort_order - b.sort_order,
   );
-  const categoryOrder = new Map(
-    categories.map((c) => [c.id, c.sort_order]),
+  const categoryOrder = new Map(categories.map((c) => [c.id, c.sort_order]));
+  const dishNames = new Intl.Collator(
+    lang === "ro" || lang === "ru" ? lang : "en",
+    {
+      numeric: true,
+      sensitivity: "base",
+    },
   );
-  const dishNames = new Intl.Collator(lang === "ro" || lang === "ru" ? lang : "en", {
-    numeric: true,
-    sensitivity: "base",
-  });
   const activeCategory = categories.find((c) => c.id === category);
-  const products = menu.products
+  const entries = menuEntries(menu);
+  const products = entries
+    .filter(
+      (entry) =>
+        !activeCategory || entry.categoryIds.includes(activeCategory.id),
+    )
+    .map((entry) => entry.product)
     .filter(
       (p) =>
-        (!activeCategory || p.category_id === activeCategory.id) &&
         (!vegetarian ||
           p.dietary_labels.some((d) => /^(vegetarian|vegan)$/i.test(d))) &&
         `${label(p.names, lang)} ${label(p.descriptions, lang)}`
@@ -102,21 +109,25 @@ export function MenuGallery({
         dishNames.compare(label(a.names, lang), label(b.names, lang)) ||
         a.id.localeCompare(b.id),
     );
-  const photographed = menu.products.filter(
-    (p) =>
-      p.available &&
-      p.image_path &&
-      /^\/menu\/[a-z0-9-]+\.webp$/.test(p.image_path),
-  );
+  const photographed = entries
+    .map((entry) => entry.product)
+    .filter(
+      (p) =>
+        p.available &&
+        p.image_path &&
+        /^\/menu\/[a-z0-9-]+\.webp$/.test(p.image_path),
+    );
   const hero =
-    photographed.find((p) => p.names.en === "Margherita") ?? photographed[0];
+    photographed.find((p) =>
+      /^Margherita(?: Pizza)?(?: ·|$)/i.test(p.names.en),
+    ) ?? photographed[0];
   const freshDish = photographed.find(
     (p) => p.image_path !== hero?.image_path && /salad/i.test(p.names.en),
   );
   const categoryCounts = new Map(
     categories.map((c) => [
       c.id,
-      menu.products.filter((p) => p.category_id === c.id).length,
+      entries.filter((entry) => entry.categoryIds.includes(c.id)).length,
     ]),
   );
   return (
@@ -140,7 +151,7 @@ export function MenuGallery({
             <a href="#menu-dishes" className="button hero-menu-link">
               Find your next favourite <ArrowRight size={18} />
             </a>
-            <span>{menu.products.length} dishes. Plenty to love.</span>
+            <span>{entries.length} dishes. Plenty to love.</span>
           </div>
           <div className="hero-footnote">
             <UtensilsCrossed size={15} /> Made for your kind of table
@@ -153,7 +164,8 @@ export function MenuGallery({
               <span>
                 The simple things, done well
                 <strong>
-                  {dishHeading(label(hero.names, lang))} · {money(hero.price_bani)}
+                  {dishHeading(label(hero.names, lang))} ·{" "}
+                  {money(hero.price_bani)}
                 </strong>
               </span>
               <button
@@ -223,7 +235,7 @@ export function MenuGallery({
               value={activeCategory?.id ?? ""}
               onChange={(e) => setCategory(e.target.value)}
             >
-              <option value="">All dishes ({menu.products.length})</option>
+              <option value="">All dishes ({entries.length})</option>
               {categories.map((c) => (
                 <option key={c.id} value={c.id}>
                   {label(c.names, lang)} ({categoryCounts.get(c.id)})
@@ -239,7 +251,7 @@ export function MenuGallery({
               onClick={() => setCategory("")}
             >
               <span>All dishes</span>
-              <span>{menu.products.length.toString().padStart(2, "0")}</span>
+              <span>{entries.length.toString().padStart(2, "0")}</span>
             </button>
             {categories.map((c) => (
               <button

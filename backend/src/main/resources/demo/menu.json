@@ -142,36 +142,6 @@
       "owner": -1
     },
     {
-      "id": "margherita",
-      "name": "Margherita",
-      "category": "Pizza",
-      "description": "Tomato sauce, creamy mozzarella and fresh basil on a crisp, hand-stretched base.",
-      "allergens": [
-        "wheat",
-        "milk"
-      ],
-      "dietaryLabels": [
-        "vegetarian"
-      ],
-      "price": 950,
-      "image": "margherita",
-      "owner": -1
-    },
-    {
-      "id": "pepperoni",
-      "name": "Pepperoni",
-      "category": "Pizza",
-      "description": "Spicy pepperoni, melted mozzarella and tomato sauce with a golden, crisp crust.",
-      "allergens": [
-        "wheat",
-        "milk"
-      ],
-      "dietaryLabels": [],
-      "price": 1150,
-      "image": "pepperoni",
-      "owner": -1
-    },
-    {
       "id": "burger",
       "name": "Burger",
       "category": "Mains",
@@ -265,40 +235,6 @@
       "price": 900,
       "image": "salad",
       "owner": 2
-    },
-    {
-      "id": "cheesecake",
-      "name": "Berry cheesecake",
-      "category": "Desserts",
-      "description": "Creamy baked cheesecake on a buttery biscuit base, finished with mixed berries.",
-      "allergens": [
-        "wheat",
-        "milk",
-        "egg"
-      ],
-      "dietaryLabels": [
-        "vegetarian"
-      ],
-      "price": 550,
-      "image": "cheesecake",
-      "owner": -1
-    },
-    {
-      "id": "tiramisu",
-      "name": "Tiramisu",
-      "category": "Desserts",
-      "description": "Coffee-soaked sponge, airy mascarpone cream and a generous dusting of cocoa.",
-      "allergens": [
-        "wheat",
-        "milk",
-        "egg"
-      ],
-      "dietaryLabels": [
-        "vegetarian"
-      ],
-      "price": 550,
-      "image": "tiramisu",
-      "owner": -1
     },
     {
       "id": "lemonade",

@@ -49,20 +49,24 @@ class HackathonMenuTest extends WorkflowSupport {
     assertEquals(17, categories.size());
     assertTrue(categories.containsAll(List.of("Pizza", "Mains", "Starters", "Breakfast", "Soups", "Kids", "Bar")));
     assertEquals("EUR", view.path("currency").asText());
-    assertEquals(228, menu.path("products").size());
+    assertEquals(224, menu.path("products").size());
+    Set<String> dishNames = new HashSet<>();
+    menu.path("products").forEach(p -> dishNames.add(p.path("names").path("en").asText()));
+    assertFalse(dishNames.contains("Pepperoni"));
+    assertFalse(dishNames.contains("Margherita"));
+    assertFalse(dishNames.contains("Berry cheesecake"));
+    assertFalse(dishNames.contains("Tiramisu"));
+    assertTrue(dishNames.contains("Pepperoni Pizza · 475 g"));
+    assertTrue(dishNames.contains("Margherita Pizza · 380 g"));
     var expectedPrices =
         Map.ofEntries(
             Map.entry("Burger", 1200L),
             Map.entry("Pasta", 1000L),
             Map.entry("Salad", 900L),
             Map.entry("Shared starter", 701L),
-            Map.entry("Margherita", 950L),
-            Map.entry("Pepperoni", 1150L),
             Map.entry("Garden pizza", 1050L),
             Map.entry("Crispy chicken", 1100L),
             Map.entry("Tomato bruschetta", 650L),
-            Map.entry("Tiramisu", 550L),
-            Map.entry("Berry cheesecake", 550L),
             Map.entry("Citrus lemonade", 350L));
     Set<String> images = new HashSet<>();
     for (var product : menu.path("products")) {

@@ -2,7 +2,7 @@
 
 Observed from [Andy’s Pizza Moldova](https://andys.md/) on **12 October 2026**. This dated catalog snapshot is integrated into `backend/src/main/resources/demo/menu.json`; the live restaurant menu may change. Application and visual checks are recorded in the validation documentation.
 
-The source contains a nested 389-row aggregate followed by 21 actual categories. The aggregate is discarded to avoid counting the same menu twice. Each of the 17 relevant dining categories independently meets `ceil(0.70 × category rows)`. Portion sizes and variants count separately, and repeated items in different source categories remain separate category selections. The original 12 TableKind dishes are preserved separately and contribute nothing to these coverage counts.
+The source contains a nested 389-row aggregate followed by 21 actual categories. The aggregate is discarded to avoid counting the same menu twice. Each of the 17 relevant dining categories independently meets `ceil(0.70 × category rows)`. Portion sizes and variants count separately, and repeated items in different source categories remain separate category selections. Eight distinct original TableKind dishes remain and contribute nothing to these coverage counts. Four overlapping demo dishes (Margherita, Pepperoni, berry cheesecake and tiramisu) were removed in favor of the portion-labelled source selections.
 
 | Source category | TableKind category | Observed rows | Required minimum | Selected | Coverage |
 | --- | --- | ---: | ---: | ---: | ---: |
@@ -24,7 +24,7 @@ The source contains a nested 389-row aggregate followed by 21 actual categories.
 | Alcohol | Bar | 47 | 33 | 33 | 70.21% |
 | Supplements | Extras | 16 | 12 | 12 | 75.00% |
 
-**Total: 216 selected category rows from 297 observed rows across 17 relevant categories**, plus the 12 existing TableKind dishes: **228 selectable entries in total**. Cross-category overlaps are intentional; this total does not claim that all names are unique.
+**Total: 216 selected category rows from 297 observed rows across 17 relevant categories**, plus eight distinct TableKind dishes: **224 stored category entries, presented as 203 unique selectable dishes**. Identical dishes retain all category memberships but appear once in All dishes; different portions, recipes, prices or modifier choices remain separate.
 
 ## Scope and adaptation
 
@@ -42,7 +42,7 @@ Allergen hints conservatively use the observed ingredient lists and common recip
 
 Photos are original illustrative **category** images and can repeat across related dishes. They do not represent the exact recipe or listed portion. No Andy’s photography, logos or menu prose are included in the rendering data. See [image provenance](MENU-ASSETS.md).
 
-[Machine-readable coverage](MENU-COVERAGE.json) records every selected source name and portion. The authoritative application fixture is `backend/src/main/resources/demo/menu.json`; it contains newly written descriptions, fictional prices and local image slugs. The frontend preview is generated from the same fixture. Repeated source names receive a category suffix so each selectable entry has a distinct display name.
+[Machine-readable coverage](MENU-COVERAGE.json) records every selected source name and portion. The authoritative application fixture is `backend/src/main/resources/demo/menu.json`; it contains newly written descriptions, fictional prices and local image slugs. The frontend preview is generated from the same fixture. Stored source-category entries retain their provenance. The gallery removes category suffixes from displayed names and consolidates identical entries without changing existing order or payment records.
 
 ## Selected source rows
 

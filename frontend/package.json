@@ -11,7 +11,7 @@
     "build": "tsc --noEmit && vite build",
     "build:menu": "node scripts/build-menu-preview.mjs",
     "menu:sync": "node scripts/sync-menu.mjs",
-    "test:menu": "node scripts/sync-menu.mjs --check && node --test tests/menu-catalog.test.mjs",
+    "test:menu": "node scripts/sync-menu.mjs --check && node --experimental-strip-types --test tests/menu-catalog.test.mjs",
     "preview": "vite preview --host 127.0.0.1",
     "test:browser": "node tests/browser-smoke.mjs",
     "test:pos": "node tests/pos-smoke.mjs",

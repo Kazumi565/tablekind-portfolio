@@ -141,40 +141,6 @@ export const previewMenu: Menu = {
       modifierGroups: [],
     },
     {
-      id: "margherita",
-      category_id: "Pizza",
-      names: {
-        en: "Margherita",
-      },
-      descriptions: {
-        en: "Tomato sauce, creamy mozzarella and fresh basil on a crisp, hand-stretched base.",
-      },
-      price_bani: 950,
-      image_path: "/menu/margherita.webp",
-      allergens: ["wheat", "milk"],
-      dietary_labels: ["vegetarian"],
-      available: true,
-      version: 1,
-      modifierGroups: [],
-    },
-    {
-      id: "pepperoni",
-      category_id: "Pizza",
-      names: {
-        en: "Pepperoni",
-      },
-      descriptions: {
-        en: "Spicy pepperoni, melted mozzarella and tomato sauce with a golden, crisp crust.",
-      },
-      price_bani: 1150,
-      image_path: "/menu/pepperoni.webp",
-      allergens: ["wheat", "milk"],
-      dietary_labels: [],
-      available: true,
-      version: 1,
-      modifierGroups: [],
-    },
-    {
       id: "burger",
       category_id: "Mains",
       names: {
@@ -271,40 +237,6 @@ export const previewMenu: Menu = {
       price_bani: 900,
       image_path: "/menu/salad.webp",
       allergens: ["milk"],
-      dietary_labels: ["vegetarian"],
-      available: true,
-      version: 1,
-      modifierGroups: [],
-    },
-    {
-      id: "cheesecake",
-      category_id: "Desserts",
-      names: {
-        en: "Berry cheesecake",
-      },
-      descriptions: {
-        en: "Creamy baked cheesecake on a buttery biscuit base, finished with mixed berries.",
-      },
-      price_bani: 550,
-      image_path: "/menu/cheesecake.webp",
-      allergens: ["wheat", "milk", "egg"],
-      dietary_labels: ["vegetarian"],
-      available: true,
-      version: 1,
-      modifierGroups: [],
-    },
-    {
-      id: "tiramisu",
-      category_id: "Desserts",
-      names: {
-        en: "Tiramisu",
-      },
-      descriptions: {
-        en: "Coffee-soaked sponge, airy mascarpone cream and a generous dusting of cocoa.",
-      },
-      price_bani: 550,
-      image_path: "/menu/tiramisu.webp",
-      allergens: ["wheat", "milk", "egg"],
       dietary_labels: ["vegetarian"],
       available: true,
       version: 1,

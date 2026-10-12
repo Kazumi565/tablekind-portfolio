@@ -2,7 +2,7 @@
   "source": "https://andys.md/",
   "observed": "2026-10-12",
   "status": "Integrated into backend/src/main/resources/demo/menu.json; application and visual validation documented separately.",
-  "rule": "Select at least ceil(0.7 × observed rows) independently within each relevant category. Portions and variants are distinct rows; repeated items across categories remain category-specific selections. The original 12 TableKind dishes do not count toward these selections.",
+  "rule": "Select at least ceil(0.7 × observed rows) independently within each relevant category. Portions and variants are distinct; the gallery consolidates identical cross-category dishes while retaining every category membership. Eight distinct original TableKind dishes do not count toward these selections.",
   "aggregateExcluded": {
     "sourceIndex": 0,
     "observedRows": 389,
@@ -12,8 +12,9 @@
     "relevantCategories": 17,
     "observedRows": 297,
     "selectedRows": 216,
-    "additionalOriginalDishes": 12,
-    "integratedMenuItems": 228
+    "additionalOriginalDishes": 8,
+    "integratedMenuItems": 224,
+    "uniqueSelectableDishes": 203
   },
   "categories": [
     {

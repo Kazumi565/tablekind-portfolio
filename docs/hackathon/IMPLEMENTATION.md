@@ -2,7 +2,7 @@
 
 ## Guest interface
 
-The menu combines warm cream and forest colors, serif headings, a large food photograph, category controls and photo cards. It uses the same 228-entry, 17-category catalog, localized dish names, availability flags, prices and real ordering actions. Photos remain illustrative; the existing allergens and dietary information remain visible in dish details.
+The menu combines warm cream and forest colors, serif headings, a large food photograph, category controls and photo cards. It uses a 203-dish, 17-category gallery backed by 224 source-category entries, localized dish names, availability flags, prices and real ordering actions. Photos remain illustrative; the existing allergens and dietary information remain visible in dish details.
 
 The EUR guest dinner uses a compact demo toolbar, receipt photos, the current diner's share, everyone else's current balances and an Order → Review split → Agree → Pay progress indicator. Current and proposed amounts appear together in the AI preview; agreement badges reflect actual required voters. A mobile navigation bar provides Menu, My order, Pay & split and More. Switching demo diners selects the guest route, and section navigation scrolls to the top. Other workspaces retain their existing navigation. The hackathon profile hides practice-reservation links because their endpoint is available only in the local/demo profiles; those profiles retain the links.
 

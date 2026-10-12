@@ -1,6 +1,6 @@
 # Menu and design preview
 
-The hackathon menu contains **228 selectable entries across 17 categories**: 216 selections adapted from a dated Andy’s Pizza Moldova menu snapshot, plus the 12 original TableKind dishes. Each relevant source category independently meets the requested 70% minimum. Portions and source-category overlaps count as separate selections; the [coverage record](MENU-COVERAGE.md) lists the exact scope and calculation.
+The hackathon menu contains **203 unique selectable dishes across 17 categories**: 216 source-category selections adapted from a dated Andy’s Pizza Moldova menu snapshot, plus eight distinct original dishes, stored as 224 category entries. Each relevant source category independently meets the requested 70% minimum. Different portions remain separate; identical source-category overlaps appear once in All dishes and remain accessible in each relevant category; the [coverage record](MENU-COVERAGE.md) lists the exact scope and calculation.
 
 The menu uses **27 original illustrative photos**. Related dishes can reuse a category photo, so the image does not promise an exact recipe or portion. Names and descriptions are adapted for TableKind, and prices are fictional EUR demo values. Ingredient and allergen hints require restaurant confirmation; an empty hint list does not mean allergen-free. See [photo provenance](MENU-ASSETS.md), [additional food images](MENU-ASSETS-EXPANSION.md) and [drink images](MENU-ASSETS-DRINKS.md).
 
