@@ -1,8 +1,14 @@
-import { useEffect, useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 import { ArrowRight, Check, Sparkles } from "lucide-react";
 import { useMoney } from "./Currency";
 import type { State } from "./types";
+import {
+  aiAvailabilityCopy,
+  checkAiAvailability,
+  type AiAvailability,
+} from "./aiAvailability";
 import "./dinnerPanels.css";
+import "./aiAvailability.css";
 
 type Share = { guestId: string; name: string; amountMinor: number };
 type Preview = {
@@ -26,11 +32,13 @@ export function SplitAssistant({
   action,
   busy,
   onPreviewChange,
+  onManualSplit,
 }: {
   state: State;
   action: (path: string, body?: unknown, method?: string) => Promise<any>;
   busy: boolean;
   onPreviewChange?: (ready: boolean) => void;
+  onManualSplit?: () => void;
 }) {
   const { money } = useMoney();
   const [instruction, setInstruction] = useState(
@@ -40,9 +48,37 @@ export function SplitAssistant({
   const [error, setError] = useState("");
   const [working, setWorking] = useState(false);
   const [sent, setSent] = useState(false);
+  const [availability, setAvailability] = useState<AiAvailability>("CHECKING");
+  const actionRef = useRef(action);
+  actionRef.current = action;
+  const statusRequest = useRef(0);
+  const refreshAvailability = useCallback(async (showChecking = false) => {
+    const request = ++statusRequest.current;
+    if (showChecking) setAvailability("CHECKING");
+    const result = await checkAiAvailability(actionRef.current);
+    if (request === statusRequest.current) setAvailability(result);
+    return request === statusRequest.current ? result : "UNREACHABLE";
+  }, []);
+  useEffect(() => {
+    void refreshAvailability(true);
+    const checkOnFocus = () => void refreshAvailability(true);
+    const checkOnVisibility = () => {
+      if (document.visibilityState === "visible") checkOnFocus();
+    };
+    window.addEventListener("focus", checkOnFocus);
+    document.addEventListener("visibilitychange", checkOnVisibility);
+    return () => {
+      ++statusRequest.current;
+      window.removeEventListener("focus", checkOnFocus);
+      document.removeEventListener("visibilitychange", checkOnVisibility);
+    };
+  }, [state.actor.id, state.session.id, refreshAvailability]);
+  const dinnerOpen = state.session.status === "OPEN";
+  const visibleAvailability = dinnerOpen ? availability : "DINNER_CLOSED";
   const stale =
     preview?.status === "READY" && preview.revision !== state.session.revision;
-  const previewReady = preview?.status === "READY" && !stale && !error && !sent;
+  const previewReady =
+    preview?.status === "READY" && !stale && !error && !sent && dinnerOpen;
   useEffect(() => {
     onPreviewChange?.(previewReady);
   }, [onPreviewChange, previewReady]);
@@ -52,20 +88,29 @@ export function SplitAssistant({
     ["ACCEPTED", "PREPARING", "READY", "SERVED"].includes(i.status),
   );
   async function interpret() {
+    if (busy || working || !dinnerOpen || availability !== "AVAILABLE") return;
     setWorking(true);
     setError("");
-    setPreview(null);
-    setSent(false);
     try {
-      setPreview(await action("/ai-splits/preview", { instruction }));
+      // Recheck without spending a call; preview enforces the allowance atomically.
+      if ((await refreshAvailability(true)) !== "AVAILABLE") return;
+      setPreview(null);
+      setSent(false);
+      const result = await action("/ai-splits/preview", { instruction });
+      if (result) setPreview(result);
+      else
+        setError(
+          "The preview request did not complete in this view. Check the request message before trying again.",
+        );
     } catch (e) {
       setError((e as Error).message);
     } finally {
+      await refreshAvailability();
       setWorking(false);
     }
   }
   async function confirm() {
-    if (!preview?.draftId || stale) return;
+    if (!preview?.draftId || stale || !dinnerOpen || busy || working) return;
     setWorking(true);
     setError("");
     try {
@@ -95,20 +140,50 @@ export function SplitAssistant({
           <h2>Split it in your own words</h2>
         </div>
         <span className="dinner-panel-status">
-          {previewReady ? "Ready to review" : "Review before sharing"}
+          {!dinnerOpen
+            ? "Dinner closed"
+            : previewReady
+              ? "Ready to review"
+              : "Review before sharing"}
         </span>
       </div>
       <p className="dinner-panel-intro">
         Tell us who covers each dish. Review the amounts, then ask everyone
         affected to agree.
       </p>
+      <div
+        className={`notice dinner-ai-availability ${visibleAvailability === "AVAILABLE" ? "is-available" : "is-unavailable"}`}
+        role="status"
+        aria-live="polite"
+      >
+        <strong>{aiAvailabilityCopy[visibleAvailability].title}</strong>
+        <p>{aiAvailabilityCopy[visibleAvailability].description}</p>
+        {dinnerOpen && availability !== "AVAILABLE" && (
+          <div className="row wrap">
+            {onManualSplit && (
+              <button disabled={busy || working} onClick={onManualSplit}>
+                Share dishes manually{" "}
+                <ArrowRight size={14} aria-hidden="true" />
+              </button>
+            )}
+            <button
+              disabled={working || availability === "CHECKING"}
+              onClick={() => void refreshAvailability(true)}
+            >
+              {availability === "CHECKING"
+                ? "Checking…"
+                : "Check availability again"}
+            </button>
+          </div>
+        )}
+      </div>
       <label className="field">
         <span>Your split instructions</span>
         <textarea
           value={instruction}
           maxLength={2000}
           rows={3}
-          disabled={working}
+          disabled={working || !dinnerOpen}
           onChange={(e) => {
             setInstruction(e.target.value);
             setPreview(null);
@@ -134,21 +209,29 @@ export function SplitAssistant({
       </details>
       <div className="dinner-preview-action">
         <small>
-          TableKind calculates every cent. AI interprets your request when
-          enabled.
+          TableKind calculates every cent. Previewing takes no payment.
         </small>
         <button
           className="primary"
           disabled={
             busy ||
             working ||
+            availability !== "AVAILABLE" ||
             !instruction.trim() ||
             !items.length ||
             state.session.status !== "OPEN"
           }
           onClick={() => void interpret()}
         >
-          {working ? "Working…" : "Preview split with AI"}
+          {!dinnerOpen
+            ? "Dinner closed"
+            : working
+              ? "Working…"
+              : availability === "CHECKING"
+                ? "Checking assistant…"
+                : availability === "AVAILABLE"
+                  ? "Preview split with AI"
+                  : "AI preview unavailable"}
           <ArrowRight size={16} aria-hidden="true" />
         </button>
       </div>
@@ -173,7 +256,11 @@ export function SplitAssistant({
           <div className="dinner-preview-heading">
             <h3>Proposed split</h3>
             <span className="dinner-panel-status">
-              {stale ? "Needs a fresh preview" : "Bill unchanged"}
+              {!dinnerOpen
+                ? "Dinner closed"
+                : stale
+                  ? "Needs a fresh preview"
+                  : "Bill unchanged"}
             </span>
           </div>
           <p>{preview.summary}</p>
@@ -267,7 +354,7 @@ export function SplitAssistant({
             </div>
             <button
               className="primary"
-              disabled={busy || working || stale}
+              disabled={busy || working || stale || !dinnerOpen}
               onClick={() => void confirm()}
             >
               Confirm preview and propose

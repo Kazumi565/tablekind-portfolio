@@ -1,0 +1,42 @@
+.dinner-split-panel .dinner-ai-availability {
+  display: block;
+  margin: 1rem 0;
+  padding: 1rem 1.1rem;
+  border: 1px solid #ddd5c4;
+  border-radius: 14px;
+  background: #f6f0e2;
+  color: #3f473d;
+}
+
+.dinner-split-panel .dinner-ai-availability.is-available {
+  border-color: #c9dacb;
+  background: #edf3e9;
+}
+
+.dinner-split-panel .dinner-ai-availability strong {
+  display: block;
+  color: #243d30;
+}
+
+.dinner-split-panel .dinner-ai-availability p {
+  margin: 0.4rem 0;
+  line-height: 1.55;
+}
+
+.dinner-split-panel .dinner-ai-availability .row {
+  margin-top: 0.75rem;
+}
+
+.dinner-split-panel .dinner-ai-availability button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+@media (max-width: 520px) {
+  .dinner-split-panel .dinner-ai-availability .row {
+    align-items: stretch;
+    flex-direction: column;
+  }
+}

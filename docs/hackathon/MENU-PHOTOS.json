@@ -1,0 +1,3303 @@
+{
+  "source": "https://andys.md/",
+  "observed": "2026-10-12",
+  "prepared": "2026-10-13",
+  "attribution": "Andy’s Pizza Moldova product photography. Copyright remains with its owners. Source attribution does not establish a license.",
+  "processing": "Source product images downloaded from back.andys.md; composition preserved, dimensions at most 600 px, WebP quality 84. Locally served; no runtime remote image requests.",
+  "selectedSourceRows": 216,
+  "distinctSourceImages": 195,
+  "distinctPhotoContents": 189,
+  "originalIllustrativeRows": 8,
+  "entries": [
+    {
+      "fixtureId": "breakfast-andys-breakfast-de1b3807",
+      "displayName": "House breakfast",
+      "sourceCategory": "Breakfasts",
+      "sourceName": "Andy’s Breakfast",
+      "sourcePortion": "",
+      "photoPath": "/menu/dish-andy-s-breakfast-2-129d46dc.webp"
+    },
+    {
+      "fixtureId": "breakfast-classic-omelet-68aa5f61",
+      "displayName": "Classic omelet",
+      "sourceCategory": "Breakfasts",
+      "sourceName": "Classic omelet",
+      "sourcePortion": "",
+      "photoPath": "/menu/dish-shakshuka-1-8186584e.webp"
+    },
+    {
+      "fixtureId": "breakfast-cottage-cheese-pancakes-40498d55",
+      "displayName": "Cottage cheese pancakes",
+      "sourceCategory": "Breakfasts",
+      "sourceName": "Cottage cheese pancakes",
+      "sourcePortion": "",
+      "photoPath": "/menu/dish-cottage-cheese-pancakes-3-f240cc84.webp"
+    },
+    {
+      "fixtureId": "breakfast-pancakes-with-chicken-mushroom-sauce-e125cf41",
+      "displayName": "Pancakes with Chicken & Mushroom Sauce · 380 g — Breakfast",
+      "sourceCategory": "Breakfasts",
+      "sourceName": "Pancakes with Chicken & Mushroom Sauce",
+      "sourcePortion": "380 g",
+      "photoPath": "/menu/dish-pancakes-with-chicken-mushroom-sauce-2-7fdc47ef.webp"
+    },
+    {
+      "fixtureId": "breakfast-crepes-with-salted-salmon-79d172b8",
+      "displayName": "Crepes with salted salmon · 230/25 g — Breakfast",
+      "sourceCategory": "Breakfasts",
+      "sourceName": "Crepes with salted salmon",
+      "sourcePortion": "230/25 g",
+      "photoPath": "/menu/dish-crepes-with-salted-salmon-1-b724d710.webp"
+    },
+    {
+      "fixtureId": "starters-roasted-pepper-bruschetta-400f3d4c",
+      "displayName": "Roasted Pepper Bruschetta · 200 g",
+      "sourceCategory": "Appetizers",
+      "sourceName": "Roasted Pepper Bruschetta",
+      "sourcePortion": "200 g",
+      "photoPath": "/menu/dish-roasted-pepper-bruschetta-2-7d475d5a.webp"
+    },
+    {
+      "fixtureId": "starters-salmon-bruschetta-72f90a77",
+      "displayName": "Salmon Bruschetta · 180 g",
+      "sourceCategory": "Appetizers",
+      "sourceName": "Salmon Bruschetta",
+      "sourcePortion": "180 g",
+      "photoPath": "/menu/dish-salmon-bruschetta-3-4d6018e3.webp"
+    },
+    {
+      "fixtureId": "starters-bruschettas-with-shrimp-1fb5df21",
+      "displayName": "Bruschettas with shrimp · 240 g",
+      "sourceCategory": "Appetizers",
+      "sourceName": "Bruschettas with shrimp",
+      "sourcePortion": "240 g",
+      "photoPath": "/menu/dish-bruschettas-with-shrimp-3-311f09de.webp"
+    },
+    {
+      "fixtureId": "starters-garlic-toast-01d2ee79",
+      "displayName": "Garlic toast · 120 g — Starters",
+      "sourceCategory": "Appetizers",
+      "sourceName": "Garlic toast",
+      "sourcePortion": "120 g",
+      "photoPath": "/menu/dish-ciabatta-1-eec2c5c4.webp"
+    },
+    {
+      "fixtureId": "starters-cheese-platter-1094c085",
+      "displayName": "Cheese Platter · 50/40/40/40/40/20/20g",
+      "sourceCategory": "Appetizers",
+      "sourceName": "Cheese Platter",
+      "sourcePortion": "50/40/40/40/40/20/20g",
+      "photoPath": "/menu/dish-cheese-platter-1-fb000524.webp"
+    },
+    {
+      "fixtureId": "starters-nachos-e001feb4",
+      "displayName": "Nachos · 400/50/50/50g",
+      "sourceCategory": "Appetizers",
+      "sourceName": "Nachos",
+      "sourcePortion": "400/50/50/50g",
+      "photoPath": "/menu/dish-nachos-1-f0c6603e.webp"
+    },
+    {
+      "fixtureId": "starters-guacamole-d00b6805",
+      "displayName": "Guacamole · 100/30 g",
+      "sourceCategory": "Appetizers",
+      "sourceName": "Guacamole",
+      "sourcePortion": "100/30 g",
+      "photoPath": "/menu/dish-guacamole-2-5ef30854.webp"
+    },
+    {
+      "fixtureId": "starters-eggplant-appetizer-40dae8c2",
+      "displayName": "Eggplant Appetizer · 100 / 20 g",
+      "sourceCategory": "Appetizers",
+      "sourceName": "Eggplant Appetizer",
+      "sourcePortion": "100 / 20 g",
+      "photoPath": "/menu/dish-eggplant-appetizer-2-a1c531fa.webp"
+    },
+    {
+      "fixtureId": "starters-romanian-appetizer-7a466f44",
+      "displayName": "Romanian Appetizer · 100 / 20 g",
+      "sourceCategory": "Appetizers",
+      "sourceName": "Romanian Appetizer",
+      "sourcePortion": "100 / 20 g",
+      "photoPath": "/menu/dish-romanian-appetizer-2-7a839201.webp"
+    },
+    {
+      "fixtureId": "salads-warm-beef-salad-3d001a6b",
+      "displayName": "Warm Beef Salad · 320 g",
+      "sourceCategory": "Salads",
+      "sourceName": "Warm Beef Salad",
+      "sourcePortion": "320 g",
+      "photoPath": "/menu/dish-warm-beef-salad-1-5dcb2798.webp"
+    },
+    {
+      "fixtureId": "salads-caesar-salad-with-chicken-c1926cbd",
+      "displayName": "Caesar Salad with Chicken · 300 g",
+      "sourceCategory": "Salads",
+      "sourceName": "Caesar Salad with Chicken",
+      "sourcePortion": "300 g",
+      "photoPath": "/menu/dish-caesar-salad-with-chicken-1-52da8eb5.webp"
+    },
+    {
+      "fixtureId": "salads-caesar-salad-with-shrimp-32294e79",
+      "displayName": "Caesar Salad with Shrimp · 290 g",
+      "sourceCategory": "Salads",
+      "sourceName": "Caesar Salad with Shrimp",
+      "sourcePortion": "290 g",
+      "photoPath": "/menu/dish-caesar-salad-with-shrimp-1-f21be3df.webp"
+    },
+    {
+      "fixtureId": "salads-caesar-salad-with-baked-salmon-e8dd9765",
+      "displayName": "Caesar Salad with baked salmon · 290 g",
+      "sourceCategory": "Salads",
+      "sourceName": "Caesar Salad with baked salmon",
+      "sourcePortion": "290 g",
+      "photoPath": "/menu/dish-caesar-salad-with-lightly-salted-salmon-1-ff354fd1.webp"
+    },
+    {
+      "fixtureId": "salads-caesar-salad-with-lightly-salted-salmon-ef3784df",
+      "displayName": "Caesar Salad with lightly salted salmon · 280 g",
+      "sourceCategory": "Salads",
+      "sourceName": "Caesar Salad with lightly salted salmon",
+      "sourcePortion": "280 g",
+      "photoPath": "/menu/dish-caesar-salad-with-lightly-salted-salmon-1-d2802600.webp"
+    },
+    {
+      "fixtureId": "salads-tuna-salad-792876f4",
+      "displayName": "Tuna Salad · 350 g",
+      "sourceCategory": "Salads",
+      "sourceName": "Tuna Salad",
+      "sourcePortion": "350 g",
+      "photoPath": "/menu/dish-tuna-salad-1-9e836c13.webp"
+    },
+    {
+      "fixtureId": "soups-red-borscht-7e302632",
+      "displayName": "Red Borscht · 370/50/30/30/15 g",
+      "sourceCategory": "Soups",
+      "sourceName": "Red Borscht",
+      "sourcePortion": "370/50/30/30/15 g",
+      "photoPath": "/menu/dish-red-borscht-1-4dcc4390.webp"
+    },
+    {
+      "fixtureId": "soups-zama-traditional-chicken-soup-28a9ec0d",
+      "displayName": "Zama (Traditional Chicken Soup) · 350 / 30 / 50 / 10 g",
+      "sourceCategory": "Soups",
+      "sourceName": "Zama (Traditional Chicken Soup)",
+      "sourcePortion": "350 / 30 / 50 / 10 g",
+      "photoPath": "/menu/dish-zama-traditional-chicken-soup-1-dbc754de.webp"
+    },
+    {
+      "fixtureId": "soups-chicken-cream-soup-f7ff88a5",
+      "displayName": "Chicken Cream Soup · 300/130 g",
+      "sourceCategory": "Soups",
+      "sourceName": "Chicken Cream Soup",
+      "sourcePortion": "300/130 g",
+      "photoPath": "/menu/dish-chicken-cream-soup-1-1ed901ae.webp"
+    },
+    {
+      "fixtureId": "soups-spinach-cream-soup-5101d347",
+      "displayName": "Spinach Cream Soup · 340 / 25 g",
+      "sourceCategory": "Soups",
+      "sourceName": "Spinach Cream Soup",
+      "sourcePortion": "340 / 25 g",
+      "photoPath": "/menu/dish-spinach-cream-soup-1-682aff9b.webp"
+    },
+    {
+      "fixtureId": "soups-mexican-soup-320e2f53",
+      "displayName": "Mexican Soup · 350 / 40 / 10 g",
+      "sourceCategory": "Soups",
+      "sourceName": "Mexican Soup",
+      "sourcePortion": "350 / 40 / 10 g",
+      "photoPath": "/menu/dish-mexican-soup-1-23d164fe.webp"
+    },
+    {
+      "fixtureId": "pizza-pizza-mortadella-pistachio-b97da062",
+      "displayName": "Mortadella and pistachio pizza · 480 g",
+      "sourceCategory": "Pizza",
+      "sourceName": "Pizza Mortadella&Pistachio",
+      "sourcePortion": "480 g",
+      "photoPath": "/menu/dish-pizza-mortadella-pistachio-1-e22fe358.webp"
+    },
+    {
+      "fixtureId": "pizza-pizza-funghi-efbb448c",
+      "displayName": "Chicken and mushroom pizza · 580 g",
+      "sourceCategory": "Pizza",
+      "sourceName": "Pizza Funghi",
+      "sourcePortion": "580 g",
+      "photoPath": "/menu/dish-pizza-funghi-2-6dae62a4.webp"
+    },
+    {
+      "fixtureId": "pizza-pizza-salsicia-c573e890",
+      "displayName": "Sausage and mushroom pizza · 470 g",
+      "sourceCategory": "Pizza",
+      "sourceName": "Pizza Salsicia",
+      "sourcePortion": "470 g",
+      "photoPath": "/menu/dish-pizza-salsicia-1-9fd4da8a.webp"
+    },
+    {
+      "fixtureId": "pizza-barbeque-pizza-635857c5",
+      "displayName": "Barbecue pizza · 560 g",
+      "sourceCategory": "Pizza",
+      "sourceName": "BARBEQUE Pizza",
+      "sourcePortion": "560 g",
+      "photoPath": "/menu/dish-barbeque-pizza-2-3b87734c.webp"
+    },
+    {
+      "fixtureId": "pizza-bianca-pizza-5592d640",
+      "displayName": "Bianca Pizza · 550 g",
+      "sourceCategory": "Pizza",
+      "sourceName": "Bianca Pizza",
+      "sourcePortion": "550 g",
+      "photoPath": "/menu/dish-bianca-pizza-2-20e6210b.webp"
+    },
+    {
+      "fixtureId": "pizza-margherita-pizza-1ca9766d",
+      "displayName": "Margherita Pizza · 380 g",
+      "sourceCategory": "Pizza",
+      "sourceName": "Margherita Pizza",
+      "sourcePortion": "380 g",
+      "photoPath": "/menu/dish-margherita-pizza-2-df5b9e18.webp"
+    },
+    {
+      "fixtureId": "pizza-neapolitana-pizza-965840eb",
+      "displayName": "Neapolitana Pizza · 510 g",
+      "sourceCategory": "Pizza",
+      "sourceName": "Neapolitana Pizza",
+      "sourcePortion": "510 g",
+      "photoPath": "/menu/dish-neapolitana-pizza-2-c103a516.webp"
+    },
+    {
+      "fixtureId": "pizza-pepperoni-pizza-340abc3e",
+      "displayName": "Pepperoni Pizza · 475 g",
+      "sourceCategory": "Pizza",
+      "sourceName": "Pepperoni Pizza",
+      "sourcePortion": "475 g",
+      "photoPath": "/menu/dish-pepperoni-pizza-2-fd502a85.webp"
+    },
+    {
+      "fixtureId": "pizza-pizza-5-cheeses-8ff5b227",
+      "displayName": "Five cheese pizza · 420 g",
+      "sourceCategory": "Pizza",
+      "sourceName": "Pizza 5 Cheeses",
+      "sourcePortion": "420 g",
+      "photoPath": "/menu/dish-pizza-5-cheeses-2-b5efc7ca.webp"
+    },
+    {
+      "fixtureId": "pizza-pizza-capricioasa-88b04b83",
+      "displayName": "Pizza Capricioasa · 600 g",
+      "sourceCategory": "Pizza",
+      "sourceName": "Pizza Capricioasa",
+      "sourcePortion": "600 g",
+      "photoPath": "/menu/dish-pizza-capricioasa-4-aac71911.webp"
+    },
+    {
+      "fixtureId": "pasta-pasta-carbonara-cd0018f7",
+      "displayName": "Pasta Carbonara · 270 g",
+      "sourceCategory": "Pasta",
+      "sourceName": "Pasta Carbonara",
+      "sourcePortion": "270 g",
+      "photoPath": "/menu/dish-pasta-carbonara-1-6d562dae.webp"
+    },
+    {
+      "fixtureId": "pasta-pasta-pollo-5089b013",
+      "displayName": "Pasta Pollo · 350 g",
+      "sourceCategory": "Pasta",
+      "sourceName": "Pasta Pollo",
+      "sourcePortion": "350 g",
+      "photoPath": "/menu/dish-pasta-pollo-2-0f1ca86c.webp"
+    },
+    {
+      "fixtureId": "pasta-shrimp-pasta-5ff5e410",
+      "displayName": "Shrimp Pasta · 320 g",
+      "sourceCategory": "Pasta",
+      "sourceName": "Shrimp Pasta",
+      "sourcePortion": "320 g",
+      "photoPath": "/menu/dish-shrimp-pasta-1-918dfd72.webp"
+    },
+    {
+      "fixtureId": "pasta-chicken-lasagna-d4945211",
+      "displayName": "Chicken Lasagna · 450 g",
+      "sourceCategory": "Pasta",
+      "sourceName": "Chicken Lasagna",
+      "sourcePortion": "450 g",
+      "photoPath": "/menu/dish-chicken-lasagna-2-d6fbe646.webp"
+    },
+    {
+      "fixtureId": "mains-fritto-misto-8a26e05b",
+      "displayName": "Fritto misto · 290/50/40 g",
+      "sourceCategory": "Main Dishes",
+      "sourceName": "Fritto misto",
+      "sourcePortion": "290/50/40 g",
+      "photoPath": "/menu/dish-fritto-misto-1-5f9c7871.webp"
+    },
+    {
+      "fixtureId": "mains-salmon-steak-with-mashed-potatoes-3c0a9c54",
+      "displayName": "Salmon steak with mashed potatoes · 140/200/60/50/40/30 g",
+      "sourceCategory": "Main Dishes",
+      "sourceName": "Salmon steak with mashed potatoes",
+      "sourcePortion": "140/200/60/50/40/30 g",
+      "photoPath": "/menu/dish-salmon-steak-with-mashed-potatoes-1-c6d580e4.webp"
+    },
+    {
+      "fixtureId": "mains-chicken-breast-with-potato-gratin-4b7f9bb3",
+      "displayName": "Chicken breast with potato gratin · 160/140/80/50 g",
+      "sourceCategory": "Main Dishes",
+      "sourceName": "Chicken breast with potato gratin",
+      "sourcePortion": "160/140/80/50 g",
+      "photoPath": "/menu/dish-chicken-breast-with-potato-gratin-4-ff4a9741.webp"
+    },
+    {
+      "fixtureId": "mains-pork-in-chili-sauce-with-rice-a171b3b1",
+      "displayName": "Pork in chili sauce with rice · 250/160 g",
+      "sourceCategory": "Main Dishes",
+      "sourceName": "Pork in chili sauce with rice",
+      "sourcePortion": "250/160 g",
+      "photoPath": "/menu/dish-pork-in-chili-sauce-with-rice-2-7400643d.webp"
+    },
+    {
+      "fixtureId": "mains-chicken-skewer-aef47c9d",
+      "displayName": "Chicken skewers · 200/80/80/50/50 g",
+      "sourceCategory": "Main Dishes",
+      "sourceName": "CHICKEN SKEWER",
+      "sourcePortion": "200/80/80/50/50 g",
+      "photoPath": "/menu/dish-chicken-skewer-3-77ea5162.webp"
+    },
+    {
+      "fixtureId": "mains-french-style-meat-1637fc25",
+      "displayName": "French-style meat",
+      "sourceCategory": "Main Dishes",
+      "sourceName": "French-style meat",
+      "sourcePortion": "",
+      "photoPath": "/menu/dish-french-style-meat-1-fe847efb.webp"
+    },
+    {
+      "fixtureId": "mains-chicken-gyros-3254de57",
+      "displayName": "Chicken Gyros · 140/100/100/80/50 g",
+      "sourceCategory": "Main Dishes",
+      "sourceName": "Chicken Gyros",
+      "sourcePortion": "140/100/100/80/50 g",
+      "photoPath": "/menu/dish-chicken-gyros-1-db972f81.webp"
+    },
+    {
+      "fixtureId": "mains-chicken-meatballs-with-mashed-potatoes-5378dab0",
+      "displayName": "Chicken Meatballs with Mashed Potatoes · 250/220g",
+      "sourceCategory": "Main Dishes",
+      "sourceName": "Chicken Meatballs with Mashed Potatoes",
+      "sourcePortion": "250/220g",
+      "photoPath": "/menu/dish-chicken-meatballs-in-tomato-sauce-with-mashed-potatoes-2-82ef9d9c.webp"
+    },
+    {
+      "fixtureId": "mains-beef-stroganoff-99b0a5ef",
+      "displayName": "Beef Stroganoff",
+      "sourceCategory": "Main Dishes",
+      "sourceName": "Beef Stroganoff",
+      "sourcePortion": "",
+      "photoPath": "/menu/dish-beef-stroganoff-1-c701299b.webp"
+    },
+    {
+      "fixtureId": "mains-chicken-fricassee-fa6d7a3c",
+      "displayName": "Chicken Fricassee · 360/70/50 g",
+      "sourceCategory": "Main Dishes",
+      "sourceName": "Chicken Fricassee",
+      "sourcePortion": "360/70/50 g",
+      "photoPath": "/menu/dish-chicken-fricassee-2-cdae7d8c.webp"
+    },
+    {
+      "fixtureId": "mains-shrimp-in-cream-sauce-f4af542c",
+      "displayName": "Shrimp in Cream Sauce · 200/50",
+      "sourceCategory": "Main Dishes",
+      "sourceName": "Shrimp in Cream Sauce",
+      "sourcePortion": "200/50",
+      "photoPath": "/menu/dish-shrimp-in-cream-sauce-1-7c2c9516.webp"
+    },
+    {
+      "fixtureId": "mains-crepes-with-ham-and-cheese-f1862aa8",
+      "displayName": "Crepes with ham and cheese · 320 g",
+      "sourceCategory": "Main Dishes",
+      "sourceName": "Crepes with ham and cheese",
+      "sourcePortion": "320 g",
+      "photoPath": "/menu/dish-crepes-with-salmon-and-spinach-3-d7d7d0aa.webp"
+    },
+    {
+      "fixtureId": "mains-pancakes-with-chicken-mushroom-sauce-cb73c3ee",
+      "displayName": "Pancakes with Chicken & Mushroom Sauce · 380 g — Mains",
+      "sourceCategory": "Main Dishes",
+      "sourceName": "Pancakes with Chicken & Mushroom Sauce",
+      "sourcePortion": "380 g",
+      "photoPath": "/menu/dish-pancakes-with-chicken-mushroom-sauce-2-7fdc47ef.webp"
+    },
+    {
+      "fixtureId": "mains-crepes-with-salted-salmon-98ed0790",
+      "displayName": "Crepes with salted salmon · 230/25 g — Mains",
+      "sourceCategory": "Main Dishes",
+      "sourceName": "Crepes with salted salmon",
+      "sourcePortion": "230/25 g",
+      "photoPath": "/menu/dish-crepes-with-salted-salmon-1-b724d710.webp"
+    },
+    {
+      "fixtureId": "mains-pancakes-with-sweet-cheese-and-sauce-a11b007d",
+      "displayName": "Pancakes with sweet cheese and sauce · 220 g",
+      "sourceCategory": "Main Dishes",
+      "sourceName": "Pancakes with sweet cheese and sauce",
+      "sourcePortion": "220 g",
+      "photoPath": "/menu/dish-pancakes-with-sweet-cheese-and-sauce-1-8be9c10b.webp"
+    },
+    {
+      "fixtureId": "mains-chicken-wrap-06990921",
+      "displayName": "Chicken Wrap · 400/80/50 g",
+      "sourceCategory": "Main Dishes",
+      "sourceName": "Chicken Wrap",
+      "sourcePortion": "400/80/50 g",
+      "photoPath": "/menu/dish-chicken-wrap-4-ac294e86.webp"
+    },
+    {
+      "fixtureId": "mains-beef-wrap-55348398",
+      "displayName": "Beef Wrap · 350/80/50 g",
+      "sourceCategory": "Main Dishes",
+      "sourceName": "Beef Wrap",
+      "sourcePortion": "350/80/50 g",
+      "photoPath": "/menu/dish-beef-wrap-3-d5dcb655.webp"
+    },
+    {
+      "fixtureId": "mains-wrap-veggie-falafel-fc5931db",
+      "displayName": "Falafel wrap · 380/80/100 g",
+      "sourceCategory": "Main Dishes",
+      "sourceName": "Wrap Veggie falafel",
+      "sourcePortion": "380/80/100 g",
+      "photoPath": "/menu/dish-wrap-veggie-falafel-4-2cd051e4.webp"
+    },
+    {
+      "fixtureId": "mains-crispy-chicken-schnitzel-1ebbdfc0",
+      "displayName": "Crispy chicken schnitzel · 250/80/65/50/40 g",
+      "sourceCategory": "Main Dishes",
+      "sourceName": "Crispy chicken schnitzel",
+      "sourcePortion": "250/80/65/50/40 g",
+      "photoPath": "/menu/dish-crispy-chicken-schnitzel-3-17a79b34.webp"
+    },
+    {
+      "fixtureId": "mains-beef-burger-bd86eb96",
+      "displayName": "Beef Burger · 300 / 100 / 50 g",
+      "sourceCategory": "Main Dishes",
+      "sourceName": "Beef Burger",
+      "sourcePortion": "300 / 100 / 50 g",
+      "photoPath": "/menu/dish-beef-burger-2-a6eecd8c.webp"
+    },
+    {
+      "fixtureId": "mains-chicken-burger-bde61e8f",
+      "displayName": "Chicken Burger · 260 / 100 / 50 g",
+      "sourceCategory": "Main Dishes",
+      "sourceName": "Chicken Burger",
+      "sourcePortion": "260 / 100 / 50 g",
+      "photoPath": "/menu/dish-chicken-burger-2-80d0883e.webp"
+    },
+    {
+      "fixtureId": "mains-cheeseburger-1444371f",
+      "displayName": "Cheeseburger · 330/100/50 g",
+      "sourceCategory": "Main Dishes",
+      "sourceName": "Cheeseburger",
+      "sourcePortion": "330/100/50 g",
+      "photoPath": "/menu/dish-maxi-burger-1-fc613e81.webp"
+    },
+    {
+      "fixtureId": "mains-breaded-chicken-breast-82bcb0da",
+      "displayName": "Breaded Chicken Breast · 160 / 130 / 50 g",
+      "sourceCategory": "Main Dishes",
+      "sourceName": "Breaded Chicken Breast",
+      "sourcePortion": "160 / 130 / 50 g",
+      "photoPath": "/menu/dish-breaded-chicken-breast-1-cbfd0c0c.webp"
+    },
+    {
+      "fixtureId": "mains-glazed-chicken-wings-401c3889",
+      "displayName": "Glazed Chicken Wings · 220 / 130 / 50 g",
+      "sourceCategory": "Main Dishes",
+      "sourceName": "Glazed Chicken Wings",
+      "sourcePortion": "220 / 130 / 50 g",
+      "photoPath": "/menu/dish-glazed-chicken-wings-1-92dc7377.webp"
+    },
+    {
+      "fixtureId": "kids-soup-with-meatballs-7bbc5b5f",
+      "displayName": "Soup with Meatballs · 250 g",
+      "sourceCategory": "Kids Menu",
+      "sourceName": "Soup with Meatballs",
+      "sourcePortion": "250 g",
+      "photoPath": "/menu/dish-soup-with-meatballs-1-51cf838e.webp"
+    },
+    {
+      "fixtureId": "kids-cheesy-pasta-nuggets-a8214333",
+      "displayName": "Cheesy pasta with nuggets · 230 g",
+      "sourceCategory": "Kids Menu",
+      "sourceName": "Cheesy pasta nuggets",
+      "sourcePortion": "230 g",
+      "photoPath": "/menu/dish-cheesy-pasta-nuggets-1-4ef42af9.webp"
+    },
+    {
+      "fixtureId": "kids-mashed-potatoes-with-meatballs-f4de4cc3",
+      "displayName": "Mashed Potatoes with Meatballs · 150 / 80 / 25 g",
+      "sourceCategory": "Kids Menu",
+      "sourceName": "Mashed Potatoes with Meatballs",
+      "sourcePortion": "150 / 80 / 25 g",
+      "photoPath": "/menu/dish-mashed-potatoes-with-meatballs-1-b7b70954.webp"
+    },
+    {
+      "fixtureId": "kids-chicken-shashlik-600ba8cc",
+      "displayName": "Chicken skewers · 120/70/40 g",
+      "sourceCategory": "Kids Menu",
+      "sourceName": "Chicken shashlik",
+      "sourcePortion": "120/70/40 g",
+      "photoPath": "/menu/dish-chicken-shashlik-1-a131d370.webp"
+    },
+    {
+      "fixtureId": "kids-smiley-potatoes-6c30768f",
+      "displayName": "Smiley Potatoes · 90 / 50 g",
+      "sourceCategory": "Kids Menu",
+      "sourceName": "Smiley Potatoes",
+      "sourcePortion": "90 / 50 g",
+      "photoPath": "/menu/dish-smiley-potatoes-1-b3058fbd.webp"
+    },
+    {
+      "fixtureId": "kids-mini-nuggets-with-potato-emoticons-58706a55",
+      "displayName": "Mini nuggets with potato smiles · 100/90/50 g",
+      "sourceCategory": "Kids Menu",
+      "sourceName": "Mini nuggets with potato emoticons",
+      "sourcePortion": "100/90/50 g",
+      "photoPath": "/menu/dish-mini-nuggets-with-potato-emoticons-1-f99dea4b.webp"
+    },
+    {
+      "fixtureId": "kids-mini-burger-a87e1b8c",
+      "displayName": "Mini Burger · 120 / 65 / 50 g",
+      "sourceCategory": "Kids Menu",
+      "sourceName": "Mini Burger",
+      "sourcePortion": "120 / 65 / 50 g",
+      "photoPath": "/menu/dish-mini-burger-1-733d2e16.webp"
+    },
+    {
+      "fixtureId": "kids-mini-pizza-33123db7",
+      "displayName": "Mini pizza · 300 g",
+      "sourceCategory": "Kids Menu",
+      "sourceName": "Mini pizza",
+      "sourcePortion": "300 g",
+      "photoPath": "/menu/dish-mini-pizza-1-aa640bf9.webp"
+    },
+    {
+      "fixtureId": "lunch-baked-chicken-steak-with-buckwheat-and-mushrooms-fc3e8ba8",
+      "displayName": "Baked Chicken Steak with Buckwheat and Mushrooms",
+      "sourceCategory": "Lunch-Box",
+      "sourceName": "Baked Chicken Steak with Buckwheat and Mushrooms",
+      "sourcePortion": "",
+      "photoPath": "/menu/dish-baked-chicken-steak-with-buckwheat-and-mushrooms-1-0589dc10.webp"
+    },
+    {
+      "fixtureId": "lunch-chicken-meatballs-in-curry-sauce-with-rice-6464d308",
+      "displayName": "Chicken Meatballs in Curry Sauce with Rice",
+      "sourceCategory": "Lunch-Box",
+      "sourceName": "Chicken Meatballs in Curry Sauce with Rice",
+      "sourcePortion": "",
+      "photoPath": "/menu/dish-chicken-meatballs-in-curry-sauce-with-rice-3-9a5ec4f5.webp"
+    },
+    {
+      "fixtureId": "lunch-chicken-schnitzel-with-mashed-potatoes-0dc0302e",
+      "displayName": "Chicken Schnitzel with Mashed Potatoes",
+      "sourceCategory": "Lunch-Box",
+      "sourceName": "Chicken Schnitzel with Mashed Potatoes",
+      "sourcePortion": "",
+      "photoPath": "/menu/dish-chicken-schnitzel-with-mashed-potatoes-1-cd3dc8e6.webp"
+    },
+    {
+      "fixtureId": "lunch-ravioli-with-ricotta-and-shrimp-569112c2",
+      "displayName": "Ravioli with Ricotta and Shrimp",
+      "sourceCategory": "Lunch-Box",
+      "sourceName": "Ravioli with Ricotta and Shrimp",
+      "sourcePortion": "",
+      "photoPath": "/menu/dish-ravioli-with-ricotta-and-shrimp-1-fe4ac8b2.webp"
+    },
+    {
+      "fixtureId": "lunch-sea-bream-fillet-with-bulgur-and-quinoa-aa5ec283",
+      "displayName": "Sea Bream Fillet with Bulgur and Quinoa",
+      "sourceCategory": "Lunch-Box",
+      "sourceName": "Sea Bream Fillet with Bulgur and Quinoa",
+      "sourcePortion": "",
+      "photoPath": "/menu/dish-sea-bream-fillet-with-bulgur-and-quinoa-1-35ad523d.webp"
+    },
+    {
+      "fixtureId": "sharing-platters-crispy-schnitzel-for-sharing-a4b83419",
+      "displayName": "Crispy schnitzel for sharing · 440/100/60/60/50/50 g",
+      "sourceCategory": "Banquet menu",
+      "sourceName": "Crispy schnitzel for sharing",
+      "sourcePortion": "440/100/60/60/50/50 g",
+      "photoPath": "/menu/dish-crispy-schnitzel-for-sharing-1-24b8e0a8.webp"
+    },
+    {
+      "fixtureId": "sharing-platters-french-style-meat-for-sharing-1d613c38",
+      "displayName": "French-style meat for sharing · 1000/340/100/80/80 g",
+      "sourceCategory": "Banquet menu",
+      "sourceName": "French-style meat for sharing",
+      "sourcePortion": "1000/340/100/80/80 g",
+      "photoPath": "/menu/dish-french-style-meat-for-sharing-1-1cacee54.webp"
+    },
+    {
+      "fixtureId": "sharing-platters-mixed-skewers-for-sharing-9060cec6",
+      "displayName": "Mixed skewers for sharing · 420/100/90/80/80/80/50/50 g",
+      "sourceCategory": "Banquet menu",
+      "sourceName": "Mixed skewers for sharing",
+      "sourcePortion": "420/100/90/80/80/80/50/50 g",
+      "photoPath": "/menu/dish-mixed-skewers-for-sharing-1-663c4b90.webp"
+    },
+    {
+      "fixtureId": "sharing-platters-cold-cuts-appetizer-b609decc",
+      "displayName": "Cold Cuts Appetizer · 120/80/80/60/50/50/50/20/15/15/10g",
+      "sourceCategory": "Banquet menu",
+      "sourceName": "Cold Cuts Appetizer",
+      "sourcePortion": "120/80/80/60/50/50/50/20/15/15/10g",
+      "photoPath": "/menu/dish-cold-cuts-appetizer-2-02d94c70.webp"
+    },
+    {
+      "fixtureId": "sharing-platters-meat-platter-486dba84",
+      "displayName": "Meat Platter · 320/170/140/100/70/70/60/60/50/50/50 g",
+      "sourceCategory": "Banquet menu",
+      "sourceName": "Meat Platter",
+      "sourcePortion": "320/170/140/100/70/70/60/60/50/50/50 g",
+      "photoPath": "/menu/dish-meat-platter-2-f8bef848.webp"
+    },
+    {
+      "fixtureId": "sharing-platters-plato-with-pork-fat-8de2e95d",
+      "displayName": "Traditional lard plate · 170 g",
+      "sourceCategory": "Banquet menu",
+      "sourceName": "Plato with pork fat",
+      "sourcePortion": "170 g",
+      "photoPath": "/menu/dish-plato-with-pork-fat-2-80a61005.webp"
+    },
+    {
+      "fixtureId": "sharing-platters-cheese-platter-20721abc",
+      "displayName": "Cheese Platter · 140/120/100/70/50/50/40/40 g",
+      "sourceCategory": "Banquet menu",
+      "sourceName": "Cheese Platter",
+      "sourcePortion": "140/120/100/70/50/50/40/40 g",
+      "photoPath": "/menu/dish-cheese-platter-2-7563212e.webp"
+    },
+    {
+      "fixtureId": "sharing-platters-fresh-vegetable-platter-e7686d24",
+      "displayName": "Fresh Vegetable Platter · 400 / 90 / 40 / 50 g",
+      "sourceCategory": "Banquet menu",
+      "sourceName": "Fresh Vegetable Platter",
+      "sourcePortion": "400 / 90 / 40 / 50 g",
+      "photoPath": "/menu/dish-fresh-vegetable-platter-1-e738fece.webp"
+    },
+    {
+      "fixtureId": "sharing-platters-bruschetta-selection-1b8e80ac",
+      "displayName": "Bruschetta selection · 240/200/180 g",
+      "sourceCategory": "Banquet menu",
+      "sourceName": "Bruschetta selection",
+      "sourcePortion": "240/200/180 g",
+      "photoPath": "/menu/dish-bruschetta-selection-1-8f1a2585.webp"
+    },
+    {
+      "fixtureId": "sharing-platters-caesar-salad-with-chicken-banquet-d6a15062",
+      "displayName": "Chicken Caesar for sharing · 560 g",
+      "sourceCategory": "Banquet menu",
+      "sourceName": "Caesar Salad with Chicken (Banquet)",
+      "sourcePortion": "560 g",
+      "photoPath": "/menu/dish-caesar-salad-with-chicken-banquet-1-e4794f4c.webp"
+    },
+    {
+      "fixtureId": "sharing-platters-veggie-salad-for-sharing-e4841edd",
+      "displayName": "Veggie salad for sharing · 480 g",
+      "sourceCategory": "Banquet menu",
+      "sourceName": "Veggie salad for sharing",
+      "sourcePortion": "480 g",
+      "photoPath": "/menu/dish-veggie-salad-for-sharing-1-644a3db2.webp"
+    },
+    {
+      "fixtureId": "sharing-platters-caesar-salad-with-shrimp-banquet-1d11ce96",
+      "displayName": "Shrimp Caesar for sharing",
+      "sourceCategory": "Banquet menu",
+      "sourceName": "Caesar Salad with Shrimp (Banquet)",
+      "sourcePortion": "",
+      "photoPath": "/menu/dish-caesar-salad-with-shrimp-banquet-1-136183a9.webp"
+    },
+    {
+      "fixtureId": "sharing-platters-xxl-chicken-fillet-c86c139d",
+      "displayName": "XXL chicken fillet · 480/50/50 g",
+      "sourceCategory": "Banquet menu",
+      "sourceName": "XXL chicken fillet",
+      "sourcePortion": "480/50/50 g",
+      "photoPath": "/menu/dish-xxl-chicken-fillet-2-4a6831a6.webp"
+    },
+    {
+      "fixtureId": "desserts-tort-profiterol-c68361f5",
+      "displayName": "Chocolate profiterole cake · 190 g",
+      "sourceCategory": "Dessert",
+      "sourceName": "Tort Profiterol",
+      "sourcePortion": "190 g",
+      "photoPath": "/menu/dish-tort-profiterol-1-fb677578.webp"
+    },
+    {
+      "fixtureId": "desserts-chocolate-napoleon-72f2fd43",
+      "displayName": "Chocolate Napoleon · 180 g",
+      "sourceCategory": "Dessert",
+      "sourceName": "Chocolate Napoleon",
+      "sourcePortion": "180 g",
+      "photoPath": "/menu/dish-chocolate-napoleon-1-9bd59994.webp"
+    },
+    {
+      "fixtureId": "desserts-berry-cheesecake-44c56d82",
+      "displayName": "Berry Cheesecake · 175 g",
+      "sourceCategory": "Dessert",
+      "sourceName": "Berry Cheesecake",
+      "sourcePortion": "175 g",
+      "photoPath": "/menu/dish-berry-cheesecake-1-d04e094f.webp"
+    },
+    {
+      "fixtureId": "desserts-tiramisu-41614a33",
+      "displayName": "Tiramisu · 200 g",
+      "sourceCategory": "Dessert",
+      "sourceName": "Tiramisu",
+      "sourcePortion": "200 g",
+      "photoPath": "/menu/dish-tiramisu-1-1519cbc6.webp"
+    },
+    {
+      "fixtureId": "desserts-chocolate-fondant-c88a6956",
+      "displayName": "Chocolate Fondant · 170 g",
+      "sourceCategory": "Dessert",
+      "sourceName": "Chocolate Fondant",
+      "sourcePortion": "170 g",
+      "photoPath": "/menu/dish-chocolate-fondant-2-975a2a05.webp"
+    },
+    {
+      "fixtureId": "desserts-fondant-dubai-e8fd7b3d",
+      "displayName": "Pistachio kataifi fondant · 160 g",
+      "sourceCategory": "Dessert",
+      "sourceName": "Fondant Dubai",
+      "sourcePortion": "160 g",
+      "photoPath": "/menu/dish-berry-souffl-1-26eb51f6.webp"
+    },
+    {
+      "fixtureId": "desserts-berry-souffle-1e2d7848",
+      "displayName": "Berry soufflé · 160 g",
+      "sourceCategory": "Dessert",
+      "sourceName": "Berry soufflé",
+      "sourcePortion": "160 g",
+      "photoPath": "/menu/dish-berry-souffl-2-2f9476ec.webp"
+    },
+    {
+      "fixtureId": "desserts-snikers-pop-ice-cream-e9248a60",
+      "displayName": "Peanut caramel sundae · 230 g",
+      "sourceCategory": "Dessert",
+      "sourceName": "Snikers Pop Ice Cream",
+      "sourcePortion": "230 g",
+      "photoPath": "/menu/dish-sunny-tropic-ice-cream-1-1654bfd1.webp"
+    },
+    {
+      "fixtureId": "desserts-berry-boom-ice-cream-13e55890",
+      "displayName": "Berry Boom Ice Cream · 340 g",
+      "sourceCategory": "Dessert",
+      "sourceName": "Berry Boom Ice Cream",
+      "sourcePortion": "340 g",
+      "photoPath": "/menu/dish-snikers-pop-ice-cream-1-71710a1e.webp"
+    },
+    {
+      "fixtureId": "ice-cream-assorted-ice-cream-3-scoops-49f7d3c7",
+      "displayName": "Assorted Ice Cream – 3 Scoops · 175 g",
+      "sourceCategory": "Ice Cream",
+      "sourceName": "Assorted Ice Cream – 3 Scoops",
+      "sourcePortion": "175 g",
+      "photoPath": "/menu/dish-assorted-ice-cream-3-scoops-1-1e6cd00b.webp"
+    },
+    {
+      "fixtureId": "ice-cream-banana-pineapple-ice-cream-fddf018c",
+      "displayName": "Banana-Pineapple Ice Cream · 700 g",
+      "sourceCategory": "Ice Cream",
+      "sourceName": "Banana-Pineapple Ice Cream",
+      "sourcePortion": "700 g",
+      "photoPath": "/menu/dish-banana-pineapple-ice-cream-1-ad254c01.webp"
+    },
+    {
+      "fixtureId": "ice-cream-chocolate-ice-cream-85a83bea",
+      "displayName": "Chocolate Ice Cream · 700 g",
+      "sourceCategory": "Ice Cream",
+      "sourceName": "Chocolate Ice Cream",
+      "sourcePortion": "700 g",
+      "photoPath": "/menu/dish-chocolate-ice-cream-1-85bfa745.webp"
+    },
+    {
+      "fixtureId": "ice-cream-ice-cream-assortment-b71e2cb8",
+      "displayName": "Ice Cream Assortment · 700 g",
+      "sourceCategory": "Ice Cream",
+      "sourceName": "Ice Cream Assortment",
+      "sourcePortion": "700 g",
+      "photoPath": "/menu/dish-ice-cream-assortment-1-1478a0b1.webp"
+    },
+    {
+      "fixtureId": "ice-cream-ice-cream-assortment-ba34815d",
+      "displayName": "Ice Cream Assortment · 350 g",
+      "sourceCategory": "Ice Cream",
+      "sourceName": "Ice Cream Assortment",
+      "sourcePortion": "350 g",
+      "photoPath": "/menu/dish-ice-cream-assortment-1-8d8cd883.webp"
+    },
+    {
+      "fixtureId": "ice-cream-mango-passion-fruit-ice-cream-55e25d82",
+      "displayName": "Mango & Passion Fruit Ice Cream · 700 g",
+      "sourceCategory": "Ice Cream",
+      "sourceName": "Mango & Passion Fruit Ice Cream",
+      "sourcePortion": "700 g",
+      "photoPath": "/menu/dish-mango-passion-fruit-ice-cream-1-b36d815f.webp"
+    },
+    {
+      "fixtureId": "ice-cream-strawberry-ice-cream-ac45a1dd",
+      "displayName": "Strawberry Ice Cream · 700 g",
+      "sourceCategory": "Ice Cream",
+      "sourceName": "Strawberry Ice Cream",
+      "sourcePortion": "700 g",
+      "photoPath": "/menu/dish-strawberry-ice-cream-1-216d243f.webp"
+    },
+    {
+      "fixtureId": "ice-cream-whipped-cream-ice-cream-8c87fcd3",
+      "displayName": "Whipped Cream Ice Cream · 700 g",
+      "sourceCategory": "Ice Cream",
+      "sourceName": "Whipped Cream Ice Cream",
+      "sourcePortion": "700 g",
+      "photoPath": "/menu/dish-whipped-cream-ice-cream-1-b1623a53.webp"
+    },
+    {
+      "fixtureId": "ice-cream-caramelium-ice-cream-7c4938b6",
+      "displayName": "Caramel cocoa ice cream · 300 g",
+      "sourceCategory": "Ice Cream",
+      "sourceName": "Caramelium Ice Cream",
+      "sourcePortion": "300 g",
+      "photoPath": "/menu/dish-passion-fashion-ice-cream-1-90f42bd3.webp"
+    },
+    {
+      "fixtureId": "ice-cream-chocolate-plombir-ice-cream-51539acf",
+      "displayName": "Chocolate Plombir Ice Cream · 300 g",
+      "sourceCategory": "Ice Cream",
+      "sourceName": "Chocolate Plombir Ice Cream",
+      "sourcePortion": "300 g",
+      "photoPath": "/menu/dish-chocolate-plombir-ice-cream-1-951b28ae.webp"
+    },
+    {
+      "fixtureId": "ice-cream-classic-plombir-ice-cream-fb73450b",
+      "displayName": "Classic Plombir Ice Cream · 300 g",
+      "sourceCategory": "Ice Cream",
+      "sourceName": "Classic Plombir Ice Cream",
+      "sourcePortion": "300 g",
+      "photoPath": "/menu/dish-classic-plombir-ice-cream-2-456856ee.webp"
+    },
+    {
+      "fixtureId": "ice-cream-forest-berry-ice-cream-898d1858",
+      "displayName": "Forest Berry Ice Cream · 300 g",
+      "sourceCategory": "Ice Cream",
+      "sourceName": "Forest Berry Ice Cream",
+      "sourcePortion": "300 g",
+      "photoPath": "/menu/dish-forest-berry-ice-cream-1-b1ed922f.webp"
+    },
+    {
+      "fixtureId": "ice-cream-hazelnut-ice-cream-167f40a4",
+      "displayName": "Hazelnut Ice Cream · 300 g",
+      "sourceCategory": "Ice Cream",
+      "sourceName": "Hazelnut Ice Cream",
+      "sourcePortion": "300 g",
+      "photoPath": "/menu/dish-hazelnut-ice-cream-1-15bf7369.webp"
+    },
+    {
+      "fixtureId": "ice-cream-huba-buba-ice-cream-3225071d",
+      "displayName": "Bubblegum ice cream · 300 g",
+      "sourceCategory": "Ice Cream",
+      "sourceName": "Huba Buba Ice Cream",
+      "sourcePortion": "300 g",
+      "photoPath": "/menu/dish-huba-buba-ice-cream-1-649097e0.webp"
+    },
+    {
+      "fixtureId": "ice-cream-inghetata-snickerrss-4b1d5e3c",
+      "displayName": "Peanut chocolate ice cream · 300 g",
+      "sourceCategory": "Ice Cream",
+      "sourceName": "Înghetata Snickerrss",
+      "sourcePortion": "300 g",
+      "photoPath": "/menu/dish-nghetata-snickerrss-1-a1ef19c6.webp"
+    },
+    {
+      "fixtureId": "ice-cream-passion-fashion-ice-cream-dec3c059",
+      "displayName": "Mango passion fruit ice cream · 700 g",
+      "sourceCategory": "Ice Cream",
+      "sourceName": "Passion Fashion Ice Cream",
+      "sourcePortion": "700 g",
+      "photoPath": "/menu/dish-passion-fashion-ice-cream-1-d6b35a9d.webp"
+    },
+    {
+      "fixtureId": "ice-cream-passion-fashion-ice-cream-cee00ada",
+      "displayName": "Mango passion fruit ice cream · 300 g",
+      "sourceCategory": "Ice Cream",
+      "sourceName": "Passion Fashion Ice Cream",
+      "sourcePortion": "300 g",
+      "photoPath": "/menu/dish-sweet-cookies-ice-cream-1-62f28b0d.webp"
+    },
+    {
+      "fixtureId": "ice-cream-pistachio-ice-cream-85b17e51",
+      "displayName": "Pistachio Ice Cream · 300 g",
+      "sourceCategory": "Ice Cream",
+      "sourceName": "Pistachio Ice Cream",
+      "sourcePortion": "300 g",
+      "photoPath": "/menu/dish-pistachio-ice-cream-1-066cb1ee.webp"
+    },
+    {
+      "fixtureId": "cocktails-aperol-spritz-cocktail-71ee062b",
+      "displayName": "Aperol Spritz Cocktail · 330 ml — Cocktails",
+      "sourceCategory": "Cocktails",
+      "sourceName": "Aperol Spritz Cocktail",
+      "sourcePortion": "330 ml",
+      "photoPath": "/menu/dish-aperol-spritz-cocktail-1-8e08aa29.webp"
+    },
+    {
+      "fixtureId": "cocktails-mojito-cocktail-11329ec5",
+      "displayName": "Mojito Cocktail · 330 ml — Cocktails",
+      "sourceCategory": "Cocktails",
+      "sourceName": "Mojito Cocktail",
+      "sourcePortion": "330 ml",
+      "photoPath": "/menu/dish-alcoholic-mojito-cocktail-1-bce289f5.webp"
+    },
+    {
+      "fixtureId": "cocktails-mojito-cocktail-n-a-512bb650",
+      "displayName": "Virgin mojito · 330 ml — Cocktails",
+      "sourceCategory": "Cocktails",
+      "sourceName": "Mojito Cocktail N/A",
+      "sourcePortion": "330 ml",
+      "photoPath": "/menu/dish-mojito-cocktail-1-f419c136.webp"
+    },
+    {
+      "fixtureId": "cocktails-pina-coco-07895ea8",
+      "displayName": "Pineapple coconut rum cooler · 330 ml — Cocktails",
+      "sourceCategory": "Cocktails",
+      "sourceName": "Pina Coco",
+      "sourcePortion": "330 ml",
+      "photoPath": "/menu/dish-cocktail-pina-colada-1-ae0c39a4.webp"
+    },
+    {
+      "fixtureId": "cocktails-pina-coco-n-a-b4247329",
+      "displayName": "Virgin pineapple coconut cooler · 330 ml — Cocktails",
+      "sourceCategory": "Cocktails",
+      "sourceName": "Pina Coco N/A",
+      "sourcePortion": "330 ml",
+      "photoPath": "/menu/dish-pi-a-colada-cocktail-1-38aaaf15.webp"
+    },
+    {
+      "fixtureId": "cocktails-pink-berry-tonic-6e3bf7e4",
+      "displayName": "Pink berry tonic · 400 ml — Cocktails",
+      "sourceCategory": "Cocktails",
+      "sourceName": "Pink berry tonic",
+      "sourcePortion": "400 ml",
+      "photoPath": "/menu/dish-gin-tonic-1-5cfdef79.webp"
+    },
+    {
+      "fixtureId": "cocktails-sex-on-the-beach-91d8a9ae",
+      "displayName": "Sex on the Beach · 400 ml — Cocktails",
+      "sourceCategory": "Cocktails",
+      "sourceName": "Sex on the Beach",
+      "sourcePortion": "400 ml",
+      "photoPath": "/menu/dish-sex-on-the-beach-1-3bb2ea85.webp"
+    },
+    {
+      "fixtureId": "cocktails-cosmopolitan-bda44df8",
+      "displayName": "Cosmopolitan · 180 ml — Cocktails",
+      "sourceCategory": "Cocktails",
+      "sourceName": "Cosmopolitan",
+      "sourcePortion": "180 ml",
+      "photoPath": "/menu/dish-aperol-spritz-cocktail-1-bf58934e.webp"
+    },
+    {
+      "fixtureId": "cocktails-rose-sangria-cocktail-ddd4d70e",
+      "displayName": "Rosé Sangria Cocktail · 350 ml — Cocktails",
+      "sourceCategory": "Cocktails",
+      "sourceName": "Rosé Sangria Cocktail",
+      "sourcePortion": "350 ml",
+      "photoPath": "/menu/dish-ros-sangria-cocktail-2-fad29604.webp"
+    },
+    {
+      "fixtureId": "cocktails-rose-sangria-cocktail-1l-9af7ffa3",
+      "displayName": "Rose sangria jug · 1000 ml — Cocktails",
+      "sourceCategory": "Cocktails",
+      "sourceName": "Rosé Sangria Cocktail – 1L",
+      "sourcePortion": "1000 ml",
+      "photoPath": "/menu/dish-ros-sangria-cocktail-1l-2-66d91bfc.webp"
+    },
+    {
+      "fixtureId": "cocktails-tropical-cocktail-572a7df7",
+      "displayName": "Tropical Cocktail · 330 ml — Cocktails",
+      "sourceCategory": "Cocktails",
+      "sourceName": "Tropical Cocktail",
+      "sourcePortion": "330 ml",
+      "photoPath": "/menu/dish-tropical-cocktail-1-1fe5dde2.webp"
+    },
+    {
+      "fixtureId": "cocktails-blackcurrant-lemonade-821b3890",
+      "displayName": "Blackcurrant Lemonade · 330 ml — Cocktails",
+      "sourceCategory": "Cocktails",
+      "sourceName": "Blackcurrant Lemonade",
+      "sourcePortion": "330 ml",
+      "photoPath": "/menu/dish-blackcurrant-lemonade-1-eaec1ab4.webp"
+    },
+    {
+      "fixtureId": "cocktails-lemonade-dd5adb8b",
+      "displayName": "Lemonade · 330 ml — Cocktails",
+      "sourceCategory": "Cocktails",
+      "sourceName": "Lemonade",
+      "sourcePortion": "330 ml",
+      "photoPath": "/menu/dish-lemonade-1-18c2feeb.webp"
+    },
+    {
+      "fixtureId": "cocktails-passion-fruit-lemonade-79dc212c",
+      "displayName": "Passion Fruit Lemonade · 330 ml — Cocktails",
+      "sourceCategory": "Cocktails",
+      "sourceName": "Passion Fruit Lemonade",
+      "sourcePortion": "330 ml",
+      "photoPath": "/menu/dish-passion-fruit-lemonade-1-bec56d4e.webp"
+    },
+    {
+      "fixtureId": "cocktails-chocolate-freakshake-266b07e2",
+      "displayName": "Chocolate Freakshake · 300 ml — Cocktails",
+      "sourceCategory": "Cocktails",
+      "sourceName": "Chocolate Freakshake",
+      "sourcePortion": "300 ml",
+      "photoPath": "/menu/dish-strawberry-freakshake-1-defaa64e.webp"
+    },
+    {
+      "fixtureId": "cocktails-banana-mango-milkshake-8246654f",
+      "displayName": "Banana-Mango Milkshake · 300 ml — Cocktails",
+      "sourceCategory": "Cocktails",
+      "sourceName": "Banana-Mango Milkshake",
+      "sourcePortion": "300 ml",
+      "photoPath": "/menu/dish-banana-mango-milkshake-1-c177ceed.webp"
+    },
+    {
+      "fixtureId": "cold-drinks-chocolate-freakshake-d2284cf6",
+      "displayName": "Chocolate Freakshake · 300 ml — Cold drinks",
+      "sourceCategory": "Beverages",
+      "sourceName": "Chocolate Freakshake",
+      "sourcePortion": "300 ml",
+      "photoPath": "/menu/dish-strawberry-freakshake-1-defaa64e.webp"
+    },
+    {
+      "fixtureId": "cold-drinks-salted-caramel-milkshake-b0476673",
+      "displayName": "Salted Caramel Milkshake",
+      "sourceCategory": "Beverages",
+      "sourceName": "Salted Caramel Milkshake",
+      "sourcePortion": "",
+      "photoPath": "/menu/dish-salted-caramel-1-cd7a4099.webp"
+    },
+    {
+      "fixtureId": "cold-drinks-banana-mango-milkshake-8d6cac8c",
+      "displayName": "Banana-Mango Milkshake · 300 ml — Cold drinks",
+      "sourceCategory": "Beverages",
+      "sourceName": "Banana-Mango Milkshake",
+      "sourcePortion": "300 ml",
+      "photoPath": "/menu/dish-banana-mango-milkshake-1-c177ceed.webp"
+    },
+    {
+      "fixtureId": "cold-drinks-chocolate-milkshake-8a133edd",
+      "displayName": "Chocolate Milkshake · 300 ml",
+      "sourceCategory": "Beverages",
+      "sourceName": "Chocolate Milkshake",
+      "sourcePortion": "300 ml",
+      "photoPath": "/menu/dish-chocolate-milkshake-1-86723f2f.webp"
+    },
+    {
+      "fixtureId": "cold-drinks-strawberry-milkshake-76291c66",
+      "displayName": "Strawberry Milkshake · 300 ml",
+      "sourceCategory": "Beverages",
+      "sourceName": "Strawberry Milkshake",
+      "sourcePortion": "300 ml",
+      "photoPath": "/menu/dish-strawberry-milkshake-1-2233a50e.webp"
+    },
+    {
+      "fixtureId": "cold-drinks-vanilla-milkshake-98b94460",
+      "displayName": "Vanilla Milkshake · 300 ml",
+      "sourceCategory": "Beverages",
+      "sourceName": "Vanilla Milkshake",
+      "sourcePortion": "300 ml",
+      "photoPath": "/menu/dish-vanilla-milkshake-1-38f2bb75.webp"
+    },
+    {
+      "fixtureId": "cold-drinks-almond-ice-latte-bfad03c7",
+      "displayName": "Iced almond latte · 350 ml",
+      "sourceCategory": "Beverages",
+      "sourceName": "Almond Ice Latte",
+      "sourcePortion": "350 ml",
+      "photoPath": "/menu/dish-iced-latte-1-0d751292.webp"
+    },
+    {
+      "fixtureId": "cold-drinks-espresso-tonic-0939d8a2",
+      "displayName": "Espresso Tonic · 330 ml",
+      "sourceCategory": "Beverages",
+      "sourceName": "Espresso Tonic",
+      "sourcePortion": "330 ml",
+      "photoPath": "/menu/dish-espresso-tonic-1-c517ac6f.webp"
+    },
+    {
+      "fixtureId": "cold-drinks-ice-latte-15e2ed9d",
+      "displayName": "Iced latte · 350 ml",
+      "sourceCategory": "Beverages",
+      "sourceName": "Ice Latte",
+      "sourcePortion": "350 ml",
+      "photoPath": "/menu/dish-iced-latte-1-03606971.webp"
+    },
+    {
+      "fixtureId": "cold-drinks-mojito-cocktail-n-a-98d39c40",
+      "displayName": "Virgin mojito · 330 ml — Cold drinks",
+      "sourceCategory": "Beverages",
+      "sourceName": "Mojito Cocktail N/A",
+      "sourcePortion": "330 ml",
+      "photoPath": "/menu/dish-mojito-cocktail-1-f419c136.webp"
+    },
+    {
+      "fixtureId": "cold-drinks-blackcurrant-lemonade-ff072eb2",
+      "displayName": "Blackcurrant Lemonade · 330 ml — Cold drinks",
+      "sourceCategory": "Beverages",
+      "sourceName": "Blackcurrant Lemonade",
+      "sourcePortion": "330 ml",
+      "photoPath": "/menu/dish-blackcurrant-lemonade-1-eaec1ab4.webp"
+    },
+    {
+      "fixtureId": "cold-drinks-cherry-cola-cocktail-268895b6",
+      "displayName": "Cherry Cola Cocktail · 330 ml",
+      "sourceCategory": "Beverages",
+      "sourceName": "Cherry Cola Cocktail",
+      "sourcePortion": "330 ml",
+      "photoPath": "/menu/dish-cherry-pepsi-cocktail-1-824023e0.webp"
+    },
+    {
+      "fixtureId": "cold-drinks-lemonade-82be9f65",
+      "displayName": "Lemonade · 330 ml — Cold drinks",
+      "sourceCategory": "Beverages",
+      "sourceName": "Lemonade",
+      "sourcePortion": "330 ml",
+      "photoPath": "/menu/dish-lemonade-1-18c2feeb.webp"
+    },
+    {
+      "fixtureId": "cold-drinks-lemonade-1-l-d24c1135",
+      "displayName": "Lemonade jug · 1000 ml",
+      "sourceCategory": "Beverages",
+      "sourceName": "Lemonade 1 L",
+      "sourcePortion": "1000 ml",
+      "photoPath": "/menu/dish-lemonade-1-l-1-8bd619cb.webp"
+    },
+    {
+      "fixtureId": "cold-drinks-orangeade-a199b94d",
+      "displayName": "Orangeade · 330 ml",
+      "sourceCategory": "Beverages",
+      "sourceName": "Orangeade",
+      "sourcePortion": "330 ml",
+      "photoPath": "/menu/dish-orangeade-1-3003be90.webp"
+    },
+    {
+      "fixtureId": "cold-drinks-orangeade-1-l-8a7b7b3d",
+      "displayName": "Orangeade jug · 1000 ml",
+      "sourceCategory": "Beverages",
+      "sourceName": "Orangeade 1 L",
+      "sourcePortion": "1000 ml",
+      "photoPath": "/menu/dish-orangeade-1-l-1-6398ed0f.webp"
+    },
+    {
+      "fixtureId": "cold-drinks-passion-fruit-lemonade-5bace38d",
+      "displayName": "Passion Fruit Lemonade · 330 ml — Cold drinks",
+      "sourceCategory": "Beverages",
+      "sourceName": "Passion Fruit Lemonade",
+      "sourcePortion": "330 ml",
+      "photoPath": "/menu/dish-passion-fruit-lemonade-1-bec56d4e.webp"
+    },
+    {
+      "fixtureId": "cold-drinks-pina-coco-n-a-2374d962",
+      "displayName": "Virgin pineapple coconut cooler · 330 ml — Cold drinks",
+      "sourceCategory": "Beverages",
+      "sourceName": "Pina Coco N/A",
+      "sourcePortion": "330 ml",
+      "photoPath": "/menu/dish-pi-a-colada-cocktail-1-38aaaf15.webp"
+    },
+    {
+      "fixtureId": "cold-drinks-raspberry-fizz-lemonade-30b24db5",
+      "displayName": "Raspberry Fizz Lemonade · 330 ml",
+      "sourceCategory": "Beverages",
+      "sourceName": "Raspberry Fizz Lemonade",
+      "sourcePortion": "330 ml",
+      "photoPath": "/menu/dish-raspberry-fizz-lemonade-1-41bf0973.webp"
+    },
+    {
+      "fixtureId": "cold-drinks-tropical-cocktail-897adade",
+      "displayName": "Tropical Cocktail · 330 ml — Cold drinks",
+      "sourceCategory": "Beverages",
+      "sourceName": "Tropical Cocktail",
+      "sourcePortion": "330 ml",
+      "photoPath": "/menu/dish-tropical-cocktail-1-1fe5dde2.webp"
+    },
+    {
+      "fixtureId": "cold-drinks-fresh-grapefruit-juice-200-ml-5ff318a7",
+      "displayName": "Fresh Grapefruit Juice 200 ml",
+      "sourceCategory": "Beverages",
+      "sourceName": "Fresh Grapefruit Juice 200 ml",
+      "sourcePortion": "200 ml",
+      "photoPath": "/menu/dish-freshly-squeezed-grapefruit-juice-1-e00fe12d.webp"
+    },
+    {
+      "fixtureId": "cold-drinks-fresh-orange-juice-200-ml-896fc7dc",
+      "displayName": "Fresh Orange Juice 200 ml",
+      "sourceCategory": "Beverages",
+      "sourceName": "Fresh Orange Juice 200 ml",
+      "sourcePortion": "200 ml",
+      "photoPath": "/menu/dish-freshly-squeezed-orange-juice-1-fd8df88b.webp"
+    },
+    {
+      "fixtureId": "cold-drinks-apple-juice-a0454dbf",
+      "displayName": "Apple Juice · 950 ml",
+      "sourceCategory": "Beverages",
+      "sourceName": "Apple Juice",
+      "sourcePortion": "950 ml",
+      "photoPath": "/menu/dish-apple-juice-1-0b19b678.webp"
+    },
+    {
+      "fixtureId": "cold-drinks-mango-juice-a77085e0",
+      "displayName": "Mango Juice · 950 ml",
+      "sourceCategory": "Beverages",
+      "sourceName": "Mango Juice",
+      "sourcePortion": "950 ml",
+      "photoPath": "/menu/dish-mango-juice-1-3b4c7b6c.webp"
+    },
+    {
+      "fixtureId": "cold-drinks-coca-cola-0-5-2e10c375",
+      "displayName": "Coca-Cola 0,5 · 500 ml",
+      "sourceCategory": "Beverages",
+      "sourceName": "Coca-Cola 0,5",
+      "sourcePortion": "500 ml",
+      "photoPath": "/menu/dish-pepsi-2l-1-44c271de.webp"
+    },
+    {
+      "fixtureId": "cold-drinks-sprite-0-5-a6caa8cb",
+      "displayName": "Sprite 0,5 · 500 ml",
+      "sourceCategory": "Beverages",
+      "sourceName": "Sprite 0,5",
+      "sourcePortion": "500 ml",
+      "photoPath": "/menu/dish-coca-cola-0-5-1-60f5c67b.webp"
+    },
+    {
+      "fixtureId": "cold-drinks-dorna-carbo-0-5-32579912",
+      "displayName": "Dorna sparkling water · 500 ml",
+      "sourceCategory": "Beverages",
+      "sourceName": "Dorna carbo 0,5",
+      "sourcePortion": "500 ml",
+      "photoPath": "/menu/dish-fanta-0-5-1-058ba012.webp"
+    },
+    {
+      "fixtureId": "cold-drinks-dorna-plata-0-5-17c9721f",
+      "displayName": "Dorna still water · 500 ml",
+      "sourceCategory": "Beverages",
+      "sourceName": "Dorna plată 0,5",
+      "sourcePortion": "500 ml",
+      "photoPath": "/menu/dish-dorna-carbo-0-5-1-6b639b6c.webp"
+    },
+    {
+      "fixtureId": "hot-drinks-gluhwein-0a3f340e",
+      "displayName": "Glühwein · 220 ml — Hot drinks",
+      "sourceCategory": "Hot Beverages",
+      "sourceName": "Glühwein",
+      "sourcePortion": "220 ml",
+      "photoPath": "/menu/dish-gl-hwein-1-7b8b0d0f.webp"
+    },
+    {
+      "fixtureId": "hot-drinks-blackcurrant-tea-80565e74",
+      "displayName": "Blackcurrant Tea · 400 ml",
+      "sourceCategory": "Hot Beverages",
+      "sourceName": "Blackcurrant Tea",
+      "sourcePortion": "400 ml",
+      "photoPath": "/menu/dish-blackcurrant-tea-1-d0eac386.webp"
+    },
+    {
+      "fixtureId": "hot-drinks-sea-buckthorn-tea-3bfbaf88",
+      "displayName": "Sea Buckthorn Tea · 400 ml",
+      "sourceCategory": "Hot Beverages",
+      "sourceName": "Sea Buckthorn Tea",
+      "sourcePortion": "400 ml",
+      "photoPath": "/menu/dish-sea-buckthorn-tea-2-ef5711a8.webp"
+    },
+    {
+      "fixtureId": "hot-drinks-signature-mint-tea-dbcd4d90",
+      "displayName": "Signature Mint Tea · 400 ml",
+      "sourceCategory": "Hot Beverages",
+      "sourceName": "Signature Mint Tea",
+      "sourcePortion": "400 ml",
+      "photoPath": "/menu/dish-signature-mint-tea-1-887cc605.webp"
+    },
+    {
+      "fixtureId": "hot-drinks-almond-hot-cocoa-b6b2979e",
+      "displayName": "Almond Hot Cocoa · 250 ml",
+      "sourceCategory": "Hot Beverages",
+      "sourceName": "Almond Hot Cocoa",
+      "sourcePortion": "250 ml",
+      "photoPath": "/menu/dish-almond-hot-cocoa-1-0ec2e10a.webp"
+    },
+    {
+      "fixtureId": "hot-drinks-almond-latte-5ec845b5",
+      "displayName": "Almond Latte · 250 ml",
+      "sourceCategory": "Hot Beverages",
+      "sourceName": "Almond Latte",
+      "sourcePortion": "250 ml",
+      "photoPath": "/menu/dish-almond-latte-1-0253859c.webp"
+    },
+    {
+      "fixtureId": "hot-drinks-coffee-latte-05442f89",
+      "displayName": "Latte · 250 ml",
+      "sourceCategory": "Hot Beverages",
+      "sourceName": "Coffee Latte",
+      "sourcePortion": "250 ml",
+      "photoPath": "/menu/dish-coffee-latte-1-76cde390.webp"
+    },
+    {
+      "fixtureId": "hot-drinks-espresso-1b1d4d3e",
+      "displayName": "Espresso · 30 ml",
+      "sourceCategory": "Hot Beverages",
+      "sourceName": "Espresso",
+      "sourcePortion": "30 ml",
+      "photoPath": "/menu/dish-espresso-1-18af814f.webp"
+    },
+    {
+      "fixtureId": "hot-drinks-hot-cocoa-b6c25a49",
+      "displayName": "Hot Cocoa · 250 ml",
+      "sourceCategory": "Hot Beverages",
+      "sourceName": "Hot Cocoa",
+      "sourcePortion": "250 ml",
+      "photoPath": "/menu/dish-hot-cocoa-1-05e6b71f.webp"
+    },
+    {
+      "fixtureId": "hot-drinks-americano-e7f2f10e",
+      "displayName": "Americano · 100 ml",
+      "sourceCategory": "Hot Beverages",
+      "sourceName": "Americano",
+      "sourcePortion": "100 ml",
+      "photoPath": "/menu/dish-americano-1-b6e991a0.webp"
+    },
+    {
+      "fixtureId": "hot-drinks-cappuccino-04e2c412",
+      "displayName": "Cappuccino · 150 ml",
+      "sourceCategory": "Hot Beverages",
+      "sourceName": "Cappuccino",
+      "sourcePortion": "150 ml",
+      "photoPath": "/menu/dish-cappuccino-1-9ed71327.webp"
+    },
+    {
+      "fixtureId": "bar-gluhwein-8301a976",
+      "displayName": "Glühwein · 220 ml — Bar",
+      "sourceCategory": "Alcohol",
+      "sourceName": "Glühwein",
+      "sourcePortion": "220 ml",
+      "photoPath": "/menu/dish-gl-hwein-1-7b8b0d0f.webp"
+    },
+    {
+      "fixtureId": "bar-aperol-spritz-cocktail-3277d20a",
+      "displayName": "Aperol Spritz Cocktail · 330 ml — Bar",
+      "sourceCategory": "Alcohol",
+      "sourceName": "Aperol Spritz Cocktail",
+      "sourcePortion": "330 ml",
+      "photoPath": "/menu/dish-aperol-spritz-cocktail-1-8e08aa29.webp"
+    },
+    {
+      "fixtureId": "bar-mojito-cocktail-1eaa1b91",
+      "displayName": "Mojito Cocktail · 330 ml — Bar",
+      "sourceCategory": "Alcohol",
+      "sourceName": "Mojito Cocktail",
+      "sourcePortion": "330 ml",
+      "photoPath": "/menu/dish-alcoholic-mojito-cocktail-1-bce289f5.webp"
+    },
+    {
+      "fixtureId": "bar-mojito-cocktail-n-a-c00f7def",
+      "displayName": "Virgin mojito · 330 ml — Bar",
+      "sourceCategory": "Alcohol",
+      "sourceName": "Mojito Cocktail N/A",
+      "sourcePortion": "330 ml",
+      "photoPath": "/menu/dish-mojito-cocktail-1-f419c136.webp"
+    },
+    {
+      "fixtureId": "bar-pina-coco-3f069060",
+      "displayName": "Pineapple coconut rum cooler · 330 ml — Bar",
+      "sourceCategory": "Alcohol",
+      "sourceName": "Pina Coco",
+      "sourcePortion": "330 ml",
+      "photoPath": "/menu/dish-cocktail-pina-colada-1-ae0c39a4.webp"
+    },
+    {
+      "fixtureId": "bar-pink-berry-tonic-a3c46c5d",
+      "displayName": "Pink berry tonic · 400 ml — Bar",
+      "sourceCategory": "Alcohol",
+      "sourceName": "Pink berry tonic",
+      "sourcePortion": "400 ml",
+      "photoPath": "/menu/dish-gin-tonic-1-5cfdef79.webp"
+    },
+    {
+      "fixtureId": "bar-sex-on-the-beach-98bd3b4c",
+      "displayName": "Sex on the Beach · 400 ml — Bar",
+      "sourceCategory": "Alcohol",
+      "sourceName": "Sex on the Beach",
+      "sourcePortion": "400 ml",
+      "photoPath": "/menu/dish-sex-on-the-beach-1-3bb2ea85.webp"
+    },
+    {
+      "fixtureId": "bar-cosmopolitan-b08d629f",
+      "displayName": "Cosmopolitan · 180 ml — Bar",
+      "sourceCategory": "Alcohol",
+      "sourceName": "Cosmopolitan",
+      "sourcePortion": "180 ml",
+      "photoPath": "/menu/dish-aperol-spritz-cocktail-1-bf58934e.webp"
+    },
+    {
+      "fixtureId": "bar-rose-sangria-cocktail-47ecb201",
+      "displayName": "Rosé Sangria Cocktail · 350 ml — Bar",
+      "sourceCategory": "Alcohol",
+      "sourceName": "Rosé Sangria Cocktail",
+      "sourcePortion": "350 ml",
+      "photoPath": "/menu/dish-ros-sangria-cocktail-2-fad29604.webp"
+    },
+    {
+      "fixtureId": "bar-rose-sangria-cocktail-1l-29db5fdd",
+      "displayName": "Rose sangria jug · 1000 ml — Bar",
+      "sourceCategory": "Alcohol",
+      "sourceName": "Rosé Sangria Cocktail – 1L",
+      "sourcePortion": "1000 ml",
+      "photoPath": "/menu/dish-ros-sangria-cocktail-1l-2-66d91bfc.webp"
+    },
+    {
+      "fixtureId": "bar-red-wine-3498598a",
+      "displayName": "Red Wine · 1000 ml",
+      "sourceCategory": "Alcohol",
+      "sourceName": "Red Wine",
+      "sourcePortion": "1000 ml",
+      "photoPath": "/menu/dish-red-wine-1-59dac068.webp"
+    },
+    {
+      "fixtureId": "bar-rose-wine-ad72f9de",
+      "displayName": "Rosé Wine · 1000 ml",
+      "sourceCategory": "Alcohol",
+      "sourceName": "Rosé Wine",
+      "sourcePortion": "1000 ml",
+      "photoPath": "/menu/dish-ros-wine-1-e49bd011.webp"
+    },
+    {
+      "fixtureId": "bar-white-wine-eed435b2",
+      "displayName": "White Wine · 1000 ml",
+      "sourceCategory": "Alcohol",
+      "sourceName": "White Wine",
+      "sourcePortion": "1000 ml",
+      "photoPath": "/menu/dish-white-wine-1-0587b066.webp"
+    },
+    {
+      "fixtureId": "bar-chisinau-draft-beer-cd959243",
+      "displayName": "Chişinău Draft Beer · 1000 ml",
+      "sourceCategory": "Alcohol",
+      "sourceName": "Chişinău Draft Beer",
+      "sourcePortion": "1000 ml",
+      "photoPath": "/menu/dish-chi-in-u-draft-beer-1-7c4b3182.webp"
+    },
+    {
+      "fixtureId": "bar-chisinau-light-beer-cd1a8d7f",
+      "displayName": "Chișinău Light Beer · 500 ml",
+      "sourceCategory": "Alcohol",
+      "sourceName": "Chișinău Light Beer",
+      "sourcePortion": "500 ml",
+      "photoPath": "/menu/dish-chi-in-u-light-beer-1-ecfe4ce4.webp"
+    },
+    {
+      "fixtureId": "bar-chisinau-light-beer-dfc48e3a",
+      "displayName": "Chișinău Light Beer · 2250 ml",
+      "sourceCategory": "Alcohol",
+      "sourceName": "Chișinău Light Beer",
+      "sourcePortion": "2250 ml",
+      "photoPath": "/menu/dish-chi-in-u-light-beer-1-135745db.webp"
+    },
+    {
+      "fixtureId": "bar-corona-extra-e8d4b9d6",
+      "displayName": "Corona Extra · 355 ml",
+      "sourceCategory": "Alcohol",
+      "sourceName": "Corona Extra",
+      "sourcePortion": "355 ml",
+      "photoPath": "/menu/dish-corona-extra-1-e05e6bcb.webp"
+    },
+    {
+      "fixtureId": "bar-efes-non-alcoholic-f9c605fc",
+      "displayName": "Efes Non-Alcoholic · 500 ml",
+      "sourceCategory": "Alcohol",
+      "sourceName": "Efes Non-Alcoholic",
+      "sourcePortion": "500 ml",
+      "photoPath": "/menu/dish-efes-non-alcoholic-1-d3bfc259.webp"
+    },
+    {
+      "fixtureId": "bar-efes-pilsner-beer-473f5326",
+      "displayName": "Efes Pilsner Beer · 500 ml",
+      "sourceCategory": "Alcohol",
+      "sourceName": "Efes Pilsner Beer",
+      "sourcePortion": "500 ml",
+      "photoPath": "/menu/dish-efes-pilsner-beer-1-7df0a353.webp"
+    },
+    {
+      "fixtureId": "bar-finch-beer-854e60bb",
+      "displayName": "Finch Beer · 500 ml",
+      "sourceCategory": "Alcohol",
+      "sourceName": "Finch Beer",
+      "sourcePortion": "500 ml",
+      "photoPath": "/menu/dish-finch-beer-1-74fa6ae2.webp"
+    },
+    {
+      "fixtureId": "bar-franziskaner-weissbier-ffe6c361",
+      "displayName": "Franziskaner Weissbier · 500 ml",
+      "sourceCategory": "Alcohol",
+      "sourceName": "Franziskaner Weissbier",
+      "sourcePortion": "500 ml",
+      "photoPath": "/menu/dish-franziskaner-weissbier-1-3b8dac8d.webp"
+    },
+    {
+      "fixtureId": "bar-kozel-cerny-beer-bbcf2cdd",
+      "displayName": "Kozel Černý Beer · 500 ml",
+      "sourceCategory": "Alcohol",
+      "sourceName": "Kozel Černý Beer",
+      "sourcePortion": "500 ml",
+      "photoPath": "/menu/dish-kozel-ern-beer-1-6316c12a.webp"
+    },
+    {
+      "fixtureId": "bar-kozel-svetly-1b70491e",
+      "displayName": "Kozel Svetly · 500 ml",
+      "sourceCategory": "Alcohol",
+      "sourceName": "Kozel Svetly",
+      "sourcePortion": "500 ml",
+      "photoPath": "/menu/dish-kozel-svetly-1-dbccec99.webp"
+    },
+    {
+      "fixtureId": "bar-timisoreana-c44467fd",
+      "displayName": "Timișoreana · 500 ml",
+      "sourceCategory": "Alcohol",
+      "sourceName": "Timișoreana",
+      "sourcePortion": "500 ml",
+      "photoPath": "/menu/dish-timi-oreana-1-4a06a278.webp"
+    },
+    {
+      "fixtureId": "bar-bostavan-chardonnay-white-dry-wine-528afa2f",
+      "displayName": "Bostavan Chardonnay White Dry Wine · 750 ml",
+      "sourceCategory": "Alcohol",
+      "sourceName": "Bostavan Chardonnay White Dry Wine",
+      "sourcePortion": "750 ml",
+      "photoPath": "/menu/dish-bostavan-chardonnay-white-dry-wine-1-2ba74f7e.webp"
+    },
+    {
+      "fixtureId": "bar-bostavan-merlot-red-dry-wine-a4770d22",
+      "displayName": "Bostavan Merlot Red Dry Wine · 750 ml",
+      "sourceCategory": "Alcohol",
+      "sourceName": "Bostavan Merlot Red Dry Wine",
+      "sourcePortion": "750 ml",
+      "photoPath": "/menu/dish-bostavan-merlot-red-dry-wine-1-9b36365e.webp"
+    },
+    {
+      "fixtureId": "bar-bostavan-muscat-rose-3447f158",
+      "displayName": "Bostavan Muscat Rosé · 750 ml",
+      "sourceCategory": "Alcohol",
+      "sourceName": "Bostavan Muscat Rosé",
+      "sourcePortion": "750 ml",
+      "photoPath": "/menu/dish-bostavan-muscat-ros-1-0c254d33.webp"
+    },
+    {
+      "fixtureId": "bar-purcari-nocturne-cabernet-sauvignon-red-sec-532ea603",
+      "displayName": "PURCARI Nocturne Cabernet Sauvignon Red Sec · 750 ml",
+      "sourceCategory": "Alcohol",
+      "sourceName": "PURCARI Nocturne Cabernet Sauvignon Red Sec",
+      "sourcePortion": "750 ml",
+      "photoPath": "/menu/dish-purcari-nocturne-cabernet-sauvignon-red-sec-1-62837af8.webp"
+    },
+    {
+      "fixtureId": "bar-purcari-nocturne-pinot-grigio-dry-wine-1564eec2",
+      "displayName": "Purcari Nocturne Pinot Grigio Dry Wine · 750 ml",
+      "sourceCategory": "Alcohol",
+      "sourceName": "Purcari Nocturne Pinot Grigio Dry Wine",
+      "sourcePortion": "750 ml",
+      "photoPath": "/menu/dish-purcari-nocturne-pinot-grigio-dry-wine-1-26184e79.webp"
+    },
+    {
+      "fixtureId": "bar-purcari-nocturne-rose-sec-96e443a9",
+      "displayName": "Purcari Nocturne Rose sec · 750 ml",
+      "sourceCategory": "Alcohol",
+      "sourceName": "Purcari Nocturne Rose sec",
+      "sourcePortion": "750 ml",
+      "photoPath": "/menu/dish-purcari-nocturne-rose-sec-1-50466b42.webp"
+    },
+    {
+      "fixtureId": "bar-purcari-nocturne-sauvignon-blanc-dry-wine-797bbaf4",
+      "displayName": "Purcari Nocturne Sauvignon Blanc Dry Wine · 750 ml",
+      "sourceCategory": "Alcohol",
+      "sourceName": "Purcari Nocturne Sauvignon Blanc Dry Wine",
+      "sourcePortion": "750 ml",
+      "photoPath": "/menu/dish-purcari-nocturne-sauvignon-blanc-dry-wine-1-39620d32.webp"
+    },
+    {
+      "fixtureId": "bar-cricova-crisecco-brut-9f2fa050",
+      "displayName": "Cricova Crisecco Brut · 750 ml",
+      "sourceCategory": "Alcohol",
+      "sourceName": "Cricova Crisecco Brut",
+      "sourcePortion": "750 ml",
+      "photoPath": "/menu/dish-cricova-crisecco-brut-1-92f8c7e9.webp"
+    },
+    {
+      "fixtureId": "bar-cricova-lacrima-dulce-d907b30b",
+      "displayName": "Cricova Lacrima Dulce · 750 ml",
+      "sourceCategory": "Alcohol",
+      "sourceName": "Cricova Lacrima Dulce",
+      "sourcePortion": "750 ml",
+      "photoPath": "/menu/dish-cricova-lacrima-dulce-1-2661d4a1.webp"
+    },
+    {
+      "fixtureId": "extras-garlic-toast-7111b569",
+      "displayName": "Garlic toast · 120 g — Extras",
+      "sourceCategory": "Supplements",
+      "sourceName": "Garlic toast",
+      "sourcePortion": "120 g",
+      "photoPath": "/menu/dish-ciabatta-1-eec2c5c4.webp"
+    },
+    {
+      "fixtureId": "extras-flatbread-with-butter-and-garlic-sheep-cheese-73035471",
+      "displayName": "Flatbread with Butter and Garlic Sheep Cheese · 60 g (1 pc)",
+      "sourceCategory": "Supplements",
+      "sourceName": "Flatbread with Butter and Garlic Sheep Cheese",
+      "sourcePortion": "60 g (1 pc)",
+      "photoPath": "/menu/dish-flatbread-with-butter-and-garlic-sheep-cheese-1-79c02139.webp"
+    },
+    {
+      "fixtureId": "extras-flatbread-with-butter-and-sheep-cheese-1ec3fe93",
+      "displayName": "Flatbread with Butter and Sheep Cheese · 60 g (1 pc)",
+      "sourceCategory": "Supplements",
+      "sourceName": "Flatbread with Butter and Sheep Cheese",
+      "sourcePortion": "60 g (1 pc)",
+      "photoPath": "/menu/dish-flatbread-with-butter-and-sheep-cheese-1-a499de4b.webp"
+    },
+    {
+      "fixtureId": "extras-bread-rusks-0cdcf301",
+      "displayName": "Bread Rusks · 50 g",
+      "sourceCategory": "Supplements",
+      "sourceName": "Bread Rusks",
+      "sourcePortion": "50 g",
+      "photoPath": "/menu/dish-bread-rusks-1-e79a7275.webp"
+    },
+    {
+      "fixtureId": "extras-hot-bread-f5def675",
+      "displayName": "Hot Bread · 150 g",
+      "sourceCategory": "Supplements",
+      "sourceName": "Hot Bread",
+      "sourcePortion": "150 g",
+      "photoPath": "/menu/dish-hot-bread-1-8cb6c993.webp"
+    },
+    {
+      "fixtureId": "extras-ciabatta-c40814d6",
+      "displayName": "Ciabatta · 100 g",
+      "sourceCategory": "Supplements",
+      "sourceName": "Ciabatta",
+      "sourcePortion": "100 g",
+      "photoPath": "/menu/dish-ciabatta-1-a006558d.webp"
+    },
+    {
+      "fixtureId": "extras-focaccia-98c8e1d2",
+      "displayName": "Focaccia · 220 g",
+      "sourceCategory": "Supplements",
+      "sourceName": "Focaccia",
+      "sourcePortion": "220 g",
+      "photoPath": "/menu/dish-focaccia-1-3d42673b.webp"
+    },
+    {
+      "fixtureId": "extras-mayonnaise-2e89eef6",
+      "displayName": "Mayonnaise · 50 g",
+      "sourceCategory": "Supplements",
+      "sourceName": "Mayonnaise",
+      "sourcePortion": "50 g",
+      "photoPath": "/menu/dish-mayonnaise-1-000fa824.webp"
+    },
+    {
+      "fixtureId": "extras-tartar-sauce-c0743904",
+      "displayName": "Tartar Sauce · 50g",
+      "sourceCategory": "Supplements",
+      "sourceName": "Tartar Sauce",
+      "sourcePortion": "50g",
+      "photoPath": "/menu/dish-tartar-sauce-1-ba24c42d.webp"
+    },
+    {
+      "fixtureId": "extras-sour-cream-92fdae08",
+      "displayName": "Sour Cream · 50 g",
+      "sourceCategory": "Supplements",
+      "sourceName": "Sour Cream",
+      "sourcePortion": "50 g",
+      "photoPath": "/menu/dish-sour-cream-1-7f3c09c9.webp"
+    },
+    {
+      "fixtureId": "extras-ketchup-4c8f1d85",
+      "displayName": "Ketchup · 50 g",
+      "sourceCategory": "Supplements",
+      "sourceName": "Ketchup",
+      "sourcePortion": "50 g",
+      "photoPath": "/menu/dish-ketchup-1-938b6e38.webp"
+    },
+    {
+      "fixtureId": "extras-zesty-sauce-8c03b3cf",
+      "displayName": "Zesty sauce · 50 g",
+      "sourceCategory": "Supplements",
+      "sourceName": "Zesty sauce",
+      "sourcePortion": "50 g",
+      "photoPath": "/menu/dish-zesty-sauce-1-6137b599.webp"
+    }
+  ],
+  "images": [
+    {
+      "path": "/menu/dish-flatbread-with-butter-and-sheep-cheese-1-a499de4b.webp",
+      "sourceUrl": "https://back.andys.md/image/cachewebp/catalog/andys/100/flatbread-with-butter-and-sheep-cheese-1-600x600.webp",
+      "width": 600,
+      "height": 600,
+      "bytes": 51020,
+      "sha256": "a9efac3e22cfc4bbb11ed34008323ddec21dad9618baca48b480ce767c1aa98e"
+    },
+    {
+      "path": "/menu/dish-lemonade-1-18c2feeb.webp",
+      "sourceUrl": "https://back.andys.md/image/cachewebp/catalog/andys/104/lemonade-1-600x600.webp",
+      "width": 600,
+      "height": 600,
+      "bytes": 49806,
+      "sha256": "26a94a04bee5322ea4984a1897db83c62d232513409453f49133ee6709036220"
+    },
+    {
+      "path": "/menu/dish-ros-sangria-cocktail-2-fad29604.webp",
+      "sourceUrl": "https://back.andys.md/image/cachewebp/catalog/andys/105/ros-sangria-cocktail-2-600x600.webp",
+      "width": 600,
+      "height": 600,
+      "bytes": 74140,
+      "sha256": "bb1c229b08b6594eb25e19cc4c875370b82f1e790688f579544850597ddcb527"
+    },
+    {
+      "path": "/menu/dish-lemonade-1-l-1-8bd619cb.webp",
+      "sourceUrl": "https://back.andys.md/image/cachewebp/catalog/andys/106/lemonade-1-l-1-600x600.webp",
+      "width": 600,
+      "height": 600,
+      "bytes": 49806,
+      "sha256": "26a94a04bee5322ea4984a1897db83c62d232513409453f49133ee6709036220"
+    },
+    {
+      "path": "/menu/dish-ros-sangria-cocktail-1l-2-66d91bfc.webp",
+      "sourceUrl": "https://back.andys.md/image/cachewebp/catalog/andys/107/ros-sangria-cocktail-1l-2-600x600.webp",
+      "width": 600,
+      "height": 600,
+      "bytes": 74140,
+      "sha256": "bb1c229b08b6594eb25e19cc4c875370b82f1e790688f579544850597ddcb527"
+    },
+    {
+      "path": "/menu/dish-mayonnaise-1-000fa824.webp",
+      "sourceUrl": "https://back.andys.md/image/cachewebp/catalog/andys/111/mayonnaise-1-600x600.webp",
+      "width": 600,
+      "height": 600,
+      "bytes": 42460,
+      "sha256": "8c2d56bb18bc4d53fb08ce58ad1f8bc1f429414d9aaecc28965132a6fbd867c7"
+    },
+    {
+      "path": "/menu/dish-mexican-soup-1-23d164fe.webp",
+      "sourceUrl": "https://back.andys.md/image/cachewebp/catalog/andys/116/mexican-soup-1-600x600.webp",
+      "width": 600,
+      "height": 600,
+      "bytes": 66796,
+      "sha256": "d5894fe945f6d289b71ceaa6c34afbba82dabb72ac1f31432448d367f0166bad"
+    },
+    {
+      "path": "/menu/dish-barbeque-pizza-2-3b87734c.webp",
+      "sourceUrl": "https://back.andys.md/image/cachewebp/catalog/andys/118/barbeque-pizza-2-600x600.webp",
+      "width": 600,
+      "height": 600,
+      "bytes": 107970,
+      "sha256": "100329d70643a5ba629f164450e84323fe6d428c5b28bb2f1eee246e7391566c"
+    },
+    {
+      "path": "/menu/dish-tiramisu-1-1519cbc6.webp",
+      "sourceUrl": "https://back.andys.md/image/cachewebp/catalog/andys/120/tiramisu-1-600x600.webp",
+      "width": 600,
+      "height": 600,
+      "bytes": 60674,
+      "sha256": "1a6fbe8d79caf89d01243244ecbf65dfef36499dc78f56eec3780852dccb930b"
+    },
+    {
+      "path": "/menu/dish-chocolate-plombir-ice-cream-1-951b28ae.webp",
+      "sourceUrl": "https://back.andys.md/image/cachewebp/catalog/andys/122/chocolate-plombir-ice-cream-1-600x600.webp",
+      "width": 600,
+      "height": 600,
+      "bytes": 35534,
+      "sha256": "dadcca716bbbf311baacd33ef44523a8319517a941209fa2400d4538bd0d25d7"
+    },
+    {
+      "path": "/menu/dish-soup-with-meatballs-1-51cf838e.webp",
+      "sourceUrl": "https://back.andys.md/image/cachewebp/catalog/andys/123/soup-with-meatballs-1-600x600.webp",
+      "width": 600,
+      "height": 600,
+      "bytes": 61880,
+      "sha256": "a520a1517c1416ec9191a09f1a87b3e8f1890a0ddd3a741d89df7650f4ada214"
+    },
+    {
+      "path": "/menu/dish-xxl-chicken-fillet-2-4a6831a6.webp",
+      "sourceUrl": "https://back.andys.md/image/cachewebp/catalog/andys/124/xxl-chicken-fillet-2-600x600.webp",
+      "width": 600,
+      "height": 600,
+      "bytes": 88514,
+      "sha256": "a0097dd4e785f50af16b44c1fc8363e41d387c4f36e600a8bed4ac6957648dff"
+    },
+    {
+      "path": "/menu/dish-freshly-squeezed-orange-juice-1-fd8df88b.webp",
+      "sourceUrl": "https://back.andys.md/image/cachewebp/catalog/andys/125/freshly-squeezed-orange-juice-1-600x600.webp",
+      "width": 600,
+      "height": 600,
+      "bytes": 51692,
+      "sha256": "340bd4af7e8e3095bd367c950edfeff7c5aa19ea48799698516d53b31aed6460"
+    },
+    {
+      "path": "/menu/dish-hot-bread-1-8cb6c993.webp",
+      "sourceUrl": "https://back.andys.md/image/cachewebp/catalog/andys/126/hot-bread-1-600x600.webp",
+      "width": 600,
+      "height": 600,
+      "bytes": 48404,
+      "sha256": "038d29ab4a89c0d42016c84a6528df9897788ff38d06c8465dff4bdf17668200"
+    },
+    {
+      "path": "/menu/dish-blackcurrant-lemonade-1-eaec1ab4.webp",
+      "sourceUrl": "https://back.andys.md/image/cachewebp/catalog/andys/127/blackcurrant-lemonade-1-600x600.webp",
+      "width": 600,
+      "height": 600,
+      "bytes": 35070,
+      "sha256": "813c92aba7831d1034274b0cab0885fcb5ebae722b430390906339e544b0c6d2"
+    },
+    {
+      "path": "/menu/dish-cold-cuts-appetizer-2-02d94c70.webp",
+      "sourceUrl": "https://back.andys.md/image/cachewebp/catalog/andys/133/cold-cuts-appetizer-2-600x600.webp",
+      "width": 600,
+      "height": 600,
+      "bytes": 95272,
+      "sha256": "4834782b23d939bdd0f82ef0ff84eefc371ddc68e0fdc7c6adb78fe4539ff2c9"
+    },
+    {
+      "path": "/menu/dish-shrimp-pasta-1-918dfd72.webp",
+      "sourceUrl": "https://back.andys.md/image/cachewebp/catalog/andys/135/shrimp-pasta-1-600x600.webp",
+      "width": 600,
+      "height": 600,
+      "bytes": 70422,
+      "sha256": "051f5a33cb6185bb8e12934ad068a6b02198d74f54ad4f1e3311f19593f2ad95"
+    },
+    {
+      "path": "/menu/dish-chocolate-milkshake-1-86723f2f.webp",
+      "sourceUrl": "https://back.andys.md/image/cachewebp/catalog/andys/144/chocolate-milkshake-1-600x600.webp",
+      "width": 600,
+      "height": 600,
+      "bytes": 39584,
+      "sha256": "b7f641e98591118485645ce6cf3cf739ab1fe125d936af74c48116e1726e1937"
+    },
+    {
+      "path": "/menu/dish-hot-cocoa-1-05e6b71f.webp",
+      "sourceUrl": "https://back.andys.md/image/cachewebp/catalog/andys/147/hot-cocoa-1-600x600.webp",
+      "width": 600,
+      "height": 600,
+      "bytes": 35468,
+      "sha256": "d06873c19bb01b0c0ccbd984f0d6db95f78b7e6bf6d8c15cf2ac5baa4c453d68"
+    },
+    {
+      "path": "/menu/dish-gin-tonic-1-5cfdef79.webp",
+      "sourceUrl": "https://back.andys.md/image/cachewebp/catalog/andys/148/gin-tonic-1-600x600.webp",
+      "width": 600,
+      "height": 600,
+      "bytes": 38760,
+      "sha256": "660f024628e049db9255b6c7c234e4b004b06f49928077640ed005e57c14182f"
+    },
+    {
+      "path": "/menu/dish-ros-wine-1-e49bd011.webp",
+      "sourceUrl": "https://back.andys.md/image/cachewebp/catalog/andys/151/ros-wine-1-600x600.webp",
+      "width": 600,
+      "height": 600,
+      "bytes": 37966,
+      "sha256": "dffd1d73bdf8d85a27e1f59e599ae82c138cc507cd46ff21d4f496683d7e353d"
+    },
+    {
+      "path": "/menu/dish-forest-berry-ice-cream-1-b1ed922f.webp",
+      "sourceUrl": "https://back.andys.md/image/cachewebp/catalog/andys/152/forest-berry-ice-cream-1-600x600.webp",
+      "width": 600,
+      "height": 600,
+      "bytes": 37294,
+      "sha256": "5f656a95430260bae5e193d33dd2e3eba29f4c9de483ecf93199006e547db2d6"
+    },
+    {
+      "path": "/menu/dish-banana-pineapple-ice-cream-1-ad254c01.webp",
+      "sourceUrl": "https://back.andys.md/image/cachewebp/catalog/andys/154/banana-pineapple-ice-cream-1-600x600.webp",
+      "width": 600,
+      "height": 600,
+      "bytes": 36434,
+      "sha256": "607c9cdc4559b434400a64fe8bf60ac715a8eff47411b3e40577e7f523ec86a9"
+    },
+    {
+      "path": "/menu/dish-bostavan-muscat-ros-1-0c254d33.webp",
+      "sourceUrl": "https://back.andys.md/image/cachewebp/catalog/andys/155/bostavan-muscat-ros-1-600x600.webp",
+      "width": 600,
+      "height": 600,
+      "bytes": 25032,
+      "sha256": "c139200904fb3fe09ecc91eadef9088f099abfb723baa4cd047ceeac0670c011"
+    },
+    {
+      "path": "/menu/dish-whipped-cream-ice-cream-1-b1623a53.webp",
+      "sourceUrl": "https://back.andys.md/image/cachewebp/catalog/andys/156/whipped-cream-ice-cream-1-600x600.webp",
+      "width": 600,
+      "height": 600,
+      "bytes": 36434,
+      "sha256": "607c9cdc4559b434400a64fe8bf60ac715a8eff47411b3e40577e7f523ec86a9"
+    },
+    {
+      "path": "/menu/dish-cappuccino-1-9ed71327.webp",
+      "sourceUrl": "https://back.andys.md/image/cachewebp/catalog/andys/158/cappuccino-1-600x600.webp",
+      "width": 600,
+      "height": 600,
+      "bytes": 44144,
+      "sha256": "ce3ff651e4293429cc1ed90fad5b4b0518fdc3b477e6e68eabde822a9d8f9baa"
+    },
+    {
+      "path": "/menu/dish-efes-pilsner-beer-1-7df0a353.webp",
+      "sourceUrl": "https://back.andys.md/image/cachewebp/catalog/andys/159/efes-pilsner-beer-1-600x600.webp",
+      "width": 600,
+      "height": 600,
+      "bytes": 37780,
+      "sha256": "4fb82d55a5b52ef7c1e271d6ad94d37ffe7bfbcdb47cdd83493a3757d50207e7"
+    },
+    {
+      "path": "/menu/dish-coffee-latte-1-76cde390.webp",
+      "sourceUrl": "https://back.andys.md/image/cachewebp/catalog/andys/161/coffee-latte-1-600x600.webp",
+      "width": 600,
+      "height": 600,
+      "bytes": 40004,
+      "sha256": "06bd4f5ac65ea34d6daf81de66f89f149306725fa055baa23ae4dce19fa6d85c"
+    },
+    {
+      "path": "/menu/dish-iced-latte-1-0d751292.webp",
+      "sourceUrl": "https://back.andys.md/image/cachewebp/catalog/andys/162/iced-latte-1-600x600.webp",
+      "width": 600,
+      "height": 600,
+      "bytes": 48476,
+      "sha256": "b09f6bea22d33b2d5a7059c581af1f449769020b5e0239b64e32098734805e2a"
+    },
+    {
+      "path": "/menu/dish-orangeade-1-3003be90.webp",
+      "sourceUrl": "https://back.andys.md/image/cachewebp/catalog/andys/163/orangeade-1-600x600.webp",
+      "width": 600,
+      "height": 600,
+      "bytes": 49504,
+      "sha256": "8da598f16ac534f4ce5f2fb39c2a122c353ae692f39e5fd3f0d67afdabc1ca31"
+    },
+    {
+      "path": "/menu/dish-orangeade-1-l-1-6398ed0f.webp",
+      "sourceUrl": "https://back.andys.md/image/cachewebp/catalog/andys/164/orangeade-1-l-1-600x600.webp",
+      "width": 600,
+      "height": 600,
+      "bytes": 49504,
+      "sha256": "8da598f16ac534f4ce5f2fb39c2a122c353ae692f39e5fd3f0d67afdabc1ca31"
+    },
+    {
+      "path": "/menu/dish-banana-mango-milkshake-1-c177ceed.webp",
+      "sourceUrl": "https://back.andys.md/image/cachewebp/catalog/andys/166/banana-mango-milkshake-1-600x600.webp",
+      "width": 600,
+      "height": 600,
+      "bytes": 35774,
+      "sha256": "d02e28b7293eed2f4c755a9d2b78bd1ed7a24aab210f437aa727eef2551b23a9"
+    },
+    {
+      "path": "/menu/dish-chi-in-u-light-beer-1-ecfe4ce4.webp",
+      "sourceUrl": "https://back.andys.md/image/cachewebp/catalog/andys/167/chi-in-u-light-beer-1-600x600.webp",
+      "width": 600,
+      "height": 600,
+      "bytes": 39502,
+      "sha256": "9e30e9947e6149cb83e3806bef36631bfc475d4114ea2bb2da5abd05fd02f88c"
+    },
+    {
+      "path": "/menu/dish-kozel-ern-beer-1-6316c12a.webp",
+      "sourceUrl": "https://back.andys.md/image/cachewebp/catalog/andys/171/kozel-ern-beer-1-600x600.webp",
+      "width": 600,
+      "height": 600,
+      "bytes": 35940,
+      "sha256": "6036f212e1a6c94c2635ed58c3ff09be4625b01533cb4c1b5d73679bf1ca4a55"
+    },
+    {
+      "path": "/menu/dish-mojito-cocktail-1-f419c136.webp",
+      "sourceUrl": "https://back.andys.md/image/cachewebp/catalog/andys/174/mojito-cocktail-1-600x600.webp",
+      "width": 600,
+      "height": 600,
+      "bytes": 56772,
+      "sha256": "0ae0530a5d72ba8ecacbaf74cd81623236f5be483bfa6a4895a5b411d80efba4"
+    },
+    {
+      "path": "/menu/dish-vanilla-milkshake-1-38f2bb75.webp",
+      "sourceUrl": "https://back.andys.md/image/cachewebp/catalog/andys/175/vanilla-milkshake-1-600x600.webp",
+      "width": 600,
+      "height": 600,
+      "bytes": 31814,
+      "sha256": "e78fd093f194db2598a120cd10153dcaffc22f197e952cb9fe0127eef3bf411b"
+    },
+    {
+      "path": "/menu/dish-bostavan-merlot-red-dry-wine-1-9b36365e.webp",
+      "sourceUrl": "https://back.andys.md/image/cachewebp/catalog/andys/176/bostavan-merlot-red-dry-wine-1-600x600.webp",
+      "width": 600,
+      "height": 600,
+      "bytes": 26996,
+      "sha256": "b53c00d6cdc4b8319ada481d3ef3ac71d9a56edd0202c9c358a204d1b877ab17"
+    },
+    {
+      "path": "/menu/dish-chicken-skewer-3-77ea5162.webp",
+      "sourceUrl": "https://back.andys.md/image/cachewebp/catalog/andys/177/chicken-skewer-3-600x600.webp",
+      "width": 600,
+      "height": 600,
+      "bytes": 106246,
+      "sha256": "a006e207a16c650c2b022647bfd19db33a5cff32cbb4d7da6b0c69e16416bf2b"
+    },
+    {
+      "path": "/menu/dish-almond-latte-1-0253859c.webp",
+      "sourceUrl": "https://back.andys.md/image/cachewebp/catalog/andys/182/almond-latte-1-600x600.webp",
+      "width": 600,
+      "height": 600,
+      "bytes": 22596,
+      "sha256": "e8a56e20effe62016c8f7490ad91695e7ca7728027113dde000a8c425f43b140"
+    },
+    {
+      "path": "/menu/dish-shrimp-in-cream-sauce-1-7c2c9516.webp",
+      "sourceUrl": "https://back.andys.md/image/cachewebp/catalog/andys/183/shrimp-in-cream-sauce-1-600x600.webp",
+      "width": 600,
+      "height": 600,
+      "bytes": 68132,
+      "sha256": "d42309bf2c4c6f2fd990f40b06f70908340fb659e801dbb0591bf68136343ed7"
+    },
+    {
+      "path": "/menu/dish-caesar-salad-with-chicken-banquet-1-e4794f4c.webp",
+      "sourceUrl": "https://back.andys.md/image/cachewebp/catalog/andys/184/caesar-salad-with-chicken-banquet-1-600x600.webp",
+      "width": 600,
+      "height": 600,
+      "bytes": 126348,
+      "sha256": "6dcd2c34f3920d2f6696c5485fdbfef7c3f0dc9ef25d2c9cd9732259e591589f"
+    },
+    {
+      "path": "/menu/dish-bostavan-chardonnay-white-dry-wine-1-2ba74f7e.webp",
+      "sourceUrl": "https://back.andys.md/image/cachewebp/catalog/andys/185/bostavan-chardonnay-white-dry-wine-1-600x600.webp",
+      "width": 600,
+      "height": 600,
+      "bytes": 29590,
+      "sha256": "344247036c45855a0ec4d2a41cab225685a1c1406057cf18d5264cd64413fa60"
+    },
+    {
+      "path": "/menu/dish-sea-buckthorn-tea-2-ef5711a8.webp",
+      "sourceUrl": "https://back.andys.md/image/cachewebp/catalog/andys/186/sea-buckthorn-tea-2-600x600.webp",
+      "width": 600,
+      "height": 600,
+      "bytes": 74820,
+      "sha256": "cda6601eaf011c14b7bdf6a85d19b4c953c799adc6e0758cc08c924d1e1d0782"
+    },
+    {
+      "path": "/menu/dish-franziskaner-weissbier-1-3b8dac8d.webp",
+      "sourceUrl": "https://back.andys.md/image/cachewebp/catalog/andys/187/franziskaner-weissbier-1-600x600.webp",
+      "width": 600,
+      "height": 600,
+      "bytes": 52496,
+      "sha256": "b15f39785f9c255be70dfd11986ea237fab48a6b925f67e9acbfc070f1ec0768"
+    },
+    {
+      "path": "/menu/dish-roasted-pepper-bruschetta-2-7d475d5a.webp",
+      "sourceUrl": "https://back.andys.md/image/cachewebp/catalog/andys/188/roasted-pepper-bruschetta-2-600x600.webp",
+      "width": 600,
+      "height": 600,
+      "bytes": 117458,
+      "sha256": "ed0a5767594bc47ad0f89787606cb15d7eabab3146de9b5ec4c6bd10c6cda6c0"
+    },
+    {
+      "path": "/menu/dish-pasta-carbonara-1-6d562dae.webp",
+      "sourceUrl": "https://back.andys.md/image/cachewebp/catalog/andys/189/pasta-carbonara-1-600x600.webp",
+      "width": 600,
+      "height": 600,
+      "bytes": 61818,
+      "sha256": "5bf7626215c397af1bc52f89a28578f8ae5da815456c6a524124bdd7b312f116"
+    },
+    {
+      "path": "/menu/dish-andy-s-breakfast-2-129d46dc.webp",
+      "sourceUrl": "https://back.andys.md/image/cachewebp/catalog/andys/190/andy-s-breakfast-2-600x600.webp",
+      "width": 600,
+      "height": 600,
+      "bytes": 116002,
+      "sha256": "d36c816fcc006ec6880c611049f51575da5caf0b28821cf0007648b53016d196"
+    },
+    {
+      "path": "/menu/dish-kozel-svetly-1-dbccec99.webp",
+      "sourceUrl": "https://back.andys.md/image/cachewebp/catalog/andys/197/kozel-svetly-1-600x600.webp",
+      "width": 600,
+      "height": 600,
+      "bytes": 38180,
+      "sha256": "d6876e9e07edc2b610e935d67cd60ef0b4aff594753bca29dfbf09436c1d4751"
+    },
+    {
+      "path": "/menu/dish-cricova-crisecco-brut-1-92f8c7e9.webp",
+      "sourceUrl": "https://back.andys.md/image/cachewebp/catalog/andys/199/cricova-crisecco-brut-1-600x600.webp",
+      "width": 600,
+      "height": 600,
+      "bytes": 30088,
+      "sha256": "656ea149fa87c47cb479925b80c01ca12607fd557ece127ee9919dc7e3dd01b8"
+    },
+    {
+      "path": "/menu/dish-chocolate-ice-cream-1-85bfa745.webp",
+      "sourceUrl": "https://back.andys.md/image/cachewebp/catalog/andys/201/chocolate-ice-cream-1-600x600.webp",
+      "width": 600,
+      "height": 600,
+      "bytes": 38490,
+      "sha256": "3b256728459d997274bafedb3761036738fecde7f89c0b16ddbe54eadd0ea16d"
+    },
+    {
+      "path": "/menu/dish-romanian-appetizer-2-7a839201.webp",
+      "sourceUrl": "https://back.andys.md/image/cachewebp/catalog/andys/202/romanian-appetizer-2-600x600.webp",
+      "width": 600,
+      "height": 600,
+      "bytes": 99518,
+      "sha256": "96834debfc408d63c3e4e45b3bee030b795268d689f3186e8f37e26dde8ae8e8"
+    },
+    {
+      "path": "/menu/dish-classic-plombir-ice-cream-2-456856ee.webp",
+      "sourceUrl": "https://back.andys.md/image/cachewebp/catalog/andys/205/classic-plombir-ice-cream-2-600x600.webp",
+      "width": 600,
+      "height": 600,
+      "bytes": 34928,
+      "sha256": "67a9e4b4ea1ee1c27133fb7fdc19183a2e105ee08cc21bdc97c3e6925bab7c41"
+    },
+    {
+      "path": "/menu/dish-caesar-salad-with-chicken-1-52da8eb5.webp",
+      "sourceUrl": "https://back.andys.md/image/cachewebp/catalog/andys/206/caesar-salad-with-chicken-1-600x600.webp",
+      "width": 600,
+      "height": 600,
+      "bytes": 76588,
+      "sha256": "6a39e8200b23c60eb97a4f1f3e71aa88dd224b83c9c090ba79464a0bed9a5228"
+    },
+    {
+      "path": "/menu/dish-tropical-cocktail-1-1fe5dde2.webp",
+      "sourceUrl": "https://back.andys.md/image/cachewebp/catalog/andys/212/tropical-cocktail-1-600x600.webp",
+      "width": 600,
+      "height": 600,
+      "bytes": 41706,
+      "sha256": "4b78d2901eb0d301be90f2c3475b525dbdb5deed5bff122a8395f724bad05764"
+    },
+    {
+      "path": "/menu/dish-purcari-nocturne-cabernet-sauvignon-red-sec-1-62837af8.webp",
+      "sourceUrl": "https://back.andys.md/image/cachewebp/catalog/andys/213/purcari-nocturne-cabernet-sauvignon-red-sec-1-600x600.webp",
+      "width": 600,
+      "height": 600,
+      "bytes": 28536,
+      "sha256": "e98c1d73b7ff8e4876893df560e2bd52936f306570f36b42f74e48ee63b1d9db"
+    },
+    {
+      "path": "/menu/dish-pancakes-with-chicken-mushroom-sauce-2-7fdc47ef.webp",
+      "sourceUrl": "https://back.andys.md/image/cachewebp/catalog/andys/217/pancakes-with-chicken-mushroom-sauce-2-600x600.webp",
+      "width": 600,
+      "height": 600,
+      "bytes": 113566,
+      "sha256": "244810fbbb313bb6a81e17bcb8b6f506d09680aabdfefe3446a71c2dc445a920"
+    },
+    {
+      "path": "/menu/dish-white-wine-1-0587b066.webp",
+      "sourceUrl": "https://back.andys.md/image/cachewebp/catalog/andys/219/white-wine-1-600x600.webp",
+      "width": 600,
+      "height": 600,
+      "bytes": 47718,
+      "sha256": "1cff857bf579461e2659ff0a3544178fb418eab9cb3865c1af32298ed3d3f69b"
+    },
+    {
+      "path": "/menu/dish-zama-traditional-chicken-soup-1-dbc754de.webp",
+      "sourceUrl": "https://back.andys.md/image/cachewebp/catalog/andys/220/zama-traditional-chicken-soup-1-600x600.webp",
+      "width": 600,
+      "height": 600,
+      "bytes": 69324,
+      "sha256": "04ae510d398f168a8b2e93c155416f5d29e6a48baca2ff37d09f832aa07ce697"
+    },
+    {
+      "path": "/menu/dish-ciabatta-1-a006558d.webp",
+      "sourceUrl": "https://back.andys.md/image/cachewebp/catalog/andys/222/ciabatta-1-600x600.webp",
+      "width": 600,
+      "height": 600,
+      "bytes": 86064,
+      "sha256": "fcb03c24572ec5204a95757d50c531353b8bdbb7f7253ee846b91747753e90a9"
+    },
+    {
+      "path": "/menu/dish-iced-latte-1-03606971.webp",
+      "sourceUrl": "https://back.andys.md/image/cachewebp/catalog/andys/228/iced-latte-1-600x600.webp",
+      "width": 600,
+      "height": 600,
+      "bytes": 49916,
+      "sha256": "5259c7cff8debcf2a2de92f284de68c8835688bb6cd56fd35c684f3e1b18fb29"
+    },
+    {
+      "path": "/menu/dish-purcari-nocturne-sauvignon-blanc-dry-wine-1-39620d32.webp",
+      "sourceUrl": "https://back.andys.md/image/cachewebp/catalog/andys/230/purcari-nocturne-sauvignon-blanc-dry-wine-1-600x600.webp",
+      "width": 600,
+      "height": 600,
+      "bytes": 29710,
+      "sha256": "dfae2e310c3af119c085320990fcaf662ce31871f3ec6bd0cf32431cda0fb8ed"
+    },
+    {
+      "path": "/menu/dish-chocolate-fondant-2-975a2a05.webp",
+      "sourceUrl": "https://back.andys.md/image/cachewebp/catalog/andys/234/chocolate-fondant-2-600x600.webp",
+      "width": 600,
+      "height": 600,
+      "bytes": 110936,
+      "sha256": "475a6c4ed9aa30f11789f2f1b2428ba204aa14e57ce85b83d4ebb5e52286784f"
+    },
+    {
+      "path": "/menu/dish-espresso-tonic-1-c517ac6f.webp",
+      "sourceUrl": "https://back.andys.md/image/cachewebp/catalog/andys/238/espresso-tonic-1-600x600.webp",
+      "width": 600,
+      "height": 600,
+      "bytes": 41366,
+      "sha256": "4413331ab08bafd036bb23c54cd26067f8db5b61deb47c779fdbcc95212a5150"
+    },
+    {
+      "path": "/menu/dish-spinach-cream-soup-1-682aff9b.webp",
+      "sourceUrl": "https://back.andys.md/image/cachewebp/catalog/andys/240/spinach-cream-soup-1-600x600.webp",
+      "width": 600,
+      "height": 600,
+      "bytes": 61380,
+      "sha256": "271a7ad0684f057dc2c42576e3d00a5203e4352ff39d9a560187476cd881904b"
+    },
+    {
+      "path": "/menu/dish-chicken-meatballs-in-tomato-sauce-with-mashed-potatoes-2-82ef9d9c.webp",
+      "sourceUrl": "https://back.andys.md/image/cachewebp/catalog/andys/243/chicken-meatballs-in-tomato-sauce-with-mashed-potatoes-2-600x600.webp",
+      "width": 600,
+      "height": 600,
+      "bytes": 111620,
+      "sha256": "1ba37fce38a00a766476189d45469ccd0f0043961e62117b71887fd875c448f5"
+    },
+    {
+      "path": "/menu/dish-signature-mint-tea-1-887cc605.webp",
+      "sourceUrl": "https://back.andys.md/image/cachewebp/catalog/andys/245/signature-mint-tea-1-600x600.webp",
+      "width": 600,
+      "height": 600,
+      "bytes": 100780,
+      "sha256": "34b31a2a140ff45168a0861cdcb46efc5c55373a30db1212cbb3d9ab5b982285"
+    },
+    {
+      "path": "/menu/dish-huba-buba-ice-cream-1-649097e0.webp",
+      "sourceUrl": "https://back.andys.md/image/cachewebp/catalog/andys/246/huba-buba-ice-cream-1-600x600.webp",
+      "width": 600,
+      "height": 600,
+      "bytes": 34524,
+      "sha256": "52d5a8b82d5b5c49cbb0b6a34ba262dd920c8c165840f90c2bc6292494f336d0"
+    },
+    {
+      "path": "/menu/dish-chicken-gyros-1-db972f81.webp",
+      "sourceUrl": "https://back.andys.md/image/cachewebp/catalog/andys/248/chicken-gyros-1-600x600.webp",
+      "width": 600,
+      "height": 600,
+      "bytes": 72022,
+      "sha256": "efd86e99298a93429b8e40416839e26a6fcff8575f22e99595a2baeda6187d47"
+    },
+    {
+      "path": "/menu/dish-corona-extra-1-e05e6bcb.webp",
+      "sourceUrl": "https://back.andys.md/image/cachewebp/catalog/andys/250/corona-extra-1-600x600.webp",
+      "width": 600,
+      "height": 600,
+      "bytes": 37696,
+      "sha256": "9486beb4bf130814a3fa400805b7eeb3aae367ef9f38a6130c9b3328cd3ea3b2"
+    },
+    {
+      "path": "/menu/dish-cricova-lacrima-dulce-1-2661d4a1.webp",
+      "sourceUrl": "https://back.andys.md/image/cachewebp/catalog/andys/252/cricova-lacrima-dulce-1-600x600.webp",
+      "width": 600,
+      "height": 600,
+      "bytes": 28012,
+      "sha256": "9967d8fd27894d07f214b938678e14caf4c98002102b1baaaf376008f9471138"
+    },
+    {
+      "path": "/menu/dish-caesar-salad-with-shrimp-banquet-1-136183a9.webp",
+      "sourceUrl": "https://back.andys.md/image/cachewebp/catalog/andys/253/caesar-salad-with-shrimp-banquet-1-600x600.webp",
+      "width": 600,
+      "height": 600,
+      "bytes": 128714,
+      "sha256": "221ec18f1db920084930cfc6d890c862014542b8357a7c3eafc62e1de5ba2c73"
+    },
+    {
+      "path": "/menu/dish-smiley-potatoes-1-b3058fbd.webp",
+      "sourceUrl": "https://back.andys.md/image/cachewebp/catalog/andys/254/smiley-potatoes-1-600x600.webp",
+      "width": 600,
+      "height": 600,
+      "bytes": 66342,
+      "sha256": "1b18cab2f045d2bf2d5d917f5b423b8971c38727e9fa02285f2776295b9a61cd"
+    },
+    {
+      "path": "/menu/dish-meat-platter-2-f8bef848.webp",
+      "sourceUrl": "https://back.andys.md/image/cachewebp/catalog/andys/256/meat-platter-2-600x600.webp",
+      "width": 600,
+      "height": 600,
+      "bytes": 119428,
+      "sha256": "0c09f11db7340fb27935a67b638f0ba58be8bf0242bd85718e313d6d5ab6445c"
+    },
+    {
+      "path": "/menu/dish-beef-burger-2-a6eecd8c.webp",
+      "sourceUrl": "https://back.andys.md/image/cachewebp/catalog/andys/259/beef-burger-2-600x600.webp",
+      "width": 600,
+      "height": 600,
+      "bytes": 114578,
+      "sha256": "42e0182068a2336ae4cfa5138c0eddc02773e273d849841b26db7c3f9ccf71ce"
+    },
+    {
+      "path": "/menu/dish-glazed-chicken-wings-1-92dc7377.webp",
+      "sourceUrl": "https://back.andys.md/image/cachewebp/catalog/andys/260/glazed-chicken-wings-1-600x600.webp",
+      "width": 600,
+      "height": 600,
+      "bytes": 59084,
+      "sha256": "248284b895e49310be830c360b64f8bcdc47f7e10638c3c15f0b5aba2aec5544"
+    },
+    {
+      "path": "/menu/dish-cheese-platter-2-7563212e.webp",
+      "sourceUrl": "https://back.andys.md/image/cachewebp/catalog/andys/262/cheese-platter-2-600x600.webp",
+      "width": 600,
+      "height": 600,
+      "bytes": 99758,
+      "sha256": "7d4233189b7b42e3770b98b6cad7439ed92a9f4131704662101f12c4d4739d30"
+    },
+    {
+      "path": "/menu/dish-efes-non-alcoholic-1-d3bfc259.webp",
+      "sourceUrl": "https://back.andys.md/image/cachewebp/catalog/andys/265/efes-non-alcoholic-1-600x600.webp",
+      "width": 600,
+      "height": 600,
+      "bytes": 31806,
+      "sha256": "4c482226c1f6e018ab34fc6b41cde978ae379f95bd1689629c77a487337f5798"
+    },
+    {
+      "path": "/menu/dish-strawberry-ice-cream-1-216d243f.webp",
+      "sourceUrl": "https://back.andys.md/image/cachewebp/catalog/andys/267/strawberry-ice-cream-1-600x600.webp",
+      "width": 600,
+      "height": 600,
+      "bytes": 39174,
+      "sha256": "1f19ab955eed4fe4e5b48012e9eb595ebba4caaa6d96254a23035a5c7f6bb92c"
+    },
+    {
+      "path": "/menu/dish-bianca-pizza-2-20e6210b.webp",
+      "sourceUrl": "https://back.andys.md/image/cachewebp/catalog/andys/268/bianca-pizza-2-600x600.webp",
+      "width": 600,
+      "height": 600,
+      "bytes": 103584,
+      "sha256": "10d333b4bc4bce91b174a5e331acfadd8fa0bccba2e9046822b76800aa4b61a7"
+    },
+    {
+      "path": "/menu/dish-strawberry-milkshake-1-2233a50e.webp",
+      "sourceUrl": "https://back.andys.md/image/cachewebp/catalog/andys/275/strawberry-milkshake-1-600x600.webp",
+      "width": 600,
+      "height": 600,
+      "bytes": 34162,
+      "sha256": "b646b110393e26219a36040fcf3dba8c12614b26b3a9c82f58dd797858988fd2"
+    },
+    {
+      "path": "/menu/dish-chi-in-u-light-beer-1-135745db.webp",
+      "sourceUrl": "https://back.andys.md/image/cachewebp/catalog/andys/279/chi-in-u-light-beer-1-600x600.webp",
+      "width": 600,
+      "height": 600,
+      "bytes": 46954,
+      "sha256": "64ed3d767add02e7e16e28ee0d5fa9615c4b291e1cc2e2e4a93ff32dd8591136"
+    },
+    {
+      "path": "/menu/dish-aperol-spritz-cocktail-1-8e08aa29.webp",
+      "sourceUrl": "https://back.andys.md/image/cachewebp/catalog/andys/283/aperol-spritz-cocktail-1-600x600.webp",
+      "width": 600,
+      "height": 600,
+      "bytes": 37056,
+      "sha256": "5b448d95a9bcae6ca7c65546b0fb8433229b3be9f0af41a7f04f3371c9c70752"
+    },
+    {
+      "path": "/menu/dish-pistachio-ice-cream-1-066cb1ee.webp",
+      "sourceUrl": "https://back.andys.md/image/cachewebp/catalog/andys/285/pistachio-ice-cream-1-600x600.webp",
+      "width": 600,
+      "height": 600,
+      "bytes": 33842,
+      "sha256": "1b1ace9445f106cf2999e07c4dc654bf018c2a1f998131597acb6b4b94b6bf0e"
+    },
+    {
+      "path": "/menu/dish-ice-cream-assortment-1-8d8cd883.webp",
+      "sourceUrl": "https://back.andys.md/image/cachewebp/catalog/andys/286/ice-cream-assortment-1-600x600.webp",
+      "width": 600,
+      "height": 600,
+      "bytes": 39150,
+      "sha256": "8d4f7313487f518720b7e61b69503c59f7f78ed6ec3c4cc85813b230564fe9aa"
+    },
+    {
+      "path": "/menu/dish-chicken-lasagna-2-d6fbe646.webp",
+      "sourceUrl": "https://back.andys.md/image/cachewebp/catalog/andys/289/chicken-lasagna-2-600x600.webp",
+      "width": 600,
+      "height": 600,
+      "bytes": 123664,
+      "sha256": "aeac8762e85ea5f3b6926016beb87cc1cd3a18e370e74aa0c1cc6c8204f9b1b9"
+    },
+    {
+      "path": "/menu/dish-ice-cream-assortment-1-1478a0b1.webp",
+      "sourceUrl": "https://back.andys.md/image/cachewebp/catalog/andys/290/ice-cream-assortment-1-600x600.webp",
+      "width": 600,
+      "height": 600,
+      "bytes": 39150,
+      "sha256": "8d4f7313487f518720b7e61b69503c59f7f78ed6ec3c4cc85813b230564fe9aa"
+    },
+    {
+      "path": "/menu/dish-breaded-chicken-breast-1-cbfd0c0c.webp",
+      "sourceUrl": "https://back.andys.md/image/cachewebp/catalog/andys/291/breaded-chicken-breast-1-600x600.webp",
+      "width": 600,
+      "height": 600,
+      "bytes": 59586,
+      "sha256": "5267d903cad3cb5a7c520c5f53fb3cd9cb9f6a374304d0f49eaaaefb1a2314c2"
+    },
+    {
+      "path": "/menu/dish-sour-cream-1-7f3c09c9.webp",
+      "sourceUrl": "https://back.andys.md/image/cachewebp/catalog/andys/292/sour-cream-1-600x600.webp",
+      "width": 600,
+      "height": 600,
+      "bytes": 41680,
+      "sha256": "1fdace769ecbae317c984f8aa0ddf4ff0e9e3f1e59293ff03885b8a86804f72c"
+    },
+    {
+      "path": "/menu/dish-mango-passion-fruit-ice-cream-1-b36d815f.webp",
+      "sourceUrl": "https://back.andys.md/image/cachewebp/catalog/andys/294/mango-passion-fruit-ice-cream-1-600x600.webp",
+      "width": 600,
+      "height": 600,
+      "bytes": 37506,
+      "sha256": "3538de9354c5937acf89322996b318e695c4c66782ba4f4404d983a6276ca160"
+    },
+    {
+      "path": "/menu/dish-finch-beer-1-74fa6ae2.webp",
+      "sourceUrl": "https://back.andys.md/image/cachewebp/catalog/andys/298/finch-beer-1-600x600.webp",
+      "width": 600,
+      "height": 600,
+      "bytes": 35256,
+      "sha256": "8c149c1f82a9aba3c95d0d9b19c973b055abf1ac8bf4e374f26f10034b6be04d"
+    },
+    {
+      "path": "/menu/dish-chicken-breast-with-potato-gratin-4-ff4a9741.webp",
+      "sourceUrl": "https://back.andys.md/image/cachewebp/catalog/andys/299/chicken-breast-with-potato-gratin-4-600x600.webp",
+      "width": 600,
+      "height": 600,
+      "bytes": 124776,
+      "sha256": "ebceeeba20b6c94991b9beda3bf13ac2e79a78845a6507753c6cb20d1560b8c5"
+    },
+    {
+      "path": "/menu/dish-neapolitana-pizza-2-c103a516.webp",
+      "sourceUrl": "https://back.andys.md/image/cachewebp/catalog/andys/302/neapolitana-pizza-2-600x600.webp",
+      "width": 600,
+      "height": 600,
+      "bytes": 104452,
+      "sha256": "feba565bb02cab1869acb5c0809633b7e344116e7b8f83c3f4f6e22fd85ad11b"
+    },
+    {
+      "path": "/menu/dish-nghetata-snickerrss-1-a1ef19c6.webp",
+      "sourceUrl": "https://back.andys.md/image/cachewebp/catalog/andys/309/nghetata-snickerrss-1-600x600.webp",
+      "width": 600,
+      "height": 600,
+      "bytes": 36010,
+      "sha256": "b2736bc63a3d5a928732056b7b7b6b95ee206455ebf54878c7af2eb0eb37b68a"
+    },
+    {
+      "path": "/menu/dish-chicken-burger-2-80d0883e.webp",
+      "sourceUrl": "https://back.andys.md/image/cachewebp/catalog/andys/311/chicken-burger-2-600x600.webp",
+      "width": 600,
+      "height": 600,
+      "bytes": 111674,
+      "sha256": "1bd62f5ec3412f14f82cfbcbeb58112bcf4fdb6c9aed80c216ce5d776cc190d7"
+    },
+    {
+      "path": "/menu/dish-almond-hot-cocoa-1-0ec2e10a.webp",
+      "sourceUrl": "https://back.andys.md/image/cachewebp/catalog/andys/314/almond-hot-cocoa-1-600x600.webp",
+      "width": 600,
+      "height": 600,
+      "bytes": 32168,
+      "sha256": "afdd16332341dc8f2ee44e596b0171f4aeb4a6742cfdcf29577ebdd0460a5545"
+    },
+    {
+      "path": "/menu/dish-apple-juice-1-0b19b678.webp",
+      "sourceUrl": "https://back.andys.md/image/cachewebp/catalog/andys/320/apple-juice-1-600x600.webp",
+      "width": 600,
+      "height": 600,
+      "bytes": 57452,
+      "sha256": "5150b15e919788ad7cc8e9c2c857af0040528d23a590d12527328c9f384af2e1"
+    },
+    {
+      "path": "/menu/dish-fresh-vegetable-platter-1-e738fece.webp",
+      "sourceUrl": "https://back.andys.md/image/cachewebp/catalog/andys/321/fresh-vegetable-platter-1-600x600.webp",
+      "width": 600,
+      "height": 600,
+      "bytes": 72724,
+      "sha256": "b70ac742a99bc523994a4dc37537c31d1b1536123e7f571854ed0a5236d5c8a7"
+    },
+    {
+      "path": "/menu/dish-chicken-cream-soup-1-1ed901ae.webp",
+      "sourceUrl": "https://back.andys.md/image/cachewebp/catalog/andys/324/chicken-cream-soup-1-600x600.webp",
+      "width": 600,
+      "height": 600,
+      "bytes": 64842,
+      "sha256": "cf91bfef11ca96e583d7960fd57a074edf78d2d4281a9724953cea9698a09cfe"
+    },
+    {
+      "path": "/menu/dish-red-wine-1-59dac068.webp",
+      "sourceUrl": "https://back.andys.md/image/cachewebp/catalog/andys/326/red-wine-1-600x600.webp",
+      "width": 600,
+      "height": 600,
+      "bytes": 29648,
+      "sha256": "c139a9d99c618731b24711574e31036ba4e430d960f6f5bc7dc4161d67753769"
+    },
+    {
+      "path": "/menu/dish-cocktail-pina-colada-1-ae0c39a4.webp",
+      "sourceUrl": "https://back.andys.md/image/cachewebp/catalog/andys/327/cocktail-pina-colada-1-600x600.webp",
+      "width": 600,
+      "height": 600,
+      "bytes": 43010,
+      "sha256": "8ed2a2e4abdb74e6e2af32bfab410051589660db7d097ea20a7f9bc092e6394c"
+    },
+    {
+      "path": "/menu/dish-raspberry-fizz-lemonade-1-41bf0973.webp",
+      "sourceUrl": "https://back.andys.md/image/cachewebp/catalog/andys/328/raspberry-fizz-lemonade-1-600x600.webp",
+      "width": 600,
+      "height": 600,
+      "bytes": 43730,
+      "sha256": "7f8fa62af8bee680bce8c445948eac9bcab5476230586a0be72a0511168ab499"
+    },
+    {
+      "path": "/menu/dish-espresso-1-18af814f.webp",
+      "sourceUrl": "https://back.andys.md/image/cachewebp/catalog/andys/331/espresso-1-600x600.webp",
+      "width": 600,
+      "height": 600,
+      "bytes": 55656,
+      "sha256": "458e3b916ef54a814aa9ea0445953d18ba07865b6c309d0e91c9968e91ab9247"
+    },
+    {
+      "path": "/menu/dish-pepperoni-pizza-2-fd502a85.webp",
+      "sourceUrl": "https://back.andys.md/image/cachewebp/catalog/andys/334/pepperoni-pizza-2-600x600.webp",
+      "width": 600,
+      "height": 600,
+      "bytes": 118602,
+      "sha256": "9e728a57cbc2f2ab035b7633e30040f62f77567ea36f440cdfed26a4e573735f"
+    },
+    {
+      "path": "/menu/dish-salmon-bruschetta-3-4d6018e3.webp",
+      "sourceUrl": "https://back.andys.md/image/cachewebp/catalog/andys/336/salmon-bruschetta-3-600x600.webp",
+      "width": 600,
+      "height": 600,
+      "bytes": 108514,
+      "sha256": "5ebbe01450d5f59947a588eccf30fbdddf60deca778142a0af2fe4d935cfec8d"
+    },
+    {
+      "path": "/menu/dish-cherry-pepsi-cocktail-1-824023e0.webp",
+      "sourceUrl": "https://back.andys.md/image/cachewebp/catalog/andys/337/cherry-pepsi-cocktail-1-600x600.webp",
+      "width": 600,
+      "height": 600,
+      "bytes": 47400,
+      "sha256": "4ccda45dacd225aed07cc7b5c201d5ab11f13041458aa33f9862361c48a12922"
+    },
+    {
+      "path": "/menu/dish-purcari-nocturne-pinot-grigio-dry-wine-1-26184e79.webp",
+      "sourceUrl": "https://back.andys.md/image/cachewebp/catalog/andys/340/purcari-nocturne-pinot-grigio-dry-wine-1-600x600.webp",
+      "width": 600,
+      "height": 600,
+      "bytes": 32020,
+      "sha256": "ae05f401aadcf908452cde3134a2881711eedc4d947dce2b853855518243b9c8"
+    },
+    {
+      "path": "/menu/dish-mini-burger-1-733d2e16.webp",
+      "sourceUrl": "https://back.andys.md/image/cachewebp/catalog/andys/341/mini-burger-1-600x600.webp",
+      "width": 600,
+      "height": 600,
+      "bytes": 67988,
+      "sha256": "1d65e52d00d7de70cb32199452f7abedbcebec8e6cdcfd966434fb8a49850acf"
+    },
+    {
+      "path": "/menu/dish-ketchup-1-938b6e38.webp",
+      "sourceUrl": "https://back.andys.md/image/cachewebp/catalog/andys/342/ketchup-1-600x600.webp",
+      "width": 600,
+      "height": 600,
+      "bytes": 44068,
+      "sha256": "a7cb111e17d4f07971900c684b57b02304b0431a722841be48d374c4725ef810"
+    },
+    {
+      "path": "/menu/dish-eggplant-appetizer-2-a1c531fa.webp",
+      "sourceUrl": "https://back.andys.md/image/cachewebp/catalog/andys/343/eggplant-appetizer-2-600x600.webp",
+      "width": 600,
+      "height": 600,
+      "bytes": 101334,
+      "sha256": "864013a90c08063f6846195a00a565e0bdb16063192fd8887064c558180ea0b3"
+    },
+    {
+      "path": "/menu/dish-mango-juice-1-3b4c7b6c.webp",
+      "sourceUrl": "https://back.andys.md/image/cachewebp/catalog/andys/347/mango-juice-1-600x600.webp",
+      "width": 600,
+      "height": 600,
+      "bytes": 58700,
+      "sha256": "820a3c3d6fae21e40d91fb15ba1bda612ff12b11f7cf365fa84eb4c27caefacd"
+    },
+    {
+      "path": "/menu/dish-americano-1-b6e991a0.webp",
+      "sourceUrl": "https://back.andys.md/image/cachewebp/catalog/andys/350/americano-1-600x600.webp",
+      "width": 600,
+      "height": 600,
+      "bytes": 27938,
+      "sha256": "7dc9b302f5fe672d5dfa33b2458934d503c65903ab15f7313f5b1af772939815"
+    },
+    {
+      "path": "/menu/dish-chi-in-u-draft-beer-1-7c4b3182.webp",
+      "sourceUrl": "https://back.andys.md/image/cachewebp/catalog/andys/353/chi-in-u-draft-beer-1-600x600.webp",
+      "width": 600,
+      "height": 600,
+      "bytes": 32334,
+      "sha256": "c16fed07db9930df1da355469cc5e92c4c2c32aa4ca1ca9dd75fc1f6b8e0bff1"
+    },
+    {
+      "path": "/menu/dish-tuna-salad-1-9e836c13.webp",
+      "sourceUrl": "https://back.andys.md/image/cachewebp/catalog/andys/354/tuna-salad-1-600x600.webp",
+      "width": 600,
+      "height": 600,
+      "bytes": 79116,
+      "sha256": "6016e505305c833414092162694e274329e4a2bbf2dc385abb290a54b19872f6"
+    },
+    {
+      "path": "/menu/dish-passion-fruit-lemonade-1-bec56d4e.webp",
+      "sourceUrl": "https://back.andys.md/image/cachewebp/catalog/andys/355/passion-fruit-lemonade-1-600x600.webp",
+      "width": 600,
+      "height": 600,
+      "bytes": 37268,
+      "sha256": "1d0867f847985a961d2b7c2e1d9bf022b9937d4998bdec6b7b209733955eb582"
+    },
+    {
+      "path": "/menu/dish-berry-cheesecake-1-d04e094f.webp",
+      "sourceUrl": "https://back.andys.md/image/cachewebp/catalog/andys/358/berry-cheesecake-1-600x600.webp",
+      "width": 600,
+      "height": 600,
+      "bytes": 68412,
+      "sha256": "764764353b4e15f84de779f326d48b79bfd8a61fe6abff1c95008eda531fe086"
+    },
+    {
+      "path": "/menu/dish-hazelnut-ice-cream-1-15bf7369.webp",
+      "sourceUrl": "https://back.andys.md/image/cachewebp/catalog/andys/362/hazelnut-ice-cream-1-600x600.webp",
+      "width": 600,
+      "height": 600,
+      "bytes": 35588,
+      "sha256": "56a097595abecef39396ed14a4bf835d0cf9ce5157940faaef029ee6f7fc3574"
+    },
+    {
+      "path": "/menu/dish-mashed-potatoes-with-meatballs-1-b7b70954.webp",
+      "sourceUrl": "https://back.andys.md/image/cachewebp/catalog/andys/363/mashed-potatoes-with-meatballs-1-600x600.webp",
+      "width": 600,
+      "height": 600,
+      "bytes": 77284,
+      "sha256": "b1ace45d800a034b7d9e8d2d39a36929e13ce2b69dc895722607fcd2c6613794"
+    },
+    {
+      "path": "/menu/dish-chicken-meatballs-in-curry-sauce-with-rice-3-9a5ec4f5.webp",
+      "sourceUrl": "https://back.andys.md/image/cachewebp/catalog/andys/368/chicken-meatballs-in-curry-sauce-with-rice-3-600x600.webp",
+      "width": 600,
+      "height": 600,
+      "bytes": 51194,
+      "sha256": "9876962ac184990cd1260527ae43942bd95c1209b7587703d26f17dda8a55801"
+    },
+    {
+      "path": "/menu/dish-sea-bream-fillet-with-bulgur-and-quinoa-1-35ad523d.webp",
+      "sourceUrl": "https://back.andys.md/image/cachewebp/catalog/andys/369/sea-bream-fillet-with-bulgur-and-quinoa-1-600x600.webp",
+      "width": 600,
+      "height": 600,
+      "bytes": 52704,
+      "sha256": "30922518fe898dfe480a6383959f7b2eff3841d80f53ab856a11be774bbf858a"
+    },
+    {
+      "path": "/menu/dish-baked-chicken-steak-with-buckwheat-and-mushrooms-1-0589dc10.webp",
+      "sourceUrl": "https://back.andys.md/image/cachewebp/catalog/andys/370/baked-chicken-steak-with-buckwheat-and-mushrooms-1-600x600.webp",
+      "width": 600,
+      "height": 600,
+      "bytes": 55586,
+      "sha256": "32fd6bf76c0da001ab2916f23f67b5a45882cba5cca7ef8383398f82aa20ca93"
+    },
+    {
+      "path": "/menu/dish-chicken-schnitzel-with-mashed-potatoes-1-cd3dc8e6.webp",
+      "sourceUrl": "https://back.andys.md/image/cachewebp/catalog/andys/371/chicken-schnitzel-with-mashed-potatoes-1-600x600.webp",
+      "width": 600,
+      "height": 600,
+      "bytes": 48746,
+      "sha256": "cc89d40f781e0a34444d296c11bb0f7cbb05e58caf38295ba243ee13ae22c21a"
+    },
+    {
+      "path": "/menu/dish-ravioli-with-ricotta-and-shrimp-1-fe4ac8b2.webp",
+      "sourceUrl": "https://back.andys.md/image/cachewebp/catalog/andys/373/ravioli-with-ricotta-and-shrimp-1-600x600.webp",
+      "width": 600,
+      "height": 600,
+      "bytes": 48880,
+      "sha256": "c910317bf7896a66fdd7354a0253782a6dcc278bf77dfba08d1ba68a71a77d93"
+    },
+    {
+      "path": "/menu/dish-beef-wrap-3-d5dcb655.webp",
+      "sourceUrl": "https://back.andys.md/image/cachewebp/catalog/andys/377/beef-wrap-3-600x600.webp",
+      "width": 600,
+      "height": 600,
+      "bytes": 91058,
+      "sha256": "0be7ad3e0578f5e1f4ae0579f1459fa78debdf062511cfeefbaa839339852c7e"
+    },
+    {
+      "path": "/menu/dish-wrap-veggie-falafel-4-2cd051e4.webp",
+      "sourceUrl": "https://back.andys.md/image/cachewebp/catalog/andys/378/wrap-veggie-falafel-4-600x600.webp",
+      "width": 600,
+      "height": 600,
+      "bytes": 98248,
+      "sha256": "6047f769218f4d0b67cb89c064dd82c72d35aa0e600ed0eb369aa52d01e97051"
+    },
+    {
+      "path": "/menu/dish-chicken-wrap-4-ac294e86.webp",
+      "sourceUrl": "https://back.andys.md/image/cachewebp/catalog/andys/379/chicken-wrap-4-600x600.webp",
+      "width": 600,
+      "height": 600,
+      "bytes": 90236,
+      "sha256": "d8c9ed73a2fbf2e39c2b8a243252f1c2224c0fbacee9276312c402ae646c3088"
+    },
+    {
+      "path": "/menu/dish-chicken-fricassee-2-cdae7d8c.webp",
+      "sourceUrl": "https://back.andys.md/image/cachewebp/catalog/andys/380/chicken-fricassee-2-600x600.webp",
+      "width": 600,
+      "height": 600,
+      "bytes": 125614,
+      "sha256": "dec90d99c8d02e72833183af9190d6a9e72fe9af217285118db4ee813585308b"
+    },
+    {
+      "path": "/menu/dish-nachos-1-f0c6603e.webp",
+      "sourceUrl": "https://back.andys.md/image/cachewebp/catalog/andys/383/nachos-1-600x600.webp",
+      "width": 600,
+      "height": 600,
+      "bytes": 79030,
+      "sha256": "e2b5614f9343b1037c639cd98f2508d7a7dfd65b0d9be3f69ac19ca70fd22c6e"
+    },
+    {
+      "path": "/menu/dish-focaccia-1-3d42673b.webp",
+      "sourceUrl": "https://back.andys.md/image/cachewebp/catalog/andys/386/focaccia-1-600x600.webp",
+      "width": 600,
+      "height": 600,
+      "bytes": 77662,
+      "sha256": "fb797580fd45057e05d20ee399e37cee533a7c9d72fbbb099035554eaf1ccd0f"
+    },
+    {
+      "path": "/menu/dish-pasta-pollo-2-0f1ca86c.webp",
+      "sourceUrl": "https://back.andys.md/image/cachewebp/catalog/andys/389/pasta-pollo-2-600x600.webp",
+      "width": 600,
+      "height": 600,
+      "bytes": 114826,
+      "sha256": "b0c897bb9c78c84406f667da547e28a87a382ec3dbf8025e798b3b8fb902078f"
+    },
+    {
+      "path": "/menu/dish-tartar-sauce-1-ba24c42d.webp",
+      "sourceUrl": "https://back.andys.md/image/cachewebp/catalog/andys/392/tartar-sauce-1-600x600.webp",
+      "width": 600,
+      "height": 600,
+      "bytes": 47370,
+      "sha256": "0771610ea5aa9c1eb35f62990c5b0f330634e8847a478a3f18015bd1135cf4c2"
+    },
+    {
+      "path": "/menu/dish-plato-with-pork-fat-2-80a61005.webp",
+      "sourceUrl": "https://back.andys.md/image/cachewebp/catalog/andys/399/plato-with-pork-fat-2-600x600.webp",
+      "width": 600,
+      "height": 600,
+      "bytes": 99972,
+      "sha256": "d4fafe683374b700016ee039e6d12aa1106454920cf55aac59072a290d57e37f"
+    },
+    {
+      "path": "/menu/dish-mini-pizza-1-aa640bf9.webp",
+      "sourceUrl": "https://back.andys.md/image/cachewebp/catalog/andys/415/mini-pizza-1-600x600.webp",
+      "width": 600,
+      "height": 600,
+      "bytes": 115112,
+      "sha256": "bc2dc9a308e6e71763b4842bd2025213355e1ab5cd7842a51bf6004382f8f968"
+    },
+    {
+      "path": "/menu/dish-cheesy-pasta-nuggets-1-4ef42af9.webp",
+      "sourceUrl": "https://back.andys.md/image/cachewebp/catalog/andys/416/cheesy-pasta-nuggets-1-600x600.webp",
+      "width": 600,
+      "height": 600,
+      "bytes": 87234,
+      "sha256": "58402e0a006558a42e5b99b72ba5c4aa0478b2caf4d933acfe445b13adc5c6ce"
+    },
+    {
+      "path": "/menu/dish-chicken-shashlik-1-a131d370.webp",
+      "sourceUrl": "https://back.andys.md/image/cachewebp/catalog/andys/417/chicken-shashlik-1-600x600.webp",
+      "width": 600,
+      "height": 600,
+      "bytes": 86064,
+      "sha256": "9ac7742586ba39db2eb56881962df866b41b0d6059e16224b6e0c0be12c90d18"
+    },
+    {
+      "path": "/menu/dish-mini-nuggets-with-potato-emoticons-1-f99dea4b.webp",
+      "sourceUrl": "https://back.andys.md/image/cachewebp/catalog/andys/418/mini-nuggets-with-potato-emoticons-1-600x600.webp",
+      "width": 600,
+      "height": 600,
+      "bytes": 93950,
+      "sha256": "7ad3517a5c55fdfe74796f5fec6b5872b0b27065e9b57c9db431609afb9dac6d"
+    },
+    {
+      "path": "/menu/dish-salted-caramel-1-cd7a4099.webp",
+      "sourceUrl": "https://back.andys.md/image/cachewebp/catalog/andys/420/salted-caramel-1-600x600.webp",
+      "width": 600,
+      "height": 600,
+      "bytes": 91842,
+      "sha256": "277382fb36df6d28ec13225b84adbe9180e1e84eaf0dad801928a86782c44589"
+    },
+    {
+      "path": "/menu/dish-chocolate-napoleon-1-9bd59994.webp",
+      "sourceUrl": "https://back.andys.md/image/cachewebp/catalog/andys/421/chocolate-napoleon-1-600x600.webp",
+      "width": 600,
+      "height": 600,
+      "bytes": 123630,
+      "sha256": "a1b16c8ad3aa1f80d30271664e356f23b9600901184a0cf614ea9dc440b9592d"
+    },
+    {
+      "path": "/menu/dish-beef-stroganoff-1-c701299b.webp",
+      "sourceUrl": "https://back.andys.md/image/cachewebp/catalog/andys/426/beef-stroganoff-1-600x600.webp",
+      "width": 600,
+      "height": 600,
+      "bytes": 104202,
+      "sha256": "6c447cc072d94b79110e325ab3ff8b9ba18e966b2264b520a26a88d0e9ec0d6e"
+    },
+    {
+      "path": "/menu/dish-french-style-meat-1-fe847efb.webp",
+      "sourceUrl": "https://back.andys.md/image/cachewebp/catalog/andys/427/french-style-meat-1-600x600.webp",
+      "width": 600,
+      "height": 600,
+      "bytes": 119262,
+      "sha256": "df4681803f8c4facd93b552e7466ce76da851ff0d2b6e6a90e308ee79fc05298"
+    },
+    {
+      "path": "/menu/dish-pizza-funghi-2-6dae62a4.webp",
+      "sourceUrl": "https://back.andys.md/image/cachewebp/catalog/andys/428/pizza-funghi-2-600x600.webp",
+      "width": 600,
+      "height": 600,
+      "bytes": 119640,
+      "sha256": "0ef905007d9605ee4eea0fe85e89883f3169ec0ee04f6883e9f25f5dff3eba0a"
+    },
+    {
+      "path": "/menu/dish-ciabatta-1-eec2c5c4.webp",
+      "sourceUrl": "https://back.andys.md/image/cachewebp/catalog/andys/430/ciabatta-1-600x600.webp",
+      "width": 600,
+      "height": 600,
+      "bytes": 124918,
+      "sha256": "2d240d98cb7487b229216ae4d45bf276908f645508314a84f74b97103d3d693c"
+    },
+    {
+      "path": "/menu/dish-pepsi-2l-1-44c271de.webp",
+      "sourceUrl": "https://back.andys.md/image/cachewebp/catalog/andys/443/pepsi-2l-1-600x600.webp",
+      "width": 600,
+      "height": 600,
+      "bytes": 59808,
+      "sha256": "a2bb69020bc5c54d74687bb735f051cbc4fabf35eb61002bb948729bd065114f"
+    },
+    {
+      "path": "/menu/dish-coca-cola-0-5-1-60f5c67b.webp",
+      "sourceUrl": "https://back.andys.md/image/cachewebp/catalog/andys/447/coca-cola-0-5-1-600x600.webp",
+      "width": 600,
+      "height": 600,
+      "bytes": 60292,
+      "sha256": "93dd4bceaccbc58c2bae1929f2883286bdccf8c444866eac57069a5408743a87"
+    },
+    {
+      "path": "/menu/dish-fanta-0-5-1-058ba012.webp",
+      "sourceUrl": "https://back.andys.md/image/cachewebp/catalog/andys/449/fanta-0-5-1-600x600.webp",
+      "width": 600,
+      "height": 600,
+      "bytes": 67586,
+      "sha256": "0be6ed2034330449ca016a4ad561ef834ca414a89fb7bb0e6a0800272737060a"
+    },
+    {
+      "path": "/menu/dish-dorna-carbo-0-5-1-6b639b6c.webp",
+      "sourceUrl": "https://back.andys.md/image/cachewebp/catalog/andys/450/dorna-carbo-0-5-1-600x600.webp",
+      "width": 600,
+      "height": 600,
+      "bytes": 72682,
+      "sha256": "e97b82400c901aa79abffcbe8ca11564160482a7e2573af5fbc7842edb061ea8"
+    },
+    {
+      "path": "/menu/dish-shakshuka-1-8186584e.webp",
+      "sourceUrl": "https://back.andys.md/image/cachewebp/catalog/andys/454/shakshuka-1-600x600.webp",
+      "width": 600,
+      "height": 600,
+      "bytes": 118870,
+      "sha256": "578f6e8461f654408b18e9c2c1c371a9e1c774c3e3eaaecfdcf1a949046ffc75"
+    },
+    {
+      "path": "/menu/dish-bruschettas-with-shrimp-3-311f09de.webp",
+      "sourceUrl": "https://back.andys.md/image/cachewebp/catalog/andys/456/bruschettas-with-shrimp-3-600x600.webp",
+      "width": 600,
+      "height": 600,
+      "bytes": 97258,
+      "sha256": "c969f2b178493af9541846a5d19da328c7ae1078fe12c484c0c6490adf4a6103"
+    },
+    {
+      "path": "/menu/dish-guacamole-2-5ef30854.webp",
+      "sourceUrl": "https://back.andys.md/image/cachewebp/catalog/andys/458/guacamole-2-600x600.webp",
+      "width": 600,
+      "height": 600,
+      "bytes": 71090,
+      "sha256": "27d20cc8abdb71e301008ab97cd0b18e375dd2367cebe68ddeb5166aedc2b4ab"
+    },
+    {
+      "path": "/menu/dish-pork-in-chili-sauce-with-rice-2-7400643d.webp",
+      "sourceUrl": "https://back.andys.md/image/cachewebp/catalog/andys/462/pork-in-chili-sauce-with-rice-2-600x600.webp",
+      "width": 600,
+      "height": 600,
+      "bytes": 108514,
+      "sha256": "d9af0a0ea7e44f1c00fa058721315491a9db6ccaf756d6c247838fee6be70ab8"
+    },
+    {
+      "path": "/menu/dish-maxi-burger-1-fc613e81.webp",
+      "sourceUrl": "https://back.andys.md/image/cachewebp/catalog/andys/464/maxi-burger-1-600x600.webp",
+      "width": 600,
+      "height": 600,
+      "bytes": 109360,
+      "sha256": "67caf727e403a0005cdd1f70b2d0ff5c126e419e256c4d8382001c952c925f37"
+    },
+    {
+      "path": "/menu/dish-berry-souffl-2-2f9476ec.webp",
+      "sourceUrl": "https://back.andys.md/image/cachewebp/catalog/andys/465/berry-souffl-2-600x600.webp",
+      "width": 600,
+      "height": 600,
+      "bytes": 99386,
+      "sha256": "2a3b576b1457565b950f0c5b4d7f20710a84c005823e5603f9acc4deb587ffbd"
+    },
+    {
+      "path": "/menu/dish-berry-souffl-1-26eb51f6.webp",
+      "sourceUrl": "https://back.andys.md/image/cachewebp/catalog/andys/466/berry-souffl-1-600x600.webp",
+      "width": 600,
+      "height": 600,
+      "bytes": 122770,
+      "sha256": "0de63d0116b29a88071c17728a86881ab1d3a025d9aae88571451838788fa231"
+    },
+    {
+      "path": "/menu/dish-sunny-tropic-ice-cream-1-1654bfd1.webp",
+      "sourceUrl": "https://back.andys.md/image/cachewebp/catalog/andys/468/sunny-tropic-ice-cream-1-600x600.webp",
+      "width": 600,
+      "height": 600,
+      "bytes": 93616,
+      "sha256": "232097b7bb101a015d4d1be2db5d29422a092739ba9108541ea1811d9a4ea8f6"
+    },
+    {
+      "path": "/menu/dish-snikers-pop-ice-cream-1-71710a1e.webp",
+      "sourceUrl": "https://back.andys.md/image/cachewebp/catalog/andys/469/snikers-pop-ice-cream-1-600x600.webp",
+      "width": 600,
+      "height": 600,
+      "bytes": 90478,
+      "sha256": "cb3e433a128f4e34624d1843a648adedbc8277ed420d1c11d135875d562955ce"
+    },
+    {
+      "path": "/menu/dish-strawberry-freakshake-1-defaa64e.webp",
+      "sourceUrl": "https://back.andys.md/image/cachewebp/catalog/andys/471/strawberry-freakshake-1-600x600.webp",
+      "width": 600,
+      "height": 600,
+      "bytes": 74858,
+      "sha256": "2c5fb4dc3880165bbe425ae44bb51919f02905b42e3634ec5bda4e26a4b4bd18"
+    },
+    {
+      "path": "/menu/dish-aperol-spritz-cocktail-1-bf58934e.webp",
+      "sourceUrl": "https://back.andys.md/image/cachewebp/catalog/andys/473/aperol-spritz-cocktail-1-600x600.webp",
+      "width": 600,
+      "height": 600,
+      "bytes": 55500,
+      "sha256": "a2d560e7a96fac310e4bf8f428bfddd8d8709300e842913d01e6ab9e7ebca481"
+    },
+    {
+      "path": "/menu/dish-caesar-salad-with-lightly-salted-salmon-1-d2802600.webp",
+      "sourceUrl": "https://back.andys.md/image/cachewebp/catalog/andys/483/caesar-salad-with-lightly-salted-salmon-1-600x600.webp",
+      "width": 600,
+      "height": 600,
+      "bytes": 92614,
+      "sha256": "0c38312edf083ab2c8a3c215cf0a982678127485101abf00e9200d4f75d3fcc7"
+    },
+    {
+      "path": "/menu/dish-caesar-salad-with-lightly-salted-salmon-1-ff354fd1.webp",
+      "sourceUrl": "https://back.andys.md/image/cachewebp/catalog/andys/484/caesar-salad-with-lightly-salted-salmon-1-600x600.webp",
+      "width": 600,
+      "height": 600,
+      "bytes": 87162,
+      "sha256": "e335105de8dcc3819128cd27792a36202bd855221237e3fe68565102a7591ad1"
+    },
+    {
+      "path": "/menu/dish-assorted-ice-cream-3-scoops-1-1e6cd00b.webp",
+      "sourceUrl": "https://back.andys.md/image/cachewebp/catalog/andys/492/assorted-ice-cream-3-scoops-1-600x600.webp",
+      "width": 600,
+      "height": 600,
+      "bytes": 51940,
+      "sha256": "1f7a14825468cbf5aaf920ec181787ae63c6738470bbf7e33b2141305ec9fc26"
+    },
+    {
+      "path": "/menu/dish-sweet-cookies-ice-cream-1-62f28b0d.webp",
+      "sourceUrl": "https://back.andys.md/image/cachewebp/catalog/andys/504/sweet-cookies-ice-cream-1-600x600.webp",
+      "width": 600,
+      "height": 600,
+      "bytes": 37018,
+      "sha256": "e577b607c8c1f0fd463c5297dade0e1a5aa35c378bbc0187ff08f31382c409da"
+    },
+    {
+      "path": "/menu/dish-passion-fashion-ice-cream-1-90f42bd3.webp",
+      "sourceUrl": "https://back.andys.md/image/cachewebp/catalog/andys/505/passion-fashion-ice-cream-1-600x600.webp",
+      "width": 600,
+      "height": 600,
+      "bytes": 37830,
+      "sha256": "5af59bd55b96ee48459c4085a46a28a3358208938b7bc1e9d4c1cba06f00e937"
+    },
+    {
+      "path": "/menu/dish-cheese-platter-1-fb000524.webp",
+      "sourceUrl": "https://back.andys.md/image/cachewebp/catalog/andys/508/cheese-platter-1-600x600.webp",
+      "width": 600,
+      "height": 600,
+      "bytes": 93990,
+      "sha256": "0cc300e492f6e634474323647bedd757b703295ebf122e0b35dad465ddd13026"
+    },
+    {
+      "path": "/menu/dish-warm-beef-salad-1-5dcb2798.webp",
+      "sourceUrl": "https://back.andys.md/image/cachewebp/catalog/andys/509/warm-beef-salad-1-600x600.webp",
+      "width": 600,
+      "height": 600,
+      "bytes": 120454,
+      "sha256": "e7cfe2ed5ebe0abaf56e60d68fdf769b01a9a58bd140a8890831ec16b859a934"
+    },
+    {
+      "path": "/menu/dish-red-borscht-1-4dcc4390.webp",
+      "sourceUrl": "https://back.andys.md/image/cachewebp/catalog/andys/510/red-borscht-1-600x600.webp",
+      "width": 600,
+      "height": 600,
+      "bytes": 121710,
+      "sha256": "9bb5695231f47a5ffef8fd3c7e513f463005e37e0dc0459d0c5b83f3d4bb7e67"
+    },
+    {
+      "path": "/menu/dish-pizza-salsicia-1-9fd4da8a.webp",
+      "sourceUrl": "https://back.andys.md/image/cachewebp/catalog/andys/511/pizza-salsicia-1-600x600.webp",
+      "width": 600,
+      "height": 600,
+      "bytes": 106576,
+      "sha256": "1ef9190bf5161ca95da6c7ead717693f583d6a43eb05302d128747b6bd92d619"
+    },
+    {
+      "path": "/menu/dish-tort-profiterol-1-fb677578.webp",
+      "sourceUrl": "https://back.andys.md/image/cachewebp/catalog/andys/512/tort-profiterol-1-600x600.webp",
+      "width": 600,
+      "height": 600,
+      "bytes": 110356,
+      "sha256": "0dfcfe4ed25a73decd9940ebfbe3b0367f10d10017c442249a786c18371cbb5e"
+    },
+    {
+      "path": "/menu/dish-gl-hwein-1-7b8b0d0f.webp",
+      "sourceUrl": "https://back.andys.md/image/cachewebp/catalog/andys/513/gl-hwein-1-600x600.webp",
+      "width": 600,
+      "height": 600,
+      "bytes": 76664,
+      "sha256": "c9c19e687d284b88ac02549468b1539e6d3e6a5d55762b6ea08172de2e4fc88b"
+    },
+    {
+      "path": "/menu/dish-blackcurrant-tea-1-d0eac386.webp",
+      "sourceUrl": "https://back.andys.md/image/cachewebp/catalog/andys/514/blackcurrant-tea-1-600x600.webp",
+      "width": 600,
+      "height": 600,
+      "bytes": 81340,
+      "sha256": "b2c11fa067dde5f787ea71a76b64457b145965db0dfb2b8b72906b088b4a35b9"
+    },
+    {
+      "path": "/menu/dish-pizza-mortadella-pistachio-1-e22fe358.webp",
+      "sourceUrl": "https://back.andys.md/image/cachewebp/catalog/andys/526/pizza-mortadella-pistachio-1-600x600.webp",
+      "width": 600,
+      "height": 600,
+      "bytes": 106102,
+      "sha256": "9eaa490bf8b27a55dd7c7c7ef200709d036b50227952ebb78b38225268fc70b3"
+    },
+    {
+      "path": "/menu/dish-fritto-misto-1-5f9c7871.webp",
+      "sourceUrl": "https://back.andys.md/image/cachewebp/catalog/andys/529/fritto-misto-1-600x600.webp",
+      "width": 600,
+      "height": 600,
+      "bytes": 109360,
+      "sha256": "8376bb6be10fe96ab5d80258fa10134bccd384c5a902c10da285bfb40d624dab"
+    },
+    {
+      "path": "/menu/dish-salmon-steak-with-mashed-potatoes-1-c6d580e4.webp",
+      "sourceUrl": "https://back.andys.md/image/cachewebp/catalog/andys/530/salmon-steak-with-mashed-potatoes-1-600x600.webp",
+      "width": 600,
+      "height": 600,
+      "bytes": 109314,
+      "sha256": "a3c4277f93e8163c1e229efc7a9e5547355b5f05f17c16cc078119db503a73c6"
+    },
+    {
+      "path": "/menu/dish-mixed-skewers-for-sharing-1-663c4b90.webp",
+      "sourceUrl": "https://back.andys.md/image/cachewebp/catalog/andys/531/mixed-skewers-for-sharing-1-600x600.webp",
+      "width": 600,
+      "height": 600,
+      "bytes": 117760,
+      "sha256": "950844cb0fd640c349460ef22e615dddf7b287dc90a675585c0c5780714b0901"
+    },
+    {
+      "path": "/menu/dish-french-style-meat-for-sharing-1-1cacee54.webp",
+      "sourceUrl": "https://back.andys.md/image/cachewebp/catalog/andys/532/french-style-meat-for-sharing-1-600x600.webp",
+      "width": 600,
+      "height": 600,
+      "bytes": 104004,
+      "sha256": "38196ce772b97e2be2864580b6de984c5cbeaac6bf81b731298050ec729ab769"
+    },
+    {
+      "path": "/menu/dish-crispy-schnitzel-for-sharing-1-24b8e0a8.webp",
+      "sourceUrl": "https://back.andys.md/image/cachewebp/catalog/andys/533/crispy-schnitzel-for-sharing-1-600x600.webp",
+      "width": 600,
+      "height": 600,
+      "bytes": 102316,
+      "sha256": "b20ad025bd2e473853040290acc72c44cad2b56e230369ef3674f006a905f50c"
+    },
+    {
+      "path": "/menu/dish-bruschetta-selection-1-8f1a2585.webp",
+      "sourceUrl": "https://back.andys.md/image/cachewebp/catalog/andys/534/bruschetta-selection-1-600x600.webp",
+      "width": 600,
+      "height": 600,
+      "bytes": 114606,
+      "sha256": "f5252ca28ee9979f296685f99661aecf8fafdbf892fd557ccb683e66b8fb491d"
+    },
+    {
+      "path": "/menu/dish-veggie-salad-for-sharing-1-644a3db2.webp",
+      "sourceUrl": "https://back.andys.md/image/cachewebp/catalog/andys/535/veggie-salad-for-sharing-1-600x600.webp",
+      "width": 600,
+      "height": 600,
+      "bytes": 113212,
+      "sha256": "73ad09b7e27fcaaa6f8334d06262e55c02207e8dcad1134e6fee33f7f0500817"
+    },
+    {
+      "path": "/menu/dish-pizza-5-cheeses-2-b5efc7ca.webp",
+      "sourceUrl": "https://back.andys.md/image/cachewebp/catalog/andys/62/pizza-5-cheeses-2-600x600.webp",
+      "width": 600,
+      "height": 600,
+      "bytes": 98870,
+      "sha256": "f97826e94c3b4761f3e723f4eaaca86d331a1d4860bfc9b533e5b9f74cdf6690"
+    },
+    {
+      "path": "/menu/dish-pizza-capricioasa-4-aac71911.webp",
+      "sourceUrl": "https://back.andys.md/image/cachewebp/catalog/andys/63/pizza-capricioasa-4-600x600.webp",
+      "width": 600,
+      "height": 600,
+      "bytes": 106506,
+      "sha256": "bdb9276131a4ff496e3a34e045d2efa356dfebe7d68cf40ea4b723d18a538c4e"
+    },
+    {
+      "path": "/menu/dish-cottage-cheese-pancakes-3-f240cc84.webp",
+      "sourceUrl": "https://back.andys.md/image/cachewebp/catalog/andys/70/cottage-cheese-pancakes-3-600x600.webp",
+      "width": 600,
+      "height": 600,
+      "bytes": 121060,
+      "sha256": "084fdef18c30aa2133d49a6fd41954442e48c4f10778eacfb412be89ed3178ee"
+    },
+    {
+      "path": "/menu/dish-crepes-with-salted-salmon-1-b724d710.webp",
+      "sourceUrl": "https://back.andys.md/image/cachewebp/catalog/andys/71/crepes-with-salted-salmon-1-600x600.webp",
+      "width": 600,
+      "height": 600,
+      "bytes": 65472,
+      "sha256": "55bcb074586db40c563f42eef9fc8cfa98614e731a82d7c7ec0c61d9f5912299"
+    },
+    {
+      "path": "/menu/dish-crepes-with-salmon-and-spinach-3-d7d7d0aa.webp",
+      "sourceUrl": "https://back.andys.md/image/cachewebp/catalog/andys/72/crepes-with-salmon-and-spinach-3-600x600.webp",
+      "width": 600,
+      "height": 600,
+      "bytes": 116300,
+      "sha256": "a860d89acce570896485651777a3e8f1e8c7dc6ff02f73756fa710b0bcc31926"
+    },
+    {
+      "path": "/menu/dish-pancakes-with-sweet-cheese-and-sauce-1-8be9c10b.webp",
+      "sourceUrl": "https://back.andys.md/image/cachewebp/catalog/andys/74/pancakes-with-sweet-cheese-and-sauce-1-600x600.webp",
+      "width": 600,
+      "height": 600,
+      "bytes": 67896,
+      "sha256": "0f7778a89011273298f4478552c3728a53957a82590987516a946ff2984a5dac"
+    },
+    {
+      "path": "/menu/dish-margherita-pizza-2-df5b9e18.webp",
+      "sourceUrl": "https://back.andys.md/image/cachewebp/catalog/andys/81/margherita-pizza-2-600x600.webp",
+      "width": 600,
+      "height": 600,
+      "bytes": 97418,
+      "sha256": "a79b0aa4898f699e6f5a95bcd6af6b73b0835da3f81e9e1e06366ce1b8fc8670"
+    },
+    {
+      "path": "/menu/dish-crispy-chicken-schnitzel-3-17a79b34.webp",
+      "sourceUrl": "https://back.andys.md/image/cachewebp/catalog/andys/82/crispy-chicken-schnitzel-3-600x600.webp",
+      "width": 600,
+      "height": 600,
+      "bytes": 113186,
+      "sha256": "93baf01d025b40fd66d766889c6fc9549c8ef736152745ee09e86fed812bcbeb"
+    },
+    {
+      "path": "/menu/dish-caesar-salad-with-shrimp-1-f21be3df.webp",
+      "sourceUrl": "https://back.andys.md/image/cachewebp/catalog/andys/84/caesar-salad-with-shrimp-1-600x600.webp",
+      "width": 600,
+      "height": 600,
+      "bytes": 77384,
+      "sha256": "d973364d2055d13e4425af622582c1d3d66c55ccdde7e07c4874812d37e529a4"
+    },
+    {
+      "path": "/menu/dish-purcari-nocturne-rose-sec-1-50466b42.webp",
+      "sourceUrl": "https://back.andys.md/image/cachewebp/catalog/andys/85/purcari-nocturne-rose-sec-1-600x600.webp",
+      "width": 600,
+      "height": 600,
+      "bytes": 29814,
+      "sha256": "f0c8f6de43bcca1fd1985f3887c4903022674783db993b3d0330cb3384126f70"
+    },
+    {
+      "path": "/menu/dish-pi-a-colada-cocktail-1-38aaaf15.webp",
+      "sourceUrl": "https://back.andys.md/image/cachewebp/catalog/andys/86/pi-a-colada-cocktail-1-600x600.webp",
+      "width": 600,
+      "height": 600,
+      "bytes": 41474,
+      "sha256": "12e21bb06988160b0ea5fe84085fce5853eb7e1db6a64ee31a60b5892f95dd4a"
+    },
+    {
+      "path": "/menu/dish-alcoholic-mojito-cocktail-1-bce289f5.webp",
+      "sourceUrl": "https://back.andys.md/image/cachewebp/catalog/andys/87/alcoholic-mojito-cocktail-1-600x600.webp",
+      "width": 600,
+      "height": 600,
+      "bytes": 57598,
+      "sha256": "9a7a5b115f81460abb0f7ba09da1e08da8da26078648cc7f346a70fdc1268185"
+    },
+    {
+      "path": "/menu/dish-zesty-sauce-1-6137b599.webp",
+      "sourceUrl": "https://back.andys.md/image/cachewebp/catalog/andys/88/zesty-sauce-1-600x600.webp",
+      "width": 600,
+      "height": 600,
+      "bytes": 42018,
+      "sha256": "037ff4b071a601b6b8f1822fa573392afca26523c0e7dfa91aa3dd2fe00e516e"
+    },
+    {
+      "path": "/menu/dish-sex-on-the-beach-1-3bb2ea85.webp",
+      "sourceUrl": "https://back.andys.md/image/cachewebp/catalog/andys/89/sex-on-the-beach-1-600x600.webp",
+      "width": 600,
+      "height": 600,
+      "bytes": 28824,
+      "sha256": "37963bbdd56577975af74bfe34932621e9e674233a98a19f04c4c44554a48953"
+    },
+    {
+      "path": "/menu/dish-bread-rusks-1-e79a7275.webp",
+      "sourceUrl": "https://back.andys.md/image/cachewebp/catalog/andys/90/bread-rusks-1-600x600.webp",
+      "width": 600,
+      "height": 600,
+      "bytes": 82884,
+      "sha256": "779ad46ebf85ade5af1fe8805343d8bcb3de70a42cbedcc62b05b6afc530bf32"
+    },
+    {
+      "path": "/menu/dish-passion-fashion-ice-cream-1-d6b35a9d.webp",
+      "sourceUrl": "https://back.andys.md/image/cachewebp/catalog/andys/92/passion-fashion-ice-cream-1-600x600.webp",
+      "width": 600,
+      "height": 600,
+      "bytes": 38806,
+      "sha256": "8390a5b41f481fffaae0119eb96b557089ad7dc5a37c7668c5f96c775d0144f0"
+    },
+    {
+      "path": "/menu/dish-freshly-squeezed-grapefruit-juice-1-e00fe12d.webp",
+      "sourceUrl": "https://back.andys.md/image/cachewebp/catalog/andys/94/freshly-squeezed-grapefruit-juice-1-600x600.webp",
+      "width": 600,
+      "height": 600,
+      "bytes": 53268,
+      "sha256": "b155217398bcafd289df98e6de801adeb520571c6fd40127f0ee183d6a1f38f8"
+    },
+    {
+      "path": "/menu/dish-flatbread-with-butter-and-garlic-sheep-cheese-1-79c02139.webp",
+      "sourceUrl": "https://back.andys.md/image/cachewebp/catalog/andys/97/flatbread-with-butter-and-garlic-sheep-cheese-1-600x600.webp",
+      "width": 600,
+      "height": 600,
+      "bytes": 51020,
+      "sha256": "a9efac3e22cfc4bbb11ed34008323ddec21dad9618baca48b480ce767c1aa98e"
+    },
+    {
+      "path": "/menu/dish-timi-oreana-1-4a06a278.webp",
+      "sourceUrl": "https://back.andys.md/image/cachewebp/catalog/andys/99/timi-oreana-1-600x600.webp",
+      "width": 600,
+      "height": 600,
+      "bytes": 38054,
+      "sha256": "f7e9737c4de9b9e1077f9d797c7fe649ec47711da421bb0f93717179f6306713"
+    }
+  ]
+}

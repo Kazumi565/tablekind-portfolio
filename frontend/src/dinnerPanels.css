@@ -439,6 +439,16 @@
   max-width: 850px;
 }
 
+#manual-sharing-heading {
+  scroll-margin-top: 24px;
+  border-radius: 5px;
+}
+
+#manual-sharing-heading:focus-visible {
+  outline: 2px solid var(--dp-forest);
+  outline-offset: 5px;
+}
+
 @media (max-width: 760px) {
   .dinner-split-panel.split-assistant {
     padding: 20px;

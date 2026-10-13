@@ -8,6 +8,8 @@ import md.tablekind.common.Commands;
 import md.tablekind.session.SessionController.Revision;
 import org.springframework.security.core.annotation.AuthenticationPrincipal;
 import org.springframework.security.oauth2.jwt.Jwt;
+import org.springframework.http.CacheControl;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
@@ -15,13 +17,23 @@ import org.springframework.web.bind.annotation.*;
 public class AiSplitController {
   private final AiSplits splits;
   private final Commands commands;
+  private final AiAvailability availability;
 
-  public AiSplitController(AiSplits splits, Commands commands) {
+  public AiSplitController(AiSplits splits, Commands commands, AiAvailability availability) {
     this.splits = splits;
     this.commands = commands;
+    this.availability = availability;
   }
 
   public record Prompt(@Min(0) long revision, @NotBlank @Size(max = 2000) String instruction) {}
+
+  @GetMapping("/status")
+  public ResponseEntity<AiAvailability.Availability> status(
+      @AuthenticationPrincipal Jwt jwt, @PathVariable UUID sid) {
+    return ResponseEntity.ok()
+        .cacheControl(CacheControl.noStore())
+        .body(availability.status(Actor.from(jwt), sid));
+  }
 
   @PostMapping("/preview")
   public Object preview(

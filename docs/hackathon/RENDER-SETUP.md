@@ -50,7 +50,7 @@ Wait for the web service to become **Live**. Copy its actual HTTPS URL; do not g
 
 In the service's **Environment** settings, reveal `HACKATHON_STAFF_PASSWORD` locally. Sign in at `/manage` with `manager@tablekind.test` and that generated password. Keep it private until you arrange judge access. The initial manager account is created only for a fresh database; changing the environment variable later does not reset the stored account password.
 
-Select **Start EUR dinner**. Confirm the 17-category, 228-entry menu and the EUR 38.01 four-item dinner. Refresh once and switch between Mihai, Diego and Ana. Verify the generated HTTPS URL is still the origin used for PayPal returns. If you later add a custom domain, set `HACKATHON_APP_URL` to that exact HTTPS origin and redeploy.
+Select **Start EUR dinner**. Confirm the 17-category menu presents 203 unique dishes from 224 stored category entries, and the initial four-item dinner totals EUR 38.01. Refresh once and switch between Mihai, Diego and Ana. Check the first-time dinner guidance and the AI availability message before submitting a request. Verify the generated HTTPS URL is still the origin used for PayPal returns. If you later add a custom domain, set `HACKATHON_APP_URL` to that exact HTTPS origin and redeploy.
 
 For deployment failures, use Render's Logs tab. Share a redacted error message rather than a complete environment export. Readiness is `/actuator/health/readiness`; it must be healthy before the deployment is usable. A 512 MB instance is an initial low-traffic demo size, not a capacity guarantee; review memory metrics after startup and after creating several dinners.
 

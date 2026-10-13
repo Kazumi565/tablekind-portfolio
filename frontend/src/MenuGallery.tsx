@@ -3,6 +3,7 @@ import { ArrowRight, Leaf, Plus, Search, UtensilsCrossed } from "lucide-react";
 import type { Menu, Names, Product } from "./types";
 import { useMoney } from "./Currency";
 import { menuEntries } from "./menuCatalog";
+import { dishPhotoPath } from "./menuPhotos";
 import "./menuExperience.css";
 
 const label = (names: Names, lang: string) =>
@@ -33,7 +34,7 @@ export function DishPhoto({
   priority?: boolean;
 }) {
   const [failed, setFailed] = useState(false);
-  const path = product.image_path;
+  const path = dishPhotoPath(product);
   useEffect(() => setFailed(false), [path]);
   return path && /^\/menu\/[a-z0-9-]+\.webp$/.test(path) && !failed ? (
     <img
@@ -114,15 +115,16 @@ export function MenuGallery({
     .filter(
       (p) =>
         p.available &&
-        p.image_path &&
-        /^\/menu\/[a-z0-9-]+\.webp$/.test(p.image_path),
+        /^\/menu\/[a-z0-9-]+\.webp$/.test(dishPhotoPath(p) ?? ""),
     );
   const hero =
     photographed.find((p) =>
       /^Margherita(?: Pizza)?(?: ·|$)/i.test(p.names.en),
     ) ?? photographed[0];
   const freshDish = photographed.find(
-    (p) => p.image_path !== hero?.image_path && /salad/i.test(p.names.en),
+    (p) =>
+      dishPhotoPath(p) !== (hero && dishPhotoPath(hero)) &&
+      /salad/i.test(p.names.en),
   );
   const categoryCounts = new Map(
     categories.map((c) => [
@@ -342,8 +344,9 @@ export function MenuGallery({
             </div>
           )}
           <p className="menu-allergen-note">
-            Photos illustrate dish styles and may represent several menu items.
-            Ask your waiter about ingredients, allergens and cross-contact.
+            Reference dishes use their corresponding menu photos. Original demo
+            dishes use illustrative photos. Ask your waiter about ingredients,
+            allergens and cross-contact.
           </p>
         </div>
       </div>

@@ -2,7 +2,7 @@
 
 The hackathon menu contains **203 unique selectable dishes across 17 categories**: 216 source-category selections adapted from a dated Andy’s Pizza Moldova menu snapshot, plus eight distinct original dishes, stored as 224 category entries. Each relevant source category independently meets the requested 70% minimum. Different portions remain separate; identical source-category overlaps appear once in All dishes and remain accessible in each relevant category; the [coverage record](MENU-COVERAGE.md) lists the exact scope and calculation.
 
-The menu uses **27 original illustrative photos**. Related dishes can reuse a category photo, so the image does not promise an exact recipe or portion. Names and descriptions are adapted for TableKind, and prices are fictional EUR demo values. Ingredient and allergen hints require restaurant confirmation; an empty hint list does not mean allergen-free. See [photo provenance](MENU-ASSETS.md), [additional food images](MENU-ASSETS-EXPANSION.md) and [drink images](MENU-ASSETS-DRINKS.md).
+The reference selections use their corresponding menu photographs, optimized and cached locally. Where the source uses one photograph for multiple variants, those variants retain that relationship. The eight original dishes keep their illustrative photos. Names and descriptions are adapted for TableKind, and prices are fictional EUR demo values. Ingredient and allergen hints require restaurant confirmation; an empty hint list does not mean allergen-free. See [photo provenance](MENU-ASSETS.md); [additional food images](MENU-ASSETS-EXPANSION.md) and [drink images](MENU-ASSETS-DRINKS.md) record the earlier illustrative set.
 
 ## Full local application
 
@@ -40,7 +40,7 @@ npm.cmd --prefix frontend run build
 npm.cmd --prefix frontend run build:menu
 ```
 
-`menu:sync` writes `frontend/src/previewMenu.ts`; edit the fixture instead of that generated file. `test:menu` checks synchronization, category coverage, local image references and the preserved initial dinner.
+`menu:sync` writes `frontend/src/previewMenu.ts` and the guarded photo lookup in `frontend/src/menuPhotos.ts`; edit the fixture instead of those generated files. `test:menu` checks synchronization, category coverage, local image references and the preserved initial dinner.
 
 Validation on 12 October 2026 passed all three catalog tests and four focused backend tests across `CatalogMenuTest`, `HackathonMenuTest` and `EurJourneyTest`. Both frontend builds passed, and the Docker stack was healthy with V13 applied. Browser checks covered the 228-entry catalog, 17 categories, pagination, filters, empty-search recovery, meal-plan quantities and the 390-pixel phone layout. In the full application, a fresh €38.01 dinner accepted a €7.50 House breakfast order, reaching €45.51 total and €26.51 for Mihai. See [VALIDATION](VALIDATION.md) for the recorded scope.
 

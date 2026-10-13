@@ -261,11 +261,12 @@
       ],
       "dietaryLabels": [],
       "price": 750,
-      "image": "breakfast",
+      "image": "dish-andy-s-breakfast-2-129d46dc",
       "owner": -1,
       "sourceCategory": "Breakfasts",
       "sourceName": "Andy’s Breakfast",
-      "sourcePortion": ""
+      "sourcePortion": "",
+      "legacyImage": "breakfast"
     },
     {
       "id": "breakfast-classic-omelet-68aa5f61",
@@ -278,11 +279,12 @@
       ],
       "dietaryLabels": [],
       "price": 450,
-      "image": "breakfast",
+      "image": "dish-shakshuka-1-8186584e",
       "owner": -1,
       "sourceCategory": "Breakfasts",
       "sourceName": "Classic omelet",
-      "sourcePortion": ""
+      "sourcePortion": "",
+      "legacyImage": "breakfast"
     },
     {
       "id": "breakfast-cottage-cheese-pancakes-40498d55",
@@ -297,11 +299,12 @@
       ],
       "dietaryLabels": [],
       "price": 500,
-      "image": "crepes",
+      "image": "dish-cottage-cheese-pancakes-3-f240cc84",
       "owner": -1,
       "sourceCategory": "Breakfasts",
       "sourceName": "Cottage cheese pancakes",
-      "sourcePortion": ""
+      "sourcePortion": "",
+      "legacyImage": "crepes"
     },
     {
       "id": "breakfast-pancakes-with-chicken-mushroom-sauce-e125cf41",
@@ -315,11 +318,12 @@
       ],
       "dietaryLabels": [],
       "price": 650,
-      "image": "crepes",
+      "image": "dish-pancakes-with-chicken-mushroom-sauce-2-7fdc47ef",
       "owner": -1,
       "sourceCategory": "Breakfasts",
       "sourceName": "Pancakes with Chicken & Mushroom Sauce",
-      "sourcePortion": "380 g"
+      "sourcePortion": "380 g",
+      "legacyImage": "crepes"
     },
     {
       "id": "breakfast-crepes-with-salted-salmon-79d172b8",
@@ -334,11 +338,12 @@
       ],
       "dietaryLabels": [],
       "price": 700,
-      "image": "crepes",
+      "image": "dish-crepes-with-salted-salmon-1-b724d710",
       "owner": -1,
       "sourceCategory": "Breakfasts",
       "sourceName": "Crepes with salted salmon",
-      "sourcePortion": "230/25 g"
+      "sourcePortion": "230/25 g",
+      "legacyImage": "crepes"
     },
     {
       "id": "starters-roasted-pepper-bruschetta-400f3d4c",
@@ -352,11 +357,12 @@
       ],
       "dietaryLabels": [],
       "price": 450,
-      "image": "bruschetta",
+      "image": "dish-roasted-pepper-bruschetta-2-7d475d5a",
       "owner": -1,
       "sourceCategory": "Appetizers",
       "sourceName": "Roasted Pepper Bruschetta",
-      "sourcePortion": "200 g"
+      "sourcePortion": "200 g",
+      "legacyImage": "bruschetta"
     },
     {
       "id": "starters-salmon-bruschetta-72f90a77",
@@ -370,11 +376,12 @@
       ],
       "dietaryLabels": [],
       "price": 500,
-      "image": "bruschetta",
+      "image": "dish-salmon-bruschetta-3-4d6018e3",
       "owner": -1,
       "sourceCategory": "Appetizers",
       "sourceName": "Salmon Bruschetta",
-      "sourcePortion": "180 g"
+      "sourcePortion": "180 g",
+      "legacyImage": "bruschetta"
     },
     {
       "id": "starters-bruschettas-with-shrimp-1fb5df21",
@@ -388,11 +395,12 @@
       ],
       "dietaryLabels": [],
       "price": 500,
-      "image": "bruschetta",
+      "image": "dish-bruschettas-with-shrimp-3-311f09de",
       "owner": -1,
       "sourceCategory": "Appetizers",
       "sourceName": "Bruschettas with shrimp",
-      "sourcePortion": "240 g"
+      "sourcePortion": "240 g",
+      "legacyImage": "bruschetta"
     },
     {
       "id": "starters-garlic-toast-01d2ee79",
@@ -405,11 +413,12 @@
       ],
       "dietaryLabels": [],
       "price": 200,
-      "image": "bread",
+      "image": "dish-ciabatta-1-eec2c5c4",
       "owner": -1,
       "sourceCategory": "Appetizers",
       "sourceName": "Garlic toast",
-      "sourcePortion": "120 g"
+      "sourcePortion": "120 g",
+      "legacyImage": "bread"
     },
     {
       "id": "starters-cheese-platter-1094c085",
@@ -423,11 +432,12 @@
       ],
       "dietaryLabels": [],
       "price": 750,
-      "image": "starter",
+      "image": "dish-cheese-platter-1-fb000524",
       "owner": -1,
       "sourceCategory": "Appetizers",
       "sourceName": "Cheese Platter",
-      "sourcePortion": "50/40/40/40/40/20/20g"
+      "sourcePortion": "50/40/40/40/40/20/20g",
+      "legacyImage": "starter"
     },
     {
       "id": "starters-nachos-e001feb4",
@@ -439,11 +449,12 @@
       ],
       "dietaryLabels": [],
       "price": 700,
-      "image": "starter",
+      "image": "dish-nachos-1-f0c6603e",
       "owner": -1,
       "sourceCategory": "Appetizers",
       "sourceName": "Nachos",
-      "sourcePortion": "400/50/50/50g"
+      "sourcePortion": "400/50/50/50g",
+      "legacyImage": "starter"
     },
     {
       "id": "starters-guacamole-d00b6805",
@@ -453,11 +464,12 @@
       "allergens": [],
       "dietaryLabels": [],
       "price": 350,
-      "image": "starter",
+      "image": "dish-guacamole-2-5ef30854",
       "owner": -1,
       "sourceCategory": "Appetizers",
       "sourceName": "Guacamole",
-      "sourcePortion": "100/30 g"
+      "sourcePortion": "100/30 g",
+      "legacyImage": "starter"
     },
     {
       "id": "starters-eggplant-appetizer-40dae8c2",
@@ -472,11 +484,12 @@
       ],
       "dietaryLabels": [],
       "price": 300,
-      "image": "starter",
+      "image": "dish-eggplant-appetizer-2-a1c531fa",
       "owner": -1,
       "sourceCategory": "Appetizers",
       "sourceName": "Eggplant Appetizer",
-      "sourcePortion": "100 / 20 g"
+      "sourcePortion": "100 / 20 g",
+      "legacyImage": "starter"
     },
     {
       "id": "starters-romanian-appetizer-7a466f44",
@@ -486,11 +499,12 @@
       "allergens": [],
       "dietaryLabels": [],
       "price": 300,
-      "image": "starter",
+      "image": "dish-romanian-appetizer-2-7a839201",
       "owner": -1,
       "sourceCategory": "Appetizers",
       "sourceName": "Romanian Appetizer",
-      "sourcePortion": "100 / 20 g"
+      "sourcePortion": "100 / 20 g",
+      "legacyImage": "starter"
     },
     {
       "id": "salads-warm-beef-salad-3d001a6b",
@@ -504,11 +518,12 @@
       ],
       "dietaryLabels": [],
       "price": 800,
-      "image": "salad",
+      "image": "dish-warm-beef-salad-1-5dcb2798",
       "owner": -1,
       "sourceCategory": "Salads",
       "sourceName": "Warm Beef Salad",
-      "sourcePortion": "320 g"
+      "sourcePortion": "320 g",
+      "legacyImage": "salad"
     },
     {
       "id": "salads-caesar-salad-with-chicken-c1926cbd",
@@ -524,11 +539,12 @@
       ],
       "dietaryLabels": [],
       "price": 600,
-      "image": "salad",
+      "image": "dish-caesar-salad-with-chicken-1-52da8eb5",
       "owner": -1,
       "sourceCategory": "Salads",
       "sourceName": "Caesar Salad with Chicken",
-      "sourcePortion": "300 g"
+      "sourcePortion": "300 g",
+      "legacyImage": "salad"
     },
     {
       "id": "salads-caesar-salad-with-shrimp-32294e79",
@@ -545,11 +561,12 @@
       ],
       "dietaryLabels": [],
       "price": 700,
-      "image": "salad",
+      "image": "dish-caesar-salad-with-shrimp-1-f21be3df",
       "owner": -1,
       "sourceCategory": "Salads",
       "sourceName": "Caesar Salad with Shrimp",
-      "sourcePortion": "290 g"
+      "sourcePortion": "290 g",
+      "legacyImage": "salad"
     },
     {
       "id": "salads-caesar-salad-with-baked-salmon-e8dd9765",
@@ -565,11 +582,12 @@
       ],
       "dietaryLabels": [],
       "price": 750,
-      "image": "salad",
+      "image": "dish-caesar-salad-with-lightly-salted-salmon-1-ff354fd1",
       "owner": -1,
       "sourceCategory": "Salads",
       "sourceName": "Caesar Salad with baked salmon",
-      "sourcePortion": "290 g"
+      "sourcePortion": "290 g",
+      "legacyImage": "salad"
     },
     {
       "id": "salads-caesar-salad-with-lightly-salted-salmon-ef3784df",
@@ -585,11 +603,12 @@
       ],
       "dietaryLabels": [],
       "price": 750,
-      "image": "salad",
+      "image": "dish-caesar-salad-with-lightly-salted-salmon-1-d2802600",
       "owner": -1,
       "sourceCategory": "Salads",
       "sourceName": "Caesar Salad with lightly salted salmon",
-      "sourcePortion": "280 g"
+      "sourcePortion": "280 g",
+      "legacyImage": "salad"
     },
     {
       "id": "salads-tuna-salad-792876f4",
@@ -602,11 +621,12 @@
       ],
       "dietaryLabels": [],
       "price": 750,
-      "image": "salad",
+      "image": "dish-tuna-salad-1-9e836c13",
       "owner": -1,
       "sourceCategory": "Salads",
       "sourceName": "Tuna Salad",
-      "sourcePortion": "350 g"
+      "sourcePortion": "350 g",
+      "legacyImage": "salad"
     },
     {
       "id": "soups-red-borscht-7e302632",
@@ -619,11 +639,12 @@
       ],
       "dietaryLabels": [],
       "price": 400,
-      "image": "soup",
+      "image": "dish-red-borscht-1-4dcc4390",
       "owner": -1,
       "sourceCategory": "Soups",
       "sourceName": "Red Borscht",
-      "sourcePortion": "370/50/30/30/15 g"
+      "sourcePortion": "370/50/30/30/15 g",
+      "legacyImage": "soup"
     },
     {
       "id": "soups-zama-traditional-chicken-soup-28a9ec0d",
@@ -636,11 +657,12 @@
       ],
       "dietaryLabels": [],
       "price": 400,
-      "image": "soup",
+      "image": "dish-zama-traditional-chicken-soup-1-dbc754de",
       "owner": -1,
       "sourceCategory": "Soups",
       "sourceName": "Zama (Traditional Chicken Soup)",
-      "sourcePortion": "350 / 30 / 50 / 10 g"
+      "sourcePortion": "350 / 30 / 50 / 10 g",
+      "legacyImage": "soup"
     },
     {
       "id": "soups-chicken-cream-soup-f7ff88a5",
@@ -653,11 +675,12 @@
       ],
       "dietaryLabels": [],
       "price": 400,
-      "image": "soup",
+      "image": "dish-chicken-cream-soup-1-1ed901ae",
       "owner": -1,
       "sourceCategory": "Soups",
       "sourceName": "Chicken Cream Soup",
-      "sourcePortion": "300/130 g"
+      "sourcePortion": "300/130 g",
+      "legacyImage": "soup"
     },
     {
       "id": "soups-spinach-cream-soup-5101d347",
@@ -671,11 +694,12 @@
       ],
       "dietaryLabels": [],
       "price": 400,
-      "image": "soup",
+      "image": "dish-spinach-cream-soup-1-682aff9b",
       "owner": -1,
       "sourceCategory": "Soups",
       "sourceName": "Spinach Cream Soup",
-      "sourcePortion": "340 / 25 g"
+      "sourcePortion": "340 / 25 g",
+      "legacyImage": "soup"
     },
     {
       "id": "soups-mexican-soup-320e2f53",
@@ -685,11 +709,12 @@
       "allergens": [],
       "dietaryLabels": [],
       "price": 450,
-      "image": "soup",
+      "image": "dish-mexican-soup-1-23d164fe",
       "owner": -1,
       "sourceCategory": "Soups",
       "sourceName": "Mexican Soup",
-      "sourcePortion": "350 / 40 / 10 g"
+      "sourcePortion": "350 / 40 / 10 g",
+      "legacyImage": "soup"
     },
     {
       "id": "pizza-pizza-mortadella-pistachio-b97da062",
@@ -703,11 +728,12 @@
       ],
       "dietaryLabels": [],
       "price": 750,
-      "image": "garden-pizza",
+      "image": "dish-pizza-mortadella-pistachio-1-e22fe358",
       "owner": -1,
       "sourceCategory": "Pizza",
       "sourceName": "Pizza Mortadella&Pistachio",
-      "sourcePortion": "480 g"
+      "sourcePortion": "480 g",
+      "legacyImage": "garden-pizza"
     },
     {
       "id": "pizza-pizza-funghi-efbb448c",
@@ -720,11 +746,12 @@
       ],
       "dietaryLabels": [],
       "price": 750,
-      "image": "garden-pizza",
+      "image": "dish-pizza-funghi-2-6dae62a4",
       "owner": -1,
       "sourceCategory": "Pizza",
       "sourceName": "Pizza Funghi",
-      "sourcePortion": "580 g"
+      "sourcePortion": "580 g",
+      "legacyImage": "garden-pizza"
     },
     {
       "id": "pizza-pizza-salsicia-c573e890",
@@ -737,11 +764,12 @@
       ],
       "dietaryLabels": [],
       "price": 750,
-      "image": "pepperoni",
+      "image": "dish-pizza-salsicia-1-9fd4da8a",
       "owner": -1,
       "sourceCategory": "Pizza",
       "sourceName": "Pizza Salsicia",
-      "sourcePortion": "470 g"
+      "sourcePortion": "470 g",
+      "legacyImage": "pepperoni"
     },
     {
       "id": "pizza-barbeque-pizza-635857c5",
@@ -754,11 +782,12 @@
       ],
       "dietaryLabels": [],
       "price": 750,
-      "image": "pepperoni",
+      "image": "dish-barbeque-pizza-2-3b87734c",
       "owner": -1,
       "sourceCategory": "Pizza",
       "sourceName": "BARBEQUE Pizza",
-      "sourcePortion": "560 g"
+      "sourcePortion": "560 g",
+      "legacyImage": "pepperoni"
     },
     {
       "id": "pizza-bianca-pizza-5592d640",
@@ -771,11 +800,12 @@
       ],
       "dietaryLabels": [],
       "price": 750,
-      "image": "garden-pizza",
+      "image": "dish-bianca-pizza-2-20e6210b",
       "owner": -1,
       "sourceCategory": "Pizza",
       "sourceName": "Bianca Pizza",
-      "sourcePortion": "550 g"
+      "sourcePortion": "550 g",
+      "legacyImage": "garden-pizza"
     },
     {
       "id": "pizza-margherita-pizza-1ca9766d",
@@ -788,11 +818,12 @@
       ],
       "dietaryLabels": [],
       "price": 500,
-      "image": "margherita",
+      "image": "dish-margherita-pizza-2-df5b9e18",
       "owner": -1,
       "sourceCategory": "Pizza",
       "sourceName": "Margherita Pizza",
-      "sourcePortion": "380 g"
+      "sourcePortion": "380 g",
+      "legacyImage": "margherita"
     },
     {
       "id": "pizza-neapolitana-pizza-965840eb",
@@ -805,11 +836,12 @@
       ],
       "dietaryLabels": [],
       "price": 700,
-      "image": "pepperoni",
+      "image": "dish-neapolitana-pizza-2-c103a516",
       "owner": -1,
       "sourceCategory": "Pizza",
       "sourceName": "Neapolitana Pizza",
-      "sourcePortion": "510 g"
+      "sourcePortion": "510 g",
+      "legacyImage": "pepperoni"
     },
     {
       "id": "pizza-pepperoni-pizza-340abc3e",
@@ -822,11 +854,12 @@
       ],
       "dietaryLabels": [],
       "price": 700,
-      "image": "pepperoni",
+      "image": "dish-pepperoni-pizza-2-fd502a85",
       "owner": -1,
       "sourceCategory": "Pizza",
       "sourceName": "Pepperoni Pizza",
-      "sourcePortion": "475 g"
+      "sourcePortion": "475 g",
+      "legacyImage": "pepperoni"
     },
     {
       "id": "pizza-pizza-5-cheeses-8ff5b227",
@@ -839,11 +872,12 @@
       ],
       "dietaryLabels": [],
       "price": 700,
-      "image": "garden-pizza",
+      "image": "dish-pizza-5-cheeses-2-b5efc7ca",
       "owner": -1,
       "sourceCategory": "Pizza",
       "sourceName": "Pizza 5 Cheeses",
-      "sourcePortion": "420 g"
+      "sourcePortion": "420 g",
+      "legacyImage": "garden-pizza"
     },
     {
       "id": "pizza-pizza-capricioasa-88b04b83",
@@ -858,11 +892,12 @@
       ],
       "dietaryLabels": [],
       "price": 700,
-      "image": "pepperoni",
+      "image": "dish-pizza-capricioasa-4-aac71911",
       "owner": -1,
       "sourceCategory": "Pizza",
       "sourceName": "Pizza Capricioasa",
-      "sourcePortion": "600 g"
+      "sourcePortion": "600 g",
+      "legacyImage": "pepperoni"
     },
     {
       "id": "pasta-pasta-carbonara-cd0018f7",
@@ -876,11 +911,12 @@
       ],
       "dietaryLabels": [],
       "price": 650,
-      "image": "pasta",
+      "image": "dish-pasta-carbonara-1-6d562dae",
       "owner": -1,
       "sourceCategory": "Pasta",
       "sourceName": "Pasta Carbonara",
-      "sourcePortion": "270 g"
+      "sourcePortion": "270 g",
+      "legacyImage": "pasta"
     },
     {
       "id": "pasta-pasta-pollo-5089b013",
@@ -894,11 +930,12 @@
       ],
       "dietaryLabels": [],
       "price": 650,
-      "image": "pasta",
+      "image": "dish-pasta-pollo-2-0f1ca86c",
       "owner": -1,
       "sourceCategory": "Pasta",
       "sourceName": "Pasta Pollo",
-      "sourcePortion": "350 g"
+      "sourcePortion": "350 g",
+      "legacyImage": "pasta"
     },
     {
       "id": "pasta-shrimp-pasta-5ff5e410",
@@ -912,11 +949,12 @@
       ],
       "dietaryLabels": [],
       "price": 700,
-      "image": "pasta",
+      "image": "dish-shrimp-pasta-1-918dfd72",
       "owner": -1,
       "sourceCategory": "Pasta",
       "sourceName": "Shrimp Pasta",
-      "sourcePortion": "320 g"
+      "sourcePortion": "320 g",
+      "legacyImage": "pasta"
     },
     {
       "id": "pasta-chicken-lasagna-d4945211",
@@ -931,11 +969,12 @@
       ],
       "dietaryLabels": [],
       "price": 750,
-      "image": "pasta",
+      "image": "dish-chicken-lasagna-2-d6fbe646",
       "owner": -1,
       "sourceCategory": "Pasta",
       "sourceName": "Chicken Lasagna",
-      "sourcePortion": "450 g"
+      "sourcePortion": "450 g",
+      "legacyImage": "pasta"
     },
     {
       "id": "mains-fritto-misto-8a26e05b",
@@ -952,11 +991,12 @@
       ],
       "dietaryLabels": [],
       "price": 900,
-      "image": "grilled-fish",
+      "image": "dish-fritto-misto-1-5f9c7871",
       "owner": -1,
       "sourceCategory": "Main Dishes",
       "sourceName": "Fritto misto",
-      "sourcePortion": "290/50/40 g"
+      "sourcePortion": "290/50/40 g",
+      "legacyImage": "grilled-fish"
     },
     {
       "id": "mains-salmon-steak-with-mashed-potatoes-3c0a9c54",
@@ -971,11 +1011,12 @@
       ],
       "dietaryLabels": [],
       "price": 1350,
-      "image": "grilled-fish",
+      "image": "dish-salmon-steak-with-mashed-potatoes-1-c6d580e4",
       "owner": -1,
       "sourceCategory": "Main Dishes",
       "sourceName": "Salmon steak with mashed potatoes",
-      "sourcePortion": "140/200/60/50/40/30 g"
+      "sourcePortion": "140/200/60/50/40/30 g",
+      "legacyImage": "grilled-fish"
     },
     {
       "id": "mains-chicken-breast-with-potato-gratin-4b7f9bb3",
@@ -990,11 +1031,12 @@
       ],
       "dietaryLabels": [],
       "price": 800,
-      "image": "roast-chicken",
+      "image": "dish-chicken-breast-with-potato-gratin-4-ff4a9741",
       "owner": -1,
       "sourceCategory": "Main Dishes",
       "sourceName": "Chicken breast with potato gratin",
-      "sourcePortion": "160/140/80/50 g"
+      "sourcePortion": "160/140/80/50 g",
+      "legacyImage": "roast-chicken"
     },
     {
       "id": "mains-pork-in-chili-sauce-with-rice-a171b3b1",
@@ -1007,11 +1049,12 @@
       ],
       "dietaryLabels": [],
       "price": 750,
-      "image": "meat-platter",
+      "image": "dish-pork-in-chili-sauce-with-rice-2-7400643d",
       "owner": -1,
       "sourceCategory": "Main Dishes",
       "sourceName": "Pork in chili sauce with rice",
-      "sourcePortion": "250/160 g"
+      "sourcePortion": "250/160 g",
+      "legacyImage": "meat-platter"
     },
     {
       "id": "mains-chicken-skewer-aef47c9d",
@@ -1026,11 +1069,12 @@
       ],
       "dietaryLabels": [],
       "price": 750,
-      "image": "roast-chicken",
+      "image": "dish-chicken-skewer-3-77ea5162",
       "owner": -1,
       "sourceCategory": "Main Dishes",
       "sourceName": "CHICKEN SKEWER",
-      "sourcePortion": "200/80/80/50/50 g"
+      "sourcePortion": "200/80/80/50/50 g",
+      "legacyImage": "roast-chicken"
     },
     {
       "id": "mains-french-style-meat-1637fc25",
@@ -1045,11 +1089,12 @@
       ],
       "dietaryLabels": [],
       "price": 850,
-      "image": "meat-platter",
+      "image": "dish-french-style-meat-1-fe847efb",
       "owner": -1,
       "sourceCategory": "Main Dishes",
       "sourceName": "French-style meat",
-      "sourcePortion": ""
+      "sourcePortion": "",
+      "legacyImage": "meat-platter"
     },
     {
       "id": "mains-chicken-gyros-3254de57",
@@ -1064,11 +1109,12 @@
       ],
       "dietaryLabels": [],
       "price": 750,
-      "image": "roast-chicken",
+      "image": "dish-chicken-gyros-1-db972f81",
       "owner": -1,
       "sourceCategory": "Main Dishes",
       "sourceName": "Chicken Gyros",
-      "sourcePortion": "140/100/100/80/50 g"
+      "sourcePortion": "140/100/100/80/50 g",
+      "legacyImage": "roast-chicken"
     },
     {
       "id": "mains-chicken-meatballs-with-mashed-potatoes-5378dab0",
@@ -1080,11 +1126,12 @@
       ],
       "dietaryLabels": [],
       "price": 600,
-      "image": "roast-chicken",
+      "image": "dish-chicken-meatballs-in-tomato-sauce-with-mashed-potatoes-2-82ef9d9c",
       "owner": -1,
       "sourceCategory": "Main Dishes",
       "sourceName": "Chicken Meatballs with Mashed Potatoes",
-      "sourcePortion": "250/220g"
+      "sourcePortion": "250/220g",
+      "legacyImage": "roast-chicken"
     },
     {
       "id": "mains-beef-stroganoff-99b0a5ef",
@@ -1099,11 +1146,12 @@
       ],
       "dietaryLabels": [],
       "price": 900,
-      "image": "meat-platter",
+      "image": "dish-beef-stroganoff-1-c701299b",
       "owner": -1,
       "sourceCategory": "Main Dishes",
       "sourceName": "Beef Stroganoff",
-      "sourcePortion": ""
+      "sourcePortion": "",
+      "legacyImage": "meat-platter"
     },
     {
       "id": "mains-chicken-fricassee-fa6d7a3c",
@@ -1115,11 +1163,12 @@
       ],
       "dietaryLabels": [],
       "price": 750,
-      "image": "roast-chicken",
+      "image": "dish-chicken-fricassee-2-cdae7d8c",
       "owner": -1,
       "sourceCategory": "Main Dishes",
       "sourceName": "Chicken Fricassee",
-      "sourcePortion": "360/70/50 g"
+      "sourcePortion": "360/70/50 g",
+      "legacyImage": "roast-chicken"
     },
     {
       "id": "mains-shrimp-in-cream-sauce-f4af542c",
@@ -1134,11 +1183,12 @@
       ],
       "dietaryLabels": [],
       "price": 900,
-      "image": "grilled-fish",
+      "image": "dish-shrimp-in-cream-sauce-1-7c2c9516",
       "owner": -1,
       "sourceCategory": "Main Dishes",
       "sourceName": "Shrimp in Cream Sauce",
-      "sourcePortion": "200/50"
+      "sourcePortion": "200/50",
+      "legacyImage": "grilled-fish"
     },
     {
       "id": "mains-crepes-with-ham-and-cheese-f1862aa8",
@@ -1153,11 +1203,12 @@
       ],
       "dietaryLabels": [],
       "price": 650,
-      "image": "crepes",
+      "image": "dish-crepes-with-salmon-and-spinach-3-d7d7d0aa",
       "owner": -1,
       "sourceCategory": "Main Dishes",
       "sourceName": "Crepes with ham and cheese",
-      "sourcePortion": "320 g"
+      "sourcePortion": "320 g",
+      "legacyImage": "crepes"
     },
     {
       "id": "mains-pancakes-with-chicken-mushroom-sauce-cb73c3ee",
@@ -1171,11 +1222,12 @@
       ],
       "dietaryLabels": [],
       "price": 650,
-      "image": "crepes",
+      "image": "dish-pancakes-with-chicken-mushroom-sauce-2-7fdc47ef",
       "owner": -1,
       "sourceCategory": "Main Dishes",
       "sourceName": "Pancakes with Chicken & Mushroom Sauce",
-      "sourcePortion": "380 g"
+      "sourcePortion": "380 g",
+      "legacyImage": "crepes"
     },
     {
       "id": "mains-crepes-with-salted-salmon-98ed0790",
@@ -1190,11 +1242,12 @@
       ],
       "dietaryLabels": [],
       "price": 700,
-      "image": "crepes",
+      "image": "dish-crepes-with-salted-salmon-1-b724d710",
       "owner": -1,
       "sourceCategory": "Main Dishes",
       "sourceName": "Crepes with salted salmon",
-      "sourcePortion": "230/25 g"
+      "sourcePortion": "230/25 g",
+      "legacyImage": "crepes"
     },
     {
       "id": "mains-pancakes-with-sweet-cheese-and-sauce-a11b007d",
@@ -1208,11 +1261,12 @@
       ],
       "dietaryLabels": [],
       "price": 500,
-      "image": "crepes",
+      "image": "dish-pancakes-with-sweet-cheese-and-sauce-1-8be9c10b",
       "owner": -1,
       "sourceCategory": "Main Dishes",
       "sourceName": "Pancakes with sweet cheese and sauce",
-      "sourcePortion": "220 g"
+      "sourcePortion": "220 g",
+      "legacyImage": "crepes"
     },
     {
       "id": "mains-chicken-wrap-06990921",
@@ -1225,11 +1279,12 @@
       ],
       "dietaryLabels": [],
       "price": 650,
-      "image": "roast-chicken",
+      "image": "dish-chicken-wrap-4-ac294e86",
       "owner": -1,
       "sourceCategory": "Main Dishes",
       "sourceName": "Chicken Wrap",
-      "sourcePortion": "400/80/50 g"
+      "sourcePortion": "400/80/50 g",
+      "legacyImage": "roast-chicken"
     },
     {
       "id": "mains-beef-wrap-55348398",
@@ -1242,11 +1297,12 @@
       ],
       "dietaryLabels": [],
       "price": 700,
-      "image": "meat-platter",
+      "image": "dish-beef-wrap-3-d5dcb655",
       "owner": -1,
       "sourceCategory": "Main Dishes",
       "sourceName": "Beef Wrap",
-      "sourcePortion": "350/80/50 g"
+      "sourcePortion": "350/80/50 g",
+      "legacyImage": "meat-platter"
     },
     {
       "id": "mains-wrap-veggie-falafel-fc5931db",
@@ -1260,11 +1316,12 @@
       ],
       "dietaryLabels": [],
       "price": 600,
-      "image": "meat-platter",
+      "image": "dish-wrap-veggie-falafel-4-2cd051e4",
       "owner": -1,
       "sourceCategory": "Main Dishes",
       "sourceName": "Wrap Veggie falafel",
-      "sourcePortion": "380/80/100 g"
+      "sourcePortion": "380/80/100 g",
+      "legacyImage": "meat-platter"
     },
     {
       "id": "mains-crispy-chicken-schnitzel-1ebbdfc0",
@@ -1277,11 +1334,12 @@
       ],
       "dietaryLabels": [],
       "price": 700,
-      "image": "crispy-chicken",
+      "image": "dish-crispy-chicken-schnitzel-3-17a79b34",
       "owner": -1,
       "sourceCategory": "Main Dishes",
       "sourceName": "Crispy chicken schnitzel",
-      "sourcePortion": "250/80/65/50/40 g"
+      "sourcePortion": "250/80/65/50/40 g",
+      "legacyImage": "crispy-chicken"
     },
     {
       "id": "mains-beef-burger-bd86eb96",
@@ -1294,11 +1352,12 @@
       ],
       "dietaryLabels": [],
       "price": 700,
-      "image": "burger",
+      "image": "dish-beef-burger-2-a6eecd8c",
       "owner": -1,
       "sourceCategory": "Main Dishes",
       "sourceName": "Beef Burger",
-      "sourcePortion": "300 / 100 / 50 g"
+      "sourcePortion": "300 / 100 / 50 g",
+      "legacyImage": "burger"
     },
     {
       "id": "mains-chicken-burger-bde61e8f",
@@ -1312,11 +1371,12 @@
       ],
       "dietaryLabels": [],
       "price": 650,
-      "image": "burger",
+      "image": "dish-chicken-burger-2-80d0883e",
       "owner": -1,
       "sourceCategory": "Main Dishes",
       "sourceName": "Chicken Burger",
-      "sourcePortion": "260 / 100 / 50 g"
+      "sourcePortion": "260 / 100 / 50 g",
+      "legacyImage": "burger"
     },
     {
       "id": "mains-cheeseburger-1444371f",
@@ -1329,11 +1389,12 @@
       ],
       "dietaryLabels": [],
       "price": 800,
-      "image": "burger",
+      "image": "dish-maxi-burger-1-fc613e81",
       "owner": -1,
       "sourceCategory": "Main Dishes",
       "sourceName": "Cheeseburger",
-      "sourcePortion": "330/100/50 g"
+      "sourcePortion": "330/100/50 g",
+      "legacyImage": "burger"
     },
     {
       "id": "mains-breaded-chicken-breast-82bcb0da",
@@ -1346,11 +1407,12 @@
       ],
       "dietaryLabels": [],
       "price": 600,
-      "image": "crispy-chicken",
+      "image": "dish-breaded-chicken-breast-1-cbfd0c0c",
       "owner": -1,
       "sourceCategory": "Main Dishes",
       "sourceName": "Breaded Chicken Breast",
-      "sourcePortion": "160 / 130 / 50 g"
+      "sourcePortion": "160 / 130 / 50 g",
+      "legacyImage": "crispy-chicken"
     },
     {
       "id": "mains-glazed-chicken-wings-401c3889",
@@ -1360,11 +1422,12 @@
       "allergens": [],
       "dietaryLabels": [],
       "price": 600,
-      "image": "roast-chicken",
+      "image": "dish-glazed-chicken-wings-1-92dc7377",
       "owner": -1,
       "sourceCategory": "Main Dishes",
       "sourceName": "Glazed Chicken Wings",
-      "sourcePortion": "220 / 130 / 50 g"
+      "sourcePortion": "220 / 130 / 50 g",
+      "legacyImage": "roast-chicken"
     },
     {
       "id": "kids-soup-with-meatballs-7bbc5b5f",
@@ -1376,11 +1439,12 @@
       ],
       "dietaryLabels": [],
       "price": 250,
-      "image": "soup",
+      "image": "dish-soup-with-meatballs-1-51cf838e",
       "owner": -1,
       "sourceCategory": "Kids Menu",
       "sourceName": "Soup with Meatballs",
-      "sourcePortion": "250 g"
+      "sourcePortion": "250 g",
+      "legacyImage": "soup"
     },
     {
       "id": "kids-cheesy-pasta-nuggets-a8214333",
@@ -1394,11 +1458,12 @@
       ],
       "dietaryLabels": [],
       "price": 350,
-      "image": "pasta",
+      "image": "dish-cheesy-pasta-nuggets-1-4ef42af9",
       "owner": -1,
       "sourceCategory": "Kids Menu",
       "sourceName": "Cheesy pasta nuggets",
-      "sourcePortion": "230 g"
+      "sourcePortion": "230 g",
+      "legacyImage": "pasta"
     },
     {
       "id": "kids-mashed-potatoes-with-meatballs-f4de4cc3",
@@ -1410,11 +1475,12 @@
       ],
       "dietaryLabels": [],
       "price": 350,
-      "image": "meat-platter",
+      "image": "dish-mashed-potatoes-with-meatballs-1-b7b70954",
       "owner": -1,
       "sourceCategory": "Kids Menu",
       "sourceName": "Mashed Potatoes with Meatballs",
-      "sourcePortion": "150 / 80 / 25 g"
+      "sourcePortion": "150 / 80 / 25 g",
+      "legacyImage": "meat-platter"
     },
     {
       "id": "kids-chicken-shashlik-600ba8cc",
@@ -1426,11 +1492,12 @@
       ],
       "dietaryLabels": [],
       "price": 350,
-      "image": "roast-chicken",
+      "image": "dish-chicken-shashlik-1-a131d370",
       "owner": -1,
       "sourceCategory": "Kids Menu",
       "sourceName": "Chicken shashlik",
-      "sourcePortion": "120/70/40 g"
+      "sourcePortion": "120/70/40 g",
+      "legacyImage": "roast-chicken"
     },
     {
       "id": "kids-smiley-potatoes-6c30768f",
@@ -1440,11 +1507,12 @@
       "allergens": [],
       "dietaryLabels": [],
       "price": 200,
-      "image": "meat-platter",
+      "image": "dish-smiley-potatoes-1-b3058fbd",
       "owner": -1,
       "sourceCategory": "Kids Menu",
       "sourceName": "Smiley Potatoes",
-      "sourcePortion": "90 / 50 g"
+      "sourcePortion": "90 / 50 g",
+      "legacyImage": "meat-platter"
     },
     {
       "id": "kids-mini-nuggets-with-potato-emoticons-58706a55",
@@ -1457,11 +1525,12 @@
       ],
       "dietaryLabels": [],
       "price": 350,
-      "image": "crispy-chicken",
+      "image": "dish-mini-nuggets-with-potato-emoticons-1-f99dea4b",
       "owner": -1,
       "sourceCategory": "Kids Menu",
       "sourceName": "Mini nuggets with potato emoticons",
-      "sourcePortion": "100/90/50 g"
+      "sourcePortion": "100/90/50 g",
+      "legacyImage": "crispy-chicken"
     },
     {
       "id": "kids-mini-burger-a87e1b8c",
@@ -1474,11 +1543,12 @@
       ],
       "dietaryLabels": [],
       "price": 350,
-      "image": "burger",
+      "image": "dish-mini-burger-1-733d2e16",
       "owner": -1,
       "sourceCategory": "Kids Menu",
       "sourceName": "Mini Burger",
-      "sourcePortion": "120 / 65 / 50 g"
+      "sourcePortion": "120 / 65 / 50 g",
+      "legacyImage": "burger"
     },
     {
       "id": "kids-mini-pizza-33123db7",
@@ -1491,11 +1561,12 @@
       ],
       "dietaryLabels": [],
       "price": 350,
-      "image": "margherita",
+      "image": "dish-mini-pizza-1-aa640bf9",
       "owner": -1,
       "sourceCategory": "Kids Menu",
       "sourceName": "Mini pizza",
-      "sourcePortion": "300 g"
+      "sourcePortion": "300 g",
+      "legacyImage": "margherita"
     },
     {
       "id": "lunch-baked-chicken-steak-with-buckwheat-and-mushrooms-fc3e8ba8",
@@ -1509,11 +1580,12 @@
       ],
       "dietaryLabels": [],
       "price": 750,
-      "image": "roast-chicken",
+      "image": "dish-baked-chicken-steak-with-buckwheat-and-mushrooms-1-0589dc10",
       "owner": -1,
       "sourceCategory": "Lunch-Box",
       "sourceName": "Baked Chicken Steak with Buckwheat and Mushrooms",
-      "sourcePortion": ""
+      "sourcePortion": "",
+      "legacyImage": "roast-chicken"
     },
     {
       "id": "lunch-chicken-meatballs-in-curry-sauce-with-rice-6464d308",
@@ -1525,11 +1597,12 @@
       ],
       "dietaryLabels": [],
       "price": 750,
-      "image": "roast-chicken",
+      "image": "dish-chicken-meatballs-in-curry-sauce-with-rice-3-9a5ec4f5",
       "owner": -1,
       "sourceCategory": "Lunch-Box",
       "sourceName": "Chicken Meatballs in Curry Sauce with Rice",
-      "sourcePortion": ""
+      "sourcePortion": "",
+      "legacyImage": "roast-chicken"
     },
     {
       "id": "lunch-chicken-schnitzel-with-mashed-potatoes-0dc0302e",
@@ -1543,11 +1616,12 @@
       ],
       "dietaryLabels": [],
       "price": 750,
-      "image": "crispy-chicken",
+      "image": "dish-chicken-schnitzel-with-mashed-potatoes-1-cd3dc8e6",
       "owner": -1,
       "sourceCategory": "Lunch-Box",
       "sourceName": "Chicken Schnitzel with Mashed Potatoes",
-      "sourcePortion": ""
+      "sourcePortion": "",
+      "legacyImage": "crispy-chicken"
     },
     {
       "id": "lunch-ravioli-with-ricotta-and-shrimp-569112c2",
@@ -1563,11 +1637,12 @@
       ],
       "dietaryLabels": [],
       "price": 950,
-      "image": "pasta",
+      "image": "dish-ravioli-with-ricotta-and-shrimp-1-fe4ac8b2",
       "owner": -1,
       "sourceCategory": "Lunch-Box",
       "sourceName": "Ravioli with Ricotta and Shrimp",
-      "sourcePortion": ""
+      "sourcePortion": "",
+      "legacyImage": "pasta"
     },
     {
       "id": "lunch-sea-bream-fillet-with-bulgur-and-quinoa-aa5ec283",
@@ -1580,11 +1655,12 @@
       ],
       "dietaryLabels": [],
       "price": 1050,
-      "image": "grilled-fish",
+      "image": "dish-sea-bream-fillet-with-bulgur-and-quinoa-1-35ad523d",
       "owner": -1,
       "sourceCategory": "Lunch-Box",
       "sourceName": "Sea Bream Fillet with Bulgur and Quinoa",
-      "sourcePortion": ""
+      "sourcePortion": "",
+      "legacyImage": "grilled-fish"
     },
     {
       "id": "sharing-platters-crispy-schnitzel-for-sharing-a4b83419",
@@ -1599,11 +1675,12 @@
       ],
       "dietaryLabels": [],
       "price": 1200,
-      "image": "crispy-chicken",
+      "image": "dish-crispy-schnitzel-for-sharing-1-24b8e0a8",
       "owner": -1,
       "sourceCategory": "Banquet menu",
       "sourceName": "Crispy schnitzel for sharing",
-      "sourcePortion": "440/100/60/60/50/50 g"
+      "sourcePortion": "440/100/60/60/50/50 g",
+      "legacyImage": "crispy-chicken"
     },
     {
       "id": "sharing-platters-french-style-meat-for-sharing-1d613c38",
@@ -1617,11 +1694,12 @@
       ],
       "dietaryLabels": [],
       "price": 2450,
-      "image": "meat-platter",
+      "image": "dish-french-style-meat-for-sharing-1-1cacee54",
       "owner": -1,
       "sourceCategory": "Banquet menu",
       "sourceName": "French-style meat for sharing",
-      "sourcePortion": "1000/340/100/80/80 g"
+      "sourcePortion": "1000/340/100/80/80 g",
+      "legacyImage": "meat-platter"
     },
     {
       "id": "sharing-platters-mixed-skewers-for-sharing-9060cec6",
@@ -1635,11 +1713,12 @@
       ],
       "dietaryLabels": [],
       "price": 1450,
-      "image": "meat-platter",
+      "image": "dish-mixed-skewers-for-sharing-1-663c4b90",
       "owner": -1,
       "sourceCategory": "Banquet menu",
       "sourceName": "Mixed skewers for sharing",
-      "sourcePortion": "420/100/90/80/80/80/50/50 g"
+      "sourcePortion": "420/100/90/80/80/80/50/50 g",
+      "legacyImage": "meat-platter"
     },
     {
       "id": "sharing-platters-cold-cuts-appetizer-b609decc",
@@ -1652,11 +1731,12 @@
       ],
       "dietaryLabels": [],
       "price": 1350,
-      "image": "meat-platter",
+      "image": "dish-cold-cuts-appetizer-2-02d94c70",
       "owner": -1,
       "sourceCategory": "Banquet menu",
       "sourceName": "Cold Cuts Appetizer",
-      "sourcePortion": "120/80/80/60/50/50/50/20/15/15/10g"
+      "sourcePortion": "120/80/80/60/50/50/50/20/15/15/10g",
+      "legacyImage": "meat-platter"
     },
     {
       "id": "sharing-platters-meat-platter-486dba84",
@@ -1669,11 +1749,12 @@
       ],
       "dietaryLabels": [],
       "price": 2550,
-      "image": "meat-platter",
+      "image": "dish-meat-platter-2-f8bef848",
       "owner": -1,
       "sourceCategory": "Banquet menu",
       "sourceName": "Meat Platter",
-      "sourcePortion": "320/170/140/100/70/70/60/60/50/50/50 g"
+      "sourcePortion": "320/170/140/100/70/70/60/60/50/50/50 g",
+      "legacyImage": "meat-platter"
     },
     {
       "id": "sharing-platters-plato-with-pork-fat-8de2e95d",
@@ -1685,11 +1766,12 @@
       ],
       "dietaryLabels": [],
       "price": 500,
-      "image": "meat-platter",
+      "image": "dish-plato-with-pork-fat-2-80a61005",
       "owner": -1,
       "sourceCategory": "Banquet menu",
       "sourceName": "Plato with pork fat",
-      "sourcePortion": "170 g"
+      "sourcePortion": "170 g",
+      "legacyImage": "meat-platter"
     },
     {
       "id": "sharing-platters-cheese-platter-20721abc",
@@ -1703,11 +1785,12 @@
       ],
       "dietaryLabels": [],
       "price": 1550,
-      "image": "meat-platter",
+      "image": "dish-cheese-platter-2-7563212e",
       "owner": -1,
       "sourceCategory": "Banquet menu",
       "sourceName": "Cheese Platter",
-      "sourcePortion": "140/120/100/70/50/50/40/40 g"
+      "sourcePortion": "140/120/100/70/50/50/40/40 g",
+      "legacyImage": "meat-platter"
     },
     {
       "id": "sharing-platters-fresh-vegetable-platter-e7686d24",
@@ -1721,11 +1804,12 @@
       ],
       "dietaryLabels": [],
       "price": 650,
-      "image": "salad",
+      "image": "dish-fresh-vegetable-platter-1-e738fece",
       "owner": -1,
       "sourceCategory": "Banquet menu",
       "sourceName": "Fresh Vegetable Platter",
-      "sourcePortion": "400 / 90 / 40 / 50 g"
+      "sourcePortion": "400 / 90 / 40 / 50 g",
+      "legacyImage": "salad"
     },
     {
       "id": "sharing-platters-bruschetta-selection-1b8e80ac",
@@ -1741,11 +1825,12 @@
       ],
       "dietaryLabels": [],
       "price": 1300,
-      "image": "bruschetta",
+      "image": "dish-bruschetta-selection-1-8f1a2585",
       "owner": -1,
       "sourceCategory": "Banquet menu",
       "sourceName": "Bruschetta selection",
-      "sourcePortion": "240/200/180 g"
+      "sourcePortion": "240/200/180 g",
+      "legacyImage": "bruschetta"
     },
     {
       "id": "sharing-platters-caesar-salad-with-chicken-banquet-d6a15062",
@@ -1761,11 +1846,12 @@
       ],
       "dietaryLabels": [],
       "price": 1200,
-      "image": "salad",
+      "image": "dish-caesar-salad-with-chicken-banquet-1-e4794f4c",
       "owner": -1,
       "sourceCategory": "Banquet menu",
       "sourceName": "Caesar Salad with Chicken (Banquet)",
-      "sourcePortion": "560 g"
+      "sourcePortion": "560 g",
+      "legacyImage": "salad"
     },
     {
       "id": "sharing-platters-veggie-salad-for-sharing-e4841edd",
@@ -1777,11 +1863,12 @@
       ],
       "dietaryLabels": [],
       "price": 650,
-      "image": "salad",
+      "image": "dish-veggie-salad-for-sharing-1-644a3db2",
       "owner": -1,
       "sourceCategory": "Banquet menu",
       "sourceName": "Veggie salad for sharing",
-      "sourcePortion": "480 g"
+      "sourcePortion": "480 g",
+      "legacyImage": "salad"
     },
     {
       "id": "sharing-platters-caesar-salad-with-shrimp-banquet-1d11ce96",
@@ -1798,11 +1885,12 @@
       ],
       "dietaryLabels": [],
       "price": 1350,
-      "image": "salad",
+      "image": "dish-caesar-salad-with-shrimp-banquet-1-136183a9",
       "owner": -1,
       "sourceCategory": "Banquet menu",
       "sourceName": "Caesar Salad with Shrimp (Banquet)",
-      "sourcePortion": ""
+      "sourcePortion": "",
+      "legacyImage": "salad"
     },
     {
       "id": "sharing-platters-xxl-chicken-fillet-c86c139d",
@@ -1815,11 +1903,12 @@
       ],
       "dietaryLabels": [],
       "price": 1050,
-      "image": "crispy-chicken",
+      "image": "dish-xxl-chicken-fillet-2-4a6831a6",
       "owner": -1,
       "sourceCategory": "Banquet menu",
       "sourceName": "XXL chicken fillet",
-      "sourcePortion": "480/50/50 g"
+      "sourcePortion": "480/50/50 g",
+      "legacyImage": "crispy-chicken"
     },
     {
       "id": "desserts-tort-profiterol-c68361f5",
@@ -1834,11 +1923,12 @@
       ],
       "dietaryLabels": [],
       "price": 450,
-      "image": "cheesecake",
+      "image": "dish-tort-profiterol-1-fb677578",
       "owner": -1,
       "sourceCategory": "Dessert",
       "sourceName": "Tort Profiterol",
-      "sourcePortion": "190 g"
+      "sourcePortion": "190 g",
+      "legacyImage": "cheesecake"
     },
     {
       "id": "desserts-chocolate-napoleon-72f2fd43",
@@ -1852,11 +1942,12 @@
       ],
       "dietaryLabels": [],
       "price": 450,
-      "image": "cheesecake",
+      "image": "dish-chocolate-napoleon-1-9bd59994",
       "owner": -1,
       "sourceCategory": "Dessert",
       "sourceName": "Chocolate Napoleon",
-      "sourcePortion": "180 g"
+      "sourcePortion": "180 g",
+      "legacyImage": "cheesecake"
     },
     {
       "id": "desserts-berry-cheesecake-44c56d82",
@@ -1871,11 +1962,12 @@
       ],
       "dietaryLabels": [],
       "price": 400,
-      "image": "cheesecake",
+      "image": "dish-berry-cheesecake-1-d04e094f",
       "owner": -1,
       "sourceCategory": "Dessert",
       "sourceName": "Berry Cheesecake",
-      "sourcePortion": "175 g"
+      "sourcePortion": "175 g",
+      "legacyImage": "cheesecake"
     },
     {
       "id": "desserts-tiramisu-41614a33",
@@ -1889,11 +1981,12 @@
       ],
       "dietaryLabels": [],
       "price": 500,
-      "image": "tiramisu",
+      "image": "dish-tiramisu-1-1519cbc6",
       "owner": -1,
       "sourceCategory": "Dessert",
       "sourceName": "Tiramisu",
-      "sourcePortion": "200 g"
+      "sourcePortion": "200 g",
+      "legacyImage": "tiramisu"
     },
     {
       "id": "desserts-chocolate-fondant-c88a6956",
@@ -1907,11 +2000,12 @@
       ],
       "dietaryLabels": [],
       "price": 400,
-      "image": "cheesecake",
+      "image": "dish-chocolate-fondant-2-975a2a05",
       "owner": -1,
       "sourceCategory": "Dessert",
       "sourceName": "Chocolate Fondant",
-      "sourcePortion": "170 g"
+      "sourcePortion": "170 g",
+      "legacyImage": "cheesecake"
     },
     {
       "id": "desserts-fondant-dubai-e8fd7b3d",
@@ -1926,11 +2020,12 @@
       ],
       "dietaryLabels": [],
       "price": 550,
-      "image": "cheesecake",
+      "image": "dish-berry-souffl-1-26eb51f6",
       "owner": -1,
       "sourceCategory": "Dessert",
       "sourceName": "Fondant Dubai",
-      "sourcePortion": "160 g"
+      "sourcePortion": "160 g",
+      "legacyImage": "cheesecake"
     },
     {
       "id": "desserts-berry-souffle-1e2d7848",
@@ -1945,11 +2040,12 @@
       ],
       "dietaryLabels": [],
       "price": 500,
-      "image": "cheesecake",
+      "image": "dish-berry-souffl-2-2f9476ec",
       "owner": -1,
       "sourceCategory": "Dessert",
       "sourceName": "Berry soufflé",
-      "sourcePortion": "160 g"
+      "sourcePortion": "160 g",
+      "legacyImage": "cheesecake"
     },
     {
       "id": "desserts-snikers-pop-ice-cream-e9248a60",
@@ -1965,11 +2061,12 @@
       ],
       "dietaryLabels": [],
       "price": 400,
-      "image": "ice-cream",
+      "image": "dish-sunny-tropic-ice-cream-1-1654bfd1",
       "owner": -1,
       "sourceCategory": "Dessert",
       "sourceName": "Snikers Pop Ice Cream",
-      "sourcePortion": "230 g"
+      "sourcePortion": "230 g",
+      "legacyImage": "ice-cream"
     },
     {
       "id": "desserts-berry-boom-ice-cream-13e55890",
@@ -1981,11 +2078,12 @@
       ],
       "dietaryLabels": [],
       "price": 400,
-      "image": "ice-cream",
+      "image": "dish-snikers-pop-ice-cream-1-71710a1e",
       "owner": -1,
       "sourceCategory": "Dessert",
       "sourceName": "Berry Boom Ice Cream",
-      "sourcePortion": "340 g"
+      "sourcePortion": "340 g",
+      "legacyImage": "ice-cream"
     },
     {
       "id": "ice-cream-assorted-ice-cream-3-scoops-49f7d3c7",
@@ -1997,11 +2095,12 @@
       ],
       "dietaryLabels": [],
       "price": 350,
-      "image": "ice-cream",
+      "image": "dish-assorted-ice-cream-3-scoops-1-1e6cd00b",
       "owner": -1,
       "sourceCategory": "Ice Cream",
       "sourceName": "Assorted Ice Cream – 3 Scoops",
-      "sourcePortion": "175 g"
+      "sourcePortion": "175 g",
+      "legacyImage": "ice-cream"
     },
     {
       "id": "ice-cream-banana-pineapple-ice-cream-fddf018c",
@@ -2013,11 +2112,12 @@
       ],
       "dietaryLabels": [],
       "price": 850,
-      "image": "ice-cream",
+      "image": "dish-banana-pineapple-ice-cream-1-ad254c01",
       "owner": -1,
       "sourceCategory": "Ice Cream",
       "sourceName": "Banana-Pineapple Ice Cream",
-      "sourcePortion": "700 g"
+      "sourcePortion": "700 g",
+      "legacyImage": "ice-cream"
     },
     {
       "id": "ice-cream-chocolate-ice-cream-85a83bea",
@@ -2029,11 +2129,12 @@
       ],
       "dietaryLabels": [],
       "price": 850,
-      "image": "ice-cream",
+      "image": "dish-chocolate-ice-cream-1-85bfa745",
       "owner": -1,
       "sourceCategory": "Ice Cream",
       "sourceName": "Chocolate Ice Cream",
-      "sourcePortion": "700 g"
+      "sourcePortion": "700 g",
+      "legacyImage": "ice-cream"
     },
     {
       "id": "ice-cream-ice-cream-assortment-b71e2cb8",
@@ -2045,11 +2146,12 @@
       ],
       "dietaryLabels": [],
       "price": 850,
-      "image": "ice-cream",
+      "image": "dish-ice-cream-assortment-1-1478a0b1",
       "owner": -1,
       "sourceCategory": "Ice Cream",
       "sourceName": "Ice Cream Assortment",
-      "sourcePortion": "700 g"
+      "sourcePortion": "700 g",
+      "legacyImage": "ice-cream"
     },
     {
       "id": "ice-cream-ice-cream-assortment-ba34815d",
@@ -2061,11 +2163,12 @@
       ],
       "dietaryLabels": [],
       "price": 500,
-      "image": "ice-cream",
+      "image": "dish-ice-cream-assortment-1-8d8cd883",
       "owner": -1,
       "sourceCategory": "Ice Cream",
       "sourceName": "Ice Cream Assortment",
-      "sourcePortion": "350 g"
+      "sourcePortion": "350 g",
+      "legacyImage": "ice-cream"
     },
     {
       "id": "ice-cream-mango-passion-fruit-ice-cream-55e25d82",
@@ -2077,11 +2180,12 @@
       ],
       "dietaryLabels": [],
       "price": 850,
-      "image": "ice-cream",
+      "image": "dish-mango-passion-fruit-ice-cream-1-b36d815f",
       "owner": -1,
       "sourceCategory": "Ice Cream",
       "sourceName": "Mango & Passion Fruit Ice Cream",
-      "sourcePortion": "700 g"
+      "sourcePortion": "700 g",
+      "legacyImage": "ice-cream"
     },
     {
       "id": "ice-cream-strawberry-ice-cream-ac45a1dd",
@@ -2093,11 +2197,12 @@
       ],
       "dietaryLabels": [],
       "price": 850,
-      "image": "ice-cream",
+      "image": "dish-strawberry-ice-cream-1-216d243f",
       "owner": -1,
       "sourceCategory": "Ice Cream",
       "sourceName": "Strawberry Ice Cream",
-      "sourcePortion": "700 g"
+      "sourcePortion": "700 g",
+      "legacyImage": "ice-cream"
     },
     {
       "id": "ice-cream-whipped-cream-ice-cream-8c87fcd3",
@@ -2109,11 +2214,12 @@
       ],
       "dietaryLabels": [],
       "price": 850,
-      "image": "ice-cream",
+      "image": "dish-whipped-cream-ice-cream-1-b1623a53",
       "owner": -1,
       "sourceCategory": "Ice Cream",
       "sourceName": "Whipped Cream Ice Cream",
-      "sourcePortion": "700 g"
+      "sourcePortion": "700 g",
+      "legacyImage": "ice-cream"
     },
     {
       "id": "ice-cream-caramelium-ice-cream-7c4938b6",
@@ -2125,11 +2231,12 @@
       ],
       "dietaryLabels": [],
       "price": 350,
-      "image": "ice-cream",
+      "image": "dish-passion-fashion-ice-cream-1-90f42bd3",
       "owner": -1,
       "sourceCategory": "Ice Cream",
       "sourceName": "Caramelium Ice Cream",
-      "sourcePortion": "300 g"
+      "sourcePortion": "300 g",
+      "legacyImage": "ice-cream"
     },
     {
       "id": "ice-cream-chocolate-plombir-ice-cream-51539acf",
@@ -2141,11 +2248,12 @@
       ],
       "dietaryLabels": [],
       "price": 300,
-      "image": "ice-cream",
+      "image": "dish-chocolate-plombir-ice-cream-1-951b28ae",
       "owner": -1,
       "sourceCategory": "Ice Cream",
       "sourceName": "Chocolate Plombir Ice Cream",
-      "sourcePortion": "300 g"
+      "sourcePortion": "300 g",
+      "legacyImage": "ice-cream"
     },
     {
       "id": "ice-cream-classic-plombir-ice-cream-fb73450b",
@@ -2157,11 +2265,12 @@
       ],
       "dietaryLabels": [],
       "price": 300,
-      "image": "ice-cream",
+      "image": "dish-classic-plombir-ice-cream-2-456856ee",
       "owner": -1,
       "sourceCategory": "Ice Cream",
       "sourceName": "Classic Plombir Ice Cream",
-      "sourcePortion": "300 g"
+      "sourcePortion": "300 g",
+      "legacyImage": "ice-cream"
     },
     {
       "id": "ice-cream-forest-berry-ice-cream-898d1858",
@@ -2173,11 +2282,12 @@
       ],
       "dietaryLabels": [],
       "price": 350,
-      "image": "ice-cream",
+      "image": "dish-forest-berry-ice-cream-1-b1ed922f",
       "owner": -1,
       "sourceCategory": "Ice Cream",
       "sourceName": "Forest Berry Ice Cream",
-      "sourcePortion": "300 g"
+      "sourcePortion": "300 g",
+      "legacyImage": "ice-cream"
     },
     {
       "id": "ice-cream-hazelnut-ice-cream-167f40a4",
@@ -2191,11 +2301,12 @@
       ],
       "dietaryLabels": [],
       "price": 400,
-      "image": "ice-cream",
+      "image": "dish-hazelnut-ice-cream-1-15bf7369",
       "owner": -1,
       "sourceCategory": "Ice Cream",
       "sourceName": "Hazelnut Ice Cream",
-      "sourcePortion": "300 g"
+      "sourcePortion": "300 g",
+      "legacyImage": "ice-cream"
     },
     {
       "id": "ice-cream-huba-buba-ice-cream-3225071d",
@@ -2207,11 +2318,12 @@
       ],
       "dietaryLabels": [],
       "price": 400,
-      "image": "ice-cream",
+      "image": "dish-huba-buba-ice-cream-1-649097e0",
       "owner": -1,
       "sourceCategory": "Ice Cream",
       "sourceName": "Huba Buba Ice Cream",
-      "sourcePortion": "300 g"
+      "sourcePortion": "300 g",
+      "legacyImage": "ice-cream"
     },
     {
       "id": "ice-cream-inghetata-snickerrss-4b1d5e3c",
@@ -2224,11 +2336,12 @@
       ],
       "dietaryLabels": [],
       "price": 400,
-      "image": "ice-cream",
+      "image": "dish-nghetata-snickerrss-1-a1ef19c6",
       "owner": -1,
       "sourceCategory": "Ice Cream",
       "sourceName": "Înghetata Snickerrss",
-      "sourcePortion": "300 g"
+      "sourcePortion": "300 g",
+      "legacyImage": "ice-cream"
     },
     {
       "id": "ice-cream-passion-fashion-ice-cream-dec3c059",
@@ -2240,11 +2353,12 @@
       ],
       "dietaryLabels": [],
       "price": 650,
-      "image": "ice-cream",
+      "image": "dish-passion-fashion-ice-cream-1-d6b35a9d",
       "owner": -1,
       "sourceCategory": "Ice Cream",
       "sourceName": "Passion Fashion Ice Cream",
-      "sourcePortion": "700 g"
+      "sourcePortion": "700 g",
+      "legacyImage": "ice-cream"
     },
     {
       "id": "ice-cream-passion-fashion-ice-cream-cee00ada",
@@ -2256,11 +2370,12 @@
       ],
       "dietaryLabels": [],
       "price": 350,
-      "image": "ice-cream",
+      "image": "dish-sweet-cookies-ice-cream-1-62f28b0d",
       "owner": -1,
       "sourceCategory": "Ice Cream",
       "sourceName": "Passion Fashion Ice Cream",
-      "sourcePortion": "300 g"
+      "sourcePortion": "300 g",
+      "legacyImage": "ice-cream"
     },
     {
       "id": "ice-cream-pistachio-ice-cream-85b17e51",
@@ -2273,11 +2388,12 @@
       ],
       "dietaryLabels": [],
       "price": 400,
-      "image": "ice-cream",
+      "image": "dish-pistachio-ice-cream-1-066cb1ee",
       "owner": -1,
       "sourceCategory": "Ice Cream",
       "sourceName": "Pistachio Ice Cream",
-      "sourcePortion": "300 g"
+      "sourcePortion": "300 g",
+      "legacyImage": "ice-cream"
     },
     {
       "id": "cocktails-aperol-spritz-cocktail-71ee062b",
@@ -2289,11 +2405,12 @@
       ],
       "dietaryLabels": [],
       "price": 400,
-      "image": "cocktail",
+      "image": "dish-aperol-spritz-cocktail-1-8e08aa29",
       "owner": -1,
       "sourceCategory": "Cocktails",
       "sourceName": "Aperol Spritz Cocktail",
-      "sourcePortion": "330 ml"
+      "sourcePortion": "330 ml",
+      "legacyImage": "cocktail"
     },
     {
       "id": "cocktails-mojito-cocktail-11329ec5",
@@ -2303,11 +2420,12 @@
       "allergens": [],
       "dietaryLabels": [],
       "price": 400,
-      "image": "cocktail",
+      "image": "dish-alcoholic-mojito-cocktail-1-bce289f5",
       "owner": -1,
       "sourceCategory": "Cocktails",
       "sourceName": "Mojito Cocktail",
-      "sourcePortion": "330 ml"
+      "sourcePortion": "330 ml",
+      "legacyImage": "cocktail"
     },
     {
       "id": "cocktails-mojito-cocktail-n-a-512bb650",
@@ -2317,11 +2435,12 @@
       "allergens": [],
       "dietaryLabels": [],
       "price": 350,
-      "image": "cocktail",
+      "image": "dish-mojito-cocktail-1-f419c136",
       "owner": -1,
       "sourceCategory": "Cocktails",
       "sourceName": "Mojito Cocktail N/A",
-      "sourcePortion": "330 ml"
+      "sourcePortion": "330 ml",
+      "legacyImage": "cocktail"
     },
     {
       "id": "cocktails-pina-coco-07895ea8",
@@ -2331,11 +2450,12 @@
       "allergens": [],
       "dietaryLabels": [],
       "price": 400,
-      "image": "cocktail",
+      "image": "dish-cocktail-pina-colada-1-ae0c39a4",
       "owner": -1,
       "sourceCategory": "Cocktails",
       "sourceName": "Pina Coco",
-      "sourcePortion": "330 ml"
+      "sourcePortion": "330 ml",
+      "legacyImage": "cocktail"
     },
     {
       "id": "cocktails-pina-coco-n-a-b4247329",
@@ -2347,11 +2467,12 @@
       ],
       "dietaryLabels": [],
       "price": 350,
-      "image": "cocktail",
+      "image": "dish-pi-a-colada-cocktail-1-38aaaf15",
       "owner": -1,
       "sourceCategory": "Cocktails",
       "sourceName": "Pina Coco N/A",
-      "sourcePortion": "330 ml"
+      "sourcePortion": "330 ml",
+      "legacyImage": "cocktail"
     },
     {
       "id": "cocktails-pink-berry-tonic-6e3bf7e4",
@@ -2361,11 +2482,12 @@
       "allergens": [],
       "dietaryLabels": [],
       "price": 400,
-      "image": "cocktail",
+      "image": "dish-gin-tonic-1-5cfdef79",
       "owner": -1,
       "sourceCategory": "Cocktails",
       "sourceName": "Pink berry tonic",
-      "sourcePortion": "400 ml"
+      "sourcePortion": "400 ml",
+      "legacyImage": "cocktail"
     },
     {
       "id": "cocktails-sex-on-the-beach-91d8a9ae",
@@ -2375,11 +2497,12 @@
       "allergens": [],
       "dietaryLabels": [],
       "price": 400,
-      "image": "cocktail",
+      "image": "dish-sex-on-the-beach-1-3bb2ea85",
       "owner": -1,
       "sourceCategory": "Cocktails",
       "sourceName": "Sex on the Beach",
-      "sourcePortion": "400 ml"
+      "sourcePortion": "400 ml",
+      "legacyImage": "cocktail"
     },
     {
       "id": "cocktails-cosmopolitan-bda44df8",
@@ -2389,11 +2512,12 @@
       "allergens": [],
       "dietaryLabels": [],
       "price": 400,
-      "image": "cocktail",
+      "image": "dish-aperol-spritz-cocktail-1-bf58934e",
       "owner": -1,
       "sourceCategory": "Cocktails",
       "sourceName": "Cosmopolitan",
-      "sourcePortion": "180 ml"
+      "sourcePortion": "180 ml",
+      "legacyImage": "cocktail"
     },
     {
       "id": "cocktails-rose-sangria-cocktail-ddd4d70e",
@@ -2405,11 +2529,12 @@
       ],
       "dietaryLabels": [],
       "price": 350,
-      "image": "cocktail",
+      "image": "dish-ros-sangria-cocktail-2-fad29604",
       "owner": -1,
       "sourceCategory": "Cocktails",
       "sourceName": "Rosé Sangria Cocktail",
-      "sourcePortion": "350 ml"
+      "sourcePortion": "350 ml",
+      "legacyImage": "cocktail"
     },
     {
       "id": "cocktails-rose-sangria-cocktail-1l-9af7ffa3",
@@ -2421,11 +2546,12 @@
       ],
       "dietaryLabels": [],
       "price": 750,
-      "image": "cocktail",
+      "image": "dish-ros-sangria-cocktail-1l-2-66d91bfc",
       "owner": -1,
       "sourceCategory": "Cocktails",
       "sourceName": "Rosé Sangria Cocktail – 1L",
-      "sourcePortion": "1000 ml"
+      "sourcePortion": "1000 ml",
+      "legacyImage": "cocktail"
     },
     {
       "id": "cocktails-tropical-cocktail-572a7df7",
@@ -2435,11 +2561,12 @@
       "allergens": [],
       "dietaryLabels": [],
       "price": 300,
-      "image": "cocktail",
+      "image": "dish-tropical-cocktail-1-1fe5dde2",
       "owner": -1,
       "sourceCategory": "Cocktails",
       "sourceName": "Tropical Cocktail",
-      "sourcePortion": "330 ml"
+      "sourcePortion": "330 ml",
+      "legacyImage": "cocktail"
     },
     {
       "id": "cocktails-blackcurrant-lemonade-821b3890",
@@ -2449,11 +2576,12 @@
       "allergens": [],
       "dietaryLabels": [],
       "price": 300,
-      "image": "cocktail",
+      "image": "dish-blackcurrant-lemonade-1-eaec1ab4",
       "owner": -1,
       "sourceCategory": "Cocktails",
       "sourceName": "Blackcurrant Lemonade",
-      "sourcePortion": "330 ml"
+      "sourcePortion": "330 ml",
+      "legacyImage": "cocktail"
     },
     {
       "id": "cocktails-lemonade-dd5adb8b",
@@ -2463,11 +2591,12 @@
       "allergens": [],
       "dietaryLabels": [],
       "price": 250,
-      "image": "cocktail",
+      "image": "dish-lemonade-1-18c2feeb",
       "owner": -1,
       "sourceCategory": "Cocktails",
       "sourceName": "Lemonade",
-      "sourcePortion": "330 ml"
+      "sourcePortion": "330 ml",
+      "legacyImage": "cocktail"
     },
     {
       "id": "cocktails-passion-fruit-lemonade-79dc212c",
@@ -2477,11 +2606,12 @@
       "allergens": [],
       "dietaryLabels": [],
       "price": 300,
-      "image": "cocktail",
+      "image": "dish-passion-fruit-lemonade-1-bec56d4e",
       "owner": -1,
       "sourceCategory": "Cocktails",
       "sourceName": "Passion Fruit Lemonade",
-      "sourcePortion": "330 ml"
+      "sourcePortion": "330 ml",
+      "legacyImage": "cocktail"
     },
     {
       "id": "cocktails-chocolate-freakshake-266b07e2",
@@ -2493,11 +2623,12 @@
       ],
       "dietaryLabels": [],
       "price": 500,
-      "image": "milkshake",
+      "image": "dish-strawberry-freakshake-1-defaa64e",
       "owner": -1,
       "sourceCategory": "Cocktails",
       "sourceName": "Chocolate Freakshake",
-      "sourcePortion": "300 ml"
+      "sourcePortion": "300 ml",
+      "legacyImage": "milkshake"
     },
     {
       "id": "cocktails-banana-mango-milkshake-8246654f",
@@ -2509,11 +2640,12 @@
       ],
       "dietaryLabels": [],
       "price": 300,
-      "image": "milkshake",
+      "image": "dish-banana-mango-milkshake-1-c177ceed",
       "owner": -1,
       "sourceCategory": "Cocktails",
       "sourceName": "Banana-Mango Milkshake",
-      "sourcePortion": "300 ml"
+      "sourcePortion": "300 ml",
+      "legacyImage": "milkshake"
     },
     {
       "id": "cold-drinks-chocolate-freakshake-d2284cf6",
@@ -2525,11 +2657,12 @@
       ],
       "dietaryLabels": [],
       "price": 500,
-      "image": "milkshake",
+      "image": "dish-strawberry-freakshake-1-defaa64e",
       "owner": -1,
       "sourceCategory": "Beverages",
       "sourceName": "Chocolate Freakshake",
-      "sourcePortion": "300 ml"
+      "sourcePortion": "300 ml",
+      "legacyImage": "milkshake"
     },
     {
       "id": "cold-drinks-salted-caramel-milkshake-b0476673",
@@ -2542,11 +2675,12 @@
       ],
       "dietaryLabels": [],
       "price": 300,
-      "image": "milkshake",
+      "image": "dish-salted-caramel-1-cd7a4099",
       "owner": -1,
       "sourceCategory": "Beverages",
       "sourceName": "Salted Caramel Milkshake",
-      "sourcePortion": ""
+      "sourcePortion": "",
+      "legacyImage": "milkshake"
     },
     {
       "id": "cold-drinks-banana-mango-milkshake-8d6cac8c",
@@ -2558,11 +2692,12 @@
       ],
       "dietaryLabels": [],
       "price": 300,
-      "image": "milkshake",
+      "image": "dish-banana-mango-milkshake-1-c177ceed",
       "owner": -1,
       "sourceCategory": "Beverages",
       "sourceName": "Banana-Mango Milkshake",
-      "sourcePortion": "300 ml"
+      "sourcePortion": "300 ml",
+      "legacyImage": "milkshake"
     },
     {
       "id": "cold-drinks-chocolate-milkshake-8a133edd",
@@ -2574,11 +2709,12 @@
       ],
       "dietaryLabels": [],
       "price": 300,
-      "image": "milkshake",
+      "image": "dish-chocolate-milkshake-1-86723f2f",
       "owner": -1,
       "sourceCategory": "Beverages",
       "sourceName": "Chocolate Milkshake",
-      "sourcePortion": "300 ml"
+      "sourcePortion": "300 ml",
+      "legacyImage": "milkshake"
     },
     {
       "id": "cold-drinks-strawberry-milkshake-76291c66",
@@ -2590,11 +2726,12 @@
       ],
       "dietaryLabels": [],
       "price": 300,
-      "image": "milkshake",
+      "image": "dish-strawberry-milkshake-1-2233a50e",
       "owner": -1,
       "sourceCategory": "Beverages",
       "sourceName": "Strawberry Milkshake",
-      "sourcePortion": "300 ml"
+      "sourcePortion": "300 ml",
+      "legacyImage": "milkshake"
     },
     {
       "id": "cold-drinks-vanilla-milkshake-98b94460",
@@ -2606,11 +2743,12 @@
       ],
       "dietaryLabels": [],
       "price": 300,
-      "image": "milkshake",
+      "image": "dish-vanilla-milkshake-1-38f2bb75",
       "owner": -1,
       "sourceCategory": "Beverages",
       "sourceName": "Vanilla Milkshake",
-      "sourcePortion": "300 ml"
+      "sourcePortion": "300 ml",
+      "legacyImage": "milkshake"
     },
     {
       "id": "cold-drinks-almond-ice-latte-bfad03c7",
@@ -2622,11 +2760,12 @@
       ],
       "dietaryLabels": [],
       "price": 300,
-      "image": "coffee",
+      "image": "dish-iced-latte-1-0d751292",
       "owner": -1,
       "sourceCategory": "Beverages",
       "sourceName": "Almond Ice Latte",
-      "sourcePortion": "350 ml"
+      "sourcePortion": "350 ml",
+      "legacyImage": "coffee"
     },
     {
       "id": "cold-drinks-espresso-tonic-0939d8a2",
@@ -2636,11 +2775,12 @@
       "allergens": [],
       "dietaryLabels": [],
       "price": 250,
-      "image": "coffee",
+      "image": "dish-espresso-tonic-1-c517ac6f",
       "owner": -1,
       "sourceCategory": "Beverages",
       "sourceName": "Espresso Tonic",
-      "sourcePortion": "330 ml"
+      "sourcePortion": "330 ml",
+      "legacyImage": "coffee"
     },
     {
       "id": "cold-drinks-ice-latte-15e2ed9d",
@@ -2652,11 +2792,12 @@
       ],
       "dietaryLabels": [],
       "price": 250,
-      "image": "coffee",
+      "image": "dish-iced-latte-1-03606971",
       "owner": -1,
       "sourceCategory": "Beverages",
       "sourceName": "Ice Latte",
-      "sourcePortion": "350 ml"
+      "sourcePortion": "350 ml",
+      "legacyImage": "coffee"
     },
     {
       "id": "cold-drinks-mojito-cocktail-n-a-98d39c40",
@@ -2666,11 +2807,12 @@
       "allergens": [],
       "dietaryLabels": [],
       "price": 350,
-      "image": "lemonade",
+      "image": "dish-mojito-cocktail-1-f419c136",
       "owner": -1,
       "sourceCategory": "Beverages",
       "sourceName": "Mojito Cocktail N/A",
-      "sourcePortion": "330 ml"
+      "sourcePortion": "330 ml",
+      "legacyImage": "lemonade"
     },
     {
       "id": "cold-drinks-blackcurrant-lemonade-ff072eb2",
@@ -2680,11 +2822,12 @@
       "allergens": [],
       "dietaryLabels": [],
       "price": 300,
-      "image": "lemonade",
+      "image": "dish-blackcurrant-lemonade-1-eaec1ab4",
       "owner": -1,
       "sourceCategory": "Beverages",
       "sourceName": "Blackcurrant Lemonade",
-      "sourcePortion": "330 ml"
+      "sourcePortion": "330 ml",
+      "legacyImage": "lemonade"
     },
     {
       "id": "cold-drinks-cherry-cola-cocktail-268895b6",
@@ -2694,11 +2837,12 @@
       "allergens": [],
       "dietaryLabels": [],
       "price": 200,
-      "image": "lemonade",
+      "image": "dish-cherry-pepsi-cocktail-1-824023e0",
       "owner": -1,
       "sourceCategory": "Beverages",
       "sourceName": "Cherry Cola Cocktail",
-      "sourcePortion": "330 ml"
+      "sourcePortion": "330 ml",
+      "legacyImage": "lemonade"
     },
     {
       "id": "cold-drinks-lemonade-82be9f65",
@@ -2708,11 +2852,12 @@
       "allergens": [],
       "dietaryLabels": [],
       "price": 250,
-      "image": "lemonade",
+      "image": "dish-lemonade-1-18c2feeb",
       "owner": -1,
       "sourceCategory": "Beverages",
       "sourceName": "Lemonade",
-      "sourcePortion": "330 ml"
+      "sourcePortion": "330 ml",
+      "legacyImage": "lemonade"
     },
     {
       "id": "cold-drinks-lemonade-1-l-d24c1135",
@@ -2722,11 +2867,12 @@
       "allergens": [],
       "dietaryLabels": [],
       "price": 550,
-      "image": "lemonade",
+      "image": "dish-lemonade-1-l-1-8bd619cb",
       "owner": -1,
       "sourceCategory": "Beverages",
       "sourceName": "Lemonade 1 L",
-      "sourcePortion": "1000 ml"
+      "sourcePortion": "1000 ml",
+      "legacyImage": "lemonade"
     },
     {
       "id": "cold-drinks-orangeade-a199b94d",
@@ -2736,11 +2882,12 @@
       "allergens": [],
       "dietaryLabels": [],
       "price": 250,
-      "image": "lemonade",
+      "image": "dish-orangeade-1-3003be90",
       "owner": -1,
       "sourceCategory": "Beverages",
       "sourceName": "Orangeade",
-      "sourcePortion": "330 ml"
+      "sourcePortion": "330 ml",
+      "legacyImage": "lemonade"
     },
     {
       "id": "cold-drinks-orangeade-1-l-8a7b7b3d",
@@ -2750,11 +2897,12 @@
       "allergens": [],
       "dietaryLabels": [],
       "price": 550,
-      "image": "lemonade",
+      "image": "dish-orangeade-1-l-1-6398ed0f",
       "owner": -1,
       "sourceCategory": "Beverages",
       "sourceName": "Orangeade 1 L",
-      "sourcePortion": "1000 ml"
+      "sourcePortion": "1000 ml",
+      "legacyImage": "lemonade"
     },
     {
       "id": "cold-drinks-passion-fruit-lemonade-5bace38d",
@@ -2764,11 +2912,12 @@
       "allergens": [],
       "dietaryLabels": [],
       "price": 300,
-      "image": "lemonade",
+      "image": "dish-passion-fruit-lemonade-1-bec56d4e",
       "owner": -1,
       "sourceCategory": "Beverages",
       "sourceName": "Passion Fruit Lemonade",
-      "sourcePortion": "330 ml"
+      "sourcePortion": "330 ml",
+      "legacyImage": "lemonade"
     },
     {
       "id": "cold-drinks-pina-coco-n-a-2374d962",
@@ -2780,11 +2929,12 @@
       ],
       "dietaryLabels": [],
       "price": 350,
-      "image": "lemonade",
+      "image": "dish-pi-a-colada-cocktail-1-38aaaf15",
       "owner": -1,
       "sourceCategory": "Beverages",
       "sourceName": "Pina Coco N/A",
-      "sourcePortion": "330 ml"
+      "sourcePortion": "330 ml",
+      "legacyImage": "lemonade"
     },
     {
       "id": "cold-drinks-raspberry-fizz-lemonade-30b24db5",
@@ -2794,11 +2944,12 @@
       "allergens": [],
       "dietaryLabels": [],
       "price": 300,
-      "image": "lemonade",
+      "image": "dish-raspberry-fizz-lemonade-1-41bf0973",
       "owner": -1,
       "sourceCategory": "Beverages",
       "sourceName": "Raspberry Fizz Lemonade",
-      "sourcePortion": "330 ml"
+      "sourcePortion": "330 ml",
+      "legacyImage": "lemonade"
     },
     {
       "id": "cold-drinks-tropical-cocktail-897adade",
@@ -2808,11 +2959,12 @@
       "allergens": [],
       "dietaryLabels": [],
       "price": 300,
-      "image": "lemonade",
+      "image": "dish-tropical-cocktail-1-1fe5dde2",
       "owner": -1,
       "sourceCategory": "Beverages",
       "sourceName": "Tropical Cocktail",
-      "sourcePortion": "330 ml"
+      "sourcePortion": "330 ml",
+      "legacyImage": "lemonade"
     },
     {
       "id": "cold-drinks-fresh-grapefruit-juice-200-ml-5ff318a7",
@@ -2822,11 +2974,12 @@
       "allergens": [],
       "dietaryLabels": [],
       "price": 300,
-      "image": "lemonade",
+      "image": "dish-freshly-squeezed-grapefruit-juice-1-e00fe12d",
       "owner": -1,
       "sourceCategory": "Beverages",
       "sourceName": "Fresh Grapefruit Juice 200 ml",
-      "sourcePortion": "200 ml"
+      "sourcePortion": "200 ml",
+      "legacyImage": "lemonade"
     },
     {
       "id": "cold-drinks-fresh-orange-juice-200-ml-896fc7dc",
@@ -2836,11 +2989,12 @@
       "allergens": [],
       "dietaryLabels": [],
       "price": 300,
-      "image": "lemonade",
+      "image": "dish-freshly-squeezed-orange-juice-1-fd8df88b",
       "owner": -1,
       "sourceCategory": "Beverages",
       "sourceName": "Fresh Orange Juice 200 ml",
-      "sourcePortion": "200 ml"
+      "sourcePortion": "200 ml",
+      "legacyImage": "lemonade"
     },
     {
       "id": "cold-drinks-apple-juice-a0454dbf",
@@ -2850,11 +3004,12 @@
       "allergens": [],
       "dietaryLabels": [],
       "price": 450,
-      "image": "lemonade",
+      "image": "dish-apple-juice-1-0b19b678",
       "owner": -1,
       "sourceCategory": "Beverages",
       "sourceName": "Apple Juice",
-      "sourcePortion": "950 ml"
+      "sourcePortion": "950 ml",
+      "legacyImage": "lemonade"
     },
     {
       "id": "cold-drinks-mango-juice-a77085e0",
@@ -2864,11 +3019,12 @@
       "allergens": [],
       "dietaryLabels": [],
       "price": 450,
-      "image": "lemonade",
+      "image": "dish-mango-juice-1-3b4c7b6c",
       "owner": -1,
       "sourceCategory": "Beverages",
       "sourceName": "Mango Juice",
-      "sourcePortion": "950 ml"
+      "sourcePortion": "950 ml",
+      "legacyImage": "lemonade"
     },
     {
       "id": "cold-drinks-coca-cola-0-5-2e10c375",
@@ -2878,11 +3034,12 @@
       "allergens": [],
       "dietaryLabels": [],
       "price": 150,
-      "image": "lemonade",
+      "image": "dish-pepsi-2l-1-44c271de",
       "owner": -1,
       "sourceCategory": "Beverages",
       "sourceName": "Coca-Cola 0,5",
-      "sourcePortion": "500 ml"
+      "sourcePortion": "500 ml",
+      "legacyImage": "lemonade"
     },
     {
       "id": "cold-drinks-sprite-0-5-a6caa8cb",
@@ -2892,11 +3049,12 @@
       "allergens": [],
       "dietaryLabels": [],
       "price": 150,
-      "image": "lemonade",
+      "image": "dish-coca-cola-0-5-1-60f5c67b",
       "owner": -1,
       "sourceCategory": "Beverages",
       "sourceName": "Sprite 0,5",
-      "sourcePortion": "500 ml"
+      "sourcePortion": "500 ml",
+      "legacyImage": "lemonade"
     },
     {
       "id": "cold-drinks-dorna-carbo-0-5-32579912",
@@ -2906,11 +3064,12 @@
       "allergens": [],
       "dietaryLabels": [],
       "price": 150,
-      "image": "lemonade",
+      "image": "dish-fanta-0-5-1-058ba012",
       "owner": -1,
       "sourceCategory": "Beverages",
       "sourceName": "Dorna carbo 0,5",
-      "sourcePortion": "500 ml"
+      "sourcePortion": "500 ml",
+      "legacyImage": "lemonade"
     },
     {
       "id": "cold-drinks-dorna-plata-0-5-17c9721f",
@@ -2920,11 +3079,12 @@
       "allergens": [],
       "dietaryLabels": [],
       "price": 150,
-      "image": "lemonade",
+      "image": "dish-dorna-carbo-0-5-1-6b639b6c",
       "owner": -1,
       "sourceCategory": "Beverages",
       "sourceName": "Dorna plată 0,5",
-      "sourcePortion": "500 ml"
+      "sourcePortion": "500 ml",
+      "legacyImage": "lemonade"
     },
     {
       "id": "hot-drinks-gluhwein-0a3f340e",
@@ -2936,11 +3096,12 @@
       ],
       "dietaryLabels": [],
       "price": 250,
-      "image": "wine",
+      "image": "dish-gl-hwein-1-7b8b0d0f",
       "owner": -1,
       "sourceCategory": "Hot Beverages",
       "sourceName": "Glühwein",
-      "sourcePortion": "220 ml"
+      "sourcePortion": "220 ml",
+      "legacyImage": "wine"
     },
     {
       "id": "hot-drinks-blackcurrant-tea-80565e74",
@@ -2950,11 +3111,12 @@
       "allergens": [],
       "dietaryLabels": [],
       "price": 350,
-      "image": "tea",
+      "image": "dish-blackcurrant-tea-1-d0eac386",
       "owner": -1,
       "sourceCategory": "Hot Beverages",
       "sourceName": "Blackcurrant Tea",
-      "sourcePortion": "400 ml"
+      "sourcePortion": "400 ml",
+      "legacyImage": "tea"
     },
     {
       "id": "hot-drinks-sea-buckthorn-tea-3bfbaf88",
@@ -2964,11 +3126,12 @@
       "allergens": [],
       "dietaryLabels": [],
       "price": 350,
-      "image": "tea",
+      "image": "dish-sea-buckthorn-tea-2-ef5711a8",
       "owner": -1,
       "sourceCategory": "Hot Beverages",
       "sourceName": "Sea Buckthorn Tea",
-      "sourcePortion": "400 ml"
+      "sourcePortion": "400 ml",
+      "legacyImage": "tea"
     },
     {
       "id": "hot-drinks-signature-mint-tea-dbcd4d90",
@@ -2978,11 +3141,12 @@
       "allergens": [],
       "dietaryLabels": [],
       "price": 350,
-      "image": "tea",
+      "image": "dish-signature-mint-tea-1-887cc605",
       "owner": -1,
       "sourceCategory": "Hot Beverages",
       "sourceName": "Signature Mint Tea",
-      "sourcePortion": "400 ml"
+      "sourcePortion": "400 ml",
+      "legacyImage": "tea"
     },
     {
       "id": "hot-drinks-almond-hot-cocoa-b6b2979e",
@@ -2994,11 +3158,12 @@
       ],
       "dietaryLabels": [],
       "price": 250,
-      "image": "coffee",
+      "image": "dish-almond-hot-cocoa-1-0ec2e10a",
       "owner": -1,
       "sourceCategory": "Hot Beverages",
       "sourceName": "Almond Hot Cocoa",
-      "sourcePortion": "250 ml"
+      "sourcePortion": "250 ml",
+      "legacyImage": "coffee"
     },
     {
       "id": "hot-drinks-almond-latte-5ec845b5",
@@ -3010,11 +3175,12 @@
       ],
       "dietaryLabels": [],
       "price": 250,
-      "image": "coffee",
+      "image": "dish-almond-latte-1-0253859c",
       "owner": -1,
       "sourceCategory": "Hot Beverages",
       "sourceName": "Almond Latte",
-      "sourcePortion": "250 ml"
+      "sourcePortion": "250 ml",
+      "legacyImage": "coffee"
     },
     {
       "id": "hot-drinks-coffee-latte-05442f89",
@@ -3026,11 +3192,12 @@
       ],
       "dietaryLabels": [],
       "price": 200,
-      "image": "coffee",
+      "image": "dish-coffee-latte-1-76cde390",
       "owner": -1,
       "sourceCategory": "Hot Beverages",
       "sourceName": "Coffee Latte",
-      "sourcePortion": "250 ml"
+      "sourcePortion": "250 ml",
+      "legacyImage": "coffee"
     },
     {
       "id": "hot-drinks-espresso-1b1d4d3e",
@@ -3040,11 +3207,12 @@
       "allergens": [],
       "dietaryLabels": [],
       "price": 150,
-      "image": "coffee",
+      "image": "dish-espresso-1-18af814f",
       "owner": -1,
       "sourceCategory": "Hot Beverages",
       "sourceName": "Espresso",
-      "sourcePortion": "30 ml"
+      "sourcePortion": "30 ml",
+      "legacyImage": "coffee"
     },
     {
       "id": "hot-drinks-hot-cocoa-b6c25a49",
@@ -3056,11 +3224,12 @@
       ],
       "dietaryLabels": [],
       "price": 200,
-      "image": "coffee",
+      "image": "dish-hot-cocoa-1-05e6b71f",
       "owner": -1,
       "sourceCategory": "Hot Beverages",
       "sourceName": "Hot Cocoa",
-      "sourcePortion": "250 ml"
+      "sourcePortion": "250 ml",
+      "legacyImage": "coffee"
     },
     {
       "id": "hot-drinks-americano-e7f2f10e",
@@ -3070,11 +3239,12 @@
       "allergens": [],
       "dietaryLabels": [],
       "price": 150,
-      "image": "coffee",
+      "image": "dish-americano-1-b6e991a0",
       "owner": -1,
       "sourceCategory": "Hot Beverages",
       "sourceName": "Americano",
-      "sourcePortion": "100 ml"
+      "sourcePortion": "100 ml",
+      "legacyImage": "coffee"
     },
     {
       "id": "hot-drinks-cappuccino-04e2c412",
@@ -3086,11 +3256,12 @@
       ],
       "dietaryLabels": [],
       "price": 200,
-      "image": "coffee",
+      "image": "dish-cappuccino-1-9ed71327",
       "owner": -1,
       "sourceCategory": "Hot Beverages",
       "sourceName": "Cappuccino",
-      "sourcePortion": "150 ml"
+      "sourcePortion": "150 ml",
+      "legacyImage": "coffee"
     },
     {
       "id": "bar-gluhwein-8301a976",
@@ -3102,11 +3273,12 @@
       ],
       "dietaryLabels": [],
       "price": 250,
-      "image": "wine",
+      "image": "dish-gl-hwein-1-7b8b0d0f",
       "owner": -1,
       "sourceCategory": "Alcohol",
       "sourceName": "Glühwein",
-      "sourcePortion": "220 ml"
+      "sourcePortion": "220 ml",
+      "legacyImage": "wine"
     },
     {
       "id": "bar-aperol-spritz-cocktail-3277d20a",
@@ -3118,11 +3290,12 @@
       ],
       "dietaryLabels": [],
       "price": 400,
-      "image": "cocktail",
+      "image": "dish-aperol-spritz-cocktail-1-8e08aa29",
       "owner": -1,
       "sourceCategory": "Alcohol",
       "sourceName": "Aperol Spritz Cocktail",
-      "sourcePortion": "330 ml"
+      "sourcePortion": "330 ml",
+      "legacyImage": "cocktail"
     },
     {
       "id": "bar-mojito-cocktail-1eaa1b91",
@@ -3132,11 +3305,12 @@
       "allergens": [],
       "dietaryLabels": [],
       "price": 400,
-      "image": "cocktail",
+      "image": "dish-alcoholic-mojito-cocktail-1-bce289f5",
       "owner": -1,
       "sourceCategory": "Alcohol",
       "sourceName": "Mojito Cocktail",
-      "sourcePortion": "330 ml"
+      "sourcePortion": "330 ml",
+      "legacyImage": "cocktail"
     },
     {
       "id": "bar-mojito-cocktail-n-a-c00f7def",
@@ -3146,11 +3320,12 @@
       "allergens": [],
       "dietaryLabels": [],
       "price": 350,
-      "image": "cocktail",
+      "image": "dish-mojito-cocktail-1-f419c136",
       "owner": -1,
       "sourceCategory": "Alcohol",
       "sourceName": "Mojito Cocktail N/A",
-      "sourcePortion": "330 ml"
+      "sourcePortion": "330 ml",
+      "legacyImage": "cocktail"
     },
     {
       "id": "bar-pina-coco-3f069060",
@@ -3160,11 +3335,12 @@
       "allergens": [],
       "dietaryLabels": [],
       "price": 400,
-      "image": "cocktail",
+      "image": "dish-cocktail-pina-colada-1-ae0c39a4",
       "owner": -1,
       "sourceCategory": "Alcohol",
       "sourceName": "Pina Coco",
-      "sourcePortion": "330 ml"
+      "sourcePortion": "330 ml",
+      "legacyImage": "cocktail"
     },
     {
       "id": "bar-pink-berry-tonic-a3c46c5d",
@@ -3174,11 +3350,12 @@
       "allergens": [],
       "dietaryLabels": [],
       "price": 400,
-      "image": "cocktail",
+      "image": "dish-gin-tonic-1-5cfdef79",
       "owner": -1,
       "sourceCategory": "Alcohol",
       "sourceName": "Pink berry tonic",
-      "sourcePortion": "400 ml"
+      "sourcePortion": "400 ml",
+      "legacyImage": "cocktail"
     },
     {
       "id": "bar-sex-on-the-beach-98bd3b4c",
@@ -3188,11 +3365,12 @@
       "allergens": [],
       "dietaryLabels": [],
       "price": 400,
-      "image": "cocktail",
+      "image": "dish-sex-on-the-beach-1-3bb2ea85",
       "owner": -1,
       "sourceCategory": "Alcohol",
       "sourceName": "Sex on the Beach",
-      "sourcePortion": "400 ml"
+      "sourcePortion": "400 ml",
+      "legacyImage": "cocktail"
     },
     {
       "id": "bar-cosmopolitan-b08d629f",
@@ -3202,11 +3380,12 @@
       "allergens": [],
       "dietaryLabels": [],
       "price": 400,
-      "image": "cocktail",
+      "image": "dish-aperol-spritz-cocktail-1-bf58934e",
       "owner": -1,
       "sourceCategory": "Alcohol",
       "sourceName": "Cosmopolitan",
-      "sourcePortion": "180 ml"
+      "sourcePortion": "180 ml",
+      "legacyImage": "cocktail"
     },
     {
       "id": "bar-rose-sangria-cocktail-47ecb201",
@@ -3218,11 +3397,12 @@
       ],
       "dietaryLabels": [],
       "price": 350,
-      "image": "cocktail",
+      "image": "dish-ros-sangria-cocktail-2-fad29604",
       "owner": -1,
       "sourceCategory": "Alcohol",
       "sourceName": "Rosé Sangria Cocktail",
-      "sourcePortion": "350 ml"
+      "sourcePortion": "350 ml",
+      "legacyImage": "cocktail"
     },
     {
       "id": "bar-rose-sangria-cocktail-1l-29db5fdd",
@@ -3234,11 +3414,12 @@
       ],
       "dietaryLabels": [],
       "price": 750,
-      "image": "cocktail",
+      "image": "dish-ros-sangria-cocktail-1l-2-66d91bfc",
       "owner": -1,
       "sourceCategory": "Alcohol",
       "sourceName": "Rosé Sangria Cocktail – 1L",
-      "sourcePortion": "1000 ml"
+      "sourcePortion": "1000 ml",
+      "legacyImage": "cocktail"
     },
     {
       "id": "bar-red-wine-3498598a",
@@ -3250,11 +3431,12 @@
       ],
       "dietaryLabels": [],
       "price": 650,
-      "image": "wine",
+      "image": "dish-red-wine-1-59dac068",
       "owner": -1,
       "sourceCategory": "Alcohol",
       "sourceName": "Red Wine",
-      "sourcePortion": "1000 ml"
+      "sourcePortion": "1000 ml",
+      "legacyImage": "wine"
     },
     {
       "id": "bar-rose-wine-ad72f9de",
@@ -3266,11 +3448,12 @@
       ],
       "dietaryLabels": [],
       "price": 650,
-      "image": "wine",
+      "image": "dish-ros-wine-1-e49bd011",
       "owner": -1,
       "sourceCategory": "Alcohol",
       "sourceName": "Rosé Wine",
-      "sourcePortion": "1000 ml"
+      "sourcePortion": "1000 ml",
+      "legacyImage": "wine"
     },
     {
       "id": "bar-white-wine-eed435b2",
@@ -3282,11 +3465,12 @@
       ],
       "dietaryLabels": [],
       "price": 650,
-      "image": "wine",
+      "image": "dish-white-wine-1-0587b066",
       "owner": -1,
       "sourceCategory": "Alcohol",
       "sourceName": "White Wine",
-      "sourcePortion": "1000 ml"
+      "sourcePortion": "1000 ml",
+      "legacyImage": "wine"
     },
     {
       "id": "bar-chisinau-draft-beer-cd959243",
@@ -3298,11 +3482,12 @@
       ],
       "dietaryLabels": [],
       "price": 350,
-      "image": "beer",
+      "image": "dish-chi-in-u-draft-beer-1-7c4b3182",
       "owner": -1,
       "sourceCategory": "Alcohol",
       "sourceName": "Chişinău Draft Beer",
-      "sourcePortion": "1000 ml"
+      "sourcePortion": "1000 ml",
+      "legacyImage": "beer"
     },
     {
       "id": "bar-chisinau-light-beer-cd1a8d7f",
@@ -3314,11 +3499,12 @@
       ],
       "dietaryLabels": [],
       "price": 250,
-      "image": "beer",
+      "image": "dish-chi-in-u-light-beer-1-ecfe4ce4",
       "owner": -1,
       "sourceCategory": "Alcohol",
       "sourceName": "Chișinău Light Beer",
-      "sourcePortion": "500 ml"
+      "sourcePortion": "500 ml",
+      "legacyImage": "beer"
     },
     {
       "id": "bar-chisinau-light-beer-dfc48e3a",
@@ -3330,11 +3516,12 @@
       ],
       "dietaryLabels": [],
       "price": 400,
-      "image": "beer",
+      "image": "dish-chi-in-u-light-beer-1-135745db",
       "owner": -1,
       "sourceCategory": "Alcohol",
       "sourceName": "Chișinău Light Beer",
-      "sourcePortion": "2250 ml"
+      "sourcePortion": "2250 ml",
+      "legacyImage": "beer"
     },
     {
       "id": "bar-corona-extra-e8d4b9d6",
@@ -3346,11 +3533,12 @@
       ],
       "dietaryLabels": [],
       "price": 400,
-      "image": "beer",
+      "image": "dish-corona-extra-1-e05e6bcb",
       "owner": -1,
       "sourceCategory": "Alcohol",
       "sourceName": "Corona Extra",
-      "sourcePortion": "355 ml"
+      "sourcePortion": "355 ml",
+      "legacyImage": "beer"
     },
     {
       "id": "bar-efes-non-alcoholic-f9c605fc",
@@ -3362,11 +3550,12 @@
       ],
       "dietaryLabels": [],
       "price": 250,
-      "image": "beer",
+      "image": "dish-efes-non-alcoholic-1-d3bfc259",
       "owner": -1,
       "sourceCategory": "Alcohol",
       "sourceName": "Efes Non-Alcoholic",
-      "sourcePortion": "500 ml"
+      "sourcePortion": "500 ml",
+      "legacyImage": "beer"
     },
     {
       "id": "bar-efes-pilsner-beer-473f5326",
@@ -3378,11 +3567,12 @@
       ],
       "dietaryLabels": [],
       "price": 250,
-      "image": "beer",
+      "image": "dish-efes-pilsner-beer-1-7df0a353",
       "owner": -1,
       "sourceCategory": "Alcohol",
       "sourceName": "Efes Pilsner Beer",
-      "sourcePortion": "500 ml"
+      "sourcePortion": "500 ml",
+      "legacyImage": "beer"
     },
     {
       "id": "bar-finch-beer-854e60bb",
@@ -3394,11 +3584,12 @@
       ],
       "dietaryLabels": [],
       "price": 250,
-      "image": "beer",
+      "image": "dish-finch-beer-1-74fa6ae2",
       "owner": -1,
       "sourceCategory": "Alcohol",
       "sourceName": "Finch Beer",
-      "sourcePortion": "500 ml"
+      "sourcePortion": "500 ml",
+      "legacyImage": "beer"
     },
     {
       "id": "bar-franziskaner-weissbier-ffe6c361",
@@ -3411,11 +3602,12 @@
       ],
       "dietaryLabels": [],
       "price": 450,
-      "image": "beer",
+      "image": "dish-franziskaner-weissbier-1-3b8dac8d",
       "owner": -1,
       "sourceCategory": "Alcohol",
       "sourceName": "Franziskaner Weissbier",
-      "sourcePortion": "500 ml"
+      "sourcePortion": "500 ml",
+      "legacyImage": "beer"
     },
     {
       "id": "bar-kozel-cerny-beer-bbcf2cdd",
@@ -3427,11 +3619,12 @@
       ],
       "dietaryLabels": [],
       "price": 250,
-      "image": "beer",
+      "image": "dish-kozel-ern-beer-1-6316c12a",
       "owner": -1,
       "sourceCategory": "Alcohol",
       "sourceName": "Kozel Černý Beer",
-      "sourcePortion": "500 ml"
+      "sourcePortion": "500 ml",
+      "legacyImage": "beer"
     },
     {
       "id": "bar-kozel-svetly-1b70491e",
@@ -3443,11 +3636,12 @@
       ],
       "dietaryLabels": [],
       "price": 250,
-      "image": "beer",
+      "image": "dish-kozel-svetly-1-dbccec99",
       "owner": -1,
       "sourceCategory": "Alcohol",
       "sourceName": "Kozel Svetly",
-      "sourcePortion": "500 ml"
+      "sourcePortion": "500 ml",
+      "legacyImage": "beer"
     },
     {
       "id": "bar-timisoreana-c44467fd",
@@ -3459,11 +3653,12 @@
       ],
       "dietaryLabels": [],
       "price": 250,
-      "image": "beer",
+      "image": "dish-timi-oreana-1-4a06a278",
       "owner": -1,
       "sourceCategory": "Alcohol",
       "sourceName": "Timișoreana",
-      "sourcePortion": "500 ml"
+      "sourcePortion": "500 ml",
+      "legacyImage": "beer"
     },
     {
       "id": "bar-bostavan-chardonnay-white-dry-wine-528afa2f",
@@ -3475,11 +3670,12 @@
       ],
       "dietaryLabels": [],
       "price": 850,
-      "image": "wine",
+      "image": "dish-bostavan-chardonnay-white-dry-wine-1-2ba74f7e",
       "owner": -1,
       "sourceCategory": "Alcohol",
       "sourceName": "Bostavan Chardonnay White Dry Wine",
-      "sourcePortion": "750 ml"
+      "sourcePortion": "750 ml",
+      "legacyImage": "wine"
     },
     {
       "id": "bar-bostavan-merlot-red-dry-wine-a4770d22",
@@ -3491,11 +3687,12 @@
       ],
       "dietaryLabels": [],
       "price": 850,
-      "image": "wine",
+      "image": "dish-bostavan-merlot-red-dry-wine-1-9b36365e",
       "owner": -1,
       "sourceCategory": "Alcohol",
       "sourceName": "Bostavan Merlot Red Dry Wine",
-      "sourcePortion": "750 ml"
+      "sourcePortion": "750 ml",
+      "legacyImage": "wine"
     },
     {
       "id": "bar-bostavan-muscat-rose-3447f158",
@@ -3507,11 +3704,12 @@
       ],
       "dietaryLabels": [],
       "price": 850,
-      "image": "wine",
+      "image": "dish-bostavan-muscat-ros-1-0c254d33",
       "owner": -1,
       "sourceCategory": "Alcohol",
       "sourceName": "Bostavan Muscat Rosé",
-      "sourcePortion": "750 ml"
+      "sourcePortion": "750 ml",
+      "legacyImage": "wine"
     },
     {
       "id": "bar-purcari-nocturne-cabernet-sauvignon-red-sec-532ea603",
@@ -3523,11 +3721,12 @@
       ],
       "dietaryLabels": [],
       "price": 1350,
-      "image": "wine",
+      "image": "dish-purcari-nocturne-cabernet-sauvignon-red-sec-1-62837af8",
       "owner": -1,
       "sourceCategory": "Alcohol",
       "sourceName": "PURCARI Nocturne Cabernet Sauvignon Red Sec",
-      "sourcePortion": "750 ml"
+      "sourcePortion": "750 ml",
+      "legacyImage": "wine"
     },
     {
       "id": "bar-purcari-nocturne-pinot-grigio-dry-wine-1564eec2",
@@ -3539,11 +3738,12 @@
       ],
       "dietaryLabels": [],
       "price": 1350,
-      "image": "wine",
+      "image": "dish-purcari-nocturne-pinot-grigio-dry-wine-1-26184e79",
       "owner": -1,
       "sourceCategory": "Alcohol",
       "sourceName": "Purcari Nocturne Pinot Grigio Dry Wine",
-      "sourcePortion": "750 ml"
+      "sourcePortion": "750 ml",
+      "legacyImage": "wine"
     },
     {
       "id": "bar-purcari-nocturne-rose-sec-96e443a9",
@@ -3555,11 +3755,12 @@
       ],
       "dietaryLabels": [],
       "price": 1350,
-      "image": "wine",
+      "image": "dish-purcari-nocturne-rose-sec-1-50466b42",
       "owner": -1,
       "sourceCategory": "Alcohol",
       "sourceName": "Purcari Nocturne Rose sec",
-      "sourcePortion": "750 ml"
+      "sourcePortion": "750 ml",
+      "legacyImage": "wine"
     },
     {
       "id": "bar-purcari-nocturne-sauvignon-blanc-dry-wine-797bbaf4",
@@ -3571,11 +3772,12 @@
       ],
       "dietaryLabels": [],
       "price": 1350,
-      "image": "wine",
+      "image": "dish-purcari-nocturne-sauvignon-blanc-dry-wine-1-39620d32",
       "owner": -1,
       "sourceCategory": "Alcohol",
       "sourceName": "Purcari Nocturne Sauvignon Blanc Dry Wine",
-      "sourcePortion": "750 ml"
+      "sourcePortion": "750 ml",
+      "legacyImage": "wine"
     },
     {
       "id": "bar-cricova-crisecco-brut-9f2fa050",
@@ -3587,11 +3789,12 @@
       ],
       "dietaryLabels": [],
       "price": 950,
-      "image": "wine",
+      "image": "dish-cricova-crisecco-brut-1-92f8c7e9",
       "owner": -1,
       "sourceCategory": "Alcohol",
       "sourceName": "Cricova Crisecco Brut",
-      "sourcePortion": "750 ml"
+      "sourcePortion": "750 ml",
+      "legacyImage": "wine"
     },
     {
       "id": "bar-cricova-lacrima-dulce-d907b30b",
@@ -3603,11 +3806,12 @@
       ],
       "dietaryLabels": [],
       "price": 950,
-      "image": "wine",
+      "image": "dish-cricova-lacrima-dulce-1-2661d4a1",
       "owner": -1,
       "sourceCategory": "Alcohol",
       "sourceName": "Cricova Lacrima Dulce",
-      "sourcePortion": "750 ml"
+      "sourcePortion": "750 ml",
+      "legacyImage": "wine"
     },
     {
       "id": "extras-garlic-toast-7111b569",
@@ -3620,11 +3824,12 @@
       ],
       "dietaryLabels": [],
       "price": 200,
-      "image": "bread",
+      "image": "dish-ciabatta-1-eec2c5c4",
       "owner": -1,
       "sourceCategory": "Supplements",
       "sourceName": "Garlic toast",
-      "sourcePortion": "120 g"
+      "sourcePortion": "120 g",
+      "legacyImage": "bread"
     },
     {
       "id": "extras-flatbread-with-butter-and-garlic-sheep-cheese-73035471",
@@ -3637,11 +3842,12 @@
       ],
       "dietaryLabels": [],
       "price": 100,
-      "image": "bread",
+      "image": "dish-flatbread-with-butter-and-garlic-sheep-cheese-1-79c02139",
       "owner": -1,
       "sourceCategory": "Supplements",
       "sourceName": "Flatbread with Butter and Garlic Sheep Cheese",
-      "sourcePortion": "60 g (1 pc)"
+      "sourcePortion": "60 g (1 pc)",
+      "legacyImage": "bread"
     },
     {
       "id": "extras-flatbread-with-butter-and-sheep-cheese-1ec3fe93",
@@ -3654,11 +3860,12 @@
       ],
       "dietaryLabels": [],
       "price": 100,
-      "image": "bread",
+      "image": "dish-flatbread-with-butter-and-sheep-cheese-1-a499de4b",
       "owner": -1,
       "sourceCategory": "Supplements",
       "sourceName": "Flatbread with Butter and Sheep Cheese",
-      "sourcePortion": "60 g (1 pc)"
+      "sourcePortion": "60 g (1 pc)",
+      "legacyImage": "bread"
     },
     {
       "id": "extras-bread-rusks-0cdcf301",
@@ -3670,11 +3877,12 @@
       ],
       "dietaryLabels": [],
       "price": 100,
-      "image": "bread",
+      "image": "dish-bread-rusks-1-e79a7275",
       "owner": -1,
       "sourceCategory": "Supplements",
       "sourceName": "Bread Rusks",
-      "sourcePortion": "50 g"
+      "sourcePortion": "50 g",
+      "legacyImage": "bread"
     },
     {
       "id": "extras-hot-bread-f5def675",
@@ -3687,11 +3895,12 @@
       ],
       "dietaryLabels": [],
       "price": 100,
-      "image": "bread",
+      "image": "dish-hot-bread-1-8cb6c993",
       "owner": -1,
       "sourceCategory": "Supplements",
       "sourceName": "Hot Bread",
-      "sourcePortion": "150 g"
+      "sourcePortion": "150 g",
+      "legacyImage": "bread"
     },
     {
       "id": "extras-ciabatta-c40814d6",
@@ -3703,11 +3912,12 @@
       ],
       "dietaryLabels": [],
       "price": 100,
-      "image": "bread",
+      "image": "dish-ciabatta-1-a006558d",
       "owner": -1,
       "sourceCategory": "Supplements",
       "sourceName": "Ciabatta",
-      "sourcePortion": "100 g"
+      "sourcePortion": "100 g",
+      "legacyImage": "bread"
     },
     {
       "id": "extras-focaccia-98c8e1d2",
@@ -3719,11 +3929,12 @@
       ],
       "dietaryLabels": [],
       "price": 150,
-      "image": "bread",
+      "image": "dish-focaccia-1-3d42673b",
       "owner": -1,
       "sourceCategory": "Supplements",
       "sourceName": "Focaccia",
-      "sourcePortion": "220 g"
+      "sourcePortion": "220 g",
+      "legacyImage": "bread"
     },
     {
       "id": "extras-mayonnaise-2e89eef6",
@@ -3736,11 +3947,12 @@
       ],
       "dietaryLabels": [],
       "price": 100,
-      "image": "sauces",
+      "image": "dish-mayonnaise-1-000fa824",
       "owner": -1,
       "sourceCategory": "Supplements",
       "sourceName": "Mayonnaise",
-      "sourcePortion": "50 g"
+      "sourcePortion": "50 g",
+      "legacyImage": "sauces"
     },
     {
       "id": "extras-tartar-sauce-c0743904",
@@ -3753,11 +3965,12 @@
       ],
       "dietaryLabels": [],
       "price": 100,
-      "image": "sauces",
+      "image": "dish-tartar-sauce-1-ba24c42d",
       "owner": -1,
       "sourceCategory": "Supplements",
       "sourceName": "Tartar Sauce",
-      "sourcePortion": "50g"
+      "sourcePortion": "50g",
+      "legacyImage": "sauces"
     },
     {
       "id": "extras-sour-cream-92fdae08",
@@ -3769,11 +3982,12 @@
       ],
       "dietaryLabels": [],
       "price": 100,
-      "image": "sauces",
+      "image": "dish-sour-cream-1-7f3c09c9",
       "owner": -1,
       "sourceCategory": "Supplements",
       "sourceName": "Sour Cream",
-      "sourcePortion": "50 g"
+      "sourcePortion": "50 g",
+      "legacyImage": "sauces"
     },
     {
       "id": "extras-ketchup-4c8f1d85",
@@ -3785,11 +3999,12 @@
       ],
       "dietaryLabels": [],
       "price": 100,
-      "image": "sauces",
+      "image": "dish-ketchup-1-938b6e38",
       "owner": -1,
       "sourceCategory": "Supplements",
       "sourceName": "Ketchup",
-      "sourcePortion": "50 g"
+      "sourcePortion": "50 g",
+      "legacyImage": "sauces"
     },
     {
       "id": "extras-zesty-sauce-8c03b3cf",
@@ -3802,11 +4017,12 @@
       ],
       "dietaryLabels": [],
       "price": 100,
-      "image": "sauces",
+      "image": "dish-zesty-sauce-1-6137b599",
       "owner": -1,
       "sourceCategory": "Supplements",
       "sourceName": "Zesty sauce",
-      "sourcePortion": "50 g"
+      "sourcePortion": "50 g",
+      "legacyImage": "sauces"
     }
   ]
 }

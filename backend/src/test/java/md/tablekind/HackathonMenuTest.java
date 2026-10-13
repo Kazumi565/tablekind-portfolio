@@ -77,7 +77,7 @@ class HackathonMenuTest extends WorkflowSupport {
       assertTrue(product.path("available").asBoolean(), name);
       images.add(product.path("image_path").asText());
     }
-    assertTrue(images.size() >= 27);
+    assertEquals(203, images.size());
     assertEquals(4, view.path("items").size());
     assertEquals(3801, view.path("bill").path("totalBani").asLong());
     assertEquals(0, view.path("bill").path("paidBani").asLong());

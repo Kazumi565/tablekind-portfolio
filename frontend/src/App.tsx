@@ -223,6 +223,35 @@ export default function App() {
   const [members, setMembers] = useState<
     { restaurant_id: string; name: string; role: string }[]
   >([]);
+  const [demoManagerAccess, setDemoManagerAccess] = useState<
+    "CHECKING" | "ALLOWED" | "DENIED" | "UNREACHABLE"
+  >("CHECKING");
+  useEffect(() => {
+    if (!hackathon || !staff) {
+      setDemoManagerAccess("CHECKING");
+      return;
+    }
+    let active = true;
+    setDemoManagerAccess("CHECKING");
+    void request<{ memberships: { role: string }[] }>(
+      "/auth/me",
+      staff.accessToken,
+    )
+      .then((me) => {
+        if (active)
+          setDemoManagerAccess(
+            me.memberships.some((m) => managesRestaurant(m.role))
+              ? "ALLOWED"
+              : "DENIED",
+          );
+      })
+      .catch(() => {
+        if (active) setDemoManagerAccess("UNREACHABLE");
+      });
+    return () => {
+      active = false;
+    };
+  }, [hackathon, staff]);
   const [dash, setDash] = useState<Dashboard | null>(null),
     [state, setState] = useState<State | null>(null);
   const [tab, setTab] = useState(
@@ -701,7 +730,7 @@ export default function App() {
       if (e instanceof ApiError && e.status < 500)
         sessionStorage.removeItem("demoStartKey");
       setError(
-        `${(e as Error).message} Use Start practice table again to retry.`,
+        `${(e as Error).message} Use ${hackathon ? "Start EUR dinner" : "Start practice table"} again to retry.`,
       );
     } finally {
       setBusy(false);
@@ -860,6 +889,10 @@ export default function App() {
               <HackathonGuide
                 scenario={demoScenario}
                 staff={staff}
+                state={state}
+                canStart={demoManagerAccess === "ALLOWED"}
+                checkingAccess={demoManagerAccess === "CHECKING"}
+                accessProblem={demoManagerAccess === "UNREACHABLE"}
                 onCreate={() => void createDemo()}
                 onView={demoView}
                 blocked={busy || !!pending}
@@ -2069,9 +2102,11 @@ function BillView({
       <div
         className={`workspace-grid ${personal ? "guest-bill-grid" : ""} ${state.currency === "EUR" ? "eur-bill-grid" : ""}`}
       >
-        <section>
+        <section aria-labelledby="manual-sharing-heading">
           <div className="section-heading">
-            <h2>Who covers what</h2>
+            <h2 id="manual-sharing-heading" tabIndex={-1}>
+              Who covers what
+            </h2>
             <div className="row">
               <button disabled={busy} onClick={() => setWhole(true)}>
                 Split whole bill equally
@@ -2267,11 +2302,24 @@ function BillView({
             ))}
           {dinner && (
             <SplitAssistant
-              key={state.actor.id}
+              key={`${state.session.id}:${state.actor.id}`}
               state={state}
               action={action}
               busy={busy}
               onPreviewChange={setPreviewReady}
+              onManualSplit={() => {
+                setShowAll(true);
+                requestAnimationFrame(() => {
+                  const heading = document.getElementById(
+                    "manual-sharing-heading",
+                  );
+                  heading?.focus({ preventScroll: true });
+                  heading?.scrollIntoView({
+                    block: "start",
+                    behavior: "smooth",
+                  });
+                });
+              }}
             />
           )}
         </section>
