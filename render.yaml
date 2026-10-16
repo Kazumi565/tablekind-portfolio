@@ -45,7 +45,7 @@ services:
       - key: AI_MAX_CALLS
         value: "0"
       - key: AI_MODEL
-        value: gpt-6.1-sol
+        value: gpt-6-luna
       - key: AI_REASONING_EFFORT
         value: low
 databases:

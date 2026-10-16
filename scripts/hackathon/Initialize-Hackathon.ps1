@@ -20,7 +20,7 @@ $lines = @(
   'PAYPAL_MERCHANT_ID='
   'AI_CALLS_ENABLED=false'
   'OPENAI_API_KEY='
-  'AI_MODEL=gpt-6.1-sol'
+  'AI_MODEL=gpt-6-luna'
   'AI_REASONING_EFFORT=low'
   'AI_MAX_CALLS=0'
 )

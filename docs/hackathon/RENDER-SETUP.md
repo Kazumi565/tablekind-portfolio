@@ -2,7 +2,7 @@
 
 This setup hosts the React interface and Spring backend together, with a separate managed PostgreSQL database. It uses the isolated `hackathon,render` profiles, sandbox PayPal only, and disabled AI calls initially. The private ChatGPT Sites menu preview remains a separate design preview.
 
-**Current deployment (12 October 2026):** [TableKind full app](https://tablekind-hackathon.onrender.com/) is live on commit `b4bd14cb9c31c80264accd18f506f7911613177b`, manually pushed by Mihai. Both resources are in Frankfurt. The dashboard estimate is **USD 13.30/month**: USD 7 web compute plus USD 6.30 database compute/storage. Mihai activated these resources manually. The instructions below describe the existing setup; do not create a duplicate Blueprint.
+**Current deployment (16 October 2026):** [TableKind full app](https://tablekind-hackathon.onrender.com/) is live on commit `414c0609fdf64f3448ef44f8bbcdc6f924cb3c0b`, manually pushed by Mihai. A separate environment-only deployment set `AI_MODEL=gpt-6-luna` and reached Live on 16 October; the source defaults now match locally and still require manual publication. Both resources are in Frankfurt. The original dashboard estimate was **USD 13.30/month**: USD 7 web compute plus USD 6.30 database compute/storage. Mihai activated these resources manually. The instructions below describe the existing setup; do not create a duplicate Blueprint.
 
 The supplied `render.yaml` provisions paid resources. Review the final monthly estimate in Render before applying it. The selected initial sizes are a 512 MB web service and a 256 MB PostgreSQL instance with 1 GB storage in Frankfurt. Database storage autoscaling and automatic source deploys are disabled. Database access is internal-only. Neither these files nor local testing creates a Render subscription.
 
@@ -56,9 +56,9 @@ For deployment failures, use Render's Logs tab. Share a redacted error message r
 
 ## 5. Enable bounded AI access separately
 
-The API key is now stored in Render's secret environment with Mihai's permission. Temporary hosted tests used a separately approved USD 1 allowance and seven provider calls, then `AI_CALLS_ENABLED=false` and `AI_MAX_CALLS=0` were deployed again. A fresh request confirmed that AI access is disabled. Ongoing judge usage still needs an approved allowance.
+The API key is stored in Render's secret environment with Mihai's permission. Temporary hosted tests used a separately approved USD 1 allowance and seven provider calls, then `AI_CALLS_ENABLED=false` and `AI_MAX_CALLS=0` were deployed again. An additional allowance of up to USD 5 is now approved for judge access. The Luna configuration deployment preserved these disabled call settings; bounded judge access still needs configuration and verification.
 
-After that ongoing budget is chosen, set an approved positive `AI_MAX_CALLS` and change `AI_CALLS_ENABLED` to `true`. Use `AI_MODEL=gpt-6.1-sol` and `AI_REASONING_EFFORT=low`. Save and redeploy. This cumulative call allowance counts requests in this hosted database and persists across restarts; **seven calls are already recorded**, independently of the seven earlier local calls. A request-count cap is not a dollar-denominated billing cap.
+For bounded judge access, set an approved positive `AI_MAX_CALLS` and change `AI_CALLS_ENABLED` to `true`. Use `AI_MODEL=gpt-6-luna` and `AI_REASONING_EFFORT=low`. Save and redeploy. Six real local Luna evaluation cases passed; the earlier hosted evaluation used GPT-6.1 Sol. Verify the final hosted journey with Luna before judge access. This cumulative call allowance counts requests in this hosted database and persists across restarts; **seven hosted calls are already recorded**, independently of the thirteen local calls. A request-count cap is not a dollar-denominated billing cap.
 
 Review a real AI split, ask all affected diners to consent, then complete sandbox PayPal payments with a Personal sandbox buyer. Check that the bill reaches EUR 38.01 paid with zero outstanding and no duplicate captures after reload. See [hosted verification](VALIDATION.md#hosted-https-verification--12-october-2026) for the completed checks and their limits.
 

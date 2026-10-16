@@ -1,0 +1,71 @@
+{
+  "recordedAt": "2026-10-16T11:59:56.567Z",
+  "model": "gpt-6-luna",
+  "reasoningEffort": "low",
+  "environment": "isolated local hackathon app",
+  "calls": 6,
+  "passed": true,
+  "results": [
+    {
+      "name": "representative dinner",
+      "expected": "READY",
+      "observed": "READY",
+      "passed": true,
+      "latencyMs": 5682
+    },
+    {
+      "name": "relative weights",
+      "expected": "READY",
+      "observed": "READY",
+      "passed": true,
+      "latencyMs": 3185
+    },
+    {
+      "name": "single recipient",
+      "expected": "READY",
+      "observed": "READY",
+      "passed": true,
+      "latencyMs": 3945
+    },
+    {
+      "name": "invented dish",
+      "expected": "CLARIFY",
+      "observed": "CLARIFY",
+      "passed": true,
+      "latencyMs": 2343
+    },
+    {
+      "name": "unsupported refund",
+      "expected": "CLARIFY",
+      "observed": "CLARIFY",
+      "passed": true,
+      "latencyMs": 2182
+    },
+    {
+      "name": "unclear referent",
+      "expected": "CLARIFY",
+      "observed": "CLARIFY",
+      "passed": true,
+      "latencyMs": 3038
+    }
+  ],
+  "usage": {
+    "inputTokens": 4511,
+    "outputTokens": 829,
+    "reasoningTokens": 80
+  },
+  "medianEndpointLatencyMs": 3111.5,
+  "maxEndpointLatencyMs": 5682,
+  "estimatedTokenCostUsd": 0.0008656,
+  "costBasis": "Standard uncached input/output rates; output includes reasoning tokens. Usage estimate, not an invoice; tax and other account activity excluded.",
+  "proposalsConfirmed": 0,
+  "payments": 0,
+  "limits": "Six single-run cases, not a broad reliability benchmark or a new hosted payment journey.",
+  "hostedConfiguration": {
+    "model": "gpt-6-luna",
+    "sourceCommit": "414c0609fdf64f3448ef44f8bbcdc6f924cb3c0b",
+    "deploymentId": "dep-db912qivcj2c73bhbb10",
+    "status": "Live",
+    "aiCallsEnabled": false
+  }
+}

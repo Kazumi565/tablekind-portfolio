@@ -22,6 +22,8 @@ PayPal is the checkout step that completes the experience: Orders v2 creates an 
 
 Java 21, Spring Boot, PostgreSQL, React, TypeScript and Docker. The original portfolio provided ordering, the ledger, manual proposals and votes, command idempotency and test payments. Hackathon work adds a separate EUR scenario, real sandbox API integration, schema-constrained hosted AI interpretation, reviewed atomic proposals, provider recovery and the three-diner interface. The original MDL history is preserved.
 
+The current interpreter is GPT-6 Luna with low reasoning and strict structured output. It replaced GPT-6.1 Sol after six real local Luna evaluation cases passed, covering valid allocations and requests that need clarification. Earlier end-to-end payment evidence used Sol; the final hosted Luna walkthrough is still pending.
+
 The challenging part was preserving the group agreement across delayed network responses. Payment dispatch happens outside database locks; reconciliation uses stored request/order identities. AI previews carry a table revision and must be reviewed again when the table changes.
 
 ## What I learned
@@ -34,7 +36,7 @@ Finalize judge access and record the working demonstration. Six real GPT-6.1 Sol
 
 ## Fields to finalize before submitting
 
-- Public source: [hackathon/paypal-bill-splitting](https://github.com/Kazumi565/tablekind-portfolio/tree/hackathon/paypal-bill-splitting). Deployed app commit `b4bd14cb9c31c80264accd18f506f7911613177b` and MIT license verified; push the later verification documents manually before submission.
+- Public source: [hackathon/paypal-bill-splitting](https://github.com/Kazumi565/tablekind-portfolio/tree/hackathon/paypal-bill-splitting). Render serves app commit `414c0609fdf64f3448ef44f8bbcdc6f924cb3c0b` with the Luna environment setting; publish the matching source-default and verification updates manually before submission.
 - Demo: [TableKind full app](https://tablekind-hackathon.onrender.com/), with [setup](SETUP.md) and [Render status](RENDER-SETUP.md). Ongoing AI access is still being arranged; paid calls are disabled after testing.
 - Video: add the publicly visible YouTube link after recording and manual publication.
 - Testing access: provide controlled demo-manager and sandbox buyer access through the agreed judge channel; never publish API secrets.
