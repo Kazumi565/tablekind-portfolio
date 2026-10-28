@@ -2,6 +2,7 @@ import React from "react";
 import { createRoot } from "react-dom/client";
 import App from "./App";
 import { lazy, Suspense } from "react";
+import "./theme.css";
 import "./style.css";
 import "./refinement.css";
 import "./dining.css";

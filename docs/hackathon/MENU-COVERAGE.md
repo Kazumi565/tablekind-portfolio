@@ -40,7 +40,7 @@ Prices are **fictional EUR demo prices**, calculated in minor units as `max(100,
 
 Allergen hints conservatively use the observed ingredient lists and common recipe components. They have not been verified for complete ingredients or cross-contact; an empty list means no hint was identified, not allergen-free. These added selections have empty dietary-label lists.
 
-Reference dishes now use their corresponding photographs from the observed source menu, cached and optimized locally. Source variants sometimes share the same photograph; a photo does not independently verify ingredients or the listed portion. Eight distinct original TableKind dishes retain illustrative photos. Descriptions remain newly written, and TableKind does not imply restaurant affiliation. See [image provenance](MENU-ASSETS.md).
+The menu now uses licensed representative photographs from Wikimedia Commons. Related variants can share a photo; photos do not independently verify ingredients or serving size. Original and compatibility asset URLs also have licensed replacements. Descriptions remain newly written, and TableKind does not imply restaurant or photographer affiliation. See [current image provenance](MENU-ASSETS.md).
 
 [Machine-readable coverage](MENU-COVERAGE.json) records every selected source name and portion. The authoritative application fixture is `backend/src/main/resources/demo/menu.json`; it contains newly written descriptions, fictional prices and local image slugs. The frontend preview is generated from the same fixture. Stored source-category entries retain their provenance. The gallery removes category suffixes from displayed names and consolidates identical entries without changing existing order or payment records.
 

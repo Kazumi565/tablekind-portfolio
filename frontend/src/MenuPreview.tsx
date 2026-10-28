@@ -138,7 +138,12 @@ function Preview() {
       <footer className="dining-footer">
         <span className="dining-brand">tablekind.</span>
         <span>Good food. Good company. A fair share.</span>
-        <small>Fictional menu · EUR prices · Illustrative photography</small>
+        <small>
+          Fictional menu · EUR prices · Representative photography ·{" "}
+          <a href="/menu/photo-credits.html" target="_blank" rel="noreferrer">
+            Photo credits
+          </a>
+        </small>
       </footer>
       <span className="sr-only" role="status">
         {announcement}

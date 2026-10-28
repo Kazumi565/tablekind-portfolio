@@ -7,15 +7,13 @@
     BlinkMacSystemFont,
     "Segoe UI",
     sans-serif;
-  color: #203c33;
-  background: #f7f8f4;
+  color: var(--brand-ink);
+  background: var(--brand-canvas);
   font-synthesis: none;
   font-weight: 400;
   line-height: 1.5;
-  --green: #173d32;
-  --lime: #ddf19a;
-  --line: #e2e6dd;
-  --muted: #68766c;
+  --line: var(--brand-line);
+  --muted: var(--brand-muted);
 }
 html {
   scroll-behavior: smooth;
@@ -73,7 +71,7 @@ pre {
   max-width: 100%;
 }
 .chips button[aria-pressed="true"] {
-  background: var(--green);
+  background: var(--brand-primary);
   color: white;
 }
 .personal-bill {
@@ -175,10 +173,10 @@ button,
   gap: 8px;
   min-height: 42px;
   padding: 8px 14px;
-  border: 1px solid #d9dfd5;
+  border: 1px solid var(--brand-line);
   border-radius: 10px;
   background: white;
-  color: var(--green);
+  color: var(--brand-primary);
   cursor: pointer;
   font-size: 14px;
   font-weight: 600;
@@ -186,7 +184,7 @@ button,
 }
 button:hover,
 .button:hover {
-  background: #edf1e6;
+  background: var(--brand-soft);
 }
 button:disabled {
   opacity: 0.45;
@@ -198,16 +196,16 @@ input:focus-visible,
 select:focus-visible,
 textarea:focus-visible,
 summary:focus-visible {
-  outline: 3px solid #6c962a;
+  outline: 3px solid var(--brand-primary);
   outline-offset: 3px;
 }
 .primary {
-  background: var(--green);
-  border-color: var(--green);
-  color: #fff;
+  background: var(--brand-primary);
+  border-color: var(--brand-primary);
+  color: var(--brand-surface);
 }
 .primary:hover {
-  background: #285344;
+  background: var(--brand-strong);
 }
 .icon {
   padding: 8px;
@@ -224,9 +222,9 @@ select,
 textarea {
   width: 100%;
   min-height: 42px;
-  border: 1px solid #cdd5c9;
-  background: #fff;
-  color: #203c33;
+  border: 1px solid var(--brand-line);
+  background: var(--brand-surface);
+  color: var(--brand-ink);
   padding: 9px 12px;
   border-radius: 8px;
 }
@@ -234,7 +232,7 @@ input[type="checkbox"] {
   width: 18px;
   height: 18px;
   min-height: 18px;
-  accent-color: var(--green);
+  accent-color: var(--brand-primary);
 }
 textarea {
   resize: vertical;
@@ -243,7 +241,7 @@ select {
   width: auto;
 }
 a {
-  color: var(--green);
+  color: var(--brand-primary);
 }
 h1,
 h2,
@@ -301,8 +299,8 @@ header {
 }
 .mark {
   font-size: 32px;
-  background: var(--green);
-  color: var(--lime);
+  background: var(--brand-primary);
+  color: var(--brand-highlight);
   width: 35px;
   height: 38px;
   line-height: 33px;
@@ -321,7 +319,7 @@ nav {
   display: flex;
   padding: 4px;
   border-radius: 12px;
-  background: #f2f4ef;
+  background: var(--brand-soft);
 }
 nav button {
   min-width: 90px;
@@ -330,7 +328,7 @@ nav button {
 }
 nav button.selected {
   background: white;
-  box-shadow: 0 1px 6px #10291412;
+  box-shadow: 0 1px 6px color-mix(in srgb, var(--brand-dark) 7.06%, transparent);
 }
 .header-right {
   display: flex;
@@ -343,8 +341,8 @@ nav button.selected {
 }
 .phase-note {
   text-align: center;
-  background: #ecf1e0;
-  color: #536443;
+  background: var(--brand-soft);
+  color: var(--brand-muted);
   font-size: 12px;
   padding: 9px 16px;
 }
@@ -362,7 +360,7 @@ nav button.selected {
   font-weight: 750;
   letter-spacing: 1.6px;
   margin-bottom: 9px;
-  color: #718263;
+  color: var(--brand-muted);
 }
 main {
   max-width: 1350px;
@@ -392,15 +390,15 @@ footer {
   gap: 12px;
 }
 .card {
-  background: #fff;
+  background: var(--brand-surface);
   border: 1px solid var(--line);
   border-radius: 16px;
   padding: 23px;
   margin-bottom: 18px;
 }
 .soft {
-  background: #edf2e6;
-  border-color: #e1e8d5;
+  background: var(--brand-soft);
+  border-color: var(--brand-line);
 }
 .soft h3 {
   margin-bottom: 8px;
@@ -414,7 +412,7 @@ footer {
 .field > span {
   font-size: 12px;
   font-weight: 650;
-  color: #4c6052;
+  color: var(--brand-muted);
 }
 .field select {
   width: 100%;
@@ -434,12 +432,12 @@ footer {
   display: inline-block;
   width: 7px;
   height: 7px;
-  background: #c0b47a;
+  background: var(--brand-focus);
   border-radius: 50%;
   margin-right: 6px;
 }
 .connection.online:before {
-  background: #5b8730;
+  background: var(--brand-primary);
 }
 .table-strip {
   display: flex;
@@ -463,12 +461,12 @@ footer {
   font-size: 16px;
 }
 .table-button.active {
-  background: var(--green);
-  border-color: var(--green);
+  background: var(--brand-primary);
+  border-color: var(--brand-primary);
   color: white;
 }
 .table-button.active small {
-  color: #c7d8be;
+  color: var(--brand-on-dark-muted);
 }
 .tabs {
   display: flex;
@@ -487,8 +485,8 @@ footer {
   border-bottom: 3px solid transparent;
 }
 .tabs button.active {
-  color: var(--green);
-  border-bottom-color: var(--green);
+  color: var(--brand-primary);
+  border-bottom-color: var(--brand-primary);
 }
 .session-bar {
   display: flex;
@@ -504,9 +502,9 @@ footer {
 }
 .pill {
   display: inline-flex;
-  background: #f0f3ec;
-  color: #516646;
-  border: 1px solid #e3e8dc;
+  background: var(--brand-soft);
+  color: var(--brand-muted);
+  border: 1px solid var(--brand-line);
   padding: 4px 9px;
   line-height: 1.25;
   font-size: 11px;
@@ -543,8 +541,8 @@ footer {
   padding: 6px 16px;
 }
 .chips button.active {
-  background: var(--green);
-  color: #fff;
+  background: var(--brand-primary);
+  color: var(--brand-surface);
 }
 .menu-grid {
   display: grid;
@@ -566,14 +564,18 @@ footer {
 }
 .dish-icon {
   height: 88px;
-  background: linear-gradient(125deg, #eef1e4, #e2eacf);
+  background: linear-gradient(
+    125deg,
+    var(--brand-soft),
+    var(--brand-soft-strong)
+  );
   border-radius: 12px;
   display: flex;
   align-items: center;
   justify-content: center;
   font-family: Georgia, serif;
   font-size: 58px;
-  color: #879a58;
+  color: var(--brand-muted);
 }
 .order-card {
   padding: 20px;
@@ -591,25 +593,25 @@ footer {
   gap: 12px;
   padding: 9px 0;
   font-size: 13px;
-  border-bottom: 1px solid #f0f2ed;
+  border-bottom: 1px solid var(--brand-line);
 }
 .summary-row:last-child {
   border-bottom: 0;
 }
 .summary-card {
-  background: var(--green);
-  color: #fff;
+  background: var(--brand-primary);
+  color: var(--brand-surface);
 }
 .summary-card .eyebrow {
-  color: #cedda7;
+  color: var(--brand-on-dark-muted);
 }
 .summary-card .summary-row {
-  border-bottom-color: #42614d;
+  border-bottom-color: var(--brand-primary);
 }
 .summary-card .primary {
-  background: var(--lime);
-  color: var(--green);
-  border-color: var(--lime);
+  background: var(--brand-highlight);
+  color: var(--brand-primary);
+  border-color: var(--brand-highlight);
 }
 .big-number {
   font-size: 35px;
@@ -663,18 +665,18 @@ footer {
   text-align: right;
 }
 .avatar {
-  background: #eef3e2;
+  background: var(--brand-soft);
   border-radius: 50%;
   width: 34px;
   height: 34px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  color: #607145;
+  color: var(--brand-muted);
 }
 .proposal {
-  background: #f5f8ee;
-  border-color: #cdd9b3;
+  background: var(--brand-soft);
+  border-color: var(--brand-line);
 }
 .proposal p {
   margin: 10px 0 16px;
@@ -683,7 +685,7 @@ footer {
   margin-top: 15px;
 }
 .quote {
-  background: #f2f5eb;
+  background: var(--brand-soft);
   border-radius: 10px;
   padding: 15px;
   text-align: center;
@@ -750,7 +752,7 @@ footer {
 }
 .feature-line svg {
   width: 20px;
-  color: #718b47;
+  color: var(--brand-muted);
 }
 .login {
   padding: 32px;
@@ -768,14 +770,14 @@ footer {
 .empty {
   padding: 50px;
   text-align: center;
-  color: #7c8d72;
+  color: var(--brand-muted);
 }
 .empty svg {
   margin-bottom: 18px;
 }
 .empty h2,
 .empty h3 {
-  color: var(--green);
+  color: var(--brand-primary);
 }
 .empty p {
   max-width: 450px;
@@ -800,7 +802,7 @@ footer {
   display: flex;
   align-items: center;
   gap: 8px;
-  color: #4c6b32;
+  color: var(--brand-primary);
   font-size: 12px;
   margin-bottom: 10px;
 }
@@ -820,11 +822,12 @@ dialog {
   width: calc(100% - 32px);
   max-height: 90vh;
   padding: 27px;
-  box-shadow: 0 20px 80px #173d322a;
-  color: var(--green);
+  box-shadow: 0 20px 80px
+    color-mix(in srgb, var(--brand-primary) 16.47%, transparent);
+  color: var(--brand-primary);
 }
 dialog::backdrop {
-  background: #0a2119a0;
+  background: color-mix(in srgb, var(--brand-dark) 62.75%, transparent);
   backdrop-filter: blur(2px);
 }
 .dialog-head {
@@ -1097,14 +1100,14 @@ summary {
   margin: 12px 0;
 }
 .modifier-editor {
-  border: 1px solid #d8ddd7;
+  border: 1px solid var(--brand-line);
   border-radius: 12px;
   margin: 20px 0;
   padding: 16px;
   min-width: 0;
 }
 .option-editor {
-  border-top: 1px solid #d8ddd7;
+  border-top: 1px solid var(--brand-line);
   margin: 12px 0;
   padding-top: 12px;
 }
@@ -1195,7 +1198,7 @@ button + button {
   white-space: nowrap;
   overflow-wrap: normal;
   padding: 0.5rem;
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid var(--brand-line);
 }
 .pos-panel {
   display: grid;
@@ -1210,7 +1213,7 @@ button + button {
   gap: 0.7rem;
   margin-top: 1rem;
   padding-bottom: 1rem;
-  border-bottom: 1px solid var(--line, #deded9);
+  border-bottom: 1px solid var(--line, var(--brand-line));
 }
 .pos-panel summary {
   cursor: pointer;
@@ -1228,7 +1231,7 @@ button + button {
   gap: 0.8rem;
 }
 .pos-queue article {
-  border-top: 1px solid var(--line, #deded9);
+  border-top: 1px solid var(--line, var(--brand-line));
   padding-top: 0.8rem;
 }
 .pos-report table {
@@ -1321,18 +1324,18 @@ button + button {
   display: block;
 }
 .workspace-manage .page-title {
-  border-left: 4px solid #23756b;
+  border-left: 4px solid var(--brand-primary);
   padding-left: 1rem;
 }
 .workspace-staff .page-title {
-  border-left: 4px solid #c87935;
+  border-left: 4px solid var(--brand-focus);
   padding-left: 1rem;
 }
 .platform-header {
-  border-bottom: 3px solid #303b63;
+  border-bottom: 3px solid var(--brand-strong);
 }
 .platform-workspace .page-title {
-  border-left: 4px solid #303b63;
+  border-left: 4px solid var(--brand-strong);
   padding-left: 1rem;
 }
 .platform-form {
@@ -1366,11 +1369,11 @@ button + button {
 }
 .audit-row {
   padding: 1rem 0;
-  border-bottom: 1px solid #e1e5e2;
+  border-bottom: 1px solid var(--brand-line);
 }
 fieldset {
   min-width: 0;
-  border: 1px solid #d6ded9;
+  border: 1px solid var(--brand-line);
   border-radius: 12px;
   padding: 1rem;
   margin: 1rem 0;

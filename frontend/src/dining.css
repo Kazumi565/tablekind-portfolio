@@ -1,13 +1,11 @@
 :root {
-  --green: #203e35;
-  --lime: #e7edcf;
-  --line: #e5e4dc;
-  --muted: #6b746c;
-  color: #273d34;
-  background: #faf9f5;
+  --line: var(--brand-line);
+  --muted: var(--brand-muted);
+  color: var(--brand-ink);
+  background: var(--brand-canvas);
 }
 body {
-  background: #faf9f5;
+  background: var(--brand-canvas);
 }
 button,
 .button,
@@ -16,7 +14,7 @@ a {
 }
 button:focus-visible,
 a:focus-visible {
-  outline: 3px solid #b65b32;
+  outline: 3px solid var(--brand-focus);
   outline-offset: 4px;
 }
 .menu-kicker {
@@ -29,8 +27,8 @@ a:focus-visible {
   line-height: 1.6;
 }
 .dining-hero {
-  background: #203e35;
-  color: #fffdf5;
+  background: var(--brand-dark);
+  color: var(--brand-on-dark);
   border-radius: 24px;
   overflow: hidden;
   display: grid;
@@ -46,14 +44,14 @@ a:focus-visible {
   z-index: 1;
 }
 .dining-hero .menu-kicker {
-  color: #dfe7c7;
+  color: var(--brand-on-dark-muted);
   font-size: 9px;
 }
 .dining-hero .menu-kicker > span {
   width: 6px;
   height: 6px;
   border-radius: 50%;
-  background: #d6b56c;
+  background: var(--brand-highlight);
 }
 .dining-hero h2 {
   font-family: Georgia, "Times New Roman", serif;
@@ -65,19 +63,19 @@ a:focus-visible {
   color: inherit;
 }
 .dining-hero h2 em {
-  color: #e8d6a4;
+  color: var(--brand-highlight);
   font-weight: 400;
 }
 .dining-hero p {
-  color: #e0e7dc;
+  color: var(--brand-on-dark-muted);
   max-width: 340px;
   font-size: 14px;
   line-height: 1.8;
   margin-bottom: 24px;
 }
 .hero-menu-link {
-  background: #f5ead0;
-  color: #243e33;
+  background: var(--brand-highlight);
+  color: var(--brand-ink);
   border: none;
   padding: 12px 19px;
   border-radius: 7px;
@@ -85,14 +83,14 @@ a:focus-visible {
   font-size: 12px;
 }
 .hero-menu-link:hover {
-  background: #fff7e4;
+  background: var(--brand-highlight-hover);
 }
 .hero-footnote {
   display: flex;
   gap: 8px;
   align-items: center;
   margin-top: 25px;
-  color: #c4d0bc;
+  color: var(--brand-on-dark-muted);
   font-size: 11px;
 }
 .dining-hero-visual {
@@ -115,10 +113,10 @@ a:focus-visible {
   align-items: center;
   gap: 12px;
   padding: 14px 18px;
-  color: #233e33;
-  background: #fffdf5ee;
+  color: var(--brand-ink);
+  background: color-mix(in srgb, var(--brand-surface) 93.33%, transparent);
   backdrop-filter: blur(10px);
-  border: 1px solid #fff9;
+  border: 1px solid color-mix(in srgb, var(--brand-surface) 60%, transparent);
   border-radius: 10px;
   font-size: 10px;
 }
@@ -136,7 +134,7 @@ a:focus-visible {
   scroll-margin-top: 24px;
 }
 .menu-intro .menu-kicker {
-  color: #8c663e;
+  color: var(--brand-focus);
 }
 .menu-intro h2 {
   font:
@@ -180,29 +178,29 @@ a:focus-visible {
   font-size: 12px;
 }
 .menu-category-buttons button > span:last-child {
-  color: #858d7d;
+  color: var(--brand-muted);
   font-size: 10px;
   font-weight: 400;
 }
 .menu-category-buttons button[aria-pressed="true"] {
-  background: #203e35;
+  background: var(--brand-primary);
   color: white;
 }
 .menu-category-buttons button[aria-pressed="true"] > span:last-child {
-  color: #d0dcbf;
+  color: var(--brand-on-dark-muted);
 }
 .menu-category-buttons button:hover:not([aria-pressed="true"]) {
-  background: #eeeede;
+  background: var(--brand-soft);
 }
 .menu-sharing-note {
   padding: 24px 16px;
-  border: 1px solid #e5e2d5;
+  border: 1px solid var(--brand-line);
   border-radius: 13px;
-  background: #f1f0e5;
+  background: var(--brand-soft);
   margin-top: 27px;
 }
 .menu-sharing-note svg {
-  color: #9c774a;
+  color: var(--brand-focus);
   margin-bottom: 14px;
 }
 .menu-sharing-note strong {
@@ -212,7 +210,7 @@ a:focus-visible {
   font-weight: 400;
 }
 .menu-sharing-note p {
-  color: #6c725f;
+  color: var(--brand-muted);
   font-size: 11px;
   line-height: 1.8;
   margin: 10px 0 0;
@@ -228,9 +226,9 @@ a:focus-visible {
   min-width: 0;
   border: 1px solid var(--line);
   border-radius: 9px;
-  background: #fff;
+  background: var(--brand-surface);
   padding-left: 16px;
-  color: #7d8579;
+  color: var(--brand-muted);
 }
 .menu-search input {
   background: transparent;
@@ -241,7 +239,7 @@ a:focus-visible {
   width: 100%;
 }
 .menu-search:focus-within {
-  outline: 2px solid #748664;
+  outline: 2px solid var(--brand-focus);
   outline-offset: 2px;
 }
 .menu-search input:focus {
@@ -256,8 +254,8 @@ a:focus-visible {
   gap: 7px;
 }
 .vegetarian-filter[aria-pressed="true"] {
-  background: #e5ecd9;
-  border-color: #7d9168;
+  background: var(--brand-soft-strong);
+  border-color: var(--brand-primary);
 }
 .menu-result-count {
   font-size: 10px;
@@ -271,8 +269,8 @@ a:focus-visible {
   gap: 21px 17px;
 }
 .photo-menu-card {
-  background: #fff;
-  border: 1px solid #e7e5dc;
+  background: var(--brand-surface);
+  border: 1px solid var(--brand-line);
   border-radius: 13px;
   overflow: hidden;
   display: flex;
@@ -283,12 +281,13 @@ a:focus-visible {
 }
 .photo-menu-card:hover {
   transform: translateY(-3px);
-  box-shadow: 0 9px 22px #203e350d;
+  box-shadow: 0 9px 22px
+    color-mix(in srgb, var(--brand-primary) 5.1%, transparent);
 }
 .dish-visual {
   position: relative;
   overflow: hidden;
-  background: #f1ede4;
+  background: var(--brand-canvas);
 }
 .dish-photo {
   display: block;
@@ -300,15 +299,15 @@ a:focus-visible {
 .photo-fallback {
   display: grid;
   place-items: center;
-  color: #87957e;
-  background: #ecefe2;
+  color: var(--brand-muted);
+  background: var(--brand-soft);
 }
 .dish-badge {
   position: absolute;
   top: 12px;
   left: 12px;
-  background: #fffef4ed;
-  color: #425c39;
+  background: color-mix(in srgb, var(--brand-surface) 92.94%, transparent);
+  color: var(--brand-muted);
   font-size: 9px;
   border-radius: 20px;
   padding: 5px 8px;
@@ -326,10 +325,10 @@ a:focus-visible {
   font-size: 16px;
   letter-spacing: -0.35px;
   margin: 0 0 8px;
-  color: #243c30;
+  color: var(--brand-ink);
 }
 .dish-copy > p {
-  color: #73796f;
+  color: var(--brand-muted);
   font-size: 11px;
   line-height: 1.75;
   margin: 0 0 19px;
@@ -337,7 +336,7 @@ a:focus-visible {
 }
 .dish-portion {
   display: block;
-  color: #6c766b;
+  color: var(--brand-muted);
   font-size: 11px;
   margin: -2px 0 10px;
 }
@@ -353,28 +352,28 @@ a:focus-visible {
   white-space: nowrap;
 }
 .dish-add {
-  background: #f0f3e9;
-  border: 1px solid #e7eddb;
+  background: var(--brand-soft);
+  border: 1px solid var(--brand-line);
   border-radius: 8px;
-  color: #244a32;
+  color: var(--brand-primary);
   min-height: 38px;
   padding: 8px 10px;
   font-size: 10px;
   gap: 4px;
 }
 .dish-add:hover:enabled {
-  background: #dee9cd;
+  background: var(--brand-soft-strong);
 }
 .menu-empty {
-  border: 1px dashed #d9ddce;
+  border: 1px dashed var(--brand-line);
   padding: 40px 22px;
   text-align: center;
   border-radius: 14px;
-  background: #f7f7ee;
+  background: var(--brand-soft);
 }
 .menu-empty > svg {
   margin-bottom: 10px;
-  color: #80936a;
+  color: var(--brand-muted);
 }
 .menu-empty h3 {
   margin: 0;
@@ -384,7 +383,7 @@ a:focus-visible {
   font-size: 13px;
 }
 .menu-allergen-note {
-  color: #777e73;
+  color: var(--brand-muted);
   font-size: 10px;
   line-height: 1.7;
   margin-top: 22px;
@@ -396,15 +395,15 @@ a:focus-visible {
   justify-content: space-between;
   min-height: 86px;
   padding: 16px max(24px, calc((100vw - 1184px) / 2));
-  border-bottom: 1px solid #e9e7de;
-  background: #faf9f5;
+  border-bottom: 1px solid var(--brand-line);
+  background: var(--brand-canvas);
 }
 .dining-brand {
   display: inline-flex;
   align-items: center;
   gap: 10px;
   text-decoration: none;
-  color: #234236;
+  color: var(--brand-ink);
   font-size: 27px;
   letter-spacing: -1.5px;
   font-weight: 750;
@@ -412,14 +411,14 @@ a:focus-visible {
 .dining-mark {
   display: grid;
   place-items: center;
-  background: #203e35;
-  color: #f5efdd;
+  background: var(--brand-primary);
+  color: var(--brand-on-dark-muted);
   width: 37px;
   height: 39px;
   border-radius: 11px 11px 11px 3px;
 }
 .brand-dot {
-  color: #b86f46;
+  color: var(--brand-focus);
   margin-left: -10px;
 }
 .dining-header nav {
@@ -430,24 +429,24 @@ a:focus-visible {
 }
 .dining-header nav a {
   text-decoration: none;
-  color: #606e60;
+  color: var(--brand-muted);
   font-size: 12px;
   font-weight: 550;
 }
 .dining-header nav a:first-child {
-  color: #284f35;
+  color: var(--brand-strong);
 }
 .preview-bag {
-  background: #fff;
-  border-color: #dcded2;
+  background: var(--brand-surface);
+  border-color: var(--brand-line);
   gap: 10px;
   padding: 9px 13px;
   font-size: 11px;
 }
 .preview-bag b {
   border-radius: 50%;
-  background: #203e35;
-  color: #fff;
+  background: var(--brand-primary);
+  color: var(--brand-surface);
   font-size: 10px;
   min-width: 20px;
   height: 20px;
@@ -455,8 +454,8 @@ a:focus-visible {
   place-items: center;
 }
 .preview-ribbon {
-  background: #eeefe4;
-  color: #596649;
+  background: var(--brand-soft);
+  color: var(--brand-muted);
   text-align: center;
   padding: 9px 20px;
   font-size: 10px;
@@ -475,13 +474,13 @@ a:focus-visible {
   grid-template-columns: 1fr 1fr;
   gap: 50px;
   padding: 48px 42px;
-  background: #eeefe4;
+  background: var(--brand-soft);
   border-radius: 18px;
   margin-top: 42px;
   scroll-margin-top: 20px;
 }
 .dining-story .menu-kicker {
-  color: #6b7457;
+  color: var(--brand-muted);
 }
 .dining-story h2 {
   font:
@@ -491,11 +490,11 @@ a:focus-visible {
   margin: 18px 0;
 }
 .dining-story h2 em {
-  color: #77825c;
+  color: var(--brand-muted);
 }
 .dining-story p {
   font-size: 12px;
-  color: #687360;
+  color: var(--brand-muted);
   line-height: 1.8;
   max-width: 350px;
 }
@@ -512,7 +511,7 @@ a:focus-visible {
   gap: 18px;
 }
 .dining-story li > span {
-  color: #899373;
+  color: var(--brand-muted);
   font:
     italic 23px Georgia,
     serif;
@@ -543,7 +542,7 @@ a:focus-visible {
   align-items: center;
   gap: 8px;
   font-size: 12px;
-  color: #385d3a;
+  color: var(--brand-muted);
 }
 .full-demo-note small {
   display: block;
@@ -576,7 +575,7 @@ a:focus-visible {
   max-height: 90dvh;
 }
 .dish-dialog::backdrop {
-  background: #12251ec4;
+  background: color-mix(in srgb, var(--brand-dark) 76.86%, transparent);
   backdrop-filter: blur(4px);
 }
 .dish-dialog > .dish-photo {
@@ -587,7 +586,7 @@ a:focus-visible {
   z-index: 2;
   top: 12px;
   right: 12px;
-  background: #fff;
+  background: var(--brand-surface);
   border-radius: 50%;
   box-shadow: 0 2px 8px #0001;
 }
@@ -613,7 +612,7 @@ a:focus-visible {
   font-size: 11px;
 }
 .dish-allergens {
-  background: #f5f4ec;
+  background: var(--brand-canvas);
   padding: 13px;
   border-radius: 8px;
 }
@@ -681,9 +680,9 @@ a:focus-visible {
   font-size: 11px;
 }
 .hackathon-guide {
-  background: #f0f0e4;
-  border-color: #e0e3d3;
-  border-left: 4px solid #ab8750;
+  background: var(--brand-soft);
+  border-color: var(--brand-line);
+  border-left: 4px solid var(--brand-focus);
 }
 .hackathon-guide h2 {
   font-family: Georgia, serif;
@@ -692,9 +691,9 @@ a:focus-visible {
   letter-spacing: -0.7px;
 }
 .personal-bill {
-  background: #203e35;
-  color: #fdfbf2;
-  border-color: #203e35;
+  background: var(--brand-dark);
+  color: var(--brand-on-dark);
+  border-color: var(--brand-dark);
 }
 .personal-bill h2 {
   color: inherit;
@@ -703,12 +702,12 @@ a:focus-visible {
     serif;
 }
 .personal-bill p {
-  color: #d0d9c6;
+  color: var(--brand-on-dark-muted);
 }
 .personal-bill .button.primary {
-  background: #e8d8b2;
-  border-color: #e8d8b2;
-  color: #203e35;
+  background: var(--brand-highlight);
+  border-color: var(--brand-highlight);
+  color: var(--brand-dark);
 }
 @media (max-width: 1050px) {
   .photo-menu-grid {
@@ -802,7 +801,7 @@ a:focus-visible {
     width: auto;
     flex-shrink: 0;
     padding: 9px 14px;
-    border: 1px solid #e2e3d7;
+    border: 1px solid var(--brand-line);
     background: white;
     border-radius: 24px;
     font-size: 11px;
@@ -911,7 +910,7 @@ a:focus-visible {
   padding: 26px 0 0;
 }
 .menu-load-more button {
-  background: #f0f3e9;
+  background: var(--brand-soft);
   padding: 12px 20px;
   gap: 8px;
   font-size: 12px;

@@ -2,8 +2,8 @@
   max-width: 1160px;
   padding: 20px 32px;
   margin: auto;
-  border-color: #e5e5db;
-  background: #faf9f5;
+  border-color: var(--brand-line);
+  background: var(--brand-canvas);
 }
 .dining-app-header .brand {
   font-family: Georgia, serif;
@@ -39,7 +39,7 @@
 }
 .dinner-workspace .page-title .eyebrow {
   font-size: 11px;
-  color: #53644e;
+  color: var(--brand-muted);
 }
 .dinner-workspace .page-title p {
   margin: 7px 0 0;
@@ -68,10 +68,11 @@
   padding: 15px;
   display: grid;
   gap: 10px;
-  background: #fffefa;
-  border: 1px solid #dfe4d6;
+  background: var(--brand-surface);
+  border: 1px solid var(--brand-line);
   border-radius: 12px;
-  box-shadow: 0 12px 36px #173d321c;
+  box-shadow: 0 12px 36px
+    color-mix(in srgb, var(--brand-primary) 10.98%, transparent);
 }
 .dinner-help select {
   min-width: 0;
@@ -82,7 +83,7 @@
   padding: 0;
   background: transparent;
   border: 0;
-  border-bottom: 1px solid #dfe3d5;
+  border-bottom: 1px solid var(--brand-line);
   border-radius: 0;
 }
 .dinner-workspace .nav-primary {
@@ -99,9 +100,9 @@
 }
 .dinner-workspace .workspace-nav .nav-primary button.active {
   background: none;
-  border-bottom-color: #234b39;
+  border-bottom-color: var(--brand-primary);
   box-shadow: none;
-  color: #234b39;
+  color: var(--brand-primary);
 }
 .dinner-workspace .nav-share {
   display: none;
@@ -127,8 +128,8 @@
   list-style: none;
   margin: 0 0 25px;
   padding: 14px 20px;
-  border: 1px solid #e2e6d9;
-  background: #eef1e7;
+  border: 1px solid var(--brand-line);
+  background: var(--brand-soft);
   border-radius: 12px;
   gap: 15px;
 }
@@ -138,13 +139,13 @@
   flex: 1;
   gap: 9px;
   font-size: 12px;
-  color: #68745f;
+  color: var(--brand-muted);
 }
 .dinner-journey li::after {
   content: "";
   height: 1px;
   flex: 1;
-  background: #d7ddcf;
+  background: var(--brand-soft-strong);
   margin-left: 5px;
 }
 .dinner-journey li:last-child {
@@ -157,24 +158,24 @@
   width: 25px;
   height: 25px;
   flex: 0 0 25px;
-  border: 1px solid #cfd8c6;
+  border: 1px solid var(--brand-line);
   border-radius: 50%;
   display: grid;
   place-items: center;
   font-size: 11px;
 }
 .dinner-journey .current {
-  color: #234b39;
+  color: var(--brand-primary);
   font-weight: 650;
 }
 .dinner-journey .current > span {
-  background: #234b39;
+  background: var(--brand-primary);
   color: white;
-  border-color: #234b39;
+  border-color: var(--brand-primary);
 }
 .dinner-journey .complete > span {
-  color: #234b39;
-  background: #e0e9d9;
+  color: var(--brand-primary);
+  background: var(--brand-soft-strong);
 }
 .dinner-experience .dinner-bill-overview {
   display: flex;
@@ -192,7 +193,7 @@
 }
 .dinner-bill-overview p {
   margin: 0;
-  color: #5e6b58;
+  color: var(--brand-muted);
   font-size: 12px;
 }
 .dinner-bill-overview > div:last-child {
@@ -205,7 +206,7 @@
     serif;
 }
 .dinner-bill-overview span:not(.eyebrow) {
-  color: #5e6b58;
+  color: var(--brand-muted);
   font-size: 12px;
 }
 .dinner-experience .bill-totals {
@@ -213,7 +214,7 @@
 }
 .dinner-experience .bill-totals summary {
   font-size: 12px;
-  color: #52624c;
+  color: var(--brand-muted);
   padding: 6px 0;
 }
 .dinner-experience .bill-totals .metrics {
@@ -257,7 +258,7 @@
   padding: 16px;
   border-radius: 12px;
   margin-bottom: 10px;
-  background: #fffefa;
+  background: var(--brand-surface);
 }
 .dinner-receipt-row .receipt-photo {
   width: 72px;
@@ -287,7 +288,7 @@
   border: none;
   font-size: 12px;
   padding: 2px 0;
-  color: #596752;
+  color: var(--brand-muted);
 }
 .dinner-receipt-row .item-actions {
   margin-top: 8px;
@@ -298,15 +299,15 @@
   border: none;
   padding: 3px 0;
   min-height: 28px;
-  color: #355e46;
+  color: var(--brand-primary);
   font-size: 12px;
   text-decoration: underline;
   text-underline-offset: 3px;
 }
 .dinner-experience .dinner-share {
   display: block;
-  background: #234b39;
-  color: #fffef3;
+  background: var(--brand-dark);
+  color: var(--brand-on-dark);
   padding: 23px;
   border: 0;
   border-radius: 16px;
@@ -319,8 +320,8 @@
   margin-bottom: 24px;
 }
 .dinner-share-person .avatar {
-  background: #e3ebd5;
-  color: #234b39;
+  background: var(--brand-highlight);
+  color: var(--brand-dark);
 }
 .dinner-share-person > div {
   flex: 1;
@@ -330,12 +331,12 @@
   font-size: 13px;
 }
 .dinner-share-person > div > span {
-  color: #d2ddc8;
+  color: var(--brand-on-dark-muted);
   font-size: 11px;
 }
 .dinner-share-label {
   font-size: 12px;
-  color: #d2ddc8;
+  color: var(--brand-on-dark-muted);
 }
 .dinner-share h2 {
   font:
@@ -347,20 +348,20 @@
 }
 .dinner-share p {
   font-size: 12px;
-  color: #d2ddc8;
+  color: var(--brand-on-dark-muted);
   margin: 0 0 22px;
 }
 .dinner-share .button.primary {
-  color: #234b39;
-  background: #ece6cb;
-  border-color: #ece6cb;
+  color: var(--brand-dark);
+  background: var(--brand-highlight);
+  border-color: var(--brand-highlight);
   min-height: 44px;
   font-size: 13px;
 }
 .dinner-share small {
   display: flex;
   gap: 7px;
-  color: #d2ddc8;
+  color: var(--brand-on-dark-muted);
   font-size: 11px;
   margin-top: 14px;
   line-height: 1.5;
@@ -372,7 +373,7 @@
 .dinner-experience .dinner-balances {
   padding: 18px;
   border-radius: 14px;
-  background: #fffefa;
+  background: var(--brand-surface);
 }
 .dinner-balances h3 {
   font-size: 14px;
@@ -380,11 +381,11 @@
 }
 .dinner-balances .spread > span {
   font-size: 11px;
-  color: #5e6b58;
+  color: var(--brand-muted);
 }
 .dinner-balances .balance {
   padding: 12px 0;
-  border-bottom: 1px solid #ececdf;
+  border-bottom: 1px solid var(--brand-line);
   font-size: 12px;
 }
 .dinner-balances .balance:last-child {
@@ -394,7 +395,7 @@
 .dinner-balances .balance small {
   display: block;
   font-size: 11px;
-  color: #596752;
+  color: var(--brand-muted);
 }
 .dinner-balances .balance .avatar {
   width: 29px;
@@ -426,7 +427,7 @@
   flex: 1 1 125px;
   padding: 9px;
   border-radius: 8px;
-  background: #f0f0e7;
+  background: var(--brand-soft);
 }
 .dinner-votes .avatar {
   grid-row: span 2;
@@ -437,18 +438,18 @@
 }
 .dinner-votes small {
   font-size: 11px;
-  color: #5b6a51;
+  color: var(--brand-muted);
 }
 .dinner-votes .agreed {
-  background: #e6efdc;
+  background: var(--brand-soft-strong);
 }
 .dinner-experience .proposal {
-  border-left: 3px solid #b4955a;
-  background: #fffdf5;
+  border-left: 3px solid var(--brand-focus);
+  background: var(--brand-surface);
 }
 .dinner-experience .paypal-checkout {
   border-radius: 14px;
-  background: #fffefa;
+  background: var(--brand-surface);
   padding: 20px;
 }
 .dinner-experience .paypal-checkout h2 {
@@ -465,7 +466,7 @@
   font-size: 11px;
 }
 .dinner-experience .dinner-payment-history {
-  border-top: 1px solid #e0e4d6;
+  border-top: 1px solid var(--brand-line);
   margin-top: 25px;
 }
 .dinner-payment-history > summary {
@@ -549,14 +550,15 @@
     right: 0;
     margin: 0;
     padding: 0 16px env(safe-area-inset-bottom);
-    background: #fffef8f5;
+    background: color-mix(in srgb, var(--brand-surface) 96.08%, transparent);
     backdrop-filter: blur(12px);
     border: 0;
-    border-top: 1px solid #d8dfce;
+    border-top: 1px solid var(--brand-line);
     display: grid;
     grid-template-columns: minmax(0, 1fr) 55px;
     gap: 0 4px;
-    box-shadow: 0 -5px 30px #233d3110;
+    box-shadow: 0 -5px 30px
+      color-mix(in srgb, var(--brand-ink) 6.27%, transparent);
   }
   .dinner-workspace .nav-share {
     display: flex;
@@ -565,7 +567,7 @@
     align-items: center;
     padding: 9px 2px 6px;
     font-size: 11px;
-    border-bottom: 1px solid #ecece0;
+    border-bottom: 1px solid var(--brand-line);
   }
   .dinner-workspace .nav-share strong {
     font-size: 15px;

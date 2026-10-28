@@ -46,8 +46,8 @@
 .dinner-next-step {
   margin-top: 6px;
   padding: 14px 16px;
-  background: #fffefa;
-  border: 1px solid #dfe5d6;
+  background: var(--brand-surface);
+  border: 1px solid var(--brand-line);
   border-radius: 10px;
 }
 
@@ -70,7 +70,7 @@
   margin: 2px 0 6px;
   font-size: 17px;
   line-height: 1.35;
-  color: var(--dp-forest);
+  color: var(--dp-primary);
 }
 
 .dinner-demo-toolbar .dinner-next-step p {

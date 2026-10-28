@@ -1,0 +1,36 @@
+{
+  "recordedDate": "2026-10-16",
+  "environment": "hosted HTTPS app on Render",
+  "appSourceCommit": "414c0609fdf64f3448ef44f8bbcdc6f924cb3c0b",
+  "model": "gpt-6-luna",
+  "reasoningEffort": "low",
+  "newPreviewCalls": 1,
+  "observedJourney": {
+    "realAiPreview": true,
+    "previewDidNotChangeBill": true,
+    "billUnchangedBeforeFinalRequiredConsent": true,
+    "allThreeDinersConsented": true,
+    "sandboxPaymentsCompleted": 3,
+    "billMinorUnits": 3801,
+    "paidMinorUnits": 3801,
+    "outstandingMinorUnits": 0,
+    "reservedMinorUnits": 0,
+    "currency": "EUR",
+    "reloadPreservedSettledState": true,
+    "paymentsMinorUnits": { "Mihai": 1434, "Diego": 1233, "Ana": 1134 },
+    "tipsMinorUnits": 0
+  },
+  "lastVerifiedHostedAiConfiguration": {
+    "enabled": true,
+    "cumulativeMaxCalls": 20,
+    "remainingCalls": "Read current ai_usage count; the cap is not a fresh allowance."
+  },
+  "evidenceBasis": "Recorded browser journey and private production checkpoint. No API secrets, guest tokens, buyer logins or provider transaction identifiers are included.",
+  "limits": [
+    "One hosted Luna walkthrough, not a repeated reliability benchmark.",
+    "Three application diner identities reused one fictional PayPal sandbox buyer.",
+    "This run did not repeat the earlier tip, replay or backend-restart recovery tests.",
+    "Current hosted token usage and dollar cost were not independently measured for this record.",
+    "Judge credential delivery and a fresh-browser test of the exact access package remain pending."
+  ]
+}

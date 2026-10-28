@@ -1,16 +1,16 @@
 .restaurant-menu.menu-experience {
-  --menu-cream: #f7f5ed;
-  --menu-paper: #fffef9;
-  --menu-green: #234b3c;
-  --menu-ink: #23382d;
-  --menu-muted: #5d7053;
-  --menu-line: #e0e4d6;
+  --menu-cream: var(--brand-canvas);
+  --menu-paper: var(--brand-surface);
+  --menu-primary: var(--brand-primary);
+  --menu-ink: var(--brand-ink);
+  --menu-muted: var(--brand-muted);
+  --menu-line: var(--brand-line);
   color: var(--menu-ink);
   min-width: 0;
 }
 
 .restaurant-menu.menu-experience .menu-kicker {
-  color: #586b50;
+  color: var(--brand-muted);
   font-size: 11px;
   font-weight: 600;
   letter-spacing: 1.6px;
@@ -38,13 +38,16 @@
 }
 
 .restaurant-menu.menu-experience .dining-hero h2 {
-  font: 400 clamp(48px, 5vw, 70px)/1.04 Georgia, "Times New Roman", serif;
+  font:
+    400 clamp(48px, 5vw, 70px)/1.04 Georgia,
+    "Times New Roman",
+    serif;
   letter-spacing: -2.5px;
   margin: 23px 0 25px;
 }
 
 .restaurant-menu.menu-experience .dining-hero h2 em {
-  color: #737d4f;
+  color: var(--brand-muted);
   font-weight: 400;
 }
 
@@ -65,10 +68,10 @@
 }
 
 .restaurant-menu.menu-experience .hero-menu-link {
-  background: var(--menu-green);
+  background: var(--menu-primary);
   color: var(--menu-paper);
   min-height: 46px;
-  border: 1px solid var(--menu-green);
+  border: 1px solid var(--menu-primary);
   border-radius: 7px;
   gap: 16px;
   padding: 12px 20px;
@@ -78,7 +81,7 @@
 }
 
 .restaurant-menu.menu-experience .hero-menu-link:hover {
-  background: #183f30;
+  background: var(--brand-strong);
 }
 
 .restaurant-menu.menu-experience .hero-menu-actions > span,
@@ -111,7 +114,7 @@
   object-fit: cover;
   object-position: center;
   border-radius: 17px;
-  box-shadow: 0 8px 30px #23382d0b;
+  box-shadow: 0 8px 30px color-mix(in srgb, var(--brand-ink) 4.31%, transparent);
 }
 
 .restaurant-menu.menu-experience .dining-hero-visual > .photo-fallback {
@@ -129,11 +132,11 @@
   gap: 14px;
   padding: 14px 17px;
   color: var(--menu-ink);
-  background: #fffef9f5;
-  border: 1px solid #ffffff99;
+  background: color-mix(in srgb, var(--brand-surface) 96.08%, transparent);
+  border: 1px solid color-mix(in srgb, var(--brand-surface) 60%, transparent);
   border-radius: 9px;
   backdrop-filter: blur(8px);
-  box-shadow: 0 3px 20px #23382d08;
+  box-shadow: 0 3px 20px color-mix(in srgb, var(--brand-ink) 3.14%, transparent);
   font-size: 12px;
   line-height: 1.5;
 }
@@ -146,7 +149,9 @@
 .restaurant-menu.menu-experience .hero-food-caption strong {
   display: block;
   color: var(--menu-ink);
-  font: 400 20px/1.35 Georgia, serif;
+  font:
+    400 20px/1.35 Georgia,
+    serif;
   margin-top: 2px;
 }
 
@@ -159,12 +164,12 @@
   padding: 0;
   border: 0;
   border-radius: 50%;
-  background: var(--menu-green);
+  background: var(--menu-primary);
   color: var(--menu-paper);
 }
 
 .restaurant-menu.menu-experience .hero-food-caption button:hover:enabled {
-  background: #183f30;
+  background: var(--brand-strong);
 }
 
 .restaurant-menu.menu-experience .hero-fresh-postcard {
@@ -176,7 +181,8 @@
   border-radius: 10px;
   background: var(--menu-cream);
   transform: rotate(-7deg);
-  box-shadow: 0 8px 22px #23382d20;
+  box-shadow: 0 8px 22px
+    color-mix(in srgb, var(--brand-ink) 12.55%, transparent);
 }
 
 .restaurant-menu.menu-experience .hero-fresh-postcard .dish-photo {
@@ -191,8 +197,10 @@
   display: block;
   text-align: center;
   padding-top: 8px;
-  color: #596b46;
-  font: italic 13px/1.3 Georgia, serif;
+  color: var(--brand-muted);
+  font:
+    italic 13px/1.3 Georgia,
+    serif;
 }
 
 .restaurant-menu.menu-experience .hero-table-seal {
@@ -206,15 +214,17 @@
   gap: 3px;
   width: 88px;
   height: 88px;
-  background: #ded5b3;
-  color: #52613d;
+  background: var(--brand-highlight);
+  color: var(--brand-ink);
   border: 4px solid var(--menu-cream);
   border-radius: 50%;
   transform: rotate(12deg);
 }
 
 .restaurant-menu.menu-experience .hero-table-seal span {
-  font: italic 13px/1.15 Georgia, serif;
+  font:
+    italic 13px/1.15 Georgia,
+    serif;
   text-align: center;
 }
 
@@ -229,7 +239,9 @@
 
 .restaurant-menu.menu-experience .menu-intro h2 {
   color: var(--menu-ink);
-  font: 400 clamp(29px, 3vw, 36px)/1.2 Georgia, serif;
+  font:
+    400 clamp(29px, 3vw, 36px)/1.2 Georgia,
+    serif;
   letter-spacing: -1px;
   margin: 8px 0 0;
 }
@@ -279,11 +291,11 @@
 }
 
 .restaurant-menu.menu-experience .menu-search input::placeholder {
-  color: #647558;
+  color: var(--brand-muted);
 }
 
 .restaurant-menu.menu-experience .menu-search:focus-within {
-  outline: 2px solid #748664;
+  outline: 2px solid var(--brand-focus);
   outline-offset: 2px;
 }
 
@@ -294,7 +306,7 @@
   flex-shrink: 0;
   min-height: 46px;
   padding: 11px 16px;
-  color: #516b40;
+  color: var(--brand-primary);
   background: var(--menu-paper);
   border: 1px solid var(--menu-line);
   border-radius: 8px;
@@ -303,9 +315,9 @@
 }
 
 .restaurant-menu.menu-experience .vegetarian-filter[aria-pressed="true"] {
-  color: #345332;
-  background: #e5ecd9;
-  border-color: #a4b392;
+  color: var(--brand-strong);
+  background: var(--brand-soft-strong);
+  border-color: var(--brand-line);
 }
 
 .restaurant-menu.menu-experience .menu-filter-check {
@@ -313,16 +325,18 @@
   place-items: center;
   width: 16px;
   height: 16px;
-  border: 1px solid #a9b49c;
+  border: 1px solid var(--brand-line);
   border-radius: 4px;
   margin-left: 4px;
   font-size: 12px;
   line-height: 1;
 }
 
-.restaurant-menu.menu-experience .vegetarian-filter[aria-pressed="true"] .menu-filter-check {
-  background: var(--menu-green);
-  border-color: var(--menu-green);
+.restaurant-menu.menu-experience
+  .vegetarian-filter[aria-pressed="true"]
+  .menu-filter-check {
+  background: var(--menu-primary);
+  border-color: var(--menu-primary);
   color: white;
 }
 
@@ -342,7 +356,7 @@
   padding: 3px 3px 14px;
   border-bottom: 1px solid var(--menu-line);
   scrollbar-width: thin;
-  scrollbar-color: #c4cbbd transparent;
+  scrollbar-color: var(--brand-soft-strong) transparent;
 }
 
 .restaurant-menu.menu-experience .menu-category-buttons button {
@@ -354,7 +368,7 @@
   width: auto;
   min-height: 40px;
   padding: 8px 14px;
-  color: #5b6e51;
+  color: var(--brand-muted);
   border: 0;
   border-radius: 25px;
   background: transparent;
@@ -363,23 +377,33 @@
   white-space: nowrap;
 }
 
-.restaurant-menu.menu-experience .menu-category-buttons button > span:last-child {
-  color: #6c7a61;
+.restaurant-menu.menu-experience
+  .menu-category-buttons
+  button
+  > span:last-child {
+  color: var(--brand-muted);
   font-size: 11px;
 }
 
-.restaurant-menu.menu-experience .menu-category-buttons button[aria-pressed="true"] {
+.restaurant-menu.menu-experience
+  .menu-category-buttons
+  button[aria-pressed="true"] {
   color: white;
-  background: var(--menu-green);
+  background: var(--menu-primary);
 }
 
-.restaurant-menu.menu-experience .menu-category-buttons button[aria-pressed="true"] > span:last-child {
-  color: #d0dcbf;
+.restaurant-menu.menu-experience
+  .menu-category-buttons
+  button[aria-pressed="true"]
+  > span:last-child {
+  color: var(--brand-on-dark-muted);
 }
 
-.restaurant-menu.menu-experience .menu-category-buttons button:hover:not([aria-pressed="true"]) {
-  color: var(--menu-green);
-  background: #e8ecdf;
+.restaurant-menu.menu-experience
+  .menu-category-buttons
+  button:hover:not([aria-pressed="true"]) {
+  color: var(--menu-primary);
+  background: var(--brand-soft-strong);
 }
 
 .restaurant-menu.menu-experience .mobile-menu-category {
@@ -401,16 +425,19 @@
 }
 
 .restaurant-menu.menu-experience .photo-menu-card {
-  border: 1px solid #dfe3d5;
+  border: 1px solid var(--brand-line);
   background: var(--menu-paper);
   border-radius: 12px;
-  box-shadow: 0 2px 6px #23382d03;
-  transition: transform .2s ease, box-shadow .2s ease;
+  box-shadow: 0 2px 6px color-mix(in srgb, var(--brand-ink) 1.18%, transparent);
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
 }
 
 .restaurant-menu.menu-experience .photo-menu-card:hover {
   transform: translateY(-3px);
-  box-shadow: 0 10px 24px #23382d0b;
+  box-shadow: 0 10px 24px
+    color-mix(in srgb, var(--brand-ink) 4.31%, transparent);
 }
 
 .restaurant-menu.menu-experience .dish-visual .dish-photo {
@@ -421,9 +448,9 @@
   top: 12px;
   left: 12px;
   padding: 5px 9px;
-  color: #3e5e32;
-  background: #fffef6ed;
-  border: 1px solid #ffffff66;
+  color: var(--brand-strong);
+  background: color-mix(in srgb, var(--brand-surface) 92.94%, transparent);
+  border: 1px solid color-mix(in srgb, var(--brand-surface) 40%, transparent);
   font-size: 11px;
   gap: 5px;
 }
@@ -434,20 +461,22 @@
 
 .restaurant-menu.menu-experience .dish-copy h3 {
   color: var(--menu-ink);
-  font: 400 26px/1.18 Georgia, serif;
-  letter-spacing: -.5px;
+  font:
+    400 26px/1.18 Georgia,
+    serif;
+  letter-spacing: -0.5px;
   margin: 0 0 9px;
 }
 
 .restaurant-menu.menu-experience .dish-portion {
-  color: #5d7053;
+  color: var(--brand-muted);
   font-size: 12px;
   line-height: 1.55;
   margin: 0 0 10px;
 }
 
 .restaurant-menu.menu-experience .dish-copy > p {
-  color: #5d7053;
+  color: var(--brand-muted);
   font-size: 12px;
   line-height: 1.75;
   margin: 0 0 17px;
@@ -461,7 +490,7 @@
 }
 
 .restaurant-menu.menu-experience .dish-bottom > strong {
-  color: #3e5b32;
+  color: var(--brand-strong);
   font-size: 15px;
   font-weight: 600;
 }
@@ -474,9 +503,9 @@
   min-height: 44px;
   min-width: 44px;
   padding: 10px 13px;
-  color: #234b3c;
-  background: #eef2e5;
-  border: 1px solid #dce5cd;
+  color: var(--brand-primary);
+  background: var(--brand-soft);
+  border: 1px solid var(--brand-line);
   border-radius: 7px;
   font-size: 12px;
   font-weight: 500;
@@ -487,11 +516,11 @@
 }
 
 .restaurant-menu.menu-experience .dish-add:hover:enabled {
-  background: #dee9cd;
+  background: var(--brand-soft-strong);
 }
 
 .restaurant-menu.menu-experience button:disabled {
-  opacity: .5;
+  opacity: 0.5;
   cursor: not-allowed;
 }
 
@@ -507,9 +536,9 @@
   padding: 13px 21px;
   min-height: 46px;
   background: transparent;
-  border: 1px solid #b4bfad;
+  border: 1px solid var(--brand-line);
   border-radius: 7px;
-  color: var(--menu-green);
+  color: var(--menu-primary);
   font-size: 12px;
   font-weight: 500;
 }
@@ -526,14 +555,16 @@
 }
 
 .restaurant-menu.menu-experience .menu-empty {
-  background: #f3f4e9;
-  border-color: #ccd5bf;
+  background: var(--brand-soft);
+  border-color: var(--brand-line);
   padding: 40px 24px;
 }
 
 .restaurant-menu.menu-experience .menu-empty h3 {
   color: var(--menu-ink);
-  font: 400 29px/1.2 Georgia, serif;
+  font:
+    400 29px/1.2 Georgia,
+    serif;
 }
 
 .restaurant-menu.menu-experience .menu-empty p {
@@ -584,7 +615,7 @@
   }
 
   .restaurant-menu.menu-experience .dining-hero-visual > .dish-photo {
-    aspect-ratio: .86;
+    aspect-ratio: 0.86;
     border-radius: 12px;
   }
 
@@ -690,7 +721,7 @@
     background: var(--menu-paper);
     border: 1px solid var(--menu-line);
     border-radius: 8px;
-    color: #516b40;
+    color: var(--brand-primary);
     font-size: 16px;
   }
 

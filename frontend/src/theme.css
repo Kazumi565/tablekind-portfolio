@@ -1,0 +1,20 @@
+/* Ink & Saffron: shared colors for dining, staff and platform screens. */
+:root {
+  --brand-primary: #294a66;
+  --brand-strong: #1d3b54;
+  --brand-dark: #172f43;
+  --brand-ink: #203244;
+  --brand-highlight: #e4b250;
+  --brand-highlight-hover: #efca76;
+  --brand-canvas: #f5f1e8;
+  --brand-surface: #fffdf8;
+  --brand-soft: #e4e9ec;
+  --brand-soft-strong: #dce5eb;
+  --brand-muted: #596872;
+  --brand-line: #d8dce0;
+  --brand-on-dark: #edf2f5;
+  --brand-on-dark-muted: #cfdce6;
+  --brand-focus: #a77113;
+  --line: var(--brand-line);
+  --muted: var(--brand-muted);
+}

@@ -1,0 +1,30 @@
+{
+  "exportedDate": "2026-10-17",
+  "durationSeconds": 153,
+  "videoFrames": 9180,
+  "width": 1920,
+  "height": 1080,
+  "exportFramesPerSecond": 60,
+  "videoCodec": "H.264",
+  "pixelFormat": "yuv420p",
+  "audioCodec": "AAC",
+  "sampleRateHz": 48000,
+  "channels": 2,
+  "integratedLufs": -15.8,
+  "truePeakDbfs": -1.0,
+  "captionWords": 302,
+  "captionCues": 86,
+  "captionWordPreservation": true,
+  "captionOverlaps": 0,
+  "fullDecodePassed": true,
+  "blackGapsDetected": 0,
+  "sampledScenesVisuallyReviewed": 25,
+  "captionedSha256": "19d87807078a74849db65ced0d88f441137883883e61fa8d6e1598b8d334fbd4",
+  "cleanMasterSha256": "98b69680923b590676ebb1c240e594cac16c48ec90ec975f9a2f902c85c475e6",
+  "limitations": [
+    "Technical checks and sampled visual review do not claim a human watched every frame.",
+    "60 fps is the export format; the generated opening and browser captures have lower or variable source frame rates.",
+    "Owner playback approval and manual public YouTube upload remain."
+  ],
+  "publicationPerformed": false
+}

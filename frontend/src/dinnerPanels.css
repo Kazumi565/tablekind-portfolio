@@ -1,13 +1,14 @@
 .dinner-split-panel.split-assistant,
 .dinner-demo-toolbar.hackathon-guide {
-  --dp-forest: #214d3b;
-  --dp-muted: #586b50;
-  --dp-line: #e0e7d9;
-  color: #233d31;
-  background: #fffefa;
+  --dp-primary: var(--brand-primary);
+  --dp-muted: var(--brand-muted);
+  --dp-line: var(--brand-line);
+  color: var(--brand-ink);
+  background: var(--brand-surface);
   border: 1px solid var(--dp-line);
   border-radius: 14px;
-  box-shadow: 0 5px 20px #214d3b04;
+  box-shadow: 0 5px 20px
+    color-mix(in srgb, var(--brand-primary) 1.57%, transparent);
 }
 
 .dinner-split-panel.split-assistant {
@@ -51,8 +52,8 @@
 .dinner-panel-status {
   flex: none;
   padding: 5px 9px;
-  border: 1px solid #dce5d4;
-  background: #f2f5eb;
+  border: 1px solid var(--brand-line);
+  background: var(--brand-soft);
   border-radius: 30px;
   color: var(--dp-muted);
   font-size: 11px;
@@ -82,13 +83,13 @@
 
 .dinner-split-panel textarea {
   min-height: 92px;
-  border: 1px solid #d4decc;
+  border: 1px solid var(--brand-line);
   border-radius: 8px;
   padding: 12px 14px;
-  background: #f8faf3;
+  background: var(--brand-soft);
   font-size: 14px;
   line-height: 1.65;
-  color: #233d31;
+  color: var(--brand-ink);
 }
 
 .dinner-split-panel details.dinner-split-references {
@@ -100,7 +101,7 @@
 .dinner-split-references summary {
   width: fit-content;
   font-size: 12px;
-  color: var(--dp-forest);
+  color: var(--dp-primary);
 }
 
 .dinner-split-references p {
@@ -139,10 +140,10 @@
   flex: none;
   min-height: 42px;
   padding: 10px 15px;
-  border: 1px solid var(--dp-forest);
+  border: 1px solid var(--dp-primary);
   border-radius: 7px;
-  background: var(--dp-forest);
-  color: #fffefa;
+  background: var(--dp-primary);
+  color: var(--brand-surface);
   font-size: 12px;
   line-height: 1.5;
   font-weight: 600;
@@ -164,16 +165,16 @@
 .dinner-split-panel .split-preview article.dinner-split-item {
   margin: 12px 0;
   padding: 0;
-  background: #f5f8ee;
-  border: 1px solid #dfe8d5;
+  background: var(--brand-soft);
+  border: 1px solid var(--brand-line);
   border-radius: 8px;
   overflow: hidden;
 }
 
 .dinner-split-item > .spread {
   padding: 11px 13px;
-  background: #edf3e6;
-  border-bottom: 1px solid #dfe8d5;
+  background: var(--brand-soft);
+  border-bottom: 1px solid var(--brand-line);
   font-size: 13px;
   gap: 15px;
   align-items: baseline;
@@ -207,7 +208,7 @@
 }
 
 .dinner-split-shares strong {
-  color: var(--dp-forest);
+  color: var(--dp-primary);
   font-weight: 600;
 }
 
@@ -231,9 +232,9 @@
 .dinner-diner-balance {
   min-width: 0;
   padding: 13px;
-  border: 1px solid #dfe8d5;
+  border: 1px solid var(--brand-line);
   border-radius: 8px;
-  background: #f8faf3;
+  background: var(--brand-soft);
 }
 
 .dinner-diner-balance > strong {
@@ -256,7 +257,7 @@
 }
 
 .dinner-diner-balance dl svg {
-  color: #809473;
+  color: var(--brand-muted);
   margin-top: 17px;
 }
 
@@ -290,7 +291,7 @@
 .dinner-confirm-action {
   margin: 20px -25px -25px;
   padding: 16px 25px;
-  background: #f3f6ed;
+  background: var(--brand-soft);
   border-top: 1px solid var(--dp-line);
   border-radius: 0 0 14px 14px;
   align-items: flex-end;
@@ -329,8 +330,8 @@
   align-items: center;
   gap: 12px 18px;
   padding: 13px 17px;
-  background: #f1f4ea;
-  border-color: #e0e7d9;
+  background: var(--brand-soft);
+  border-color: var(--brand-line);
 }
 
 .dinner-demo-intro {
@@ -343,7 +344,7 @@
 .dinner-demo-intro > svg {
   flex: none;
   margin-top: 5px;
-  color: var(--dp-forest);
+  color: var(--dp-primary);
 }
 
 .dinner-demo-toolbar .eyebrow {
@@ -386,18 +387,18 @@
 
 .dinner-demo-toolbar button {
   min-height: 36px;
-  border-color: #d7e1ce;
-  background: #fffefa;
+  border-color: var(--brand-line);
+  background: var(--brand-surface);
   border-radius: 6px;
   font-size: 12px;
   padding: 7px 11px;
-  color: var(--dp-forest);
+  color: var(--dp-primary);
 }
 
 .dinner-demo-toolbar button[aria-pressed="true"] {
-  color: #fffefa;
-  border-color: var(--dp-forest);
-  background: var(--dp-forest);
+  color: var(--brand-surface);
+  border-color: var(--dp-primary);
+  background: var(--dp-primary);
 }
 
 .dinner-demo-toolbar .dinner-browse-menu {
@@ -421,7 +422,7 @@
 
 .dinner-demo-toolbar summary {
   font-size: 12px;
-  color: var(--dp-forest);
+  color: var(--dp-primary);
   width: fit-content;
 }
 
@@ -445,7 +446,7 @@
 }
 
 #manual-sharing-heading:focus-visible {
-  outline: 2px solid var(--dp-forest);
+  outline: 2px solid var(--dp-primary);
   outline-offset: 5px;
 }
 

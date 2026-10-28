@@ -1,0 +1,104 @@
+{
+  "verifiedDateLocal": "2026-10-19",
+  "revision": "v02",
+  "status": "export_verified_owner_playback_pending",
+  "durationSeconds": 153,
+  "width": 3840,
+  "height": 2160,
+  "framesPerSecond": 60,
+  "decodedFrames": 9180,
+  "videoCodec": "H.264",
+  "videoAverageMbps": 20.72,
+  "audioCodec": "AAC",
+  "audioSampleRateHz": 48000,
+  "audioChannels": 2,
+  "integratedLufs": -16.06,
+  "truePeakDbtp": -1.19,
+  "blackIntervals": [],
+  "fullDecodePassed": true,
+  "captionWords": 297,
+  "captionCues": 43,
+  "captionMaximumLines": 2,
+  "captionMaximumCharactersPerLine": 36,
+  "captionOverlaps": 0,
+  "captionedFileBytes": 402439404,
+  "captionedSha256": "2cc3f56033eba18a6bd94767531ccef66f84fb39bb1452112b3622f46844b04c",
+  "projectSha256": "49d96ae2536a68da19b4a93ccdd86557b1bedfbdc7176b31f979541b20b8bb36",
+  "delivery": [
+    "captioned MP4",
+    "separate SRT",
+    "editable After Effects project",
+    "21 media dependencies"
+  ],
+  "sampledReview": {
+    "reviewed": true,
+    "reviewedDateLocal": "2026-10-19",
+    "sourceSha256": "2cc3f56033eba18a6bd94767531ccef66f84fb39bb1452112b3622f46844b04c",
+    "openingFrames": 9,
+    "laterFrames": 11,
+    "openingTimesSeconds": [
+      2.5,
+      5.5,
+      6.4,
+      6.55,
+      6.7,
+      7.2,
+      10.6,
+      10.8,
+      11.2
+    ],
+    "laterTimesSeconds": [
+      15,
+      28,
+      39.8,
+      70,
+      76.6,
+      83.5,
+      96,
+      100.6,
+      116,
+      128,
+      149
+    ],
+    "method": "Reviewed both contact sheets containing all 20 sampled final-export frames; additionally inspected opening at 2.5 seconds, preview at70 seconds and PayPal checkout at96 seconds in enlarged individual frames.",
+    "findings": [
+      "Approved three-diner image, labels and first two captions are present and legible.",
+      "Brief outgoing/incoming text overlap occurs during the designed crossfades at6.55 and10.8 seconds; settled cards are clear.",
+      "Later samples retain the intended consent sequence, exact-cent totals, sandbox disclosure, final settlement and closing links.",
+      "No blocking clipping or unexpected blank frame found in these samples."
+    ],
+    "limitations": [
+      "Opening photo is a1672x941 source enlarged with native AE Detail-preserving Upscale; visible photographic softness remains.",
+      "Browser evidence retains source-resolution limits; large native summaries remain readable.",
+      "This is sampled visual review, not a real-time full-film human playback. Owner full playback with sound remains."
+    ]
+  },
+  "portability": {
+    "mediaFiles": 21,
+    "missingMedia": 0,
+    "missingFontsOnOwnerMachine": 0,
+    "reopenedPackagedProject": true,
+    "matchingSourceAndPackagedMediaHashes": true,
+    "matchingRenderedOpeningAtSeconds": 2.5,
+    "renderQueueDisabled": true
+  },
+  "sources": {
+    "opening": "User-approved three-fictional-diner photograph; Higgsfield skin correction and built-in image edits for utensils and noses. Final 1672x941 edit is enlarged with native AE Detail-preserving Upscale.",
+    "graphics": "Native editable 4K60 typography and graphics",
+    "browser": "Reused 1920x869 recordings with variable paint timing; no invented interactions",
+    "narrator": "Synthetic Andre voice; new opening. Original PCM audio after 10.60 seconds preserved byte-for-byte.",
+    "music": "Original locally synthesized ambient score"
+  },
+  "additionalSpendForOpeningRevision": {
+    "quotedHiggsfieldCredits": 5.5,
+    "builtinImageEdits": 4,
+    "paidAppInferenceCalls": 0,
+    "sandboxPayments": 0
+  },
+  "limitations": [
+    "Final video dimensions do not imply native 4K source detail for the opening photo or browser recordings.",
+    "Technical and sampled visual checks do not claim human real-time review of every frame.",
+    "Full-film owner playback approval and manual public upload remain."
+  ],
+  "publicationPerformed": false
+}

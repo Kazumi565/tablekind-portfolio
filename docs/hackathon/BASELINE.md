@@ -2,7 +2,7 @@
 
 Author: Mihai Bargan. Solo portfolio entry. Work recorded on 11 October 2026.
 
-The original portfolio baseline is `81dbdcf0e3517b8f917203ff69269f5530a26935`, preserved by local tag `portfolio-before-paypal-ai`. Hackathon development is on `hackathon/paypal-bill-splitting`. No history was rewritten and no remote branch or release was published.
+The original portfolio baseline is `81dbdcf0e3517b8f917203ff69269f5530a26935`, preserved by local tag `portfolio-before-paypal-ai`. Hackathon development is on `hackathon/paypal-bill-splitting`. No history was rewritten. Mihai later published the source branch manually; the assistant has not pushed, merged remote branches or published releases.
 
 | Already in the baseline | Added for this entry |
 | --- | --- |

@@ -1,3 +1,5 @@
+> Historical record: these generated assets have been replaced at the same URLs with licensed photographs. See [current provenance](MENU-ASSETS.md).
+
 # Drink and sauce menu image provenance
 
 Generated on 12 October 2026 with the built-in image generation tool. These are original illustrative category photographs made for TableKind; they are not photographs of Andy’s Pizza dishes, drinks, or premises. No restaurant photography or other input images were supplied. This generation did not use the project’s OpenAI API key or its integration-test API budget.

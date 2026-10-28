@@ -344,9 +344,11 @@ export function MenuGallery({
             </div>
           )}
           <p className="menu-allergen-note">
-            Reference dishes use their corresponding menu photos. Original demo
-            dishes use illustrative photos. Ask your waiter about ingredients,
-            allergens and cross-contact.
+            Representative food photography; ingredients and portions may differ.
+            Ask your waiter about ingredients, allergens and cross-contact.{" "}
+            <a href="/menu/photo-credits.html" target="_blank" rel="noreferrer">
+              Photo credits and licences
+            </a>
           </p>
         </div>
       </div>

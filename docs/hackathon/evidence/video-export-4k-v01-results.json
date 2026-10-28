@@ -1,0 +1,78 @@
+{
+  "verifiedDateLocal": "2026-10-18",
+  "status": "export_verified_owner_playback_pending",
+  "durationSeconds": 153,
+  "width": 3840,
+  "height": 2160,
+  "framesPerSecond": 60,
+  "decodedFrames": 9180,
+  "videoCodec": "H.264",
+  "videoAverageMbps": 20.635,
+  "audioCodec": "AAC",
+  "audioSampleRateHz": 48000,
+  "audioChannels": 2,
+  "integratedLufs": -16.01,
+  "truePeakDbtp": -1.19,
+  "blackIntervals": [],
+  "fullDecodePassed": true,
+  "captionWords": 302,
+  "captionCues": 43,
+  "captionMaximumLines": 2,
+  "captionMaximumCharactersPerLine": 36,
+  "captionOverlaps": 0,
+  "captionedFileBytes": 400821692,
+  "captionedSha256": "db1ca57b9b1748f99a7f70fbf6e3309ef5b653b976dd4b4da4432576b4fb9c6d",
+  "projectSha256": "4f92fdb5c6bd1d1cc0299ba49949c6fb4248b252a025ddc8225eb9d7259223e9",
+  "delivery": [
+    "captioned MP4",
+    "separate SRT",
+    "editable After Effects project",
+    "21 media dependencies"
+  ],
+  "new4kCleanExport": false,
+  "sampledReview": {
+    "sceneFrames": 24,
+    "transitionFrames": 48,
+    "areas": [
+      "consent",
+      "rounding remainder",
+      "PayPal return",
+      "ending"
+    ],
+    "finding": "No blocking layout or state-order defect found in sampled frames. Crossfades briefly superimpose outgoing and incoming text by design."
+  },
+  "portability": {
+    "mediaFiles": 21,
+    "missingMedia": 0,
+    "missingFontsOnOwnerMachine": 0,
+    "reopenedPackagedProject": true,
+    "matchingSourceAndPackagedMediaHashes": true,
+    "matchingRenderedClosingCardAtSeconds": 149,
+    "nativeTextEditRenderedInTemporaryDuplicate": true,
+    "temporaryDuplicateRemoved": true,
+    "renderQueueDisabled": true
+  },
+  "fonts": [
+    "Georgia",
+    "Segoe UI",
+    "Segoe UI Semibold"
+  ],
+  "sources": {
+    "opening": "Approved generated chicken-table 4K still animated in After Effects",
+    "graphics": "Native editable 4K60 typography and graphics",
+    "browser": "Reused 1920x869 recordings with variable paint timing; focused/enlarged and held at 60fps without invented frames",
+    "narrator": "Synthetic Andre voice, existing approved narration",
+    "music": "Original locally synthesized ambient score"
+  },
+  "additionalSpendForFullRebuild": {
+    "higgsfieldCredits": 0,
+    "paidInferenceCalls": 0,
+    "sandboxPayments": 0
+  },
+  "limitations": [
+    "Technical and sampled visual checks do not claim human real-time review of every frame.",
+    "Browser evidence retains its original source-resolution and paint-cadence limits.",
+    "Full-film owner playback approval and manual public upload remain."
+  ],
+  "publicationPerformed": false
+}

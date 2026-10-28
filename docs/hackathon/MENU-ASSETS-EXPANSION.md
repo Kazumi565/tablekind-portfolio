@@ -1,3 +1,5 @@
+> Historical record: these generated assets have been replaced at the same URLs with licensed photographs. See [current provenance](MENU-ASSETS.md).
+
 # Expanded menu image provenance
 
 The eight additional images in `frontend/public/menu/` are original illustrative category photographs generated for the expanded TableKind demonstration on 12 October 2026. They may illustrate multiple related dishes; they are not a promise of the exact appearance, portion size or ingredients of every associated menu item. No Andy’s Pizza photography or branding was copied.

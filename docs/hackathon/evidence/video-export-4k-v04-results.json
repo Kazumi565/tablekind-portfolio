@@ -1,0 +1,84 @@
+{
+  "revision": "4K60-v04",
+  "date": "2026-10-28",
+  "status": "verified_owner_playback_pending",
+  "width": 3840,
+  "height": 2160,
+  "fps": 60,
+  "duration_seconds": 139.25,
+  "decoded_frames": 8355,
+  "video_bytes": 150506602,
+  "video_sha256": "f0ed1618cd226f16fb5fdca02e87c5f74d3735e606f08cb1da012af3ebbc46c1",
+  "decode_exit_code": 0,
+  "black_intervals": [],
+  "integrated_lufs": -16.04,
+  "true_peak_dbtp": -1.2,
+  "sampled_full_timeline_frames": 49,
+  "additional_pickup_and_join_samples": 6,
+  "audio_bitstream_preserved": true,
+  "caption_cues": 39,
+  "captions_overlap": false,
+  "collected_media_files": 37,
+  "missing_media": 0,
+  "palette": "Ink & Saffron",
+  "question_settled_seconds": 5.6,
+  "overview_settled_seconds": 7.8,
+  "active_ui_source_audit": {
+    "instances": 17,
+    "all_at_or_below_source_pixel_dimensions": true,
+    "old_ui_captures_in_active_video": false
+  },
+  "fresh_local_paypal_sandbox": [
+    {
+      "nickname": "Ana",
+      "amount_bani": 1134,
+      "currency": "EUR",
+      "status": "SUCCEEDED",
+      "method": "PAYPAL",
+      "provider": "PAYPAL_SANDBOX",
+      "is_test": true,
+      "phase": "RESOLVED",
+      "has_capture": true
+    },
+    {
+      "nickname": "Diego",
+      "amount_bani": 1234,
+      "currency": "EUR",
+      "status": "SUCCEEDED",
+      "method": "PAYPAL",
+      "provider": "PAYPAL_SANDBOX",
+      "is_test": true,
+      "phase": "RESOLVED",
+      "has_capture": true
+    },
+    {
+      "nickname": "Mihai",
+      "amount_bani": 1433,
+      "currency": "EUR",
+      "status": "SUCCEEDED",
+      "method": "PAYPAL",
+      "provider": "PAYPAL_SANDBOX",
+      "is_test": true,
+      "phase": "RESOLVED",
+      "has_capture": true
+    }
+  ],
+  "fresh_ai_preview": {
+    "new_paid_requests": 1,
+    "model": "gpt-6-luna",
+    "input_tokens": 771,
+    "output_tokens": 395,
+    "reasoning_tokens": 18,
+    "authorized_maximum_usd": 0.1,
+    "local_ai_disabled_afterward": true,
+    "capture_recovery": "Completed result replayed through server idempotency; no additional inference"
+  },
+  "higgsfield_credits_used_for_this_revision": 0,
+  "new_voice_generation": false,
+  "assistant_published": false,
+  "limitations": [
+    "Full technical decode and sampled visual inspection; subjective owner playback remains useful.",
+    "The illustrative opening photo is the previously approved 1672x941 image.",
+    "UI is presented through high-density stills and actual DOM/vector exports from the fresh sandbox run; it is not continuous native 4K screen recording."
+  ]
+}

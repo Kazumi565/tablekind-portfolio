@@ -2,20 +2,20 @@
   display: block;
   margin: 1rem 0;
   padding: 1rem 1.1rem;
-  border: 1px solid #ddd5c4;
+  border: 1px solid var(--brand-line);
   border-radius: 14px;
-  background: #f6f0e2;
-  color: #3f473d;
+  background: var(--brand-soft);
+  color: var(--brand-ink);
 }
 
 .dinner-split-panel .dinner-ai-availability.is-available {
-  border-color: #c9dacb;
-  background: #edf3e9;
+  border-color: var(--brand-line);
+  background: var(--brand-soft);
 }
 
 .dinner-split-panel .dinner-ai-availability strong {
   display: block;
-  color: #243d30;
+  color: var(--brand-ink);
 }
 
 .dinner-split-panel .dinner-ai-availability p {
