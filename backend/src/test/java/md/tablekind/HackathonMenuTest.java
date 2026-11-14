@@ -11,6 +11,9 @@ import org.springframework.test.context.TestPropertySource;
 @ActiveProfiles(value = "hackathon", inheritProfiles = false)
 @TestPropertySource(
     properties = {
+      // CI shares a PostgreSQL server with local-profile tests. Keep bootstrap data isolated.
+      "spring.datasource.hikari.schema=hackathon_menu_test",
+      "spring.flyway.default-schema=hackathon_menu_test",
       "tablekind.jwt-secret=menu-fixture-only-32-characters-long-and-never-used-in-a-real-deployment",
       "tablekind.bootstrap-email=manager@tablekind.test",
       "tablekind.bootstrap-password=Menu-Review-Only-32-Characters-2026!",
