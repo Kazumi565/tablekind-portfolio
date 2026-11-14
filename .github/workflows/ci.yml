@@ -58,8 +58,7 @@ jobs:
           cache-dependency-path: frontend/package-lock.json
       - run: npm ci
       - run: npm run build
-      - run: npm run test:recovery
-      - run: npm run test:qr-code
+      - run: npm test
 
   backend:
     runs-on: ubuntu-latest

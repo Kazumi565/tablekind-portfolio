@@ -15,13 +15,14 @@
     "test:demo": "node tests/demo-smoke.mjs",
     "test:phase7": "node tests/phase7-smoke.mjs",
     "test:operations": "node tests/operations-smoke.mjs",
-    "test:recovery": "node --test tests/pending-command.test.mjs",
+    "test:recovery": "node --experimental-strip-types --test tests/pending-command.test.mjs",
     "test:accounts": "node tests/accounts-smoke.mjs",
     "format": "prettier --write src tests vite.config.ts",
     "test:email": "node tests/email-smoke.mjs",
     "test:pilot": "node tests/pilot-mobile-smoke.mjs",
     "test:qr-code": "node --experimental-strip-types --test tests/table-code.test.mjs",
-    "test:qr-camera": "node tests/qr-scanner-smoke.mjs"
+    "test:qr-camera": "node tests/qr-scanner-smoke.mjs",
+    "test": "npm run test:recovery && npm run test:qr-code"
   },
   "dependencies": {
     "lucide-react": "1.31.0",

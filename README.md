@@ -10,11 +10,20 @@ Java 21 · Spring Boot 3.5 · PostgreSQL 16 · React 19 · TypeScript · Docker
 
 </div>
 
-Tablekind models a group meal from scanning a table QR code to settling each guest's share. Guests can order individually, agree to share an item, cover someone else's portion, and leave after their own balance is settled. Restaurant staff and managers work in separate interfaces.
+Tablekind lets guests scan a table QR code, order food and settle their share of a group bill. Guests can share items by agreement or cover someone else's portion. Staff and managers have separate interfaces for handling orders and tables.
 
-Built around a Moldova use case, the application uses **integer bani** for MDL amounts and supports translated menu content. It is maintained here as an engineering portfolio project.
+The application uses **integer bani** for MDL amounts and supports translated menus.
 
 > **Status:** runnable local prototype. Payments and POS connections are **TEST simulators**. Tablekind does not collect card details, move real money, send orders to a real kitchen, issue fiscal receipts, or confirm real reservations. The presentation website is separate from the operational application.
+
+## Choose a version
+
+| Branch | What it includes |
+| --- | --- |
+| [`main`](https://github.com/Kazumi565/tablekind-portfolio/tree/main) — this checkout | Original MDL restaurant prototype with TEST payment and POS adapters |
+| [`hackathon/paypal-bill-splitting`](https://github.com/Kazumi565/tablekind-portfolio/tree/hackathon/paypal-bill-splitting) | Isolated EUR dinner, natural-language split previews, diner consent and PayPal **sandbox** order/capture recovery |
+
+For PayPal sandbox checkout, use the hackathon branch and its EUR demo setup guide. Its [validation record](https://github.com/Kazumi565/tablekind-portfolio/blob/hackathon/paypal-bill-splitting/docs/hackathon/VALIDATION.md) lists the completed sandbox and hosted tests. Neither branch processes live restaurant payments. The quick start below runs the original MDL prototype.
 
 ## At a glance
 
@@ -224,8 +233,7 @@ Tests use a separate disposable PostgreSQL service. Surefire reports appear in `
 ```powershell
 npm.cmd --prefix frontend ci
 npm.cmd --prefix frontend run build
-npm.cmd --prefix frontend run test:recovery
-npm.cmd --prefix frontend run test:qr-code
+npm.cmd --prefix frontend test
 
 npm.cmd --prefix website ci
 npm.cmd --prefix website test
