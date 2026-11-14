@@ -10,28 +10,37 @@ Java 21 · Spring Boot 3.5 · PostgreSQL 16 · React 19 · TypeScript · Docker
 
 </div>
 
-Tablekind models a group meal from scanning a table QR code to settling each guest's share. Guests can order individually, agree to share an item, cover someone else's portion, and leave after their own balance is settled. Restaurant staff and managers work in separate interfaces.
+Tablekind lets guests scan a table QR code, order food and settle their share of a group bill. Guests can share items by agreement or cover someone else's portion. Staff and managers have separate interfaces for handling orders and tables.
 
-Built around a Moldova use case, the original application uses **integer bani** for MDL amounts and supports translated menu content. It is maintained here as an engineering portfolio project. The hackathon branch adds an isolated fictional **EUR** restaurant; historical MDL amounts remain unchanged.
+The original application uses **integer bani** for MDL amounts and supports translated menus. This branch adds a separate fictional **EUR** restaurant for the hackathon; existing MDL amounts remain unchanged.
 
-> **Hackathon status (17 October 2026):** the [full hosted app](https://tablekind-hackathon.onrender.com/) is live. **Real GPT-6 Luna interpretation → reviewed preview → all three diners' consent → three PayPal sandbox payments** completed on hosted HTTPS on 16 October: **38.01 EUR paid, zero outstanding/reserved**, preserved after reload. Six real local Luna evaluation cases also passed. Earlier Sol evaluation, tip, payment-replay and backend-restart checks remain separately recorded in validation. Hosted AI is enabled with a cumulative 20-call cap at the last verified state; judge credential delivery, the exact access-package test, video review and submission remain unfinished. Original MDL payments and POS connections remain TEST simulators; no live payments are implemented.
+> **Status:** PayPal **sandbox** prototype. On **16 October 2026**, a hosted test completed an AI-assisted split, consent from all three diners and three sandbox payments totalling **38.01 EUR**. Reloading preserved the result, with no outstanding or reserved balance. The [validation record](docs/hackathon/VALIDATION.md#hosted-luna-recording-and-verification--16-october-2026) documents that test; current hosting and provider access may differ. Original MDL payments and POS connections still use TEST simulators. Neither flow processes live restaurant payments.
+
+## Choose a version
+
+| Branch | What it includes |
+| --- | --- |
+| [`hackathon/paypal-bill-splitting`](https://github.com/Kazumi565/tablekind-portfolio/tree/hackathon/paypal-bill-splitting) — this checkout | Isolated EUR dinner, natural-language split previews, diner consent and PayPal sandbox order/capture recovery |
+| [`main`](https://github.com/Kazumi565/tablekind-portfolio/tree/main) | Original MDL restaurant prototype with TEST payment and POS adapters |
 
 ## PayPal AI Hackathon
 
-Open [TableKind on Render](https://tablekind-hackathon.onrender.com/). The full app and managed PostgreSQL database are deployed in Frankfurt; see the [Render setup and current status](docs/hackathon/RENDER-SETUP.md). Controlled demo-manager and sandbox-buyer access must be arranged privately; follow the [judge walkthrough](docs/hackathon/JUDGE-GUIDE.md). The recorded hosted app image is `414c060`; its environment and current source defaults select **GPT-6 Luna with low reasoning**. Six real local Luna cases passed at an estimated token cost of **USD 0.0008656**, followed by a complete hosted Luna payment journey. Up to USD 5 additional API usage is approved for judging; the current cumulative 20-call cap is not a dollar cap or a guarantee of remaining access. The source branch is [hackathon/paypal-bill-splitting](https://github.com/Kazumi565/tablekind-portfolio/tree/hackathon/paypal-bill-splitting). See [current hosted validation](docs/hackathon/VALIDATION.md#hosted-luna-recording-and-verification--16-october-2026).
+The [recorded Render deployment](https://tablekind-hackathon.onrender.com/) and [deployment guide](docs/hackathon/RENDER-SETUP.md) show the hosted setup. Demo-manager and sandbox-buyer access are arranged privately; use the [judge walkthrough](docs/hackathon/JUDGE-GUIDE.md) when access is available. The [validation record](docs/hackathon/VALIDATION.md) separates local checks, real AI evaluations, recorded hosted results and remaining work.
 
 **Describe the split → review every cent → obtain consent → pay individual sandbox shares.** Built by Mihai Bargan as a solo entry, extending baseline `81dbdcf0e3517b8f917203ff69269f5530a26935`.
 
 ```powershell
+git clone --branch hackathon/paypal-bill-splitting --single-branch https://github.com/Kazumi565/tablekind-portfolio.git tablekind-hackathon
+Set-Location tablekind-hackathon
 .\scripts\hackathon\Initialize-Hackathon.ps1
 docker compose --env-file .env.hackathon -f compose.hackathon.yaml up --build -d
 ```
 
 Open [the local manager view](http://localhost:5195/manage), sign in using the locally generated credentials in `.env.hackathon`, then select **Start EUR dinner**. The seeded meal is 38.01 EUR for Mihai, Diego and Ana. Setup is usable without provider access; completing AI and payment steps requires the access described in [the hackathon setup guide](docs/hackathon/SETUP.md). Keep secret values in that ignored file, never in Git or chat.
 
-New EUR dinners include a photo menu with **203 unique dishes across 17 categories** (224 stored category entries), search, category selection and a vegetarian filter. The expanded catalog covers at least 70% of each relevant category in a dated Andy’s Pizza Moldova menu snapshot, with original descriptions and fictional EUR prices. Reference dishes use their corresponding locally cached menu photographs; the eight original demo dishes retain illustrative photos. The initial €38.01 meal is preserved. A short dinner guide explains the next action, and the split assistant checks availability before accepting a request. [Menu coverage](docs/hackathon/MENU-COVERAGE.md) records the source selections; [the menu preview guide](docs/hackathon/MENU-PREVIEW.md) explains the shared fixture and local standalone build. The separate [Sites menu preview](https://tablekind-at-the-table.workspace-326781.chatgpt.site) remains owner-private; the full app runs on Render. See [validation](docs/hackathon/VALIDATION.md) for the checks completed locally and on the earlier hosted version.
+New EUR dinners include a photo menu with **203 unique dishes across 17 categories** (224 stored category entries), search, category selection and a vegetarian filter. The expanded catalog covers at least 70% of each relevant category in a dated Andy’s Pizza Moldova menu snapshot, with original descriptions and fictional EUR prices. The menu uses locally served, representative photographs from Wikimedia Commons, with per-file credits and licence information; related variants may share a photograph. The initial €38.01 meal is preserved. A short dinner guide explains the next action, and the split assistant checks availability before accepting a request. [Menu coverage](docs/hackathon/MENU-COVERAGE.md) records the source selections; [the menu preview guide](docs/hackathon/MENU-PREVIEW.md) explains the shared fixture and local standalone build. The separate [Sites menu preview](https://tablekind-at-the-table.workspace-326781.chatgpt.site) was published with owner-private access; the full application has a separately recorded Render deployment. See [validation](docs/hackathon/VALIDATION.md) for the checks completed locally and on the earlier hosted version.
 
-Restaurant reference photography is credited separately in [image provenance](docs/hackathon/MENU-ASSETS.md). Its copyright remains with its owners; the project's MIT code licence does not grant a licence to those third-party photographs.
+Menu photographs are credited separately in [image provenance](docs/hackathon/MENU-ASSETS.md) and the [per-file licence manifest](docs/hackathon/MENU-PHOTOS.json). Their individual terms apply separately from the project's MIT code licence.
 
 [New work versus baseline](docs/hackathon/BASELINE.md) · [Architecture and recovery](docs/hackathon/IMPLEMENTATION.md) · [Validation and remaining gates](docs/hackathon/VALIDATION.md) · [Submission draft](docs/hackathon/DEVPOST.md) · [Video delivery](docs/hackathon/VIDEO.md) · [Submission checklist](docs/hackathon/CHECKLIST.md)
 
@@ -165,7 +174,7 @@ powershell.exe -NoProfile -ExecutionPolicy Bypass -File .\scripts\demo\Show-Demo
 
 Open http://localhost:5180 and follow **Start practice table**. The eleven-step guide covers two guests, waiter/manager controls, sharing consent, TEST payment/POS reconciliation, local verification email and a fictional reservation.
 
-[Private demo setup](docs/PRIVATE_DEMO.md) covers optional Tailscale HTTPS access for the original MDL portfolio demo. It requires the viewer's Tailscale connection and explicit access. The isolated EUR hackathon app is separately [hosted on Render](https://tablekind-hackathon.onrender.com/). Keep the generated credentials and `.env.demo` private.
+[Private demo setup](docs/PRIVATE_DEMO.md) covers optional Tailscale HTTPS access for the original MDL portfolio demo. It requires the viewer's Tailscale connection and explicit access. The isolated EUR hackathon app has a separately [recorded Render deployment](https://tablekind-hackathon.onrender.com/). Keep the generated credentials and `.env.demo` private.
 
 ## Architecture
 
@@ -245,10 +254,8 @@ Tests use a separate disposable PostgreSQL service. Surefire reports appear in `
 ```powershell
 npm.cmd --prefix frontend ci
 npm.cmd --prefix frontend run build
-npm.cmd --prefix frontend run test:menu
+npm.cmd --prefix frontend test
 npm.cmd --prefix frontend run build:menu
-npm.cmd --prefix frontend run test:recovery
-npm.cmd --prefix frontend run test:qr-code
 
 npm.cmd --prefix website ci
 npm.cmd --prefix website test
@@ -332,7 +339,7 @@ In a second terminal, from `frontend/`, run `npm.cmd ci` and `npm.cmd run dev`. 
 - Tenant-qualified access and database relationships, with permissions checked before privileged command replay.
 - Purpose-bound local email challenges, bounded retries and captured Mailpit delivery.
 - No public administrator registration. The [local provisioning tool](scripts/admin/Create-PlatformAdmin.ps1) displays recovery material only to its operator.
-- Profile-restricted TEST providers. Other profiles reject payment/refund mutations. Hardened configuration is a guard, not a completed production deployment.
+- Profile-restricted TEST providers for the original MDL flows. The EUR hackathon flow separately uses explicitly configured PayPal sandbox access. Hardened configuration is a guard, not a completed production deployment.
 - QR tokens, bearer credentials, database dumps, recovery codes and private demo settings belong outside Git.
 
 See [SECURITY.md](SECURITY.md) for supported use and reporting. No penetration test, provider certification or production security certification is claimed.
@@ -341,11 +348,11 @@ See [SECURITY.md](SECURITY.md) for supported use and reporting. No penetration t
 
 | Area | Boundary |
 | --- | --- |
-| Payments / POS / fiscal | Simulators only. No bank, MIA, physical terminal, production POS or fiscal integration |
+| Payments / POS / fiscal | EUR hackathon: PayPal sandbox. Original MDL payments and POS: TEST simulators. No live payments, bank, MIA, physical terminal, production POS or fiscal integration |
 | Reservations | Fictional request/approval exercise. No real capacity hold or confirmed booking |
 | Email / SMS | Local Mailpit only. No production delivery provider or SMS workflow |
 | Localization | Presentation site: English/Romanian. Menu content: English/Romanian/Russian. Operational UI controls: English |
-| Hosting | Full application runs locally. The static menu preview is deployed on Sites with owner-private access; judge access, domain and ongoing backend service are not configured |
+| Hosting | Local setup plus a recorded Render deployment. The separate menu preview was published with owner-private access. Ongoing availability and provider allowance are not guaranteed |
 | Customer validation | No claim of paying restaurants, a live restaurant pilot or demonstrated business results |
 | Operations | No sustained capacity qualification, managed offsite backup service or staffed incident response |
 
@@ -366,7 +373,7 @@ See [SECURITY.md](SECURITY.md) for supported use and reporting. No penetration t
 
 Phase handoffs and earlier acceptance records describe their named releases. Their old paths, pending gates and rollout plans are historical context. This README is the starting point for the portfolio source.
 
-**License:** no open-source license has been selected for the project. Third-party components retain their own licenses.
+**License:** original application code is licensed under [MIT](LICENSE). Third-party components and menu photographs retain their own licences.
 
 ### Menu photograph licences
 
