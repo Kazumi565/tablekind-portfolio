@@ -10,11 +10,11 @@ Java 21 · Spring Boot 3.5 · PostgreSQL 16 · React 19 · TypeScript · Docker
 
 </div>
 
-Tablekind lets guests scan a table QR code, order food and settle their share of a group bill. Guests can share items by agreement or cover someone else's portion. Staff and managers have separate interfaces for handling orders and tables.
+[![Portfolio checks](https://github.com/Kazumi565/tablekind-portfolio/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/Kazumi565/tablekind-portfolio/actions/workflows/ci.yml)
 
-The application uses **integer bani** for MDL amounts and supports translated menus.
+Tablekind lets guests order at a restaurant table and settle their own share of a group bill. Staff manage orders; guests can split items or cover someone else's share. Built with Java, React and PostgreSQL, it keeps totals exact and handles repeated requests safely.
 
-> **Status:** runnable local prototype. Payments and POS connections are **TEST simulators**. Tablekind does not collect card details, move real money, send orders to a real kitchen, issue fiscal receipts, or confirm real reservations. The presentation website is separate from the operational application.
+> **Local prototype.** This branch uses MDL amounts and simulated payments/POS connections. For PayPal sandbox checkout, choose the hackathon branch below. Neither version processes live restaurant payments.
 
 ## Choose a version
 
