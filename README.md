@@ -69,11 +69,11 @@ The allocation rule is deterministic. The original orderer, recipient, person re
 Platform authority does not automatically grant restaurant access. Customer accounts cannot directly act as table guests. Linking a visit requires both identities to be verified by the application.
 
 <details>
-<summary><strong>Presentation website preview</strong></summary>
+<summary><strong>Sandbox walkthrough preview</strong></summary>
 
-![Local English presentation page with a guest flow and illustrated phone](docs/assets/presentation-preview.png)
+![Tablekind guest bill in the ink-blue, saffron and cream theme](docs/assets/walkthrough-preview.jpg)
 
-Captured from the actual local 0.11.3 presentation site with fictional content. This is the separate presentation page, not a live restaurant deployment.
+Frame from the October 28 sandbox recording used in the [walkthrough](https://github.com/Kazumi565/tablekind-portfolio/blob/hackathon/paypal-bill-splitting/docs/portfolio/WALKTHROUGH.md). It shows the guest bill in the current app theme, with fictional diners and amounts; it is not a live Render capture.
 
 </details>
 
