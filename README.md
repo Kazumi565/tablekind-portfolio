@@ -10,11 +10,13 @@ Java 21 · Spring Boot 3.5 · PostgreSQL 16 · React 19 · TypeScript · Docker
 
 </div>
 
-Tablekind lets guests scan a table QR code, order food and settle their share of a group bill. Guests can share items by agreement or cover someone else's portion. Staff and managers have separate interfaces for handling orders and tables.
+[![Portfolio checks](https://github.com/Kazumi565/tablekind-portfolio/actions/workflows/ci.yml/badge.svg?branch=hackathon/paypal-bill-splitting)](https://github.com/Kazumi565/tablekind-portfolio/actions/workflows/ci.yml)
 
-The original application uses **integer bani** for MDL amounts and supports translated menus. This branch adds a separate fictional **EUR** restaurant for the hackathon; existing MDL amounts remain unchanged.
+Tablekind lets guests order at a restaurant table and settle their own share of a group bill. Staff manage orders; guests can split items or cover someone else's share. Built with Java, React and PostgreSQL, it keeps totals exact and handles repeated requests safely.
 
-> **Status:** PayPal **sandbox** prototype. On **16 October 2026**, a hosted test completed an AI-assisted split, consent from all three diners and three sandbox payments totalling **38.01 EUR**. Reloading preserved the result, with no outstanding or reserved balance. The [validation record](docs/hackathon/VALIDATION.md#hosted-luna-recording-and-verification--16-october-2026) documents that test; current hosting and provider access may differ. Original MDL payments and POS connections still use TEST simulators. Neither flow processes live restaurant payments.
+> **PayPal sandbox prototype.** This branch adds a fictional EUR dinner with split previews, diner consent and individual sandbox payments. It does not process live restaurant payments.
+
+[Run the EUR demo](#paypal-ai-hackathon) · [Walkthrough](docs/hackathon/JUDGE-GUIDE.md) · [Test evidence](docs/hackathon/VALIDATION.md)
 
 ## Choose a version
 
@@ -24,6 +26,8 @@ The original application uses **integer bani** for MDL amounts and supports tran
 | [`main`](https://github.com/Kazumi565/tablekind-portfolio/tree/main) | Original MDL restaurant prototype with TEST payment and POS adapters |
 
 ## PayPal AI Hackathon
+
+A hosted test on 16 October 2026 completed a split with consent from three diners and three sandbox payments totalling 38.01 EUR. Reloading preserved the settled balance. See the [dated validation record](docs/hackathon/VALIDATION.md#hosted-luna-recording-and-verification--16-october-2026); current hosting and provider access may differ.
 
 The [recorded Render deployment](https://tablekind-hackathon.onrender.com/) and [deployment guide](docs/hackathon/RENDER-SETUP.md) show the hosted setup. Demo-manager and sandbox-buyer access are arranged privately; use the [judge walkthrough](docs/hackathon/JUDGE-GUIDE.md) when access is available. The [validation record](docs/hackathon/VALIDATION.md) separates local checks, real AI evaluations, recorded hosted results and remaining work.
 
