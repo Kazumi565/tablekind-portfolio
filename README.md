@@ -16,7 +16,7 @@ Tablekind lets guests order at a restaurant table and settle their own share of 
 
 > **PayPal sandbox prototype.** This branch adds a fictional EUR dinner with split previews, diner consent and individual sandbox payments. It does not process live restaurant payments.
 
-[Run the EUR demo](#paypal-ai-hackathon) · [Walkthrough](docs/hackathon/JUDGE-GUIDE.md) · [Test evidence](docs/hackathon/VALIDATION.md)
+[Watch the walkthrough](docs/portfolio/WALKTHROUGH.md) · [Payment-recovery case study](docs/portfolio/PAYMENT-RECOVERY.md) · [Run the EUR demo](#paypal-ai-hackathon) · [Test evidence](docs/hackathon/VALIDATION.md)
 
 ## Choose a version
 

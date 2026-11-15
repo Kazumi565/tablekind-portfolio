@@ -1,0 +1,14 @@
+{
+  "date": "2026-11-15",
+  "source_revision": "7418a6593e6cbc20d20fbaf6c25136f5e8b6f3e7",
+  "test_class": "md.tablekind.PayPalTest",
+  "command": "docker compose --profile test run --build --rm tests mvn -B -ntp -Dtest=PayPalTest test",
+  "database": "PostgreSQL in disposable Docker Compose project",
+  "provider": "Mockito PayPalGateway; no live provider calls",
+  "tests": 20,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 0,
+  "result": "BUILD SUCCESS",
+  "application_code_changed": false
+}
